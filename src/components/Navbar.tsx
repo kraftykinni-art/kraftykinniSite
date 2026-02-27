@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src="public/assets/Logo.jpeg" alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
+            <img src="assets/Logo.jpeg" alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
             <span className="font-serif font-bold text-2xl tracking-tight text-brand-slate">
               Kraftykinni
             </span>
