@@ -62,13 +62,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-<<<<<<< HEAD
           <a href="#" onClick={(e) => handleNavClick(e, '#')} className="flex items-center gap-2">
             <img src={logo} alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
-=======
-          <a href="#" className="flex items-center gap-2">
-            <img src="assets/Logo.jpeg" alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
->>>>>>> f2fbd1e20e8f45712adfc602f2e9657149d3c6bc
             <span className="font-serif font-bold text-2xl tracking-tight text-brand-slate">
               Kraftykinni
             </span>
