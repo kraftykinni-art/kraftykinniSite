@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Users, Palette, Award, CheckCircle } from 'lucide-react';
+import profileImg from '../assets/profile.jpeg';
 
 export default function About() {
   const stats = [
@@ -23,7 +24,7 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative bg-gray-100">
               <img
-                src="/assets/Person image.jpg"
+                src={profileImg}
                 alt="Shramita Govil"
                 className="w-full h-full object-cover"
               />

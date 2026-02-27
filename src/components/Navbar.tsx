@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/Logo.jpeg';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,6 +24,32 @@ export default function Navbar() {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+    
+    if (href === '#') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      // Small delay for mobile menu to start closing before calculating position
+      setTimeout(() => {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }, 50);
+    }
+  };
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -35,8 +62,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <img src="public/assets/Logo.jpeg" alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
+          <a href="#" onClick={(e) => handleNavClick(e, '#')} className="flex items-center gap-2">
+            <img src={logo} alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
             <span className="font-serif font-bold text-2xl tracking-tight text-brand-slate">
               Kraftykinni
             </span>
@@ -48,6 +75,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleNavClick(e, link.href)}
                 className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors"
               >
                 {link.name}
@@ -55,6 +83,7 @@ export default function Navbar() {
             ))}
             <a
               href="#contact"
+              onClick={(e) => handleNavClick(e, '#contact')}
               className="bg-brand-pink hover:bg-brand-pink-light text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all hover:shadow-md hover:scale-105"
             >
               Book Now
@@ -85,7 +114,7 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors"
                 >
                   {link.name}
@@ -93,7 +122,7 @@ export default function Navbar() {
               ))}
               <a
                 href="#contact"
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={(e) => handleNavClick(e, '#contact')}
                 className="bg-brand-pink text-white text-center px-6 py-3 rounded-full text-base font-medium mt-4"
               >
                 Book Now

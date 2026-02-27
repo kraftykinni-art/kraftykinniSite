@@ -5,7 +5,7 @@ export default function Testimonials() {
   const clients = [
     'Amity University',
     'Jaypee Public School',
-    'Max Estate',
+    'ABC Tower',
     'Model National Public School',
   ];
 
@@ -22,8 +22,8 @@ export default function Testimonials() {
     },
     {
       quote: "Kraftykinni brought such a creative, refreshing energy to our corporate event. The team loved every moment and the art they created was stunning. Highly recommended!",
-      author: 'Gazal',
-      role: 'Max Estate',
+      author: 'Gurjeet',
+      role: 'ABC Tower',
     },
   ];
 

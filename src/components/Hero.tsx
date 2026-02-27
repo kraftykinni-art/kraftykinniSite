@@ -1,6 +1,11 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
+import bohoArt from '../assets/Boho Art.jpeg';
+import bottleArt from '../assets/Bottle art.jpg';
+import lippanArt from '../assets/Lippan Art.jpeg';
+import tieAndDye from '../assets/Tie And Dye.jpg';
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-brand-offwhite">
@@ -68,7 +73,7 @@ export default function Hero() {
               <div className="flex flex-col gap-4">
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
-                    src="/assets/Boho canvas art.jpg"
+                    src={bohoArt}
                     alt="Boho Canvas Art"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -76,7 +81,7 @@ export default function Hero() {
                 </div>
                 <div className="h-1/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
-                    src="/assets/Bottle lamp art.jpg"
+                    src={bottleArt}
                     alt="Bottle Lamp Art"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -86,7 +91,7 @@ export default function Hero() {
               <div className="flex flex-col gap-4 pt-12">
                 <div className="h-1/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
-                    src="/assets/Lippan art.jpg"
+                    src={lippanArt}
                     alt="Lippan Art"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -94,7 +99,7 @@ export default function Hero() {
                 </div>
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
-                    src="/assets/Tie & Dye.jpg"
+                    src={tieAndDye}
                     alt="Tie & Dye"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />

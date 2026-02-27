@@ -113,7 +113,7 @@ export default function PricingFAQ() {
         </div>
 
         {/* FAQ */}
-        <div className="max-w-3xl mx-auto">
+        <div id="faq" className="max-w-3xl mx-auto pt-16">
           <div className="text-center mb-12">
             <h3 className="font-serif text-3xl font-bold text-brand-slate mb-4">
               Frequently Asked Questions
@@ -141,13 +141,15 @@ export default function PricingFAQ() {
                     {openFAQ === index ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
                   </span>
                 </button>
-                <AnimatePresence>
+                <AnimatePresence initial={false}>
                   {openFAQ === index && (
                     <motion.div
+                      key={`faq-content-${index}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
                     >
                       <div className="px-6 pb-6 text-gray-600 font-light leading-relaxed border-t border-gray-50 pt-4">
                         {faq.answer}
