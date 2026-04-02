@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import {
   Youtube,
   Instagram,
@@ -9,27 +10,73 @@ import {
 
 export default function ContactFooter() {
   const socialLinks = [
+    { icon: <Youtube size={20} />,   href: "https://www.youtube.com/@kraftykinni",    label: "YouTube" },
+    { icon: <Instagram size={20} />, href: "https://www.instagram.com/kraftykinni",   label: "Instagram" },
+    { icon: <Linkedin size={20} />,  href: "https://www.linkedin.com/in/kraftykinni/", label: "LinkedIn" },
+    { icon: <Pinterest size={20} />, href: "https://in.pinterest.com/KraftyKinni/",   label: "Pinterest" },
+  ];
+
+  // Site pages — shown in footer so every page is reachable from anywhere
+  const siteLinks = [
     {
-      icon: <Youtube size={20} />,
-      href: "https://www.youtube.com/@kraftykinni",
-      label: "YouTube",
+      heading: "Workshops",
+      links: [
+        { label: "All Workshops",          to: "/#workshops" },
+        { label: "Corporate Workshops",    to: "/corporate-art-workshops" },
+        { label: "School Workshops",       to: "/school-workshops" },
+        { label: "Lippan Art",             to: "/workshops/lippan-art" },
+        { label: "Mandala Art",            to: "/workshops/mandala-art" },
+        { label: "Tie & Dye",             to: "/workshops/tie-and-dye" },
+        { label: "Boho Canvas Art",        to: "/workshops/boho-canvas" },
+        { label: "Block Printing",         to: "/workshops/block-printing" },
+        { label: "Clay Art",               to: "/workshops/clay-art" },
+        { label: "Glass Painting",         to: "/workshops/glass-painting" },
+        { label: "Tote Bag Painting",      to: "/workshops/tote-bag-painting" },
+        { label: "Texture Art",            to: "/workshops/texture-art" },
+        { label: "Bottle Lamp Art",        to: "/workshops/bottle-lamp-art" },
+        { label: "MDF Fridge Magnet",      to: "/workshops/mdf-fridge-magnet" },
+        { label: "Trinket Tray Painting",  to: "/workshops/trinket-tray" },
+        { label: "Canvas Pouch Painting",  to: "/workshops/canvas-pouch" },
+      ],
     },
     {
-      icon: <Instagram size={20} />,
-      href: "https://www.instagram.com/kraftykinni",
-      label: "Instagram",
+      heading: "Locations",
+      links: [
+        { label: "Workshops in Delhi",   to: "/workshops-in-delhi" },
+        { label: "Workshops in Gurgaon", to: "/workshops-in-gurgaon" },
+        { label: "Workshops in Noida",   to: "/workshops-in-noida" },
+      ],
     },
     {
-      icon: <Linkedin size={20} />,
-      href: "https://www.linkedin.com/in/kraftykinni/",
-      label: "LinkedIn",
-    },
-    {
-      icon: <Pinterest size={20} />,
-      href: "https://in.pinterest.com/KraftyKinni/",
-      label: "Pinterest",
+      heading: "Company",
+      links: [
+        { label: "About Kraftykinni", to: "/#about" },
+        { label: "Testimonials",      to: "/#testimonials" },
+        { label: "Pricing",           to: "/#pricing" },
+        { label: "FAQ",               to: "/#faq" },
+        { label: "Contact",           to: "/#contact" },
+      ],
     },
   ];
+
+  // Helper: handle anchor hash links (/#about, /#contact etc.)
+  function handleFooterLink(e: React.MouseEvent<HTMLAnchorElement>, to: string) {
+    if (!to.startsWith('/#')) return; // let React Router handle non-hash links
+    e.preventDefault();
+    const id = to.replace('/#', '');
+    // If already on homepage, scroll directly
+    if (window.location.pathname === '/') {
+      const el = document.getElementById(id);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    } else {
+      // Store scroll target, navigate to homepage — Navbar useEffect handles the scroll
+      sessionStorage.setItem('scrollTarget', id);
+      window.location.href = '/';
+    }
+  }
 
   return (
     <footer
@@ -53,12 +100,10 @@ export default function ContactFooter() {
             className="flex flex-col"
           >
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
-              Let's Create{" "}
-              <span className="text-brand-pink italic">Together</span>
+              Let's Create <span className="text-brand-pink italic">Together</span>
             </h2>
             <p className="text-gray-300 font-light leading-relaxed mb-12 max-w-md text-lg">
-              Ready to host a memorable creative experience? Fill out the form
-              and we'll get back to you with a customised proposal.
+              Ready to host a memorable creative experience? Fill out the form and we'll get back to you with a customised proposal.
             </p>
 
             <div className="space-y-6 mb-12">
@@ -67,13 +112,8 @@ export default function ContactFooter() {
                   <Send size={20} />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">
-                    Email Us
-                  </h4>
-                  <a
-                    href="mailto:kraftykinni@gmail.com"
-                    className="text-lg font-medium hover:text-brand-pink transition-colors"
-                  >
+                  <h4 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">Email Us</h4>
+                  <a href="mailto:kraftykinni@gmail.com" className="text-lg font-medium hover:text-brand-pink transition-colors">
                     kraftykinni@gmail.com
                   </a>
                 </div>
@@ -104,80 +144,28 @@ export default function ContactFooter() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl text-brand-charcoal"
           >
-            <form
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              className="space-y-6"
-            >
-              <input
-                type="hidden"
-                name="access_key"
-                value="1685ee1e-ebc1-4b36-92fd-647947482d76"
-              />
+            <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
+              <input type="hidden" name="access_key" value="1685ee1e-ebc1-4b36-92fd-647947482d76" />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite"
-                    placeholder="Your Name"
-                  />
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                  <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite" placeholder="Your Name" />
                 </div>
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite"
-                    placeholder="your@email.com"
-                  />
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite" placeholder="your@email.com" />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite"
-                    placeholder="+91 98765 43210"
-                  />
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                  <input type="tel" id="phone" name="phone" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite" placeholder="+91 98765 43210" />
                 </div>
                 <div>
-                  <label
-                    htmlFor="groupSize"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Group Size
-                  </label>
-                  <select
-                    id="groupSize"
-                    name="groupSize"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600"
-                  >
+                  <label htmlFor="groupSize" className="block text-sm font-medium text-gray-700 mb-2">Group Size</label>
+                  <select id="groupSize" name="groupSize" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600">
                     <option value="">Select Size</option>
                     <option value="20-50">20 - 50 pax</option>
                     <option value="50-100">50 - 100 pax</option>
@@ -188,89 +176,72 @@ export default function ContactFooter() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label
-                    htmlFor="date"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Preferred Date
-                  </label>
-                  <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600"
-                  />
+                  <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+                  <input type="date" id="date" name="date" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600" />
                 </div>
                 <div>
-                  <label
-                    htmlFor="workshop"
-                    className="block text-sm font-medium text-gray-700 mb-2"
-                  >
-                    Workshop Interest
-                  </label>
-                  <select
-                    id="workshop"
-                    name="workshop"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600"
-                  >
+                  <label htmlFor="workshop" className="block text-sm font-medium text-gray-700 mb-2">Workshop Interest</label>
+                  <select id="workshop" name="workshop" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600">
                     <option value="">Select Workshop</option>
-                    <option value="Boho Canvas Art">Boho Canvas Art</option>
-                    <option value="Bottle Lamp Art">Bottle Lamp Art</option>
-                    <option value="Lippan Art">Lippan Art</option>
-                    <option value="Tie & Dye">Tie & Dye</option>
-                    <option value="Trinket Tray Painting">
-                      Trinket Tray Painting
-                    </option>
-                    <option value="Mandala Art">Mandala Art</option>
-                    <option value="Block Printing">Block Printing</option>
-                    <option value="Clay Art">Clay Art</option>
-                    <option value="MDF Fridge Magnet">MDF Fridge Magnet</option>
-                    <option value="Glass Painting">Glass Painting</option>
-                    <option value="Texture Art">Texture Art</option>
-                    <option value="Tote Bag Painting">Tote Bag Painting</option>
-                    <option value="Canvas Pouch Painting">
-                      Canvas Pouch Painting
-                    </option>
-                    <option value="Not Sure Yet">Not Sure Yet</option>
+                    <option>Boho Canvas Art</option>
+                    <option>Bottle Lamp Art</option>
+                    <option>Lippan Art</option>
+                    <option>Tie &amp; Dye</option>
+                    <option>Trinket Tray Painting</option>
+                    <option>Mandala Art</option>
+                    <option>Block Printing</option>
+                    <option>Clay Art</option>
+                    <option>MDF Fridge Magnet</option>
+                    <option>Glass Painting</option>
+                    <option>Texture Art</option>
+                    <option>Tote Bag Painting</option>
+                    <option>Canvas Pouch Painting</option>
+                    <option>Not Sure Yet</option>
                   </select>
                 </div>
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-2"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite resize-none"
-                  placeholder="Tell us more about your event..."
-                ></textarea>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite resize-none" placeholder="Tell us more about your event..."></textarea>
               </div>
 
-              <button
-                type="submit"
-                className="w-full bg-brand-pink hover:bg-brand-pink-light text-white px-8 py-4 rounded-xl text-base font-medium transition-all hover:shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2"
-              >
+              <button type="submit" className="w-full bg-brand-pink hover:bg-brand-pink-light text-white px-8 py-4 rounded-xl text-base font-medium transition-all hover:shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
                 Send Request <Send size={18} />
               </button>
             </form>
           </motion.div>
         </div>
 
-        {/* Footer Bottom */}
+        {/* ── Site navigation — all pages accessible from here ── */}
+        <div className="border-t border-white/10 pt-12 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {siteLinks.map((col) => (
+              <div key={col.heading}>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">{col.heading}</h4>
+                <ul className="space-y-2">
+                  {col.links.map((link) => (
+                    <li key={link.label}>
+                      <Link
+                        to={link.to.startsWith('/#') ? '/' : link.to}
+                        onClick={(e) => handleFooterLink(e as any, link.to)}
+                        className="text-sm text-gray-400 hover:text-white transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Footer bottom */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-brand-pink rounded-full flex items-center justify-center text-white font-serif font-bold text-sm">
-              K
-            </div>
-            <span className="font-serif font-bold text-xl tracking-tight text-white">
-              Kraftykinni
-            </span>
+            <div className="w-8 h-8 bg-brand-pink rounded-full flex items-center justify-center text-white font-serif font-bold text-sm">K</div>
+            <span className="font-serif font-bold text-xl tracking-tight text-white">Kraftykinni</span>
           </div>
           <p className="text-gray-400 text-sm font-light">
             &copy; {new Date().getFullYear()} Kraftykinni. All rights reserved.

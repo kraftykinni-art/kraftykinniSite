@@ -14,20 +14,18 @@ export default function App() {
     <div className="min-h-screen bg-brand-offwhite font-sans text-brand-charcoal selection:bg-brand-pink/20 selection:text-brand-pink">
       <Navbar />
       <Routes>
-        {/* Homepage — all existing sections intact */}
+        {/* Homepage */}
         <Route path="/" element={<HomePage />} />
 
         {/* Audience pages */}
         <Route path="/corporate-art-workshops" element={<CorporateWorkshopsPage />} />
         <Route path="/school-workshops" element={<SchoolWorkshopsPage />} />
 
-        {/* Individual workshop pages — one template, 13 URLs */}
+        {/* Individual workshop pages */}
         <Route path="/workshops/:id" element={<WorkshopDetailPage />} />
 
-        {/* Location pages — one template, 3 URLs */}
-        <Route path="/workshops-in-delhi" element={<LocationPage />} />
-        <Route path="/workshops-in-gurgaon" element={<LocationPage />} />
-        <Route path="/workshops-in-noida" element={<LocationPage />} />
+        {/* Location pages — :location param lets LocationPage know which city */}
+        <Route path="/:location" element={<LocationPage />} />
 
         {/* 404 */}
         <Route path="*" element={<NotFoundPage />} />

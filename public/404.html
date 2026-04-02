@@ -4,16 +4,13 @@
     <meta charset="utf-8">
     <title>Kraftykinni</title>
     <script>
-      // GitHub Pages serves this 404.html when a URL doesn't match a file.
-      // This script redirects back to index.html with the path as a query param,
-      // then index.html's script reads it and restores the URL for React Router.
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/' +
-        '?p=/' + l.pathname.slice(1).replace(/&/g, '~and~') +
-        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // GitHub Pages SPA routing fix.
+      // When GitHub Pages 404s on a deep URL like /workshops/lippan-art,
+      // it serves this file. We save the intended path to sessionStorage,
+      // then redirect to the root. index.html reads it back and restores
+      // the URL so React Router renders the correct page.
+      sessionStorage.setItem('redirect', window.location.pathname + window.location.search + window.location.hash);
+      window.location.replace('/');
     </script>
   </head>
   <body></body>

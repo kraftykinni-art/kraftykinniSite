@@ -4,6 +4,14 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/Logo.jpeg';
 
+// Smooth scroll to a section by id, with navbar offset
+function scrollToSection(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.scrollY - 80;
+  window.scrollTo({ top, behavior: 'smooth' });
+}
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,50 +24,49 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // When route changes, close mobile menu
+  // Close mobile menu on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
+  // After navigating to '/', check if we need to scroll to a section.
+  // We store the target in sessionStorage so it survives the navigation.
+  useEffect(() => {
+    if (location.pathname === '/') {
+      const target = sessionStorage.getItem('scrollTarget');
+      if (target) {
+        sessionStorage.removeItem('scrollTarget');
+        // Wait one frame for React to finish rendering the homepage
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => scrollToSection(target));
+        });
+      }
+    }
+  }, [location.pathname]);
+
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Workshops', href: '#workshops' },
+    { name: 'About',        href: '#about' },
+    { name: 'Workshops',    href: '#workshops' },
     { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'FAQ', href: '#faq' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Pricing',      href: '#pricing' },
+    { name: 'FAQ',          href: '#faq' },
+    { name: 'Contact',      href: '#contact' },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);
 
-    const hash = href.replace('#', '');
+    const sectionId = href.replace('#', '');
 
     if (location.pathname === '/') {
-      // Already on homepage — just scroll
-      if (!hash) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        return;
-      }
-      const element = document.getElementById(hash);
-      if (element) {
-        setTimeout(() => {
-          const offsetPosition = element.getBoundingClientRect().top + window.scrollY - 80;
-          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-        }, 50);
-      }
+      // Already on homepage — scroll directly
+      if (!sectionId) { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+      scrollToSection(sectionId);
     } else {
-      // On another page — navigate to homepage then scroll
+      // On another page — store target, navigate home, scroll happens in useEffect
+      sessionStorage.setItem('scrollTarget', sectionId);
       navigate('/');
-      setTimeout(() => {
-        if (!hash) return;
-        const element = document.getElementById(hash);
-        if (element) {
-          const offsetPosition = element.getBoundingClientRect().top + window.scrollY - 80;
-          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-        }
-      }, 300);
     }
   };
 
@@ -75,15 +82,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
 
-          {/* Logo — always goes to homepage */}
           <Link to="/" className="flex items-center gap-2">
             <img src={logo} alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
-            <span className="font-serif font-bold text-2xl tracking-tight text-brand-slate">
-              Kraftykinni
-            </span>
+            <span className="font-serif font-bold text-2xl tracking-tight text-brand-slate">Kraftykinni</span>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -104,7 +108,6 @@ export default function Navbar() {
             </a>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 text-brand-charcoal"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -115,7 +118,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile nav */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
