@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/Logo.jpeg';
@@ -6,14 +7,19 @@ import logo from '../assets/Logo.jpeg';
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // When route changes, close mobile menu
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
 
   const navLinks = [
     { name: 'About', href: '#about' },
@@ -27,26 +33,33 @@ export default function Navbar() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);
-    
-    if (href === '#') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
 
-    const targetId = href.replace('#', '');
-    const element = document.getElementById(targetId);
-    if (element) {
-      // Small delay for mobile menu to start closing before calculating position
+    const hash = href.replace('#', '');
+
+    if (location.pathname === '/') {
+      // Already on homepage — just scroll
+      if (!hash) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+      const element = document.getElementById(hash);
+      if (element) {
+        setTimeout(() => {
+          const offsetPosition = element.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }, 50);
+      }
+    } else {
+      // On another page — navigate to homepage then scroll
+      navigate('/');
       setTimeout(() => {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }, 50);
+        if (!hash) return;
+        const element = document.getElementById(hash);
+        if (element) {
+          const offsetPosition = element.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }, 300);
     }
   };
 
@@ -61,13 +74,14 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <a href="#" onClick={(e) => handleNavClick(e, '#')} className="flex items-center gap-2">
+
+          {/* Logo — always goes to homepage */}
+          <Link to="/" className="flex items-center gap-2">
             <img src={logo} alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
             <span className="font-serif font-bold text-2xl tracking-tight text-brand-slate">
               Kraftykinni
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
@@ -94,6 +108,7 @@ export default function Navbar() {
           <button
             className="md:hidden p-2 text-brand-charcoal"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle navigation"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
