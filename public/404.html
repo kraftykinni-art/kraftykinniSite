@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kraftykinni</title>
+    <!--
+      This file only serves as a fallback for URLs that were NOT pre-rendered
+      (e.g. future pages added before the next build). Pre-rendered pages have
+      their own index.html and will never hit this 404.html.
+
+      noindex ensures Google does not index this redirect stub.
+    -->
+    <meta name="robots" content="noindex, nofollow">
     <script>
-      // GitHub Pages SPA routing fix.
-      // When GitHub Pages 404s on a deep URL like /workshops/lippan-art,
-      // it serves this file. We save the intended path to sessionStorage,
-      // then redirect to the root. index.html reads it back and restores
-      // the URL so React Router renders the correct page.
-      sessionStorage.setItem('redirect', window.location.pathname + window.location.search + window.location.hash);
+      // GitHub Pages SPA routing fallback.
+      // Saves the intended deep URL and redirects to / so React Router can
+      // restore it client-side. Only reached if a route has no pre-rendered file.
+      var dest = window.location.pathname + window.location.search + window.location.hash;
+      try { sessionStorage.setItem('redirect', dest); } catch(e) {}
       window.location.replace('/');
     </script>
   </head>
-  <body></body>
+  <body>
+    <noscript>
+      <p>Redirecting… <a href="/">Go to Kraftykinni homepage</a></p>
+    </noscript>
+  </body>
 </html>

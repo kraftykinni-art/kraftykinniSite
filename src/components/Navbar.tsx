@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/Logo.jpeg';
+import logo from '../assets/Logo.webp';
 
 // Smooth scroll to a section by id, with navbar offset
 function scrollToSection(id: string) {
@@ -83,7 +83,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
 
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" />
+            <img src={logo} alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" loading="eager" decoding="async" />
             <span className="font-serif font-bold text-2xl tracking-tight text-brand-slate">Kraftykinni</span>
           </Link>
 
@@ -99,6 +99,13 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+            {/* Real page links — crawlable by Googlebot, no JS required */}
+            <Link to="/corporate-art-workshops" className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
+              Corporate
+            </Link>
+            <Link to="/about" className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
+              About
+            </Link>
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
@@ -138,6 +145,16 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
+              {/* Real page links — crawlable */}
+              <Link to="/corporate-art-workshops" className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
+                Corporate Workshops
+              </Link>
+              <Link to="/school-workshops" className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
+                School Workshops
+              </Link>
+              <Link to="/about" className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
+                About
+              </Link>
               <a
                 href="#contact"
                 onClick={(e) => handleNavClick(e, '#contact')}

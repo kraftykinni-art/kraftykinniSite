@@ -33,7 +33,7 @@ export default function WorkshopDetailPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
-      { '@type': 'ListItem', position: 2, name: 'Workshops', item: 'https://kraftykinni.in/#workshops' },
+      { '@type': 'ListItem', position: 2, name: 'Workshops', item: 'https://kraftykinni.in/corporate-art-workshops' },
       { '@type': 'ListItem', position: 3, name: workshop.title, item: canonical },
     ],
   };
@@ -45,9 +45,17 @@ export default function WorkshopDetailPage() {
         <meta name="description" content={workshop.metaDescription} />
         <meta name="keywords" content={workshop.keywords.join(', ')} />
         <link rel="canonical" href={canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:title" content={`${workshop.pageHeadline} | Kraftykinni`} />
         <meta property="og:description" content={workshop.metaDescription} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta property="og:locale" content="en_IN" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`${workshop.pageHeadline} | Kraftykinni`} />
+        <meta name="twitter:description" content={workshop.metaDescription} />
+        <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
@@ -59,7 +67,7 @@ export default function WorkshopDetailPage() {
           <nav className="flex items-center gap-2 text-sm text-gray-400 flex-wrap" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-brand-pink transition-colors">Home</Link>
             <span>/</span>
-            <button onClick={() => { sessionStorage.setItem('scrollTarget', 'workshops'); window.location.href = '/'; }} className="hover:text-brand-pink transition-colors cursor-pointer bg-transparent border-0 p-0 text-gray-400 text-sm">Workshops</button>
+            <Link to="/corporate-art-workshops" className="hover:text-brand-pink transition-colors">Workshops</Link>
             <span>/</span>
             <span className="text-brand-charcoal font-medium">{workshop.title}</span>
           </nav>
@@ -72,7 +80,7 @@ export default function WorkshopDetailPage() {
 
               <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }}
                 className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] lg:sticky lg:top-28">
-                <img src={workshop.image} alt={`${workshop.title} workshop in Delhi NCR — conducted by Kraftykinni`} className="w-full h-full object-cover" />
+                <img src={workshop.image} alt={`${workshop.title} workshop in Delhi NCR — conducted by Kraftykinni`} className="w-full h-full object-cover" fetchPriority="high" loading="eager" decoding="async" />
               </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="flex flex-col">
@@ -197,7 +205,7 @@ export default function WorkshopDetailPage() {
                 <Link key={w.id} to={`/workshops/${w.id}`}
                   className="group block bg-brand-offwhite rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all">
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img src={w.image} alt={`${w.title} workshop Delhi NCR`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={w.image} alt={`${w.title} workshop Delhi NCR`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
                   </div>
                   <div className="p-4">
                     <p className="font-serif font-bold text-brand-slate text-sm mb-1">{w.title}</p>
@@ -208,7 +216,7 @@ export default function WorkshopDetailPage() {
             </div>
             <div className="text-center mt-8">
               <Link to="/corporate-art-workshops" className="inline-flex items-center gap-2 text-brand-pink font-medium hover:underline underline-offset-4 text-sm">
-                View all 13 workshops →
+                View all 13 workshop activities →
               </Link>
             </div>
           </div>

@@ -15,10 +15,42 @@ export default function SchoolWorkshopsPage() {
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="keywords" content="art workshop for schools Delhi NCR, craft workshop schools Delhi, school art activity Delhi, art day school workshop, art and craft for students Delhi NCR, school team activity Delhi" />
         <link rel="canonical" href={canonical} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta property="og:site_name" content="Kraftykinni" />
+        <meta property="og:locale" content="en_IN" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'Service',
+          name: 'Art Workshops for Schools & Colleges Delhi NCR',
+          description,
+          provider: { '@type': 'LocalBusiness', name: 'Kraftykinni', url: 'https://kraftykinni.in', telephone: '+919599622210', email: 'kraftykinni@gmail.com' },
+          areaServed: [{ '@type': 'City', name: 'Delhi' }, { '@type': 'City', name: 'Gurgaon' }, { '@type': 'City', name: 'Noida' }],
+          serviceType: 'School Art Workshop',
+          audience: { '@type': 'Audience', audienceType: 'Students, Schools, Colleges' },
+          offers: { '@type': 'AggregateOffer', lowPrice: '600', highPrice: '800', priceCurrency: 'INR', offerCount: '3' },
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
+            { '@type': 'ListItem', position: 2, name: 'School Workshops', item: canonical },
+          ],
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: 'What age groups are your school workshops suitable for?', acceptedAnswer: { '@type': 'Answer', text: 'Our workshops are designed for students from Grade 3 onwards through college level. Activities are adapted to the age group — simpler crafts for younger students, more detailed art forms for older groups.' } },
+            { '@type': 'Question', name: 'Can you come to our school for the workshop?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — we travel to your school anywhere in Delhi NCR. We bring all materials and set up before the session. You only need to provide tables, chairs, and the space.' } },
+            { '@type': 'Question', name: 'How many students can participate in one session?', acceptedAnswer: { '@type': 'Answer', text: 'We handle groups from 20 students up to full school assemblies of 200+. For very large groups we bring additional facilitators.' } },
+            { '@type': 'Question', name: 'Do students need any prior art experience?', acceptedAnswer: { '@type': 'Answer', text: 'No experience needed. Every workshop is step-by-step guided. All students, regardless of their art ability, create a finished piece to take home.' } },
+          ],
+        })}</script>
       </Helmet>
 
       <main className="pt-24 bg-brand-offwhite">
@@ -101,6 +133,8 @@ export default function SchoolWorkshopsPage() {
                         src={workshop.image}
                         alt={`${workshop.title} for school students Delhi NCR`}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="p-6">

@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Users, Palette, Award, CheckCircle } from 'lucide-react';
-import profileImg from '../assets/profile.jpeg';
+import profileImg from '../assets/profile.webp';
 
 export default function About() {
   const stats = [
@@ -25,8 +25,10 @@ export default function About() {
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative bg-gray-100">
               <img
                 src={profileImg}
-                alt="Shramita Govil"
+                alt="Shramita Govil — Fevicryl Certified Artist and founder of Kraftykinni"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>

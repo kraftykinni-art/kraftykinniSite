@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Link, useParams, Navigate } from 'react-router-dom';
+import { Link, useLocation, Navigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Sparkles, MapPin, ArrowRight } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
@@ -52,9 +52,11 @@ const slugToKey: Record<string, keyof typeof locationData> = {
 };
 
 export default function LocationPage() {
-  const { location: locationSlug } = useParams<{ location: string }>();
+  const { pathname } = useLocation();
   const bookNow = useBookNow();
-  const key = locationSlug ? slugToKey[locationSlug] : undefined;
+  // Strip leading slash to get the slug, e.g. "/workshops-in-delhi" → "workshops-in-delhi"
+  const locationSlug = pathname.replace(/^\//, '').replace(/\/$/, '');
+  const key = slugToKey[locationSlug];
   if (!key) return <Navigate to="/404" replace />;
 
   const loc = locationData[key];
@@ -70,6 +72,11 @@ export default function LocationPage() {
         <meta property="og:title" content={loc.metaTitle} />
         <meta property="og:description" content={loc.metaDescription} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta property="og:site_name" content="Kraftykinni" />
+        <meta property="og:locale" content="en_IN" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org', '@type': 'LocalBusiness',
           name: 'Kraftykinni', description: loc.metaDescription,
@@ -83,6 +90,15 @@ export default function LocationPage() {
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
             { '@type': 'ListItem', position: 2, name: `Art Workshops in ${loc.city}`, item: canonical },
+          ],
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'FAQPage',
+          mainEntity: [
+            { '@type': 'Question', name: `Do you conduct art workshops in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `Yes — Kraftykinni conducts art and DIY workshops across ${loc.city}, travelling to your office, school, or event venue with all materials included.` } },
+            { '@type': 'Question', name: `What art workshops are available in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `All 13 Kraftykinni signature activities are available in ${loc.city}: Lippan Art, Mandala Art, Tie & Dye, Boho Canvas Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, and Canvas Pouch Painting.` } },
+            { '@type': 'Question', name: `What is the cost of an art workshop in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100 participants, and ₹800 per person for groups of 20–50. All art materials are included.` } },
+            { '@type': 'Question', name: `How far in advance should I book a workshop in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `A minimum of 7 days advance notice is required to confirm a booking. A 50% deposit secures the date.` } },
           ],
         })}</script>
       </Helmet>
@@ -155,7 +171,7 @@ export default function LocationPage() {
                 <motion.div key={w.id} initial={{ opacity: 0, scale: 0.97 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-40px' }} transition={{ duration: 0.4, delay: i * 0.04 }}>
                   <Link to={`/workshops/${w.id}`} className="group block bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
                     <div className="aspect-[4/3] overflow-hidden">
-                      <img src={w.image} alt={`${w.title} workshop in ${loc.city}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                      <img src={w.image} alt={`${w.title} workshop in ${loc.city}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" />
                     </div>
                     <div className="p-6">
                       <h3 className="font-serif text-xl font-bold text-brand-slate mb-2">{w.title}</h3>

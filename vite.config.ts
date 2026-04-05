@@ -17,6 +17,23 @@ export default defineConfig(({mode}) => {
         '@': path.resolve(__dirname, '.'),
       },
     },
+    build: {
+      // Warn if any chunk exceeds 400KB
+      chunkSizeWarningLimit: 400,
+      rollupOptions: {
+        output: {
+          // Split vendor libraries into separate chunks so they can be cached
+          // independently and don't block first paint with app code
+          manualChunks: {
+            'react-vendor':  ['react', 'react-dom', 'react-router-dom'],
+            'motion-vendor': ['motion'],
+            'ui-vendor':     ['lucide-react'],
+          },
+        },
+      },
+      // Inline tiny assets (< 4KB) as base64 — avoids extra HTTP requests
+      assetsInlineLimit: 4096,
+    },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modify—file watching is disabled to prevent flickering during agent edits.

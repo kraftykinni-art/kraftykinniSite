@@ -1,10 +1,10 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
-import bohoArt from '../assets/Boho Art.jpeg';
-import bottleArt from '../assets/Bottle art.jpg';
-import lippanArt from '../assets/Lippan Art.jpeg';
-import tieAndDye from '../assets/Tie And Dye.jpg';
+import bohoArt from '../assets/Boho Art.webp';
+import bottleArt from '../assets/Bottle art.webp';
+import lippanArt from '../assets/Lippan Art.webp';
+import tieAndDye from '../assets/Tie And Dye.webp';
 
 export default function Hero() {
   return (
@@ -74,16 +74,21 @@ export default function Hero() {
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
                     src={bohoArt}
-                    alt="Boho Canvas Art"
+                    alt="Boho Canvas Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                 </div>
                 <div className="h-1/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
                     src={bottleArt}
-                    alt="Bottle Lamp Art"
+                    alt="Bottle Lamp Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="eager"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                 </div>
@@ -92,16 +97,20 @@ export default function Hero() {
                 <div className="h-1/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
                     src={lippanArt}
-                    alt="Lippan Art"
+                    alt="Lippan Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="eager"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                 </div>
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
                     src={tieAndDye}
-                    alt="Tie & Dye"
+                    alt="Tie and Dye workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="eager"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                 </div>

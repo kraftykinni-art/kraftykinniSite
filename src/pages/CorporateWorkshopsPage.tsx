@@ -52,6 +52,11 @@ export default function CorporateWorkshopsPage() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta property="og:site_name" content="Kraftykinni" />
+        <meta property="og:locale" content="en_IN" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Service',
           name: 'Corporate Art Workshops Delhi NCR', description,
@@ -66,6 +71,14 @@ export default function CorporateWorkshopsPage() {
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
             { '@type': 'ListItem', position: 2, name: 'Corporate Art Workshops', item: canonical },
           ],
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'FAQPage',
+          mainEntity: corporateFaqs.map(({ q, a }) => ({
+            '@type': 'Question',
+            name: q,
+            acceptedAnswer: { '@type': 'Answer', text: a },
+          })),
         })}</script>
       </Helmet>
 
@@ -166,7 +179,7 @@ export default function CorporateWorkshopsPage() {
                 <motion.div key={w.id} initial={{ opacity: 0, scale: 0.97 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, margin: '-40px' }} transition={{ duration: 0.5, delay: i * 0.04 }}>
                   <Link to={`/workshops/${w.id}`} className="group block bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
                     <div className="aspect-[4/3] overflow-hidden relative">
-                      <img src={w.image} alt={`${w.title} corporate workshop Delhi NCR`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                      <img src={w.image} alt={`${w.title} corporate workshop Delhi NCR`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" decoding="async" />
                       <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-brand-slate">{w.category}</div>
                     </div>
                     <div className="p-6">
