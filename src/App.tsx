@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import WhatsAppButton from './components/WhatsAppButton';
+import ScrollToTop from './components/ScrollToTop';
 
 import HomePage from './pages/HomePage';
 import CorporateWorkshopsPage from './pages/CorporateWorkshopsPage';
@@ -13,6 +14,7 @@ import NotFoundPage from './pages/NotFoundPage';
 export default function App() {
   return (
     <div className="min-h-screen bg-brand-offwhite font-sans text-brand-charcoal selection:bg-brand-pink/20 selection:text-brand-pink">
+      <ScrollToTop />
       <Navbar />
       <Routes>
         {/* Homepage */}

@@ -36,10 +36,9 @@ export default function Navbar() {
       const target = sessionStorage.getItem('scrollTarget');
       if (target) {
         sessionStorage.removeItem('scrollTarget');
-        // Wait one frame for React to finish rendering the homepage
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => scrollToSection(target));
-        });
+        // Small timeout ensures React has painted the homepage before we scroll
+        const timer = setTimeout(() => scrollToSection(target), 100);
+        return () => clearTimeout(timer);
       }
     }
   }, [location.pathname]);

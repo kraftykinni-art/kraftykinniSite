@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Youtube,
   Instagram,
@@ -60,6 +60,8 @@ export default function ContactFooter() {
   ];
 
   // Helper: handle anchor hash links (/#about, /#contact etc.)
+  const navigate = useNavigate();
+
   function handleFooterLink(e: React.MouseEvent<HTMLAnchorElement>, to: string) {
     if (!to.startsWith('/#')) return; // let React Router handle non-hash links
     e.preventDefault();
@@ -72,9 +74,9 @@ export default function ContactFooter() {
         window.scrollTo({ top, behavior: 'smooth' });
       }
     } else {
-      // Store scroll target, navigate to homepage — Navbar useEffect handles the scroll
+      // Store scroll target, navigate via React Router (no full reload)
       sessionStorage.setItem('scrollTarget', id);
-      window.location.href = '/';
+      navigate('/');
     }
   }
 
