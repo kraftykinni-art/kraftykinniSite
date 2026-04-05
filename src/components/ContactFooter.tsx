@@ -165,7 +165,7 @@ export default function ContactFooter() {
             className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl text-brand-charcoal"
           >
             <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
-              <input type="hidden" name="access_key" value={import.meta.env.VITE_WEB3FORMS_KEY ?? '1685ee1e-ebc1-4b36-92fd-647947482d76'} />
+              <input type="hidden" name="access_key" value="1685ee1e-ebc1-4b36-92fd-647947482d76" />
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

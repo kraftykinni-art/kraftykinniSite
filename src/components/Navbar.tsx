@@ -45,7 +45,6 @@ export default function Navbar() {
   }, [location.pathname]);
 
   const navLinks = [
-    { name: 'About',        href: '#about' },
     { name: 'Workshops',    href: '#workshops' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Pricing',      href: '#pricing' },
