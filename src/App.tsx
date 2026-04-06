@@ -17,25 +17,14 @@ export default function App() {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        {/* Homepage */}
         <Route path="/" element={<HomePage />} />
-
-        {/* Audience pages */}
         <Route path="/corporate-art-workshops" element={<CorporateWorkshopsPage />} />
         <Route path="/school-workshops" element={<SchoolWorkshopsPage />} />
-
-        {/* About */}
         <Route path="/about" element={<AboutPage />} />
-
-        {/* Individual workshop pages */}
         <Route path="/workshops/:id" element={<WorkshopDetailPage />} />
-
-        {/* Location pages — explicit paths prevent /:location wildcard swallowing named routes */}
-        <Route path="/workshops-in-delhi"   element={<LocationPage />} />
+        <Route path="/workshops-in-delhi" element={<LocationPage />} />
         <Route path="/workshops-in-gurgaon" element={<LocationPage />} />
-        <Route path="/workshops-in-noida"   element={<LocationPage />} />
-
-        {/* 404 */}
+        <Route path="/workshops-in-noida" element={<LocationPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />
