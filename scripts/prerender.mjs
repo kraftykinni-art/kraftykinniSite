@@ -38,102 +38,121 @@ const routes = [
     path: '/corporate-art-workshops',
     title: 'Corporate Art Workshops Delhi NCR | Team Building | Kraftykinni',
     description: 'Book corporate art & DIY workshops in Delhi NCR. Tie & Dye, Lippan Art, Mandala & more for 20–200+ participants. Fevicryl-certified artist. All materials included. ₹600–₹800/person.',
+    h1: 'Corporate Art Workshops in Delhi NCR',
   },
   {
     path: '/school-workshops',
     title: 'School Art Workshops Delhi NCR | Student Craft Sessions | Kraftykinni',
     description: 'Fun, guided art workshops for schools and colleges in Delhi NCR. 13 activities including Clay Art, Block Printing & Tote Bag Painting. All materials included. Led by Fevicryl-certified artist.',
+    h1: 'School Art Workshops in Delhi NCR',
   },
   {
     path: '/about',
     title: 'About Kraftykinni | Shramita Govil — Fevicryl Certified Artist Delhi NCR',
     description: 'Kraftykinni is led by Shramita Govil, a Fevicryl-certified artist with 50+ workshops and 1,500+ participants across Delhi NCR. Learn about our story, mission, and approach.',
+    h1: 'About Kraftykinni — Shramita Govil, Fevicryl Certified Artist',
   },
   {
     path: '/workshops/lippan-art',
     title: 'Lippan Art Workshop in Delhi NCR | Kraftykinni',
     description: 'Lippan Art workshop in Delhi NCR by Kraftykinni. Experience traditional Kutch mirror work in a guided group session. Corporate team building, schools & private events. All materials included. ₹600–₹800/person.',
+    h1: 'Lippan Art Workshop in Delhi NCR',
   },
   {
     path: '/workshops/mandala-art',
     title: 'Mandala Art Workshop in Delhi NCR | Kraftykinni',
     description: 'Mandala Art workshop in Delhi NCR by Kraftykinni. Meditative, stress-relieving mandala painting sessions for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
+    h1: 'Mandala Art Workshop in Delhi NCR',
   },
   {
     path: '/workshops/tie-and-dye',
     title: 'Tie & Dye Workshop in Delhi NCR | Kraftykinni',
     description: 'Tie & Dye workshop in Delhi NCR by Kraftykinni. High-energy fabric dyeing sessions for corporate teams, schools & private events. Wearable takeaway. All materials included. ₹600–₹800/person.',
+    h1: 'Tie & Dye Workshop in Delhi NCR',
   },
   {
     path: '/workshops/boho-canvas',
     title: 'Boho Canvas Art Workshop in Delhi NCR | Kraftykinni',
     description: 'Boho Canvas Art workshop in Delhi NCR by Kraftykinni. Guided abstract canvas painting sessions for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
+    h1: 'Boho Canvas Art Workshop in Delhi NCR',
   },
   {
     path: '/workshops/bottle-lamp-art',
     title: 'Bottle Lamp Art Workshop in Delhi NCR | Kraftykinni',
     description: 'Bottle Lamp Art workshop in Delhi NCR by Kraftykinni. Creative upcycling workshop — transform glass bottles into glowing lamps. Corporate & school sessions. All materials included.',
+    h1: 'Bottle Lamp Art Workshop in Delhi NCR',
   },
   {
     path: '/workshops/clay-art',
     title: 'Clay Art Workshop in Delhi NCR | Kraftykinni',
     description: 'Clay Art workshop in Delhi NCR by Kraftykinni. Hands-on clay sculpting sessions for corporate teams, schools & private events. All materials included. ₹600–₹800/person.',
+    h1: 'Clay Art Workshop in Delhi NCR',
   },
   {
     path: '/workshops/glass-painting',
     title: 'Glass Painting Workshop in Delhi NCR | Kraftykinni',
     description: 'Glass Painting workshop in Delhi NCR by Kraftykinni. Learn glass painting techniques in a guided group session. Corporate, school & private events. All materials included.',
+    h1: 'Glass Painting Workshop in Delhi NCR',
   },
   {
     path: '/workshops/texture-art',
     title: 'Texture Art Workshop in Delhi NCR | Kraftykinni',
     description: 'Texture Art workshop in Delhi NCR by Kraftykinni. Mixed-media layered canvas art sessions for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
+    h1: 'Texture Art Workshop in Delhi NCR',
   },
   {
     path: '/workshops/block-printing',
     title: 'Block Printing Workshop in Delhi NCR | Kraftykinni',
     description: 'Block Printing workshop in Delhi NCR by Kraftykinni. Learn traditional Indian block printing on fabric. Corporate & school sessions. All materials included. ₹600–₹800/person.',
+    h1: 'Block Printing Workshop in Delhi NCR',
   },
   {
     path: '/workshops/tote-bag-painting',
     title: 'Tote Bag Painting Workshop in Delhi NCR | Kraftykinni',
     description: 'Tote Bag Painting workshop in Delhi NCR by Kraftykinni. Eco-friendly fabric painting sessions for corporate teams, schools & events. Custom branding available. All materials included.',
+    h1: 'Tote Bag Painting Workshop in Delhi NCR',
   },
   {
     path: '/workshops/trinket-tray',
     title: 'Trinket Tray Painting Workshop in Delhi NCR | Kraftykinni',
     description: 'Trinket Tray Painting workshop in Delhi NCR by Kraftykinni. Paint your own decorative jewellery or desk tray. Corporate & school sessions. All materials included.',
+    h1: 'Trinket Tray Painting Workshop in Delhi NCR',
   },
   {
     path: '/workshops/mdf-fridge-magnet',
     title: 'MDF Fridge Magnet Painting Workshop in Delhi NCR | Kraftykinni',
     description: 'MDF Fridge Magnet painting workshop in Delhi NCR by Kraftykinni. Fun, quick craft activity for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
+    h1: 'MDF Fridge Magnet Painting Workshop in Delhi NCR',
   },
   {
     path: '/workshops/canvas-pouch',
     title: 'Canvas Pouch Painting Workshop in Delhi NCR | Kraftykinni',
     description: 'Canvas Pouch Painting workshop in Delhi NCR by Kraftykinni. Personalise your own canvas pouch with fabric paints. Corporate, school & private event sessions. All materials included.',
+    h1: 'Canvas Pouch Painting Workshop in Delhi NCR',
   },
   {
     path: '/workshops-in-delhi',
     title: 'Art Workshops in Delhi | Corporate & School Sessions | Kraftykinni',
     description: 'Kraftykinni conducts art and DIY workshops across Delhi — corporate team building, school sessions, and private events. 13 activities, all materials included. Led by Fevicryl-certified artist Shramita Govil. ₹600–₹800/person.',
+    h1: 'Art Workshops in Delhi',
   },
   {
     path: '/workshops-in-gurgaon',
     title: 'Art Workshops in Gurgaon | Corporate Team Building | Kraftykinni',
     description: 'Kraftykinni conducts corporate art workshops and team-building sessions in Gurgaon. Office visits, off-site events, school sessions. 13 activities, all materials included. ₹600–₹800/person.',
+    h1: 'Art Workshops in Gurgaon',
   },
   {
     path: '/workshops-in-noida',
     title: 'Art Workshops in Noida | Corporate & School Sessions | Kraftykinni',
     description: 'Kraftykinni conducts art and DIY workshops in Noida and Greater Noida — corporate team building, school sessions, and private events. All materials included. ₹600–₹800/person.',
+    h1: 'Art Workshops in Noida',
   },
 ];
 
 // ─── HTML injection helper ────────────────────────────────────────────────────
 
-function injectMeta(html, { path: routePath, title, description }) {
+function injectMeta(html, { path: routePath, title, description, h1 }) {
   const canonical = `https://kraftykinni.in${routePath}`;
 
   html = html.replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`);
@@ -144,6 +163,15 @@ function injectMeta(html, { path: routePath, title, description }) {
   html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta property="og:url" content="${canonical}">`);
   html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta name="twitter:title" content="${title}">`);
   html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta name="twitter:description" content="${description}">`);
+
+  // Inject visually-hidden H1 so crawlers see it without executing JavaScript
+  if (h1) {
+    html = html.replace(
+      '<div id="root">',
+      `<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">${h1}</h1>
+    <div id="root">`
+    );
+  }
 
   return html;
 }
