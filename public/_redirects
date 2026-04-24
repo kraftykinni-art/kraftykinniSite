@@ -1,0 +1,23 @@
+# Kraftykinni — Trailing slash 301 redirects
+# Prevents GSC from indexing /page/ and /page as separate URLs
+# Each trailing-slash URL redirects to the canonical non-slash version
+
+/corporate-art-workshops/   /corporate-art-workshops   301
+/school-workshops/          /school-workshops           301
+/about/                     /about                      301
+/workshops/lippan-art/      /workshops/lippan-art       301
+/workshops/mandala-art/     /workshops/mandala-art      301
+/workshops/tie-and-dye/     /workshops/tie-and-dye      301
+/workshops/boho-canvas/     /workshops/boho-canvas      301
+/workshops/bottle-lamp-art/ /workshops/bottle-lamp-art  301
+/workshops/block-printing/  /workshops/block-printing   301
+/workshops/clay-art/        /workshops/clay-art         301
+/workshops/glass-painting/  /workshops/glass-painting   301
+/workshops/texture-art/     /workshops/texture-art      301
+/workshops/tote-bag-painting/ /workshops/tote-bag-painting 301
+/workshops/trinket-tray/    /workshops/trinket-tray     301
+/workshops/mdf-fridge-magnet/ /workshops/mdf-fridge-magnet 301
+/workshops/canvas-pouch/    /workshops/canvas-pouch     301
+/workshops-in-delhi/        /workshops-in-delhi         301
+/workshops-in-gurgaon/      /workshops-in-gurgaon       301
+/workshops-in-noida/        /workshops-in-noida         301
