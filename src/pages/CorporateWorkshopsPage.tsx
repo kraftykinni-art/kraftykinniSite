@@ -38,7 +38,7 @@ const corporateFaqs = [
 export default function CorporateWorkshopsPage() {
   const bookNow = useBookNow();
 
-  const title = 'Corporate Art Workshops in Delhi NCR | Team Building | Kraftykinni';
+  const title = 'Corporate Art Workshops Delhi NCR — ₹600/person · All Materials | Kraftykinni';
   const description = 'Kraftykinni offers hands-on corporate art workshops for teams of 20–200+ across Delhi, Gurgaon & Noida. 13 activities from ₹600/person. All materials included. Led by Fevicryl-certified artist Shramita Govil. Book today.';
   const canonical = 'https://kraftykinni.in/corporate-art-workshops';
 
@@ -52,11 +52,14 @@ export default function CorporateWorkshopsPage() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta property="og:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Corporate art workshop in progress — teams painting together at Kraftykinni" />
         <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:locale" content="en_IN" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://kraftykinni.in/og-corporate.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Service',
           name: 'Corporate Art Workshops Delhi NCR', description,

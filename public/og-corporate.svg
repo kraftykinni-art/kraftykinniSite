@@ -1,0 +1,115 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Warm off-white background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F3EEE8;stop-opacity:1" />
+    </linearGradient>
+    <!-- Pink accent gradient -->
+    <linearGradient id="pinkBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D23855;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF5E8A;stop-opacity:1" />
+    </linearGradient>
+    <!-- Subtle texture overlay circles -->
+    <radialGradient id="circle1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#D23855;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#D23855;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="circle2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF5E8A;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#FF5E8A;stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#D23855" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Decorative large circles -->
+  <circle cx="980" cy="130" r="300" fill="url(#circle1)" />
+  <circle cx="220" cy="520" r="240" fill="url(#circle2)" />
+
+  <!-- Left pink accent bar -->
+  <rect x="0" y="0" width="12" height="630" fill="url(#pinkBar)" />
+
+  <!-- Bottom pink strip -->
+  <rect x="0" y="574" width="1200" height="56" fill="#D23855" />
+
+  <!-- Decorative brushstroke shape top-right -->
+  <ellipse cx="1090" cy="80" rx="180" ry="30" fill="#D23855" opacity="0.08" transform="rotate(-15 1090 80)" />
+  <ellipse cx="1060" cy="55" rx="120" ry="18" fill="#D23855" opacity="0.06" transform="rotate(-15 1060 55)" />
+
+  <!-- Small paint dot accents -->
+  <circle cx="72" cy="90" r="6" fill="#D23855" opacity="0.5"/>
+  <circle cx="92" cy="108" r="4" fill="#FF5E8A" opacity="0.4"/>
+  <circle cx="58" cy="115" r="3" fill="#D23855" opacity="0.3"/>
+
+  <circle cx="1140" cy="500" r="5" fill="#D23855" opacity="0.4"/>
+  <circle cx="1158" cy="484" r="3" fill="#FF5E8A" opacity="0.3"/>
+
+  <!-- ─── CATEGORY LABEL ─── -->
+  <rect x="72" y="66" width="220" height="32" rx="16" fill="#D23855" />
+  <text x="182" y="87" font-family="'Poppins', 'Arial', sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">CORPORATE WORKSHOPS</text>
+
+  <!-- ─── MAIN HEADLINE ─── -->
+  <!-- "Team Building" -->
+  <text x="72" y="178" font-family="'Georgia', 'Times New Roman', serif" font-size="74" font-weight="700" fill="#0F172A" letter-spacing="-1">Team Building</text>
+  <!-- "Through Art" in pink italic -->
+  <text x="72" y="262" font-family="'Georgia', 'Times New Roman', serif" font-size="74" font-weight="700" font-style="italic" fill="#D23855" letter-spacing="-1">Through Art.</text>
+
+  <!-- ─── SUBLINE ─── -->
+  <text x="72" y="318" font-family="'Arial', sans-serif" font-size="22" font-weight="400" fill="#1E293B" opacity="0.8">Hands-on art workshops for corporate teams across Delhi NCR</text>
+
+  <!-- ─── DIVIDER ─── -->
+  <rect x="72" y="346" width="80" height="3" rx="2" fill="#D23855" />
+
+  <!-- ─── STAT PILLS ─── -->
+  <!-- Pill 1: Price -->
+  <rect x="72" y="372" width="210" height="56" rx="28" fill="#D23855" filter="url(#shadow)" />
+  <text x="177" y="396" font-family="'Arial', sans-serif" font-size="11" font-weight="700" fill="#FFCDD8" text-anchor="middle" letter-spacing="1">STARTING FROM</text>
+  <text x="177" y="417" font-family="'Georgia', 'Times New Roman', serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">₹600 / person</text>
+
+  <!-- Pill 2: Materials -->
+  <rect x="296" y="372" width="210" height="56" rx="28" fill="#0F172A" />
+  <text x="401" y="396" font-family="'Arial', sans-serif" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="middle" letter-spacing="1">INCLUDES</text>
+  <text x="401" y="417" font-family="'Georgia', 'Times New Roman', serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">All Materials</text>
+
+  <!-- Pill 3: Activities -->
+  <rect x="520" y="372" width="190" height="56" rx="28" fill="#F3EEE8" stroke="#D23855" stroke-width="1.5" />
+  <text x="615" y="396" font-family="'Arial', sans-serif" font-size="11" font-weight="700" fill="#D23855" text-anchor="middle" letter-spacing="1">ACTIVITIES</text>
+  <text x="615" y="417" font-family="'Georgia', 'Times New Roman', serif" font-size="20" font-weight="700" fill="#0F172A" text-anchor="middle">13 to Choose</text>
+
+  <!-- ─── SOCIAL PROOF ─── -->
+  <text x="72" y="480" font-family="'Arial', sans-serif" font-size="16" fill="#1E293B" opacity="0.65">
+    <tspan>✦ 50+ workshops conducted</tspan>
+    <tspan dx="28">✦ 1,500+ participants</tspan>
+    <tspan dx="28">✦ Groups of 20–200+</tspan>
+  </text>
+
+  <!-- ─── BOTTOM STRIP CONTENT ─── -->
+  <!-- Left: URL -->
+  <text x="72" y="611" font-family="'Arial', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">kraftykinni.in/corporate-art-workshops</text>
+  <!-- Right: Fevicryl badge -->
+  <rect x="920" y="582" width="248" height="34" rx="5" fill="rgba(255,255,255,0.15)" />
+  <text x="1044" y="604" font-family="'Arial', sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.3">Fevicryl Certified Artist · Delhi NCR</text>
+
+  <!-- ─── RIGHT SIDE: Big K monogram ─── -->
+  <text x="940" y="440" font-family="'Georgia', 'Times New Roman', serif" font-size="340" font-weight="700" fill="#D23855" opacity="0.06" letter-spacing="-10">K</text>
+
+  <!-- Right decorative artwork icons (brush strokes) -->
+  <g transform="translate(860, 180) rotate(-12)">
+    <rect x="0" y="0" width="180" height="14" rx="7" fill="#D23855" opacity="0.12"/>
+  </g>
+  <g transform="translate(900, 220) rotate(-12)">
+    <rect x="0" y="0" width="120" height="10" rx="5" fill="#FF5E8A" opacity="0.1"/>
+  </g>
+  <g transform="translate(840, 260) rotate(-12)">
+    <rect x="0" y="0" width="200" height="8" rx="4" fill="#D23855" opacity="0.08"/>
+  </g>
+
+  <!-- Brand name top right -->
+  <text x="1128" y="92" font-family="'Georgia', 'Times New Roman', serif" font-size="18" font-weight="700" fill="#D23855" text-anchor="end" letter-spacing="1">Kraftykinni</text>
+  <text x="1128" y="112" font-family="'Arial', sans-serif" font-size="11" fill="#1E293B" text-anchor="end" opacity="0.5" letter-spacing="0.5">by Shramita Govil</text>
+</svg>
