@@ -113,6 +113,38 @@ const routes = [
     `,
   },
 
+  // ── Private art workshops ─────────────────────────────────────────────────
+  {
+    path: '/private-art-workshops',
+    title: 'Art Workshops for Private Events in Delhi NCR | Kraftykinni',
+    description: 'Art workshops for birthday parties, kitty parties, bachelorettes & baby showers in Delhi NCR. ₹600/person, all materials included. Led by a Fevicryl-certified artist. Book Kraftykinni.',
+    h1: 'Art Workshops for Private Celebrations in Delhi NCR',
+    bodyContent: `
+      <h1>Art Workshops for Private Celebrations in Delhi NCR</h1>
+      <p>Kraftykinni conducts hands-on art workshops for private events across Delhi, Gurgaon and Noida — including birthday parties, kitty parties, bachelorette parties, and baby showers. Every participant creates something real and takes it home. All materials are included. Sessions are led by Shramita Govil, Fevicryl-certified artist with 50+ workshops and 1,500+ happy participants.</p>
+      <h2>Private Events We Specialise In</h2>
+      <h3>Birthday Parties</h3>
+      <p>Art workshops are among the most memorable birthday party activities for adults in Delhi NCR. Guests create a unique piece of artwork — Boho Canvas, Glass Painting, or Lippan Art are most popular — and leave with a keepsake of the day. More personal and more social than a dinner or a bar.</p>
+      <h3>Kitty Parties</h3>
+      <p>Add something genuinely creative to your next kitty party. Art sessions are relaxed, social, and require no prior experience. Popular choices include Mandala Art, Trinket Tray Painting, and Canvas Pouch Painting.</p>
+      <h3>Bachelorette Parties</h3>
+      <p>A bachelorette the bride will remember. Each guest paints a personal keepsake — photogenic, creative, and unique. Boho Canvas and Tote Bag Painting are top choices for bachelorettes in Delhi NCR.</p>
+      <h3>Baby Showers</h3>
+      <p>Guests create a handmade gift for the parents-to-be. Clay Art and Canvas Pouch are particularly meaningful for baby shower sessions, adding warmth that standard party games cannot match.</p>
+      <h2>Why Kraftykinni for Private Events</h2>
+      <p>No experience needed — every session is step-by-step guided. We bring all supplies and set up before guests arrive. Every participant takes their finished artwork home. Flexible group sizes from 10 to 80+ participants. Fully customisable to your event theme and colour palette. We come to your home, venue, or café — anywhere in Delhi NCR. Starting at ₹600 per person, all materials inclusive.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Which art workshop is best for a birthday party in Delhi?</h3>
+      <p>Boho Canvas Art and Glass Painting are our most popular birthday party choices. Both produce beautiful, display-ready artwork that guests keep as a memory of the occasion.</p>
+      <h3>Can you conduct a workshop at my home or a private venue?</h3>
+      <p>Yes — we come to you. We travel anywhere in Delhi, Gurgaon, and Noida. We bring all supplies and set up before guests arrive. You only need tables, chairs, and adequate lighting.</p>
+      <h3>What is the minimum group size for a private art workshop?</h3>
+      <p>We accept bookings from groups of 10 upward for private events. Pricing stays at ₹600–₹800 per person inclusive of all materials.</p>
+      <h3>Do guests need any prior art experience?</h3>
+      <p>None at all. Every session is designed so that someone who has never held a paintbrush walks away with something genuinely beautiful.</p>
+    `,
+  },
+
   // ── About ────────────────────────────────────────────────────────────────
   {
     path: '/about',
@@ -320,6 +352,7 @@ const sitemapEntries = [
   { loc: '/',                              priority: '1.0', changefreq: 'monthly' },
   { loc: '/corporate-art-workshops',       priority: '0.9', changefreq: 'monthly' },
   { loc: '/school-workshops',              priority: '0.8', changefreq: 'monthly' },
+  { loc: '/private-art-workshops',         priority: '0.9', changefreq: 'monthly' },
   { loc: '/workshops/lippan-art',          priority: '0.8', changefreq: 'monthly' },
   { loc: '/workshops/mandala-art',         priority: '0.8', changefreq: 'monthly' },
   { loc: '/workshops/tie-and-dye',         priority: '0.8', changefreq: 'monthly' },

@@ -9,6 +9,7 @@ import WorkshopDetailPage from './pages/WorkshopDetailPage';
 import SchoolWorkshopsPage from './pages/SchoolWorkshopsPage';
 import LocationPage from './pages/LocationPage';
 import AboutPage from './pages/AboutPage';
+import PrivateWorkshopsPage from './pages/PrivateWorkshopsPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/corporate-art-workshops" element={<CorporateWorkshopsPage />} />
         <Route path="/school-workshops" element={<SchoolWorkshopsPage />} />
+        <Route path="/private-art-workshops" element={<PrivateWorkshopsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/workshops/:id" element={<WorkshopDetailPage />} />
         <Route path="/workshops-in-delhi" element={<LocationPage />} />

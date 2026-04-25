@@ -37,8 +37,8 @@ export default function Hero() {
             </motion.div>
 
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-brand-slate leading-tight mb-6">
-              Creative Art & <br />
-              <span className="text-brand-pink italic">DIY Workshops</span>
+              Art & DIY Workshops <br />
+              <span className="text-brand-pink italic">in Delhi NCR</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-lg leading-relaxed font-light">

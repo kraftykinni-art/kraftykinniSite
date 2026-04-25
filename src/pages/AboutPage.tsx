@@ -5,7 +5,7 @@ import ContactFooter from '../components/ContactFooter';
 export default function AboutPage() {
   const title = 'About Kraftykinni | Shramita Govil – Fevicryl Certified Artist, Delhi NCR';
   const description =
-    'Meet Shramita Govil, Fevicryl-certified artist and founder of Kraftykinni. 50+ workshops, 1500+ participants across Delhi, Gurgaon and Noida. Corporate, school and private art workshops.';
+    'Shramita Govil, Fevicryl-certified artist & founder of Kraftykinni. 50+ workshops, 1,500+ participants across Delhi NCR — corporate, school & private events.';
   const canonical = 'https://kraftykinni.in/about';
 
   const schema = {
