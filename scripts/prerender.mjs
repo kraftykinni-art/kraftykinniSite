@@ -47,6 +47,7 @@ const routes = [
     // Added pricing + social proof to compete with local-pack displacing clicks
     title: 'Corporate Art Workshops Delhi NCR — ₹600/person · 50+ Events | Kraftykinni',
     description: 'Guided art workshops for teams of 20–200+. Lippan, Tie & Dye, Mandala + 10 more. Zero prep for your team — we bring everything. Delhi · Gurgaon · Noida. Book now.',
+    ogImage: 'https://kraftykinni.in/og-corporate.jpg',
     h1: 'Corporate Art Workshops in Delhi NCR',
     bodyContent: `
       <h1>Corporate Art Workshops in Delhi NCR — Your Team Will Remember</h1>
@@ -286,7 +287,7 @@ const routes = [
 
 // ─── HTML injection helper ────────────────────────────────────────────────────
 
-function injectMeta(html, { path: routePath, title, description, h1, bodyContent }) {
+function injectMeta(html, { path: routePath, title, description, h1, bodyContent, ogImage }) {
   const canonical = `https://kraftykinni.in${routePath}`;
 
   // Update meta tags
@@ -298,6 +299,15 @@ function injectMeta(html, { path: routePath, title, description, h1, bodyContent
   html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta property="og:url" content="${canonical}">`);
   html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta name="twitter:title" content="${title}">`);
   html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta name="twitter:description" content="${description}">`);
+
+  // Update og:image / twitter:image if route specifies a custom image
+  if (ogImage) {
+    html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${ogImage}">`);
+    html = html.replace(/<meta property="og:image:width" content="[^"]*">/, `<meta property="og:image:width" content="1200">`);
+    html = html.replace(/<meta property="og:image:height" content="[^"]*">/, `<meta property="og:image:height" content="630">`);
+    html = html.replace(/<meta name="twitter:card" content="[^"]*">/, `<meta name="twitter:card" content="summary_large_image">`);
+    html = html.replace(/<meta name="twitter:image" content="[^"]*">/, `<meta name="twitter:image" content="${ogImage}">`);
+  }
 
   // Inject trailing-slash fix script into <head> (runs before React boots)
   html = html.replace('</head>', `  ${SLASH_FIX_SCRIPT}\n  </head>`);
