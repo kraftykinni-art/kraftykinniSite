@@ -98,6 +98,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A colourful, symmetric mandala artwork on canvas or paper — a beautiful piece to display or gift.',
     whoBenefits: 'Ideal for corporate wellness sessions, mental health awareness events, school art days, and team-building retreats.',
     keywords: ['mandala art workshop Delhi', 'mandala painting class Delhi NCR', 'mandala art corporate workshop', 'stress relief art workshop Delhi', 'mandala workshop team building'],
+    faq: [
+      {
+        q: 'What is Mandala Art?',
+        a: 'Mandala Art is the practice of creating symmetrical, circular geometric patterns — radiating outward from a central point using repeating shapes, dots, and colours. The word mandala comes from Sanskrit, meaning "circle." In our workshop, participants build their own mandala from the centre outward using dotting tools and brushes, guided step by step by Shramita.',
+      },
+      {
+        q: 'Is Mandala Art suitable for a corporate wellness session?',
+        a: 'Yes — it is one of our most requested corporate wellness activities. The repetitive, structured pattern-making quiets mental chatter and produces a measurable state of calm focus. Many HR teams book it specifically as a stress-relief activity during high-pressure periods like quarter-end or annual appraisal season.',
+      },
+      {
+        q: 'Do I need any art experience to participate?',
+        a: 'No experience is required. Shramita provides step-by-step guidance from the very first dot. The structured, symmetrical nature of mandala art means every participant produces a beautiful finished piece regardless of their artistic background.',
+      },
+      {
+        q: 'How long is the Mandala Art workshop?',
+        a: 'Sessions run for 1.5 to 2 hours, including a brief introduction to the art form, a guided demonstration, and hands-on creation time. The pace is relaxed — participants work at their own speed and finish at their own point of satisfaction.',
+      },
+      {
+        q: 'What do participants take home?',
+        a: 'Every participant completes and takes home a colourful, symmetric mandala on canvas or paper. It is display-ready and makes a beautiful piece for a home desk or wall.',
+      },
+      {
+        q: 'Can Mandala Art be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni accommodates groups of 20 to 200+ participants across Delhi, Gurgaon, and Noida. We conduct sessions at your venue and bring all materials. Online Mandala Art sessions with shipped kits are also available pan-India.',
+      },
+    ],
   },
   {
     id: 'tie-and-dye',
@@ -116,6 +142,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A one-of-a-kind tie-dye fabric item — t-shirt, tote bag, or dupatta — to wear and keep.',
     whoBenefits: 'Best for high-energy corporate events, college fests, team outings, and large group gatherings of 50 to 200+ people.',
     keywords: ['tie dye workshop Delhi', 'tie and dye class Delhi NCR', 'tie dye corporate workshop', 'fabric dyeing workshop Delhi', 'team building tie dye activity'],
+    faq: [
+      {
+        q: 'What is a Tie & Dye workshop?',
+        a: 'Tie & Dye is a fabric art technique where cloth is folded, twisted, or tied with rubber bands before being submerged in vibrant dye. The bound areas resist the dye, creating unique patterns when revealed. No two pieces ever turn out exactly the same — which is part of what makes it such a joyful, surprising experience.',
+      },
+      {
+        q: 'Is Tie & Dye a good activity for a large corporate event?',
+        a: 'It is one of the best high-energy activities for large groups. The workshop is hands-on, collaborative, and produces immediate, visible results that fill a room with energy and excitement. Kraftykinni can handle groups of 50 to 200+ participants simultaneously across Delhi, Gurgaon, and Noida.',
+      },
+      {
+        q: 'Do participants need any prior experience?',
+        a: 'No experience is needed at all. Shramita walks everyone through the folding, tying, and dyeing steps from the beginning. The process is intentionally forgiving — even "mistakes" in folding create beautiful patterns.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'Each participant completes and takes home a one-of-a-kind tie-dye fabric item — typically a cotton t-shirt, tote bag, or dupatta. Because it is wearable and usable, it becomes a daily reminder of the event long after the day is over.',
+      },
+      {
+        q: 'How long does a Tie & Dye session take?',
+        a: 'The session runs for 1.5 to 2 hours from introduction to finished item. This includes guidance on folding techniques, the dyeing process, and time for the dye to set before the reveal — which is always the most exciting moment.',
+      },
+      {
+        q: 'Are all materials provided?',
+        a: 'Yes — Kraftykinni provides everything: fabric items, fabric dyes, rubber bands, gloves, and protective covering for work surfaces. Participants just need to be ready to have fun. We recommend wearing clothes that can handle a splash of colour.',
+      },
+    ],
   },
   {
     id: 'boho-canvas',
@@ -134,6 +186,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A finished boho-style canvas painting in earthy, warm tones — ready to hang at home or gift.',
     whoBenefits: 'Popular choice for corporate team events, art days at schools and colleges, and private birthday or kitty parties.',
     keywords: ['canvas painting workshop Delhi', 'boho art workshop Delhi NCR', 'abstract painting class Delhi', 'canvas painting corporate activity', 'boho canvas workshop team building'],
+    faq: [
+      {
+        q: 'What is Boho Canvas Art?',
+        a: 'Boho Canvas Art is an abstract painting style using warm earthy tones — terracotta, ochre, cream, sage — layered with loose shapes, dried botanicals, and simple texture techniques. It looks sophisticated but requires no drawing skills, making it ideal for complete beginners who want a beautiful finished result.',
+      },
+      {
+        q: 'Do I need painting experience to join?',
+        a: 'No experience is needed. The boho style is intentionally free-form and forgiving — there are no strict rules about placement or precision. Shramita guides participants through colour choices and layering, and every canvas turns out uniquely beautiful.',
+      },
+      {
+        q: 'What materials are used in the workshop?',
+        a: 'Kraftykinni provides all materials: a stretched canvas, acrylic paints in a curated earthy palette, brushes of various sizes, palette knives, and optional texture elements like dried flowers or twine. Everything is included in the per-person price.',
+      },
+      {
+        q: 'How long does a Boho Canvas Art workshop take?',
+        a: 'Sessions run for 1.5 to 2 hours, covering a brief introduction to the style, a guided demonstration of layering and blending techniques, and hands-on creation time where participants paint their own canvas from start to finish.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A finished boho-style canvas painting in warm, earthy tones — unique to each participant. It is ready to hang at home, gift to someone, or display in an office. Many participants are genuinely surprised by how professional their canvas looks.',
+      },
+      {
+        q: 'Can Boho Canvas Art be booked for a corporate or private group?',
+        a: 'Yes — it is a popular choice for both corporate team events and private parties such as birthdays and kitty parties. Kraftykinni accommodates groups of 20 to 200+ at your venue across Delhi, Gurgaon, and Noida.',
+      },
+    ],
   },
   {
     id: 'bottle-lamp-art',
@@ -152,6 +230,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A hand-painted glass bottle lamp with fairy lights — a glowing, functional piece of home décor.',
     whoBenefits: 'Great for corporate gifting events, school craft days, private parties, and eco-themed corporate events.',
     keywords: ['bottle lamp art workshop Delhi', 'glass bottle art class', 'upcycling craft workshop Delhi NCR', 'creative workshop Delhi', 'bottle painting workshop'],
+    faq: [
+      {
+        q: 'What is the Bottle Lamp Art workshop?',
+        a: 'In the Bottle Lamp Art workshop, participants paint and decorate glass bottles using acrylic paints and mixed media, which are then fitted with fairy lights to create glowing home décor lamps. It combines creativity, sustainability (upcycling glass), and a dramatic reveal moment when the lights come on at the end.',
+      },
+      {
+        q: 'Is Bottle Lamp Art good for a corporate gifting event?',
+        a: 'It is one of our most popular choices for corporate gifting workshops. Every participant creates a unique, functional piece they can use at home — a lamp that reminds them of the event every time they switch it on. It also works beautifully as a branded activity for eco-themed corporate events.',
+      },
+      {
+        q: 'Do I need any art experience?',
+        a: 'No experience is required. Shramita guides participants through painting techniques suited to glass — from colour selection and brushwork to adding decorative elements. The results are consistently magical regardless of skill level.',
+      },
+      {
+        q: 'What materials are provided?',
+        a: 'Kraftykinni provides everything: the glass bottles, acrylic glass paints, brushes, decorative elements (glitter, twine, dried flowers), and fairy lights for the final lamp assembly. All materials are included in the per-person price.',
+      },
+      {
+        q: 'How long does the session take?',
+        a: 'The workshop runs for 1.5 to 2 hours, including the introduction, painting, decoration, and the final fairy-light fitting. The reveal — when participants switch their lamps on for the first time — is always the highlight of the session.',
+      },
+      {
+        q: 'Can this workshop be booked for a school or private party?',
+        a: 'Yes — Bottle Lamp Art works equally well for school craft days, birthday parties, bachelorette events, and kitty parties. It is especially popular at private events where the glowing lamps make for stunning photographs. Kraftykinni conducts sessions across Delhi, Gurgaon, and Noida.',
+      },
+    ],
   },
   {
     id: 'block-printing',
@@ -170,6 +274,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A block-printed fabric item — tote bag, dupatta, or fabric panel — in traditional or contemporary patterns.',
     whoBenefits: 'Excellent for corporate cultural events, school heritage days, college fests, and curated team-building sessions.',
     keywords: ['block printing workshop Delhi', 'traditional block printing class NCR', 'fabric printing workshop Delhi', 'block print corporate workshop', 'Indian craft workshop Delhi'],
+    faq: [
+      {
+        q: 'What is Block Printing?',
+        a: 'Block Printing is one of India\'s oldest textile traditions, originating in Rajasthan and Gujarat. Artisans carve patterns into wooden blocks, apply natural pigments, and stamp repeat designs onto fabric. In our workshop, participants learn this rhythmic technique hands-on, creating their own patterned fabric piece using carved wooden blocks and fabric colours.',
+      },
+      {
+        q: 'Is Block Printing good for a corporate cultural event?',
+        a: 'It is an excellent choice for corporate cultural heritage activities, especially for companies celebrating India\'s craft traditions or running diversity and inclusion events. The rhythmic stamping process is meditative and stress-relieving, making it equally popular as a corporate wellness activity.',
+      },
+      {
+        q: 'Do participants need any prior experience?',
+        a: 'No experience is needed. The technique is straightforward: apply ink to the block, press firmly, lift cleanly. Shramita demonstrates the process and guides participants through spacing, pattern repetition, and colour combinations. Beginners consistently produce beautiful results.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A block-printed fabric item — typically a tote bag, dupatta, or fabric panel — featuring the patterns they stamped during the session. The piece is functional, washable, and wearable.',
+      },
+      {
+        q: 'How long is the Block Printing workshop?',
+        a: 'Sessions run for 1.5 to 2 hours, covering a brief history of Indian block printing, a demonstration of the technique, and hands-on stamping time where participants create and complete their fabric piece.',
+      },
+      {
+        q: 'Can this be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts Block Printing workshops for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. We bring all materials including carved wooden blocks, fabric colours, printing pads, and fabric items to your venue.',
+      },
+    ],
   },
   {
     id: 'clay-art',
@@ -188,6 +318,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A handcrafted clay sculpture or functional object — air-dried and ready to take home.',
     whoBenefits: 'Ideal for corporate wellness days, school art sessions, stress management workshops, and mindfulness events.',
     keywords: ['clay art workshop Delhi', 'clay sculpting class Delhi NCR', 'pottery workshop Delhi', 'clay art corporate workshop', 'craft workshop Delhi NCR'],
+    faq: [
+      {
+        q: 'What happens in a Clay Art workshop?',
+        a: 'In the Clay Art workshop, participants use air-dry clay to sculpt small 3D objects — decorative bowls, figurines, jewellery holders, or fridge magnets. Shramita guides everyone through basic hand-building techniques including pinching, coiling, and surface texturing. No wheel or kiln is needed — the clay air-dries naturally at room temperature.',
+      },
+      {
+        q: 'Is Clay Art suitable for a corporate wellness event?',
+        a: 'Clay is one of the most tactilely grounding materials available — working with it engages the nervous system and reliably produces a state of calm focus. Many occupational therapists recommend clay work for stress relief, and corporate teams consistently report it as one of the most genuinely relaxing activities they\'ve experienced at a work event.',
+      },
+      {
+        q: 'Do participants need any sculpting experience?',
+        a: 'No experience at all. Shramita starts from the basics and guides everyone through each forming technique. The air-dry clay is forgiving — if something collapses or goes wrong, it can simply be reformed and tried again.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A handcrafted clay sculpture or functional object — air-dried and finished during the session. Items are typically ready to handle by the end of the workshop, and fully dry and displayable within 24 hours.',
+      },
+      {
+        q: 'How long does the Clay Art workshop last?',
+        a: 'Sessions run for 1.5 to 2 hours, covering an introduction to the clay and techniques, a guided demonstration, and hands-on sculpting time. The pace is gentle and unhurried — participants work at their own speed.',
+      },
+      {
+        q: 'Can Clay Art be booked for a large group?',
+        a: 'Yes — Kraftykinni conducts Clay Art sessions for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. All materials are provided and included in the per-person price. We also offer online Clay Art sessions with shipped clay kits for pan-India teams.',
+      },
+    ],
   },
   {
     id: 'glass-painting',
@@ -206,6 +362,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A hand-painted glass piece — a frame, bottle, or panel — with translucent painted designs.',
     whoBenefits: 'Popular at corporate events, school art days, and private parties where participants want a unique, display-worthy outcome.',
     keywords: ['glass painting workshop Delhi', 'glass art class Delhi NCR', 'glass painting corporate workshop', 'stained glass workshop Delhi', 'creative glass workshop NCR'],
+    faq: [
+      {
+        q: 'What is Glass Painting?',
+        a: 'Glass Painting is the art of applying translucent, specialised paints directly onto glass surfaces to create designs that glow beautifully when light passes through them. In our workshop, participants paint geometric, floral, or freehand patterns onto glass frames or panels using outliner pens and glass colours — the result resembles stained glass.',
+      },
+      {
+        q: 'Is Glass Painting a good corporate event activity?',
+        a: 'Yes — Glass Painting is a calm, focused activity that works well for smaller corporate teams, creative departments, or events where the mood is more relaxed and contemplative. It develops patience and precision, and the striking translucent results make a memorable keepsake.',
+      },
+      {
+        q: 'Do I need any art experience?',
+        a: 'No prior experience is needed. Shramita demonstrates how to use the outliner pen to create borders, and how to fill sections with glass paint without air bubbles. The technique is learned quickly, and the results are consistently impressive even for complete beginners.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A hand-painted glass piece — a frame, decorative panel, or small bottle — with translucent painted designs. When displayed on a windowsill or with a light behind it, the colours glow vividly.',
+      },
+      {
+        q: 'How long is the Glass Painting session?',
+        a: 'The workshop runs for 1.5 to 2 hours, covering a brief introduction to the medium, a step-by-step demonstration of the outliner and colour techniques, and hands-on painting time. Glass paint dries quickly, so pieces are ready to handle and carry home before the session ends.',
+      },
+      {
+        q: 'Can Glass Painting be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts Glass Painting sessions for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. All materials — glass items, outliner pens, glass paints, and brushes — are included in the per-person price.',
+      },
+    ],
   },
   {
     id: 'texture-art',
@@ -268,6 +450,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A hand-painted cotton tote bag with personalised or themed designs — durable, usable, eco-friendly.',
     whoBenefits: 'Excellent for corporate gifting events, sustainability-themed workshops, school events, and private parties.',
     keywords: ['tote bag painting workshop Delhi', 'fabric painting workshop Delhi NCR', 'eco craft workshop Delhi', 'tote bag art class', 'sustainable corporate workshop Delhi'],
+    faq: [
+      {
+        q: 'What happens in a Tote Bag Painting workshop?',
+        a: 'Each participant receives a plain cotton tote bag and paints it using fabric colours, fine brushes, and stencils. Shramita guides participants through design layout, colour mixing, and fabric painting techniques. The result is a fully personalised, durable tote bag that participants take home and use daily.',
+      },
+      {
+        q: 'Is Tote Bag Painting a good activity for a sustainability-themed corporate event?',
+        a: 'It is one of the best choices for sustainability or eco-themed events. Each participant creates a reusable cotton bag — reducing dependence on single-use plastic — while also creating a personal piece of art. For corporates, we can incorporate brand elements or event themes into the bag design.',
+      },
+      {
+        q: 'Can we add corporate branding to the tote bags?',
+        a: 'Yes — Kraftykinni can pre-print your company logo or event branding on the bags before the workshop. Participants then personalise the bag further with their own painted design. This creates a branded gifting piece that is also genuinely handmade.',
+      },
+      {
+        q: 'Do participants need any painting experience?',
+        a: 'No experience is needed. Stencils are available for participants who prefer guided designs, and Shramita provides support for those who want to paint freehand. Both approaches produce great results.',
+      },
+      {
+        q: 'How long does the Tote Bag Painting workshop last?',
+        a: 'Sessions run for 1.5 to 2 hours. Fabric paint dries within 15 to 20 minutes, so participants can handle and pack their tote bag before the workshop ends.',
+      },
+      {
+        q: 'Can this be booked for a group across Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts Tote Bag Painting workshops for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. All materials — tote bags, fabric paints, brushes, stencils, and palette boards — are included in the per-person price.',
+      },
+    ],
   },
   {
     id: 'trinket-tray',
@@ -286,6 +494,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A hand-painted trinket or jewellery tray — colourful, functional, and personalised.',
     whoBenefits: 'Great for corporate events, school workshops, office parties, and bridal events as a fun, functional craft.',
     keywords: ['trinket tray painting workshop Delhi', 'decorative tray painting class', 'craft workshop Delhi NCR', 'desk decor art workshop', 'jewellery tray painting Delhi'],
+    faq: [
+      {
+        q: 'What is a Trinket Tray Painting workshop?',
+        a: 'In the Trinket Tray Painting workshop, participants receive a plain MDF or ceramic tray and transform it into a colourful, decorative piece using acrylic paints, brushes, and simple decorative techniques. Trays can be used as jewellery holders, desk organisers, or decorative home accents.',
+      },
+      {
+        q: 'Is Trinket Tray Painting a good activity for a corporate event?',
+        a: 'Yes — it is a quick, satisfying activity that produces immediate, visible results. It works well as a standalone session for shorter event time slots, or as a secondary activity alongside a main workshop. The desk-tray outcome is also practical for corporate participants who use it daily at their workstation.',
+      },
+      {
+        q: 'Do I need any painting experience?',
+        a: 'No experience is needed. The tray\'s flat surface is easy to work with, and the activity is designed to produce beautiful results for beginners. Shramita provides design guidance including colour combinations and simple pattern ideas for those who want inspiration.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A hand-painted trinket or jewellery tray — colourful, functional, and personalised. It is a useful daily-life object that participants see and use regularly, extending the memory of the event.',
+      },
+      {
+        q: 'How long does a Trinket Tray Painting session take?',
+        a: 'The workshop runs for 1.5 to 2 hours. Acrylic paint dries quickly, so trays are finished and ready to carry home before the session ends.',
+      },
+      {
+        q: 'Can this be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts Trinket Tray Painting sessions for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. All materials — trays, acrylic paints, brushes, and palette boards — are included in the per-person price.',
+      },
+    ],
   },
   {
     id: 'mdf-fridge-magnet',
@@ -304,6 +538,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A set of hand-painted MDF fridge magnets — personalised, colourful, and daily-use.',
     whoBenefits: 'Perfect for quick corporate engagement sessions, school craft days, large events with tight schedules, and children\'s parties.',
     keywords: ['MDF fridge magnet workshop Delhi', 'magnet painting class Delhi NCR', 'quick craft workshop Delhi', 'fun corporate art activity Delhi', 'fridge magnet painting workshop'],
+    faq: [
+      {
+        q: 'What is the MDF Fridge Magnet workshop?',
+        a: 'In the MDF Fridge Magnet workshop, participants paint and personalise small MDF shapes — animals, letters, geometric forms, or abstract designs — which are fitted with a magnet backing to create functional fridge magnets. It is one of our most cheerful and immediately satisfying activities.',
+      },
+      {
+        q: 'Why is this workshop popular for corporate employee engagement?',
+        a: 'The fridge magnet is a brilliant engagement tool because participants see it every single day when they open their fridge at home. It is a daily reminder of the event, the team, and the experience — with an impressively long recall value for something that takes under two hours to create.',
+      },
+      {
+        q: 'Is this suitable for large events with tight schedules?',
+        a: 'Yes — the MDF Fridge Magnet workshop is specifically designed for events where time is limited. It can be completed in as little as 1 hour for a simpler design, making it a versatile option for half-day events, lunch sessions, or multi-activity event programmes.',
+      },
+      {
+        q: 'Do participants need art experience?',
+        a: 'No experience is required. The small MDF canvas is easy to work with, and participants can choose from stencils or paint freehand. Shramita provides colour guidance and design ideas for anyone who wants inspiration.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A set of 2 to 3 hand-painted MDF fridge magnets — personalised, colourful, and ready to use immediately. The magnets are finished and dry by the end of the session.',
+      },
+      {
+        q: 'Can the MDF Fridge Magnet workshop be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. It is also available as an online workshop with shipped kits for pan-India corporate teams. All materials are included in the per-person price.',
+      },
+    ],
   },
   {
     id: 'canvas-pouch',
@@ -322,5 +582,31 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A hand-painted canvas pouch — personalised with the participant\'s own design and ready for daily use.',
     whoBenefits: 'Ideal for corporate gifting events, school sessions, college workshops, and intimate private parties.',
     keywords: ['canvas pouch painting workshop Delhi', 'pouch painting class Delhi NCR', 'fabric craft workshop Delhi', 'personalised pouch workshop', 'canvas bag art class Delhi'],
+    faq: [
+      {
+        q: 'What is the Canvas Pouch Painting workshop?',
+        a: 'In the Canvas Pouch Painting workshop, participants personalise a compact fabric pouch using fabric paints, fine brushes, and stencils. The smaller canvas encourages precision and detailed work — participants design everything from floral patterns to geometric motifs, abstract swirls, or personalised lettering. The finished pouch is durable and ready for daily use.',
+      },
+      {
+        q: 'Is Canvas Pouch Painting good for a corporate gifting event?',
+        a: 'Yes — it is a popular choice for corporate gifting workshops where participants create a personalised gift for themselves or a colleague. Because it is functional (used for makeup, stationery, or accessories) and handmade, it has a high perceived value as a gifting item.',
+      },
+      {
+        q: 'How is this different from Tote Bag Painting?',
+        a: 'Canvas Pouch Painting involves a smaller, more compact canvas that encourages detailed, precise work — it is a quieter, more focused activity. Tote Bag Painting has a larger surface that suits bolder, more expressive designs. The two workshops complement each other well and are sometimes paired at the same event.',
+      },
+      {
+        q: 'Do participants need painting experience?',
+        a: 'No experience is needed. The activity works across all skill levels — stencils are available for participants who want guided designs, and Shramita provides support for those who prefer to paint freehand or attempt more detailed work.',
+      },
+      {
+        q: 'How long does the workshop take?',
+        a: 'Sessions run for 1.5 to 2 hours. Fabric paint dries within 15 to 20 minutes, so pouches are fully finished and ready to pack before the session ends.',
+      },
+      {
+        q: 'Can Canvas Pouch Painting be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. All materials — canvas pouches, fabric paints, brushes, and stencils — are included in the per-person price. Online sessions with shipped kits are also available for pan-India teams.',
+      },
+    ],
   },
 ];

@@ -87,7 +87,7 @@ export default function Hero() {
                     src={bottleArt}
                     alt="Bottle Lamp Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="eager"
+                    loading="lazy"
                     decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -99,7 +99,7 @@ export default function Hero() {
                     src={lippanArt}
                     alt="Lippan Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="eager"
+                    loading="lazy"
                     decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -109,7 +109,7 @@ export default function Hero() {
                     src={tieAndDye}
                     alt="Tie and Dye workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="eager"
+                    loading="lazy"
                     decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
