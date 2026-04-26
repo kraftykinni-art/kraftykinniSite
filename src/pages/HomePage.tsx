@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <Helmet>
         <title>Kraftykinni | Creative Art & DIY Workshops in Delhi NCR</title>
-        <meta name="description" content="Premium art & DIY workshops for corporate teams, schools & events in Delhi NCR. Book Tie & Dye, Lippan & Boho Art with Fevicryl artist Shramita Govil." />
+        <meta name="description" content="Premium art & DIY workshops for corporate teams, schools & events in Delhi, Gurgaon & Noida. Book Tie & Dye, Lippan & Boho Art with Fevicryl artist Shramita Govil." />
         <link rel="canonical" href="https://kraftykinni.in/" />
       </Helmet>
 

@@ -168,6 +168,26 @@ const routes = [
     `,
   },
 
+  // ── Privacy Policy ────────────────────────────────────────────────────────
+  {
+    path: '/privacy-policy',
+    title: 'Privacy Policy | Kraftykinni',
+    description: "Kraftykinni's privacy policy — how we collect and use information submitted through our contact form. We never sell your data.",
+    h1: 'Privacy Policy',
+    bodyContent: `
+      <h1>Privacy Policy</h1>
+      <p>This website is operated by Kraftykinni, a creative art workshop business based in Delhi NCR, India. Kraftykinni is founded and run by Shramita Govil. If you have any questions about this policy, contact us at kraftykinni@gmail.com.</p>
+      <h2>What information we collect</h2>
+      <p>We collect information only when you voluntarily submit our contact form. The form asks for your name, email address, phone number (optional), group size, preferred date, and a message. We do not use cookies, analytics trackers, or any other form of passive data collection.</p>
+      <h2>How your information is used</h2>
+      <p>The information you submit is used solely to respond to your enquiry and send you a customised workshop proposal. Our contact form is powered by Web3Forms, which forwards your submission to our email address. We do not store your form data on our own servers.</p>
+      <h2>Data sharing</h2>
+      <p>We do not sell, rent, or share your personal information with any third party for marketing purposes. Your contact details are used only by Kraftykinni to follow up on your workshop enquiry.</p>
+      <h2>Your rights</h2>
+      <p>You have the right to request access to, correction of, or deletion of any personal data we hold about you. Write to us at kraftykinni@gmail.com and we will respond within 14 business days.</p>
+    `,
+  },
+
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art',
@@ -380,6 +400,7 @@ const sitemapEntries = [
   { loc: '/workshops-in-gurgaon',          priority: '0.8', changefreq: 'monthly' },
   { loc: '/workshops-in-noida',            priority: '0.8', changefreq: 'monthly' },
   { loc: '/about',                         priority: '0.6', changefreq: 'yearly'  },
+  { loc: '/privacy-policy',               priority: '0.2', changefreq: 'yearly'  },
 ];
 
 const base = 'https://kraftykinni.in';

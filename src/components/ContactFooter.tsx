@@ -55,6 +55,7 @@ export default function ContactFooter() {
         { label: "Pricing",           to: "/#pricing" },
         { label: "FAQ",               to: "/#faq" },
         { label: "Contact",           to: "/#contact" },
+        { label: "Privacy Policy",    to: "/privacy-policy" },
       ],
     },
   ];

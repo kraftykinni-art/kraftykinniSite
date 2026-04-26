@@ -10,6 +10,7 @@ import SchoolWorkshopsPage from './pages/SchoolWorkshopsPage';
 import LocationPage from './pages/LocationPage';
 import AboutPage from './pages/AboutPage';
 import PrivateWorkshopsPage from './pages/PrivateWorkshopsPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/workshops-in-delhi" element={<LocationPage />} />
         <Route path="/workshops-in-gurgaon" element={<LocationPage />} />
         <Route path="/workshops-in-noida" element={<LocationPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <WhatsAppButton />

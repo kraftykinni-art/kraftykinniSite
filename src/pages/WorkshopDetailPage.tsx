@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
-import { Clock, CheckCircle2, ArrowLeft, Users, MapPin, Package, Award } from 'lucide-react';
+import { Clock, CheckCircle2, ArrowLeft, Users, MapPin, Package, Award, ChevronDown } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
@@ -11,6 +12,8 @@ export default function WorkshopDetailPage() {
   const bookNow = useBookNow();
   const workshop = workshopsData.find((w) => w.id === id);
   if (!workshop) return <Navigate to="/404" replace />;
+
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const related = workshopsData.filter((w) => w.id !== workshop.id && w.category === workshop.category).slice(0, 4);
   const relatedFinal = related.length >= 2 ? related : workshopsData.filter((w) => w.id !== workshop.id).slice(0, 4);
@@ -38,6 +41,16 @@ export default function WorkshopDetailPage() {
     ],
   };
 
+  const faqSchema = workshop.faq && workshop.faq.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: workshop.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  } : null;
+
   return (
     <>
       <Helmet>
@@ -58,6 +71,7 @@ export default function WorkshopDetailPage() {
         <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       </Helmet>
 
       <main className="pt-24 bg-brand-offwhite">
@@ -193,6 +207,42 @@ export default function WorkshopDetailPage() {
             </div>
           </div>
         </section>
+
+        {/* FAQ section — only shown for workshops that have faq data */}
+        {workshop.faq && workshop.faq.length > 0 && (
+          <section className="py-16 bg-brand-offwhite">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="font-serif text-3xl font-bold text-brand-slate text-center mb-10">
+                Frequently Asked <span className="text-brand-pink italic">Questions</span>
+              </h2>
+              <div className="space-y-3">
+                {workshop.faq.map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
+                  >
+                    <button
+                      onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                      className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                      aria-expanded={openFaq === i}
+                    >
+                      <span className="font-medium text-brand-slate leading-snug">{item.q}</span>
+                      <ChevronDown
+                        size={20}
+                        className={`text-brand-pink shrink-0 transition-transform duration-300 ${openFaq === i ? 'rotate-180' : ''}`}
+                      />
+                    </button>
+                    {openFaq === i && (
+                      <div className="px-6 pb-5 text-gray-600 font-light leading-relaxed text-sm border-t border-gray-50 pt-4">
+                        {item.a}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Related workshops */}
         <section className="py-16 bg-white">

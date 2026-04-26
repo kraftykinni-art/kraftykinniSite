@@ -14,6 +14,11 @@ import canvasPouch from '../assets/canvas-pouch.webp';
 
 export type Category = 'All' | 'Signature' | 'Heritage' | 'Everyday';
 
+export interface WorkshopFaqItem {
+  q: string;
+  a: string;
+}
+
 export interface Workshop {
   id: string;
   title: string;
@@ -28,6 +33,7 @@ export interface Workshop {
   whatYouMake: string;
   whoBenefits: string;
   keywords: string[];
+  faq?: WorkshopFaqItem[];
 }
 
 export const workshopsData: Workshop[] = [
@@ -48,6 +54,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A finished Lippan Art wall piece with clay patterning and embedded mirrors — a unique, display-ready piece of folk art.',
     whoBenefits: 'Perfect for corporate team-building events, school art days, college fests, and private parties. No prior art experience needed.',
     keywords: ['lippan art workshop Delhi', 'lippan art class Delhi NCR', 'kutch mirror work workshop', 'lippan art corporate activity', 'folk art workshop Delhi NCR'],
+    faq: [
+      {
+        q: 'What is Lippan Art?',
+        a: 'Lippan Art is a centuries-old folk craft from the Kutch region of Gujarat. Artisans traditionally use a mixture of clay and camel dung to create raised geometric patterns on walls, then embed small mirrors into the designs. In our workshop, participants use craft clay and mirrors to recreate this technique on a board — no prior experience needed.',
+      },
+      {
+        q: 'Is Lippan Art suitable for corporate team building?',
+        a: 'Yes — it is one of our most requested corporate activities. The workshop is collaborative, cultural, and meditative, making it ideal for team bonding days, annual events, and employee engagement sessions. Groups of 20 to 200+ participants can be accommodated across Delhi, Gurgaon, and Noida.',
+      },
+      {
+        q: 'Do I need any art experience to participate?',
+        a: 'No experience is required at all. Shramita guides participants through every step — from shaping the clay patterns to placing and pressing the mirrors. The process is forgiving and satisfying even for complete beginners, which is why it works equally well for school students and senior corporate professionals.',
+      },
+      {
+        q: 'What materials are used in the Lippan Art workshop?',
+        a: 'Kraftykinni provides all materials: craft clay, small decorative mirrors, a wooden or MDF board, adhesive, and acrylic colours for background detailing. Everything is included in the per-person price — participants do not need to bring anything.',
+      },
+      {
+        q: 'How long does a Lippan Art workshop take?',
+        a: 'A Lippan Art session runs for 2 to 2.5 hours. This includes a brief introduction to the history and origins of the craft, a step-by-step guided demonstration, hands-on creation time, and a short finishing period for the final piece.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'Every participant completes and takes home a finished Lippan Art wall piece — a unique decorative panel with clay patterning and embedded mirrors. It is display-ready and often becomes a conversation piece at home or in an office.',
+      },
+    ],
   },
   {
     id: 'mandala-art',
@@ -192,6 +224,32 @@ export const workshopsData: Workshop[] = [
     whatYouMake: 'A layered, textured mixed-media canvas — unique, abstract, and display-ready.',
     whoBenefits: 'Perfect for corporate creative thinking workshops, school art days, and private events where participants want something visually striking.',
     keywords: ['texture art workshop Delhi', 'mixed media workshop Delhi NCR', 'textured canvas class', 'abstract art workshop Delhi', 'creative workshop corporate Delhi'],
+    faq: [
+      {
+        q: 'What is Texture Art?',
+        a: 'Texture Art is a mixed-media painting technique where layers of materials — tissue paper, acrylic paste, fabric scraps, and paint — are built up on a canvas to create physical depth and dimension. The results are abstract, tactile, and visually striking, even for people who have never painted before.',
+      },
+      {
+        q: 'Do I need any painting experience to join?',
+        a: 'No experience is needed. Because the process is abstract and exploratory, there is no wrong outcome. Shramita walks everyone through each layer from the beginning, and participants are often surprised by how impressive their finished canvas looks — regardless of their artistic background.',
+      },
+      {
+        q: 'What materials does Kraftykinni use for the workshop?',
+        a: 'All materials are provided and included in the price: canvas boards, acrylic paste, tissue paper, fabric scraps, acrylic colours, palette knives, and brushes. Participants do not need to bring anything — just comfortable clothes they do not mind getting a little paint on.',
+      },
+      {
+        q: 'How long does the Texture Art workshop last?',
+        a: 'The session runs for 1.5 to 2 hours. This covers a brief introduction to the technique, a guided step-by-step demonstration, and hands-on creation time where participants build and finish their own canvas at their own pace.',
+      },
+      {
+        q: 'Can Texture Art be booked for a corporate group?',
+        a: 'Yes — Texture Art is a popular choice for corporate creative thinking sessions, team-building workshops, and employee engagement events. Kraftykinni can accommodate groups of 20 to 200+ participants and conducts sessions at client venues across Delhi, Gurgaon, and Noida.',
+      },
+      {
+        q: 'What do participants take home after the workshop?',
+        a: 'Every participant takes home their own finished Texture Art canvas — a unique, layered, mixed-media piece that is ready to hang on a wall. Because the process is abstract, no two canvases ever look the same, making each one a genuinely personal keepsake.',
+      },
+    ],
   },
   {
     id: 'tote-bag-painting',
