@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import logo from '../assets/Logo.webp';
 
 // Smooth scroll to a section by id, with navbar offset
@@ -12,9 +12,17 @@ function scrollToSection(id: string) {
   window.scrollTo({ top, behavior: 'smooth' });
 }
 
+const serviceLinks = [
+  { name: 'Corporate Workshops', href: '/corporate-art-workshops' },
+  { name: 'School & College Workshops', href: '/school-workshops' },
+  { name: 'Private Events',      href: '/private-art-workshops' },
+];
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const servicesRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -24,19 +32,26 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setIsServicesOpen(false);
   }, [location.pathname]);
 
-  // After navigating to '/', check if we need to scroll to a section.
-  // We store the target in sessionStorage so it survives the navigation.
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
+        setIsServicesOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   useEffect(() => {
     if (location.pathname === '/') {
       const target = sessionStorage.getItem('scrollTarget');
       if (target) {
         sessionStorage.removeItem('scrollTarget');
-        // Small timeout ensures React has painted the homepage before we scroll
         const timer = setTimeout(() => scrollToSection(target), 100);
         return () => clearTimeout(timer);
       }
@@ -54,15 +69,11 @@ export default function Navbar() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);
-
     const sectionId = href.replace('#', '');
-
     if (location.pathname === '/') {
-      // Already on homepage — scroll directly
       if (!sectionId) { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
       scrollToSection(sectionId);
     } else {
-      // On another page — store target, navigate home, scroll happens in useEffect
       sessionStorage.setItem('scrollTarget', sectionId);
       navigate('/');
     }
@@ -97,10 +108,48 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            {/* Real page links — crawlable by Googlebot, no JS required */}
-            <Link to="/corporate-art-workshops" className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
-              Corporate
-            </Link>
+
+            {/* Services dropdown */}
+            <div ref={servicesRef} className="relative">
+              <button
+                onClick={() => setIsServicesOpen((prev) => !prev)}
+                onMouseEnter={() => setIsServicesOpen(true)}
+                className="flex items-center gap-1 text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors"
+                aria-expanded={isServicesOpen}
+                aria-haspopup="true"
+              >
+                Services
+                <ChevronDown
+                  size={14}
+                  className={`transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+
+              <AnimatePresence>
+                {isServicesOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 8 }}
+                    transition={{ duration: 0.15 }}
+                    onMouseLeave={() => setIsServicesOpen(false)}
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
+                  >
+                    {serviceLinks.map((link) => (
+                      <Link
+                        key={link.name}
+                        to={link.href}
+                        className="block px-5 py-3 text-sm font-medium text-brand-charcoal hover:text-brand-pink hover:bg-brand-offwhite transition-colors"
+                        onClick={() => setIsServicesOpen(false)}
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             <Link to="/about" className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
               About
             </Link>
@@ -143,13 +192,19 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
-              {/* Real page links — crawlable */}
-              <Link to="/corporate-art-workshops" className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
-                Corporate Workshops
-              </Link>
-              <Link to="/school-workshops" className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
-                School Workshops
-              </Link>
+              {/* Services — flat links with label */}
+              <div className="border-t border-gray-100 pt-4 space-y-3">
+                <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Services</p>
+                {serviceLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="block text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
               <Link to="/about" className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
                 About
               </Link>

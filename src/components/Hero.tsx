@@ -1,10 +1,10 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
-import bohoArt from '../assets/Boho Art.webp';
-import bottleArt from '../assets/Bottle art.webp';
-import lippanArt from '../assets/Lippan Art.webp';
-import tieAndDye from '../assets/Tie And Dye.webp';
+import bohoArt from '../assets/boho-art.webp';
+import bottleArt from '../assets/bottle-art.webp';
+import lippanArt from '../assets/lippan-art.webp';
+import tieAndDye from '../assets/tie-and-dye.webp';
 
 export default function Hero() {
   return (
