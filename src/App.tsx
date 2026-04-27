@@ -12,6 +12,8 @@ import AboutPage from './pages/AboutPage';
 import PrivateWorkshopsPage from './pages/PrivateWorkshopsPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import ThankYouPage from './pages/ThankYouPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
@@ -30,6 +32,8 @@ export default function App() {
         <Route path="/workshops-in-gurgaon" element={<LocationPage />} />
         <Route path="/workshops-in-noida" element={<LocationPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
