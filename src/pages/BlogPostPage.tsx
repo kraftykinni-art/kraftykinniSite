@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { Calendar, ArrowLeft, ArrowRight, Tag, Clock } from 'lucide-react';
-import { blogPosts, type BlogPost } from '../data/blogPosts';
+import { blogPosts, type BlogPost, type BlogFaqItem } from '../data/blogPosts';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
 
@@ -64,6 +64,48 @@ function BodyText({ text }: { text: string }) {
   );
 }
 
+// ─── FAQ block ───────────────────────────────────────────────────────────────
+
+function FaqBlock({ items }: { items: BlogFaqItem[] }) {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <div className="mt-10 mb-8">
+      <h2 className="font-serif text-2xl font-bold text-brand-slate mb-6">
+        Frequently asked questions
+      </h2>
+      <div className="space-y-3">
+        {items.map((item, i) => (
+          <div
+            key={i}
+            className="border border-gray-200 rounded-xl overflow-hidden"
+          >
+            <button
+              onClick={() => setOpenIndex(openIndex === i ? null : i)}
+              className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-gray-50 transition-colors"
+              aria-expanded={openIndex === i}
+            >
+              <span className="font-semibold text-brand-slate text-sm pr-4 leading-snug">
+                {item.q}
+              </span>
+              <span className={`text-brand-pink flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-45' : ''}`}>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 3v10M3 8h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </span>
+            </button>
+            {openIndex === i && (
+              <div className="px-6 pb-5">
+                <p className="text-brand-charcoal/80 text-sm leading-relaxed">{item.a}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ─── Page ────────────────────────────────────────────────────────────────────
 
 export default function BlogPostPage() {
@@ -116,6 +158,16 @@ export default function BlogPostPage() {
     .filter((p) => p.slug !== post.slug && p.category === post.category)
     .slice(0, 3);
 
+  const faqSchema = post.faq && post.faq.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  } : null;
+
   return (
     <>
       <Helmet>
@@ -137,6 +189,7 @@ export default function BlogPostPage() {
         <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       </Helmet>
 
       <main className="pt-24 bg-brand-offwhite min-h-screen">
@@ -232,6 +285,11 @@ export default function BlogPostPage() {
               )}
             </section>
           ))}
+
+          {/* FAQ block */}
+          {post.faq && post.faq.length > 0 && (
+            <FaqBlock items={post.faq} />
+          )}
 
           {/* Inline CTA box */}
           <div className="mt-12 bg-brand-pink/5 border border-brand-pink/20 rounded-2xl p-8 text-center">

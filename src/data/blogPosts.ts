@@ -1,14 +1,19 @@
+export interface BlogFaqItem {
+  q: string;
+  a: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
-  metaTitle: string;           // 50–60 chars
-  metaDescription: string;    // 150–160 chars
-  publishDate: string;         // ISO 8601, e.g. '2026-05-07'
+  metaTitle: string;
+  metaDescription: string;
+  publishDate: string;
   category: 'Corporate' | 'School & College' | 'Private Events' | 'Workshop Guides';
-  excerpt: string;             // 2–3 sentences shown on listing card
+  excerpt: string;
   keywords: string[];
-  // Article body as structured sections — keeps BlogPostPage clean
   sections: BlogSection[];
+  faq?: BlogFaqItem[];   // renders as FAQ block + FAQPage schema
 }
 
 export interface BlogSection {
@@ -27,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Best Corporate Team Building Activities Gurgaon 2026 | Kraftykinni',
     metaDescription:
       'Top 10 corporate team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person all-in.',
-    publishDate: '2026-05-07',
+    publishDate: '2026-04-27',
     category: 'Corporate',
     excerpt:
       "Gurgaon's corporate event scene is full of options — escape rooms, bowling, and go-karting have their place. But after running 50+ team workshops across Cyber City and Udyog Vihar, we've seen which activities actually produce conversation, connection, and something teams talk about months later.",
@@ -89,6 +94,24 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Book a workshop for your Gurgaon team',
         body: `Kraftykinni runs art workshops for corporate teams across Gurgaon, Delhi, and Noida. All materials are included. Setup and cleanup are on us. You just need tables, chairs, and your people.\n\nGroups from 20 to 200+. Starting at ₹600 per person. Get in touch to discuss your event date and preferred activity.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the best team building activity in Gurgaon for a large group?',
+        a: 'For large groups of 50 to 200+ in Gurgaon, guided art workshops consistently produce the strongest team outcomes. Kraftykinni runs sessions across Cyber City, Udyog Vihar, and DLF Cyber Park — activities like Tie & Dye, Lippan Art, and Mandala Art scale well, need no prior experience, and give every participant a physical takeaway. Starting at ₹600 per person with all materials included.',
+      },
+      {
+        q: 'How much does a corporate art workshop cost in Gurgaon?',
+        a: 'Kraftykinni charges ₹600 to ₹800 per person for corporate art workshops in Gurgaon, depending on group size and activity. Groups of 50 to 100 pay ₹700 per person; smaller groups of 20 to 50 pay ₹800; larger groups above 100 pay ₹600. All materials, setup, and cleanup are included. There are no hidden venue or logistics charges.',
+      },
+      {
+        q: 'Where can I book a team outing activity in Gurgaon?',
+        a: 'Kraftykinni can be booked directly via WhatsApp at +91 9599622210 or through the contact form at kraftykinni.in. We conduct sessions at your office or event venue across Gurgaon, Delhi, and Noida — you do not need to arrange a separate venue. Online workshops with shipped material kits are also available for distributed teams.',
+      },
+      {
+        q: 'What team building activities in Gurgaon work for a group of 100 people?',
+        a: 'Activities that work well at 100-person scale in Gurgaon include guided art workshops (Tie & Dye, Mandala Art, Boho Canvas), indoor sports tournaments, cooking competitions, and scavenger hunts. Art workshops are particularly effective because they run simultaneously across a large room without fragmenting the group into separate rotations or time slots.',
       },
     ],
   },

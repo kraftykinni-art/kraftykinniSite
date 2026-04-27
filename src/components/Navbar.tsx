@@ -153,6 +153,9 @@ export default function Navbar() {
             <Link to="/about" className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
               About
             </Link>
+            <Link to="/blog" className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
+              Blog
+            </Link>
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
@@ -207,6 +210,9 @@ export default function Navbar() {
               </div>
               <Link to="/about" className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
                 About
+              </Link>
+              <Link to="/blog" className="text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
+                Blog
               </Link>
               <a
                 href="#contact"
