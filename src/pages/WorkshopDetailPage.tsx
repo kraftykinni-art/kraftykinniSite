@@ -17,6 +17,9 @@ export default function WorkshopDetailPage() {
 
   const related = workshopsData.filter((w) => w.id !== workshop.id && w.category === workshop.category).slice(0, 4);
   const relatedFinal = related.length >= 2 ? related : workshopsData.filter((w) => w.id !== workshop.id).slice(0, 4);
+  const ogImage = typeof workshop.image === 'string' && workshop.image.startsWith('http')
+    ? workshop.image
+    : `https://kraftykinni.in${workshop.image}`;
 
   const canonical = `https://kraftykinni.in/workshops/${workshop.id}`;
 
@@ -63,12 +66,12 @@ export default function WorkshopDetailPage() {
         <meta property="og:title" content={`${workshop.pageHeadline} | Kraftykinni`} />
         <meta property="og:description" content={workshop.metaDescription} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:locale" content="en_IN" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${workshop.pageHeadline} | Kraftykinni`} />
         <meta name="twitter:description" content={workshop.metaDescription} />
-        <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
