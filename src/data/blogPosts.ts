@@ -99,6 +99,7 @@ export const blogPosts: BlogPost[] = [
     faq: [
       {
         q: 'What is the best team building activity in Gurgaon for a large group?',
+
         a: 'For large groups of 50 to 200+ in Gurgaon, guided art workshops consistently produce the strongest team outcomes. Kraftykinni runs sessions across Cyber City, Udyog Vihar, and DLF Cyber Park — activities like Tie & Dye, Lippan Art, and Mandala Art scale well, need no prior experience, and give every participant a physical takeaway. Starting at ₹600 per person with all materials included.',
       },
       {
@@ -112,6 +113,87 @@ export const blogPosts: BlogPost[] = [
       {
         q: 'What team building activities in Gurgaon work for a group of 100 people?',
         a: 'Activities that work well at 100-person scale in Gurgaon include guided art workshops (Tie & Dye, Mandala Art, Boho Canvas), indoor sports tournaments, cooking competitions, and scavenger hunts. Art workshops are particularly effective because they run simultaneously across a large room without fragmenting the group into separate rotations or time slots.',
+      },
+    ],
+  },
+  {
+    slug: 'annual-day-activity-ideas-schools-delhi-ncr',
+    title: 'Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)',
+    metaTitle: 'Annual Day Activity Ideas for Schools in Delhi NCR | Kraftykinni',
+    metaDescription:
+      '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, and designed for 50–300 students. Led by a Fevicryl-certified artist.',
+    publishDate: '2026-04-28',
+    category: 'School & College',
+    excerpt:
+      "Most schools start planning their annual day in April or May — when the academic calendar clears and the event committee starts arguing about what to do. If you're looking for activities that go beyond a generic craft stall and actually produce something students are proud of, this list is for you.",
+    keywords: [
+      'annual day activities school Delhi',
+      'school event ideas Delhi NCR',
+      'art day school workshop',
+      'annual day workshop for students',
+      'school art activity Delhi NCR',
+    ],
+    sections: [
+      {
+        body: `Most schools start planning their annual day in April or May — when the academic calendar clears and the event committee starts arguing about what to do. The standard rotation is a cultural programme, a few stalls, maybe a game or two. All fine. But after running art sessions for schools across Delhi, Gurgaon, and Noida, we've seen what happens when students are handed proper materials, a structured activity, and a little creative latitude: they produce work that surprises even themselves.\n\nThis list focuses on art-based activities specifically — structured, led by a trained facilitator, and scaled to school group sizes. Each one works for 50 to 300 students and produces a finished piece every participant takes home.`,
+      },
+      {
+        heading: '1. Tote Bag Painting',
+        body: `Tote Bag Painting is the most universally popular activity for school annual days, and for good reason. Students paint fabric tote bags using stencils, freehand patterns, and fabric colours — the result is a personalised bag they'll actually use. It photographs beautifully, works for every age group from Class 4 upward, and the finished bags function as a lasting memory of the event.\n\nIt scales effortlessly: 100 students painting simultaneously at long tables creates a vibrant visual that also photographs well for school newsletters and social posts.`,
+      },
+      {
+        heading: '2. Block Printing',
+        body: `Block Printing connects students to one of India's oldest textile traditions. Carved wooden blocks, fabric colours, and white cotton cloth — students learn to align and stamp repeat patterns, building up a finished printed fabric piece step by step. The process is rhythmic and satisfying, and the Indian craft context gives teachers a natural tie-in to history or geography lessons.\n\nBlock Printing works particularly well for senior school students (Class 8 onward) — the precision required keeps it engaging without being frustrating.`,
+      },
+      {
+        heading: '3. Mandala Art',
+        body: `Mandala Art is structured, meditative, and produces results that look far more impressive than the effort involved. Students build geometric mandala patterns on paper or canvas using dotting tools and acrylic paint, starting from the centre and working outward. The step-by-step guidance means even students who insist they "can't draw" finish with something genuinely beautiful.\n\nFor schools running a wellness or mindfulness theme on their annual day, Mandala Art is the strongest choice — the repetitive, pattern-based process has a measurably calming effect.`,
+      },
+      {
+        heading: '4. Lippan Art',
+        body: `Lippan Art is the activity that consistently generates the most conversation on the day. It's a centuries-old folk craft from Gujarat's Kutch region — traditionally, artisans use clay and small mirrors to create raised, geometric wall panels. In our school sessions, students work with craft clay and mirror pieces on a board, building their own version of this distinctive pattern.\n\nThe cultural storytelling angle is strong: students learn where the craft comes from, what it originally meant, and why it looks the way it does. Art teachers in particular appreciate the cross-curricular richness. The finished boards are display-worthy — many schools put them up in classrooms or corridors after the event.`,
+      },
+      {
+        heading: '5. Canvas Pouch Painting',
+        body: `Canvas Pouch Painting is a good choice for younger students or when the schedule allows a shorter activity slot (60–75 minutes). Students paint and decorate a small canvas pouch using acrylic colours — it's low-pressure, produces an immediately usable result, and works well for a stall-style format where students rotate through at their own pace.\n\nIt's also one of the most affordable activities to run at scale, which matters when a school is budgeting for 200+ students.`,
+      },
+      {
+        heading: '6. Tie & Dye',
+        body: `Tie & Dye is the activity for schools that want energy and colour. Students fold, twist, and bind white cotton fabric — a t-shirt, dupatta, or cloth square — before dipping it in vibrant dye. The reveal moment, when the bindings come off and the pattern appears, is genuinely exciting and always produces a room full of noise.\n\nBecause no two pieces ever turn out identical, Tie & Dye sidesteps comparison anxiety completely — there's no "better" or "worse" result, only different ones. That makes it particularly good for mixed-age groups or students who tend to be self-conscious about art.`,
+      },
+      {
+        heading: '7. Clay Art',
+        body: `Clay Art is the most tactile activity on this list — and often the most memorable. Students work with air-dry craft clay to build small decorative pieces: bowls, tiles, figurines, or relief patterns. The material is forgiving and self-correcting in a way that paint is not, which makes it excellent for students across a wide skill range.\n\nClay sessions run best for smaller groups (up to 80 per session) and require slightly more table space than painting activities. They work well as a premium activity for senior students or as a separate experience from the main annual day programme.`,
+      },
+      {
+        heading: '8. Glass Painting',
+        body: `Glass Painting uses transparent glass paint and outliners to create stained-glass-style designs on glass tiles or bottles. The finished pieces are translucent and look especially striking when held to light. It's a calm, detail-oriented activity — well suited to students who enjoy precision and want something different from brush-on-paper painting.\n\nGlass Painting works well as a competition format, where a group of students create pieces that are displayed and voted on.`,
+      },
+      {
+        heading: 'What makes an art activity work at a school annual day',
+        body: `The activities above all share a few characteristics that matter when you're managing a large group of students on a busy event day.\n\n**A finished result in 60–90 minutes.** Students need to complete something within a single session. Activities that require drying, curing, or multiple phases across days don't work in an event format.\n\n**No experience required.** Step-by-step facilitation is non-negotiable. The facilitator's job is to ensure every student — not just the confident ones — finishes with something they're proud of.\n\n**Mess managed in advance.** Schools reasonably worry about paint on floors and uniforms. A professional facilitator brings protective coverings, appropriate materials, and handles cleanup. The venue is left exactly as it was found.\n\n**Scale.** The activity needs to run simultaneously for your full group size, not in small rotations that fragment the experience across the day.`,
+      },
+      {
+        heading: "Book an art workshop for your school's annual day",
+        body: `Kraftykinni runs structured art workshops for schools across Delhi, Gurgaon, and Noida. All materials are brought to your school — you provide the venue, tables, and chairs. Sessions run from 60 to 120 minutes, and every student takes their finished artwork home.\n\nWe work with groups from 30 to 300+ students. Pricing starts at ₹600 per student with all materials included. Get in touch to discuss your annual day date and the activity that fits your group best.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What art activities work best for a school annual day in Delhi NCR?',
+        a: 'The most popular art activities for school annual days in Delhi NCR are Tote Bag Painting, Mandala Art, Lippan Art, and Tie & Dye. All four produce a finished piece in 60–90 minutes, require no prior experience, and scale to groups of 50 to 300+ students. Kraftykinni runs all of these at schools across Delhi, Gurgaon, and Noida.',
+      },
+      {
+        q: 'How much does an art workshop for a school annual day cost?',
+        a: 'Kraftykinni charges ₹600 per student for school art workshops, with all materials included. For larger groups of 200+ students, pricing is discussed based on the activity and logistics. There are no hidden charges — setup, facilitation, and cleanup are all included.',
+      },
+      {
+        q: 'Can an art workshop be run for 200 students on the same day?',
+        a: 'Yes. Activities like Tote Bag Painting, Mandala Art, and Block Printing can run simultaneously for groups of 200+ students across a large hall. Kraftykinni brings sufficient materials and facilitators to manage large school groups. The activity runs as one cohesive session, not in fragmented rotations.',
+      },
+      {
+        q: 'Do students need any prior art experience for these workshops?',
+        a: 'No. Every Kraftykinni session is designed for complete beginners. The facilitator guides students step by step — from materials to technique to finishing. Students who have never held a paintbrush walk away with a finished piece they are proud of. That is by design, not by chance.',
       },
     ],
   },

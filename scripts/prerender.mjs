@@ -216,6 +216,35 @@ const routes = [
     `,
   },
 
+  {
+    path: '/blog/annual-day-activity-ideas-schools-delhi-ncr',
+    title: 'Annual Day Activity Ideas for Schools in Delhi NCR | Kraftykinni',
+    description: '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, and designed for 50–300 students. Led by a Fevicryl-certified artist.',
+    h1: 'Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)',
+    bodyContent: `
+      <h1>Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)</h1>
+      <p>Most schools start planning their annual day in April or May. This list focuses on art-based activities — structured, led by a trained facilitator, and scaled to school group sizes. Each one works for 50 to 300 students and produces a finished piece every participant takes home.</p>
+      <h2>1. Tote Bag Painting</h2>
+      <p>Students paint fabric tote bags using stencils and fabric colours — a personalised bag they will actually use. Scales to 100+ students simultaneously and photographs well for school newsletters.</p>
+      <h2>2. Block Printing</h2>
+      <p>Carved wooden blocks, fabric colours, and cotton cloth. Students stamp repeat patterns and take home a finished fabric piece. Connected to India textile heritage with strong cross-curricular value.</p>
+      <h2>3. Mandala Art</h2>
+      <p>Geometric mandala patterns built from the centre outward using dotting tools and acrylic paint. Meditative, structured, and produces results that look far more impressive than the effort involved.</p>
+      <h2>4. Lippan Art</h2>
+      <p>A centuries-old Kutch folk craft involving clay and mirror work. One of the most culturally rich activities — art teachers appreciate the cross-curricular depth.</p>
+      <h2>5. Canvas Pouch Painting</h2>
+      <p>Good for younger students or shorter time slots of 60 to 75 minutes. Low-pressure, immediately usable, affordable to run at scale.</p>
+      <h2>6. Tie and Dye</h2>
+      <p>Vibrant, energetic, and genuinely exciting. The reveal moment when bindings come off is always memorable. No two pieces ever turn out identically.</p>
+      <h2>7. Clay Art</h2>
+      <p>The most tactile activity on this list. Students build small decorative pieces with air-dry clay — forgiving material that works across a wide skill range.</p>
+      <h2>8. Glass Painting</h2>
+      <p>Transparent glass paint on tiles or bottles creates stained-glass-style pieces. Works well as a competition format.</p>
+      <h2>Book an art workshop for your school annual day</h2>
+      <p>Kraftykinni runs structured art workshops for schools across Delhi, Gurgaon, and Noida. All materials included. Groups from 30 to 300+ students. Starting at Rs 600 per student. Contact us to discuss your annual day date.</p>
+    `,
+  },
+
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art',
@@ -431,6 +460,7 @@ const sitemapEntries = [
   { loc: '/privacy-policy',               priority: '0.2', changefreq: 'yearly'  },
   { loc: '/blog',                          priority: '0.7', changefreq: 'weekly'  },
   { loc: '/blog/best-corporate-team-building-activities-gurgaon-2026', priority: '0.7', changefreq: 'monthly' },
+  { loc: '/blog/annual-day-activity-ideas-schools-delhi-ncr', priority: '0.7', changefreq: 'monthly' },
 ];
 
 const base = 'https://kraftykinni.in';
