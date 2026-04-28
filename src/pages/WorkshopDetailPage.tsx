@@ -21,7 +21,7 @@ export default function WorkshopDetailPage() {
     ? workshop.image
     : `https://kraftykinni.in${workshop.image}`;
 
-  const canonical = `https://kraftykinni.in/workshops/${workshop.id}`;
+  const canonical = `https://kraftykinni.in/workshops/${workshop.id}/`;
 
   const schema = {
     '@context': 'https://schema.org',
@@ -39,7 +39,7 @@ export default function WorkshopDetailPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
-      { '@type': 'ListItem', position: 2, name: 'Workshops', item: 'https://kraftykinni.in/corporate-art-workshops' },
+      { '@type': 'ListItem', position: 2, name: 'Workshops', item: 'https://kraftykinni.in/corporate-art-workshops/' },
       { '@type': 'ListItem', position: 3, name: workshop.title, item: canonical },
     ],
   };
