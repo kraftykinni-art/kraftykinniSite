@@ -245,6 +245,30 @@ const routes = [
     `,
   },
 
+  {
+    path: '/blog/art-workshop-ideas-birthday-party-delhi-ncr/',
+    title: 'Art Workshop Ideas for Birthday Parties Delhi NCR | Kraftykinni',
+    description: 'Planning a birthday party in Delhi NCR? Art workshops make every guest create something and take it home. 5 activity options, ₹600/person, all materials included.',
+    h1: 'Art Workshop Ideas for Birthday Parties in Delhi NCR',
+    bodyContent: `
+      <h1>Art Workshop Ideas for Birthday Parties in Delhi NCR</h1>
+      <p>An art workshop changes the structure of a birthday party. Instead of a room full of people waiting for the food or half-listening to music, you get 15 to 40 people deeply absorbed in the same task — talking, comparing, helping each other, laughing at their own results. Every guest walks out with a finished artwork in hand, something they made that evening.</p>
+      <h2>Best Activities for a Birthday Party</h2>
+      <h3>Lippan Art</h3>
+      <p>The standout choice for adult birthday parties. Participants press clay patterns and embed decorative mirrors onto a board — the finished piece is display-worthy and deeply conversational. Works for groups of 15 to 60.</p>
+      <h3>Tote Bag Painting</h3>
+      <p>Relaxed, easy, and always a hit. Guests paint fabric tote bags using acrylic colours and stencils. Works for mixed-age groups of 20 to 100.</p>
+      <h3>Mandala Art</h3>
+      <p>The right choice for milestone birthdays and wellness-themed celebrations. Meditative, absorbing, and produces impressive results regardless of artistic background.</p>
+      <h3>Tie and Dye</h3>
+      <p>High energy, vibrant, and exciting. The reveal moment when the ties come undone is genuinely dramatic. Best for younger adult groups and bachelorette parties.</p>
+      <h3>Canvas Pouch Painting</h3>
+      <p>The compact option for tighter budgets. Guests paint a small canvas pouch — practical, personal, and usable every day.</p>
+      <h2>Book an Art Workshop for Your Birthday Party in Delhi NCR</h2>
+      <p>Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida. Starting at ₹600 per person, all materials included. Contact us via WhatsApp or the contact form to discuss your date.</p>
+    `,
+  },
+
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art/',
@@ -461,6 +485,7 @@ const sitemapEntries = [
   { loc: '/blog/',                          priority: '0.7', changefreq: 'weekly'  },
   { loc: '/blog/best-corporate-team-building-activities-gurgaon-2026/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/annual-day-activity-ideas-schools-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
+  { loc: '/blog/art-workshop-ideas-birthday-party-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
 ];
 
 const base = 'https://kraftykinni.in';

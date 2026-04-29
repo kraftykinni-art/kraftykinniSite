@@ -197,7 +197,6 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
-,
   {
     slug: 'art-workshop-ideas-birthday-party-delhi-ncr',
     title: 'Art Workshop Ideas for Birthday Parties in Delhi NCR',
