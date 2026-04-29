@@ -54,6 +54,26 @@ export default function WorkshopDetailPage() {
     })),
   } : null;
 
+  const howToSchema = workshop.howToSteps && workshop.howToSteps.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `How to do ${workshop.title} — Step-by-Step Workshop Guide`,
+    description: `A step-by-step guide to the ${workshop.title} workshop experience at Kraftykinni in Delhi NCR.`,
+    totalTime: `PT${workshop.duration.replace(/\s*–.*/,'').trim()}H`,
+    supply: [
+      { '@type': 'HowToSupply', name: 'All materials provided by Kraftykinni (included in price)' },
+    ],
+    tool: [
+      { '@type': 'HowToTool', name: 'Workshop guidance by Shramita Govil, Fevicryl Certified Artist' },
+    ],
+    step: workshop.howToSteps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  } : null;
+
   return (
     <>
       <Helmet>
@@ -75,6 +95,7 @@ export default function WorkshopDetailPage() {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+        {howToSchema && <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>}
       </Helmet>
 
       <main className="pt-24 bg-brand-offwhite">

@@ -19,6 +19,11 @@ export interface WorkshopFaqItem {
   a: string;
 }
 
+export interface WorkshopHowToStep {
+  name: string;
+  text: string;
+}
+
 export interface Workshop {
   id: string;
   title: string;
@@ -34,6 +39,7 @@ export interface Workshop {
   whoBenefits: string;
   keywords: string[];
   faq?: WorkshopFaqItem[];
+  howToSteps?: WorkshopHowToStep[];
 }
 
 export const workshopsData: Workshop[] = [
@@ -78,6 +84,32 @@ export const workshopsData: Workshop[] = [
       {
         q: 'What does each participant take home?',
         a: 'Every participant completes and takes home a finished Lippan Art wall piece — a unique decorative panel with clay patterning and embedded mirrors. It is display-ready and often becomes a conversation piece at home or in an office.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Gather your materials',
+        text: 'Kraftykinni provides all materials: craft clay, small decorative mirrors, an MDF board, acrylic colours, and adhesive. No prior preparation is needed — everything is laid out at your workstation.',
+      },
+      {
+        name: 'Sketch your pattern',
+        text: 'With guidance from Shramita, lightly sketch a geometric or floral design onto the board. Traditional Lippan Art uses bold symmetrical patterns — she will show you several options to choose from.',
+      },
+      {
+        name: 'Shape and apply the clay',
+        text: 'Roll small coils and balls of craft clay and press them along the sketched outlines to build raised patterns. This meditative process produces clean, dimensional results even for complete beginners.',
+      },
+      {
+        name: 'Embed the mirrors',
+        text: 'Press small decorative mirrors into the wet clay at regular intervals. The mirrors are the defining feature of Lippan Art — they catch light and give the piece its distinctive Kutch folk character.',
+      },
+      {
+        name: 'Paint the background',
+        text: 'Once the clay is set, apply acrylic colours to the background and clay areas. Shramita guides you through colour combinations that complement the mirror inlay.',
+      },
+      {
+        name: 'Take your artwork home',
+        text: 'Your finished Lippan Art wall piece is display-ready. Allow it to fully dry (30–60 minutes after the session) before hanging or gifting.',
       },
     ],
   },
@@ -300,6 +332,32 @@ export const workshopsData: Workshop[] = [
         a: 'Yes — Kraftykinni conducts Block Printing workshops for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. We bring all materials including carved wooden blocks, fabric colours, printing pads, and fabric items to your venue.',
       },
     ],
+    howToSteps: [
+      {
+        name: 'Gather your materials',
+        text: 'Kraftykinni provides everything: carved wooden blocks, fabric colours, printing pads, and a fabric item (tote bag, dupatta, or panel). All materials are set up at your workstation before the session begins.',
+      },
+      {
+        name: 'Select your block and colour',
+        text: 'Choose from a range of traditional carved patterns — geometric, floral, and paisley designs. Shramita will help you select a colour palette that works with the fabric and your chosen pattern.',
+      },
+      {
+        name: 'Load the block with colour',
+        text: 'Press the carved wooden block firmly and evenly onto the ink pad to load it with fabric colour. The key is an even, consistent coat — Shramita demonstrates the correct pressure and angle.',
+      },
+      {
+        name: 'Stamp the fabric',
+        text: 'Press the inked block firmly onto the fabric, hold for a moment, and lift cleanly in one motion. Repeat to build a pattern across the fabric surface. The rhythmic stamping is deeply relaxing and produces strikingly consistent results.',
+      },
+      {
+        name: 'Build your repeat pattern',
+        text: 'Continue stamping in a grid or freeform arrangement, spacing blocks consistently. You can combine multiple blocks and colours to add complexity. Shramita guides you through pattern spacing and transitions.',
+      },
+      {
+        name: 'Heat-set and take home',
+        text: 'Once the design is complete, the fabric colour is heat-set to make it washable and durable. Your finished block-printed fabric piece is ready to use, wear, or display.',
+      },
+    ],
   },
   {
     id: 'clay-art',
@@ -430,6 +488,32 @@ export const workshopsData: Workshop[] = [
       {
         q: 'What do participants take home after the workshop?',
         a: 'Every participant takes home their own finished Texture Art canvas — a unique, layered, mixed-media piece that is ready to hang on a wall. Because the process is abstract, no two canvases ever look the same, making each one a genuinely personal keepsake.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Gather your materials',
+        text: 'Kraftykinni provides a canvas board, acrylic paste, tissue paper, fabric scraps, acrylic colours, palette knives, and brushes. All materials are laid out at your station — no prep needed from participants.',
+      },
+      {
+        name: 'Apply the first texture layer',
+        text: 'Using a palette knife, spread acrylic paste or gesso across the canvas in broad strokes. This creates the base texture that all subsequent layers will adhere to. There is no wrong way — uneven strokes add character.',
+      },
+      {
+        name: 'Add tissue and fabric layers',
+        text: 'Tear tissue paper into irregular pieces and press them into the wet paste to create wrinkled, raised surfaces. Shramita guides you on placement — some areas dense, others sparse — to build visual contrast.',
+      },
+      {
+        name: 'Build depth with paint',
+        text: 'Apply acrylic colours over the textured surface using a palette knife and brush. Work wet-on-wet or let layers dry between applications. The colour settles differently across raised and recessed areas, creating natural depth and variation.',
+      },
+      {
+        name: 'Add finishing details',
+        text: 'Once the main layers are built up, refine with highlight colours, edge detailing, or additional texture elements. Because this is abstract art, the finishing stage is intuitive — Shramita will help you know when it feels complete.',
+      },
+      {
+        name: 'Take your canvas home',
+        text: 'Your finished Texture Art canvas is display-ready once dry. Every piece is unique — no two participants ever produce the same result, which makes it a genuinely personal takeaway.',
       },
     ],
   },
