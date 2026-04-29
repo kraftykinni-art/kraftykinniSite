@@ -197,4 +197,86 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+,
+  {
+    slug: 'art-workshop-ideas-birthday-party-delhi-ncr',
+    title: 'Art Workshop Ideas for Birthday Parties in Delhi NCR',
+    metaTitle: 'Art Workshop Ideas for Birthday Parties Delhi NCR | Kraftykinni',
+    metaDescription:
+      'Planning a birthday party in Delhi NCR? Skip the venue-and-buffet formula. Art workshops make every guest create something — and take it home. ₹600/person, all materials included.',
+    publishDate: '2026-04-29',
+    category: 'Private Events',
+    excerpt:
+      "The standard Delhi birthday party formula — venue, buffet, DJ, go home — produces a fine evening. But after running art sessions for birthday groups across South Delhi, Gurgaon, and Noida, we've noticed something: guests who make something together remember the evening very differently from guests who just attended it.",
+    keywords: [
+      'art workshop birthday party Delhi',
+      'creative birthday ideas Delhi NCR',
+      'art workshop birthday party Gurgaon',
+      'unique birthday party ideas Delhi',
+      'kitty party art workshop Delhi NCR',
+    ],
+    sections: [
+      {
+        body: `The standard Delhi birthday party formula — venue, buffet, DJ, go home — produces a fine evening. But after running art sessions for birthday groups across South Delhi, Gurgaon, and Noida, we've noticed something: guests who make something together remember the evening very differently from guests who just attended it.\n\nAn art workshop changes the structure of a birthday party. Instead of a room full of people waiting for the food or half-listening to music, you get 15 to 40 people deeply absorbed in the same task — talking, comparing, helping each other, laughing at their own results. It is an activity that fills the room with energy without requiring anyone to perform or compete. And at the end, every guest walks out with a finished artwork in hand, something they made with their own hands that evening.\n\nThis post covers the best art workshop formats for birthday parties in Delhi NCR, what makes each one work, and what to expect when you book.`,
+      },
+      {
+        heading: 'Why an art workshop works as a birthday party activity',
+        body: `Most birthday party activities split into two categories: passive (watch a performer, eat, socialise) or competitive (games, trivia, sports). Art workshops sit in a third category: collaborative and creative without being competitive. There is no scoring, no winner, no elimination. Everyone is working on their own piece at their own pace, but the process is shared.\n\nThis makes art workshops particularly good for mixed groups — guests who know each other well and guests who are meeting for the first time both have something to do with their hands and a natural conversation starter in front of them. The artwork itself becomes the talking point.\n\nFor the birthday person, the format also has a practical advantage: you are not responsible for entertaining every guest simultaneously. The activity does that for you, for 90 minutes, while you move around the room at your own pace.`,
+      },
+      {
+        heading: 'Best art workshop activities for a birthday party',
+        body: `Not every workshop suits every birthday crowd. Here is how the main options break down for a private party setting.`,
+      },
+      {
+        heading: 'Lippan Art — the standout choice for adult birthday parties',
+        body: `Lippan Art is the workshop guests talk about afterward. The craft comes from the Kutch region of Gujarat — artisans traditionally press clay into geometric patterns and embed small mirrors to create striking wall panels. In our sessions, participants recreate this technique on a board using craft clay and decorative mirrors.\n\nWhat makes it work for a birthday party specifically: the finished piece is genuinely display-worthy, not something you put in a drawer and forget. Guests leave with something they are proud of and want to put up at home. The process is slow enough to allow real conversation — you cannot rush clay — which means the 90-minute session becomes one long, relaxed social hour that also produces art.\n\nBest for: adult birthday parties, kitty parties, small office celebration groups. Works for groups of 15 to 60.`,
+      },
+      {
+        heading: 'Tote Bag Painting — relaxed, easy, and always a hit',
+        body: `Tote Bag Painting is the easiest entry point into a workshop-format birthday party. Guests paint fabric tote bags using acrylic colours and stencils — personalised with their own patterns, names, or designs. The process takes 60 to 75 minutes, produces a functional takeaway, and has essentially no learning curve.\n\nIt works well for mixed-age groups where some guests might be more hesitant about art. The bag is something practical and personal — several of our birthday party guests have returned to book Kraftykinni specifically because they still use the tote from the party they attended.\n\nBest for: casual birthday parties, cousin gatherings, mixed-age groups. Works for groups of 20 to 100.`,
+      },
+      {
+        heading: 'Mandala Art — the right choice for a wellness-themed celebration',
+        body: `Mandala Art has become popular for birthday parties that want a calmer, more intentional energy — particularly popular for milestone birthdays (30th, 40th, 50th) where the tone is reflective rather than high-energy. Guests build symmetric mandala patterns on canvas using dotting tools and acrylic paint, working from the centre outward.\n\nThe process is meditative and genuinely absorbing — people look up from their canvas surprised that 90 minutes have passed. Every piece looks impressive regardless of the guest's artistic background, which matters when you have guests who come in saying "I'm terrible at art."\n\nBest for: milestone birthdays, close friend groups, bachelorette parties where you want a quieter afternoon activity. Works for groups of 15 to 50.`,
+      },
+      {
+        heading: 'Tie & Dye — the high-energy option',
+        body: `If your birthday party group leans younger or you want something with more visual drama, Tie & Dye is the pick. Guests fold, bind, and dip fabric — a dupatta, t-shirt, or cotton square — and the reveal when the ties come undone is genuinely exciting every time. No two pieces ever look the same, which means every guest gets a unique result.\n\nTie & Dye sessions are louder and livelier than the other options on this list. The shared reveal moment creates a burst of energy that feels like the party equivalent of a toast.\n\nBest for: younger adult groups, bachelorette parties, casual birthday celebrations where you want high energy. Works for groups of 20 to 80.`,
+      },
+      {
+        heading: 'Canvas Pouch Painting — the compact option for smaller budgets',
+        body: `Canvas Pouch Painting offers the same personalised-takeaway appeal as Tote Bag Painting but in a smaller format and at a lower per-person cost. Guests paint and decorate a small canvas pouch — zippered, usable, personal. It works well as a party favour format where guests rotate through in a shorter window.\n\nBest for: birthday parties on a tighter budget, parties with 30+ guests where cost per head matters, children's birthday parties for ages 10 and above.`,
+      },
+      {
+        heading: 'What to expect when you book a birthday party workshop',
+        body: `**Group size.** Kraftykinni accommodates birthday party groups from 15 to 80 guests for most activities. Smaller groups (below 15) can sometimes be accommodated — ask when you enquire.\n\n**Venue.** We bring everything to your home, farmhouse, club, or hired venue. You need tables, chairs, and reasonable surface space per person. We handle materials, setup, facilitation, and cleanup.\n\n**Duration.** Most birthday party workshops run for 90 minutes of active creation time. Factor in 15 to 20 minutes on each side for setup and cleanup — a 2 to 2.5 hour booking window is standard.\n\n**Advance booking.** Seven days minimum. For weekend dates in November through February (the peak Delhi party season), three to four weeks is safer.\n\n**Pricing.** ₹600 to ₹800 per person, all materials included. The per-person rate depends on group size and activity. There are no venue charges — the price you are quoted covers everything.`,
+      },
+      {
+        heading: 'Book an art workshop for your birthday party in Delhi NCR',
+        body: `Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida. Every session is led by Shramita Govil, a Fevicryl-certified artist with 50+ workshops and 1,500+ participants across Delhi NCR.\n\nGet in touch via WhatsApp or the contact form to discuss your date, group size, and preferred activity. We'll confirm availability and send a quote within 24 hours.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What is the best art workshop activity for a birthday party in Delhi NCR?',
+        a: 'Lippan Art and Tote Bag Painting are the most popular choices for birthday parties in Delhi NCR. Lippan Art produces a display-worthy wall piece and creates a relaxed, conversational atmosphere — ideal for adult groups of 15 to 60. Tote Bag Painting is more accessible, works for mixed-age groups, and produces a functional everyday takeaway. Kraftykinni can advise on the best fit based on your group size and party style.',
+      },
+      {
+        q: 'How much does an art workshop birthday party cost in Delhi NCR?',
+        a: 'Kraftykinni charges ₹600 to ₹800 per person for birthday party art workshops, with all materials included. Groups of 50 to 100 pay ₹700 per person; smaller groups of 15 to 50 pay ₹800; groups above 100 pay ₹600. Setup, facilitation, and cleanup are all included — there are no additional venue or logistics charges.',
+      },
+      {
+        q: 'Can Kraftykinni conduct an art workshop at my home or farmhouse?',
+        a: 'Yes. Kraftykinni brings all materials, setup, and equipment to your home, farmhouse, club, or any hired venue in Delhi, Gurgaon, or Noida. You provide tables, chairs, and surface space. We handle everything else — including cleanup after the session.',
+      },
+      {
+        q: 'How far in advance should I book an art workshop for a birthday party?',
+        a: 'A minimum of seven days is required for most bookings. For weekend dates between November and February — the peak party season in Delhi NCR — three to four weeks advance booking is recommended to ensure availability of your preferred date and activity.',
+      },
+      {
+        q: 'Can a birthday art workshop work for both experienced and non-artistic guests?',
+        a: 'Yes — and this is one of the strongest arguments for choosing a workshop format. All Kraftykinni sessions are designed for complete beginners. Shramita guides guests step by step from the start, and the activities are chosen specifically because they produce impressive results regardless of prior experience. Guests who arrive saying \"I cannot draw\" consistently finish with artwork they want to display or keep.',
+      },
+    ],
+  },
 ];
