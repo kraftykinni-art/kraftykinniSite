@@ -167,7 +167,19 @@ export default function ContactFooter() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl text-brand-charcoal"
           >
-            <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="space-y-6"
+              onSubmit={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'generate_lead', {
+                    event_category: 'contact',
+                    event_label: 'form_submit',
+                  });
+                }
+              }}
+            >
               <input type="hidden" name="access_key" value="1685ee1e-ebc1-4b36-92fd-647947482d76" />
               <input type="hidden" name="redirect" value="https://kraftykinni.in/thank-you" />
 

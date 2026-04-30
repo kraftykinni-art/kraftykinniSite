@@ -60,6 +60,15 @@
     <meta name="twitter:description" content="Hands-on creative sessions for corporate teams, schools & private events in Delhi NCR. 13 activities from ₹600/person.">
     <meta name="twitter:image" content="https://kraftykinni.in/og-corporate.jpg">
 
+    <!-- Google tag (gtag.js) — send_page_view:false because App.tsx fires page_view manually on every SPA route change -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05MJBCCPZP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-05MJBCCPZP', { send_page_view: false });
+    </script>
+
     <!-- Fonts — non-blocking load (eliminates render-blocking resource, improves LCP) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="favicon.png" />

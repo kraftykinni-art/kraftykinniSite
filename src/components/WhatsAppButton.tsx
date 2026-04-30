@@ -7,6 +7,14 @@ export default function WhatsAppButton() {
       href="https://wa.me/919599622210"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => {
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'whatsapp_click', {
+            event_category: 'contact',
+            event_label: 'whatsapp_button',
+          });
+        }
+      }}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ type: 'spring', stiffness: 260, damping: 20, delay: 1 }}

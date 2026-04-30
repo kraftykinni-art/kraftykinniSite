@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
@@ -19,6 +20,19 @@ import NotFoundPage from './pages/NotFoundPage';
 import EmployeeEngagementGurgaonPage from './pages/EmployeeEngagementGurgaonPage';
 
 export default function App() {
+  const location = useLocation();
+
+  // Fire GA4 page_view on every SPA route change.
+  // send_page_view:false in index.html prevents the duplicate initial hit.
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'page_view', {
+        page_path: location.pathname + location.search,
+        page_title: document.title,
+      });
+    }
+  }, [location]);
+
   return (
     <div className="min-h-screen bg-brand-offwhite font-sans text-brand-charcoal selection:bg-brand-pink/20 selection:text-brand-pink">
       <ScrollToTop />
