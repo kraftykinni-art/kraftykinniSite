@@ -38,8 +38,8 @@ const corporateFaqs = [
 export default function CorporateWorkshopsPage() {
   const bookNow = useBookNow();
 
-  const title = 'Corporate Art Workshops Delhi NCR — ₹600/person · All Materials | Kraftykinni';
-  const description = 'Kraftykinni offers hands-on corporate art workshops for teams of 20–200+ across Delhi, Gurgaon & Noida. 13 activities from ₹600/person. All materials included. Led by Fevicryl-certified artist Shramita Govil. Book today.';
+  const title = 'Corporate Art Workshops Delhi NCR | ₹600/person | Kraftykinni';
+  const description = 'Hands-on art workshops for corporate teams in Delhi NCR. 20–200+ participants, all materials supplied. Lippan, Mandala, Tie & Dye + 10 more. Zero prep for your HR team. Book now.';
   const canonical = 'https://kraftykinni.in/corporate-art-workshops';
 
   return (

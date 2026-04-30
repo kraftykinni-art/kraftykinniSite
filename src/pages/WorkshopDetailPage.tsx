@@ -17,9 +17,8 @@ export default function WorkshopDetailPage() {
 
   const related = workshopsData.filter((w) => w.id !== workshop.id && w.category === workshop.category).slice(0, 4);
   const relatedFinal = related.length >= 2 ? related : workshopsData.filter((w) => w.id !== workshop.id).slice(0, 4);
-  const ogImage = typeof workshop.image === 'string' && workshop.image.startsWith('http')
-    ? workshop.image
-    : `https://kraftykinni.in${workshop.image}`;
+  // Use stable public/workshops/ path — avoids broken OG images from Vite's content-hash changes
+  const ogImage = `https://kraftykinni.in/workshops/${workshop.id}.webp`;
 
   const canonical = `https://kraftykinni.in/workshops/${workshop.id}/`;
 

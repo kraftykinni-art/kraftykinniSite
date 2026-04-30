@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: '1. Art Workshop — the #1 pick for genuine connection',
-        body: `Art workshops consistently outperform every other team activity on one metric: conversation. When you give 40 people a craft task and tell them there's no wrong answer, something relaxes. Colleagues who rarely speak end up debating colour choices. Senior managers sit alongside interns, both equally bad at Lippan Art, equally delighted by the result.\n\nKraftykinni runs guided art sessions starting at ₹600 per person across Gurgaon, with 13 workshop activities — Lippan Art, Tie & Dye, Boho Canvas, Mandala Art, Bottle Lamp Art, and more. Every participant takes a finished artwork home. Groups from 20 to 200+ are accommodated.\n\nWhy it's #1: You get a genuine creative experience, a physical takeaway, and 90 minutes of unforced, cross-team interaction. It's hard to top that combination at this price point.`,
+        body: `Art workshops consistently outperform every other team activity on one metric: conversation. When you give 40 people a craft task and tell them there's no wrong answer, something relaxes. Colleagues who rarely speak end up debating colour choices. Senior managers sit alongside interns, both equally bad at Lippan Art, equally delighted by the result.\n\n[Kraftykinni](/corporate-art-workshops) runs guided art sessions starting at ₹600 per person across Gurgaon, with 13 workshop activities — [Lippan Art](/workshops/lippan-art), [Tie & Dye](/workshops/tie-and-dye), Boho Canvas, Mandala Art, Bottle Lamp Art, and more. Every participant takes a finished artwork home. Groups from 20 to 200+ are accommodated.\n\nWhy it's #1: You get a genuine creative experience, a physical takeaway, and 90 minutes of unforced, cross-team interaction. It's hard to top that combination at this price point.`,
       },
       {
         heading: '2. Escape Room',
@@ -93,7 +93,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Book a workshop for your Gurgaon team',
-        body: `Kraftykinni runs art workshops for corporate teams across Gurgaon, Delhi, and Noida. All materials are included. Setup and cleanup are on us. You just need tables, chairs, and your people.\n\nGroups from 20 to 200+. Starting at ₹600 per person. Get in touch to discuss your event date and preferred activity.`,
+        body: `Kraftykinni runs art workshops for corporate teams across Gurgaon, Delhi, and Noida. All materials are included. Setup and cleanup are on us. You just need tables, chairs, and your people.\n\nGroups from 20 to 200+. Starting at ₹600 per person. [See our corporate workshop page](/corporate-art-workshops) or get in touch to discuss your event date and preferred activity.`,
       },
     ],
     faq: [
@@ -175,7 +175,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Book an art workshop for your school's annual day",
-        body: `Kraftykinni runs structured art workshops for schools across Delhi, Gurgaon, and Noida. All materials are brought to your school — you provide the venue, tables, and chairs. Sessions run from 60 to 120 minutes, and every student takes their finished artwork home.\n\nWe work with groups from 30 to 300+ students. Pricing starts at ₹600 per student with all materials included. Get in touch to discuss your annual day date and the activity that fits your group best.`,
+        body: `Kraftykinni runs structured art workshops for schools across Delhi, Gurgaon, and Noida. All materials are brought to your school — you provide the venue, tables, and chairs. Sessions run from 60 to 120 minutes, and every student takes their finished artwork home.\n\nWe work with groups from 30 to 300+ students. Pricing starts at ₹600 per student with all materials included. [See our school workshops page](/school-art-workshops) or get in touch to discuss your annual day date and the activity that fits your group best.`,
       },
     ],
     faq: [
@@ -252,7 +252,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Book an art workshop for your birthday party in Delhi NCR',
-        body: `Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida. Every session is led by Shramita Govil, a Fevicryl-certified artist with 50+ workshops and 1,500+ participants across Delhi NCR.\n\nGet in touch via WhatsApp or the contact form to discuss your date, group size, and preferred activity. We'll confirm availability and send a quote within 24 hours.`,
+        body: `Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida. Every session is led by Shramita Govil, a Fevicryl Certified Artist with 50+ workshops and 1,500+ participants across Delhi NCR.\n\nGet in touch via WhatsApp or the contact form to discuss your date, group size, and preferred activity. We'll confirm availability and send a quote within 24 hours. [Browse all workshop activities](/workshops/lippan-art) or [read about private events](/private-art-workshops) to find the format that suits your group.`,
       },
     ],
     faq: [

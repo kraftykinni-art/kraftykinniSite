@@ -41,25 +41,44 @@ const CATEGORY_COLORS: Record<BlogPost['category'], string> = {
  */
 function BodyText({ text }: { text: string }) {
   const paragraphs = text.split('\n\n').filter(Boolean);
+
+  // Parse a single string segment into bold / link / plain spans
+  function renderInline(raw: string) {
+    // Split on **bold** and [text](url) tokens
+    const parts = raw.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+    return parts.map((part, j) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return (
+          <strong key={j} className="font-semibold text-brand-slate">
+            {part.slice(2, -2)}
+          </strong>
+        );
+      }
+      const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+      if (linkMatch) {
+        const [, label, href] = linkMatch;
+        const isInternal = href.startsWith('/');
+        return isInternal ? (
+          <Link key={j} to={href} className="text-brand-pink underline underline-offset-2 hover:text-brand-pink-light transition-colors">
+            {label}
+          </Link>
+        ) : (
+          <a key={j} href={href} target="_blank" rel="noopener noreferrer" className="text-brand-pink underline underline-offset-2 hover:text-brand-pink-light transition-colors">
+            {label}
+          </a>
+        );
+      }
+      return part;
+    });
+  }
+
   return (
     <>
-      {paragraphs.map((para, i) => {
-        // Render **bold** segments
-        const parts = para.split(/(\*\*[^*]+\*\*)/g);
-        return (
-          <p key={i} className="text-brand-charcoal leading-relaxed mb-5 text-[1.0625rem]">
-            {parts.map((part, j) =>
-              part.startsWith('**') && part.endsWith('**') ? (
-                <strong key={j} className="font-semibold text-brand-slate">
-                  {part.slice(2, -2)}
-                </strong>
-              ) : (
-                part
-              ),
-            )}
-          </p>
-        );
-      })}
+      {paragraphs.map((para, i) => (
+        <p key={i} className="text-brand-charcoal leading-relaxed mb-5 text-[1.0625rem]">
+          {renderInline(para)}
+        </p>
+      ))}
     </>
   );
 }

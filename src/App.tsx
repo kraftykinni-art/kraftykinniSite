@@ -16,6 +16,8 @@ import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import NotFoundPage from './pages/NotFoundPage';
 
+import EmployeeEngagementGurgaonPage from './pages/EmployeeEngagementGurgaonPage';
+
 export default function App() {
   return (
     <div className="min-h-screen bg-brand-offwhite font-sans text-brand-charcoal selection:bg-brand-pink/20 selection:text-brand-pink">
@@ -31,6 +33,7 @@ export default function App() {
         <Route path="/workshops-in-delhi" element={<LocationPage />} />
         <Route path="/workshops-in-gurgaon" element={<LocationPage />} />
         <Route path="/workshops-in-noida" element={<LocationPage />} />
+        <Route path="/employee-engagement-activities-gurgaon" element={<EmployeeEngagementGurgaonPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />

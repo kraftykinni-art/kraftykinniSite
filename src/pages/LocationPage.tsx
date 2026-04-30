@@ -42,7 +42,78 @@ const locationData = {
     intro: 'Noida has rapidly grown into one of the most active corporate and educational hubs in the NCR, and Kraftykinni serves both. We conduct corporate art workshops for companies across Sector 62, Sector 16, and Film City Road, as well as school and college workshops for institutions in Noida and Greater Noida. Our workshops at Amity University are among our most frequently repeated — a testament to how well our sessions work for student groups.',
     areas: ['Sector 62', 'Sector 16', 'Film City Road', 'Sector 18', 'Expressway', 'Greater Noida', 'Knowledge Park', 'Sector 125'],
     localSchema: { addressLocality: 'Noida', addressRegion: 'Uttar Pradesh', postalCode: '201301' },
+    whoWeWorkWith: {
+      heading: 'Who We Work With in Noida',
+      intro: 'Noida combines a large IT and media sector with one of the densest concentrations of colleges and universities in North India — both are core Kraftykinni clients.',
+      segments: [
+        {
+          label: 'IT & Media Companies',
+          body: 'Teams based in Sector 62 and Film City Road book us for team-building days and employee wellness events. The Sector 62 tech cluster has a strong appetite for structured creative activities as a break from screen-heavy work.',
+        },
+        {
+          label: 'Colleges & Universities',
+          body: 'Amity University is one of our most repeat clients — we have run multiple art workshops for their student groups across different faculties and events. We also work with institutions in the Knowledge Park and Sector 125 belt.',
+        },
+        {
+          label: 'Greater Noida Events',
+          body: 'Private events and school annual days in Greater Noida and along the Expressway are a growing part of our Noida calendar. Distance is not an issue — we bring all materials and manage the full session.',
+        },
+      ],
+    },
+    testimonial: {
+      quote: 'This workshop felt like therapy! Working with clay was incredibly soothing, and the environment was so positive. It\'s a great way to unwind and reconnect with your creative side.',
+      author: 'Navneet Arya',
+      context: 'Wellness Workshop, Noida',
+    },
   },
+};
+
+// Augment Delhi and Gurgaon data with their city-specific sections
+(locationData.delhi as typeof locationData.noida).whoWeWorkWith = {
+  heading: 'Who We Work With in Delhi',
+  intro: "Delhi's workshop calendar is shaped by its scale — large corporate offices in Connaught Place and Nehru Place, hundreds of schools across North, South, and West Delhi, and a private events scene that runs year-round.",
+  segments: [
+    {
+      label: 'Corporate Teams',
+      body: 'HR managers at companies based in Connaught Place, Bhikaji Cama Place, and Nehru Place book us for quarterly team events, onboarding days, and annual day activities. We carry all supplies to your office floor — no external venue needed.',
+    },
+    {
+      label: 'Schools & Colleges',
+      body: 'We regularly work with schools across South Delhi, Dwarka, and Rohini for annual days, art days, and orientation programmes. Sessions scale from 30 students to over 300, and every student takes finished artwork home.',
+    },
+    {
+      label: 'Private Events',
+      body: 'Birthday parties, kitty parties, and bachelorette celebrations in South Delhi and central Delhi are a regular part of our calendar. Groups of 15 to 60 guests, at your home or a rented venue.',
+    },
+  ],
+};
+(locationData.delhi as typeof locationData.noida).testimonial = {
+  quote: 'The workshop was an absolute hit with our students! Shramita\'s energy and creativity made it a memorable experience. Everyone walked away with something beautiful they made themselves.',
+  author: 'Aparajita',
+  context: 'School Workshop, Delhi',
+};
+(locationData.gurgaon as typeof locationData.noida).whoWeWorkWith = {
+  heading: 'Who We Work With in Gurgaon',
+  intro: "Gurgaon's corporate density makes it our most active market for team workshops. DLF Cyber City, DLF Cyber Park, and Udyog Vihar host hundreds of companies that run regular employee engagement events — we serve all of them.",
+  segments: [
+    {
+      label: 'Corporate HR & Admin Teams',
+      body: 'Most of our Gurgaon bookings come from HR managers at companies in DLF Cyber City and Udyog Vihar planning quarterly team-building days, employee appreciation events, and onboarding sessions. We set up at your office — no external venue required.',
+    },
+    {
+      label: 'Offsite & Annual Day Events',
+      body: 'For companies hosting off-site retreats on Golf Course Road or in Sector 29 banquet halls, we work well as the structured activity anchor — 90 minutes of guided art, followed by whatever your evening plans are.',
+    },
+    {
+      label: 'Schools in Gurgaon',
+      body: 'We work with schools along Sohna Road and across Sectors 49 and 56 for annual days and craft weeks. Student groups from 50 to 200+ are accommodated in a single session.',
+    },
+  ],
+};
+(locationData.gurgaon as typeof locationData.noida).testimonial = {
+  quote: 'Kraftykinni brought such a creative, refreshing energy to our corporate event. The team loved every moment and the art they created was stunning. Highly recommended!',
+  author: 'Gurjeet',
+  context: 'Corporate Team Event, Gurgaon',
 };
 
 const slugToKey: Record<string, keyof typeof locationData> = {
@@ -156,6 +227,50 @@ export default function LocationPage() {
             </div>
           </div>
         </section>
+
+        {/* City-specific: Who We Work With */}
+        {(loc as typeof locationData.noida).whoWeWorkWith && (
+          <section className="py-20 bg-brand-offwhite">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="mb-10">
+                <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">In {loc.city}</span>
+                <h2 className="font-serif text-3xl font-bold text-brand-slate mt-2 mb-3">
+                  {(loc as typeof locationData.noida).whoWeWorkWith.heading}
+                </h2>
+                <p className="text-gray-600 font-light leading-relaxed max-w-2xl">
+                  {(loc as typeof locationData.noida).whoWeWorkWith.intro}
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {(loc as typeof locationData.noida).whoWeWorkWith.segments.map((seg) => (
+                  <div key={seg.label} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                    <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">{seg.label}</div>
+                    <p className="text-brand-charcoal font-light leading-relaxed text-sm">{seg.body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* City-specific: Testimonial pull-quote */}
+        {(loc as typeof locationData.noida).testimonial && (
+          <section className="py-12 bg-white">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <blockquote className="relative">
+                <span className="absolute -top-4 left-0 text-7xl text-brand-pink/15 font-serif leading-none select-none">&ldquo;</span>
+                <p className="font-serif text-xl md:text-2xl text-brand-slate font-medium leading-snug mb-5 relative z-10">
+                  "{(loc as typeof locationData.noida).testimonial.quote}"
+                </p>
+                <footer className="text-sm text-gray-400">
+                  <strong className="text-brand-charcoal font-semibold">{(loc as typeof locationData.noida).testimonial.author}</strong>
+                  <span className="mx-2">·</span>
+                  {(loc as typeof locationData.noida).testimonial.context}
+                </footer>
+              </blockquote>
+            </div>
+          </section>
+        )}
 
         {/* Activities */}
         <section className="py-24 bg-brand-offwhite">
