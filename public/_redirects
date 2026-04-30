@@ -21,4 +21,11 @@
 /workshops-in-delhi/        /workshops-in-delhi         301
 /workshops-in-gurgaon/      /workshops-in-gurgaon       301
 /workshops-in-noida/        /workshops-in-noida         301
+/employee-engagement-activities-gurgaon/  /employee-engagement-activities-gurgaon  301
 /blog/                      /blog                       301
+/private-art-workshops/     /private-art-workshops      301
+
+# SPA fallback — Netlify must serve index.html for all unmatched paths
+# so React Router can handle client-side routing. Without this every
+# direct URL visit (and Google's crawl) returns a 404.
+/*    /index.html   200

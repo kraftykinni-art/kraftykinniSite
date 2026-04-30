@@ -170,6 +170,8 @@ export default function LocationPage() {
             { '@type': 'Question', name: `What art workshops are available in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `All 13 Kraftykinni signature activities are available in ${loc.city}: Lippan Art, Mandala Art, Tie & Dye, Boho Canvas Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, and Canvas Pouch Painting.` } },
             { '@type': 'Question', name: `What is the cost of an art workshop in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100 participants, and ₹800 per person for groups of 20–50. All art materials are included.` } },
             { '@type': 'Question', name: `How far in advance should I book a workshop in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `A minimum of 7 days advance notice is required to confirm a booking. A 50% deposit secures the date.` } },
+            { '@type': 'Question', name: `Do participants need prior art experience?`, acceptedAnswer: { '@type': 'Answer', text: `No — all sessions are guided step-by-step by Shramita. Every participant creates something they are proud of, regardless of their art background.` } },
+            { '@type': 'Question', name: `What is the minimum group size for an art workshop in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `We cater to groups from 20 up to 200+ participants. For very small groups, please reach out and we will do our best.` } },
           ],
         })}</script>
       </Helmet>

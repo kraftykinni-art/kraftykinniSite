@@ -362,6 +362,43 @@ const routes = [
     bodyContent: `<h1>Canvas Pouch Painting Workshop in Delhi NCR</h1><p>Canvas Pouch Painting lets participants personalise a compact fabric pouch using fabric paints, fine brushes, and stencils. The smaller canvas encourages precision and detailed work — participants focus deeply on their design and leave with a pouch they actually use for makeup, stationery, or accessories.</p><h2>What you make</h2><p>A hand-painted canvas pouch — personalised with the participant's own design and ready for daily use.</p><h2>Who it is for</h2><p>Ideal for corporate gifting events, school sessions, college workshops, and intimate private parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
   },
 
+  // ── Employee Engagement Gurgaon ──────────────────────────────────────────
+  {
+    path: '/employee-engagement-activities-gurgaon/',
+    title: 'Employee Engagement Activities Gurgaon | Art Workshops | Kraftykinni',
+    description: 'Guided art workshops for employee engagement in Gurgaon. Teams of 20–200+, all materials supplied. Lippan Art, Mandala, Tie & Dye at your Cyber City or Udyog Vihar office. ₹600/person.',
+    h1: 'Employee Engagement Activities in Gurgaon',
+    ogImage: 'https://kraftykinni.in/og-corporate.jpg',
+    bodyContent: `
+      <h1>Employee Engagement Activities in Gurgaon — Art Workshops by Kraftykinni</h1>
+      <p>Kraftykinni runs guided art workshops for employee engagement across Gurgaon — at DLF Cyber City, Udyog Vihar, MG Road, and Golf Course Road offices. All materials included, all supplies brought to your venue. Groups of 20 to 200+. Starting at ₹600 per person.</p>
+      <h2>Why Art Workshops for Employee Engagement?</h2>
+      <p>Art workshops sit in a category most team activities don't reach: collaborative and creative without being competitive. There's no scoring, no elimination, and no performance pressure. The shared creative process produces genuine conversation across hierarchies, and every participant walks out with a physical artwork they made themselves — a rare outcome from a corporate event.</p>
+      <h2>Popular Use Cases in Gurgaon</h2>
+      <h3>Quarterly Team-Building Events</h3>
+      <p>The most common booking format. HR teams across DLF Cyber City and Udyog Vihar run these quarterly to maintain team cohesion. A 90-minute guided art session fills an afternoon slot without requiring an external venue.</p>
+      <h3>Employee Appreciation Days</h3>
+      <p>A creative session signals investment in your people. Employees frequently describe it as "the first company event I actually enjoyed." The artwork they take home is a daily reminder of the gesture.</p>
+      <h3>Annual Day Activities</h3>
+      <p>For large annual days at hotels or banquet halls in Gurgaon, art workshops are an effective structured activity before or after the formal programme. Groups of 100 to 200+ accommodated.</p>
+      <h3>Onboarding & New Hire Orientation</h3>
+      <p>A creative session on day one signals company culture and breaks the ice across cohorts far more effectively than a team quiz.</p>
+      <h2>Pricing</h2>
+      <ul>
+        <li>20–50 participants: ₹800 per person — all materials included</li>
+        <li>50–100 participants: ₹700 per person — all materials included</li>
+        <li>100+ participants: ₹600 per person — all materials included</li>
+      </ul>
+      <h2>Top Activities for Corporate Engagement</h2>
+      <p>Lippan Art (most requested for corporate groups), Mandala Art (ideal for mindfulness days), Tie & Dye (high energy, great for large groups), Boho Canvas (popular at off-site retreats), Tote Bag Painting (doubles as a branded takeaway), Clay Art (ideal for wellness sessions).</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Can you handle 100+ participants at our Gurgaon office?</h3>
+      <p>Yes. Standard format handles 20 to 200+ participants. For groups above 60, we bring additional facilitators. Pricing drops to Rs 600 per person at 100+ scale.</p>
+      <h3>Do you come to DLF Cyber City / Udyog Vihar?</h3>
+      <p>Yes — we travel to your office across all of Gurgaon including DLF Cyber City, Udyog Vihar, DLF Cyber Park, MG Road, Golf Course Road, and Sohna Road. You do not need to book an external venue.</p>
+    `,
+  },
+
   // ── Location pages ────────────────────────────────────────────────────────
   {
     path: '/workshops-in-delhi/',
@@ -392,7 +429,8 @@ function injectMeta(html, { path: routePath, title, description, h1, bodyContent
   const canonical = `https://kraftykinni.in${routePath}`;
 
   // Update meta tags
-  html = html.replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`);
+  html = html.replace(/<title>[^<]*<\/title>/g, '');
+  html = html.replace('</head>', `  <title>${title}</title>\n  </head>`);
   html = html.replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${description}">`);
   html = html.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, `<link rel="canonical" href="${canonical}" />`);
   html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${title}">`);
@@ -480,6 +518,7 @@ const sitemapEntries = [
   { loc: '/workshops-in-delhi/',            priority: '0.8', changefreq: 'monthly' },
   { loc: '/workshops-in-gurgaon/',          priority: '0.8', changefreq: 'monthly' },
   { loc: '/workshops-in-noida/',            priority: '0.8', changefreq: 'monthly' },
+  { loc: '/employee-engagement-activities-gurgaon/', priority: '0.8', changefreq: 'monthly' },
   { loc: '/about/',                         priority: '0.6', changefreq: 'yearly'  },
   { loc: '/privacy-policy/',               priority: '0.2', changefreq: 'yearly'  },
   { loc: '/blog/',                          priority: '0.7', changefreq: 'weekly'  },
