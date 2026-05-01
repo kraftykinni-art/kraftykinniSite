@@ -279,8 +279,8 @@ export const blogPosts: BlogPost[] = [
         a: 'Yes — and this is one of the strongest arguments for choosing a workshop format. All Kraftykinni sessions are designed for complete beginners. Shramita guides guests step by step from the start, and the activities are chosen specifically because they produce impressive results regardless of prior experience. Guests who arrive saying \"I cannot draw\" consistently finish with artwork they want to display or keep.',
       },
     ],
-  },,
-{
+  },
+  {
     slug: 'lippan-art-complete-beginners-guide-kutch-mirror-work',
     title: "Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work",
     metaTitle: "Lippan Art Guide: Kutch Mirror Work for Beginners | Kraftykinni",

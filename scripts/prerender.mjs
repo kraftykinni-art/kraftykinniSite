@@ -202,7 +202,7 @@ const routes = [
   {
     path: '/blog/lippan-art-complete-beginners-guide-kutch-mirror-work/',
     title: "Lippan Art Guide: Kutch Mirror Work for Beginners | Kraftykinni",
-    description: 'Everything you need to know about Lippan Art — the Kutch mirror-work tradition, materials, step-by-step process, and why it's one of the best group workshop activities in Delhi NCR.',
+    description: "Everything you need to know about Lippan Art — the Kutch mirror-work tradition, materials, step-by-step process, and why it's one of the best group workshop activities in Delhi NCR.",
     h1: "Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work",
     bodyContent: `
       <h1>Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work</h1>
