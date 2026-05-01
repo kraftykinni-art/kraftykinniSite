@@ -267,7 +267,7 @@ export default function EmployeeEngagementGurgaonPage() {
           </div>
         </section>
 
-        {/* Testimonial — Amity / Gurgaon corporate */}
+        {/* Testimonial — Gurgaon corporate */}
         <section className="py-12 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <blockquote className="relative">
@@ -281,6 +281,65 @@ export default function EmployeeEngagementGurgaonPage() {
                 Corporate Team Event, Gurgaon
               </footer>
             </blockquote>
+          </div>
+        </section>
+
+        {/* Amity University Case Study */}
+        <section className="py-20 bg-brand-offwhite">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-10">
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">Case Study</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-slate mt-2 mb-3">
+                Repeat Workshops at <span className="text-brand-pink italic">Amity University</span>
+              </h2>
+              <p className="text-gray-600 font-light leading-relaxed max-w-2xl">
+                Amity University is one of Kraftykinni's most regular institutional clients — and one of the clearest examples of how a well-run session earns a repeat booking.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+              <div className="space-y-6">
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">The Brief</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    Amity University needed creative engagement sessions for student cohorts across different faculties and events — orientation programmes, fests, annual days, and student wellness days. Groups ranged from 40 to 150+ students.
+                  </p>
+                </div>
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">What We Ran</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    Multiple sessions across Lippan Art, Mandala Art, and Tote Bag Painting — activities that work well for student groups because they're structured enough to guide a large room, but open-ended enough that every student's output looks different.
+                  </p>
+                </div>
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">The Outcome</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    Amity has rebooked Kraftykinni across multiple events and different faculties — a pattern that tells its own story. Every student leaves with finished artwork they made. The sessions are frequently described as a highlight of the event calendar.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 lg:sticky lg:top-28">
+                <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-6">By the Numbers</div>
+                <div className="space-y-5">
+                  {[
+                    { num: 'Multiple', label: 'repeat bookings across faculties and events' },
+                    { num: '40–150+', label: 'student participants per session' },
+                    { num: '3+', label: 'different workshop activities run on campus' },
+                    { num: '0', label: 'logistics burden on the organising team' },
+                  ].map((s) => (
+                    <div key={s.label} className="flex items-start gap-4 border-b border-gray-100 pb-5 last:border-0 last:pb-0">
+                      <span className="font-serif text-2xl font-bold text-brand-pink leading-none flex-shrink-0 w-24">{s.num}</span>
+                      <span className="text-sm text-brand-charcoal font-light leading-snug mt-1">{s.label}</span>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  onClick={bookNow}
+                  className="mt-8 w-full inline-flex items-center justify-center gap-2 bg-brand-pink hover:bg-brand-pink-light text-white px-6 py-3.5 rounded-full text-sm font-medium transition-all hover:shadow-lg hover:-translate-y-0.5"
+                >
+                  Book a Session Like This <ArrowRight size={16} />
+                </button>
+              </div>
+            </div>
           </div>
         </section>
 

@@ -287,6 +287,10 @@ export default function BlogPostPage() {
 
               <BodyText text={section.body} />
 
+              {section.image && (
+                <img src={section.image} alt={section.imageAlt ?? ''} className="w-full rounded-2xl my-6 object-cover max-h-[420px]" loading="lazy" decoding="async" />
+              )}
+
               {section.listItems && section.listItems.length > 0 && (
                 section.listType === 'ol' ? (
                   <ol className="list-decimal list-outside ml-5 space-y-2 mb-5">

@@ -21,6 +21,8 @@ export interface BlogSection {
   body: string;                // plain text paragraphs separated by \n\n
   listItems?: string[];        // bullet / numbered list items (optional)
   listType?: 'ul' | 'ol';
+  image?: string;              // optional image URL rendered below body
+  imageAlt?: string;           // alt text for the image
 }
 
 // ─── Posts ──────────────────────────────────────────────────────────────────
@@ -275,6 +277,81 @@ export const blogPosts: BlogPost[] = [
       {
         q: 'Can a birthday art workshop work for both experienced and non-artistic guests?',
         a: 'Yes — and this is one of the strongest arguments for choosing a workshop format. All Kraftykinni sessions are designed for complete beginners. Shramita guides guests step by step from the start, and the activities are chosen specifically because they produce impressive results regardless of prior experience. Guests who arrive saying \"I cannot draw\" consistently finish with artwork they want to display or keep.',
+      },
+    ],
+  },,
+{
+    slug: 'lippan-art-complete-beginners-guide-kutch-mirror-work',
+    title: "Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work",
+    metaTitle: "Lippan Art Guide: Kutch Mirror Work for Beginners | Kraftykinni",
+    metaDescription:
+      "Everything you need to know about Lippan Art — the Kutch mirror-work tradition, materials, step-by-step process, and why it's one of the best group workshop activities in Delhi NCR.",
+    publishDate: '2026-05-01',
+    category: 'Workshop Guides',
+    excerpt:
+      "Lippan Art is a 500-year-old craft from the Kutch region of Gujarat, and it produces some of the most striking wall pieces you'll see in Indian craft. Clay, mirrors, and geometric patterns — here's everything you need to know before your first session.",
+    keywords: [
+      'lippan art tutorial',
+      'kutch lippan art',
+      'how to make lippan art',
+      'lippan art workshop Delhi',
+      'kutch mirror work workshop',
+      'lippan art for beginners',
+      'mirror work wall art India',
+    ],
+    sections: [
+      {
+        body: `Lippan Art is a 500-year-old craft from the Kutch region of Gujarat. Originally practised by women of the Rabari and Mutwa communities, it was used to decorate the interior walls of mud homes — geometric patterns built from clay and studded with tiny mirrors that caught and scattered light. Today, the same tradition produces striking contemporary wall pieces, decorative objects, and jewellery-style panels that sit comfortably in both Indian and minimalist interiors.\n\nAt Kraftykinni, Lippan Art is our most requested workshop activity — and the one that produces the most surprise from first-timers. Participants who arrive convinced they have no artistic ability finish with wall pieces that look gallery-ready. That gap between expectation and outcome is what makes it one of the most satisfying crafts we teach.`,
+      },
+      {
+        heading: 'The Tradition Behind the Craft',
+        body: `The word "lippan" refers to the mud-and-cow-dung plaster that Kutchi women historically applied to their home walls. Embedded into this plaster were "abhla" — small circular mirrors — arranged in concentric geometric patterns. The mirrors served a practical function in the harsh Rann of Kutch environment: they reflected sunlight into dim interiors and were believed to ward off the evil eye.\n\nThe patterns were not random. Different communities in Kutch developed distinct visual vocabularies — interlocking chevrons, nested octagons, floral medallions, and the characteristic six-pointed star motifs that appear across Islamic and folk art traditions in the region. Each pattern was passed down through families, which is why traditional Lippan work has such visual coherence despite being produced by many hands.\n\nThe craft almost disappeared during the devastating 2001 Bhuj earthquake, which destroyed much of Kutch's built heritage and displaced many of its artisan communities. The revival was partly driven by craft organisations working with women's self-help groups and partly by a growing urban market for authentic Indian craft objects. What you're doing when you make Lippan Art is participating in something with real cultural weight — which makes it a more interesting workshop than it might sound on a brochure.`,
+      },
+      {
+        heading: 'The Materials: What Makes Lippan Art Work',
+        body: `Traditional Lippan Art used naturally sourced mud and cow dung as the base medium, with genuine mirror glass cut into small rounds. The contemporary version — what you'd use in a workshop or at home — substitutes those with accessible equivalents that are just as effective.\n\n**Clay compound (Fevicryl Mouldit or similar epoxy putty):** This is the primary medium. It's a two-part compound — when the two components are kneaded together, a chemical reaction makes it workable for 20–30 minutes before it sets hard. It adheres to wood, MDF, canvas board, and most painted surfaces. It can be smoothed, textured, and shaped with basic tools.\n\n**Convex mirrors (abhla):** These are small, domed mirror pieces — typically 10mm to 20mm in diameter — sold in craft supply stores. The convex surface catches light from multiple angles, which is why traditional Lippan pieces appear to glow even in low light. Flat mirrors work but don't produce the same optical effect.\n\n**Acrylic paints:** The clay is painted after it sets and is dry. Metallic acrylics (gold, copper, silver) are the most traditional choice. Earth tones work well for a more muted, contemporary look. Most workshop participants use two to three colours.\n\n**Surface:** The standard workshop surface is an MDF board (typically 20cm × 25cm for a 2-hour session) or a terracotta pot. MDF is recommended for beginners because its flat surface makes pattern laying easier.`,
+        image: '/lippan-art-process.jpeg',
+        imageAlt: 'Participant applying clay detail work to a painted pot at a Kraftykinni Lippan Art workshop',
+      },
+      {
+        heading: 'The Process: Step by Step',
+        body: `Understanding the process helps you set realistic expectations — and explains why Lippan Art is genuinely achievable for beginners in a two-hour session.\n\n**Step 1 — Base coat.** The MDF board or surface is painted with one or two coats of acrylic in your chosen background colour. This dries in 10–15 minutes. Most participants choose terracotta, ivory, or black as their base.\n\n**Step 2 — Pattern sketch (optional).** A light pencil sketch of the geometric layout helps beginners. In our workshops, Shramita provides a reference pattern card with a few classic Kutch motifs — nested diamonds, star medallions, and border patterns. You're not copying it exactly; it's a structural guide.\n\n**Step 3 — Clay application.** Knead the two-part compound until it's uniform and begins to warm slightly — this means the reaction has started. Roll small amounts into ropes and press them onto the surface following the pencil lines. You use your fingertip and a basic clay tool to smooth edges and create texture. This is the most tactile part of the process and where most of the absorption happens — people stop talking and focus.\n\n**Step 4 — Mirror placement.** While the clay is still workable (you have a 20-minute window), press the convex mirror pieces into the clay at the intersections and centres of your geometric pattern. The clay grips them as it sets. The placement of mirrors transforms a flat pattern into something three-dimensional — this is usually the moment participants realise what they're making is genuinely beautiful.\n\n**Step 5 — Paint and detailing.** Once the clay is fully set (it hardens within 30–40 minutes of application), you paint the raised clay elements. Metallic gold or copper over the clay against a dark background is the most striking combination. A fine brush adds detail lines and fills.\n\nThe result is a lightweight, durable piece that genuinely looks handcrafted — because it is.`,
+        image: '/lippan-workshop-session.jpeg',
+        imageAlt: 'Participants working on Lippan Art projects at a Kraftykinni workshop in Delhi NCR',
+      },
+      {
+        heading: 'Why Lippan Art Works So Well in a Group',
+        body: `Most craft activities have a problem in group settings: the gap between skilled and unskilled participants becomes visible quickly, and people who fall behind feel self-conscious. Lippan Art sidesteps this almost entirely.\n\nThe reason is the structure of the process. Geometric patterns are inherently forgiving — imprecise clay lines often look more authentic than perfectly uniform ones, because traditional Lippan work was hand-applied by eye. The mirror placement is satisfying regardless of skill level: pressing a convex mirror into fresh clay and seeing it sit flush and catch the light is a small, repeatable success that happens dozens of times across a single piece. The metallic paint step produces dramatic results quickly.\n\nWhen 30 people are working on Lippan Art simultaneously, the room produces a particular kind of focused, quiet engagement. It's not silent — there's conversation — but it's the kind of conversation that happens when people are doing something with their hands. People compare mirror placement choices. They disagree about whether to use gold or copper. They notice what the person next to them is doing and ask about it.\n\nEvery finished piece looks different despite being made with the same materials and the same basic pattern guidance. That individuality is important in a group setting: no one walks away with an identical object, and the work is genuinely their own.`,
+      },
+      {
+        heading: 'Who Should Try a Lippan Art Workshop',
+        body: `The short answer: anyone who has 90 minutes and access to a table. Lippan Art works for corporate team-building sessions, school craft days, birthday parties, and private groups looking for something more substantial than a paint-and-sip evening.\n\nFor **corporate teams**, it's one of the few group activities that scales cleanly from 20 to 150+ participants while maintaining quality. The tactile process cuts through the usual corporate event dynamics — seniority doesn't matter when everyone's trying to roll a clay rope the same width. Participants take their finished piece home, which means the event stays with them.\n\nFor **school and college groups**, Lippan Art introduces students to a living Indian craft tradition without being didactic about it. The cultural context lands naturally when you're actually making something from that tradition. It works for art days, orientation events, and cultural programmes.\n\nFor **private events** — birthdays, kitty parties, bachelorettes — it's more engaging than most alternatives because the finished piece is genuinely useful. People display their Lippan Art. It doesn't end up in a drawer.\n\nKraftykinni runs [Lippan Art workshops](/workshops/lippan-art) across Delhi, Gurgaon, and Noida, coming to your office, school, or event venue with all materials included. Group sizes from 20 to 200+, starting at ₹600 per person. If you want to understand what a session looks like before booking, the [corporate workshop page](/corporate-art-workshops) has the full format details.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'Is Lippan Art difficult for complete beginners?',
+        a: 'No — and this is one of the reasons it works so well as a group activity. The geometric structure of Lippan Art means that variations in line accuracy look intentional rather than like mistakes. Shramita guides every session step by step, and participants consistently finish with pieces they want to display regardless of their art background.',
+      },
+      {
+        q: 'What surfaces can Lippan Art be done on?',
+        a: "MDF board is the standard for workshops — it's lightweight, flat, and the clay compound adheres reliably. Terracotta pots, canvas board, wooden panels, and glass surfaces also work. The only surfaces to avoid are those that flex (the clay can crack as it sets) or that are heavily coated in a non-porous finish without sanding first.",
+      },
+      {
+        q: 'How long does a Lippan Art workshop session take?',
+        a: 'A standard guided session runs 90 minutes to 2 hours for beginners, which is enough time to complete one MDF board piece — pattern application, mirror placement, and basic painting. More elaborate pieces or terracotta pot formats can run to 2.5 hours.',
+      },
+      {
+        q: 'What materials do I need to try Lippan Art at home?',
+        a: 'You need Fevicryl Mouldit epoxy compound (available at art supply stores and online), convex mirror pieces (abhla, available in 10mm and 15mm sizes), acrylic paints including metallic shades, an MDF board or terracotta surface, and basic clay tools. Craft stores in Delhi NCR typically stock all of these. A Kraftykinni workshop includes all materials in the per-person cost.',
+      },
+      {
+        q: 'Can Lippan Art be done as a team-building activity for large groups?',
+        a: "Yes — it's one of Kraftykinni's most requested corporate activities for large groups. Sessions scale to 150+ participants with additional facilitators, and the process works in standard office or banquet hall settings with basic tables and chairs. The tactile, non-competitive format produces genuine cross-team interaction.",
+      },
+      {
+        q: 'How do I book a Lippan Art workshop in Delhi, Gurgaon, or Noida?',
+        a: 'Contact Kraftykinni via the booking form or WhatsApp at +91 9599622210. Share your group size, preferred date, and location. Shramita confirms availability within 24 hours and suggests the right format for your group. A 50% deposit confirms the date; minimum 7 days notice required.',
       },
     ],
   },

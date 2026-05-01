@@ -200,6 +200,26 @@ const routes = [
     `,
   },
   {
+    path: '/blog/lippan-art-complete-beginners-guide-kutch-mirror-work/',
+    title: "Lippan Art Guide: Kutch Mirror Work for Beginners | Kraftykinni",
+    description: 'Everything you need to know about Lippan Art — the Kutch mirror-work tradition, materials, step-by-step process, and why it's one of the best group workshop activities in Delhi NCR.',
+    h1: "Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work",
+    bodyContent: `
+      <h1>Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work</h1>
+      <p>Lippan Art is a 500-year-old craft from the Kutch region of Gujarat. Originally practised by women of the Rabari and Mutwa communities, it was used to decorate the interior walls of mud homes.</p>
+      <h2>The Tradition Behind the Craft</h2>
+      <p>The word lippan refers to the mud-and-cow-dung plaster that Kutchi women historically applied to their home walls. Embedded into this plaster were abhla — small circular mirrors — arranged in concentric geometric patterns.</p>
+      <h2>The Materials: What Makes Lippan Art Work</h2>
+      <p>Clay compound (Fevicryl Mouldit), convex mirrors, acrylic paints, and an MDF board or terracotta surface are the core materials used in Lippan Art.</p>
+      <h2>The Process: Step by Step</h2>
+      <p>Base coat, pattern sketch, clay application, mirror placement, and painting with metallic acrylics — the process takes 90 minutes to 2 hours in a guided workshop session.</p>
+      <h2>Why Lippan Art Works So Well in a Group</h2>
+      <p>Geometric patterns are inherently forgiving, mirror placement produces repeatable small successes, and every finished piece looks different despite being made with the same materials.</p>
+      <h2>Who Should Try a Lippan Art Workshop</h2>
+      <p>Kraftykinni runs Lippan Art workshops across Delhi, Gurgaon, and Noida for corporate teams, schools, and private events. Groups from 20 to 200+, starting at Rs. 600 per person.</p>
+    `,
+  },
+  {
     path: '/blog/best-corporate-team-building-activities-gurgaon-2026/',
     title: 'Best Corporate Team Building Activities Gurgaon 2026 | Kraftykinni',
     description: 'Top 10 corporate team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person all-in.',
@@ -522,6 +542,7 @@ const sitemapEntries = [
   { loc: '/about/',                         priority: '0.6', changefreq: 'yearly'  },
   { loc: '/privacy-policy/',               priority: '0.2', changefreq: 'yearly'  },
   { loc: '/blog/',                          priority: '0.7', changefreq: 'weekly'  },
+  { loc: '/blog/lippan-art-complete-beginners-guide-kutch-mirror-work/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/best-corporate-team-building-activities-gurgaon-2026/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/annual-day-activity-ideas-schools-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/art-workshop-ideas-birthday-party-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
