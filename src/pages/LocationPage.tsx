@@ -143,6 +143,7 @@ export default function LocationPage() {
         <meta property="og:title" content={loc.metaTitle} />
         <meta property="og:description" content={loc.metaDescription} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content="https://kraftykinni.in/og-corporate.jpg" />
         <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:locale" content="en_IN" />

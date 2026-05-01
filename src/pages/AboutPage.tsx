@@ -34,6 +34,7 @@ export default function AboutPage() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content="https://kraftykinni.in/og-corporate.jpg" />
         <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:locale" content="en_IN" />

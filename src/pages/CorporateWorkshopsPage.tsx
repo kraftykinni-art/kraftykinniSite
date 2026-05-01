@@ -52,6 +52,7 @@ export default function CorporateWorkshopsPage() {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content="https://kraftykinni.in/og-corporate.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
