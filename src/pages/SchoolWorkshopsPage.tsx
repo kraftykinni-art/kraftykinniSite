@@ -84,9 +84,9 @@ const gradeGroups = [
 ];
 
 export default function SchoolWorkshopsPage() {
-  const title = 'Art Workshops for Schools & Colleges in Delhi NCR | Kraftykinni';
+  const title = 'School Art Workshops Delhi NCR — Annual Day & Events | Kraftykinni';
   const description =
-    'Kraftykinni conducts hands-on art and craft workshops for schools and colleges in Delhi NCR. Fun, curriculum-friendly activities for students of all ages. All materials included. Book with Fevicryl-certified artist Shramita Govil.';
+    'Art workshops for schools in Delhi NCR — Annual Day, Art Week & student events. From ₹600/student, facilitator travels to your school. Grades 3 to college. 13 activities, all materials included.';
   const canonical = 'https://kraftykinni.in/school-workshops';
 
   return (

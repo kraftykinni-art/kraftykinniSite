@@ -528,7 +528,7 @@ export const workshopsData: Workshop[] = [
       'Large canvas surface allows bold personal expression',
       'A walking conversation starter — visible, daily-use takeaway',
     ],
-    metaDescription: 'Tote Bag Painting workshop in Delhi NCR by Kraftykinni. Eco-friendly fabric painting sessions for corporate teams, schools & events. Custom branding available. All materials included.',
+    metaDescription: 'Tote Bag Painting workshop in Delhi NCR by Kraftykinni. Custom branding for corporate events. Eco-friendly takeaway from ₹600/person. All materials included. Groups from 20 to 200+.',
     pageHeadline: 'Tote Bag Painting Workshop in Delhi NCR',
     intro: 'Tote Bag Painting is one of our most sustainable and practically useful workshops. Each participant paints their own cotton tote bag using fabric paints and stencils, creating a personalised, eco-friendly bag they will actually use. For corporates, we can incorporate brand elements or event themes — making it an excellent branded gifting workshop. The outcome is both a creative achievement and a daily reminder of the experience.',
     whatYouMake: 'A hand-painted cotton tote bag with personalised or themed designs — durable, usable, eco-friendly.',

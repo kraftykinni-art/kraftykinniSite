@@ -81,36 +81,38 @@ const routes = [
   // ── School workshops ─────────────────────────────────────────────────────
   {
     path: '/school-workshops/',
-    title: 'Art Workshops for Schools & Colleges Delhi NCR | Kraftykinni',
-    description: 'Fun, guided art workshops for schools and colleges in Delhi NCR. 13 activities including Clay Art, Block Printing & Tote Bag Painting. All materials included. Led by Fevicryl-certified artist.',
-    h1: 'Art Workshops for Schools & Colleges in Delhi NCR',
+    title: 'School Art Workshops Delhi NCR — Annual Day & Events | Kraftykinni',
+    description: 'Art workshops for schools in Delhi NCR — Annual Day, Art Week & student events. From ₹600/student, facilitator travels to your school. Grades 3 to college. 13 activities, all materials included.',
+    h1: 'School Art Workshops Delhi NCR — Annual Day, Art Week & Student Events',
     bodyContent: `
-      <h1>Art Workshops for Schools and Colleges in Delhi NCR</h1>
-      <p>Kraftykinni conducts fun, guided art and craft workshops for schools and colleges across Delhi NCR. Sessions are suitable for students from Grade 3 through to college level. All materials are included and no prior art experience is needed. Led by Shramita Govil, Fevicryl-certified artist with 50+ workshops and 1,500+ participants trained.</p>
+      <h1>School Art Workshops Delhi NCR — Annual Day, Art Week &amp; Student Events</h1>
+      <p>Kraftykinni conducts structured, guided art workshops for schools and colleges across Delhi, Gurgaon, and Noida. We are the most-booked art workshop facilitator for school annual days in Delhi NCR — running sessions for groups from 30 to 300+ students at schools from Grade 3 through college level. The facilitator travels to your school with all materials. From ₹600 per student, everything included.</p>
+      <h2>Annual Day Art Activities for Schools in Delhi NCR</h2>
+      <p>Annual day planning committees consistently choose Kraftykinni because every student completes a finished, display-worthy piece within the session — no half-finished work, no mess to clean up. The most popular annual day activities are Tote Bag Painting, Mandala Art, Lippan Art, Tie and Dye, and Block Printing. Each one scales to 100+ students simultaneously and produces a finished artwork students take home as a memory of the event.</p>
       <h2>Why Schools Choose Kraftykinni</h2>
-      <p>All art materials are provided — paints, canvases, brushes, aprons, and activity-specific supplies. We travel to your school anywhere in Delhi NCR and set up before the session. Every student completes a finished, display-worthy piece they take home. Fevicryl-certified facilitation ensures professional, high-quality guidance. Group sizes from 20 students to full school assemblies of 200+.</p>
+      <p>All art materials are provided — paints, canvases, brushes, aprons, and activity-specific supplies. We travel to your school anywhere in Delhi NCR and set up before the session. Every student completes a finished, display-worthy piece they take home. Fevicryl-certified facilitation ensures professional guidance. Group sizes from 30 students to full school assemblies of 300+.</p>
       <h2>Activities by Grade Group</h2>
       <h3>Primary (Grade 3–5)</h3>
-      <p>MDF Fridge Magnet, Clay Art, Tote Bag Painting, Canvas Pouch. Simple, tactile activities that develop fine motor skills and creative confidence.</p>
+      <p>MDF Fridge Magnet, Clay Art, Tote Bag Painting, Canvas Pouch. Simple, tactile activities that develop fine motor skills and creative confidence. All ideal for primary school annual day segments.</p>
       <h3>Middle School (Grade 6–8)</h3>
-      <p>Block Printing, Tie and Dye, Trinket Tray Painting, Texture Art. More detailed craft activities introducing Indian heritage techniques and fabric art.</p>
+      <p>Block Printing, Tie and Dye, Trinket Tray Painting, Texture Art. More detailed craft activities introducing Indian heritage techniques and fabric art — popular for art week and inter-school events.</p>
       <h3>Senior School (Grade 9–12)</h3>
-      <p>Lippan Art, Mandala Art, Boho Canvas Art, Glass Painting. Sophisticated art forms with rich cultural context, popular as stress-relief activities.</p>
+      <p>Lippan Art, Mandala Art, Boho Canvas Art, Glass Painting. Sophisticated art forms with rich cultural context. Mandala Art is the top annual day choice for senior school groups — the step-by-step process produces impressive results regardless of art ability.</p>
       <h3>College and University</h3>
-      <p>All 13 Kraftykinni signature activities are available for college groups. Lippan Art and Boho Canvas are particularly popular for fest events and orientation days.</p>
-      <h2>Suitable Occasions</h2>
-      <p>Annual Day activities, Art Week celebrations, inter-school events, student orientation days, Teacher's Day programmes, farewell events, and everyday creative enrichment classes.</p>
+      <p>All 13 Kraftykinni signature activities are available for college groups. Lippan Art and Boho Canvas are particularly popular for fest events, orientation days, and farewell celebrations.</p>
+      <h2>Occasions We Cover</h2>
+      <p>Annual Day activities, Art Week celebrations, inter-school events, student orientation days, Teacher's Day programmes, farewell events, college fests, and creative enrichment classes. Pricing from ₹600 per student with all materials included.</p>
       <h2>Frequently Asked Questions</h2>
-      <h3>What age groups are your school workshops suitable for?</h3>
-      <p>Our workshops are designed for students from Grade 3 onwards through college level. Activities are adapted to the age group — simpler crafts for younger students, more detailed art forms for older groups.</p>
+      <h3>What art activities work best for a school annual day in Delhi NCR?</h3>
+      <p>The most popular annual day art activities are Tote Bag Painting, Mandala Art, Lippan Art, and Tie and Dye. All four produce a finished piece in 60 to 90 minutes, require no prior experience, and scale to groups of 50 to 300+ students across Delhi, Gurgaon, and Noida.</p>
       <h3>Can you come to our school for the workshop?</h3>
       <p>Yes — we travel to your school anywhere in Delhi NCR. We bring all materials and set up before the session. You only need to provide tables, chairs, and the space.</p>
+      <h3>How much does a school annual day art workshop cost?</h3>
+      <p>Pricing starts at ₹600 per student with all materials included. For groups of 100+ students we offer volume pricing. Contact us with your student count and annual day date for a specific quote.</p>
       <h3>How many students can participate in one session?</h3>
-      <p>We handle groups from 20 students up to full school assemblies of 200+. For very large groups we bring additional facilitators.</p>
+      <p>We handle groups from 30 students up to full school assemblies of 300+. For very large groups we bring additional facilitators to maintain quality.</p>
       <h3>Do students need any prior art experience?</h3>
-      <p>No experience needed. Every workshop is step-by-step guided. All students, regardless of their art ability, create a finished piece to take home.</p>
-      <h3>What occasions are school workshops suitable for?</h3>
-      <p>Annual Day activities, Art Week celebrations, inter-school events, student orientation days, Teacher's Day programmes, farewell events, and everyday creative enrichment classes.</p>
+      <p>No experience needed. Every workshop is step-by-step guided. All students, regardless of their art ability, create a finished piece to take home on the day.</p>
     `,
   },
 
@@ -149,8 +151,8 @@ const routes = [
   // ── About ────────────────────────────────────────────────────────────────
   {
     path: '/about/',
-    title: 'About Kraftykinni | Shramita Govil — Fevicryl Certified Artist Delhi NCR',
-    description: 'Kraftykinni is led by Shramita Govil, a Fevicryl-certified artist with 50+ workshops and 1,500+ participants across Delhi NCR. Learn about our story, mission, and approach.',
+    title: 'Fevicryl Certified Art Workshop Facilitator Delhi NCR | Kraftykinni',
+    description: 'Shramita Govil — Fevicryl Certified Artist. 50+ workshops, 1,500+ participants across Delhi, Gurgaon & Noida — corporate teams, schools & private events.',
     h1: 'About Kraftykinni — Shramita Govil, Fevicryl Certified Artist',
     bodyContent: `
       <h1>About Kraftykinni — Shramita Govil, Fevicryl Certified Artist</h1>
@@ -355,10 +357,10 @@ const routes = [
   },
   {
     path: '/workshops/tote-bag-painting/',
-    title: 'Tote Bag Painting Workshop Delhi NCR — Eco Corporate Gift | Kraftykinni',
-    description: 'Tote Bag Painting workshop in Delhi NCR by Kraftykinni. Eco-friendly fabric painting for corporate teams, schools & events. Custom branding available. All materials included. ₹600–₹800/person.',
+    title: 'Tote Bag Painting Workshop Delhi NCR — ₹600/person | Kraftykinni',
+    description: 'Tote Bag Painting workshop in Delhi NCR by Kraftykinni. Custom branding available for corporate events. Eco-friendly, functional takeaway. All materials included. ₹600–₹800/person.',
     h1: 'Tote Bag Painting Workshop in Delhi NCR',
-    bodyContent: `<h1>Tote Bag Painting Workshop in Delhi NCR</h1><p>Tote Bag Painting is one of our most sustainable and practically useful workshops. Each participant paints their own cotton tote bag using fabric paints and stencils, creating a personalised, eco-friendly bag they will actually use. For corporates, we can incorporate brand elements or event themes — making it an excellent branded gifting workshop.</p><h2>What you make</h2><p>A hand-painted cotton tote bag with personalised or themed designs — durable, usable, eco-friendly.</p><h2>Who it is for</h2><p>Excellent for corporate gifting events, sustainability-themed workshops, school events, and private parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    bodyContent: `<h1>Tote Bag Painting Workshop in Delhi NCR</h1><p>Tote Bag Painting is one of our most sustainable and practically useful workshops. Each participant paints their own cotton tote bag using fabric paints and stencils, creating a personalised, eco-friendly bag they will actually use. For corporates, we can incorporate brand elements or event themes — making it an excellent branded gifting workshop. Pricing from ₹600 per person, all materials included.</p><h2>What you make</h2><p>A hand-painted cotton tote bag with personalised or themed designs — durable, usable, and eco-friendly. Fabric paint dries within 15 to 20 minutes, so every participant can handle and pack their tote before the workshop ends.</p><h2>Custom Branding for Corporate Events</h2><p>Tote Bag Painting is the only Kraftykinni activity where company branding can be incorporated directly onto the artwork. We can pre-print your logo or event theme on the bags before the session — participants then personalise them further with their own painted designs. The result is a branded gifting piece that is genuinely handmade, not a generic promotional item. HR teams running CSR days, sustainability events, or onboarding programmes have used this format to create takeaways that employees actually keep and use — providing ongoing brand visibility long after the event ends.</p><h2>Why Tote Bag Painting Works for Corporate Gifting</h2><p>Most corporate event takeaways are forgotten within a week. A hand-painted tote bag is different: it is functional, eco-friendly, and visibly personal. Participants use it for groceries, commuting, and errands — which means your brand remains visible for months. It is the most environmentally conscious activity in the Kraftykinni catalogue, making it the top choice for sustainability-themed events, Earth Day programmes, and CSR workshops across Delhi NCR.</p><h2>Who it is for</h2><p>Excellent for corporate gifting events, sustainability-themed workshops, school annual days, and private parties. Duration: 1.5 to 2 hours. Groups from 20 to 200+. Pricing from ₹600 per person.</p><h2>Frequently Asked Questions</h2><h3>Can you add our company logo to the tote bags?</h3><p>Yes — Kraftykinni can pre-print your company logo or event theme on the bags before the workshop. Participants then add their own painted designs around the branding, creating a personalised gifting piece.</p><h3>What fabric and paint is used?</h3><p>We use plain cotton canvas tote bags and professional-grade fabric acrylic colours. The paint is non-toxic, water-resistant once dry, and safe for daily use. Stencils and fine brushes are provided for all skill levels.</p><h3>Is the painted design washable?</h3><p>Yes — fabric acrylic paint is wash-fast once fully dry and heat-set. We recommend a gentle first hand-wash before machine washing, and turning the bag inside out for subsequent washes.</p>`,
   },
   {
     path: '/workshops/trinket-tray/',
