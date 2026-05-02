@@ -290,6 +290,26 @@ const routes = [
       <p>Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida. Starting at ₹600 per person, all materials included. Contact us via WhatsApp or the contact form to discuss your date.</p>
     `,
   },
+  {
+    path: '/blog/bottle-lamp-art-workshop-school-delhi-ncr/',
+    title: 'Bottle Lamp Art Workshop for Schools Delhi NCR | Kraftykinni',
+    description: 'See how Jaypee Public School Noida ran a Bottle Lamp Art session for 150+ students using Fevicryl Mouldit & Acrylic Colours. A guide for schools planning art activities in Delhi NCR.',
+    h1: 'Bottle Lamp Art Workshop for Schools: How Jaypee Public School Noida Did It',
+    bodyContent: `
+      <h1>Bottle Lamp Art Workshop for Schools: How Jaypee Public School Noida Did It</h1>
+      <p>The Hindustan Times Lit Fest Preview at Jaypee Public School, Greater Noida, needed an art activity that would run simultaneously for over 150 students — clear steps, no prior skill required, and a finished piece every student could carry home. The answer was Bottle Lamp Art: glass bottles transformed into decorative lamps using Fevicryl Mouldit epoxy compound and Acrylic Colours.</p>
+      <h2>What is Bottle Lamp Art?</h2>
+      <p>Bottle Lamp Art transforms a plain glass bottle into a textured, painted decorative lamp. The surface is built up using Fevicryl Mouldit — a two-part epoxy compound — to create raised patterns directly on the bottle. Once set, the surface is painted with Fevicryl Acrylic Colours and finished with metallic accents. Mouldit sets fast enough that students complete a full piece in one 90-minute session, with no overnight drying required.</p>
+      <h2>Materials Used</h2>
+      <p>Fevicryl Mouldit two-part epoxy compound and Fevicryl Acrylic Colours are the core materials. All supplies — bottles, Mouldit, paints, brushes, aprons, and newspaper workspace covers — are provided by Kraftykinni. Schools supply only the venue, tables, and chairs.</p>
+      <h2>How the Session Ran — Step by Step</h2>
+      <p>Stage 1: Base coat on the entire bottle surface (10 minutes). Stage 2: Mouldit pattern application — flowers, geometric lines, spirals, or sculptural motifs (25 minutes). Stage 3: Detail painting in contrasting Acrylic Colours while Mouldit sets (20 minutes). Stage 4: Gold and silver highlight touches and group display photograph (15 minutes). Every student completed a finished piece in 90 minutes.</p>
+      <h2>Why Bottle Lamp Art Works at Scale for Schools</h2>
+      <p>Bottle Lamp Art is self-paced — faster workers add more intricate detail, slower workers produce cleaner shapes. Both look intentional. The bottle shape guides design decisions for students who say they cannot draw. The upcycling angle adds purpose that works especially well for sustainability-themed events, Earth Day programmes, and environment club activities. For school art workshops across Delhi NCR, it ranks alongside Mandala Art and Tote Bag Painting as one of the most reliable large-group formats.</p>
+      <h2>Book a Bottle Lamp Art Workshop for Your School</h2>
+      <p>Bottle Lamp Art is one of Kraftykinni's 13 signature school workshop activities, conducted by Shramita Govil, Fevicryl Certified Artist. Groups from 30 to 300+ students. Pricing from ₹600 per student, all materials included. Available across Delhi, Gurgaon, and Noida. WhatsApp +91 9599622210 or book via kraftykinni.in/school-workshops.</p>
+    `,
+  },
 
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
@@ -545,6 +565,7 @@ const sitemapEntries = [
   { loc: '/privacy-policy/',               priority: '0.2', changefreq: 'yearly'  },
   { loc: '/blog/',                          priority: '0.7', changefreq: 'weekly'  },
   { loc: '/blog/lippan-art-complete-beginners-guide-kutch-mirror-work/', priority: '0.7', changefreq: 'monthly' },
+  { loc: '/blog/bottle-lamp-art-workshop-school-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/best-corporate-team-building-activities-gurgaon-2026/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/annual-day-activity-ideas-schools-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/art-workshop-ideas-birthday-party-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },

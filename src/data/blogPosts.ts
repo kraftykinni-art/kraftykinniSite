@@ -355,4 +355,99 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'bottle-lamp-art-workshop-school-delhi-ncr',
+    title: 'Bottle Lamp Art Workshop for Schools: How Jaypee Public School Noida Did It',
+    metaTitle: 'Bottle Lamp Art Workshop for Schools Delhi NCR | Kraftykinni',
+    metaDescription: 'See how Jaypee Public School Noida ran a Bottle Lamp Art workshop for 150+ students using Fevicryl Mouldit & Acrylic Colours. A guide for schools planning art activities in Delhi NCR.',
+    publishDate: '2026-05-02',
+    category: 'School & College',
+    excerpt:
+      '150+ students at Jaypee Public School Greater Noida turned empty glass bottles into handcrafted decorative lamps using Fevicryl Mouldit and Acrylic Colours — and every single one took their finished piece home on the day.',
+    keywords: [
+      'bottle lamp art workshop school',
+      'bottle art workshop Delhi NCR',
+      'school art workshop Noida',
+      'Fevicryl Mouldit workshop',
+      'art activity for school annual day',
+      'school art fest activity',
+      'bottle decoration workshop students',
+      'upcycling art workshop school',
+    ],
+    sections: [
+      {
+        body: `The Hindustan Times Lit Fest Preview at Jaypee Public School, Greater Noida, needed an art activity that would run simultaneously for over 150 students across grade groups — something with clear steps, no prior skill required, and a finished piece every student could carry home. The answer was Bottle Lamp Art: glass bottles transformed into decorative lamps using Fevicryl Mouldit epoxy compound and Acrylic Colours.\n\nHere is exactly how the session ran, what materials were used, and why Bottle Lamp Art works particularly well as a large-scale school event activity.`,
+        image: '/bottle-art-workshop-jaypee-school-noida-students.jpeg',
+        imageAlt: 'Students at Jaypee Public School Greater Noida displaying finished Bottle Lamp Art pieces with Shramita Govil at the Hindustan Times Lit Fest Preview — Kraftykinni',
+      },
+      {
+        heading: 'What is Bottle Lamp Art?',
+        body: `Bottle Lamp Art is a craft technique that transforms a plain glass bottle into a textured, painted decorative lamp. The surface is built up using Fevicryl Mouldit — a two-part epoxy compound that sets firm within minutes — to create raised patterns, motifs, or sculptural elements directly on the bottle. Once set, the surface is painted with Fevicryl Acrylic Colours and finished with metallic or glitter accents.\n\nThe appeal is threefold: it is a genuine upcycling activity (empty bottles become display pieces), the tactile process of shaping Mouldit is immediately satisfying, and the finished lamp is functional — students can place a battery-powered LED inside and actually use it at home.\n\nFor schools, there is a further practical advantage: the Mouldit sets fast enough that students complete their full piece in a single 90-minute session, with no overnight drying required.`,
+      },
+      {
+        heading: 'Materials Used at Jaypee Public School',
+        body: `Students worked with the following materials, arranged in advance by the school and students, with facilitation and guidance provided by Kraftykinni:`,
+        listItems: [
+          'One clean glass bottle per student (round, square, and Borosil-style shapes were used)',
+          'Fevicryl Mouldit two-part epoxy compound — pre-measured per student',
+          'Fevicryl Acrylic Colours in a curated palette of 6 shades per group',
+          'Shaping tools for Mouldit: wooden stylus and silicone tip',
+          'Brushes in two sizes (flat for base coat, round for detail work)',
+          'Mixing palette sheet',
+          'Newspapers for workspace protection (laid before students arrived)',
+          'Aprons for mess-free working',
+        ],
+        listType: 'ul',
+        image: '/bottle-lamp-art-school-workshop-session-noida.jpeg',
+        imageAlt: 'Large-scale Bottle Lamp Art session at Jaypee Public School Noida — 150+ students working simultaneously on the atrium floor with Fevicryl materials by Kraftykinni',
+      },
+      {
+        heading: 'How the Workshop Ran — Step by Step',
+        body: `With 150+ students working across the school atrium simultaneously, the session ran in four clear stages with Shramita Govil and her facilitation team moving continuously between groups:`,
+        listItems: [
+          'Stage 1 — Base coat (10 minutes): Students painted the entire bottle surface with a single acrylic base colour of their choice. This step primes the surface for Mouldit adhesion.',
+          'Stage 2 — Mouldit design application (25 minutes): Each student mixed their Mouldit portion and applied raised patterns — flowers, geometric lines, spirals, or sculptural motifs. Three pattern styles were demonstrated at the start; students then chose their own direction.',
+          'Stage 3 — Set time and detail painting (20 minutes): While the Mouldit set (approximately 15–20 minutes), students added detail painting in contrasting or metallic Acrylic Colours around the raised elements.',
+          'Stage 4 — Final accent and display (15 minutes): Gold and silver highlight touches were added to the Mouldit relief. Students placed finished bottles upright for a group display and photograph.',
+        ],
+        listType: 'ol',
+        image: '/bottle-art-shramita-guiding-students-jaypee.jpeg',
+        imageAlt: 'Shramita Govil guiding a student on Bottle Lamp Art Mouldit technique at Jaypee Public School Greater Noida — Kraftykinni school workshop',
+      },
+      {
+        heading: 'Why Bottle Lamp Art Works at Scale for Schools',
+        body: `Most art activities that run smoothly for 20 students become unmanageable at 150. Bottle Lamp Art is one of the few formats that scales reliably — and here is why.\n\nThe Mouldit stage is self-paced. Students who work faster add more intricate detail to their relief pattern; students who work slower produce simpler, cleaner shapes. Both results look intentional. There is no penalty for speed difference, which removes the frustration that derails large-group activities when faster finishers are left idle and slower finishers feel rushed.\n\nThe bottle shape provides natural structure. Unlike a blank canvas, a bottle guides design decisions — students instinctively work around the curves, the neck, and the base. Students who say they "can't draw" consistently produce a structured, satisfying result because the surface itself provides direction.\n\nThe upcycling angle gives the activity a purpose beyond craft. Schools running sustainability-themed days, Earth Day programmes, or environment club activities find that the upcycled bottle narrative adds a layer of meaning that students carry home with the object itself.\n\nFor [school art workshops across Delhi NCR](/school-workshops), Bottle Lamp Art sits alongside Mandala Art and Tote Bag Painting as one of the three most reliable formats for large-group school events — each for different reasons, but all producing a finished piece that every participant takes home.`,
+      },
+      {
+        heading: 'Book a Bottle Lamp Art Workshop for Your School',
+        body: `[Bottle Lamp Art is one of Kraftykinni's 13 signature workshop activities](/workshops/bottle-lamp-art), conducted by [Shramita Govil, Fevicryl Certified Artist](/about). Sessions are available across Delhi, Gurgaon, and Noida.Kraftykinni provides facilitation and guidance for the workshop. Materials can be arranged by the school or provided by Kraftykinni on request.\n\nGroup sizes from 30 to 300+ students. Duration: 90 minutes to 2 hours depending on group size and detail level. Pricing from ₹600 per student, all materials included. A minimum of 7 days notice is required to organise materials for large groups.\n\nTo book or enquire, WhatsApp +91 9599622210 or use the form below with your event date, student count, and grade group. Shramita confirms availability within 24 hours.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What is Bottle Lamp Art and is it suitable for school students?',
+        a: 'Bottle Lamp Art is a craft technique where glass bottles are decorated with Fevicryl Mouldit epoxy compound to create raised sculptural patterns, then painted with Acrylic Colours. It is suitable for students from Grade 5 upwards. Younger students in Grades 3–4 can participate with simpler pattern options. No prior art experience is required.',
+      },
+      {
+        q: 'What materials are needed for a Bottle Lamp Art school workshop?',
+        a: 'The primary materials are Fevicryl Mouldit (two-part epoxy compound) and Fevicryl Acrylic Colours. All materials — bottles, Mouldit, paints, brushes, tools, aprons, and newspaper workspace covers — are supplied by Kraftykinni. Schools do not need to arrange any art materials.',
+      },
+      {
+        q: 'How long does a school Bottle Lamp Art session take?',
+        a: 'A standard session runs 90 minutes for most school groups, covering base coat, Mouldit application, setting time, and detail painting. For very large groups of 200+ or for more detailed designs, 2 hours is recommended. Every student completes a finished piece before the session ends — there is no overnight drying.',
+      },
+      {
+        q: 'Is Bottle Lamp Art suitable for a school annual day or art fest?',
+        a: 'Yes — Bottle Lamp Art is one of the most-requested activities for school annual days and art fests in Delhi NCR. The finished bottle is display-worthy and students take it home as a memento of the event. The upcycling theme also works well for sustainability-themed school programmes and environment club activities.',
+      },
+      {
+        q: 'How many students can do this activity at the same time?',
+        a: 'Kraftykinni has conducted Bottle Lamp Art sessions for groups from 30 to 200+ students simultaneously. For large groups, additional trained facilitators are deployed. The Jaypee Public School Greater Noida session ran for over 150 students working across the school atrium floor.',
+      },
+      {
+        q: 'Do students need to bring materials or prepare anything in advance?',
+        a: 'No preparation required from students or the school. All materials are brought and laid out by Kraftykinni before the session begins. The workspace is covered in newspaper, cleared, and cleaned after the session. Schools only need to ensure the venue space, tables, and chairs are available.',
+      },
+    ],
+  },
 ];
