@@ -87,7 +87,7 @@ export default function SchoolWorkshopsPage() {
   const title = 'School Art Workshops Delhi NCR — Annual Day & Events | Kraftykinni';
   const description =
     'Art workshops for schools in Delhi NCR — Annual Day, Art Week & student events. From ₹600/student, facilitator travels to your school. Grades 3 to college. 13 activities, all materials included.';
-  const canonical = 'https://kraftykinni.in/school-workshops';
+  const canonical = 'https://kraftykinni.in/school-workshops/';
 
   return (
     <>
@@ -132,6 +132,18 @@ export default function SchoolWorkshopsPage() {
             name: q,
             acceptedAnswer: { '@type': 'Answer', text: a },
           })),
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org', '@type': 'HowTo',
+          name: 'How to Book a School Art Workshop with Kraftykinni',
+          description: 'Steps to book a guided art workshop for your school in Delhi NCR. Sessions from ₹600/student, all materials included, facilitator travels to your school.',
+          step: [
+            { '@type': 'HowToStep', position: 1, name: 'Choose an activity', text: 'Browse the 13 Kraftykinni signature activities and shortlist 2–3 that match your student age group and event theme.' },
+            { '@type': 'HowToStep', position: 2, name: 'Send an enquiry', text: 'WhatsApp +91 9599622210 or fill the contact form with your school name, event date, expected student count, and preferred activity.' },
+            { '@type': 'HowToStep', position: 3, name: 'Confirm your date', text: 'Shramita confirms availability within 24 hours. A 50% deposit is required to secure the booking.' },
+            { '@type': 'HowToStep', position: 4, name: 'We arrive and set up', text: 'Kraftykinni arrives at your school with all materials — paints, canvases, aprons, brushes. Setup takes 20–30 minutes before the session starts.' },
+            { '@type': 'HowToStep', position: 5, name: 'Workshop runs', text: 'The session runs for 1.5 to 2.5 hours. Every student completes a finished artwork to take home. Kraftykinni handles cleanup.' },
+          ],
         })}</script>
       </Helmet>
 
@@ -316,6 +328,77 @@ export default function SchoolWorkshopsPage() {
                   <p className="text-sm text-gray-600 font-light leading-relaxed">{g.desc}</p>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing table */}
+        <section className="py-24 bg-brand-offwhite">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-4xl font-bold text-brand-slate mb-4">
+                School Workshop <span className="text-brand-pink italic">Pricing</span>
+              </h2>
+              <p className="text-brand-slate/70 max-w-xl mx-auto">
+                All materials included. Facilitator travels to your school. No hidden charges.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              {[
+                { tier: 'Small Group', size: '20–50 students', price: '₹800', note: 'per student', highlight: false },
+                { tier: 'Standard', size: '50–100 students', price: '₹700', note: 'per student', highlight: true },
+                { tier: 'Large Group', size: '100+ students', price: '₹600', note: 'per student', highlight: false },
+              ].map((t) => (
+                <motion.div
+                  key={t.tier}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className={`rounded-2xl border p-8 text-center ${t.highlight ? 'bg-brand-pink text-white border-brand-pink shadow-lg scale-105' : 'bg-white border-gray-100 shadow-sm'}`}
+                >
+                  <p className={`text-xs font-bold uppercase tracking-widest mb-3 ${t.highlight ? 'text-white/70' : 'text-brand-pink'}`}>{t.tier}</p>
+                  <p className={`font-serif text-4xl font-bold mb-1 ${t.highlight ? 'text-white' : 'text-brand-slate'}`}>{t.price}</p>
+                  <p className={`text-sm mb-4 ${t.highlight ? 'text-white/80' : 'text-gray-400'}`}>{t.note}</p>
+                  <div className={`w-10 h-px mx-auto mb-4 ${t.highlight ? 'bg-white/30' : 'bg-gray-200'}`} />
+                  <p className={`text-sm font-medium ${t.highlight ? 'text-white' : 'text-brand-charcoal'}`}>{t.size}</p>
+                </motion.div>
+              ))}
+            </div>
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+              <p className="text-sm text-gray-500 font-light leading-relaxed text-center">
+                <strong className="text-brand-charcoal font-medium">All pricing includes:</strong> art materials, facilitation, setup and cleanup, and travel to your school within Delhi NCR.
+                A 50% deposit confirms the booking. Minimum 7 days advance notice required for large groups.
+                {' '}<a href="/#contact" className="text-brand-pink font-medium hover:underline underline-offset-4">WhatsApp us</a> for a custom quote for 200+ students or multi-session bookings.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Case study strip — Jaypee Public School */}
+        <section className="py-16 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-brand-offwhite rounded-3xl border border-gray-100 p-8 md:p-12 flex flex-col md:flex-row gap-8 items-start">
+              <div className="shrink-0">
+                <div className="w-14 h-14 rounded-2xl bg-brand-pink/10 flex items-center justify-center">
+                  <Sparkles size={26} className="text-brand-pink" />
+                </div>
+              </div>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">School Case Study</p>
+                <h3 className="font-serif text-2xl font-bold text-brand-slate mb-4">
+                  Bottle Lamp Art at Jaypee Public School, Noida
+                </h3>
+                <p className="text-gray-600 font-light leading-relaxed mb-6">
+                  Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student decorated their bottle using Fevicryl Mouldit and acrylic colours, taking home a finished, display-worthy lamp. The upcycling theme aligned with the school's sustainability focus for the event.
+                </p>
+                <Link
+                  to="/blog/bottle-lamp-art-workshop-school-delhi-ncr/"
+                  className="inline-flex items-center gap-2 text-brand-pink font-medium hover:underline underline-offset-4 text-sm"
+                >
+                  Read the full case study <ArrowRight size={15} />
+                </Link>
+              </div>
             </div>
           </div>
         </section>
