@@ -370,8 +370,8 @@ const routes = [
   },
   {
     path: '/workshops/texture-art/',
-    title: 'Texture Art Workshop Delhi NCR — Mixed Media Canvas | Kraftykinni',
-    description: 'Texture Art workshop in Delhi NCR by Kraftykinni. Mixed-media layered canvas art sessions for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
+    title: 'Texture Art Workshop Delhi NCR — Beginner-Friendly | Kraftykinni',
+    description: 'Create a layered texture canvas using tissue, acrylic & mixed media. Beginner-friendly. Corporate teams, schools & private events. All materials included. Delhi NCR. From ₹600/person.',
     h1: 'Texture Art Workshop in Delhi NCR',
     bodyContent: `<h1>Texture Art Workshop in Delhi NCR</h1><p>Texture Art uses layered materials — tissue paper, acrylic paste, fabric scraps, and paint — to build deeply tactile canvases with real physical dimension. Because the process is abstract and exploratory, there is no wrong way to do it, making it ideal for participants who feel intimidated by art. The results consistently surprise people — what begins as a messy layering process resolves into rich, gallery-quality wall art.</p><h2>What you make</h2><p>A layered, textured mixed-media canvas — unique, abstract, and display-ready.</p><h2>Who it is for</h2><p>Perfect for corporate creative thinking workshops, school art days, and private events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
   },
