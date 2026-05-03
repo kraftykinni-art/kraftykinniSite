@@ -84,35 +84,63 @@ const routes = [
     title: 'School Art Workshops Delhi NCR — Annual Day & Events | Kraftykinni',
     description: 'Art workshops for schools in Delhi NCR — Annual Day, Art Week & student events. From ₹600/student, facilitator travels to your school. Grades 3 to college. 13 activities, all materials included.',
     h1: 'School Art Workshops Delhi NCR — Annual Day, Art Week & Student Events',
+    schemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'HowTo',
+        name: 'How to Book a School Art Workshop with Kraftykinni',
+        description: 'Steps to book a guided art workshop for your school in Delhi NCR. Sessions from ₹600/student, all materials included, facilitator travels to your school.',
+        step: [
+          { '@type': 'HowToStep', position: 1, name: 'Choose an activity', text: 'Browse the 13 Kraftykinni signature activities and shortlist 2–3 that match your student age group and event theme.' },
+          { '@type': 'HowToStep', position: 2, name: 'Send an enquiry', text: 'WhatsApp +91 9599622210 or fill the contact form with your school name, event date, expected student count, and preferred activity.' },
+          { '@type': 'HowToStep', position: 3, name: 'Confirm your date', text: 'Shramita confirms availability within 24 hours. A 50% deposit is required to secure the booking.' },
+          { '@type': 'HowToStep', position: 4, name: 'We arrive and set up', text: 'Kraftykinni arrives at your school with all materials — paints, canvases, aprons, brushes. Setup takes 20–30 minutes before the session starts.' },
+          { '@type': 'HowToStep', position: 5, name: 'Workshop runs', text: 'The session runs for 1.5 to 2.5 hours. Every student completes a finished artwork to take home. Kraftykinni handles cleanup.' },
+        ],
+      },
+    ],
     bodyContent: `
       <h1>School Art Workshops Delhi NCR — Annual Day, Art Week &amp; Student Events</h1>
-      <p>Kraftykinni conducts structured, guided art workshops for schools and colleges across Delhi, Gurgaon, and Noida. We are the most-booked art workshop facilitator for school annual days in Delhi NCR — running sessions for groups from 30 to 300+ students at schools from Grade 3 through college level. The facilitator travels to your school with all materials. From ₹600 per student, everything included.</p>
+      <p>Kraftykinni conducts structured, guided art workshops for schools and colleges across Delhi, Gurgaon, and Noida. We run sessions for groups from 30 to 300+ students at schools from Grade 3 through college level. The facilitator travels to your school with all materials. From ₹600 per student, everything included.</p>
       <h2>Annual Day Art Activities for Schools in Delhi NCR</h2>
-      <p>Annual day planning committees consistently choose Kraftykinni because every student completes a finished, display-worthy piece within the session — no half-finished work, no mess to clean up. The most popular annual day activities are Tote Bag Painting, Mandala Art, Lippan Art, Tie and Dye, and Block Printing. Each one scales to 100+ students simultaneously and produces a finished artwork students take home as a memory of the event.</p>
+      <p>Annual day planning committees consistently choose Kraftykinni because every student completes a finished, display-worthy piece within the session — no half-finished work, no mess to clean up. The most popular annual day activities are Tote Bag Painting, Mandala Art, Lippan Art, Tie and Dye, and Block Printing. Each one scales to 100+ students simultaneously and produces a finished artwork students take home.</p>
       <h2>Why Schools Choose Kraftykinni</h2>
       <p>All art materials are provided — paints, canvases, brushes, aprons, and activity-specific supplies. We travel to your school anywhere in Delhi NCR and set up before the session. Every student completes a finished, display-worthy piece they take home. Fevicryl-certified facilitation ensures professional guidance. Group sizes from 30 students to full school assemblies of 300+.</p>
       <h2>Activities by Grade Group</h2>
       <h3>Primary (Grade 3–5)</h3>
-      <p>MDF Fridge Magnet, Clay Art, Tote Bag Painting, Canvas Pouch. Simple, tactile activities that develop fine motor skills and creative confidence. All ideal for primary school annual day segments.</p>
+      <p>MDF Fridge Magnet, Clay Art, Tote Bag Painting, Canvas Pouch. Simple, tactile activities that develop fine motor skills and creative confidence.</p>
       <h3>Middle School (Grade 6–8)</h3>
-      <p>Block Printing, Tie and Dye, Trinket Tray Painting, Texture Art. More detailed craft activities introducing Indian heritage techniques and fabric art — popular for art week and inter-school events.</p>
+      <p>Block Printing, Tie and Dye, Trinket Tray Painting, Texture Art. Detailed craft activities introducing Indian heritage techniques and fabric art.</p>
       <h3>Senior School (Grade 9–12)</h3>
-      <p>Lippan Art, Mandala Art, Boho Canvas Art, Glass Painting. Sophisticated art forms with rich cultural context. Mandala Art is the top annual day choice for senior school groups — the step-by-step process produces impressive results regardless of art ability.</p>
+      <p>Lippan Art, Mandala Art, Boho Canvas Art, Glass Painting. Mandala Art is the top annual day choice for senior school groups — impressive results regardless of art ability.</p>
       <h3>College and University</h3>
-      <p>All 13 Kraftykinni signature activities are available for college groups. Lippan Art and Boho Canvas are particularly popular for fest events, orientation days, and farewell celebrations.</p>
+      <p>All 13 Kraftykinni signature activities are available for college groups. Lippan Art and Boho Canvas are particularly popular for fest events and orientation days.</p>
+      <h2>School Workshop Pricing</h2>
+      <p>Pricing is per student with all materials included. No hidden charges. Facilitator travels to your school.</p>
+      <ul>
+        <li><strong>Small Group (20–50 students):</strong> ₹800 per student — all materials included</li>
+        <li><strong>Standard (50–100 students):</strong> ₹700 per student — all materials included</li>
+        <li><strong>Large Group (100+ students):</strong> ₹600 per student — all materials included</li>
+      </ul>
+      <p>A 50% deposit confirms the booking. Minimum 7 days advance notice required for large groups. WhatsApp +91 9599622210 for a custom quote for 200+ students or multi-session bookings.</p>
+      <h2>School Case Study — Jaypee Public School, Noida</h2>
+      <p>Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student decorated their bottle using Fevicryl Mouldit and acrylic colours, taking home a finished, display-worthy lamp. The upcycling theme aligned with the school's sustainability focus for the event. Read the full case study at kraftykinni.in/blog/bottle-lamp-art-workshop-school-delhi-ncr/</p>
       <h2>Occasions We Cover</h2>
-      <p>Annual Day activities, Art Week celebrations, inter-school events, student orientation days, Teacher's Day programmes, farewell events, college fests, and creative enrichment classes. Pricing from ₹600 per student with all materials included.</p>
+      <p>Annual Day activities, Art Week celebrations, inter-school events, student orientation days, Teacher's Day programmes, farewell events, college fests, and creative enrichment classes. Curriculum-aligned sessions available for CBSE and ICSE schools.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>What art activities work best for a school annual day in Delhi NCR?</h3>
-      <p>The most popular annual day art activities are Tote Bag Painting, Mandala Art, Lippan Art, and Tie and Dye. All four produce a finished piece in 60 to 90 minutes, require no prior experience, and scale to groups of 50 to 300+ students across Delhi, Gurgaon, and Noida.</p>
+      <p>The most popular annual day art activities are Tote Bag Painting, Mandala Art, Lippan Art, and Tie and Dye. All four produce a finished piece in 60 to 90 minutes, require no prior experience, and scale to groups of 50 to 300+ students.</p>
       <h3>Can you come to our school for the workshop?</h3>
       <p>Yes — we travel to your school anywhere in Delhi NCR. We bring all materials and set up before the session. You only need to provide tables, chairs, and the space.</p>
       <h3>How much does a school annual day art workshop cost?</h3>
-      <p>Pricing starts at ₹600 per student with all materials included. For groups of 100+ students we offer volume pricing. Contact us with your student count and annual day date for a specific quote.</p>
+      <p>Pricing starts at ₹600 per student for groups of 100+ with all materials included. ₹700 per student for 50–100, and ₹800 per student for groups of 20–50. Contact us with your student count for a specific quote.</p>
       <h3>How many students can participate in one session?</h3>
       <p>We handle groups from 30 students up to full school assemblies of 300+. For very large groups we bring additional facilitators to maintain quality.</p>
       <h3>Do students need any prior art experience?</h3>
       <p>No experience needed. Every workshop is step-by-step guided. All students, regardless of their art ability, create a finished piece to take home on the day.</p>
+      <h3>Which grades do you cover?</h3>
+      <p>We work with Grade 3 through Class 12 and college groups. Activity recommendations are tailored to age group — simpler tactile crafts for primary, detailed heritage art forms for senior school.</p>
+      <h3>Do you align workshops with the CBSE or ICSE art syllabus?</h3>
+      <p>Yes — on request, sessions can be framed around art curriculum themes. Mandala Art aligns with geometry and symmetry units, Block Printing with Indian textile heritage, and Clay Art with sculpture fundamentals.</p>
     `,
   },
 
@@ -352,7 +380,42 @@ const routes = [
     title: 'Block Printing Workshop Delhi NCR — Traditional Indian Craft | Kraftykinni',
     description: 'Block Printing workshop in Delhi NCR by Kraftykinni. Learn traditional Indian block printing on fabric. Corporate & school sessions. All materials included. ₹600–₹800/person.',
     h1: 'Block Printing Workshop in Delhi NCR',
-    bodyContent: `<h1>Block Printing Workshop in Delhi NCR</h1><p>Block Printing is one of India's most treasured textile traditions, originating in Rajasthan and Gujarat. Participants learn to apply natural pigments using carved wooden blocks to create repeat patterns on fabric — a rhythmic, meditative process that produces strikingly beautiful results. Popular both as a cultural heritage activity and as a stress-relief exercise for corporate teams.</p><h2>What you make</h2><p>A block-printed fabric item — tote bag, dupatta, or fabric panel — in traditional or contemporary patterns.</p><h2>Who it is for</h2><p>Excellent for corporate cultural events, school heritage days, college fests, and curated team-building sessions. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p><h2>Block printing in Delhi NCR</h2><p>Delhi NCR has a rich textile heritage and block printing connects participants directly to that tradition. Our block printing workshops are among the most frequently booked for corporate cultural programmes, India-themed office events, and school heritage day activities. The rhythmic stamping process is deeply calming and produces striking results on every piece.</p>`,
+    schemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'FAQPage',
+        mainEntity: [
+          { '@type': 'Question', name: 'What is Block Printing?', acceptedAnswer: { '@type': 'Answer', text: 'Block Printing is a traditional Indian textile art form originating in Rajasthan and Gujarat, where carved wooden or foam blocks are dipped in fabric colour and stamped onto cloth to create repeat patterns. It is one of India\'s oldest craft traditions and remains commercially practised in Jaipur, Bagru, and Sanganer.' } },
+          { '@type': 'Question', name: 'What do participants make in a Block Printing workshop?', acceptedAnswer: { '@type': 'Answer', text: 'Participants create a block-printed fabric item — typically a tote bag, cotton dupatta, or fabric panel — using pre-carved wooden or foam blocks and fabric colours. Every piece is unique because hand-stamping produces natural variation in pressure and alignment.' } },
+          { '@type': 'Question', name: 'Is Block Printing suitable for corporate team-building?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — Block Printing is one of the top heritage craft activities for corporate cultural programmes in Delhi NCR. The rhythmic stamping process is calming and meditative, the Indian craft context provides cultural depth, and every participant produces a finished fabric piece to take home.' } },
+          { '@type': 'Question', name: 'How long does a Block Printing workshop take?', acceptedAnswer: { '@type': 'Answer', text: 'A standard Block Printing session runs 1.5 to 2 hours. This includes an introduction to the history and technique, a demonstration by the facilitator, hands-on stamping time, and a drying phase before participants pack their finished pieces.' } },
+          { '@type': 'Question', name: 'What is the cost of a Block Printing workshop in Delhi NCR?', acceptedAnswer: { '@type': 'Answer', text: 'Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100, and ₹800 per person for groups of 20–50. All materials — blocks, fabric colours, fabric items, and aprons — are included.' } },
+        ],
+      },
+    ],
+    bodyContent: `<h1>Block Printing Workshop in Delhi NCR</h1>
+      <p>Block Printing is one of India's most treasured textile traditions, originating in Rajasthan and Gujarat over 500 years ago. Participants learn to apply fabric colours using carved wooden blocks to create repeat patterns on cloth — a rhythmic, meditative process that produces strikingly beautiful results. Popular both as a cultural heritage activity and as a stress-relief exercise for corporate teams.</p>
+      <h2>The History of Block Printing in India</h2>
+      <p>Indian block printing traces its roots to 12th-century Rajasthan, where artisans in towns like Bagru, Sanganer, and Barmer developed distinct regional styles using natural dyes and hand-carved teak blocks. The craft flourished under Mughal patronage and became a key export commodity during the colonial period — European demand for Indian printed textiles directly influenced global fashion for over two centuries.</p>
+      <p>Today, block printing remains a living craft tradition. Jaipur's printing districts still produce hand-block-printed fabric at commercial scale, using the same basic techniques participants learn in a Kraftykinni workshop. Running a block printing session in Delhi NCR is not just a craft activity — it is a direct connection to one of India's most significant industrial and artistic heritage traditions.</p>
+      <h2>What You Make</h2>
+      <p>A block-printed fabric item — tote bag, cotton dupatta, or fabric panel — in traditional or contemporary patterns. Participants choose from a selection of pre-carved wooden and foam blocks, select their fabric colour palette, and build up a repeat pattern across their fabric. Because hand-stamping naturally varies in pressure and alignment, every piece is genuinely unique — no two participants produce an identical result even using the same block.</p>
+      <p>Fabric colours dry within 15 to 20 minutes and are heat-set, meaning the printed fabric is wash-fast and suitable for regular use. Participants can handle and fold their finished pieces before the session ends.</p>
+      <h2>Who Benefits Most</h2>
+      <p>Block Printing is the top heritage craft choice for corporate cultural events, India-themed office programmes, and school heritage day activities. For corporates, it combines the engagement of a hands-on creative activity with genuine cultural depth — participants leave knowing something real about Indian textile history, not just with a craft souvenir. For schools, it provides a natural cross-curricular link to history, geography, and social studies units on Indian heritage crafts.</p>
+      <p>The rhythmic stamping process is deeply calming — it is one of the most frequently cited activities for stress relief in post-workshop feedback. Groups that arrive stressed or distracted consistently settle into focused, quiet engagement within the first 10 minutes of stamping.</p>
+      <h2>Internal Link — Corporate Art Workshops</h2>
+      <p>Block Printing is one of 13 activities available through Kraftykinni's <a href="/corporate-art-workshops/">corporate art workshop</a> programme. It is particularly popular for India Heritage Day events, cultural immersion programmes, and sustainability-themed corporate days.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is Block Printing?</h3>
+      <p>A traditional Indian textile art form from Rajasthan and Gujarat, where carved wooden or foam blocks are dipped in fabric colour and stamped onto cloth to create repeat patterns. One of India's oldest craft traditions, still commercially practised in Jaipur and Sanganer.</p>
+      <h3>What do participants make in a Block Printing workshop?</h3>
+      <p>A block-printed fabric item — tote bag, cotton dupatta, or fabric panel. Every piece is unique because hand-stamping produces natural variation in pressure and alignment.</p>
+      <h3>Is Block Printing suitable for corporate team-building?</h3>
+      <p>Yes — it is one of the top heritage craft activities for corporate cultural programmes in Delhi NCR. The rhythmic stamping process is calming, the Indian craft context provides cultural depth, and every participant takes home a finished fabric piece.</p>
+      <h3>How long does a Block Printing workshop take?</h3>
+      <p>1.5 to 2 hours — introduction to history and technique, facilitator demonstration, hands-on stamping, and a drying phase before participants pack their finished pieces.</p>
+      <h3>What is the cost of a Block Printing workshop in Delhi NCR?</h3>
+      <p>₹600 per person for groups of 100+, ₹700 per person for 50–100, and ₹800 per person for groups of 20–50. All materials — blocks, fabric colours, fabric items, and aprons — are included.</p>`,
   },
   {
     path: '/workshops/clay-art/',
@@ -373,7 +436,40 @@ const routes = [
     title: 'Texture Art Workshop Delhi NCR — Beginner-Friendly | Kraftykinni',
     description: 'Create a layered texture canvas using tissue, acrylic & mixed media. Beginner-friendly. Corporate teams, schools & private events. All materials included. Delhi NCR. From ₹600/person.',
     h1: 'Texture Art Workshop in Delhi NCR',
-    bodyContent: `<h1>Texture Art Workshop in Delhi NCR</h1><p>Texture Art uses layered materials — tissue paper, acrylic paste, fabric scraps, and paint — to build deeply tactile canvases with real physical dimension. Because the process is abstract and exploratory, there is no wrong way to do it, making it ideal for participants who feel intimidated by art. The results consistently surprise people — what begins as a messy layering process resolves into rich, gallery-quality wall art.</p><h2>What you make</h2><p>A layered, textured mixed-media canvas — unique, abstract, and display-ready.</p><h2>Who it is for</h2><p>Perfect for corporate creative thinking workshops, school art days, and private events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    schemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'FAQPage',
+        mainEntity: [
+          { '@type': 'Question', name: 'Is Texture Art suitable for beginners?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — Texture Art is one of the most beginner-friendly activities in the Kraftykinni catalogue. Because the process is abstract and layered, there is no wrong way to do it. Every participant produces a unique, gallery-quality result regardless of art experience.' } },
+          { '@type': 'Question', name: 'What materials are used in a Texture Art workshop?', acceptedAnswer: { '@type': 'Answer', text: 'Participants work with tissue paper, acrylic paste, acrylic paints, palette knives, and mixed media elements including fabric scraps and texture gels. All materials are included in the session price. No prior supplies needed.' } },
+          { '@type': 'Question', name: 'How long does a Texture Art workshop take?', acceptedAnswer: { '@type': 'Answer', text: 'A standard Texture Art session runs 1.5 to 2 hours. This includes a guided layering demonstration, hands-on creation time, and a final detailing phase. Every participant completes a finished canvas to take home.' } },
+          { '@type': 'Question', name: 'What is the cost of a Texture Art workshop in Delhi NCR?', acceptedAnswer: { '@type': 'Answer', text: 'Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for groups of 50–100, and ₹800 per person for groups of 20–50. All art materials and facilitation are included. Kraftykinni travels to your venue.' } },
+          { '@type': 'Question', name: 'Is Texture Art suitable for corporate team-building?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — Texture Art is among the top three activities booked by corporate HR teams at Kraftykinni. The abstract, exploratory process encourages creative thinking without the pressure of representational art, making it ideal for teams where participants feel self-conscious about drawing.' } },
+        ],
+      },
+    ],
+    bodyContent: `<h1>Texture Art Workshop in Delhi NCR</h1>
+      <p>Texture Art uses layered materials — tissue paper, acrylic paste, fabric scraps, and paint — to build deeply tactile canvases with real physical dimension. Because the process is abstract and exploratory, there is no wrong way to do it, making it ideal for participants who feel intimidated by art. The results consistently surprise people — what begins as a messy layering process resolves into rich, gallery-quality wall art.</p>
+      <h2>What is Texture Art?</h2>
+      <p>Texture Art is a mixed-media painting technique that builds up layers of material on a canvas to create physical dimension and depth. Unlike flat painting, Texture Art uses acrylic paste, tissue paper, palette knives, and fabric elements to create surfaces you can feel as well as see. The technique originated in contemporary Western abstract art but has become one of the most accessible beginner workshop formats because the abstract nature of the outcome means every piece looks intentional and beautiful — regardless of the maker's skill level.</p>
+      <p>In a Kraftykinni session, Shramita Govil guides participants through the layering process step by step: base coat application, tissue layering, paste build-up, colour washing, and final detailing. The session runs 1.5 to 2 hours and every participant completes a finished, display-ready canvas to take home.</p>
+      <h2>What You Make</h2>
+      <p>A layered, textured mixed-media canvas — unique, abstract, and display-ready. Dimensions are typically A3 (30cm × 42cm) or canvas board. Because every participant builds their own layers independently, no two canvases in the same session look alike. The finished pieces are suitable for framing and home display.</p>
+      <h2>Why Texture Art Works for Corporate Teams</h2>
+      <p>Texture Art is one of the top three corporate activities in the Kraftykinni catalogue. The reason is straightforward: it removes the fear of drawing. In representational art workshops, participants who feel they cannot draw become anxious. In Texture Art, there is nothing to draw — only layers to build. The result is that even the most self-described non-creative participants engage fully and produce something they are genuinely proud of. HR managers running team-building days consistently report that Texture Art generates more spontaneous conversation and laughter than structured team games, because the shared medium removes hierarchy — the CEO's canvas looks as interesting as the intern's.</p>
+      <h2>Who It Is For</h2>
+      <p>Texture Art is suitable for corporate team-building and creative thinking days, school art days for senior students (Grade 8 onward), college fests, birthday parties, kitty parties, and private creative events. Duration: 1.5 to 2 hours. Groups from 20 to 200+. All materials included. Pricing from ₹600 per person.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Is Texture Art suitable for beginners?</h3>
+      <p>Yes — it is one of the most beginner-friendly activities in the Kraftykinni catalogue. Because the process is abstract and layered, there is no wrong way to do it. Every participant produces a unique, gallery-quality result regardless of art experience.</p>
+      <h3>What materials are used in a Texture Art workshop?</h3>
+      <p>Tissue paper, acrylic paste, acrylic paints, palette knives, and mixed media elements including fabric scraps and texture gels. All materials are included. No prior supplies needed from participants.</p>
+      <h3>How long does a Texture Art workshop take?</h3>
+      <p>1.5 to 2 hours. This includes a guided layering demonstration, hands-on creation time, and a final detailing phase. Every participant completes a finished canvas to take home on the day.</p>
+      <h3>What is the cost of a Texture Art workshop in Delhi NCR?</h3>
+      <p>Pricing starts at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 per person for groups of 20–50. All art materials and facilitation included. Kraftykinni travels to your venue anywhere in Delhi, Gurgaon, or Noida.</p>
+      <h3>Is Texture Art suitable for corporate team-building?</h3>
+      <p>Yes — it is among the top three activities booked by corporate HR teams. The abstract process encourages creative thinking without the pressure of representational art, making it ideal for teams where participants feel self-conscious about drawing.</p>`,
   },
   {
     path: '/workshops/tote-bag-painting/',
@@ -447,14 +543,71 @@ const routes = [
     title: 'Art Workshops in Delhi | Corporate & School Sessions | Kraftykinni',
     description: 'Kraftykinni conducts art and DIY workshops across Delhi — corporate team building, school sessions, and private events. 13 activities, all materials included. Led by Fevicryl-certified artist. ₹600–₹800/person.',
     h1: 'Art Workshops in Delhi',
-    bodyContent: `<h1>Art Workshops in Delhi — Book a Session Today</h1><p>Kraftykinni conducts art and DIY workshops across Delhi — at corporate offices in Connaught Place and Nehru Place, schools and colleges across North and South Delhi, and private venues for birthdays, kitty parties, and special events. We come to your space with all the supplies and the facilitation.</p><h2>Areas We Cover in Delhi</h2><p>Connaught Place, South Delhi, Dwarka, Rohini, Lajpat Nagar, Saket, Vasant Kunj, Nehru Place, and all areas across Delhi. We travel to your office, school, or event venue.</p><h2>All 13 Activities Available in Delhi</h2><p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting.</p><h2>Pricing</h2><p>₹800 per person for groups of 20–50, ₹700 per person for 50–100 participants, ₹600 per person for 100+ participants. All art materials included. Minimum 7 days advance notice required. 50% deposit to confirm booking.</p>`,
+    bodyContent: `<h1>Art Workshops in Delhi — Book a Session Today</h1>
+      <p>Delhi is home to some of the most active corporate campuses, schools, and private event venues in India — and Kraftykinni runs art workshops across all three segments. We conduct guided art and DIY workshops at corporate offices in Connaught Place, Bhikaji Cama Place, and Nehru Place, at schools and colleges across North Delhi, South Delhi, Dwarka, and Rohini, and at private venues for birthdays, kitty parties, and bachelorettes.</p>
+      <p>Every session is led by Shramita Govil, Fevicryl Certified Artist, who brings all materials directly to your space. You provide the venue, tables, and chairs — we handle everything else, from setup to facilitation to cleanup. Sessions run 1.5 to 2.5 hours and every participant leaves with a finished piece of artwork.</p>
+      <p>Whether you are an HR manager planning a team-building day, a school teacher organising an annual day activity, or a family hosting a birthday in South Delhi, Kraftykinni has run workshops for your exact situation — across Delhi, many times over. Pricing starts at ₹600 per person with all materials included.</p>
+      <h2>Areas We Cover in Delhi</h2>
+      <p>Connaught Place, Bhikaji Cama Place, South Delhi, Dwarka, Rohini, Lajpat Nagar, Saket, Vasant Kunj, Nehru Place, and all areas across Delhi. We travel to your office, school, or event venue — anywhere in the city.</p>
+      <h2>All 13 Activities Available in Delhi</h2>
+      <p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting.</p>
+      <h2>Pricing for Art Workshops in Delhi</h2>
+      <ul>
+        <li><strong>Small Group (20–50 people):</strong> ₹800 per person — all materials included</li>
+        <li><strong>Standard (50–100 people):</strong> ₹700 per person — all materials included</li>
+        <li><strong>Large Group (100+ people):</strong> ₹600 per person — all materials included</li>
+      </ul>
+      <p>A 50% deposit confirms the booking. Minimum 7 days advance notice required.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Do you conduct art workshops across all areas of Delhi?</h3>
+      <p>Yes — Kraftykinni travels to your location anywhere in Delhi, including South Delhi, North Delhi, Dwarka, Rohini, Connaught Place, Saket, Vasant Kunj, and Nehru Place. If your area is not listed, reach out and we will confirm availability.</p>
+      <h3>What art workshops are available in Delhi?</h3>
+      <p>All 13 Kraftykinni signature activities are available in Delhi: Lippan Art, Mandala Art, Tie &amp; Dye, Boho Canvas Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, and Canvas Pouch Painting.</p>
+      <h3>What is the cost of an art workshop in Delhi?</h3>
+      <p>Pricing starts at ₹800 per person for groups of 20–50, ₹700 per person for 50–100 participants, and ₹600 per person for groups of 100+. All art materials, facilitation, setup, and cleanup are included. There are no hidden charges.</p>
+      <h3>What occasions are art workshops suitable for in Delhi?</h3>
+      <p>Kraftykinni runs workshops for corporate team-building days, employee engagement events, school annual days, college fests, birthday parties, kitty parties, bachelorette parties, and private social gatherings. Any group occasion with 20 or more participants is a good fit.</p>
+      <h3>How far in advance should I book an art workshop in Delhi?</h3>
+      <p>A minimum of 7 days advance notice is required to arrange materials and confirm logistics. For large groups of 150+ or multi-activity sessions, 10–14 days is preferred. A 50% deposit confirms your booking.</p>
+      <h3>Do participants need any prior art experience?</h3>
+      <p>No prior art experience is needed. Every Kraftykinni session is guided step by step by Shramita Govil. Participants of all skill levels — including those who say they cannot draw — finish with a completed artwork they are proud of.</p>
+      <h3>What is the minimum group size for an art workshop in Delhi?</h3>
+      <p>The minimum group size is 20 participants. We cater to groups up to 200+ in a single session, with additional facilitators brought in for very large groups to maintain quality guidance for every participant.</p>`,
   },
   {
     path: '/workshops-in-gurgaon/',
     title: 'Art Workshops in Gurgaon | Corporate Team Building | Kraftykinni',
     description: 'Kraftykinni conducts corporate art workshops and team-building sessions in Gurgaon. Office visits, off-site events, school sessions. 13 activities, all materials included. ₹600–₹800/person.',
     h1: 'Art Workshops in Gurgaon',
-    bodyContent: `<h1>Art Workshops in Gurgaon — For Corporate Teams and Events</h1><p>Gurgaon's corporate ecosystem is exactly where Kraftykinni thrives. We regularly conduct corporate art workshops for teams in Gurgaon's major business hubs — from DLF Cyber City to Udyog Vihar and MG Road. Companies in Gurgaon choose Kraftykinni for quarterly team-building events, employee appreciation days, onboarding workshops, and annual day activities.</p><h2>Areas We Cover in Gurgaon</h2><p>DLF Cyber City, Udyog Vihar, MG Road, Sohna Road, Golf Course Road, Sector 29, Sector 56, Manesar, and all areas across Gurgaon and Gurugram. We bring all art supplies directly to your Gurgaon office or preferred venue.</p><h2>All 13 Activities Available in Gurgaon</h2><p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting.</p><h2>Pricing</h2><p>₹800 per person for groups of 20–50, ₹700 per person for 50–100 participants, ₹600 per person for 100+ participants. All art materials included.</p>`,
+    bodyContent: `<h1>Art Workshops in Gurgaon — For Corporate Teams and Events</h1>
+      <p>Gurgaon's corporate ecosystem is exactly where Kraftykinni thrives. We regularly conduct corporate art workshops for teams in Gurgaon's major business hubs — from DLF Cyber City to Udyog Vihar, MG Road, Sohna Road, and Golf Course Road. Companies in Gurgaon choose Kraftykinni for quarterly team-building events, employee appreciation days, onboarding workshops, and annual day activities. We bring all art supplies directly to your Gurgaon office or preferred venue — no logistics burden on your HR team.</p>
+      <h2>Neighbourhoods We Cover in Gurgaon</h2>
+      <p><strong>DLF Cyber City</strong> — the most frequent booking location. We regularly run workshops for tech and consulting companies in Cyber City's office towers. Setup works in standard conference rooms and cafeteria spaces.</p>
+      <p><strong>Udyog Vihar</strong> — large manufacturing and services companies with teams of 100+ are a core segment. Block Printing and Tie &amp; Dye are the top choices for larger Udyog Vihar groups.</p>
+      <p><strong>MG Road and IFFCO Chowk</strong> — retail and hospitality sector offices. Smaller, more intimate sessions of 20–40 participants.</p>
+      <p><strong>Golf Course Road and Sohna Road</strong> — financial services and startup offices. Lippan Art and Boho Canvas are the most requested activities in this corridor.</p>
+      <p><strong>Sector 29, Sector 56, and Manesar</strong> — including co-working spaces and industrial campuses. We cater to all group sizes across these areas.</p>
+      <h2>All 13 Activities Available in Gurgaon</h2>
+      <p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting.</p>
+      <h2>Employee Engagement in Gurgaon</h2>
+      <p>Art workshops are one of the highest-rated <a href="/employee-engagement-activities-gurgaon/">employee engagement activities in Gurgaon</a>. Post-event surveys consistently show that participants rate art sessions above conventional team games and off-site dinners for connection and enjoyment. The session structure — everyone making something at the same table — removes hierarchy and creates natural conversation between people who rarely interact across departments.</p>
+      <h2>Pricing</h2>
+      <ul>
+        <li><strong>Small Group (20–50 people):</strong> ₹800 per person — all materials included</li>
+        <li><strong>Standard (50–100 people):</strong> ₹700 per person — all materials included</li>
+        <li><strong>Large Group (100+ people):</strong> ₹600 per person — all materials included</li>
+      </ul>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Do you conduct art workshops at Gurgaon offices?</h3>
+      <p>Yes — Kraftykinni travels to your Gurgaon office with all materials. We regularly run workshops at offices in DLF Cyber City, Udyog Vihar, MG Road, Golf Course Road, and Sohna Road. Setup takes 20–30 minutes and we handle all cleanup after the session.</p>
+      <h3>What is the cost of a corporate art workshop in Gurgaon?</h3>
+      <p>Pricing starts at ₹800 per person for groups of 20–50, ₹700 per person for 50–100, and ₹600 per person for 100+ participants. All materials are included. There are no additional travel or setup charges within Gurgaon.</p>
+      <h3>What activities work best for corporate teams in Gurgaon?</h3>
+      <p>The most popular activities for Gurgaon corporate teams are Lippan Art, Boho Canvas Art, Block Printing, and Mandala Art. All four produce a finished piece in 90 minutes and require no prior art experience. Tie &amp; Dye is the top choice for large groups of 100+.</p>
+      <h3>How far in advance should I book a workshop in Gurgaon?</h3>
+      <p>Minimum 7 days advance notice is required to arrange materials and confirm logistics. A 50% deposit secures the date. Shramita confirms availability within 24 hours of your enquiry.</p>
+      <h3>Can you run a workshop at an off-site venue in Gurgaon?</h3>
+      <p>Yes — we work at office cafeterias, hotel banquet rooms, co-working spaces, and outdoor terrace venues across Gurgaon. You only need to provide tables, chairs, and a flat work surface. We bring everything else.</p>`,
   },
   {
     path: '/workshops-in-noida/',
@@ -467,7 +620,8 @@ const routes = [
 
 // ─── HTML injection helper ────────────────────────────────────────────────────
 
-function injectMeta(html, { path: routePath, title, description, h1, bodyContent, ogImage }) {
+function injectMeta(html, route) {
+  const { path: routePath, title, description, h1, bodyContent, ogImage } = route;
   const canonical = `https://kraftykinni.in${routePath}`;
 
   // Update meta tags
@@ -488,6 +642,14 @@ function injectMeta(html, { path: routePath, title, description, h1, bodyContent
     html = html.replace(/<meta property="og:image:height" content="[^"]*">/, `<meta property="og:image:height" content="630">`);
     html = html.replace(/<meta name="twitter:card" content="[^"]*">/, `<meta name="twitter:card" content="summary_large_image">`);
     html = html.replace(/<meta name="twitter:image" content="[^"]*">/, `<meta name="twitter:image" content="${ogImage}">`);
+  }
+
+  // Inject per-route JSON-LD schemas into <head>
+  if (route.schemas && route.schemas.length > 0) {
+    const schemaScripts = route.schemas
+      .map(s => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`)
+      .join('\n');
+    html = html.replace('</head>', `${schemaScripts}\n  </head>`);
   }
 
   // Inject trailing-slash fix script into <head> (runs before React boots)
