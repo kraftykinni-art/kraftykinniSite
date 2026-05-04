@@ -339,6 +339,24 @@ const routes = [
     `,
   },
 
+
+  {
+    path: '/blog/mothers-day-art-workshop-gift-delhi-ncr/',
+    title: "Mother's Day Art Workshop Delhi NCR — Unique Gift Ideas 2026 | Kraftykinni",
+    description: "Skip the flowers. Gift an art workshop experience this Mother's Day in Delhi, Gurgaon & Noida. Lippan Art, Bottle Lamp, Clay — from ₹600/person, all materials included.",
+    h1: "Mother's Day Art Workshop Gift Ideas in Delhi NCR — Make Something She'll Keep",
+    bodyContent: `
+      <h1>Mother's Day Art Workshop Gift Ideas in Delhi NCR — Make Something She'll Keep</h1>
+      <p>Flowers wilt by Tuesday. But a Lippan Art plaque with "MOM" raised in gold on teal clay goes on the shelf and stays there. This Mother's Day (May 10, 2026), give her an experience she makes with her own hands — a guided art workshop in Delhi, Gurgaon, or Noida that produces a keepsake she takes home and keeps for years.</p>
+      <h2>Why an Art Workshop Works as a Mother's Day Gift</h2>
+      <p>In a guided art session, she is not a passive recipient — she is shaping clay, placing mirrors, painting a bottle, mixing colours. The process itself is the experience: absorbing, tactile, and genuinely calming. The finished piece she takes home carries the memory of the afternoon. Kraftykinni sessions accommodate groups from 10 to 100+ with all materials included from Rs 600 per person.</p>
+      <h2>Best Workshops for Mother's Day</h2>
+      <p>Lippan Art: a Kutch folk craft where raised clay patterns and embedded mirrors create a striking wall piece. Kraftykinni creates custom MOM and Maa motif Lippan plaques as keepsakes. Bottle Lamp Art: participants paint a glass bottle with an Indian motif, sunset scene, or floral design. Clay Art: tactile and therapeutic, producing handmade sculpted keepsakes in a single 1.5 to 2 hour session.</p>
+      <h2>Private Mother's Day Workshops in Delhi NCR</h2>
+      <p>Kraftykinni runs private sessions for groups of 15 to 100+ at a venue of your choice — home, community hall, club, or residential complex. All sessions facilitated by Shramita Govil, Fevicryl Certified Artist. Pricing from Rs 600 per person, all materials included. Online workshops with shipped kits available pan-India. WhatsApp +91 9599622210 to book.</p>
+    `,
+  },
+
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art/',
@@ -731,6 +749,7 @@ const sitemapEntries = [
   { loc: '/blog/best-corporate-team-building-activities-gurgaon-2026/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/annual-day-activity-ideas-schools-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/art-workshop-ideas-birthday-party-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
+  { loc: '/blog/mothers-day-art-workshop-gift-delhi-ncr/', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';

@@ -450,4 +450,85 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  // ─── Mother's Day Blog ────────────────────────────────────────────────────
+  {
+    slug: 'mothers-day-art-workshop-gift-delhi-ncr',
+    title: "Mother's Day Art Workshop Gift Ideas in Delhi NCR — Make Something She'll Keep",
+    metaTitle: "Mother's Day Art Workshop Delhi NCR — Unique Gift Ideas 2026 | Kraftykinni",
+    metaDescription:
+      "Skip the flowers. Gift an art workshop experience this Mother's Day in Delhi, Gurgaon & Noida. Lippan Art, Bottle Lamp, Clay — from ₹600/person, all materials included.",
+    publishDate: '2026-05-05',
+    category: 'Private Events',
+    excerpt:
+      "Flowers wilt by Tuesday. A handmade Lippan Art plaque, a painted bottle lamp, or a clay keepsake — those stay on the shelf for years. This Mother's Day, give her an experience she makes with her own hands, and takes home as something real.",
+    keywords: [
+      "mother's day art workshop Delhi",
+      "mother's day gift experience Delhi NCR",
+      "unique mother's day gift Delhi",
+      "art workshop gift for mom Delhi",
+      "mother's day activity Delhi NCR",
+      "painting workshop mother's day Gurgaon",
+      "mother's day craft workshop Delhi",
+    ],
+    sections: [
+      {
+        body: `Flowers wilt by Tuesday. A scented candle gets forgotten in a drawer. But a Lippan Art plaque with "MOM" raised in gold on teal clay — that goes on the shelf and stays there.\n\nThis Mother's Day (May 10, 2026), a growing number of families in Delhi, Gurgaon, and Noida are choosing experience gifts over objects. Not because they're cheaper — they're not always — but because making something together, or gifting someone a session to make something herself, creates a memory that outlasts any product.\n\nHere's how Kraftykinni's art workshops work as Mother's Day gifts, and which activities land best.`,
+        image: '/mothers-day-lippan-art-mom-plaque-kraftykinni.jpg',
+        imageAlt: "Kraftykinni Lippan Art 'MOM' plaque in teal and gold on a wooden easel — a handmade Mother's Day keepsake from an art workshop in Delhi NCR",
+      },
+      {
+        heading: "Why an Art Workshop Works as a Mother's Day Gift",
+        body: `Most gift categories for Mother's Day — skincare, jewellery, flowers — are things given to her. An art workshop is something she makes. That's a meaningful difference.\n\nIn a guided art session, she isn't a passive recipient. She's shaping clay, placing mirrors, painting a bottle, mixing colours. The process itself is the experience: absorbing, tactile, and genuinely calming in a way that a spa voucher sitting in an envelope is not.\n\nThe finished piece she takes home carries that memory. Every time she looks at the Lippan Art plaque on her wall or the painted bottle on her shelf, the afternoon comes back — the colours she chose, the detail she worked on, the moment it all came together.\n\nFor families who want to attend together — a daughter and her mother, a group of friends, a kitty party gathered around art — Kraftykinni sessions accommodate groups from 10 to 100+ with all materials included from ₹600 per person.`,
+      },
+      {
+        heading: "Best Kraftykinni Workshops for Mother's Day",
+        body: `Three activities in particular work especially well for Mother's Day — each for different reasons.`,
+        listItems: [
+          'Lippan Art — the most gift-worthy takeaway. Lippan is a centuries-old Kutch folk craft where raised clay patterns and embedded mirrors create a striking, textured wall piece. Kraftykinni has created custom "MOM" and "Maa" motif Lippan plaques — the result is a keepsake that genuinely looks like something you\'d buy in a boutique store. Duration: 2–2.5 hours. Works well for groups of 10–50.',
+          'Bottle Lamp Art — beautiful and personal. Participants paint a glass bottle — with an Indian motif, a sunset scene, a floral design — and the finished bottle serves as a vase or fairy-light lamp at home. The example image above shows what\'s possible: a saree-clad woman in an orange-green sunset, painted entirely in a single session. The artistic level is genuinely impressive for a first-time participant.',
+          'Clay Art — tactile and therapeutic. Working with clay has a deeply calming effect that makes it a natural fit for a relaxed Mother\'s Day afternoon. Each participant shapes and paints their own clay creation — from small decorative bowls to sculpted figurines. No prior experience needed. Duration: 1.5–2 hours.',
+        ],
+        listType: 'ul',
+        image: '/mothers-day-bottle-lamp-art-saree-kraftykinni.jpg',
+        imageAlt: "Hand-painted bottle lamp art with Indian woman in saree motif — a Kraftykinni workshop takeaway ideal as a Mother's Day gift in Delhi NCR",
+      },
+      {
+        heading: "The 'Maa Tu Sabse Achi Hai' Gift — A Workshop Moment",
+        body: `One of the most loved Mother's Day creations from a Kraftykinni session is the small painted bottle with "Maa tu sabse achi hai" — a hand-lettered message on a burnt-paper card tucked into a tiny red vase with dried flowers. It takes about 45 minutes to make, costs almost nothing in materials, and is the kind of thing a mother keeps on her dressing table for years.\n\nThis is the Bottle Art format scaled down to a personal size — a mini gifting session that works well for children, for school groups close to Mother's Day, or for families who want to create something together at home or in a private group session.\n\nFor private groups wanting a customised Mother's Day workshop — whether a kitty party, a mother-daughter session, or a building-wide event in a Gurgaon residential complex — [Kraftykinni runs private sessions](/private-art-workshops/) with a minimum of 15 participants.`,
+        image: '/mothers-day-bottle-art-maa-gift-kraftykinni.webp',
+        imageAlt: "Small hand-painted red bottle vase with 'Maa tu sabse achi hai' message and dried flowers — a Mother's Day art workshop creation by Kraftykinni Delhi NCR",
+      },
+      {
+        heading: "How to Book a Mother's Day Workshop",
+        body: `Kraftykinni runs workshops across Delhi, Gurgaon, and Noida. For Mother's Day sessions, private group bookings are available for 15 to 100+ participants at a venue of your choice — home, community hall, club, or office.\n\nPricing starts at ₹600 per person with all materials included. For groups of 30+, custom motifs (Maa, MOM, floral initials) can be incorporated into the Lippan Art or Bottle Art design.\n\nAll sessions are facilitated by [Shramita Govil, Fevicryl Certified Artist](/about/), with trained assistants for larger groups. Session duration: 1.5 to 2.5 hours depending on activity.\n\nTo book or enquire, WhatsApp +91 9599622210 with your event date, number of participants, and preferred activity. Shramita confirms availability within 24 hours. For online bookings across India, materials are shipped to participants before the session.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What art workshops does Kraftykinni offer for Mother's Day?",
+        a: "Kraftykinni's most popular Mother's Day workshops are Lippan Art (Kutch mirror work clay plaques), Bottle Lamp Art (painted glass bottles as vases or fairy-light lamps), and Clay Art (handmade sculpted keepsakes). All sessions are guided by Shramita Govil, Fevicryl Certified Artist, and include all materials from ₹600 per person.",
+      },
+      {
+        q: "Can I book a private Mother's Day art workshop for a kitty party or family group?",
+        a: "Yes. Kraftykinni runs private sessions for groups of 15 to 100+ participants at a venue of your choice — home, community hall, club, or residential complex. Minimum group size is 15 for a private booking. WhatsApp +91 9599622210 with your date, location, group size, and preferred activity.",
+      },
+      {
+        q: "How long does a Mother's Day art workshop session take?",
+        a: "Sessions run 1.5 to 2.5 hours depending on the activity and group size. Lippan Art takes 2–2.5 hours; Bottle Lamp Art and Clay Art run 1.5–2 hours. All participants complete a finished piece before the session ends — there is no drying wait required.",
+      },
+      {
+        q: "Is prior art experience needed for these workshops?",
+        a: "No prior art experience is needed for any Kraftykinni workshop. Every session is fully guided by Shramita Govil, with step-by-step instruction for each stage. Participants of all skill levels — including those who say they 'can't draw' — consistently complete impressive, display-worthy pieces.",
+      },
+      {
+        q: "What is the cost of a Mother's Day art workshop in Delhi NCR?",
+        a: "Pricing starts at ₹600 per person with all materials included — paints, clay, Lippan mirrors, brushes, aprons, and workspace covers. For private groups of 30+ people with custom motifs (Maa, MOM, floral initials), Shramita can confirm pricing on enquiry via WhatsApp +91 9599622210.",
+      },
+      {
+        q: "Does Kraftykinni offer online art workshops for Mother's Day?",
+        a: "Yes. Kraftykinni ships art kits pan-India before the session and runs a live guided workshop over video call. This is ideal for families where children are in a different city from their mother, or for corporate teams celebrating Mother's Day remotely. Contact via WhatsApp +91 9599622210 for kit shipping timelines.",
+      },
+    ],
+  },
 ];
