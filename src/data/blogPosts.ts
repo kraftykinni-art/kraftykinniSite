@@ -531,4 +531,80 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  // ─── Cars24 Corporate Clay Trinket Workshop ───────────────────────────────
+  {
+    slug: 'clay-trinket-painting-workshop-cars24-gurgaon',
+    title: 'Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon',
+    metaTitle: 'Clay Trinket Painting Workshop at Cars24 Gurgaon | Kraftykinni',
+    metaDescription:
+      '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session. Read the full recap.',
+    publishDate: '2026-04-29',
+    category: 'Corporate',
+    excerpt:
+      '40 Cars24 employees in Gurgaon sat down with clay, brushes, and Fevicryl colours on 29 April. Two hours later, every single one of them walked out holding something they had made themselves. This is how a Clay Trinket Painting session works when it actually works.',
+    keywords: [
+      'corporate art workshop Gurgaon',
+      'clay trinket painting workshop',
+      'team building activity Gurgaon',
+      'clay art workshop corporate',
+      'Fevicryl Mouldit workshop Delhi NCR',
+      'Cars24 team building',
+    ],
+    sections: [
+      {
+        body: `40 Cars24 employees in Gurgaon sat down with clay, brushes, and Fevicryl colours on 29 April. Two hours later, every single one of them walked out holding something they had made themselves — a small, hand-painted clay trinket. Heart-shaped ones, circular ones, abstract ones. Some with cherries. Some with strawberries. Some with geometric patterns that looked almost architectural.\n\nThis is what a [Clay Trinket Painting workshop](/workshops/clay-art/) looks like when it lands well. The room starts quiet and a little uncertain. It ends with people comparing pieces, asking each other how they did the tiny dots, and reluctantly packing up because the session is over.`,
+        image: '/cars24-clay-trinket-workshop-kraftykinni-gurgaon.jpeg',
+        imageAlt: 'Shramita Govil, Kraftykinni founder, at the Cars24 Gurgaon corporate office ahead of the Clay Trinket Painting workshop — 29 April 2026',
+      },
+      {
+        heading: 'What Is Clay Trinket Painting?',
+        body: `Clay Trinket Painting is a Kraftykinni workshop where participants shape and paint small decorative objects using **Fevicryl Mouldit** — a professional-grade air-dry modelling clay. Mouldit is different from craft store clay: it is smooth, easy to condition, and dries to a firm, fully paintable surface without any baking or kiln. Participants shape their trinket — a heart, a circle, a free-form dish — let it set slightly, then paint it with Fevicryl acrylic colours using fine brushes.\n\nThe result is a small, personal, handmade object that feels genuinely crafted. Not a kit. Not a colouring exercise. Something the participant shaped and painted themselves, start to finish, in a single session.`,
+        image: '/cars24-trinket-materials-fevicryl-setup.jpeg',
+        imageAlt: 'Fevicryl acrylic colours, brushes and art supplies laid out for the Cars24 clay trinket painting corporate workshop by Kraftykinni in Gurgaon',
+      },
+      {
+        heading: 'How the Session Ran',
+        body: `Shramita arrived at the Cars24 office with all materials: Fevicryl Mouldit packs, acrylic colour sets, fine brushes, water cups, palette plates, and newspaper covers for the tables. Setup took under 20 minutes. Participants were seated in groups of four to five — a layout that encourages colour-sharing and conversation without feeling forced.\n\nShramita opened with a short demonstration: how to condition the clay, how to shape it without cracking the edges, how to create smooth surfaces before painting. Five minutes of technique. Then everyone got to work.\n\nWhat followed was two hours of focused, low-pressure creativity. The room found a quiet rhythm quickly — the kind of focused calm that is genuinely unusual in a corporate setting. Some participants painted detailed motifs: cherries, floral patterns, tiny animals. Others went abstract — bold colour-blocks, layered washes, minimal geometric lines. Nobody asked whether they were doing it right, because there was no wrong answer.`,
+        image: '/cars24-trinket-workshop-in-progress.jpeg',
+        imageAlt: 'Shramita Govil guiding a Cars24 employee during the clay trinket painting workshop at the Gurgaon corporate office — Kraftykinni',
+      },
+      {
+        heading: 'What 40 Corporate Participants Made',
+        body: `Heart-shaped trinket dishes painted with floral and fruit motifs. Round coaster-style pieces with hand-lettered text. Abstract colour-block objects. Character illustrations on clay surfaces. One participant painted a tiny night sky on a circular piece that looked like a professional miniature.\n\nEvery single trinket was different, because every decision — the shape, the colour palette, the subject — was entirely the participant's own. That is the consistent outcome of Clay Trinket Painting: the same materials, the same guidance, forty completely distinct finished objects.`,
+        image: '/cars24-trinket-workshop-participants.jpeg',
+        imageAlt: 'Cars24 employees in Gurgaon holding their finished hand-painted clay trinkets after the Kraftykinni workshop — 29 April 2026',
+      },
+      {
+        heading: 'Why It Worked for a Corporate Team',
+        body: `Corporate art workshops work because they lower social stakes in a room where social stakes are usually high. There is no scoreboard, no performance metric, no hierarchy. When a senior manager and a new joiner are both figuring out how to paint a strawberry on a clay heart, the usual professional distance shrinks. The shared technical challenge — and the shared mild confusion — levels the room naturally.\n\nCars24 ran this session mid-week, and participant feedback pointed to something specific: it was **relaxing in a way they did not expect a work activity to be**. The combination of working with clay — tactile, grounding, requiring full attention — and painting — focused, absorbing, immediately rewarding — produces a genuine decompression effect. Participants were making something real. That matters.`,
+      },
+      {
+        heading: 'Book a Similar Workshop for Your Team',
+        body: `Kraftykinni runs [Clay Trinket Painting workshops](/workshops/clay-art/) for corporate groups across Delhi, Gurgaon, and Noida. All materials — Fevicryl Mouldit clay, acrylic colours, brushes, palette plates, table covers — are provided and included in the price. Shramita handles setup and cleanup. Your team needs tables, chairs, and two hours.\n\nGroups from 20 to 200+. Pricing from ₹600 per person, all materials included. To book or check availability, WhatsApp **+91 9599622210** or see our [corporate art workshops page](/corporate-art-workshops/).`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What is Clay Trinket Painting and how does it work?',
+        a: 'Clay Trinket Painting is a workshop where participants shape small decorative objects from Fevicryl Mouldit air-dry clay, then paint them with acrylic colours. The clay sets within minutes, is fully paintable, and requires no kiln or baking. Participants shape and paint their trinket in a single 1.5 to 2 hour session and take the finished piece home.',
+      },
+      {
+        q: 'Is Clay Trinket Painting suitable for corporate teams with no art experience?',
+        a: 'Yes — it is specifically designed for participants with no prior art background. The clay is easy to condition and shape, and the painting process is fully guided by Shramita Govil step by step. Every participant, regardless of experience, completes a finished trinket by the end of the session.',
+      },
+      {
+        q: 'How many people can join a Clay Trinket Painting corporate workshop?',
+        a: 'Kraftykinni accommodates groups from 20 to 200+ participants. The Cars24 Gurgaon session ran for 40 employees. For larger groups, additional facilitator support is arranged to ensure every participant gets individual guidance.',
+      },
+      {
+        q: 'What does a Clay Trinket Painting workshop cost for a corporate group in Gurgaon?',
+        a: 'Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100, and ₹800 per person for groups of 20–50. All materials — Fevicryl Mouldit clay, acrylic colours, brushes, table covers, and palette plates — are included. Kraftykinni travels to your office or event venue.',
+      },
+      {
+        q: 'Does Kraftykinni come to the corporate office for workshops in Gurgaon?',
+        a: 'Yes — Kraftykinni conducts sessions at your office, event venue, or any accessible space in Gurgaon, Delhi, or Noida. All materials are transported and set up by Shramita. Your team only needs to provide tables and chairs. Setup and cleanup are included.',
+      },
+    ],
+  },
 ];

@@ -357,6 +357,26 @@ const routes = [
     `,
   },
 
+  {
+    path: '/blog/clay-trinket-painting-workshop-cars24-gurgaon/',
+    title: 'Clay Trinket Painting Workshop at Cars24 Gurgaon — Corporate Art Session | Kraftykinni',
+    description: '40 Cars24 employees in Gurgaon made hand-painted clay trinkets using Fevicryl Mouldit. A relaxed, creative team activity that produced something real. Read the full workshop recap.',
+    h1: 'Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon',
+    bodyContent: `<h1>Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon</h1>
+      <p>On 29 April 2026, 40 Cars24 employees in Gurgaon sat down at tables covered in newspaper, picked up brushes, and spent two hours making hand-painted clay trinkets. They had no art experience requirement. They had Fevicryl Mouldit clay, a set of acrylic colours, and a facilitator walking them through every step. By the end, every single person left holding something they made themselves.</p>
+      <h2>What is Clay Trinket Painting?</h2>
+      <p>Clay Trinket Painting is a Kraftykinni workshop where participants shape and paint small decorative objects using Fevicryl Mouldit air-dry clay. Mouldit is a professional-grade modelling compound that air-dries to a firm, paintable surface — no kiln, no specialist equipment required. Participants shape their trinket — a heart, a circle, a free-form dish — let it set slightly, then paint it with Fevicryl acrylic colours using fine brushes. The result is a small, personal, handmade object that feels genuinely crafted, not like a generic craft kit.</p>
+      <h2>How the Cars24 Session Ran</h2>
+      <p>Shramita arrived at the Cars24 Gurgaon office with all materials: Fevicryl Mouldit clay packs, acrylic colour sets, brushes, water cups, palette plates, and newspaper table covers. Setup took 20 minutes. Participants were seated in groups of four to five at tables — a layout that naturally encouraged conversation and colour-sharing without forcing interaction. Shramita opened with a five-minute demonstration: how to condition the clay, how to shape it without cracking, how to create smooth edges. Then the room got to work. What followed was two hours of focused, low-pressure creativity. Some participants painted detailed patterns — cherries, strawberries, geometric lines. Others went abstract. A few spent the first 20 minutes shaping their clay with obvious care before picking up a brush. Nobody asked whether they were doing it right.</p>
+      <h2>What 40 Corporate Participants Made</h2>
+      <p>Heart-shaped trinket dishes with floral and fruit motifs. Round coaster-style pieces with landscape paintings. Abstract colour-block objects. Character illustrations on clay surfaces. Every participant's trinket was different because every decision — the shape, the palette, the subject — was entirely theirs. That is the consistent outcome of Clay Trinket Painting: 40 people in the same room with the same materials, and 40 completely distinct finished objects.</p>
+      <h2>Why It Worked for a Corporate Team</h2>
+      <p>Corporate art workshops work because they lower the social stakes. There is no scoreboard, no performance, no seniority. When a director and a junior analyst are both trying to figure out how to paint a strawberry on a clay heart, hierarchy disappears. The shared technical challenge — and the shared mild confusion — levels the room. By the time people are comparing finished pieces, they have been talking naturally for two hours. That is what team-building actually looks like when it works. Cars24 ran this session mid-week, and the feedback from participants was consistent: it was relaxing in a way they did not expect a work activity to be. The combination of working with clay (tactile, grounding) and painting (focused, absorbing) produces a genuine decompression effect. Participants described it as calming without being passive — they were making something real.</p>
+      <h2>Book a Similar Workshop for Your Team</h2>
+      <p>Kraftykinni runs Clay Trinket Painting sessions for corporate groups across Delhi, Gurgaon, and Noida. All materials are provided and included in the price. Shramita handles setup and cleanup — your team just needs tables, chairs, and two hours. Groups from 20 to 200+. Pricing from Rs 600 per person. WhatsApp +91 9599622210 or visit kraftykinni.in to book.</p>
+    `,
+  },
+
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art/',
@@ -398,18 +418,6 @@ const routes = [
     title: 'Block Printing Workshop Delhi NCR — Traditional Indian Craft | Kraftykinni',
     description: 'Block Printing workshop in Delhi NCR by Kraftykinni. Learn traditional Indian block printing on fabric. Corporate & school sessions. All materials included. ₹600–₹800/person.',
     h1: 'Block Printing Workshop in Delhi NCR',
-    schemas: [
-      {
-        '@context': 'https://schema.org', '@type': 'FAQPage',
-        mainEntity: [
-          { '@type': 'Question', name: 'What is Block Printing?', acceptedAnswer: { '@type': 'Answer', text: 'Block Printing is a traditional Indian textile art form originating in Rajasthan and Gujarat, where carved wooden or foam blocks are dipped in fabric colour and stamped onto cloth to create repeat patterns. It is one of India\'s oldest craft traditions and remains commercially practised in Jaipur, Bagru, and Sanganer.' } },
-          { '@type': 'Question', name: 'What do participants make in a Block Printing workshop?', acceptedAnswer: { '@type': 'Answer', text: 'Participants create a block-printed fabric item — typically a tote bag, cotton dupatta, or fabric panel — using pre-carved wooden or foam blocks and fabric colours. Every piece is unique because hand-stamping produces natural variation in pressure and alignment.' } },
-          { '@type': 'Question', name: 'Is Block Printing suitable for corporate team-building?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — Block Printing is one of the top heritage craft activities for corporate cultural programmes in Delhi NCR. The rhythmic stamping process is calming and meditative, the Indian craft context provides cultural depth, and every participant produces a finished fabric piece to take home.' } },
-          { '@type': 'Question', name: 'How long does a Block Printing workshop take?', acceptedAnswer: { '@type': 'Answer', text: 'A standard Block Printing session runs 1.5 to 2 hours. This includes an introduction to the history and technique, a demonstration by the facilitator, hands-on stamping time, and a drying phase before participants pack their finished pieces.' } },
-          { '@type': 'Question', name: 'What is the cost of a Block Printing workshop in Delhi NCR?', acceptedAnswer: { '@type': 'Answer', text: 'Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100, and ₹800 per person for groups of 20–50. All materials — blocks, fabric colours, fabric items, and aprons — are included.' } },
-        ],
-      },
-    ],
     bodyContent: `<h1>Block Printing Workshop in Delhi NCR</h1>
       <p>Block Printing is one of India's most treasured textile traditions, originating in Rajasthan and Gujarat over 500 years ago. Participants learn to apply fabric colours using carved wooden blocks to create repeat patterns on cloth — a rhythmic, meditative process that produces strikingly beautiful results. Popular both as a cultural heritage activity and as a stress-relief exercise for corporate teams.</p>
       <h2>The History of Block Printing in India</h2>
@@ -454,18 +462,6 @@ const routes = [
     title: 'Texture Art Workshop Delhi NCR — Beginner-Friendly | Kraftykinni',
     description: 'Create a layered texture canvas using tissue, acrylic & mixed media. Beginner-friendly. Corporate teams, schools & private events. All materials included. Delhi NCR. From ₹600/person.',
     h1: 'Texture Art Workshop in Delhi NCR',
-    schemas: [
-      {
-        '@context': 'https://schema.org', '@type': 'FAQPage',
-        mainEntity: [
-          { '@type': 'Question', name: 'Is Texture Art suitable for beginners?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — Texture Art is one of the most beginner-friendly activities in the Kraftykinni catalogue. Because the process is abstract and layered, there is no wrong way to do it. Every participant produces a unique, gallery-quality result regardless of art experience.' } },
-          { '@type': 'Question', name: 'What materials are used in a Texture Art workshop?', acceptedAnswer: { '@type': 'Answer', text: 'Participants work with tissue paper, acrylic paste, acrylic paints, palette knives, and mixed media elements including fabric scraps and texture gels. All materials are included in the session price. No prior supplies needed.' } },
-          { '@type': 'Question', name: 'How long does a Texture Art workshop take?', acceptedAnswer: { '@type': 'Answer', text: 'A standard Texture Art session runs 1.5 to 2 hours. This includes a guided layering demonstration, hands-on creation time, and a final detailing phase. Every participant completes a finished canvas to take home.' } },
-          { '@type': 'Question', name: 'What is the cost of a Texture Art workshop in Delhi NCR?', acceptedAnswer: { '@type': 'Answer', text: 'Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for groups of 50–100, and ₹800 per person for groups of 20–50. All art materials and facilitation are included. Kraftykinni travels to your venue.' } },
-          { '@type': 'Question', name: 'Is Texture Art suitable for corporate team-building?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — Texture Art is among the top three activities booked by corporate HR teams at Kraftykinni. The abstract, exploratory process encourages creative thinking without the pressure of representational art, making it ideal for teams where participants feel self-conscious about drawing.' } },
-        ],
-      },
-    ],
     bodyContent: `<h1>Texture Art Workshop in Delhi NCR</h1>
       <p>Texture Art uses layered materials — tissue paper, acrylic paste, fabric scraps, and paint — to build deeply tactile canvases with real physical dimension. Because the process is abstract and exploratory, there is no wrong way to do it, making it ideal for participants who feel intimidated by art. The results consistently surprise people — what begins as a messy layering process resolves into rich, gallery-quality wall art.</p>
       <h2>What is Texture Art?</h2>
@@ -750,6 +746,7 @@ const sitemapEntries = [
   { loc: '/blog/annual-day-activity-ideas-schools-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/art-workshop-ideas-birthday-party-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/mothers-day-art-workshop-gift-delhi-ncr/', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/clay-trinket-painting-workshop-cars24-gurgaon/', priority: '0.7', changefreq: 'monthly' },
 ];
 
 const base = 'https://kraftykinni.in';
