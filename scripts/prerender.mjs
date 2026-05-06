@@ -553,7 +553,7 @@ const routes = [
 
   // ── Location pages ────────────────────────────────────────────────────────
   {
-    path: '/workshops-in-delhi/',
+    path: '/workshops-in-delhi',
     title: 'Art Workshops in Delhi | Corporate & School Sessions | Kraftykinni',
     description: 'Kraftykinni conducts art and DIY workshops across Delhi — corporate team building, school sessions, and private events. 13 activities, all materials included. Led by Fevicryl-certified artist. ₹600–₹800/person.',
     h1: 'Art Workshops in Delhi',
@@ -586,10 +586,22 @@ const routes = [
       <h3>Do participants need any prior art experience?</h3>
       <p>No prior art experience is needed. Every Kraftykinni session is guided step by step by Shramita Govil. Participants of all skill levels — including those who say they cannot draw — finish with a completed artwork they are proud of.</p>
       <h3>What is the minimum group size for an art workshop in Delhi?</h3>
-      <p>The minimum group size is 20 participants. We cater to groups up to 200+ in a single session, with additional facilitators brought in for very large groups to maintain quality guidance for every participant.</p>`,
+      <p>The minimum group size is 20 participants. We cater to groups up to 200+ in a single session, with additional facilitators brought in for very large groups to maintain quality guidance for every participant.</p>
+      <h3>What is the best area in Delhi for an art workshop venue?</h3>
+      <p>For corporate groups, offices in Connaught Place, Nehru Place, and Bhikaji Cama Place are our most frequent locations — workshops happen directly on your office floor, no external venue needed. For private events, Hauz Khas, Saket, and South Delhi homes are most common. For schools, we regularly work across Vasant Kunj, Dwarka, and Rohini.</p>
+      <h3>Do you conduct art workshops in East Delhi and North Delhi?</h3>
+      <p>Yes — Kraftykinni covers all of Delhi, including East Delhi and North Delhi. Distance within the city is not a constraint. Send your location and we will confirm availability within 24 hours.</p>
+      <h3>Can you accommodate a mixed group of children and adults in Delhi?</h3>
+      <p>Yes — Mandala Art, Tote Bag Painting, and Canvas Pouch Painting work well for mixed-age groups. These are popular for family birthday parties where children and adults participate together. Shramita adjusts the facilitation pace to suit the group.</p>
+      <h2>Where We Conduct Workshops in Delhi</h2>
+      <p><strong>Corporate Offices:</strong> Offices in Connaught Place, Bhikaji Cama Place, and Nehru Place are our most frequent Delhi bookings. We set up on your conference room floor or cafeteria — setup takes 20 minutes and we handle all cleanup.</p>
+      <p><strong>Schools &amp; Colleges:</strong> We work with schools across Vasant Kunj, Dwarka, Rohini, and Saket for annual days and art sessions. Groups of 30 to 300+ students in assembly halls or classrooms.</p>
+      <p><strong>Private Homes &amp; Event Venues:</strong> Birthday parties, kitty parties, and bachelorettes in South Delhi, Hauz Khas, and central Delhi. At your home, a rented farmhouse, or a café — we adapt to any space.</p>
+      <h2>A Session That Shows What We Do</h2>
+      <p>Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student took home a finished, display-worthy lamp. The upcycling theme aligned with the school's sustainability focus. <a href="/blog/bottle-lamp-art-workshop-school-delhi-ncr/">Read the full Jaypee School case study</a>.</p>`,
   },
   {
-    path: '/workshops-in-gurgaon/',
+    path: '/workshops-in-gurgaon',
     title: 'Art Workshops in Gurgaon | Corporate Team Building | Kraftykinni',
     description: 'Kraftykinni conducts corporate art workshops and team-building sessions in Gurgaon. Office visits, off-site events, school sessions. 13 activities, all materials included. ₹600–₹800/person.',
     h1: 'Art Workshops in Gurgaon',
@@ -624,7 +636,7 @@ const routes = [
       <p>Yes — we work at office cafeterias, hotel banquet rooms, co-working spaces, and outdoor terrace venues across Gurgaon. You only need to provide tables, chairs, and a flat work surface. We bring everything else.</p>`,
   },
   {
-    path: '/workshops-in-noida/',
+    path: '/workshops-in-noida',
     title: 'Art Workshops in Noida | Corporate & School Sessions | Kraftykinni',
     description: 'Kraftykinni conducts art and DIY workshops in Noida and Greater Noida — corporate team building, school sessions, and private events. All materials included. ₹600–₹800/person.',
     h1: 'Art Workshops in Noida',
@@ -733,9 +745,9 @@ const sitemapEntries = [
   { loc: '/workshops/trinket-tray/',        priority: '0.7', changefreq: 'monthly' },
   { loc: '/workshops/mdf-fridge-magnet/',   priority: '0.7', changefreq: 'monthly' },
   { loc: '/workshops/canvas-pouch/',        priority: '0.7', changefreq: 'monthly' },
-  { loc: '/workshops-in-delhi/',            priority: '0.8', changefreq: 'monthly' },
-  { loc: '/workshops-in-gurgaon/',          priority: '0.8', changefreq: 'monthly' },
-  { loc: '/workshops-in-noida/',            priority: '0.8', changefreq: 'monthly' },
+  { loc: '/workshops-in-delhi',            priority: '0.8', changefreq: 'monthly' },
+  { loc: '/workshops-in-gurgaon',          priority: '0.8', changefreq: 'monthly' },
+  { loc: '/workshops-in-noida',            priority: '0.8', changefreq: 'monthly' },
   { loc: '/employee-engagement-activities-gurgaon/', priority: '0.8', changefreq: 'monthly' },
   { loc: '/about/',                         priority: '0.6', changefreq: 'yearly'  },
   { loc: '/privacy-policy/',               priority: '0.2', changefreq: 'yearly'  },

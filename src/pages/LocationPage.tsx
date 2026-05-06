@@ -8,7 +8,7 @@ import { useBookNow } from '../hooks/useBookNow';
 
 const locationData = {
   delhi: {
-    slug: 'workshops-in-delhi/',
+    slug: 'workshops-in-delhi',
     city: 'Delhi',
     headline: 'Art Workshops in Delhi',
     heroPink: 'Book a Session Today',
@@ -26,10 +26,13 @@ const locationData = {
       { q: 'How far in advance should I book an art workshop in Delhi?', a: 'A minimum of 7 days advance notice is required to arrange materials and confirm logistics. For large groups of 150+ or multi-activity sessions, 10–14 days is preferred. A 50% deposit confirms your booking.' },
       { q: 'Do participants need any prior art experience?', a: 'No prior art experience is needed. Every Kraftykinni session is guided step by step by Shramita Govil. Participants of all skill levels — including those who say they cannot draw — finish with a completed artwork they are proud of.' },
       { q: 'What is the minimum group size for an art workshop in Delhi?', a: 'The minimum group size is 20 participants. We cater to groups up to 200+ in a single session, with additional facilitators brought in for very large groups.' },
+      { q: 'What is the best area in Delhi for an art workshop venue?', a: 'For corporate groups, offices in Connaught Place, Nehru Place, and Bhikaji Cama Place are our most frequent locations — workshops happen directly on your office floor, no external venue needed. For private events, Hauz Khas, Saket, and South Delhi homes are most common. For schools, we regularly work across Vasant Kunj, Dwarka, and Rohini.' },
+      { q: 'Do you conduct art workshops in East Delhi and North Delhi?', a: 'Yes — Kraftykinni covers all of Delhi, including East Delhi and North Delhi. Distance within the city is not a constraint. Send your location and we will confirm availability within 24 hours.' },
+      { q: 'Can you accommodate a mixed group of children and adults in Delhi?', a: 'Yes — Mandala Art, Tote Bag Painting, and Canvas Pouch Painting work well for mixed-age groups. These are popular for family birthday parties where children and adults participate together. Shramita adjusts the facilitation pace to suit the group.' },
     ],
   },
   gurgaon: {
-    slug: 'workshops-in-gurgaon/',
+    slug: 'workshops-in-gurgaon',
     city: 'Gurgaon',
     headline: 'Art Workshops in Gurgaon',
     heroPink: 'For Corporate Teams & Events',
@@ -47,7 +50,7 @@ const locationData = {
     ],
   },
   noida: {
-    slug: 'workshops-in-noida/',
+    slug: 'workshops-in-noida',
     city: 'Noida',
     headline: 'Art Workshops in Noida',
     heroPink: 'Corporate & School Sessions',
@@ -112,6 +115,33 @@ const locationData = {
   quote: 'The workshop was an absolute hit with our students! Shramita\'s energy and creativity made it a memorable experience. Everyone walked away with something beautiful they made themselves.',
   author: 'Aparajita',
   context: 'School Workshop, Delhi',
+};
+
+// Delhi-only: venue spotlight section
+(locationData.delhi as any).delhiVenues = {
+  heading: 'Where We Conduct Workshops in Delhi',
+  venues: [
+    {
+      name: 'Corporate Offices',
+      desc: 'Offices in Connaught Place, Bhikaji Cama Place, and Nehru Place are our most frequent Delhi bookings. We set up on your conference room floor or office cafeteria — setup takes 20 minutes, we handle all cleanup.',
+    },
+    {
+      name: 'Schools & Colleges',
+      desc: 'We work with schools across Vasant Kunj, Dwarka, Rohini, and Saket for annual days and art sessions. Groups of 30 to 300+ students in assembly halls or classrooms — we scale to any size.',
+    },
+    {
+      name: 'Private Homes & Event Venues',
+      desc: 'Birthday parties, kitty parties, and bachelorettes in South Delhi, Hauz Khas, and central Delhi. At your home, a rented farmhouse, or a café — we adapt to any space you have.',
+    },
+  ],
+};
+
+// Delhi-only: client highlight linking to existing blog post
+(locationData.delhi as any).delhiClients = {
+  heading: 'A Session That Shows What We Do',
+  highlight: 'Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student took home a finished, display-worthy lamp. The upcycling theme aligned with the school\'s sustainability focus.',
+  blogLink: '/blog/bottle-lamp-art-workshop-school-delhi-ncr',
+  blogLabel: 'Read the full Jaypee School case study →',
 };
 (locationData.gurgaon as typeof locationData.noida).whoWeWorkWith = {
   heading: 'Who We Work With in Gurgaon',
@@ -296,6 +326,48 @@ export default function LocationPage() {
                   {(loc as typeof locationData.noida).testimonial.context}
                 </footer>
               </blockquote>
+            </div>
+          </section>
+        )}
+
+        {/* Delhi-only: Venue spotlight section */}
+        {(loc as any).delhiVenues && (
+          <section className="py-20 bg-brand-offwhite">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="font-serif text-3xl font-bold text-brand-slate text-center mb-12">
+                Where We Conduct <span className="text-brand-pink italic">Workshops in Delhi</span>
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {(loc as any).delhiVenues.venues.map((v: { name: string; desc: string }) => (
+                  <div key={v.name} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                    <div className="flex items-center gap-3 mb-3">
+                      <MapPin size={18} className="text-brand-pink flex-shrink-0" />
+                      <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">{v.name}</span>
+                    </div>
+                    <p className="text-brand-charcoal font-light leading-relaxed text-sm">{v.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Delhi-only: Client highlight + blog link */}
+        {(loc as any).delhiClients && (
+          <section className="py-16 bg-white">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="font-serif text-2xl font-bold text-brand-slate mb-4">
+                {(loc as any).delhiClients.heading}
+              </h2>
+              <p className="text-gray-600 font-light leading-relaxed mb-5">
+                {(loc as any).delhiClients.highlight}
+              </p>
+              <Link
+                to={(loc as any).delhiClients.blogLink}
+                className="inline-flex items-center gap-2 text-brand-pink font-medium text-sm hover:underline underline-offset-4"
+              >
+                {(loc as any).delhiClients.blogLabel}
+              </Link>
             </div>
           </section>
         )}
