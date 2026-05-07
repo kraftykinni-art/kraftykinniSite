@@ -1,16 +1,16 @@
-import bohoArt from '../assets/boho-art.webp';
-import bottleArt from '../assets/bottle-art.webp';
-import lippanArt from '../assets/lippan-art.webp';
-import tieAndDye from '../assets/tie-and-dye.webp';
-import trinketDish from '../assets/trinket-dish.webp';
-import mandalaColouring from '../assets/mandala-art.webp';
-import blockPrinting from '../assets/block-printing.webp';
-import clayArtMdf from '../assets/clay-art-mdf.webp';
-import mdfFridgeMagnet from '../assets/mdf-fridge-magnet.webp';
-import glassPainting from '../assets/glass-painting.webp';
-import textureTissueArt from '../assets/texture-tissue-art.webp';
-import toteBag from '../assets/tote-bag.webp';
-import canvasPouch from '../assets/canvas-pouch.webp';
+import bohoArt from '../assets/boho-art-opt.webp';
+import bottleArt from '../assets/bottle-art-opt.webp';
+import lippanArt from '../assets/lippan-art-opt.webp';
+import tieAndDye from '../assets/tie-and-dye-opt.webp';
+import trinketDish from '../assets/trinket-dish-opt.webp';
+import mandalaColouring from '../assets/mandala-art-opt.webp';
+import blockPrinting from '../assets/block-printing-opt.webp';
+import clayArtMdf from '../assets/clay-art-mdf-opt.webp';
+import mdfFridgeMagnet from '../assets/mdf-fridge-magnet-opt.webp';
+import glassPainting from '../assets/glass-painting-opt.webp';
+import textureTissueArt from '../assets/texture-tissue-art-opt.webp';
+import toteBag from '../assets/tote-bag-opt.webp';
+import canvasPouch from '../assets/canvas-pouch-opt.webp';
 
 export type Category = 'All' | 'Signature' | 'Heritage' | 'Everyday';
 

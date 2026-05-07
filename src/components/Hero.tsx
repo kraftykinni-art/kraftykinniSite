@@ -2,9 +2,13 @@ import { motion } from 'motion/react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 import bohoArt from '../assets/boho-art.webp';
+import bohoArtMobile from '../assets/boho-art-mobile.webp';
 import bottleArt from '../assets/bottle-art.webp';
+import bottleArtMobile from '../assets/bottle-art-mobile.webp';
 import lippanArt from '../assets/lippan-art.webp';
+import lippanArtMobile from '../assets/lippan-art-mobile.webp';
 import tieAndDye from '../assets/tie-and-dye.webp';
+import tieAndDyeMobile from '../assets/tie-and-dye-mobile.webp';
 
 export default function Hero() {
   return (
@@ -73,9 +77,13 @@ export default function Hero() {
               <div className="flex flex-col gap-4">
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
+                    srcSet={`${bohoArtMobile} 400w, ${bohoArt} 629w`}
+                    sizes="(max-width: 768px) 160px, 280px"
                     src={bohoArt}
                     alt="Boho Canvas Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    width={629}
+                    height={1308}
                     fetchPriority="high"
                     loading="eager"
                     decoding="async"
@@ -84,9 +92,13 @@ export default function Hero() {
                 </div>
                 <div className="h-1/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
+                    srcSet={`${bottleArtMobile} 400w, ${bottleArt} 736w`}
+                    sizes="(max-width: 768px) 160px, 280px"
                     src={bottleArt}
                     alt="Bottle Lamp Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    width={736}
+                    height={757}
                     loading="lazy"
                     decoding="async"
                   />
@@ -96,9 +108,13 @@ export default function Hero() {
               <div className="flex flex-col gap-4 pt-12">
                 <div className="h-1/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
+                    srcSet={`${lippanArtMobile} 400w, ${lippanArt} 735w`}
+                    sizes="(max-width: 768px) 160px, 280px"
                     src={lippanArt}
                     alt="Lippan Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    width={735}
+                    height={687}
                     loading="lazy"
                     decoding="async"
                   />
@@ -106,9 +122,13 @@ export default function Hero() {
                 </div>
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
+                    srcSet={`${tieAndDyeMobile} 400w, ${tieAndDye} 586w`}
+                    sizes="(max-width: 768px) 160px, 280px"
                     src={tieAndDye}
                     alt="Tie and Dye workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    width={586}
+                    height={1104}
                     loading="lazy"
                     decoding="async"
                   />

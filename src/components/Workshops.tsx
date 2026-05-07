@@ -67,6 +67,9 @@ export default function Workshops() {
                       src={workshop.image}
                       alt={`${workshop.title} workshop in Delhi NCR`}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      width={600}
+                      height={450}
                       loading="lazy"
                       decoding="async"
                     />

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logo from '../assets/Logo.webp';
+import logo from '../assets/Logo-small.webp';
 
 // Smooth scroll to a section by id, with navbar offset
 function scrollToSection(id: string) {
@@ -92,7 +92,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
 
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" loading="eager" decoding="async" />
+            <img src={logo} alt="Kraftykinni Logo" className="w-10 h-10 rounded-full object-cover" width={40} height={40} loading="eager" decoding="async" />
             <span className="font-serif font-bold text-2xl tracking-tight text-brand-slate">Kraftykinni</span>
           </Link>
 
