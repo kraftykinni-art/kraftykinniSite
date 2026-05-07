@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import logo from '../assets/Logo-small.webp';
 
@@ -80,11 +79,8 @@ export default function Navbar() {
   };
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 animate-[slideDown_0.5s_ease-out_both] ${
         isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'
       }`}
     >
@@ -125,15 +121,10 @@ export default function Navbar() {
                 />
               </button>
 
-              <AnimatePresence>
                 {isServicesOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 8 }}
-                    transition={{ duration: 0.15 }}
+                  <div
                     onMouseLeave={() => setIsServicesOpen(false)}
-                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden animate-[fadeInUp_0.15s_ease-out_both]"
                   >
                     {serviceLinks.map((link) => (
                       <Link
@@ -145,9 +136,8 @@ export default function Navbar() {
                         {link.name}
                       </Link>
                     ))}
-                  </motion.div>
+                  </div>
                 )}
-              </AnimatePresence>
             </div>
 
             <Link to="/about" className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
@@ -176,13 +166,9 @@ export default function Navbar() {
       </div>
 
       {/* Mobile nav */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-100 overflow-hidden"
+      {isMobileMenuOpen && (
+          <div
+            className="md:hidden bg-white border-t border-gray-100 overflow-hidden animate-[fadeInUp_0.2s_ease-out_both]"
           >
             <div className="px-4 py-6 space-y-4 flex flex-col">
               {navLinks.map((link) => (
@@ -222,9 +208,8 @@ export default function Navbar() {
                 Book Now
               </a>
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
-    </motion.header>
+    </header>
   );
 }

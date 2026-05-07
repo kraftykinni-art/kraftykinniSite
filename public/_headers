@@ -1,0 +1,19 @@
+# Hashed assets — immutable cache (1 year)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages — short cache to pick up new deploys
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Root HTML
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Public images (unhashed, stable paths)
+/boho-art.webp
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+
+# Favicon
+/favicon.png
+  Cache-Control: public, max-age=2592000

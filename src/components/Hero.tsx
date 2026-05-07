@@ -1,4 +1,3 @@
-import { motion } from 'motion/react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 import bohoArt from '../assets/boho-art.webp';
@@ -22,23 +21,13 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="flex flex-col items-start"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8"
-            >
+          <div className="flex flex-col items-start animate-[fadeInUp_0.8s_ease-out_both]">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8 animate-[fadeInScale_0.5s_ease-out_0.2s_both]">
               <Sparkles size={16} className="text-brand-pink" />
               <span className="text-xs font-bold uppercase tracking-widest text-brand-charcoal">
                 Fevicryl Certified Artist
               </span>
-            </motion.div>
+            </div>
 
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-brand-slate leading-tight mb-6">
               Art & DIY Workshops <br />
@@ -64,15 +53,10 @@ export default function Hero() {
                 Request a Quote
               </a>
             </div>
-          </motion.div>
+          </div>
 
           {/* Image Grid */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-            className="relative h-[500px] lg:h-[600px] w-full"
-          >
+          <div className="relative h-[500px] lg:h-[600px] w-full animate-[fadeInRight_0.8s_ease-out_0.2s_both]">
             <div className="absolute inset-0 grid grid-cols-2 gap-4 p-4">
               <div className="flex flex-col gap-4">
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
@@ -136,7 +120,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

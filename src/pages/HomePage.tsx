@@ -1,10 +1,13 @@
+import { lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
-import About from '../components/About';
-import Testimonials from '../components/Testimonials';
-import Workshops from '../components/Workshops';
-import PricingFAQ from '../components/PricingFAQ';
-import ContactFooter from '../components/ContactFooter';
+
+// Lazy-load below-fold components to reduce initial JS bundle
+const About = lazy(() => import('../components/About'));
+const Testimonials = lazy(() => import('../components/Testimonials'));
+const Workshops = lazy(() => import('../components/Workshops'));
+const PricingFAQ = lazy(() => import('../components/PricingFAQ'));
+const ContactFooter = lazy(() => import('../components/ContactFooter'));
 
 export default function HomePage() {
   return (
@@ -17,12 +20,16 @@ export default function HomePage() {
 
       <main>
         <Hero />
-        <About />
-        <Testimonials />
-        <Workshops />
-        <PricingFAQ />
+        <Suspense fallback={<div className="min-h-[200px]" />}>
+          <About />
+          <Testimonials />
+          <Workshops />
+          <PricingFAQ />
+        </Suspense>
       </main>
-      <ContactFooter />
+      <Suspense fallback={<div className="min-h-[100px]" />}>
+        <ContactFooter />
+      </Suspense>
     </>
   );
 }

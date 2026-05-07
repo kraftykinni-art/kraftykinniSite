@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- LCP preload — boho-art is the largest above-fold image (stable public path, no Vite hash) -->
-    <link rel="preload" as="image" href="/boho-art.webp" fetchpriority="high" />
+    <!-- LCP preload — boho-art mobile variant for fast above-fold paint -->
+    <link rel="preload" as="image" href="/boho-art.webp" type="image/webp" fetchpriority="high" />
 
     <!-- Canonical — non-www, no trailing slash -->
     <link rel="canonical" href="https://kraftykinni.in/" />
@@ -60,8 +60,7 @@
     <meta name="twitter:description" content="Guided art workshops for teams, schools &amp; private events across Delhi, Gurgaon &amp; Noida. From ₹600/person. 50+ events, 1,500+ participants. All materials included.">
     <meta name="twitter:image" content="https://kraftykinni.in/og-corporate.jpg">
 
-    <!-- Google tag (gtag.js) — send_page_view:false because App.tsx fires page_view manually on every SPA route change -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05MJBCCPZP"></script>
+    <!-- Google tag (gtag.js) — deferred to not block FCP/LCP -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -222,5 +221,14 @@
       </noscript>
     </div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Load GTM after page is interactive to avoid blocking FCP/LCP -->
+    <script>
+      window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-05MJBCCPZP';
+        s.async = true;
+        document.head.appendChild(s);
+      });
+    </script>
   </body>
 </html>
