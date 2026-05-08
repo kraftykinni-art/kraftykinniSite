@@ -27,7 +27,6 @@ export default defineConfig(({ mode }) => {
             'react-vendor': ['react', 'react-dom', 'react-router-dom'],
             'motion-vendor': ['motion'],
             'ui-vendor': ['lucide-react'],
-            'helmet-vendor': ['react-helmet-async'],
           },
         },
       },

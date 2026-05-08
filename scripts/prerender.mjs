@@ -377,6 +377,43 @@ const routes = [
     `,
   },
 
+  {
+    path: '/blog/summer-art-workshop-for-schools-delhi-ncr/',
+    title: 'Summer Art Workshop for Schools Delhi NCR — Planning Guide | Kraftykinni',
+    description: 'Planning a summer art workshop for your school in Delhi NCR? Guide covers best activities, age groups, group sizes & what to expect. Facilitator travels to you. ₹600/student.',
+    h1: 'Summer Art Workshops for Schools in Delhi NCR — A Complete Planning Guide',
+    bodyContent: `<h1>Summer Art Workshops for Schools in Delhi NCR — A Complete Planning Guide</h1>
+      <p>Summer is the one window in the school calendar where there's room to try something outside the syllabus. No exam pressure, smaller groups, and students who actually want to be there — the conditions for a genuinely great workshop are perfect. Over the past two years, Kraftykinni has run summer art workshops at schools across Delhi, Gurgaon, and Noida — from single half-day sessions for 30 students to multi-day programmes for 300+ across different grade batches.</p>
+      <h2>Why a Summer Workshop Is Different from a Regular School Art Session</h2>
+      <p>The best school art workshops happen when students are not being assessed. Summer workshops remove that pressure entirely. Students attend because they want to, and the facilitator is an external artist rather than the class teacher. Both conditions change the energy in the room significantly.</p>
+      <h2>Photo Frame Craft — the Standout Summer Activity for Schools</h2>
+      <p>Photo frame making has become one of the most requested summer activities for schools in Delhi NCR. Every student works with craft materials — popsicle sticks, acrylic colours, Fevicryl clay, mirrors, and decorative elements — to build and personalise a photo frame they can place their own photograph in. The result is functional, personal, and immediately meaningful.</p>
+      <h2>Lippan Art — the Top Pick for Senior School Groups (Classes 7–12)</h2>
+      <p>For senior school groups, Lippan Art consistently produces the strongest outcomes. The craft requires patience and precision, which engages older students differently from a painting task. The finished pieces look genuinely impressive — the mirror-work effect is dramatic and display-ready.</p>
+      <h2>Mandala Art — the Ideal Activity for Mixed-Ability Groups</h2>
+      <p>Mandala Art works well for summer school workshops because it democratises artistic ability. Students build concentric geometric patterns using dotting tools and acrylic paint. The activity is genuinely meditative, and teachers frequently comment that they see usually restless students become completely absorbed.</p>
+      <h2>Bottle Lamp Art — the High-Impact Activity for School Events</h2>
+      <p>Students decorate glass bottles using Fevicryl Mouldit clay and acrylic colours, transforming them into decorative lamps. The upcycling narrative gives teachers a curriculum connection point. At Jaypee Public School in Noida, 150+ students completed Bottle Lamp Art pieces in a single afternoon session.</p>
+      <h2>Tie & Dye — the Activity That Works for Any Age</h2>
+      <p>For primary school students (Class 3 and below), Tie & Dye is the most reliable choice. The moment of reveal — when students untie their fabric and see what they have created — is one of the most reliably joyful moments in a school workshop context.</p>
+      <h2>Book a Summer Workshop for Your School</h2>
+      <p>Kraftykinni runs summer art workshops for schools across Delhi, Gurgaon, and Noida. All materials are included. Groups from 30 students to full school batches of 300+. Starting at ₹600 per student. WhatsApp +91 9599622210 or visit kraftykinni.in/school-workshops to enquire.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is the best summer art activity for school students in Delhi NCR?</h3>
+      <p>For primary school students (Class 3–5), Tie & Dye and Photo Frame Craft work best. For middle and senior school students (Class 6–12), Lippan Art and Mandala Art consistently produce the most impressive finished pieces.</p>
+      <h3>How much does a summer art workshop for a school cost in Delhi NCR?</h3>
+      <p>Kraftykinni charges ₹600 to ₹800 per student with all materials included. Smaller batches of 30–50 students are priced at ₹800 per student; batches of 50–100 at ₹700; batches above 100 at ₹600.</p>
+      <h3>Can Kraftykinni conduct a summer workshop at our school premises?</h3>
+      <p>Yes. All materials, table covers, aprons, and cleanup supplies are transported and managed by the facilitator. You only need to provide tables, chairs, and the space.</p>
+      <h3>How far in advance should we book a summer school workshop?</h3>
+      <p>May and early June are the busiest months. For dates in this period, booking 4–6 weeks in advance is strongly recommended.</p>
+      <h3>What grade levels are suitable for a school summer art workshop?</h3>
+      <p>Kraftykinni runs workshops for students from Class 3 through Class 12 and college groups. Activity recommendations are tailored by age group.</p>
+      <h3>Can a summer art workshop be integrated into an existing school summer camp programme?</h3>
+      <p>Yes — many schools in Delhi NCR use Kraftykinni for one or two art sessions within a broader summer camp timetable. Sessions run for 90 minutes per batch.</p>
+    `,
+  },
+
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art/',
@@ -759,6 +796,7 @@ const sitemapEntries = [
   { loc: '/blog/art-workshop-ideas-birthday-party-delhi-ncr/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/mothers-day-art-workshop-gift-delhi-ncr/', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/clay-trinket-painting-workshop-cars24-gurgaon/', priority: '0.7', changefreq: 'monthly' },
+  { loc: '/blog/summer-art-workshop-for-schools-delhi-ncr/', priority: '0.8', changefreq: 'monthly' },
 ];
 
 const base = 'https://kraftykinni.in';

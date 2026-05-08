@@ -121,7 +121,7 @@ export default function Navbar() {
                 />
               </button>
 
-                {isServicesOpen && (
+              {isServicesOpen && (
                   <div
                     onMouseLeave={() => setIsServicesOpen(false)}
                     className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden animate-[fadeInUp_0.15s_ease-out_both]"
