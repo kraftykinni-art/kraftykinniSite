@@ -748,7 +748,7 @@ export const blogPosts: BlogPost[] = [
           "Hand-painted Tuborg bottle with 'Baap, Baap Hota Hai' text in black on yellow — a Kraftykinni Father's Day Bottle Art gift from Delhi NCR",
       },
       {
-        heading: '2. Bottle Figurine Art — paint a miniature version of Dad',
+        heading: "2. Father's Day Special Bottle Art — creative handmade bottle décor for Dad",
         body: `Father's Day Special Bottle Art transforms ordinary bottles into beautiful handmade art pieces using paints, textures, and decorative detailing. Participants paint and customise bottles with Father's Day themes, messages, and personalised creative designs.The result feels artistic, personal, and completely different from a store-bought gift. Every participant creates their own unique design, making each bottle a one-of-a-kind Father's Day keepsake.This workshop works especially well for beginners because Shramita demonstrates every step — from painting and colour blending to final decorative detailing.For adults, teenagers, and families looking for a creative Father's Day activity, this is one of the most engaging workshop formats.`,
         image: '/fathers-day-bottle-art-dad-figurine-pink-shirt-kraftykinni.webp',
         imageAlt:
