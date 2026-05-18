@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
           content="Kraftykinni's privacy policy — how we collect and use information submitted through our contact form. We never sell your data."
         />
         <link rel="canonical" href="https://kraftykinni.in/privacy-policy" />
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 
