@@ -705,4 +705,96 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'fathers-day-gift-ideas-art-workshop-delhi-ncr-2026',
+    title: "Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR",
+    metaTitle: "Father's Day Gift Ideas 2026 — Art Workshop Delhi NCR | Kraftykinni",
+    metaDescription:
+      "Skip the boring tie. This Father's Day (15 June 2026), gift Dad a handmade Bottle Art piece, Clay plaque, or a shared workshop experience in Delhi NCR. From ₹600/person.",
+    publishDate: '2026-05-18',
+    category: 'Private Events' as const,
+    excerpt:
+      "A tie he won't wear. A mug with \"World's Best Dad\" he already has three of. This Father's Day, give him something made — a Bottle Art figurine painted to look exactly like him, a clay plaque with his name raised in gold, or an afternoon where you make something together. Kraftykinni workshops work as Father's Day gifts in Delhi NCR, and here's how.",
+    keywords: [
+      "father's day gift ideas Delhi NCR",
+      "father's day art workshop Delhi",
+      "unique father's day gift Delhi 2026",
+      "handmade gift for dad Delhi NCR",
+      "father's day craft workshop Gurgaon",
+      "father's day experience gift Delhi",
+      "baap baap hota hai gift",
+      "father's day bottle art workshop",
+    ],
+    sections: [
+      {
+        body: `A tie he won't wear. A grooming kit he has three of. A "World's Best Dad" mug that joins the other two in the back of the cupboard.\n\nFather's Day is 15 June 2026. And if you're reading this, you've probably already ruled out the obvious options. What's harder to find is something that actually means something — something made, something specific, something he didn't see coming.\n\nKraftykinni workshops solve this in two ways. You can create a handmade gift for him — a Bottle Art figurine, a clay plaque, a painted keepsake — in a guided session. Or you can gift him the experience itself: a shared afternoon where Dad gets to make something with his own hands, possibly for the first time in his adult life. Both formats work. Both produce something he'll keep.\n\nHere's what works, and how to book it.`,
+        image: '/fathers-day-worlds-best-dad-rock-art-flowers-kraftykinni.webp',
+        imageAlt:
+          "Handmade Father's Day rock art piece painted bright blue with a globe motif reading 'DAD', yellow flowers, gold glitter hearts, and a 'World's Best' sign — Kraftykinni Delhi NCR",
+      },
+      {
+        heading: "Why a Handmade Gift Lands Differently on Father's Day",
+        body: `Most Father's Day gifts are purchases. Something selected, ordered, delivered, gifted. Perfectly fine — and perfectly forgettable inside two weeks.\n\nA handmade gift carries something different: the visible fact that someone spent time and attention making it. The imperfection is part of the message. When the clay lines aren't perfectly uniform, when the paint has a slight texture, when the bottle figurine looks roughly like Dad but not quite — that's not a flaw, that's evidence of the hand that made it.\n\nKraftykinni sessions produce exactly this kind of object. They're not craft kits where you assemble pre-cut pieces. You shape the clay, apply the Mouldit, mix the colours, and make the decisions. The result is yours — and when you give it to your father, he knows it too.\n\nFor [private group sessions](/private-art-workshops/) — a family Father's Day afternoon, a group of siblings making gifts together, or a residential society event — Kraftykinni runs bookings from 10 participants.`,
+      },
+      {
+        heading: "Best Kraftykinni Workshops for Father's Day Gifts",
+        body: `Four activities in particular produce the strongest Father's Day results — each for different reasons and different creative abilities.`,
+      },
+      {
+        heading: '1. Bottle Art — the most personalised gift you can make',
+        body: `Bottle Art is Kraftykinni's most requested activity for personalised gifting occasions — and for Father's Day, it is genuinely exceptional. Participants decorate a glass bottle using Fevicryl Mouldit clay and acrylic colours, building texture, colour, and character directly on the bottle surface.\n\nThe Father's Day angle: paint the bottle to look like Dad. A yellow-skinned figurine in a pink polka-dot shirt, holding a small "Father Day" tag. A Tuborg-style bottle painted black and yellow with "Baap, Baap Hota Hai" raised in bold lettering. A simple painted scene — a cricketer, a sunset, a motorbike — referencing something specific to your father.\n\nThis level of personalisation isn't possible with any store-bought product. It's only possible because someone made it.\n\nDuration: 90 minutes to 2 hours. Works well for personal sessions and private groups of 15–60. See [Bottle Lamp Art workshop details](/workshops/bottle-lamp-art/).`,
+        image: '/fathers-day-bottle-art-baap-baap-hota-hai-gift-kraftykinni.webp',
+        imageAlt:
+          "Hand-painted Tuborg bottle with 'Baap, Baap Hota Hai' text in black on yellow — a Kraftykinni Father's Day Bottle Art gift from Delhi NCR",
+      },
+      {
+        heading: '2. Bottle Figurine Art — paint a miniature version of Dad',
+        body: `A step beyond Bottle Lamp Art, the Bottle Figurine format uses the bottle's shape as the body of a character — and the character is Dad. Participants paint a complete miniature figure: a bald yellow head with a moustache and a wink, a pink polka-dot shirt, black trousers, an orange belt. Small clay coins or tags attached to the side read "Father" and "Day."\n\nThe result is one of the most specific, unrepeatable objects a person can receive. It looks like something you'd buy in a boutique gift store — but it's handmade, it's personal, and the person who painted it knows your dad.\n\nThis format works particularly well when the person making the gift attends a guided session: Shramita demonstrates the character construction step by step, and participants add their own details — skin tone, clothing colour, a specific expression — to make it their own.\n\nFor adults who want to create something for their father but worry about artistic ability: this is specifically designed to work for beginners. Shramita walks through every stage.`,
+        image: '/fathers-day-bottle-art-dad-figurine-pink-shirt-kraftykinni.webp',
+        imageAlt:
+          "Hand-painted bottle figurine of a Dad character in pink polka-dot shirt with moustache and 'Father Day' clay tag — Kraftykinni Father's Day workshop gift",
+      },
+      {
+        heading: "3. Clay Art Plaque — 'DAD' in raised gold on a keepsake he'll display",
+        body: `Clay Art produces the most display-worthy Father's Day gift on this list. Participants work with air-dry Fevicryl Mouldit to build a circular or oval plaque — painted midnight blue like a night sky, studded with small silver coin embellishments, with "DAD" raised in white at the centre above a bold painted pink heart.\n\nThe result sits on a small wooden easel and goes on a shelf, a desk, or a mantelpiece. It looks handmade and thoughtful. It doesn't look like a craft project.\n\nFor families where a child or teenager is making a gift: this is one of the most achievable formats for younger participants. The clay is forgiving, the step-by-step format keeps the process manageable, and the finished piece is genuinely impressive for any age. Kraftykinni runs [Clay Art workshops](/workshops/clay-art/) with all materials included.\n\nDuration: 1.5 to 2 hours.`,
+        image: '/fathers-day-dad-plaque-clay-art-blue-heart-kraftykinni.webp',
+        imageAlt:
+          "Handmade clay art Father's Day plaque in midnight blue with 'DAD' text and pink heart, on a small wooden easel — Kraftykinni workshop gift Delhi NCR",
+      },
+      {
+        heading: "The 'World's Best' Gift — Rock Art for Dad",
+        body: `The rock art format uses a painted stone as the canvas — built up with blue acrylic, a hand-painted globe motif reading "DAD", gold dot accents, small glitter heart embellishments on the sides, and a small handwritten "World's Best" sign mounted on a stick above the piece, with two yellow flowers.\n\nIt's cheerful, tactile, and completely personal. The rock's irregular shape means no two pieces are ever identical — and the "World's Best Dad" message has more weight when it's raised in someone's handwriting on a painted stone than when it's printed on a mug.\n\nThis format works particularly well for children of any age attending a [private art workshop](/private-art-workshops/) with a parent or guardian, or for school workshops running Father's Day craft sessions.`,
+      },
+      {
+        heading: "How to Book a Father's Day Workshop in Delhi NCR",
+        body: `Kraftykinni runs private Father's Day workshop sessions for groups of 10 to 100+ participants across Delhi, Gurgaon, and Noida. Sessions come to you — at home, at a residential club, at an office, or at any hired venue. All materials are brought and set up by the facilitator.\n\n**For families and friend groups:** A private session for 10–25 participants is the most popular format. Everyone makes their own gift for Dad in the same afternoon — different designs, different personal details. Duration: 1.5 to 2.5 hours.\n\n**For residential societies:** Several housing complexes in Gurgaon and Noida run Father's Day events for their community. Kraftykinni can accommodate 30 to 100+ participants in a clubhouse or open courtyard setting.\n\n**For corporate offices:** Father's Day falls on a Sunday, but the week before (9–13 June) is popular for office gift-making sessions where employees create something to take home to their father. [Corporate workshop details here](/corporate-art-workshops/).\n\n**Pricing:** Starting at ₹600 per person with all materials included — clay, paints, brushes, workspace covers, and a take-home finished piece. Custom motifs ("Papa", "Baba", "Dad" in various scripts) can be incorporated into Lippan Art and Clay formats for groups of 20+.\n\nAll sessions are led by Shramita Govil, Fevicryl Certified Artist. [Read more about Shramita and her work here](/about/).\n\nTo book or check availability, WhatsApp **+91 9599622210** with your date, group size, location, and preferred activity. Confirmation within 24 hours. Minimum 7 days notice required; 2–3 weeks is recommended for June dates.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What are the best handmade Father's Day gift ideas from an art workshop in Delhi NCR?",
+        a: "The most popular handmade Father's Day gifts from Kraftykinni workshops are Bottle Art figurines (a painted bottle shaped to look like Dad), Clay Art plaques with 'DAD' in raised lettering, and Rock Art pieces with personalised messages. All can be made in a single guided session of 90 minutes to 2 hours, with all materials included from ₹600 per person.",
+      },
+      {
+        q: "Can I book a private Father's Day art workshop for a family group in Delhi NCR?",
+        a: "Yes. Kraftykinni runs private sessions for groups from 10 to 100+ participants at your home, club, residential society, or any venue in Delhi, Gurgaon, or Noida. All materials are brought to you. WhatsApp +91 9599622210 with your date, group size, and preferred activity. Minimum 7 days notice required; 2–3 weeks recommended for June dates.",
+      },
+      {
+        q: "When is Father's Day 2026 in India?",
+        a: "Father's Day 2026 in India falls on Sunday, 15 June 2026 — the third Sunday of June. For workshop sessions before Father's Day, Kraftykinni is available throughout June. For gift-making sessions in the week before (9–13 June), early booking is strongly recommended as June dates fill up quickly.",
+      },
+      {
+        q: "Is an art workshop suitable as a Father's Day activity for Dad himself?",
+        a: "Yes — and it is often more memorable than a gift. A guided art session gives Dad something to do with his hands, a finished object to take home, and an afternoon completely different from his usual routine. Clay Art and Bottle Art are particularly popular for men who have never tried an art session before — the step-by-step format means no prior experience is needed, and the results are consistently impressive.",
+      },
+      {
+        q: "How much does a Father's Day art workshop cost in Delhi NCR?",
+        a: "Kraftykinni charges ₹600 to ₹800 per person, with all materials included. Smaller private groups of 10–30 are priced at ₹800 per person; groups of 30–80 at ₹700; groups of 80+ at ₹600. Setup, facilitation, and cleanup are included. There are no hidden venue or logistics charges — the facilitator travels to you.",
+      },
+      {
+        q: "Can children participate in a Father's Day art workshop to make a gift for their dad?",
+        a: "Yes. Kraftykinni workshops are designed for all skill levels and ages. Children from age 8 upward can participate in Clay Art, Bottle Art, and Rock Art sessions. Shramita adapts the guidance for younger participants, ensuring every child completes a finished piece they are proud to give. Private family sessions for mixed adult-and-child groups are regularly run.",
+      },
+    ],
+  }
 ];
