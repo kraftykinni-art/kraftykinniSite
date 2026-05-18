@@ -414,6 +414,37 @@ const routes = [
     `,
   },
 
+  {
+    path: '/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026/',
+    title: "Father's Day Gift Ideas 2026 — Art Workshop Delhi NCR | Kraftykinni",
+    description: "Skip the boring tie. This Father's Day (15 June 2026), gift Dad a handmade Fevicryl Mouldit Clay Fridge Magnet, Father's Day Special Bottle Art, Clay Bottle Art, or Clay Trinket workshop experience in Delhi NCR. From ₹600/person.",
+    h1: "Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR",
+    bodyContent: `<h1>Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR</h1>
+      <p>A tie he won't wear. A grooming kit he has three of. A "World's Best Dad" mug that joins the other two in the back of the cupboard. Father's Day is 15 June 2026. Kraftykinni workshops solve this in two ways: you can create a handmade gift for him — a Fevicryl Mouldit Clay Fridge Magnet, Father's Day Special Bottle Art piece, Clay Bottle Art décor, or a handmade Clay Trinket — in a guided session. Or you can gift him the experience itself: a shared afternoon where Dad gets to make something with his own hands.</p>
+      <h2>Why a Handmade Gift Lands Differently on Father's Day</h2>
+      <p>Most Father's Day gifts are purchases — perfectly fine, and perfectly forgettable inside two weeks. A handmade gift carries something different: the visible fact that someone spent time and attention making it. The imperfection is part of the message. Kraftykinni sessions produce exactly this kind of object. They're not craft kits where you assemble pre-cut pieces. You shape the clay, apply the Mouldit, mix the colours, and make the decisions. The result is yours — and when you give it to your father, he knows it too.</p>
+      <h2>Best Kraftykinni Workshops for Father's Day Gifts</h2>
+      <p>Four activities produce the strongest Father's Day results — each for different reasons and different creative abilities.</p>
+      <h3>1. Fevicryl Mouldit Clay Fridge Magnet — a handmade keepsake Dad will actually keep</h3>
+      <p>Participants use Fevicryl Mouldit clay and acrylic colours to create customised fridge magnets with personalised Father's Day themes and messages — "Dad", hearts, flowers, messages, or decorative elements that reflect your father's personality. Beginner-friendly, relaxing, and highly personalised. Duration: 60 to 90 minutes. Works well for personal sessions and private groups of 15–60 participants.</p>
+      <h3>2. Father's Day Special Bottle Art — creative handmade bottle décor for Dad</h3>
+      <p>Father's Day Special Bottle Art transforms ordinary bottles into beautiful handmade art pieces using paints, textures, and decorative detailing. Participants paint and customise bottles with Father's Day themes, messages, and personalised creative designs. Every participant creates their own unique design, making each bottle a one-of-a-kind Father's Day keepsake.</p>
+      <h3>3. Clay Bottle Art — artistic handmade bottle decoration workshop</h3>
+      <p>Clay Bottle Art combines bottle decoration with creative clay detailing techniques to produce aesthetic handmade décor pieces. Participants work with clay textures, acrylic colours, and artistic embellishments to transform simple bottles into personalised Father's Day creations. Duration: 1.5 to 2 hours with all materials included.</p>
+      <h3>4. Clay Trinket — a small handmade Father's Day keepsake</h3>
+      <p>Clay Trinket workshops create small handmade decorative keepsakes for Father's Day gifting. Participants learn simple clay crafting techniques to create personalised trinkets using textures, colours, and creative decorative elements. Works especially well for children, beginners, school workshops, and family-friendly Father's Day events.</p>
+      <h2>How to Book a Father's Day Workshop in Delhi NCR</h2>
+      <p>Kraftykinni runs private Father's Day workshop sessions for groups of 10 to 100+ participants across Delhi, Gurgaon, and Noida. Sessions come to you — at home, at a residential club, at an office, or at any hired venue. All materials are brought and set up by the facilitator. Pricing from ₹600 per person with all materials included. All sessions are led by Shramita Govil, Fevicryl Certified Artist. WhatsApp +91 9599622210 to book. Minimum 7 days notice required; 2–3 weeks recommended for June dates.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What are the best handmade Father's Day gift ideas from an art workshop in Delhi NCR?</h3>
+      <p>The most popular handmade Father's Day gifts from Kraftykinni workshops are Fevicryl Mouldit Clay Fridge Magnets, Father's Day Special Bottle Art pieces, Clay Bottle Art décor, and handmade Clay Trinkets. All can be made in a single guided session of 90 minutes to 2 hours, with all materials included from ₹600 per person.</p>
+      <h3>Can I book a private Father's Day art workshop for a family group in Delhi NCR?</h3>
+      <p>Yes. Kraftykinni runs private sessions for groups from 10 to 100+ participants at your home, club, residential society, or any venue in Delhi, Gurgaon, or Noida. All materials are brought to you. WhatsApp +91 9599622210 with your date, group size, and preferred activity. Minimum 7 days notice required.</p>
+      <h3>How much does a Father's Day art workshop cost in Delhi NCR?</h3>
+      <p>Kraftykinni Father's Day workshops start at ₹600 per person with all materials included — clay, paints, brushes, workspace covers, and a take-home finished piece. Private groups of 10–25 participants are the most popular format for families.</p>
+    `,
+  },
+
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art/',
@@ -797,6 +828,7 @@ const sitemapEntries = [
   { loc: '/blog/mothers-day-art-workshop-gift-delhi-ncr/', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/clay-trinket-painting-workshop-cars24-gurgaon/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/summer-art-workshop-for-schools-delhi-ncr/', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026/', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';
