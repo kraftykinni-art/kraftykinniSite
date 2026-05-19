@@ -149,7 +149,9 @@ def validate_html(url: str, html: str) -> list[dict]:
         issue("error", "TITLE_MISSING", "No <title> tag found")
     elif len(titles) > 1:
         issue("error", "TITLE_DUPLICATE",
-              f"{len(titles)} <title> tags found â€” expected exactly 1")
+              f"{len(titles)} <title> tags found — Bing Webmaster URL Inspection "
+              f"reports this as 'More than one title tag' ({len(titles)} instances); "
+              "expected exactly 1")
     else:
         t = titles[0].get_text(strip=True)
         if not titles[0].has_attr("data-rh"):
@@ -183,8 +185,9 @@ def validate_html(url: str, html: str) -> list[dict]:
         issue("error", "DESC_MISSING", 'No <meta name="description"> found')
     elif len(descs) > 1:
         issue("error", "DESC_DUPLICATE",
-              f'{len(descs)} <meta name="description"> tags â€” expected 1 '
-              f'(Bing flags duplicates)')
+              f'{len(descs)} <meta name="description"> tags — Bing Webmaster URL '
+              f"Inspection reports this as 'More than one Meta Description tag' "
+              f"({len(descs)} instances); expected exactly 1")
     else:
         d = descs[0].get("content", "")
         if not descs[0].has_attr("data-rh"):
@@ -211,7 +214,9 @@ def validate_html(url: str, html: str) -> list[dict]:
         issue("error", "CANONICAL_MISSING", 'No <link rel="canonical"> found')
     elif len(canonicals) > 1:
         issue("error", "CANONICAL_DUPLICATE",
-              f'{len(canonicals)} canonical tags found â€” expected exactly 1')
+              f'{len(canonicals)} canonical tags found — Bing Webmaster URL Inspection '
+              f"reports this as 'More than one canonical tag' ({len(canonicals)} instances); "
+              "expected exactly 1")
     else:
         href = canonicals[0].get("href", "")
         if not canonicals[0].has_attr("data-rh"):
@@ -287,16 +292,45 @@ def validate_html(url: str, html: str) -> list[dict]:
         issue("ok", "TWITTER_CARD_OK",
               f"twitter:card = {tw_card.get('content','')}")
 
-    # â”€â”€ 9. data-rh hydration markers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+    # ── 9. data-rh hydration markers ─────────────────────────────────────
     drh_tags = head.find_all(attrs={"data-rh": True})
     if len(drh_tags) < 3:
         issue("warning", "DRH_LOW",
-              f"Only {len(drh_tags)} data-rh=\"true\" tags â€” "
-              "react-helmet-async may duplicate meta on hydration")
+              f"Only {len(drh_tags)} data-rh=\"true\" tags — "
+              "prerender may not have injected all page-specific meta "
+              "(title, description, canonical)")
     else:
         issue("ok", "DRH_PRESENT",
-              f"{len(drh_tags)} tags carry data-rh=\"true\" "
-              "(react-helmet-async will correctly swap them)")
+              f"{len(drh_tags)} data-rh tags present (prerendered meta visible to non-JS crawlers)")
+
+    # ── 10. Bing duplicate-tag protection ── data-rh cleanup script ────────
+    # react-helmet-async in pure-client mode (HelmetProvider without SSR context)
+    # does NOT adopt prerendered data-rh tags; it appends its own alongside them.
+    # Bing URL Inspection (which executes JS) then sees both sets and reports:
+    #   "More than one title tag"
+    #   "More than one Meta Description tag"
+    #   "More than one canonical tag"
+    # Fix: inject an inline <script> in <head> that removes [data-rh] elements
+    # synchronously before the deferred React module scripts execute.
+    _cleanup_inline = [
+        s for s in head.find_all("script")
+        if not s.get("src") and s.get("type") != "application/ld+json"
+        and "[data-rh]" in (s.string or "")
+    ]
+    if drh_tags and not _cleanup_inline:
+        issue("error", "BING_DRH_NO_CLEANUP",
+              f"{len(drh_tags)} data-rh tag(s) present but no inline cleanup script "
+              "found — Bing URL Inspection will report duplicate title / description / "
+              "canonical after React mounts. "
+              "Fix: add to <head> before React scripts: "
+              "<script>document.querySelectorAll('[data-rh]').forEach(e=>e.remove())</script>")
+    elif _cleanup_inline:
+        issue("ok", "BING_DRH_CLEANUP_OK",
+              f"data-rh cleanup script present — JS crawlers (Bing, Googlebot) will "
+              "see exactly one title / description / canonical after React mounts")
+    else:
+        issue("ok", "BING_DRH_NA",
+              "No data-rh tags in static HTML — cleanup script not needed")
 
     # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     # AEO CHECKS  (Answer Engine Optimisation)
