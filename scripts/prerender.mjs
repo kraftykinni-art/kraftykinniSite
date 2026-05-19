@@ -723,25 +723,25 @@ function injectMeta(html, route) {
   html = html.replace(/<title[^>]*>[^<]*<\/title>/g, '');
   // Remove non-standard <meta name="title"> — BingMaster counts it as a second title tag
   html = html.replace(/<meta name="title"[^>]*>/g, '');
-  // Inject the page title with data-react-helmet="true" so React-Helmet updates (not duplicates) it on hydration
-  html = html.replace('</head>', `  <title data-react-helmet="true">${title}</title>\n  </head>`);
-  // All injected meta tags carry data-react-helmet="true" so React-Helmet replaces them on mount
+  // Inject the page title with data-rh="true" so React-Helmet updates (not duplicates) it on hydration
+  html = html.replace('</head>', `  <title data-rh="true">${title}</title>\n  </head>`);
+  // All injected meta tags carry data-rh="true" so React-Helmet replaces them on mount
   // rather than appending new tags alongside them (which causes the 2× description / canonical issue)
-  html = html.replace(/<meta name="description" content="[^"]*">/, `<meta data-react-helmet="true" name="description" content="${description}">`);
-  html = html.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, `<link data-react-helmet="true" rel="canonical" href="${canonical}" />`);
-  html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta data-react-helmet="true" property="og:title" content="${title}">`);
-  html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta data-react-helmet="true" property="og:description" content="${description}">`);
-  html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta data-react-helmet="true" property="og:url" content="${canonical}">`);
-  html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta data-react-helmet="true" name="twitter:title" content="${title}">`);
-  html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta data-react-helmet="true" name="twitter:description" content="${description}">`);
+  html = html.replace(/<meta name="description" content="[^"]*">/, `<meta data-rh="true" name="description" content="${description}">`);
+  html = html.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, `<link data-rh="true" rel="canonical" href="${canonical}" />`);
+  html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta data-rh="true" property="og:title" content="${title}">`);
+  html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta data-rh="true" property="og:description" content="${description}">`);
+  html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta data-rh="true" property="og:url" content="${canonical}">`);
+  html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta data-rh="true" name="twitter:title" content="${title}">`);
+  html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta data-rh="true" name="twitter:description" content="${description}">`);
 
   // Update og:image / twitter:image if route specifies a custom image
   if (ogImage) {
-    html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta data-react-helmet="true" property="og:image" content="${ogImage}">`);
-    html = html.replace(/<meta property="og:image:width" content="[^"]*">/, `<meta data-react-helmet="true" property="og:image:width" content="1200">`);
-    html = html.replace(/<meta property="og:image:height" content="[^"]*">/, `<meta data-react-helmet="true" property="og:image:height" content="630">`);
-    html = html.replace(/<meta name="twitter:card" content="[^"]*">/, `<meta data-react-helmet="true" name="twitter:card" content="summary_large_image">`);
-    html = html.replace(/<meta name="twitter:image" content="[^"]*">/, `<meta data-react-helmet="true" name="twitter:image" content="${ogImage}">`);
+    html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta data-rh="true" property="og:image" content="${ogImage}">`);
+    html = html.replace(/<meta property="og:image:width" content="[^"]*">/, `<meta data-rh="true" property="og:image:width" content="1200">`);
+    html = html.replace(/<meta property="og:image:height" content="[^"]*">/, `<meta data-rh="true" property="og:image:height" content="630">`);
+    html = html.replace(/<meta name="twitter:card" content="[^"]*">/, `<meta data-rh="true" name="twitter:card" content="summary_large_image">`);
+    html = html.replace(/<meta name="twitter:image" content="[^"]*">/, `<meta data-rh="true" name="twitter:image" content="${ogImage}">`);
   }
 
   // Inject per-route JSON-LD schemas into <head>
