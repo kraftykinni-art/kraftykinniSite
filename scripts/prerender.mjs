@@ -45,7 +45,7 @@ const routes = [
   // that Bing (and other non-JS crawlers) can read without executing JavaScript.
   {
     path: '/',
-    title: 'Art Workshops Delhi NCR from ₹600/person | 1,500+ Happy Participants',
+    title: 'Art Workshops Delhi NCR | ₹600/person | 1,500+ | Kraftykinni',
     description: 'Art workshops in Delhi, Gurgaon & Noida for corporate teams, schools & events. ₹600/person, all materials included. Fevicryl-certified artist.',
     h1: 'Art & DIY Workshops in Delhi NCR',
     bodyContent: `
@@ -103,7 +103,7 @@ const routes = [
   // ── School workshops ─────────────────────────────────────────────────────
   {
     path: '/school-art-workshops/',
-    title: 'School Art Workshops Delhi NCR — Annual Day & Events | Kraftykinni',
+    title: 'School Art Workshops Delhi NCR — Annual Day | Kraftykinni',
     description: 'Art workshops for schools in Delhi NCR. Annual Day, Art Week & student events. ₹600/student, all materials included. Facilitator travels to your school.',
     h1: 'School Art Workshops Delhi NCR — Annual Day, Art Week & Student Events',
     schemas: [
@@ -201,7 +201,7 @@ const routes = [
   // ── About ────────────────────────────────────────────────────────────────
   {
     path: '/about/',
-    title: 'Fevicryl Certified Art Workshop Facilitator Delhi NCR | Kraftykinni',
+    title: 'Fevicryl Certified Art Facilitator Delhi NCR | Kraftykinni',
     description: 'Shramita Govil — Fevicryl Certified Artist. 50+ workshops, 1,500+ participants across Delhi, Gurgaon & Noida — corporate teams, schools & private events.',
     h1: 'About Kraftykinni — Shramita Govil, Fevicryl Certified Artist',
     bodyContent: `
@@ -256,6 +256,20 @@ const routes = [
     title: "Lippan Art Guide: Kutch Mirror Work for Beginners | Kraftykinni",
     description: "Lippan Art explained — the Kutch mirror-work tradition, materials, step-by-step process, and why it's the top group workshop activity in Delhi NCR.",
     h1: "Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Lippan Art Guide: Kutch Mirror Work for Beginners | Kraftykinni",
+        'description': "Lippan Art explained — the Kutch mirror-work tradition, materials, step-by-step process, and why it's the top group workshop activity in Delhi NCR.",
+        'url': 'https://kraftykinni.in/blog/lippan-art-complete-beginners-guide-kutch-mirror-work/',
+        'datePublished': '2026-05-01',
+        'dateModified': '2026-05-01',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/lippan-art-complete-beginners-guide-kutch-mirror-work/' },
+      },
+    ],
     bodyContent: `
       <h1>Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work</h1>
       <p>Lippan Art is a 500-year-old craft from the Kutch region of Gujarat. Originally practised by women of the Rabari and Mutwa communities, it was used to decorate the interior walls of mud homes.</p>
@@ -273,9 +287,23 @@ const routes = [
   },
   {
     path: '/blog/best-corporate-team-building-activities-gurgaon-2026/',
-    title: 'Best Corporate Team Building Activities Gurgaon 2026 | Kraftykinni',
+    title: 'Best Corporate Team Building Gurgaon 2026 | Kraftykinni',
     description: 'Top 10 team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person.',
     h1: 'Best Corporate Team Building Activities in Gurgaon 2026',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Best Corporate Team Building Gurgaon 2026 | Kraftykinni',
+        'description': 'Top 10 team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person.',
+        'url': 'https://kraftykinni.in/blog/best-corporate-team-building-activities-gurgaon-2026/',
+        'datePublished': '2026-04-27',
+        'dateModified': '2026-04-27',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/best-corporate-team-building-activities-gurgaon-2026/' },
+      },
+    ],
     bodyContent: `
       <h1>Best Corporate Team Building Activities in Gurgaon 2026</h1>
       <p>Gurgaon's corporate event scene is full of options — escape rooms, bowling, and go-karting have their place. But after running 50+ team workshops across Cyber City, Udyog Vihar, and DLF Cyber Park, we've seen which activities actually produce conversation, connection, and something teams talk about months later.</p>
@@ -293,6 +321,20 @@ const routes = [
     title: 'Annual Day Activity Ideas for Schools in Delhi NCR | Kraftykinni',
     description: '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, for 50–300 students. Led by a Fevicryl-certified artist.',
     h1: 'Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Annual Day Activity Ideas for Schools in Delhi NCR | Kraftykinni',
+        'description': '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, for 50–300 students. Led by a Fevicryl-certified artist.',
+        'url': 'https://kraftykinni.in/blog/annual-day-activity-ideas-schools-delhi-ncr/',
+        'datePublished': '2026-04-28',
+        'dateModified': '2026-04-28',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/annual-day-activity-ideas-schools-delhi-ncr/' },
+      },
+    ],
     bodyContent: `
       <h1>Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)</h1>
       <p>Most schools start planning their annual day in April or May. This list focuses on art-based activities — structured, led by a trained facilitator, and scaled to school group sizes. Each one works for 50 to 300 students and produces a finished piece every participant takes home.</p>
@@ -322,6 +364,20 @@ const routes = [
     title: 'Art Workshop Ideas for Birthday Parties Delhi NCR | Kraftykinni',
     description: 'Planning a birthday party in Delhi NCR? Art workshops let every guest create and take home a keepsake. ₹600/person, all materials included.',
     h1: 'Art Workshop Ideas for Birthday Parties in Delhi NCR',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Art Workshop Ideas for Birthday Parties Delhi NCR | Kraftykinni',
+        'description': 'Planning a birthday party in Delhi NCR? Art workshops let every guest create and take home a keepsake. ₹600/person, all materials included.',
+        'url': 'https://kraftykinni.in/blog/art-workshop-ideas-birthday-party-delhi-ncr/',
+        'datePublished': '2026-04-29',
+        'dateModified': '2026-04-29',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/art-workshop-ideas-birthday-party-delhi-ncr/' },
+      },
+    ],
     bodyContent: `
       <h1>Art Workshop Ideas for Birthday Parties in Delhi NCR</h1>
       <p>An art workshop changes the structure of a birthday party. Instead of a room full of people waiting for the food or half-listening to music, you get 15 to 40 people deeply absorbed in the same task — talking, comparing, helping each other, laughing at their own results. Every guest walks out with a finished artwork in hand, something they made that evening.</p>
@@ -345,6 +401,20 @@ const routes = [
     title: 'Bottle Lamp Art Workshop for Schools Delhi NCR | Kraftykinni',
     description: 'How Jaypee Public School Noida ran Bottle Lamp Art for 150+ students using Fevicryl Mouldit. A school art activity guide for Delhi NCR.',
     h1: 'Bottle Lamp Art Workshop for Schools: How Jaypee Public School Noida Did It',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Bottle Lamp Art Workshop for Schools Delhi NCR | Kraftykinni',
+        'description': 'How Jaypee Public School Noida ran Bottle Lamp Art for 150+ students using Fevicryl Mouldit. A school art activity guide for Delhi NCR.',
+        'url': 'https://kraftykinni.in/blog/bottle-lamp-art-workshop-school-delhi-ncr/',
+        'datePublished': '2026-05-02',
+        'dateModified': '2026-05-02',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/bottle-lamp-art-workshop-school-delhi-ncr/' },
+      },
+    ],
     bodyContent: `
       <h1>Bottle Lamp Art Workshop for Schools: How Jaypee Public School Noida Did It</h1>
       <p>The Hindustan Times Lit Fest Preview at Jaypee Public School, Greater Noida, needed an art activity that would run simultaneously for over 150 students — clear steps, no prior skill required, and a finished piece every student could carry home. The answer was Bottle Lamp Art: glass bottles transformed into decorative lamps using Fevicryl Mouldit epoxy compound and Acrylic Colours.</p>
@@ -364,9 +434,23 @@ const routes = [
 
   {
     path: '/blog/mothers-day-art-workshop-gift-delhi-ncr/',
-    title: "Mother's Day Art Workshop Delhi NCR — Gift Ideas 2026 | Kraftykinni",
+    title: "Mother's Day Art Workshop Gift Ideas Delhi NCR | Kraftykinni",
     description: "Skip the flowers. Gift a Mother's Day art workshop in Delhi NCR. Lippan Art, Bottle Lamp, Clay — ₹600/person, all materials included.",
     h1: "Mother's Day Art Workshop Gift Ideas in Delhi NCR — Make Something She'll Keep",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Mother's Day Art Workshop Gift Ideas Delhi NCR | Kraftykinni",
+        'description': "Skip the flowers. Gift a Mother's Day art workshop in Delhi NCR. Lippan Art, Bottle Lamp, Clay — ₹600/person, all materials included.",
+        'url': 'https://kraftykinni.in/blog/mothers-day-art-workshop-gift-delhi-ncr/',
+        'datePublished': '2026-05-05',
+        'dateModified': '2026-05-05',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/mothers-day-art-workshop-gift-delhi-ncr/' },
+      },
+    ],
     bodyContent: `
       <h1>Mother's Day Art Workshop Gift Ideas in Delhi NCR — Make Something She'll Keep</h1>
       <p>Flowers wilt by Tuesday. But a Lippan Art plaque with "MOM" raised in gold on teal clay goes on the shelf and stays there. This Mother's Day (May 10, 2026), give her an experience she makes with her own hands — a guided art workshop in Delhi, Gurgaon, or Noida that produces a keepsake she takes home and keeps for years.</p>
@@ -384,6 +468,20 @@ const routes = [
     title: 'Clay Trinket Painting Workshop — Cars24 Gurgaon | Kraftykinni',
     description: '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session.',
     h1: 'Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Clay Trinket Painting Workshop — Cars24 Gurgaon | Kraftykinni',
+        'description': '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session.',
+        'url': 'https://kraftykinni.in/blog/clay-trinket-painting-workshop-cars24-gurgaon/',
+        'datePublished': '2026-04-29',
+        'dateModified': '2026-04-29',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/clay-trinket-painting-workshop-cars24-gurgaon/' },
+      },
+    ],
     bodyContent: `<h1>Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon</h1>
       <p>On 29 April 2026, 40 Cars24 employees in Gurgaon sat down at tables covered in newspaper, picked up brushes, and spent two hours making hand-painted clay trinkets. They had no art experience requirement. They had Fevicryl Mouldit clay, a set of acrylic colours, and a facilitator walking them through every step. By the end, every single person left holding something they made themselves.</p>
       <h2>What is Clay Trinket Painting?</h2>
@@ -404,6 +502,20 @@ const routes = [
     title: 'Summer Art Workshops for Schools Delhi NCR | Kraftykinni',
     description: 'Planning a summer art workshop for your school in Delhi NCR? Covers activities, age groups & sizes. Facilitator travels to you. ₹600/student.',
     h1: 'Summer Art Workshops for Schools in Delhi NCR — A Complete Planning Guide',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Summer Art Workshops for Schools Delhi NCR | Kraftykinni',
+        'description': 'Planning a summer art workshop for your school in Delhi NCR? Covers activities, age groups & sizes. Facilitator travels to you. ₹600/student.',
+        'url': 'https://kraftykinni.in/blog/summer-art-workshop-for-schools-delhi-ncr/',
+        'datePublished': '2026-05-08',
+        'dateModified': '2026-05-08',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/summer-art-workshop-for-schools-delhi-ncr/' },
+      },
+    ],
     bodyContent: `<h1>Summer Art Workshops for Schools in Delhi NCR — A Complete Planning Guide</h1>
       <p>Summer is the one window in the school calendar where there's room to try something outside the syllabus. No exam pressure, smaller groups, and students who actually want to be there — the conditions for a genuinely great workshop are perfect. Over the past two years, Kraftykinni has run summer art workshops at schools across Delhi, Gurgaon, and Noida — from single half-day sessions for 30 students to multi-day programmes for 300+ across different grade batches.</p>
       <h2>Why a Summer Workshop Is Different from a Regular School Art Session</h2>
@@ -438,9 +550,23 @@ const routes = [
 
   {
     path: '/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026/',
-    title: "Father's Day Gift Ideas 2026 — Art Workshop Delhi NCR | Kraftykinni",
+    title: "Father's Day Art Workshop Gift Ideas 2026 | Kraftykinni",
     description: "Handmade Father's Day gift workshops in Delhi NCR — Clay Magnet, Bottle Art & Clay Trinket. Guided sessions from ₹600/person, all materials included.",
     h1: "Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Father's Day Art Workshop Gift Ideas 2026 | Kraftykinni",
+        'description': "Handmade Father's Day gift workshops in Delhi NCR — Clay Magnet, Bottle Art & Clay Trinket. Guided sessions from ₹600/person, all materials included.",
+        'url': 'https://kraftykinni.in/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026/',
+        'datePublished': '2026-05-18',
+        'dateModified': '2026-05-18',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026/' },
+      },
+    ],
     bodyContent: `<h1>Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR</h1>
       <p>A tie he won't wear. A grooming kit he has three of. A "World's Best Dad" mug that joins the other two in the back of the cupboard. Father's Day is 15 June 2026. Kraftykinni workshops solve this in two ways: you can create a handmade gift for him — a Fevicryl Mouldit Clay Fridge Magnet, Father's Day Special Bottle Art piece, Clay Bottle Art décor, or a handmade Clay Trinket — in a guided session. Or you can gift him the experience itself: a shared afternoon where Dad gets to make something with his own hands.</p>
       <h2>Why a Handmade Gift Lands Differently on Father's Day</h2>
