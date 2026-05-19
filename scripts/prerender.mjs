@@ -40,6 +40,28 @@ const SLASH_FIX_SCRIPT = `<script>(function(){var p=location.pathname;if(p.lengt
 // ─── Route metadata + visible noscript body content ──────────────────────────
 
 const routes = [
+  // ── Homepage ─────────────────────────────────────────────────────────────
+  // Included so the pre-rendered dist/index.html gets a proper <noscript> H1
+  // that Bing (and other non-JS crawlers) can read without executing JavaScript.
+  {
+    path: '/',
+    title: 'Art Workshops Delhi NCR from ₹600/person | 1,500+ Happy Participants',
+    description: 'Art workshops in Delhi, Gurgaon & Noida for corporate teams, schools & events. ₹600/person, all materials included. Fevicryl-certified artist.',
+    h1: 'Art & DIY Workshops in Delhi NCR',
+    bodyContent: `
+      <h1>Art & DIY Workshops in Delhi NCR</h1>
+      <p>Kraftykinni offers hands-on guided art workshops for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Led by Shramita Govil, Fevicryl Certified Artist, with 50+ workshops and 1,500+ happy participants. All materials included from ₹600 per person.</p>
+      <h2>Workshop Pricing Tiers</h2>
+      <ul>
+        <li>Intimate (20–50 pax): ₹800 per person — all materials included</li>
+        <li>Standard (50–100 pax): ₹700 per person — all materials included</li>
+        <li>Large (100+ pax): ₹600 per person — all materials included</li>
+      </ul>
+      <h2>13 Signature Workshop Activities</h2>
+      <p>Boho Canvas Art, Bottle Lamp Art, Lippan Art, Tie &amp; Dye, Trinket Tray Painting, Mandala Art, Clay Art, MDF Fridge Magnet, Glass Painting, Texture Art, Block Printing, Tote Bag Painting, Canvas Pouch Painting.</p>
+    `,
+  },
+
   // ── Corporate workshops ──────────────────────────────────────────────────
   {
     path: '/corporate-art-workshops/',
@@ -727,8 +749,11 @@ function injectMeta(html, route) {
   html = html.replace('</head>', `  <title data-rh="true">${title}</title>\n  </head>`);
   // All injected meta tags carry data-rh="true" so React-Helmet replaces them on mount
   // rather than appending new tags alongside them (which causes the 2× description / canonical issue)
-  html = html.replace(/<meta name="description" content="[^"]*">/, `<meta data-rh="true" name="description" content="${description}">`);
-  html = html.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, `<link data-rh="true" rel="canonical" href="${canonical}" />`);
+  // NOTE: index.html carries data-rh="true" as the first attribute on both tags,
+  // so the old narrower patterns never matched.  These attribute-order-agnostic
+  // regexes fix the canonical-mismatch and duplicate-description bugs.
+  html = html.replace(/<meta\b[^>]*\bname="description"[^>]*>/, `<meta data-rh="true" name="description" content="${description}">`);
+  html = html.replace(/<link\b[^>]*\brel="canonical"[^>]*>/, `<link data-rh="true" rel="canonical" href="${canonical}" />`);
   html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta data-rh="true" property="og:title" content="${title}">`);
   html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta data-rh="true" property="og:description" content="${description}">`);
   html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta data-rh="true" property="og:url" content="${canonical}">`);
