@@ -96,7 +96,7 @@ export default function BlogPage() {
         <title>Art Workshop Tips, Ideas & Guides | Kraftykinni Blog</title>
         <meta
           name="description"
-          content="Art workshop guides, team building ideas, and event planning tips from Kraftykinni — Delhi NCR's creative workshop studio run by Fevicryl artist Shramita Govil."
+          content="Art workshop guides, team building ideas & event planning tips from Kraftykinni — Delhi NCR's studio led by Fevicryl artist Shramita Govil."
         />
         <link rel="canonical" href={CANONICAL} />
         <meta property="og:type" content="website" />

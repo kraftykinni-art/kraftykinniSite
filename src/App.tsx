@@ -42,7 +42,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/corporate-art-workshops" element={<CorporateWorkshopsPage />} />
-          <Route path="/school-workshops" element={<SchoolWorkshopsPage />} />
+          <Route path="/school-art-workshops" element={<SchoolWorkshopsPage />} />
           <Route path="/private-art-workshops" element={<PrivateWorkshopsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/workshops/:id" element={<WorkshopDetailPage />} />

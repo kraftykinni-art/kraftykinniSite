@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Best Corporate Team Building Activities in Gurgaon 2026',
     metaTitle: 'Best Corporate Team Building Activities Gurgaon 2026 | Kraftykinni',
     metaDescription:
-      'Top 10 corporate team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person all-in.',
+      'Top 10 team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person.',
     publishDate: '2026-04-27',
     category: 'Corporate',
     excerpt:
@@ -123,7 +123,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)',
     metaTitle: 'Annual Day Activity Ideas for Schools in Delhi NCR | Kraftykinni',
     metaDescription:
-      '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, and designed for 50–300 students. Led by a Fevicryl-certified artist.',
+      '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, for 50–300 students. Led by a Fevicryl-certified artist.',
     publishDate: '2026-04-28',
     category: 'School & College',
     excerpt:
@@ -137,7 +137,7 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        body: `Most schools start planning their annual day in April or May — when the academic calendar clears and the event committee starts arguing about what to do. The standard rotation is a cultural programme, a few stalls, maybe a game or two. All fine. But after running art sessions for schools across Delhi, Gurgaon, and Noida, we've seen what happens when students are handed proper materials, a structured activity, and a little creative latitude: they produce work that surprises even themselves.\n\nThis list focuses on art-based activities specifically — structured, led by a trained facilitator, and scaled to school group sizes. Each one works for [school groups of 50 to 300 students](/school-workshops/) and produces a finished piece every participant takes home.`,
+        body: `Most schools start planning their annual day in April or May — when the academic calendar clears and the event committee starts arguing about what to do. The standard rotation is a cultural programme, a few stalls, maybe a game or two. All fine. But after running art sessions for schools across Delhi, Gurgaon, and Noida, we've seen what happens when students are handed proper materials, a structured activity, and a little creative latitude: they produce work that surprises even themselves.\n\nThis list focuses on art-based activities specifically — structured, led by a trained facilitator, and scaled to school group sizes. Each one works for [school groups of 50 to 300 students](/school-art-workshops/) and produces a finished piece every participant takes home.`,
       },
       {
         heading: '1. Tote Bag Painting',
@@ -177,7 +177,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: "Book an art workshop for your school's annual day",
-        body: `Kraftykinni runs structured art workshops for schools across Delhi, Gurgaon, and Noida. All materials are brought to your school — you provide the venue, tables, and chairs. Sessions run from 60 to 120 minutes, and every student takes their finished artwork home.\n\nWe work with groups from 30 to 300+ students. Pricing starts at ₹600 per student with all materials included. [See school workshop packages and pricing](/school-workshops/) or get in touch to discuss your annual day date and the activity that fits your group best.`,
+        body: `Kraftykinni runs structured art workshops for schools across Delhi, Gurgaon, and Noida. All materials are brought to your school — you provide the venue, tables, and chairs. Sessions run from 60 to 120 minutes, and every student takes their finished artwork home.\n\nWe work with groups from 30 to 300+ students. Pricing starts at ₹600 per student with all materials included. [See school workshop packages and pricing](/school-art-workshops/) or get in touch to discuss your annual day date and the activity that fits your group best.`,
       },
     ],
     faq: [
@@ -204,7 +204,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Art Workshop Ideas for Birthday Parties in Delhi NCR',
     metaTitle: 'Art Workshop Ideas for Birthday Parties Delhi NCR | Kraftykinni',
     metaDescription:
-      'Planning a birthday party in Delhi NCR? Skip the venue-and-buffet formula. Art workshops make every guest create something — and take it home. ₹600/person, all materials included.',
+      'Planning a birthday party in Delhi NCR? Art workshops let every guest create and take home a keepsake. ₹600/person, all materials included.',
     publishDate: '2026-04-29',
     category: 'Private Events',
     excerpt:
@@ -285,7 +285,7 @@ export const blogPosts: BlogPost[] = [
     title: "Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work",
     metaTitle: "Lippan Art Guide: Kutch Mirror Work for Beginners | Kraftykinni",
     metaDescription:
-      "Everything you need to know about Lippan Art — the Kutch mirror-work tradition, materials, step-by-step process, and why it's one of the best group workshop activities in Delhi NCR.",
+      "Lippan Art explained — the Kutch mirror-work tradition, materials, step-by-step process, and why it's the top group workshop activity in Delhi NCR.",
     publishDate: '2026-05-01',
     category: 'Workshop Guides',
     excerpt:
@@ -359,7 +359,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'bottle-lamp-art-workshop-school-delhi-ncr',
     title: 'Bottle Lamp Art Workshop for Schools: How Jaypee Public School Noida Did It',
     metaTitle: 'Bottle Lamp Art Workshop for Schools Delhi NCR | Kraftykinni',
-    metaDescription: 'See how Jaypee Public School Noida ran a Bottle Lamp Art workshop for 150+ students using Fevicryl Mouldit & Acrylic Colours. A guide for schools planning art activities in Delhi NCR.',
+    metaDescription: 'How Jaypee Public School Noida ran Bottle Lamp Art for 150+ students using Fevicryl Mouldit. A school art activity guide for Delhi NCR.',
     publishDate: '2026-05-02',
     category: 'School & College',
     excerpt:
@@ -416,7 +416,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Why Bottle Lamp Art Works at Scale for Schools',
-        body: `Most art activities that run smoothly for 20 students become unmanageable at 150. Bottle Lamp Art is one of the few formats that scales reliably — and here is why.\n\nThe Mouldit stage is self-paced. Students who work faster add more intricate detail to their relief pattern; students who work slower produce simpler, cleaner shapes. Both results look intentional. There is no penalty for speed difference, which removes the frustration that derails large-group activities when faster finishers are left idle and slower finishers feel rushed.\n\nThe bottle shape provides natural structure. Unlike a blank canvas, a bottle guides design decisions — students instinctively work around the curves, the neck, and the base. Students who say they "can't draw" consistently produce a structured, satisfying result because the surface itself provides direction.\n\nThe upcycling angle gives the activity a purpose beyond craft. Schools running sustainability-themed days, Earth Day programmes, or environment club activities find that the upcycled bottle narrative adds a layer of meaning that students carry home with the object itself.\n\nFor [school art workshops across Delhi NCR](/school-workshops/), Bottle Lamp Art sits alongside Mandala Art and Tote Bag Painting as one of the three most reliable formats for large-group school events — each for different reasons, but all producing a finished piece that every participant takes home.`,
+        body: `Most art activities that run smoothly for 20 students become unmanageable at 150. Bottle Lamp Art is one of the few formats that scales reliably — and here is why.\n\nThe Mouldit stage is self-paced. Students who work faster add more intricate detail to their relief pattern; students who work slower produce simpler, cleaner shapes. Both results look intentional. There is no penalty for speed difference, which removes the frustration that derails large-group activities when faster finishers are left idle and slower finishers feel rushed.\n\nThe bottle shape provides natural structure. Unlike a blank canvas, a bottle guides design decisions — students instinctively work around the curves, the neck, and the base. Students who say they "can't draw" consistently produce a structured, satisfying result because the surface itself provides direction.\n\nThe upcycling angle gives the activity a purpose beyond craft. Schools running sustainability-themed days, Earth Day programmes, or environment club activities find that the upcycled bottle narrative adds a layer of meaning that students carry home with the object itself.\n\nFor [school art workshops across Delhi NCR](/school-art-workshops/), Bottle Lamp Art sits alongside Mandala Art and Tote Bag Painting as one of the three most reliable formats for large-group school events — each for different reasons, but all producing a finished piece that every participant takes home.`,
       },
       {
         heading: 'Book a Bottle Lamp Art Workshop for Your School',
@@ -457,7 +457,7 @@ export const blogPosts: BlogPost[] = [
     title: "Mother's Day Art Workshop Gift Ideas in Delhi NCR — Make Something She'll Keep",
     metaTitle: "Mother's Day Art Workshop Delhi NCR — Unique Gift Ideas 2026 | Kraftykinni",
     metaDescription:
-      "Skip the flowers. Gift an art workshop experience this Mother's Day in Delhi, Gurgaon & Noida. Lippan Art, Bottle Lamp, Clay — from ₹600/person, all materials included.",
+      "Skip the flowers. Gift a Mother's Day art workshop in Delhi NCR. Lippan Art, Bottle Lamp, Clay — ₹600/person, all materials included.",
     publishDate: '2026-05-05',
     category: 'Private Events',
     excerpt:
@@ -536,9 +536,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'clay-trinket-painting-workshop-cars24-gurgaon',
     title: 'Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon',
-    metaTitle: 'Clay Trinket Painting Workshop at Cars24 Gurgaon | Kraftykinni',
+    metaTitle: 'Clay Trinket Painting Workshop — Cars24 Gurgaon | Kraftykinni',
     metaDescription:
-      '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session. Read the full recap.',
+      '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session.',
     publishDate: '2026-04-29',
     category: 'Corporate',
     excerpt:
@@ -612,7 +612,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Summer Art Workshops for Schools in Delhi NCR — A Complete Planning Guide',
     metaTitle: 'Summer Art Workshop for Schools Delhi NCR | Kraftykinni',
     metaDescription:
-      'Planning a summer art workshop for your school in Delhi NCR? Guide covers best activities, age groups, group sizes & what to expect. Facilitator travels to you. ₹600/student.',
+      'Planning a summer art workshop for your school in Delhi NCR? Covers activities, age groups & sizes. Facilitator travels to you. ₹600/student.',
     publishDate: '2026-05-08',
     category: 'School & College',
     excerpt:

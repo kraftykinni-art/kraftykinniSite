@@ -122,7 +122,7 @@ export default function PrivateWorkshopsPage() {
   const bookNow = useBookNow();
 
   const title       = 'Art Workshops for Private Events in Delhi NCR | Kraftykinni';
-  const description = 'Art workshops for birthday parties, kitty parties, bachelorettes & baby showers in Delhi NCR. ₹600/person, all materials included. Led by a Fevicryl-certified artist. Book Kraftykinni.';
+  const description = 'Art workshops for birthday parties, kitty parties & bachelorettes in Delhi NCR. ₹600/person, all materials included. Fevicryl-certified artist.';
   const canonical   = 'https://kraftykinni.in/private-art-workshops';
 
   const privateActivities = workshopsData.filter((w) =>

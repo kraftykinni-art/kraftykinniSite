@@ -3,7 +3,9 @@
 # Each trailing-slash URL redirects to the canonical non-slash version
 
 /corporate-art-workshops/   /corporate-art-workshops   301
-/school-workshops/          /school-workshops           301
+/school-workshops/          /school-art-workshops       301
+/school-workshops           /school-art-workshops       301
+/school-art-workshops/      /school-art-workshops       301
 /about/                     /about                      301
 /workshops/lippan-art/      /workshops/lippan-art       301
 /workshops/mandala-art/     /workshops/mandala-art      301
