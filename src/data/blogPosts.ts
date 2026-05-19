@@ -710,7 +710,7 @@ export const blogPosts: BlogPost[] = [
     title: "Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR",
     metaTitle: "Father's Day Gift Ideas 2026 — Art Workshop Delhi NCR | Kraftykinni",
     metaDescription:
-      "Skip the boring tie. This Father's Day (15 June 2026), gift Dad a handmade Fevicryl Mouldit Clay Fridge Magnet, Father's Day Special Bottle Art, Clay Bottle Art, or Clay Trinket workshop experience in Delhi NCR. From ₹600/person.",
+      "Handmade Father's Day gift workshops in Delhi NCR — Clay Magnet, Bottle Art & Clay Trinket. Guided sessions from ₹600/person, all materials included.",
     publishDate: '2026-05-18',
     category: 'Private Events' as const,
     excerpt:

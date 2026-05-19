@@ -417,7 +417,7 @@ const routes = [
   {
     path: '/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026/',
     title: "Father's Day Gift Ideas 2026 — Art Workshop Delhi NCR | Kraftykinni",
-    description: "Skip the boring tie. This Father's Day (15 June 2026), gift Dad a handmade Fevicryl Mouldit Clay Fridge Magnet, Father's Day Special Bottle Art, Clay Bottle Art, or Clay Trinket workshop experience in Delhi NCR. From ₹600/person.",
+    description: "Handmade Father's Day gift workshops in Delhi NCR — Clay Magnet, Bottle Art & Clay Trinket. Guided sessions from ₹600/person, all materials included.",
     h1: "Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR",
     bodyContent: `<h1>Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR</h1>
       <p>A tie he won't wear. A grooming kit he has three of. A "World's Best Dad" mug that joins the other two in the back of the cupboard. Father's Day is 15 June 2026. Kraftykinni workshops solve this in two ways: you can create a handmade gift for him — a Fevicryl Mouldit Clay Fridge Magnet, Father's Day Special Bottle Art piece, Clay Bottle Art décor, or a handmade Clay Trinket — in a guided session. Or you can gift him the experience itself: a shared afternoon where Dad gets to make something with his own hands.</p>
@@ -719,23 +719,29 @@ function injectMeta(html, route) {
   const canonical = `https://kraftykinni.in${routePath}`;
 
   // Update meta tags
-  html = html.replace(/<title>[^<]*<\/title>/g, '');
-  html = html.replace('</head>', `  <title>${title}</title>\n  </head>`);
-  html = html.replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${description}">`);
-  html = html.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, `<link rel="canonical" href="${canonical}" />`);
-  html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${title}">`);
-  html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${description}">`);
-  html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta property="og:url" content="${canonical}">`);
-  html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta name="twitter:title" content="${title}">`);
-  html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta name="twitter:description" content="${description}">`);
+  // Strip ALL existing <title> tags (with or without attributes) — prevents duplicate title issue
+  html = html.replace(/<title[^>]*>[^<]*<\/title>/g, '');
+  // Remove non-standard <meta name="title"> — BingMaster counts it as a second title tag
+  html = html.replace(/<meta name="title"[^>]*>/g, '');
+  // Inject the page title with data-react-helmet="true" so React-Helmet updates (not duplicates) it on hydration
+  html = html.replace('</head>', `  <title data-react-helmet="true">${title}</title>\n  </head>`);
+  // All injected meta tags carry data-react-helmet="true" so React-Helmet replaces them on mount
+  // rather than appending new tags alongside them (which causes the 2× description / canonical issue)
+  html = html.replace(/<meta name="description" content="[^"]*">/, `<meta data-react-helmet="true" name="description" content="${description}">`);
+  html = html.replace(/<link rel="canonical" href="[^"]*"\s*\/?>/, `<link data-react-helmet="true" rel="canonical" href="${canonical}" />`);
+  html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta data-react-helmet="true" property="og:title" content="${title}">`);
+  html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta data-react-helmet="true" property="og:description" content="${description}">`);
+  html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta data-react-helmet="true" property="og:url" content="${canonical}">`);
+  html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta data-react-helmet="true" name="twitter:title" content="${title}">`);
+  html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta data-react-helmet="true" name="twitter:description" content="${description}">`);
 
   // Update og:image / twitter:image if route specifies a custom image
   if (ogImage) {
-    html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${ogImage}">`);
-    html = html.replace(/<meta property="og:image:width" content="[^"]*">/, `<meta property="og:image:width" content="1200">`);
-    html = html.replace(/<meta property="og:image:height" content="[^"]*">/, `<meta property="og:image:height" content="630">`);
-    html = html.replace(/<meta name="twitter:card" content="[^"]*">/, `<meta name="twitter:card" content="summary_large_image">`);
-    html = html.replace(/<meta name="twitter:image" content="[^"]*">/, `<meta name="twitter:image" content="${ogImage}">`);
+    html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta data-react-helmet="true" property="og:image" content="${ogImage}">`);
+    html = html.replace(/<meta property="og:image:width" content="[^"]*">/, `<meta data-react-helmet="true" property="og:image:width" content="1200">`);
+    html = html.replace(/<meta property="og:image:height" content="[^"]*">/, `<meta data-react-helmet="true" property="og:image:height" content="630">`);
+    html = html.replace(/<meta name="twitter:card" content="[^"]*">/, `<meta data-react-helmet="true" name="twitter:card" content="summary_large_image">`);
+    html = html.replace(/<meta name="twitter:image" content="[^"]*">/, `<meta data-react-helmet="true" name="twitter:image" content="${ogImage}">`);
   }
 
   // Inject per-route JSON-LD schemas into <head>
