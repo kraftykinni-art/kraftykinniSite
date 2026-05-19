@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'best-corporate-team-building-activities-gurgaon-2026',
     title: 'Best Corporate Team Building Activities in Gurgaon 2026',
-    metaTitle: 'Best Corporate Team Building Activities Gurgaon 2026 | Kraftykinni',
+    metaTitle: 'Best Corporate Team Building Gurgaon 2026 | Kraftykinni',
     metaDescription:
       'Top 10 team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person.',
     publishDate: '2026-04-27',
@@ -455,7 +455,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'mothers-day-art-workshop-gift-delhi-ncr',
     title: "Mother's Day Art Workshop Gift Ideas in Delhi NCR — Make Something She'll Keep",
-    metaTitle: "Mother's Day Art Workshop Delhi NCR — Unique Gift Ideas 2026 | Kraftykinni",
+    metaTitle: "Mother's Day Art Workshop Gift Ideas Delhi NCR | Kraftykinni",
     metaDescription:
       "Skip the flowers. Gift a Mother's Day art workshop in Delhi NCR. Lippan Art, Bottle Lamp, Clay — ₹600/person, all materials included.",
     publishDate: '2026-05-05',
@@ -708,7 +708,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'fathers-day-gift-ideas-art-workshop-delhi-ncr-2026',
     title: "Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR",
-    metaTitle: "Father's Day Gift Ideas 2026 — Art Workshop Delhi NCR | Kraftykinni",
+    metaTitle: "Father's Day Art Workshop Gift Ideas 2026 | Kraftykinni",
     metaDescription:
       "Handmade Father's Day gift workshops in Delhi NCR — Clay Magnet, Bottle Art & Clay Trinket. Guided sessions from ₹600/person, all materials included.",
     publishDate: '2026-05-18',

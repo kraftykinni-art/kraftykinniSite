@@ -134,7 +134,7 @@ export default function BlogPostPage() {
   const post = useMemo(() => blogPosts.find((p) => p.slug === slug), [slug]);
   if (!post) return <Navigate to="/blog" replace />;
 
-  const canonical = `https://kraftykinni.in/blog/${post.slug}`;
+  const canonical = `https://kraftykinni.in/blog/${post.slug}/`;
   const mins = readingTime(post);
 
   // Schema

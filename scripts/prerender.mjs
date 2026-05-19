@@ -37,6 +37,10 @@ const baseHtml = fs.readFileSync(template, 'utf-8');
 // analytics, history listeners or React Router reads window.location.
 const SLASH_FIX_SCRIPT = `<script>(function(){var p=location.pathname;if(p.length>1&&p.slice(-1)==='/'){history.replaceState(null,null,p.slice(0,-1)+location.search+location.hash)}})()</script>`;
 
+// Removes SSR-prerendered data-rh tags so React Helmet can add its own without
+// creating duplicate title / description / canonical tags in the rendered DOM.
+const DATA_RH_CLEANUP_SCRIPT = `<script>document.querySelectorAll('[data-rh]').forEach(function(e){e.remove()})</script>`;
+
 // ─── Route metadata + visible noscript body content ──────────────────────────
 
 const routes = [
@@ -905,6 +909,9 @@ function injectMeta(html, route) {
 
   // Inject trailing-slash fix script into <head> (runs before React boots)
   html = html.replace('</head>', `  ${SLASH_FIX_SCRIPT}\n  </head>`);
+  // Remove SSR-prerendered data-rh tags before React mounts — prevents duplicate
+  // title / description / canonical tags for JS crawlers (Bing, Googlebot).
+  html = html.replace('</head>', `  ${DATA_RH_CLEANUP_SCRIPT}\n  </head>`);
 
   // Build the noscript block ONLY — no hidden crawler div (that was cloaking)
   const noscriptBlock = `
