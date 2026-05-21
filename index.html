@@ -200,6 +200,16 @@
   ]
 }
     </script>
+  <!-- Google AdSense — loaded after page is interactive to avoid blocking FCP/LCP -->
+  <script>
+    window.addEventListener('load', function() {
+      var s = document.createElement('script');
+      s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2594206998239067';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      document.head.appendChild(s);
+    });
+  </script>
   </head>
   <body>
     <!-- NOTE: The hidden H1 that was previously here has been removed.

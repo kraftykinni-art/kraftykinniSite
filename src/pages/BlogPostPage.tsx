@@ -1,3 +1,4 @@
+import React from 'react';
 import { useMemo, useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -6,6 +7,7 @@ import { Calendar, ArrowLeft, ArrowRight, Tag, Clock } from 'lucide-react';
 import { blogPosts, type BlogPost, type BlogFaqItem } from '../data/blogPosts';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
+import AdSenseAd from '../components/AdSenseAd';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -278,7 +280,8 @@ export default function BlogPostPage() {
           className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
         >
           {post.sections.map((section, i) => (
-            <section key={i} className="mb-8">
+            <React.Fragment key={i}>
+            <section className="mb-8">
               {section.heading && (
                 <h2 className="font-serif text-2xl font-bold text-brand-slate mb-4 leading-snug">
                   {section.heading}
@@ -307,6 +310,12 @@ export default function BlogPostPage() {
                 )
               )}
             </section>
+
+            {/* ── Ad 1: natural break after 2nd section ── */}
+            {i === 1 && (
+              <AdSenseAd slot="2422066666" />
+            )}
+            </React.Fragment>
           ))}
 
           {/* FAQ block */}
@@ -332,6 +341,10 @@ export default function BlogPostPage() {
               Get in Touch
             </button>
           </div>
+
+          {/* ── Ad 2: end of article, reader has finished content ── */}
+          <AdSenseAd slot="8795903326" />
+
         </motion.article>
 
         {/* Back to blog */}
