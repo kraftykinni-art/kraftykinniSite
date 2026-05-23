@@ -38,7 +38,7 @@ export default function WorkshopDetailPage() {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
-      { '@type': 'ListItem', position: 2, name: 'Workshops', item: 'https://kraftykinni.in/corporate-art-workshops/' },
+      { '@type': 'ListItem', position: 2, name: 'Workshops', item: 'https://kraftykinni.in/corporate-art-workshops' },
       { '@type': 'ListItem', position: 3, name: workshop.title, item: canonical },
     ],
   };

@@ -11,6 +11,7 @@ import glassPainting from '../assets/glass-painting-opt.webp';
 import textureTissueArt from '../assets/texture-tissue-art-opt.webp';
 import toteBag from '../assets/tote-bag-opt.webp';
 import canvasPouch from '../assets/canvas-pouch-opt.webp';
+import wallRopeArt from '../assets/wall-rope-art-opt.webp';
 
 export type Category = 'All' | 'Signature' | 'Heritage' | 'Everyday';
 
@@ -110,6 +111,76 @@ export const workshopsData: Workshop[] = [
       {
         name: 'Take your artwork home',
         text: 'Your finished Lippan Art wall piece is display-ready. Allow it to fully dry (30–60 minutes after the session) before hanging or gifting.',
+      },
+    ],
+  },
+  {
+    id: 'wall-rope-art',
+    title: 'Wall Rope Art',
+    category: 'Signature',
+    image: wallRopeArt,
+    duration: '2 – 2.5 Hours',
+    benefits: [
+      'Coiled rope technique creates stunning circular wall art with a natural, handcrafted feel',
+      'Painting on rope is deeply satisfying — meditative and tactile at the same time',
+      'A striking bohemian wall piece with botanicals and sunrise motifs to take home',
+    ],
+    metaDescription: 'Wall Rope Art workshop in Delhi NCR by Kraftykinni. Create a hand-coiled rope wall hanging painted with earthy botanicals and boho designs. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    pageHeadline: 'Wall Rope Art Workshop in Delhi NCR',
+    intro: 'Wall Rope Art is one of our most visually striking workshops — participants coil natural cotton rope into circular forms and paint them with earthy botanical motifs, sunrise scenes, and boho-inspired designs that become show-stopping wall décor. The combination of tactile rope-work and freehand painting makes it uniquely satisfying: part sculpture, part canvas. Every piece is different, and every participant walks away genuinely surprised by what they have created.',
+    whatYouMake: 'A hand-coiled rope wall hanging painted with earthy botanical and boho motifs — unique, display-ready home décor.',
+    whoBenefits: 'Ideal for corporate team-building events, school art days, private parties, and bachelorette events where a distinctive, Instagram-worthy takeaway is desired.',
+    keywords: ['wall rope art workshop Delhi', 'rope art class Delhi NCR', 'rope wall hanging workshop', 'boho rope art workshop', 'rope craft workshop Delhi NCR'],
+    faq: [
+      {
+        q: 'What is Wall Rope Art?',
+        a: 'Wall Rope Art is a craft technique where natural cotton rope is coiled and glued into a circular form, then painted with earthy colours, botanical motifs, and boho-inspired designs. The finished piece is a unique wall hanging that combines the texture of natural rope with hand-painted artwork — a perfect blend of craft and painting.',
+      },
+      {
+        q: 'Is Wall Rope Art suitable for a corporate team-building event?',
+        a: 'Yes — it is an excellent corporate activity. The coiling and painting process requires focus and patience, making it a genuinely meditative experience. Because every piece turns out differently, it also sparks great conversation and a healthy spirit of creativity across the group. Kraftykinni can accommodate groups of 20 to 200+ across Delhi, Gurgaon, and Noida.',
+      },
+      {
+        q: 'Do I need any art experience to participate?',
+        a: 'No experience is required. Shramita guides participants through the coiling technique and the painting process step by step. The rope provides a natural, forgiving surface to paint on — even participants who consider themselves non-artists consistently produce beautiful results.',
+      },
+      {
+        q: 'What materials are used in the Wall Rope Art workshop?',
+        a: 'Kraftykinni provides all materials: natural cotton rope, a base board, strong adhesive, acrylic paints in a curated earthy palette, fine and flat brushes, and a jute hanging cord. Everything is included in the per-person price — participants do not need to bring anything.',
+      },
+      {
+        q: 'How long does a Wall Rope Art workshop take?',
+        a: 'A Wall Rope Art session runs for 2 to 2.5 hours. This includes a demonstration of the coiling technique, guided painting of botanical and boho motifs, a drying period, and the fitting of the jute hanging cord so the piece is ready to display immediately.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'Every participant completes and takes home a finished circular rope wall hanging painted with their own design. The piece is lightweight, display-ready, and makes a beautiful addition to a living room, bedroom, or workspace.',
+      },
+    ],
+    howToSteps: [
+      {
+        name: 'Gather your materials',
+        text: 'Kraftykinni provides everything: natural cotton rope, a base board, strong adhesive, acrylic paints, brushes, and a jute hanging cord. All materials are laid out at your workstation — no preparation needed from participants.',
+      },
+      {
+        name: 'Coil and glue the rope',
+        text: 'Starting from the centre of the board, coil the cotton rope in a tight spiral, applying adhesive as you go. Shramita demonstrates the correct tension and spacing to build a clean, even circular form. This meditative process takes 20–25 minutes.',
+      },
+      {
+        name: 'Let the base set',
+        text: 'Allow the coiled rope base to dry and bond to the board for a few minutes while Shramita introduces the painting motifs — sunrise arcs, botanical leaf sprays, circular colour blocks — and guides participants in choosing their design.',
+      },
+      {
+        name: 'Paint the background colours',
+        text: 'Using flat brushes and the earthy palette provided, apply broad colour blocks across sections of the rope — cream, terracotta, teal, ochre, and deep green. The rope texture absorbs paint beautifully and produces a rich, layered surface.',
+      },
+      {
+        name: 'Add botanical and boho details',
+        text: 'With fine brushes, paint the defining details — leaf sprays, sunrise arcs, or abstract circular motifs. Shramita walks you through each motif step by step, adjusting guidance based on your chosen design.',
+      },
+      {
+        name: 'Attach the hanger and take home',
+        text: 'Once dry, Shramita helps you attach a jute bow and hanging cord to the top. Your finished Wall Rope Art piece is immediately display-ready — hang it directly on a nail or hook.',
       },
     ],
   },

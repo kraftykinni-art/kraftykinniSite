@@ -20,12 +20,24 @@
 /workshops/trinket-tray/    /workshops/trinket-tray     301
 /workshops/mdf-fridge-magnet/ /workshops/mdf-fridge-magnet 301
 /workshops/canvas-pouch/    /workshops/canvas-pouch     301
+/workshops/wall-rope-art/   /workshops/wall-rope-art    301
 /workshops-in-delhi/        /workshops-in-delhi         301
 /workshops-in-gurgaon/      /workshops-in-gurgaon       301
 /workshops-in-noida/        /workshops-in-noida         301
 /employee-engagement-activities-gurgaon/  /employee-engagement-activities-gurgaon  301
 /blog/                      /blog                       301
 /private-art-workshops/     /private-art-workshops      301
+
+# C2 — Blog post trailing-slash redirects (all 9 posts)
+/blog/best-corporate-team-building-activities-gurgaon-2026/  /blog/best-corporate-team-building-activities-gurgaon-2026  301
+/blog/annual-day-activity-ideas-schools-delhi-ncr/           /blog/annual-day-activity-ideas-schools-delhi-ncr           301
+/blog/art-workshop-ideas-birthday-party-delhi-ncr/           /blog/art-workshop-ideas-birthday-party-delhi-ncr           301
+/blog/lippan-art-complete-beginners-guide-kutch-mirror-work/ /blog/lippan-art-complete-beginners-guide-kutch-mirror-work  301
+/blog/bottle-lamp-art-workshop-school-delhi-ncr/             /blog/bottle-lamp-art-workshop-school-delhi-ncr             301
+/blog/mothers-day-art-workshop-gift-delhi-ncr/               /blog/mothers-day-art-workshop-gift-delhi-ncr               301
+/blog/clay-trinket-painting-workshop-cars24-gurgaon/         /blog/clay-trinket-painting-workshop-cars24-gurgaon         301
+/blog/summer-art-workshop-for-schools-delhi-ncr/             /blog/summer-art-workshop-for-schools-delhi-ncr             301
+/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026/    /blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026    301
 
 # SPA fallback — Netlify must serve index.html for all unmatched paths
 # so React Router can handle client-side routing. Without this every

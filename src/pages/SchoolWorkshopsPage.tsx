@@ -87,7 +87,7 @@ export default function SchoolWorkshopsPage() {
   const title = 'School Art Workshops Delhi NCR — Annual Day & Events | Kraftykinni';
   const description =
     'Art workshops for schools in Delhi NCR — Annual Day, Art Week & student events. From ₹600/student, facilitator travels to your school. Grades 3 to college. 13 activities, all materials included.';
-  const canonical = 'https://kraftykinni.in/school-art-workshops/';
+  const canonical = 'https://kraftykinni.in/school-art-workshops';
 
   return (
     <>
@@ -100,14 +100,14 @@ export default function SchoolWorkshopsPage() {
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta property="og:image" content="https://kraftykinni.in/summer-school-workshop-students-cambridge-delhi-ncr.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="School art workshop in progress — students creating together at Kraftykinni" />
         <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta name="twitter:image" content="https://kraftykinni.in/summer-school-workshop-students-cambridge-delhi-ncr.webp" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Service',
           name: 'Art Workshops for Schools & Colleges Delhi NCR',

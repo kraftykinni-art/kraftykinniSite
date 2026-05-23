@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'annual-day-activity-ideas-schools-delhi-ncr',
     title: 'Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)',
-    metaTitle: 'Annual Day Activity Ideas for Schools in Delhi NCR | Kraftykinni',
+    metaTitle: 'Annual Day Art Activity Ideas for Schools Delhi NCR | KK',
     metaDescription:
       '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, for 50–300 students. Led by a Fevicryl-certified artist.',
     publishDate: '2026-04-28',
@@ -202,7 +202,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'art-workshop-ideas-birthday-party-delhi-ncr',
     title: 'Art Workshop Ideas for Birthday Parties in Delhi NCR',
-    metaTitle: 'Art Workshop Ideas for Birthday Parties Delhi NCR | Kraftykinni',
+    metaTitle: 'Birthday Party Art Workshop Ideas Delhi NCR | Kraftykinni',
     metaDescription:
       'Planning a birthday party in Delhi NCR? Art workshops let every guest create and take home a keepsake. ₹600/person, all materials included.',
     publishDate: '2026-04-29',
@@ -283,7 +283,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'lippan-art-complete-beginners-guide-kutch-mirror-work',
     title: "Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work",
-    metaTitle: "Lippan Art Guide: Kutch Mirror Work for Beginners | Kraftykinni",
+    metaTitle: "Beginner's Guide to Lippan Art & Kutch Mirror Work",
     metaDescription:
       "Lippan Art explained — the Kutch mirror-work tradition, materials, step-by-step process, and why it's the top group workshop activity in Delhi NCR.",
     publishDate: '2026-05-01',
@@ -536,7 +536,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'clay-trinket-painting-workshop-cars24-gurgaon',
     title: 'Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon',
-    metaTitle: 'Clay Trinket Painting Workshop — Cars24 Gurgaon | Kraftykinni',
+    metaTitle: 'Clay Trinket Workshop — Cars24 Gurgaon Case Study | KK',
     metaDescription:
       '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session.',
     publishDate: '2026-04-29',

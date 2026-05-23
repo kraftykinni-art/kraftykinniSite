@@ -13,6 +13,7 @@ export default function AboutPage() {
     '@type': 'Person',
     name: 'Shramita Govil',
     jobTitle: 'Fevicryl Certified Artist & Workshop Facilitator',
+    description: 'Fevicryl Certified Artist and workshop facilitator based in Delhi NCR. Has conducted 50+ workshops for corporate teams, schools, and private events with 1,500+ participants.',
     worksFor: {
       '@type': 'LocalBusiness',
       name: 'Kraftykinni',
@@ -22,6 +23,21 @@ export default function AboutPage() {
     sameAs: [
       'https://www.instagram.com/kraftykinni',
       'https://www.linkedin.com/in/kraftykinni/',
+    ],
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      name: 'Fevicryl Certified Artist',
+      credentialCategory: 'Professional Certification',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Pidilite Industries',
+        url: 'https://www.pidilite.com',
+      },
+    },
+    knowsAbout: [
+      'Lippan Art', 'Mandala Art', 'Tie and Dye', 'Block Printing',
+      'Clay Art', 'Texture Art', 'Glass Painting', 'Boho Canvas Art',
+      'Wall Rope Art',
     ],
   };
 
@@ -35,13 +51,13 @@ export default function AboutPage() {
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta property="og:image" content="https://kraftykinni.in/workshops/profile.webp" />
         <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta name="twitter:image" content="https://kraftykinni.in/workshops/profile.webp" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
       <main className="pt-20">
