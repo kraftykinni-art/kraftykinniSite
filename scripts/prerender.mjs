@@ -733,6 +733,13 @@ const routes = [
     h1: 'Canvas Pouch Painting Workshop in Delhi NCR',
     bodyContent: `<h1>Canvas Pouch Painting Workshop in Delhi NCR</h1><p>Canvas Pouch Painting lets participants personalise a compact fabric pouch using fabric paints, fine brushes, and stencils. The smaller canvas encourages precision and detailed work — participants focus deeply on their design and leave with a pouch they actually use for makeup, stationery, or accessories.</p><h2>What you make</h2><p>A hand-painted canvas pouch — personalised with the participant's own design and ready for daily use.</p><h2>Who it is for</h2><p>Ideal for corporate gifting events, school sessions, college workshops, and intimate private parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
   },
+  {
+    path: '/workshops/wall-rope-art/',
+    title: 'Wall Rope Art Workshop Delhi NCR — Boho Wall Décor | Kraftykinni',
+    description: 'Wall Rope Art workshop in Delhi NCR. Coil natural cotton rope and paint it with earthy botanical & boho designs. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    h1: 'Wall Rope Art Workshop in Delhi NCR',
+    bodyContent: `<h1>Wall Rope Art Workshop in Delhi NCR</h1><p>Wall Rope Art is one of our most visually striking workshops — participants coil natural cotton rope into circular forms and paint them with earthy botanical motifs, sunrise scenes, and boho-inspired designs that become show-stopping wall décor. The combination of tactile rope-work and freehand painting makes it uniquely satisfying: part sculpture, part canvas. Every piece is different, and every participant walks away genuinely surprised by what they have created.</p><h2>What you make</h2><p>A hand-coiled rope wall hanging painted with earthy botanical and boho motifs — unique, display-ready home décor.</p><h2>Who it is for</h2><p>Ideal for corporate team-building events, school art days, private parties, and bachelorette events where a distinctive, Instagram-worthy takeaway is desired. Duration: 2 to 2.5 hours. Groups from 20 to 200+. All materials included. Pricing from ₹600 per person.</p><h2>Why this activity works for corporate teams</h2><p>The two-stage process — coiling then painting — keeps participants engaged for the full session. The coiling phase is meditative and collaborative; the painting phase is expressive and personal. No two finished pieces look the same, which sparks genuine conversation and creative pride across the group.</p><h2>Frequently Asked Questions</h2><h3>What is Wall Rope Art?</h3><p>Wall Rope Art is a craft technique where natural cotton rope is coiled and glued into a circular form, then painted with earthy colours, botanical motifs, and boho-inspired designs. The finished piece is a unique wall hanging that combines the texture of natural rope with hand-painted artwork.</p><h3>Do I need any art experience to participate?</h3><p>No experience is required. Shramita guides participants through the coiling technique and the painting process step by step. The rope provides a natural, forgiving surface to paint on — even participants who consider themselves non-artists consistently produce beautiful results.</p><h3>How long does a Wall Rope Art workshop take?</h3><p>A Wall Rope Art session runs for 2 to 2.5 hours, including a demonstration of the coiling technique, guided painting of botanical and boho motifs, a drying period, and fitting of the jute hanging cord so the piece is ready to display immediately.</p>`,
+  },
 
   // ── Employee Engagement Gurgaon ──────────────────────────────────────────
   {
@@ -977,6 +984,7 @@ const sitemapEntries = [
   { loc: '/workshops/trinket-tray/',        priority: '0.7', changefreq: 'monthly' },
   { loc: '/workshops/mdf-fridge-magnet/',   priority: '0.7', changefreq: 'monthly' },
   { loc: '/workshops/canvas-pouch/',        priority: '0.7', changefreq: 'monthly' },
+  { loc: '/workshops/wall-rope-art/',       priority: '0.7', changefreq: 'monthly' },
   { loc: '/workshops-in-delhi',            priority: '0.8', changefreq: 'monthly' },
   { loc: '/workshops-in-gurgaon',          priority: '0.8', changefreq: 'monthly' },
   { loc: '/workshops-in-noida',            priority: '0.8', changefreq: 'monthly' },
