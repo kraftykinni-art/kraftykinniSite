@@ -597,6 +597,49 @@ const routes = [
     `,
   },
 
+  {
+    path: '/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr/',
+    title: 'World Environment Day 2026 — Upcycled Bottle Art Workshop | Kraftykinni',
+    description: 'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles & jars into mandala planters, home décor & gifts. Workshops across Delhi NCR.',
+    h1: 'World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On',
+        'description': 'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles & jars into mandala planters, home décor & gifts. Workshops across Delhi NCR.',
+        'url': 'https://kraftykinni.in/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr/',
+        'datePublished': '2026-05-30',
+        'dateModified': '2026-05-30',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr/' },
+      },
+    ],
+    bodyContent: `<h1>World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On</h1>
+      <p>World Environment Day falls on 5 June every year — and for most people, it goes by as a scroll through green-tinted social posts and a mental note to do something more sustainable. Kraftykinni offers a different kind of celebration: one where you sit down with a discarded bottle, a brush, and some paint — and turn the thing you were about to throw away into something you actually want to keep.</p>
+      <h2>Why Bottle Art Is the Right Activity for Environment Day</h2>
+      <p>Bottle art workshops start with what most people would call waste: old glass bottles, empty jam jars, used plastic containers. By the end of 90 minutes, every participant has a decorated planter, a vase, or a home décor piece sitting in front of them. The material transformation is visible and immediate — a hands-on demonstration of upcycling that no presentation can replicate. For schools, it connects craft to the Environment Day lesson naturally. For corporate teams, it works as a CSR or sustainability week activity that runs indoors and produces a take-home piece. For private groups, it is a meaningful afternoon that leaves everyone with something made from something they would have discarded.</p>
+      <h2>What Upcycled Bottle Art Looks Like in Practice</h2>
+      <p>Dot mandala bottle planters — small black-painted bottles with hand-dotted mandala patterns in jewel colours, topped with greenery — are one of Kraftykinni's most requested Environment Day formats. The technique is the same dot-mandala method used in Mandala Art workshops, applied to a three-dimensional surface. The results are striking enough to sit on a desk or windowsill permanently.</p>
+      <h2>Message Bottles — Making Sustainability Personal</h2>
+      <p>Message bottle art gives every piece a personal dimension. Participants paint a word or phrase onto the bottle surface — "Home Sweet Home", "Love", "Family" — and the message becomes part of the design. Because no two people paint the same way, no two bottles ever look identical. Jute twine and dried flower finishing details move the result from craft project to something that could sit on a café shelf or a living room sideboard.</p>
+      <h2>The Workshops Kraftykinni Runs for Environment Day</h2>
+      <p>Kraftykinni runs two primary formats for World Environment Day: Bottle Art Workshop (90 minutes, groups of 20 to 200+) where participants decorate upcycled bottles using Fevicryl colours, lettering, and decorative finishes; and Dot Mandala Planter Workshop (step-by-step guided, no experience needed, groups of 30 to 150). Both are available across Delhi, Gurgaon, and Noida, and online pan-India with shipped material kits. Pricing from ₹600 per person, all materials included.</p>
+      <h2>How to Book for World Environment Day 2026</h2>
+      <p>World Environment Day is 5 June 2026. Minimum 7 days advance notice required; 2 to 3 weeks strongly recommended for June dates. WhatsApp +91 9599622210 with your date, location, group size, and preferred activity. Confirmation within 24 hours.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What craft activity is best for World Environment Day for a school in Delhi NCR?</h3>
+      <p>Upcycled bottle art and dot mandala planter workshops are the strongest options for Environment Day school events. Both use discarded bottles as the creative material, giving the session a direct sustainability message. Groups of 30 to 300 students across Delhi, Gurgaon, and Noida. All materials included from ₹600 per student.</p>
+      <h3>Can Kraftykinni run an Environment Day workshop at our corporate office in Delhi NCR?</h3>
+      <p>Yes. Kraftykinni runs corporate bottle art and dot mandala workshops for Environment Day CSR events at offices across Delhi, Gurgaon, and Noida. Group sizes from 20 to 200+. Starting at ₹600 per person, all materials included. WhatsApp +91 9599622210 with your date and group size.</p>
+      <h3>What is upcycled bottle art and how is it sustainable?</h3>
+      <p>Upcycled bottle art transforms discarded glass or plastic bottles into decorated home décor, planters, or vases using paint, clay, and craft materials. The bottle you would throw away becomes the art piece you take home — a practical, hands-on demonstration of the reduce-reuse-recycle principle.</p>
+      <h3>How much does a World Environment Day art workshop cost in Delhi NCR?</h3>
+      <p>Kraftykinni Environment Day workshops start at ₹600 per person for groups of 100 and above, ₹700 for groups of 50 to 100, and ₹800 for groups of 20 to 50. All materials included. No additional venue or logistics charges.</p>
+    `,
+  },
+
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art/',
@@ -1001,6 +1044,7 @@ const sitemapEntries = [
   { loc: '/blog/clay-trinket-painting-workshop-cars24-gurgaon/', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/summer-art-workshop-for-schools-delhi-ncr/', priority: '0.8', changefreq: 'monthly' },
   { loc: '/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026/', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr/', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';
