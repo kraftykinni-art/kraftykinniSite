@@ -13,11 +13,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ASSETS_DIR = path.resolve(__dirname, '../src/assets');
 
 // Images that need mobile-optimized variants
+// mobileWidth trimmed to 320px (2x for a 160px CSS display size on mobile,
+// per the "sizes" attribute in Hero.tsx) — 400px was ~2.5x oversized.
+// quality dropped slightly since these render small; not visually noticeable at 160px wide.
 const heroImages = [
-  { name: 'boho-art.webp', mobileWidth: 400, desktopWidth: 600 },
-  { name: 'bottle-art.webp', mobileWidth: 400, desktopWidth: 600 },
-  { name: 'lippan-art.webp', mobileWidth: 400, desktopWidth: 600 },
-  { name: 'tie-and-dye.webp', mobileWidth: 400, desktopWidth: 600 },
+  { name: 'boho-art.webp', mobileWidth: 320, desktopWidth: 600 },
+  { name: 'bottle-art.webp', mobileWidth: 320, desktopWidth: 600 },
+  { name: 'lippan-art.webp', mobileWidth: 320, desktopWidth: 600 },
+  { name: 'tie-and-dye.webp', mobileWidth: 320, desktopWidth: 600 },
 ];
 
 const workshopImages = [
@@ -59,7 +62,7 @@ async function run() {
     const input = path.join(ASSETS_DIR, img.name);
     const baseName = img.name.replace('.webp', '');
     const mobileOutput = path.join(ASSETS_DIR, `${baseName}-mobile.webp`);
-    await optimizeImage(input, mobileOutput, { width: img.mobileWidth, quality: 72 });
+    await optimizeImage(input, mobileOutput, { width: img.mobileWidth, quality: 65 });
   }
 
   // Optimize workshop card images (single optimized version)
