@@ -107,7 +107,7 @@ export default function BlogPage() {
           content="Art workshop guides, team building ideas, and event planning tips from Kraftykinni — Delhi NCR's creative workshop studio."
         />
         <meta property="og:url" content={CANONICAL} />
-        <meta property="og:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta property="og:image" content="https://cdn.kraftykinni.in/logo.jpeg" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Art Workshop Tips, Ideas & Guides | Kraftykinni Blog" />
@@ -115,7 +115,7 @@ export default function BlogPage() {
           name="twitter:description"
           content="Art workshop guides, team building ideas, and event planning tips from Kraftykinni."
         />
-        <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta name="twitter:image" content="https://cdn.kraftykinni.in/logo.jpeg" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
 

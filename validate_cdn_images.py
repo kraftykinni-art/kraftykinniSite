@@ -1,127 +1,125 @@
 #!/usr/bin/env python3
 """
-validate_cdn_images.py
+validate_cdn_images.py (v2 — headless-browser edition)
 
-Crawls kraftykinni.in via its sitemap, finds every image reference on every
-page (img tags, srcset, og:image / twitter:image meta tags, JSON-LD image
-fields, and CSS background-image), and checks:
+Your site is a React SPA: the prerendered HTML only contains <meta> tags,
+JSON-LD, and a <noscript> fallback — the actual <img> elements (hero banners,
+workshop cards, blog thumbnails) are added to the page by React AFTER
+JavaScript runs. A plain requests.get() never sees them.
 
-  1. That the image is served from the CDN domain (cdn.kraftykinni.in),
-     not the main domain or a relative/local path.
-  2. That the image URL actually loads (HTTP 200), so nothing is a broken
-     link on the CDN itself.
+This version uses Playwright to load each page in a real headless browser,
+wait for it to finish rendering, and THEN inspect the DOM — so it sees
+exactly what a real visitor's browser sees.
+
+Setup (one-time):
+    pip install playwright requests beautifulsoup4
+    playwright install chromium
 
 Usage:
-    pip install requests beautifulsoup4 --break-system-packages
     python validate_cdn_images.py
-
-    # Optional flags:
     python validate_cdn_images.py --base-url https://kraftykinni.in \
                                    --cdn-domain cdn.kraftykinni.in \
-                                   --workers 10 \
                                    --report report.csv
 
-Exit code: 0 if everything passes, 1 if any issue is found (useful in CI).
+Exit code: 0 if everything passes, 1 if any issue is found.
 """
 
 import argparse
 import csv
+import json
 import re
 import sys
 import xml.etree.ElementTree as ET
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urljoin, urlparse
 
 import requests
-from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 IMAGE_EXT_RE = re.compile(r"\.(png|jpe?g|webp|gif|svg|avif)(\?.*)?$", re.IGNORECASE)
-CSS_BG_RE = re.compile(r"url\((['\"]?)(.*?)\1\)")
 
-# Paths that are legitimately local (favicon, site meta files) — not treated
-# as "missed migration" even though they're not image <img> tags in the
-# normal sense. Add to this list if you intentionally keep something local.
+# Paths that are legitimately local (favicon, etc.) — not a migration miss.
 ALLOWED_LOCAL_PATHS = {
     "/favicon.png",
 }
 
 
-def fetch(url, session, timeout=15):
-    try:
-        resp = session.get(url, timeout=timeout, headers={"User-Agent": "cdn-validator/1.0"})
-        return resp
-    except requests.RequestException as e:
-        return e
-
-
-def get_sitemap_urls(base_url, session):
+def get_sitemap_urls(base_url):
     sitemap_url = urljoin(base_url, "/sitemap.xml")
-    resp = fetch(sitemap_url, session)
-    if isinstance(resp, Exception) or resp.status_code != 200:
-        print(f"⚠️  Could not fetch sitemap at {sitemap_url}, falling back to base URL only.")
-        return [base_url]
-
-    try:
-        root = ET.fromstring(resp.content)
-    except ET.ParseError:
-        print("⚠️  Could not parse sitemap.xml, falling back to base URL only.")
-        return [base_url]
-
+    resp = requests.get(sitemap_url, timeout=15, headers={"User-Agent": "cdn-validator/2.0"})
+    resp.raise_for_status()
+    root = ET.fromstring(resp.content)
     ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     urls = [loc.text.strip() for loc in root.findall(".//sm:loc", ns) if loc.text]
     if not urls:
-        # namespace-less fallback
         urls = [loc.text.strip() for loc in root.findall(".//loc") if loc.text]
     return urls or [base_url]
 
 
-def extract_image_urls(html, page_url):
-    """Return a set of (image_url, source_description) tuples found on the page."""
-    soup = BeautifulSoup(html, "html.parser")
+def extract_images_from_rendered_page(page, page_url):
+    """Return set of (image_url, source) tuples from the fully rendered DOM."""
     found = set()
 
-    # <img src="..."> and srcset
-    for img in soup.find_all("img"):
-        src = img.get("src")
-        if src:
-            found.add((urljoin(page_url, src), "img[src]"))
-        srcset = img.get("srcset")
-        if srcset:
-            for part in srcset.split(","):
+    # All <img> elements after render, including lazy-loaded ones
+    img_data = page.eval_on_selector_all(
+        "img",
+        "els => els.map(e => ({src: e.currentSrc || e.src, srcset: e.srcset}))"
+    )
+    for item in img_data:
+        if item["src"]:
+            found.add((urljoin(page_url, item["src"]), "img[src]"))
+        if item["srcset"]:
+            for part in item["srcset"].split(","):
                 candidate = part.strip().split(" ")[0]
                 if candidate:
                     found.add((urljoin(page_url, candidate), "img[srcset]"))
 
-    # <source srcset="..."> inside <picture>
-    for source in soup.find_all("source"):
-        srcset = source.get("srcset")
+    # <source> inside <picture>
+    source_data = page.eval_on_selector_all(
+        "picture source", "els => els.map(e => e.srcset)"
+    )
+    for srcset in source_data:
         if srcset:
             for part in srcset.split(","):
                 candidate = part.strip().split(" ")[0]
                 if candidate:
-                    found.add((urljoin(page_url, candidate), "source[srcset]"))
+                    found.add((urljoin(page_url, candidate), "picture>source"))
 
-    # meta og:image / twitter:image
-    for meta in soup.find_all("meta"):
-        prop = meta.get("property") or meta.get("name")
-        if prop in ("og:image", "twitter:image", "og:image:secure_url"):
-            content = meta.get("content")
-            if content:
-                found.add((urljoin(page_url, content), f"meta[{prop}]"))
+    # Elements with a CSS background-image (computed style, catches Tailwind/JS-set styles too)
+    bg_data = page.eval_on_selector_all(
+        "*",
+        """els => els.map(e => getComputedStyle(e).backgroundImage)
+                   .filter(v => v && v !== 'none')"""
+    )
+    bg_re = re.compile(r'url\(["\']?(.*?)["\']?\)')
+    for val in bg_data:
+        for m in bg_re.finditer(val):
+            candidate = m.group(1)
+            if candidate and not candidate.startswith("data:"):
+                found.add((urljoin(page_url, candidate), "computed background-image"))
 
-    # JSON-LD structured data — look for "image" / "logo" / "url" fields
-    # that look like image files
-    import json
-    for script in soup.find_all("script", type="application/ld+json"):
+    # meta og:image / twitter:image (present in raw HTML too, but grab from DOM for consistency)
+    meta_data = page.eval_on_selector_all(
+        "meta[property='og:image'], meta[property='twitter:image'], meta[name='twitter:image']",
+        "els => els.map(e => e.content)"
+    )
+    for content in meta_data:
+        if content:
+            found.add((urljoin(page_url, content), "meta[og:image/twitter:image]"))
+
+    # JSON-LD
+    jsonld_scripts = page.eval_on_selector_all(
+        "script[type='application/ld+json']", "els => els.map(e => e.textContent)"
+    )
+    for raw in jsonld_scripts:
         try:
-            data = json.loads(script.string or "{}")
+            data = json.loads(raw)
         except (ValueError, TypeError):
             continue
 
         def walk(node):
             if isinstance(node, dict):
                 for key, val in node.items():
-                    if key in ("image", "logo") :
+                    if key in ("image", "logo"):
                         if isinstance(val, str):
                             found.add((urljoin(page_url, val), f"jsonld[{key}]"))
                         elif isinstance(val, dict) and "url" in val:
@@ -138,99 +136,98 @@ def extract_image_urls(html, page_url):
 
         walk(data)
 
-    # inline style="background-image: url(...)"
-    for el in soup.find_all(style=True):
-        for m in CSS_BG_RE.finditer(el["style"]):
-            candidate = m.group(2)
-            if candidate and not candidate.startswith("data:"):
-                found.add((urljoin(page_url, candidate), "style[background-image]"))
-
     return found
 
 
-def classify_and_check(image_url, source, cdn_domain, base_domain, session, url_status_cache):
+def classify(image_url, source, cdn_domain, base_domain):
     parsed = urlparse(image_url)
 
-    if image_url.startswith("data:"):
-        return None  # inline data URIs are fine, not a migration concern
-
+    if image_url.startswith("data:") or image_url.startswith("blob:"):
+        return None
     if not IMAGE_EXT_RE.search(parsed.path):
-        return None  # not an image file (e.g. a page link picked up by mistake)
+        return None
 
     issues = []
-
-    is_on_cdn = parsed.netloc == cdn_domain
-    is_local_or_main_domain = (parsed.netloc in ("", base_domain))
+    is_local_or_main_domain = parsed.netloc in ("", base_domain)
 
     if is_local_or_main_domain and parsed.path not in ALLOWED_LOCAL_PATHS:
         issues.append("NOT_ON_CDN — still served from main domain / relative path")
-    elif not is_on_cdn and parsed.netloc not in ("", base_domain):
+    elif parsed.netloc != cdn_domain and parsed.netloc not in ("", base_domain):
         issues.append(f"UNEXPECTED_DOMAIN — served from {parsed.netloc}, expected {cdn_domain}")
 
-    # Check the URL actually loads (cache results since many pages share images)
-    if image_url not in url_status_cache:
-        resp = fetch(image_url, session, timeout=10)
-        if isinstance(resp, Exception):
-            url_status_cache[image_url] = f"ERROR: {resp}"
-        else:
-            url_status_cache[image_url] = resp.status_code
-    status = url_status_cache[image_url]
+    return issues
 
-    if status != 200:
-        issues.append(f"BROKEN — HTTP status: {status}")
 
-    if issues:
-        return {"url": image_url, "source": source, "issues": "; ".join(issues)}
-    return None
+def check_loads(image_url, session, cache):
+    if image_url not in cache:
+        try:
+            resp = session.get(image_url, timeout=10, headers={"User-Agent": "cdn-validator/2.0"})
+            cache[image_url] = resp.status_code
+        except requests.RequestException as e:
+            cache[image_url] = f"ERROR: {e}"
+    return cache[image_url]
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Validate CDN image migration across the site.")
+    parser = argparse.ArgumentParser(description="Validate CDN image migration (renders JS like a real browser).")
     parser.add_argument("--base-url", default="https://kraftykinni.in")
     parser.add_argument("--cdn-domain", default="cdn.kraftykinni.in")
-    parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--report", default="cdn_image_report.csv")
     args = parser.parse_args()
 
     base_domain = urlparse(args.base_url).netloc
     session = requests.Session()
+    url_status_cache = {}
 
     print(f"Fetching sitemap from {args.base_url} ...")
-    page_urls = get_sitemap_urls(args.base_url, session)
+    page_urls = get_sitemap_urls(args.base_url)
     print(f"Found {len(page_urls)} pages to check.\n")
 
     all_problems = []
-    url_status_cache = {}
+    total_unique_images = set()
 
-    def process_page(page_url):
-        resp = fetch(page_url, session)
-        if isinstance(resp, Exception) or resp.status_code != 200:
-            return page_url, [{"url": page_url, "source": "page", "issues": f"PAGE_UNREACHABLE — {resp}"}]
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
 
-        images = extract_image_urls(resp.text, page_url)
-        page_problems = []
-        for image_url, source in images:
-            problem = classify_and_check(image_url, source, args.cdn_domain, base_domain, session, url_status_cache)
-            if problem:
-                problem["page"] = page_url
-                page_problems.append(problem)
-        return page_url, page_problems
+        for page_url in page_urls:
+            try:
+                page.goto(page_url, wait_until="networkidle", timeout=30000)
+            except Exception as e:
+                print(f"❌ {page_url}  (page failed to load: {e})")
+                all_problems.append({"page": page_url, "url": page_url, "source": "page", "issues": f"PAGE_LOAD_FAILED — {e}"})
+                continue
 
-    total_images_seen = set()
-    with ThreadPoolExecutor(max_workers=args.workers) as executor:
-        futures = {executor.submit(process_page, url): url for url in page_urls}
-        for future in as_completed(futures):
-            page_url, problems = future.result()
-            status = "❌" if problems else "✅"
-            print(f"{status} {page_url}  ({len(problems)} issue(s))")
-            all_problems.extend(problems)
+            images = extract_images_from_rendered_page(page, page_url)
+            page_problems = []
 
-    total_images_checked = len(url_status_cache)
+            for image_url, source in images:
+                total_unique_images.add(image_url)
+                issues = classify(image_url, source, args.cdn_domain, base_domain)
+                if issues is None:
+                    continue
+
+                status = check_loads(image_url, session, url_status_cache)
+                if status != 200:
+                    issues.append(f"BROKEN — HTTP status: {status}")
+
+                if issues:
+                    page_problems.append({
+                        "page": page_url, "url": image_url, "source": source,
+                        "issues": "; ".join(issues)
+                    })
+
+            status_icon = "❌" if page_problems else "✅"
+            print(f"{status_icon} {page_url}  ({len(page_problems)} issue(s), {len(images)} image(s) found)")
+            all_problems.extend(page_problems)
+
+        browser.close()
+
     broken_count = sum(1 for v in url_status_cache.values() if v != 200)
 
     print("\n" + "=" * 70)
     print(f"Pages checked:        {len(page_urls)}")
-    print(f"Unique images found:  {total_images_checked}")
+    print(f"Unique images found:  {len(total_unique_images)}")
     print(f"Broken image URLs:    {broken_count}")
     print(f"Total issues found:   {len(all_problems)}")
     print("=" * 70)

@@ -153,13 +153,13 @@ export default function EmployeeEngagementGurgaonPage() {
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta property="og:image" content="https://cdn.kraftykinni.in/og-corporate.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta name="twitter:image" content="https://cdn.kraftykinni.in/og-corporate.jpg" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

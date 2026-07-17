@@ -53,14 +53,14 @@ export default function CorporateWorkshopsPage() {
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta property="og:image" content="https://cdn.kraftykinni.in/og-corporate.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Corporate art workshop in progress — teams painting together at Kraftykinni" />
         <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://kraftykinni.in/og-corporate.jpg" />
+        <meta name="twitter:image" content="https://cdn.kraftykinni.in/og-corporate.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Service',
           name: 'Corporate Art Workshops Delhi NCR', description,

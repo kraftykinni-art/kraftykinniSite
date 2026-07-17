@@ -157,10 +157,10 @@ export default function BlogPostPage() {
       '@type': 'Organization',
       name: 'Kraftykinni',
       url: 'https://kraftykinni.in',
-      logo: { '@type': 'ImageObject', url: 'https://kraftykinni.in/logo.jpeg' },
+      logo: { '@type': 'ImageObject', url: 'https://cdn.kraftykinni.in/logo.jpeg' },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-    image: 'https://kraftykinni.in/logo.jpeg',
+    image: 'https://cdn.kraftykinni.in/logo.jpeg',
     keywords: post.keywords.join(', '),
   };
 
@@ -201,13 +201,13 @@ export default function BlogPostPage() {
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDescription} />
         <meta property="og:url" content={canonical} />
-        <meta property="og:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta property="og:image" content="https://cdn.kraftykinni.in/logo.jpeg" />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:published_time" content={post.publishDate} />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={post.metaTitle} />
         <meta name="twitter:description" content={post.metaDescription} />
-        <meta name="twitter:image" content="https://kraftykinni.in/logo.jpeg" />
+        <meta name="twitter:image" content="https://cdn.kraftykinni.in/logo.jpeg" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}

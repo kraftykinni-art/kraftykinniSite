@@ -51,13 +51,13 @@ export default function AboutPage() {
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://kraftykinni.in/workshops/profile.webp" />
+        <meta property="og:image" content="https://cdn.kraftykinni.in/workshops/profile.webp" />
         <meta property="og:site_name" content="Kraftykinni" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content="https://kraftykinni.in/workshops/profile.webp" />
+        <meta name="twitter:image" content="https://cdn.kraftykinni.in/workshops/profile.webp" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
       <main className="pt-20">
