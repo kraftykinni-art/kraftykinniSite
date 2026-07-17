@@ -1,17 +1,18 @@
-import bohoArt from '../assets/boho-art-opt.webp';
-import bottleArt from '../assets/bottle-art-opt.webp';
-import lippanArt from '../assets/lippan-art-opt.webp';
-import tieAndDye from '../assets/tie-and-dye-opt.webp';
-import trinketDish from '../assets/trinket-dish-opt.webp';
-import mandalaColouring from '../assets/mandala-art-opt.webp';
-import blockPrinting from '../assets/block-printing-opt.webp';
-import clayArtMdf from '../assets/clay-art-mdf-opt.webp';
-import mdfFridgeMagnet from '../assets/mdf-fridge-magnet-opt.webp';
-import glassPainting from '../assets/glass-painting-opt.webp';
-import textureTissueArt from '../assets/texture-tissue-art-opt.webp';
-import toteBag from '../assets/tote-bag-opt.webp';
-import canvasPouch from '../assets/canvas-pouch-opt.webp';
-import wallRopeArt from '../assets/wall-rope-art-opt.webp';
+const CDN = 'https://cdn.kraftykinni.in/assets';
+const bohoArt = `${CDN}/boho-art-opt.webp`;
+const bottleArt = `${CDN}/bottle-art-opt.webp`;
+const lippanArt = `${CDN}/lippan-art-opt.webp`;
+const tieAndDye = `${CDN}/tie-and-dye-opt.webp`;
+const trinketDish = `${CDN}/trinket-dish-opt.webp`;
+const mandalaColouring = `${CDN}/mandala-art-opt.webp`;
+const blockPrinting = `${CDN}/block-printing-opt.webp`;
+const clayArtMdf = `${CDN}/clay-art-mdf-opt.webp`;
+const mdfFridgeMagnet = `${CDN}/mdf-fridge-magnet-opt.webp`;
+const glassPainting = `${CDN}/glass-painting-opt.webp`;
+const textureTissueArt = `${CDN}/texture-tissue-art-opt.webp`;
+const toteBag = `${CDN}/tote-bag-opt.webp`;
+const canvasPouch = `${CDN}/canvas-pouch-opt.webp`;
+const wallRopeArt = `${CDN}/wall-rope-art-opt.webp`;
 
 export type Category = 'All' | 'Signature' | 'Heritage' | 'Everyday';
 

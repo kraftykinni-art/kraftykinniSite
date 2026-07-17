@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import logo from '../assets/Logo-small.webp';
+const logo = 'https://cdn.kraftykinni.in/assets/Logo-small.webp';
 
 // Smooth scroll to a section by id, with navbar offset
 function scrollToSection(id: string) {

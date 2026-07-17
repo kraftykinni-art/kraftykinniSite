@@ -310,13 +310,13 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'The Materials: What Makes Lippan Art Work',
         body: `Traditional Lippan Art used naturally sourced mud and cow dung as the base medium, with genuine mirror glass cut into small rounds. The contemporary version — what you'd use in a workshop or at home — substitutes those with accessible equivalents that are just as effective.\n\n**Clay compound (Fevicryl Mouldit or similar epoxy putty):** This is the primary medium. It's a two-part compound — when the two components are kneaded together, a chemical reaction makes it workable for 20–30 minutes before it sets hard. It adheres to wood, MDF, canvas board, and most painted surfaces. It can be smoothed, textured, and shaped with basic tools.\n\n**Convex mirrors (abhla):** These are small, domed mirror pieces — typically 10mm to 20mm in diameter — sold in craft supply stores. The convex surface catches light from multiple angles, which is why traditional Lippan pieces appear to glow even in low light. Flat mirrors work but don't produce the same optical effect.\n\n**Acrylic paints:** The clay is painted after it sets and is dry. Metallic acrylics (gold, copper, silver) are the most traditional choice. Earth tones work well for a more muted, contemporary look. Most workshop participants use two to three colours.\n\n**Surface:** The standard workshop surface is an MDF board (typically 20cm × 25cm for a 2-hour session) or a terracotta pot. MDF is recommended for beginners because its flat surface makes pattern laying easier.`,
-        image: '/lippan-art-process.jpeg',
+        image: 'https://cdn.kraftykinni.in/lippan-art-process.jpeg',
         imageAlt: 'Participant applying clay detail work to a painted pot at a Kraftykinni Lippan Art workshop',
       },
       {
         heading: 'The Process: Step by Step',
         body: `Understanding the process helps you set realistic expectations — and explains why Lippan Art is genuinely achievable for beginners in a two-hour session.\n\n**Step 1 — Base coat.** The MDF board or surface is painted with one or two coats of acrylic in your chosen background colour. This dries in 10–15 minutes. Most participants choose terracotta, ivory, or black as their base.\n\n**Step 2 — Pattern sketch (optional).** A light pencil sketch of the geometric layout helps beginners. In our workshops, Shramita provides a reference pattern card with a few classic Kutch motifs — nested diamonds, star medallions, and border patterns. You're not copying it exactly; it's a structural guide.\n\n**Step 3 — Clay application.** Knead the two-part compound until it's uniform and begins to warm slightly — this means the reaction has started. Roll small amounts into ropes and press them onto the surface following the pencil lines. You use your fingertip and a basic clay tool to smooth edges and create texture. This is the most tactile part of the process and where most of the absorption happens — people stop talking and focus.\n\n**Step 4 — Mirror placement.** While the clay is still workable (you have a 20-minute window), press the convex mirror pieces into the clay at the intersections and centres of your geometric pattern. The clay grips them as it sets. The placement of mirrors transforms a flat pattern into something three-dimensional — this is usually the moment participants realise what they're making is genuinely beautiful.\n\n**Step 5 — Paint and detailing.** Once the clay is fully set (it hardens within 30–40 minutes of application), you paint the raised clay elements. Metallic gold or copper over the clay against a dark background is the most striking combination. A fine brush adds detail lines and fills.\n\nThe result is a lightweight, durable piece that genuinely looks handcrafted — because it is.`,
-        image: '/lippan-workshop-session.jpeg',
+        image: 'https://cdn.kraftykinni.in/lippan-workshop-session.jpeg',
         imageAlt: 'Participants working on Lippan Art projects at a Kraftykinni workshop in Delhi NCR',
       },
       {
@@ -377,7 +377,7 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         body: `The Hindustan Times Lit Fest Preview at Jaypee Public School, Greater Noida, needed an art activity that would run simultaneously for over 150 students across grade groups — something with clear steps, no prior skill required, and a finished piece every student could carry home. The answer was Bottle Lamp Art: glass bottles transformed into decorative lamps using Fevicryl Mouldit epoxy compound and Acrylic Colours.\n\nHere is exactly how the session ran, what materials were used, and why Bottle Lamp Art works particularly well as a large-scale school event activity.`,
-        image: '/bottle-art-workshop-jaypee-school-noida-students.jpeg',
+        image: 'https://cdn.kraftykinni.in/bottle-art-workshop-jaypee-school-noida-students.jpeg',
         imageAlt: 'Students at Jaypee Public School Greater Noida displaying finished Bottle Lamp Art pieces with Shramita Govil at the Hindustan Times Lit Fest Preview — Kraftykinni',
       },
       {
@@ -398,7 +398,7 @@ export const blogPosts: BlogPost[] = [
           'Aprons for mess-free working',
         ],
         listType: 'ul',
-        image: '/bottle-lamp-art-school-workshop-session-noida.jpeg',
+        image: 'https://cdn.kraftykinni.in/bottle-lamp-art-school-workshop-session-noida.jpeg',
         imageAlt: 'Large-scale Bottle Lamp Art session at Jaypee Public School Noida — 150+ students working simultaneously on the atrium floor with Fevicryl materials by Kraftykinni',
       },
       {
@@ -411,7 +411,7 @@ export const blogPosts: BlogPost[] = [
           'Stage 4 — Final accent and display (15 minutes): Gold and silver highlight touches were added to the Mouldit relief. Students placed finished bottles upright for a group display and photograph.',
         ],
         listType: 'ol',
-        image: '/bottle-art-shramita-guiding-students-jaypee.jpeg',
+        image: 'https://cdn.kraftykinni.in/bottle-art-shramita-guiding-students-jaypee.jpeg',
         imageAlt: 'Shramita Govil guiding a student on Bottle Lamp Art Mouldit technique at Jaypee Public School Greater Noida — Kraftykinni school workshop',
       },
       {
@@ -474,7 +474,7 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         body: `Flowers wilt by Tuesday. A scented candle gets forgotten in a drawer. But a Lippan Art plaque with "MOM" raised in gold on teal clay — that goes on the shelf and stays there.\n\nThis Mother's Day (May 10, 2026), a growing number of families in Delhi, Gurgaon, and Noida are choosing experience gifts over objects. Not because they're cheaper — they're not always — but because making something together, or gifting someone a session to make something herself, creates a memory that outlasts any product.\n\nHere's how Kraftykinni's art workshops work as Mother's Day gifts, and which activities land best.`,
-        image: '/mothers-day-lippan-art-mom-plaque-kraftykinni.jpg',
+        image: 'https://cdn.kraftykinni.in/mothers-day-lippan-art-mom-plaque-kraftykinni.jpg',
         imageAlt: "Kraftykinni Lippan Art 'MOM' plaque in teal and gold on a wooden easel — a handmade Mother's Day keepsake from an art workshop in Delhi NCR",
       },
       {
@@ -490,13 +490,13 @@ export const blogPosts: BlogPost[] = [
           'Clay Art — tactile and therapeutic. Working with clay has a deeply calming effect that makes it a natural fit for a relaxed Mother\'s Day afternoon. Each participant shapes and paints their own clay creation — from small decorative bowls to sculpted figurines. No prior experience needed. Duration: 1.5–2 hours.',
         ],
         listType: 'ul',
-        image: '/mothers-day-bottle-lamp-art-saree-kraftykinni.jpg',
+        image: 'https://cdn.kraftykinni.in/mothers-day-bottle-lamp-art-saree-kraftykinni.jpg',
         imageAlt: "Hand-painted bottle lamp art with Indian woman in saree motif — a Kraftykinni workshop takeaway ideal as a Mother's Day gift in Delhi NCR",
       },
       {
         heading: "The 'Maa Tu Sabse Achi Hai' Gift — A Workshop Moment",
         body: `One of the most loved Mother's Day creations from a Kraftykinni session is the small painted bottle with "Maa tu sabse achi hai" — a hand-lettered message on a burnt-paper card tucked into a tiny red vase with dried flowers. It takes about 45 minutes to make, costs almost nothing in materials, and is the kind of thing a mother keeps on her dressing table for years.\n\nThis is the Bottle Art format scaled down to a personal size — a mini gifting session that works well for children, for school groups close to Mother's Day, or for families who want to create something together at home or in a private group session.\n\nFor private groups wanting a customised Mother's Day workshop — whether a kitty party, a mother-daughter session, or a building-wide event in a Gurgaon residential complex — [Kraftykinni runs private sessions](/private-art-workshops/) with a minimum of 15 participants.`,
-        image: '/mothers-day-bottle-art-maa-gift-kraftykinni.webp',
+        image: 'https://cdn.kraftykinni.in/mothers-day-bottle-art-maa-gift-kraftykinni.webp',
         imageAlt: "Small hand-painted red bottle vase with 'Maa tu sabse achi hai' message and dried flowers — a Mother's Day art workshop creation by Kraftykinni Delhi NCR",
       },
       {
@@ -554,25 +554,25 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         body: `40 Cars24 employees in Gurgaon sat down with clay, brushes, and Fevicryl colours on 29 April. Two hours later, every single one of them walked out holding something they had made themselves — a small, hand-painted clay trinket. Heart-shaped ones, circular ones, abstract ones. Some with cherries. Some with strawberries. Some with geometric patterns that looked almost architectural.\n\nThis is what a [Clay Trinket Painting workshop](/workshops/clay-art/) looks like when it lands well. The room starts quiet and a little uncertain. It ends with people comparing pieces, asking each other how they did the tiny dots, and reluctantly packing up because the session is over.`,
-        image: '/cars24-clay-trinket-workshop-kraftykinni-gurgaon.jpeg',
+        image: 'https://cdn.kraftykinni.in/cars24-clay-trinket-workshop-kraftykinni-gurgaon.jpeg',
         imageAlt: 'Shramita Govil, Kraftykinni founder, at the Cars24 Gurgaon corporate office ahead of the Clay Trinket Painting workshop — 29 April 2026',
       },
       {
         heading: 'What Is Clay Trinket Painting?',
         body: `Clay Trinket Painting is a Kraftykinni workshop where participants shape and paint small decorative objects using **Fevicryl Mouldit** — a professional-grade air-dry modelling clay. Mouldit is different from craft store clay: it is smooth, easy to condition, and dries to a firm, fully paintable surface without any baking or kiln. Participants shape their trinket — a heart, a circle, a free-form dish — let it set slightly, then paint it with Fevicryl acrylic colours using fine brushes.\n\nThe result is a small, personal, handmade object that feels genuinely crafted. Not a kit. Not a colouring exercise. Something the participant shaped and painted themselves, start to finish, in a single session.`,
-        image: '/cars24-trinket-materials-fevicryl-setup.jpeg',
+        image: 'https://cdn.kraftykinni.in/cars24-trinket-materials-fevicryl-setup.jpeg',
         imageAlt: 'Fevicryl acrylic colours, brushes and art supplies laid out for the Cars24 clay trinket painting corporate workshop by Kraftykinni in Gurgaon',
       },
       {
         heading: 'How the Session Ran',
         body: `Shramita arrived at the Cars24 office with all materials: Fevicryl Mouldit packs, acrylic colour sets, fine brushes, water cups, palette plates, and newspaper covers for the tables. Setup took under 20 minutes. Participants were seated in groups of four to five — a layout that encourages colour-sharing and conversation without feeling forced.\n\nShramita opened with a short demonstration: how to condition the clay, how to shape it without cracking the edges, how to create smooth surfaces before painting. Five minutes of technique. Then everyone got to work.\n\nWhat followed was two hours of focused, low-pressure creativity. The room found a quiet rhythm quickly — the kind of focused calm that is genuinely unusual in a corporate setting. Some participants painted detailed motifs: cherries, floral patterns, tiny animals. Others went abstract — bold colour-blocks, layered washes, minimal geometric lines. Nobody asked whether they were doing it right, because there was no wrong answer.`,
-        image: '/cars24-trinket-workshop-in-progress.jpeg',
+        image: 'https://cdn.kraftykinni.in/cars24-trinket-workshop-in-progress.jpeg',
         imageAlt: 'Shramita Govil guiding a Cars24 employee during the clay trinket painting workshop at the Gurgaon corporate office — Kraftykinni',
       },
       {
         heading: 'What 40 Corporate Participants Made',
         body: `Heart-shaped trinket dishes painted with floral and fruit motifs. Round coaster-style pieces with hand-lettered text. Abstract colour-block objects. Character illustrations on clay surfaces. One participant painted a tiny night sky on a circular piece that looked like a professional miniature.\n\nEvery single trinket was different, because every decision — the shape, the colour palette, the subject — was entirely the participant's own. That is the consistent outcome of Clay Trinket Painting: the same materials, the same guidance, forty completely distinct finished objects.`,
-        image: '/cars24-trinket-workshop-participants.jpeg',
+        image: 'https://cdn.kraftykinni.in/cars24-trinket-workshop-participants.jpeg',
         imageAlt: 'Cars24 employees in Gurgaon holding their finished hand-painted clay trinkets after the Kraftykinni workshop — 29 April 2026',
       },
       {
@@ -628,7 +628,7 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         body: `Summer is the one window in the school calendar where there's room to try something outside the syllabus. No exam pressure, smaller groups, and students who actually want to be there — the conditions for a genuinely great workshop are perfect.\n\nOver the past two years, Kraftykinni has run summer art workshops at schools across Delhi, Gurgaon, and Noida — from single half-day sessions for 30 students to multi-day programmes for 300+ across different grade batches. This guide is built from that experience: what works by age group, which activities produce the best student outcomes, and how to plan a summer workshop that students and teachers both remember.`,
-        image: '/summer-school-workshop-students-cambridge-delhi-ncr.webp',
+        image: 'https://cdn.kraftykinni.in/summer-school-workshop-students-cambridge-delhi-ncr.webp',
         imageAlt: 'Students at a Kraftykinni summer art workshop at a Delhi NCR school, holding up their finished photo frame artworks in the school auditorium.',
       },
       {
@@ -642,7 +642,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Photo Frame Craft — the standout summer activity for schools',
         body: `Photo frame making has become one of the most requested summer activities for schools in Delhi NCR, and it is easy to understand why. Every student works with a set of craft materials — popsicle sticks, acrylic colours, Fevicryl clay, mirrors, and decorative elements — to build and personalise a photo frame they can place their own photograph in.\n\nThe process takes 75 to 90 minutes for most grade groups. Students decorate the frame base with paint, add clay accents spelling their name or a favourite word, and finish with mirror or jewel embellishments. The result is functional, personal, and immediately meaningful — students see their own name on something they made with their hands.\n\nWhat makes it particularly effective for summer school settings: the activity is self-contained and requires no prior experience. Students who are not strong at drawing still produce excellent frames. The photograph element adds a layer of personalisation that makes the workshop feel special rather than generic. Every student takes home something they genuinely want to keep.`,
-        image: '/summer-school-workshop-photo-frame-craft-girl.webp',
+        image: 'https://cdn.kraftykinni.in/summer-school-workshop-photo-frame-craft-girl.webp',
         imageAlt: 'A student at a school summer art workshop in Delhi NCR proudly showing her completed personalised photo frame, decorated with craft clay and popsicle sticks.',
       },
       {
@@ -656,7 +656,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Bottle Lamp Art — the high-impact activity for school events',
         body: `Bottle Lamp Art is the right choice when the school wants a summer workshop that also functions as an environmental awareness programme. Students decorate glass bottles using Fevicryl Mouldit clay, acrylic colours, and mirror embellishments, transforming them into decorative lamps. The upcycling narrative — waste glass into functional art — gives teachers a curriculum connection point.\n\nThe finished bottle lamps are among the most display-worthy pieces that come out of school workshops. Schools that have run Bottle Lamp Art sessions have displayed completed pieces in their corridors and entry foyers. At Jaypee Public School in Noida, 150+ students completed Bottle Lamp Art pieces in a single afternoon session — the display was up for weeks after the event.\n\nRecommended for: Classes 6 and above. Best suited to half-day or full-day summer programmes where the setup can include a drying/display area.',`,
-        image: '/summer-school-workshop-circle-session-students.webp',
+        image: 'https://cdn.kraftykinni.in/summer-school-workshop-circle-session-students.webp',
         imageAlt: 'Students seated in a circle during a hands-on art and craft workshop at a school in Delhi NCR, working on their summer workshop projects together.',
       },
       {
@@ -666,7 +666,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'How to plan a summer workshop well — advice from experience',
         body: `**Batch size matters more than total student count.** A workshop for 200 students is straightforward if it runs in four batches of 50. The same 200 students in a single session are more difficult to manage well. When you enquire, share your total count and we will recommend a batching structure.\n\n**Book early for May–June dates.** Summer is now Kraftykinni's busiest school period. May and early June dates book up by mid-March. If your school calendar is set, send an enquiry as soon as the date is confirmed — even a provisional enquiry holds your spot while logistics are worked out.\n\n**A large hall or open classroom works best.** You do not need a dedicated art room. Any large, well-ventilated space with tables and chairs is suitable. We bring waterproof table covers, aprons, all materials, and cleanup supplies. You need to provide the space, seating, and — if using photographs for a frame activity — prints in advance.\n\n**Students take home their work.** This is not negotiable from Kraftykinni's side — every student should leave with their finished piece. The takeaway is part of what makes a workshop memorable. If display is also needed, a short display period before dispersal can be arranged.`,
-        image: '/summer-school-workshop-photo-frame-students.webp',
+        image: 'https://cdn.kraftykinni.in/summer-school-workshop-photo-frame-students.webp',
         imageAlt: 'Three students proudly displaying their colourful handmade photo frames completed during a summer art workshop at their school in Delhi NCR.',
       },
       {
@@ -728,7 +728,7 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         body: `A tie he won't wear. A grooming kit he has three of. A "World's Best Dad" mug that joins the other two in the back of the cupboard.\n\nFather's Day is 15 June 2026. And if you're reading this, you've probably already ruled out the obvious options. What's harder to find is something that actually means something — something made, something specific, something he didn't see coming.\n\nKraftykinni workshops solve this in two ways. You can create a handmade gift for him — a Fevicryl Mouldit Clay Fridge Magnet, Father's Day Special Bottle Art piece, Clay Bottle Art décor, or a handmade Clay Trinket — in a guided session. Or you can gift him the experience itself: a shared afternoon where Dad gets to make something with his own hands, possibly for the first time in his adult life. Both formats work. Both produce something he'll keep.\n\nHere's what works, and how to book it.`,
-        image: '/fathers-day-worlds-best-dad-rock-art-flowers-kraftykinni.webp',
+        image: 'https://cdn.kraftykinni.in/fathers-day-worlds-best-dad-rock-art-flowers-kraftykinni.webp',
         imageAlt:
           "Handmade Father's Day rock art piece painted bright blue with a globe motif reading 'DAD', yellow flowers, gold glitter hearts, and a 'World's Best' sign — Kraftykinni Delhi NCR",
       },
@@ -743,21 +743,21 @@ export const blogPosts: BlogPost[] = [
       {
         heading: '1. Fevicryl Mouldit Clay Fridge Magnet — a handmade keepsake Dad will actually keep',
         body: `Fevicryl Mouldit Clay Fridge Magnet is one of Kraftykinni's most loved handmade gifting workshops for Father's Day. Participants use Fevicryl Mouldit clay and acrylic colours to create customised fridge magnets with personalised Father's Day themes and messages.The Father's Day angle: create a handmade magnet featuring "Dad", hearts, flowers, messages, or customised decorative elements that reflect your father's personality and your bond with him.This workshop is beginner-friendly, relaxing, and highly personalised — making it perfect for children, adults, families, and private groups looking for a meaningful handmade Father's Day gift.Duration: 60 to 90 minutes. Works well for personal sessions and private groups of 15–60 participants.`,
-        image: '/fathers-day-bottle-art-baap-baap-hota-hai-gift-kraftykinni.webp',
+        image: 'https://cdn.kraftykinni.in/fathers-day-bottle-art-baap-baap-hota-hai-gift-kraftykinni.webp',
         imageAlt:
           "Hand-painted Tuborg bottle with 'Baap, Baap Hota Hai' text in black on yellow — a Kraftykinni Father's Day Bottle Art gift from Delhi NCR",
       },
       {
         heading: "2. Father's Day Special Bottle Art — creative handmade bottle décor for Dad",
         body: `Father's Day Special Bottle Art transforms ordinary bottles into beautiful handmade art pieces using paints, textures, and decorative detailing. Participants paint and customise bottles with Father's Day themes, messages, and personalised creative designs.The result feels artistic, personal, and completely different from a store-bought gift. Every participant creates their own unique design, making each bottle a one-of-a-kind Father's Day keepsake.This workshop works especially well for beginners because Shramita demonstrates every step — from painting and colour blending to final decorative detailing.For adults, teenagers, and families looking for a creative Father's Day activity, this is one of the most engaging workshop formats.`,
-        image: '/fathers-day-bottle-art-dad-figurine-pink-shirt-kraftykinni.webp',
+        image: 'https://cdn.kraftykinni.in/fathers-day-bottle-art-dad-figurine-pink-shirt-kraftykinni.webp',
         imageAlt:
           "Hand-painted bottle figurine of a Dad character in pink polka-dot shirt with moustache and 'Father Day' clay tag — Kraftykinni Father's Day workshop gift",
       },
       {
         heading: "3. Clay Bottle Art — artistic handmade bottle decoration workshop",
         body: `Clay Bottle Art combines bottle decoration with creative clay detailing techniques to produce aesthetic handmade décor pieces. Participants work with clay textures, acrylic colours, and artistic embellishments to transform simple bottles into personalised Father's Day creations.The finished artwork looks elegant, handmade, and display-worthy — perfect for desks, shelves, or home décor gifting.This workshop is ideal for beginners, art lovers, schools, corporates, and private groups looking for a relaxing and creative Father's Day activity experience.Duration: 1.5 to 2 hours with all materials included.`,
-        image: '/fathers-day-dad-plaque-clay-art-blue-heart-kraftykinni.webp',
+        image: 'https://cdn.kraftykinni.in/fathers-day-dad-plaque-clay-art-blue-heart-kraftykinni.webp',
         imageAlt:
           "Handmade clay art Father's Day plaque in midnight blue with 'DAD' text and pink heart, on a small wooden easel — Kraftykinni workshop gift Delhi NCR",
       },
@@ -820,7 +820,7 @@ export const blogPosts: BlogPost[] = [
     sections: [
       {
         body: `World Environment Day falls on 5 June every year — and for most people, it goes by as a scroll through green-tinted social posts and a mental note to do something more sustainable.\n\nWe'd like to suggest a different kind of celebration this year: one where you sit down with a discarded bottle, a brush, and some paint — and turn the thing you were about to throw away into something you actually want to keep.\n\nThat's the premise behind upcycled bottle art. And it turns out it's also one of the most effective ways to make the idea of sustainability concrete, tactile, and genuinely memorable — whether you're running it for a school, a corporate team, or a private gathering.`,
-        image: '/env-day-dot-mandala-upcycled-bottle-planters.webp',
+        image: 'https://cdn.kraftykinni.in/env-day-dot-mandala-upcycled-bottle-planters.webp',
         imageAlt: 'Four upcycled bottle planters with hand-painted dot mandala patterns in orange, blue, red and green on black — World Environment Day craft activity by Kraftykinni Delhi NCR',
       },
       {
@@ -830,13 +830,13 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'What Upcycled Bottle Art Looks Like in Practice',
         body: `There's a common assumption that "eco-friendly craft" means rough or rustic. The pieces you see in these photos suggest otherwise.\n\nDot mandala bottle planters — small black-painted bottles with hand-dotted mandala patterns in jewel colours, topped with a pop of greenery — are one of Kraftykinni's most requested Environment Day formats. The technique is based on the same dot-mandala method used in Mandala Art workshops, applied to a three-dimensional surface. The result is striking enough to sit on a desk or windowsill permanently.`,
-        image: '/env-day-home-sweet-home-upcycled-bottle-art.webp',
+        image: 'https://cdn.kraftykinni.in/env-day-home-sweet-home-upcycled-bottle-art.webp',
         imageAlt: 'Three upcycled bottles painted with rainbow gradient and "HOME SWEET HOME" lettering, wrapped with jute twine and topped with dried yellow flowers — Kraftykinni upcycled bottle art workshop',
       },
       {
         heading: 'Message Bottles — Making Sustainability Personal',
         body: `Another format that works especially well for Environment Day is message bottle art — where participants paint a word or phrase directly onto the bottle surface. "Home Sweet Home." "Love." "Family." The message becomes part of the design.\n\nThis approach gives every participant's piece a personal dimension. The bottle is no longer just a decorated object — it's a statement. And because no two people paint the same way, no two bottles ever look identical. A room of thirty people making "Love" bottles produces thirty entirely different pieces.\n\nThe jute twine detailing and dried flower topping that you see in these pieces are finishing touches Kraftykinni adds to the workshop process — small details that move the result from craft project to something that could sit comfortably on a café shelf or a living room sideboard.`,
-        image: '/env-day-love-jar-upcycled-bottle-vases.webp',
+        image: 'https://cdn.kraftykinni.in/env-day-love-jar-upcycled-bottle-vases.webp',
         imageAlt: 'Four small upcycled glass jars painted in teal, yellow, pink, and green with LOVE lettering, wrapped in decorative twine and filled with white dried flowers — Kraftykinni Delhi NCR',
       },
       {

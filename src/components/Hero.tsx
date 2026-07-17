@@ -1,13 +1,14 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
 
-import bohoArt from '../assets/boho-art.webp';
-import bohoArtMobile from '../assets/boho-art-mobile.webp';
-import bottleArt from '../assets/bottle-art.webp';
-import bottleArtMobile from '../assets/bottle-art-mobile.webp';
-import lippanArt from '../assets/lippan-art.webp';
-import lippanArtMobile from '../assets/lippan-art-mobile.webp';
-import tieAndDye from '../assets/tie-and-dye.webp';
-import tieAndDyeMobile from '../assets/tie-and-dye-mobile.webp';
+const CDN = 'https://cdn.kraftykinni.in/assets';
+const bohoArt = `${CDN}/boho-art.webp`;
+const bohoArtMobile = `${CDN}/boho-art-mobile.webp`;
+const bottleArt = `${CDN}/bottle-art.webp`;
+const bottleArtMobile = `${CDN}/bottle-art-mobile.webp`;
+const lippanArt = `${CDN}/lippan-art.webp`;
+const lippanArtMobile = `${CDN}/lippan-art-mobile.webp`;
+const tieAndDye = `${CDN}/tie-and-dye.webp`;
+const tieAndDyeMobile = `${CDN}/tie-and-dye-mobile.webp`;
 
 export default function Hero() {
   return (

@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Users, Palette, Award, CheckCircle, Star, Heart, Lightbulb, Shield } from 'lucide-react';
-import profileImg from '../assets/profile.webp';
+const profileImg = 'https://cdn.kraftykinni.in/assets/profile.webp';
 
 export default function About() {
   const stats = [
