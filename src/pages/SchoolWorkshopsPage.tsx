@@ -393,7 +393,7 @@ export default function SchoolWorkshopsPage() {
                   Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student decorated their bottle using Fevicryl Mouldit and acrylic colours, taking home a finished, display-worthy lamp. The upcycling theme aligned with the school's sustainability focus for the event.
                 </p>
                 <Link
-                  to="/blog/bottle-lamp-art-workshop-school-delhi-ncr/"
+                  to="/blog/bottle-lamp-art-workshop-school-delhi-ncr"
                   className="inline-flex items-center gap-2 text-brand-pink font-medium hover:underline underline-offset-4 text-sm"
                 >
                   Read the full case study <ArrowRight size={15} />

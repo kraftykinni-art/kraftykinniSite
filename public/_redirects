@@ -1,3 +1,16 @@
+# ⚠️  THIS FILE HAS NO EFFECT ON THE CURRENT HOST (GitHub Pages).
+# _redirects is a Netlify / Cloudflare Pages convention — GitHub Pages never
+# reads it. Kraftykinni deploys via .github/workflows/deploy.yml → GitHub
+# Pages, so none of the rules below run in production today. The actual
+# trailing-slash handling on GitHub Pages happens two other ways instead:
+#   1. scripts/prerender.mjs now writes flat files (about.html, not
+#      about/index.html) so every non-slash canonical URL returns 200
+#      directly, with no redirect needed.
+#   2. public/404.html strips a stray trailing slash client-side for the
+#      rare visitor/bot that requests one anyway.
+# This file is kept (and kept correct) only in case the site is ever moved
+# to Netlify or Cloudflare Pages, where it WOULD take effect.
+#
 # Kraftykinni — Trailing slash 301 redirects
 # Prevents GSC from indexing /page/ and /page as separate URLs
 # Each trailing-slash URL redirects to the canonical non-slash version
