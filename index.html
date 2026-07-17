@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- LCP preload — boho-art mobile variant for fast above-fold paint -->
-    <link rel="preload" as="image" href="/boho-art.webp" type="image/webp" fetchpriority="high" />
+    <!-- Preconnect to the image CDN FIRST — this is where the LCP image actually lives -->
+    <link rel="preconnect" href="https://cdn.kraftykinni.in" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.kraftykinni.in">
+
+    <!-- LCP preload — matches the exact mobile srcSet URL used in Hero.tsx -->
+    <link rel="preload" as="image" href="https://cdn.kraftykinni.in/assets/boho-art-mobile.webp" type="image/webp" fetchpriority="high" imagesrcset="https://cdn.kraftykinni.in/assets/boho-art-mobile.webp 400w, https://cdn.kraftykinni.in/assets/boho-art.webp 629w" imagesizes="(max-width: 768px) 160px, 280px" />
 
     <!-- Canonical — non-www, no trailing slash -->
     <link data-rh="true" rel="canonical" href="https://kraftykinni.in/" />

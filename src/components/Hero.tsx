@@ -95,7 +95,7 @@ export default function Hero() {
                   <img
                     srcSet={`${lippanArtMobile} 400w, ${lippanArt} 735w`}
                     sizes="(max-width: 768px) 160px, 280px"
-                    src={lippanArt}
+                    src={lippanArtMobile}
                     alt="Lippan Art workshop in Delhi NCR"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     width={735}
