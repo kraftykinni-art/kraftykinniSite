@@ -62,7 +62,7 @@ export default function Hero() {
               <div className="flex flex-col gap-4">
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
-                    srcSet={`${bohoArtMobile} 400w, ${bohoArt} 629w`}
+                    srcSet={`${bohoArtMobile} 320w, ${bohoArt} 629w`}
                     sizes="(max-width: 768px) 160px, 280px"
                     src={bohoArt}
                     alt="Boho Canvas Art workshop in Delhi NCR"
@@ -77,7 +77,7 @@ export default function Hero() {
                 </div>
                 <div className="h-1/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
-                    srcSet={`${bottleArtMobile} 400w, ${bottleArt} 736w`}
+                    srcSet={`${bottleArtMobile} 320w, ${bottleArt} 736w`}
                     sizes="(max-width: 768px) 160px, 280px"
                     src={bottleArt}
                     alt="Bottle Lamp Art workshop in Delhi NCR"
@@ -93,7 +93,7 @@ export default function Hero() {
               <div className="flex flex-col gap-4 pt-12">
                 <div className="h-1/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
-                    srcSet={`${lippanArtMobile} 400w, ${lippanArt} 735w`}
+                    srcSet={`${lippanArtMobile} 320w, ${lippanArt} 735w`}
                     sizes="(max-width: 768px) 160px, 280px"
                     src={lippanArtMobile}
                     alt="Lippan Art workshop in Delhi NCR"
@@ -107,7 +107,7 @@ export default function Hero() {
                 </div>
                 <div className="h-2/3 rounded-2xl overflow-hidden shadow-lg border border-white/20 relative group">
                   <img
-                    srcSet={`${tieAndDyeMobile} 400w, ${tieAndDye} 586w`}
+                    srcSet={`${tieAndDyeMobile} 320w, ${tieAndDye} 586w`}
                     sizes="(max-width: 768px) 160px, 280px"
                     src={tieAndDye}
                     alt="Tie and Dye workshop in Delhi NCR"

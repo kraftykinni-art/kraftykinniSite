@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Preconnect to the image CDN FIRST — this is where the LCP image actually lives -->
-    <link rel="preconnect" href="https://cdn.kraftykinni.in" crossorigin>
+    <link rel="preconnect" href="https://cdn.kraftykinni.in">
     <link rel="dns-prefetch" href="https://cdn.kraftykinni.in">
 
     <!-- LCP preload — matches the exact mobile srcSet URL used in Hero.tsx -->
@@ -76,9 +76,9 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
       onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"></noscript>
 
     <!-- Schema — LocalBusiness with AggregateRating + Reviews -->
     <script type="application/ld+json">
@@ -204,10 +204,14 @@
   ]
 }
     </script>
-  <!-- Google AdSense — loaded on idle, well after page is interactive, so its ~335 KiB
-       parse/exec doesn't spike Total Blocking Time right at the load event. -->
+  <!-- Google AdSense — loaded on first real user interaction (scroll/touch/click), with a
+       6s fallback timer so ads still show for users who never interact (e.g. crawlers, or
+       people who land and just read). This keeps ~221 KiB of ad JS out of the way of the
+       metrics that matter (FCP/LCP/TBT) without meaningfully hurting ad revenue. -->
   <script>
     function loadAdsense() {
+      if (window.__adsenseLoaded) return;
+      window.__adsenseLoaded = true;
       var s = document.createElement('script');
       s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2594206998239067';
       s.async = true;
@@ -215,11 +219,19 @@
       document.head.appendChild(s);
     }
     window.addEventListener('load', function() {
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loadAdsense, { timeout: 4000 });
-      } else {
-        setTimeout(loadAdsense, 3000);
-      }
+      var fired = false;
+      var trigger = function() {
+        if (fired) return;
+        fired = true;
+        ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(evt) {
+          window.removeEventListener(evt, trigger);
+        });
+        loadAdsense();
+      };
+      ['scroll', 'touchstart', 'mousemove', 'keydown'].forEach(function(evt) {
+        window.addEventListener(evt, trigger, { passive: true, once: true });
+      });
+      setTimeout(trigger, 6000);
     });
   </script>
   </head>
@@ -242,7 +254,9 @@
       </noscript>
     </div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- GTM — loaded on idle, same reasoning as AdSense above -->
+    <!-- GA4 (gtag.js) — loaded on idle shortly after load. Kept on a short idle timer rather
+         than interaction-gated like ads, since analytics should fire even for users who bounce
+         without interacting. -->
     <script>
       function loadGtag() {
         var s = document.createElement('script');

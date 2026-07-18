@@ -62,7 +62,7 @@ async function run() {
     const input = path.join(ASSETS_DIR, img.name);
     const baseName = img.name.replace('.webp', '');
     const mobileOutput = path.join(ASSETS_DIR, `${baseName}-mobile.webp`);
-    await optimizeImage(input, mobileOutput, { width: img.mobileWidth, quality: 65 });
+    await optimizeImage(input, mobileOutput, { width: img.mobileWidth, quality: 55 });
   }
 
   // Optimize workshop card images (single optimized version)
