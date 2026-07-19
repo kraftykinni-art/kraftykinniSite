@@ -798,6 +798,89 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
+    slug: 'block-printing-workshop-delhi-israeli-family',
+    title: 'A Block Printing Workshop in Delhi, for a Mother and Daughter Visiting from Israel',
+    metaTitle: 'Block Printing Workshop Delhi: Israel to India | KK',
+    metaDescription:
+      'A private block printing workshop in Delhi for a mother-daughter duo from Israel — the craft, the story, and the fabric they took home. Book with Kraftykinni.',
+    publishDate: '2026-07-19',
+    category: 'Private Events' as const,
+    excerpt:
+      'A mother and daughter travelling through India reached out to Kraftykinni for a private lesson in traditional block printing — set up right in their hotel room. Here is how the afternoon actually went, paint spill included.',
+    keywords: [
+      'block printing workshop Delhi',
+      'private art workshop Delhi NCR',
+      'block printing history India',
+      'traditional Indian block printing workshop',
+      'art workshop for tourists Delhi',
+      'hand block printing class Delhi',
+      'private workshop at hotel Delhi',
+    ],
+    sections: [
+      {
+        body: `Most Kraftykinni sessions are booked for a birthday, a school event, or a corporate offsite. This one was different. A mother and daughter, visiting India from Israel, reached out specifically to learn the traditional art of Indian block printing — and asked if we could teach them privately, in their hotel room, before they flew home.\n\nWe said yes. A few days later, we were sitting on the floor of their room surrounded by carved wooden blocks, small pots of colour, and a long spread of plain white fabric — about to spend an afternoon turning it into something they'd carry back with them.`,
+        image: 'https://cdn.kraftykinni.in/block-printing-israel-to-india-finished-fabric-kraftykinni.webp',
+        imageAlt:
+          'Mother and daughter from Israel holding up a finished hand block printed fabric with green leaf and pink flower motifs — Kraftykinni Delhi NCR',
+      },
+      {
+        heading: 'A Workshop Built Around Two People, Not Twenty',
+        body: `Kraftykinni sessions usually run for groups of 20, 50, sometimes 200. This one was for two — a mother and her daughter, sitting cross-legged on the floor of a hotel room with a stamp in hand and a long roll of fabric spread out in front of them.\n\nThat scale changes the session completely. There's no rotation between tables, no managing forty people's attention at once. Just two learners, one facilitator, and the time to actually explain why a block needs to be pressed straight down rather than dragged, and why the ink pad matters as much as the block itself.\n\nThis kind of one-on-one or small private session sits alongside Kraftykinni's usual [private art workshops](/private-art-workshops/) — the same craft, the same materials, just scaled down to fit a family, a couple, or a small group of friends rather than an event.`,
+        image: 'https://cdn.kraftykinni.in/block-printing-israel-mother-daughter-learning-kraftykinni.webp',
+        imageAlt:
+          'Facilitator guiding a young learner through hand block printing technique on white fabric during a private workshop — Kraftykinni Delhi NCR',
+      },
+      {
+        heading: 'What Block Printing Actually Is',
+        body: `Block printing is one of India's oldest textile traditions, practised for centuries across Rajasthan and Gujarat — Bagru and Sanganer near Jaipur, and the Ajrakh work of Kutch, among others. Each pattern is carved by hand into a block of wood, usually teak or sheesham, with a separate block cut for every colour in the design.\n\nThe technique itself is simple to describe and genuinely difficult to do well. The block is pressed onto a pad loaded with fabric-safe colour, then stamped onto the cloth with even, direct pressure — no rocking, no dragging. The real skill is in repetition: keeping the spacing consistent, lining up each new stamp against the last one, and building a pattern that reads as seamless once the whole length of fabric is done.\n\nWe cover this technique in detail — the loading, the pressure, the spacing — as part of Kraftykinni's regular [block printing workshop](/workshops/block-printing/), which we also run for schools, corporate teams, and private groups across Delhi, Gurgaon, and Noida.`,
+        image: 'https://cdn.kraftykinni.in/block-printing-wooden-blocks-tools-flatlay-kraftykinni.webp',
+        imageAlt:
+          'Hand-carved wooden block printing stamps, paintbrushes, and colour pots laid out for a Kraftykinni workshop — Delhi NCR',
+      },
+      {
+        heading: 'The Paint Drop That Almost Ruined a Hotel Bedsheet',
+        body: `They were doing so well — steady pressure, even spacing, a pattern that was genuinely coming together — until a single bright drop of paint landed right on the hotel's white bedsheet.\n\nFor a second, everyone froze. Then came the shared panic of "what is the hotel staff going to think?" We scrubbed, blotted, and worked at it until there was no trace left. The stress turned into a proper laughing fit almost immediately after, and it set the tone for the rest of the session — focused work, interrupted by moments that were genuinely funny.\n\nIt's a small thing, but it's the kind of moment that tends to stick. Not the finished fabric on its own, but the panic-then-laughter that happened while making it.`,
+      },
+      {
+        heading: 'A Fabric Piece Worth Carrying Home to Israel',
+        body: `By the end of the afternoon, the plain white fabric was covered — leaf motifs, small flowers, a full repeating pattern built stamp by stamp across the entire length. It wasn't just a finished craft project. It was proof of an afternoon spent learning a technique that neither of them had tried before, made with their own hands, in a country they were visiting for the first time.\n\nSharing a piece of Indian craft heritage with someone from across the world is genuinely one of the more rewarding parts of running Kraftykinni. It's the same block printing tradition we teach at schools and corporate offsites in Delhi NCR every week — but watching it travel back to Israel in someone's suitcase is a different kind of satisfying.`,
+        image: 'https://cdn.kraftykinni.in/block-printing-group-stamping-fabric-kraftykinni.webp',
+        imageAlt:
+          'Private block printing workshop session with a mother, daughter, and facilitator stamping a long length of patterned fabric together — Kraftykinni Delhi NCR',
+      },
+      {
+        heading: 'Why Private Sessions Work Well for Visitors to India',
+        body: `Most people visiting India for a short trip don't have room in their schedule for a full workshop booking built around a large group. A private session solves that — it fits around a travel itinerary rather than the other way round, and it can run wherever the guest already is: a hotel room, a serviced apartment, or a private residence.\n\nIt also works well for anyone who wants a genuinely hands-on introduction to an Indian craft rather than a shopping-trip version of it — families on holiday, small friend groups, or a parent and child looking for something to do together that isn't a monument or a market. [Private art workshops](/private-art-workshops/) at Kraftykinni are built around exactly this kind of request.`,
+      },
+      {
+        heading: 'Book a Private Block Printing Workshop in Delhi NCR',
+        body: `Kraftykinni runs private block printing sessions across Delhi, Gurgaon, and Noida — for families, small groups, and larger private events alike. Larger private group bookings (10+ participants) start at ₹600–₹800 per person, all materials included. For a smaller or custom session — a hotel room, a couple, a parent and child — WhatsApp us directly with your dates and group size and we'll work out a session that fits.\n\nAll sessions are led by Shramita Govil, Fevicryl Certified Artist. [Read more about Shramita and her work here](/about/).\n\nTo book or check availability, WhatsApp **+91 9599622210** with your dates, location, and group size. Minimum 7 days' notice is recommended, more if your travel dates are fixed and flexibility is limited.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'Can tourists visiting Delhi book a private block printing workshop?',
+        a: "Yes. Kraftykinni runs private block printing sessions for visitors to Delhi NCR, including at hotels and private residences. Sessions can be scheduled around a travel itinerary — WhatsApp +91 9599622210 with your dates, location, and group size to check availability.",
+      },
+      {
+        q: 'What is block printing and where does it come from in India?',
+        a: 'Block printing is a centuries-old Indian textile craft in which hand-carved wooden blocks — usually teak or sheesham — are used to stamp patterns onto fabric, with a separate block for each colour. The tradition is strongly associated with Bagru and Sanganer near Jaipur in Rajasthan, and with Ajrakh printing from Kutch in Gujarat.',
+      },
+      {
+        q: 'Can Kraftykinni host a workshop inside a hotel room or private residence?',
+        a: "Yes. Kraftykinni brings all materials — blocks, colours, fabric, and workspace protection — to the guest's location, whether that's a hotel room, a serviced apartment, or a private home. This format works particularly well for short-stay visitors and small private groups.",
+      },
+      {
+        q: 'How long does a private block printing session take?',
+        a: 'A private block printing session typically runs 1.5 to 2.5 hours, depending on group size and how much of the fabric is printed. This includes an introduction to the technique, guided practice, and time to complete a full patterned piece.',
+      },
+      {
+        q: 'How much does a private block printing workshop cost in Delhi NCR?',
+        a: 'Larger private group bookings (10+ participants) start at ₹600–₹800 per person, all materials included. For smaller or custom sessions — such as a family or a couple booking at a hotel — WhatsApp +91 9599622210 with your group size and dates for a quote.',
+      },
+    ],
+  },
+  {
     slug: 'world-environment-day-upcycled-bottle-art-workshop-delhi-ncr',
     title: 'World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On',
     metaTitle: 'World Environment Day — Upcycled Bottle Art Workshop | KK',

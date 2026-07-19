@@ -291,7 +291,15 @@ export default function BlogPostPage() {
               <BodyText text={section.body} />
 
               {section.image && (
-                <img src={section.image} alt={section.imageAlt ?? ''} className="w-full rounded-2xl my-6 object-cover max-h-[420px]" loading="lazy" decoding="async" />
+                <div className="w-full rounded-2xl my-6 bg-brand-offwhite flex items-center justify-center overflow-hidden max-h-[560px]">
+                  <img
+                    src={section.image}
+                    alt={section.imageAlt ?? ''}
+                    className="max-h-[560px] w-auto max-w-full object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               )}
 
               {section.listItems && section.listItems.length > 0 && (
