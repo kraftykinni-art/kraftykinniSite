@@ -15,6 +15,13 @@
     <!-- Canonical — non-www, no trailing slash -->
     <link data-rh="true" rel="canonical" href="https://kraftykinni.in/" />
 
+    <!-- hreflang — single-language site targeting India in English, so this is
+         a self-referencing pair (en-in + x-default) rather than a multi-locale
+         set. Still valid/recommended practice, and removes ambiguity for
+         crawlers about which locale this content targets. -->
+    <link rel="alternate" hreflang="en-in" href="https://kraftykinni.in/" />
+    <link rel="alternate" hreflang="x-default" href="https://kraftykinni.in/" />
+
     <!-- Web App Manifest — installability + modern web signal -->
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#D23855" />
@@ -114,6 +121,12 @@
   "name": "Kraftykinni",
   "image": "https://cdn.kraftykinni.in/logo.jpeg",
   "logo": "https://cdn.kraftykinni.in/logo.jpeg",
+  "founder": {
+    "@type": "Person",
+    "name": "Shramita Govil",
+    "jobTitle": "Fevicryl Certified Artist",
+    "description": "Founder and lead facilitator at Kraftykinni, holding India's Fevicryl art certification."
+  },
   "@id": "https://kraftykinni.in/",
   "url": "https://kraftykinni.in/",
   "telephone": "+919599622210",

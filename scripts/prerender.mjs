@@ -190,82 +190,168 @@ const routes = [
     path: '/',
     title: 'Art Workshops Delhi NCR | ₹600/person | 1,500+ | Kraftykinni',
     description: 'Art workshops in Delhi, Gurgaon & Noida for corporate teams, schools & events. ₹600/person, all materials included. Fevicryl-certified artist.',
-    h1: 'Art Workshops in Delhi NCR',
+    h1: 'Kraftykinni Art Workshops in Delhi NCR',
+    schemas: [
+      {
+        '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
+        ],
+      },
+      {
+        '@context': 'https://schema.org', '@type': 'FAQPage',
+        mainEntity: [
+          { '@type': 'Question', name: 'Do participants need prior art experience?', acceptedAnswer: { '@type': 'Answer', text: 'No — all sessions are guided step-by-step by Shramita. Every participant creates something they are proud of, regardless of their art background.' } },
+          { '@type': 'Question', name: 'What is the minimum group size?', acceptedAnswer: { '@type': 'Answer', text: 'Kraftykinni caters to groups from 20 up to 200+ participants. For smaller groups, reach out directly and Shramita will do her best to accommodate.' } },
+          { '@type': 'Question', name: 'Do you provide all the materials?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every art supply is included — paints, canvases, brushes, aprons, and activity-specific materials. You only need to provide tables and chairs.' } },
+          { '@type': 'Question', name: 'Where do you conduct workshops?', acceptedAnswer: { '@type': 'Answer', text: 'In person across Delhi, Gurgaon, and Noida, plus online pan-India with materials shipped to participants.' } },
+          { '@type': 'Question', name: 'What are the payment and booking terms?', acceptedAnswer: { '@type': 'Answer', text: "Seven days' advance notice is required, along with a 50% deposit to confirm. UPI, bank transfer, or cash are all accepted." } },
+        ],
+      },
+    ],
     bodyContent: `
       <article>
-      <h1>Art Workshops in Delhi NCR</h1>
-      <p>Kraftykinni runs hands-on, guided art workshops for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Shramita Govil, a Fevicryl Certified Artist, leads every session. The studio has delivered 50+ workshops to 1,500+ participants so far in 2026. Materials are included from ₹600 per person, and no prior art experience is needed.</p>
+      <h1>Kraftykinni Art Workshops in Delhi NCR</h1>
+      <p>Kraftykinni runs hands-on, guided art workshops for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Shramita Govil, a <a href="https://www.pidilite.com/consumer-brands/fevicryl" rel="noopener">Fevicryl Certified Artist</a>, leads every session herself. According to Kraftykinni's own booking records, the studio has delivered 50+ workshops to 1,500+ participants so far in 2026. Materials are included from ₹600 per person, and no prior art experience is needed.</p>
 
-      <h2>Key Takeaways</h2>
-      <ul>
-        <li>13 signature workshop activities, from Lippan Art to Clay Art</li>
-        <li>Pricing scales down as group size goes up: ₹800 to ₹600 per person</li>
-        <li>Serves Delhi, Gurgaon, Noida in person, plus pan-India online with materials shipped</li>
-        <li>All supplies included — you only provide tables, chairs, and the group</li>
-      </ul>
+      <nav aria-label="Page contents">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#quick-facts">Quick Facts</a></li>
+          <li><a href="#offerings">What art workshops does Kraftykinni offer?</a></li>
+          <li><a href="#pricing">How much do workshops cost?</a></li>
+          <li><a href="#booking">How does booking work?</a></li>
+          <li><a href="#why-workshops">Why do corporate teams choose hands-on art workshops?</a></li>
+          <li><a href="#comparison">Art workshops vs. other team-building activities</a></li>
+          <li><a href="#testimonials">What do past participants say?</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+          <li><a href="#who-its-for">Is Kraftykinni right for your event?</a></li>
+        </ul>
+      </nav>
 
-      <h2>What art workshops does Kraftykinni offer?</h2>
-      <p>There are 13 signature activities to choose from: Boho Canvas Art, Bottle Lamp Art, <a href="/workshops/lippan-art">Lippan Art</a>, Tie &amp; Dye, Trinket Tray Painting, <a href="/workshops/mandala-art">Mandala Art</a>, Clay Art, MDF Fridge Magnet, Glass Painting, Texture Art, Block Printing, Tote Bag Painting, and Canvas Pouch Painting. Each one is picked based on group size, event setting, and how much time is available — a corporate offsite and a school art day rarely call for the same activity.</p>
+      <section id="quick-facts">
+        <h2>Quick Facts</h2>
+        <p>Here is Kraftykinni at a glance, for example if you only have a minute to decide whether to read further:</p>
+        <ul>
+          <li><strong>Founder:</strong> Shramita Govil, Fevicryl Certified Artist</li>
+          <li><strong>Activities:</strong> 13 signature workshop formats</li>
+          <li><strong>Group size:</strong> 20 to 200+ participants</li>
+          <li><strong>Duration:</strong> 1.5 to 2.5 hours per session</li>
+          <li><strong>Price:</strong> ₹600–₹800 per person, all materials included</li>
+          <li><strong>Coverage:</strong> Delhi, Gurgaon, Noida in person; pan-India online with shipped kits</li>
+          <li><strong>Booking lead time:</strong> 7 days' notice, 50% deposit</li>
+          <li><strong>Track record:</strong> 50+ workshops, 1,500+ participants as of July 2026 (Kraftykinni's own booking data)</li>
+        </ul>
+      </section>
 
-      <dl>
-        <dt>Lippan Art</dt>
-        <dd>A traditional Kutch mudwork craft that embeds mirror pieces into clay relief patterns — read the <a href="/blog/lippan-art-complete-beginners-guide-kutch-mirror-work">full beginner's guide</a>.</dd>
-        <dt>Mandala Art</dt>
-        <dd>Geometric, symmetrical patterns built outward from a central point — popular for its calming, meditative pace.</dd>
-        <dt>Tie &amp; Dye</dt>
-        <dd>A resist-dyeing technique where fabric is folded, twisted, and bound before colour is applied.</dd>
-      </dl>
+      <section id="offerings">
+        <h2>What art workshops does Kraftykinni offer?</h2>
+        <p>There are 13 signature activities to choose from, grouped into three categories. Each one is picked based on group size, event setting, and how much time is available — a corporate offsite and a school art day rarely call for the same activity. As a result, Shramita usually asks a few quick questions before recommending one.</p>
 
-      <h2>How much do Kraftykinni workshops cost?</h2>
-      <p>Pricing depends on group size. Larger groups cost less per person because setup and facilitation time are shared across more participants:</p>
-      <table>
-        <caption>Kraftykinni workshop pricing by group size</caption>
-        <thead>
-          <tr><th>Tier</th><th>Group size</th><th>Price per person</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Intimate</td><td>20–50 pax</td><td>₹800</td></tr>
-          <tr><td>Standard</td><td>50–100 pax</td><td>₹700</td></tr>
-          <tr><td>Large</td><td>100+ pax</td><td>₹600</td></tr>
-        </tbody>
-      </table>
-      <p>All three tiers include every art supply. You only need to provide a table, chairs, and your group — Kraftykinni brings everything else and cleans up after.</p>
+        <img src="https://cdn.kraftykinni.in/logo.jpeg" alt="Kraftykinni logo — art workshops in Delhi NCR" width="120" height="120" loading="lazy" />
 
-      <h2>How does booking work?</h2>
-      <ol>
-        <li>Get in touch by <a href="/#contact">WhatsApp, phone, or the contact form</a> with your group size and preferred date.</li>
-        <li>Pick a workshop activity — Shramita can recommend one based on your event type.</li>
-        <li>Confirm with 7 days' notice and a 50% deposit (UPI, bank transfer, or cash).</li>
-        <li>Kraftykinni arrives with all materials, runs the session, and cleans up.</li>
-      </ol>
+        <h3>Signature Workshops</h3>
+        <p><a href="/workshops/lippan-art">Lippan Art</a>, <a href="/workshops/wall-rope-art">Wall &amp; Rope Art</a>, Tie &amp; Dye, Boho Canvas Art, Bottle Lamp Art, and Trinket Tray Painting.</p>
 
-      <h2>Why do corporate teams choose hands-on art workshops?</h2>
-      <p>Many corporate teams default to standard offsites, quizzes, or happy hours for team building. On the other hand, a growing number of event planners are choosing hands-on creative workshops instead, since every participant leaves with something they physically made rather than just a shared afternoon. For a deeper look at this option, see the <a href="/corporate-art-workshops">corporate art workshops page</a> or read about <a href="/blog/best-corporate-team-building-activities-gurgaon-2026">team-building activities in Gurgaon</a>. General research on workplace team building is summarised on <a href="https://en.wikipedia.org/wiki/Team_building" rel="noopener">Wikipedia</a>.</p>
+        <h3>Heritage Craft Workshops</h3>
+        <p><a href="/workshops/mandala-art">Mandala Art</a> and Block Printing — traditional Indian craft techniques adapted into guided group sessions.</p>
 
-      <h2>What do past participants say?</h2>
-      <blockquote>
-        <p>"What an amazing time! I haven't had that much fun in years, it really brought out my inner child. Thank you Mam for this workshop."</p>
-        <cite>— Saiyam Jain</cite>
-      </blockquote>
-      <blockquote>
-        <p>"Kraftykinni brought such a creative, refreshing energy to our corporate event. The team loved every moment and the art they created was stunning. Highly recommended!"</p>
-        <cite>— Gurjeet</cite>
-      </blockquote>
+        <h3>Everyday Craft Workshops</h3>
+        <p>Clay Art, Glass Painting, Texture Art, Tote Bag Painting, MDF Fridge Magnet, and Canvas Pouch Painting — quicker, lower-cost activities well suited to shorter event slots.</p>
 
-      <h2>Frequently Asked Questions</h2>
-      <h3>Do participants need prior art experience?</h3>
-      <p>No — all sessions are guided step-by-step by Shramita. Every participant creates something they are proud of, regardless of their art background.</p>
-      <h3>What is the minimum group size?</h3>
-      <p>Kraftykinni caters to groups from 20 up to 200+ participants. For smaller groups, reach out directly and Shramita will do her best to accommodate.</p>
-      <h3>Do you provide all the materials?</h3>
-      <p>Yes. Every art supply is included — paints, canvases, brushes, aprons, and activity-specific materials. You only need to provide tables and chairs.</p>
-      <h3>Where do you conduct workshops?</h3>
-      <p>In person across <a href="/workshops-in-delhi">Delhi</a>, <a href="/workshops-in-gurgaon">Gurgaon</a>, and <a href="/workshops-in-noida">Noida</a>, plus online pan-India with materials shipped to participants.</p>
-      <h3>What are the payment and booking terms?</h3>
-      <p>Seven days' advance notice is required, along with a 50% deposit to confirm. UPI, bank transfer, or cash are all accepted.</p>
+        <dl>
+          <dt>Lippan Art</dt>
+          <dd>A traditional Kutch mudwork craft that embeds mirror pieces into clay relief patterns — read the <a href="/blog/lippan-art-complete-beginners-guide-kutch-mirror-work">full beginner's guide</a>.</dd>
+          <dt>Mandala Art</dt>
+          <dd>Geometric, symmetrical patterns built outward from a central point — popular for its calming, meditative pace.</dd>
+          <dt>Tie &amp; Dye</dt>
+          <dd>A resist-dyeing technique where fabric is folded, twisted, and bound before colour is applied.</dd>
+        </dl>
+      </section>
 
-      <h2>Is Kraftykinni right for your event?</h2>
-      <p>Kraftykinni works well for three kinds of hosts: <a href="/corporate-art-workshops">corporate teams</a> planning an offsite or annual day, <a href="/school-art-workshops">schools</a> running an art day or fest, and <a href="/private-art-workshops">private hosts</a> organising a birthday, kitty party, or baby shower. Read more about Shramita's background on the <a href="/about">About page</a>, or browse recent write-ups on the <a href="/blog">blog</a>.</p>
+      <section id="pricing">
+        <h2>How much do Kraftykinni workshops cost?</h2>
+        <p>Pricing depends on group size. Larger groups cost less per person because setup and facilitation time are shared across more participants:</p>
+        <table>
+          <caption>Kraftykinni workshop pricing by group size</caption>
+          <thead>
+            <tr><th>Tier</th><th>Group size</th><th>Price per person</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Intimate</td><td>20–50 pax</td><td>₹800</td></tr>
+            <tr><td>Standard</td><td>50–100 pax</td><td>₹700</td></tr>
+            <tr><td>Large</td><td>100+ pax</td><td>₹600</td></tr>
+          </tbody>
+        </table>
+        <p>All three tiers include every art supply. You only need to provide a table, chairs, and your group — Kraftykinni brings everything else and cleans up after. If you are unsure which tier applies, try sending your expected headcount through the contact form and Shramita will confirm the price directly.</p>
+      </section>
+
+      <section id="booking">
+        <h2>How does booking work?</h2>
+        <ol>
+          <li>Get in touch by <a href="/#contact">WhatsApp, phone, or the contact form</a> with your group size and preferred date.</li>
+          <li>Pick a workshop activity — Shramita can recommend one based on your event type.</li>
+          <li>Confirm with 7 days' notice and a 50% deposit (UPI, bank transfer, or cash).</li>
+          <li>Kraftykinni arrives with all materials, runs the session, and cleans up.</li>
+        </ol>
+      </section>
+
+      <section id="why-workshops">
+        <h2>Why do corporate teams choose hands-on art workshops?</h2>
+        <p>Many corporate teams default to standard offsites, quizzes, or happy hours for team building. On the other hand, a growing number of event planners are choosing hands-on creative workshops instead, since every participant leaves with something they physically made rather than just a shared afternoon. For example, a session that ends with 40 finished Lippan Art pieces on a conference-room table tends to generate more conversation afterward than a trivia night does. For a deeper look at this option, see the <a href="/corporate-art-workshops">corporate art workshops page</a> or read the <a href="/blog/clay-trinket-painting-workshop-cars24-gurgaon">CARS24 Gurgaon workshop case study</a> and the <a href="/blog/best-corporate-team-building-activities-gurgaon-2026">team-building activities in Gurgaon</a> guide. General research on workplace team building is summarised on <a href="https://en.wikipedia.org/wiki/Team_building" rel="noopener">Wikipedia</a>.</p>
+      </section>
+
+      <section id="comparison">
+        <h2>Art workshops vs. other team-building activities</h2>
+        <p>If you are choosing between formats, here is how a Kraftykinni session compares with two common alternatives:</p>
+        <ul>
+          <li><strong>Vs. escape rooms/quizzes:</strong> every participant takes home a physical object, rather than just a shared memory — useful for teams that want a longer-lasting reminder of the event.</li>
+          <li><strong>Vs. office happy hours:</strong> a guided art workshop gives quieter team members a structured way to participate, since the activity itself creates conversation rather than relying on small talk.</li>
+          <li><strong>Vs. outdoor sports days:</strong> art workshops need no special venue or weather, and work for mixed-fitness or mixed-age groups without anyone sitting out.</li>
+        </ul>
+        <p>None of these formats is objectively better — the right choice depends on your team's size, budget, and what you want people to remember afterward.</p>
+      </section>
+
+      <section id="testimonials">
+        <h2>What do past participants say?</h2>
+        <blockquote cite="https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v">
+          <p>"What an amazing time! I haven't had that much fun in years, it really brought out my inner child. Thank you Mam for this workshop."</p>
+          <cite>— Saiyam Jain, Google review</cite>
+        </blockquote>
+        <blockquote cite="https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v">
+          <p>"Kraftykinni brought such a creative, refreshing energy to our corporate event. The team loved every moment and the art they created was stunning. Highly recommended!"</p>
+          <cite>— Gurjeet, Google review</cite>
+        </blockquote>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>Do participants need prior art experience?</summary>
+          <p>No — all sessions are guided step-by-step by Shramita. Every participant creates something they are proud of, regardless of their art background.</p>
+        </details>
+        <details>
+          <summary>What is the minimum group size?</summary>
+          <p>Kraftykinni caters to groups from 20 up to 200+ participants. For smaller groups, try reaching out directly — Shramita will do her best to accommodate.</p>
+        </details>
+        <details>
+          <summary>Do you provide all the materials?</summary>
+          <p>Yes. Every art supply is included — paints, canvases, brushes, aprons, and activity-specific materials. You only need to provide tables and chairs.</p>
+        </details>
+        <details>
+          <summary>Where do you conduct workshops?</summary>
+          <p>In person across <a href="/workshops-in-delhi">Delhi</a>, <a href="/workshops-in-gurgaon">Gurgaon</a>, and <a href="/workshops-in-noida">Noida</a>, plus online pan-India with materials shipped to participants.</p>
+        </details>
+        <details>
+          <summary>What are the payment and booking terms?</summary>
+          <p>Seven days' advance notice is required, along with a 50% deposit to confirm. UPI, bank transfer, or cash are all accepted.</p>
+        </details>
+      </section>
+
+      <section id="who-its-for">
+        <h2>Is Kraftykinni right for your event?</h2>
+        <p>Kraftykinni works well for three kinds of hosts: <a href="/corporate-art-workshops">corporate teams</a> planning an offsite or annual day, <a href="/school-art-workshops">schools</a> running an art day or fest, and <a href="/private-art-workshops">private hosts</a> organising a birthday, kitty party, or baby shower. If none of the 13 activities above stands out yet, try the <a href="/about">About page</a> for more on Shramita's background, or browse recent write-ups on the <a href="/blog">blog</a> for real event examples.</p>
+      </section>
       </article>
     `,
   },
@@ -1210,6 +1296,10 @@ function injectMeta(html, route) {
   // regexes fix the canonical-mismatch and duplicate-description bugs.
   html = html.replace(/<meta\b[^>]*\bname="description"[^>]*>/, `<meta data-rh="true" name="description" content="${description}">`);
   html = html.replace(/<link\b[^>]*\brel="canonical"[^>]*>/, `<link data-rh="true" rel="canonical" href="${canonical}" />`);
+  // hreflang tags are self-referencing per page (see index.html comment) — keep
+  // them in sync with canonical so every route points to itself, not home.
+  html = html.replace(/<link rel="alternate" hreflang="en-in" href="[^"]*" \/>/, `<link rel="alternate" hreflang="en-in" href="${canonical}" />`);
+  html = html.replace(/<link rel="alternate" hreflang="x-default" href="[^"]*" \/>/, `<link rel="alternate" hreflang="x-default" href="${canonical}" />`);
   html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta data-rh="true" property="og:title" content="${title}">`);
   html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta data-rh="true" property="og:description" content="${description}">`);
   html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta data-rh="true" property="og:url" content="${canonical}">`);
