@@ -32,6 +32,45 @@ if (!fs.existsSync(template)) {
 
 const baseHtml = fs.readFileSync(template, 'utf-8');
 
+// Build date — used both as the sitemap lastmod AND as a genuine, auto-updating
+// freshness signal ("Last updated") in every page's noscript block. Real
+// because it reflects the actual last build/deploy date, not a hardcoded string.
+const today = new Date().toISOString().slice(0, 10);
+
+// ─── Site-wide navigation + footer links, injected into EVERY route's
+// noscript block. Without this, only the route's own bodyContent was visible
+// to non-JS crawlers (AI bots included) — the real <Navbar>/<ContactFooter>
+// React components never render under <noscript>, so pages had zero
+// internal links, no ARIA landmarks, and no About/Contact/Privacy links
+// detectable by static crawlers. This single block fixes all of that,
+// site-wide, in one place. ──────────────────────────────────────────────────
+const SITE_NAV_LINKS = `
+    <nav aria-label="Site navigation">
+      <a href="/">Home</a> ·
+      <a href="/corporate-art-workshops">Corporate Workshops</a> ·
+      <a href="/school-art-workshops">School Workshops</a> ·
+      <a href="/private-art-workshops">Private Events</a> ·
+      <a href="/workshops-in-delhi">Workshops in Delhi</a> ·
+      <a href="/workshops-in-gurgaon">Workshops in Gurgaon</a> ·
+      <a href="/workshops-in-noida">Workshops in Noida</a> ·
+      <a href="/blog">Blog</a> ·
+      <a href="/about">About</a>
+    </nav>`;
+
+const SITE_FOOTER_LINKS = `
+    <footer>
+      <p><strong>Contact:</strong> <a href="mailto:kraftykinni@gmail.com">kraftykinni@gmail.com</a> | <a href="tel:+919599622210">+91 9599622210</a></p>
+      <p><strong>Service area:</strong> Delhi, Gurgaon, Noida and online pan-India</p>
+      <p><strong>Pricing:</strong> ₹600–₹800 per person, all materials included</p>
+      <p>
+        <a href="/about">About Kraftykinni</a> ·
+        <a href="/#contact">Contact / Book a Workshop</a> ·
+        <a href="/privacy-policy">Privacy Policy</a> ·
+        <a href="/blog">Blog</a>
+      </p>
+      <p>Last updated: <time datetime="${today}">${today}</time></p>
+    </footer>`;
+
 // ─── Trailing-slash fix script (injected into every pre-rendered page) ────────
 // Runs synchronously before React boots so the URL is clean before any
 // analytics, history listeners or React Router reads window.location.
@@ -40,6 +79,106 @@ const SLASH_FIX_SCRIPT = `<script>(function(){var p=location.pathname;if(p.lengt
 // Removes SSR-prerendered data-rh tags so React Helmet can add its own without
 // creating duplicate title / description / canonical tags in the rendered DOM.
 const DATA_RH_CLEANUP_SCRIPT = `<script>document.querySelectorAll('[data-rh]').forEach(function(e){e.remove()})</script>`;
+
+// ─── Real workshop data, parsed from src/data/workshops.ts ────────────────────
+// Several workshop pages' noscript bodyContent below predate the FAQ/benefits
+// data that now lives in workshops.ts, so they were missing FAQ sections and
+// heading depth entirely. Rather than hand-copy that content (and have it
+// drift out of sync over time), we parse the real file directly — same
+// technique used for the RSS feed further down — and use it to append a
+// "Workshop Benefits" list + the real "Frequently Asked Questions" section
+// to any page missing one. Nothing here is invented; every word already
+// exists in workshops.ts as the single source of truth for this data.
+function parseWorkshopsData() {
+  const workshopsPath = path.resolve(__dirname, '..', 'src', 'data', 'workshops.ts');
+  if (!fs.existsSync(workshopsPath)) return {};
+  const src = fs.readFileSync(workshopsPath, 'utf-8');
+  const chunks = src.split(/\n {4}id: '/).slice(1);
+
+  const byId = {};
+  for (const chunk of chunks) {
+    const idMatch = chunk.match(/^([^']+)'/);
+    if (!idMatch) continue;
+    const id = idMatch[1];
+
+    const benefitsMatch = chunk.match(/benefits:\s*\[([\s\S]*?)\n {4}\],/);
+    const benefits = benefitsMatch
+      ? [...benefitsMatch[1].matchAll(/(['"])([\s\S]*?)\1,/g)].map((m) => m[2])
+      : [];
+
+    const faqBlockMatch = chunk.match(/faq:\s*\[([\s\S]*?)\n {4}\],\n {2}\},/);
+    const faq = [];
+    if (faqBlockMatch) {
+      const faqRe = /q:\s*(['"])([\s\S]*?)\1,\s*a:\s*(['"])([\s\S]*?)\3,/g;
+      let m;
+      while ((m = faqRe.exec(faqBlockMatch[1])) !== null) {
+        faq.push({ q: m[2].replace(/\\'/g, "'"), a: m[4].replace(/\\'/g, "'") });
+      }
+    }
+    byId[id] = { benefits, faq };
+  }
+  return byId;
+}
+
+const WORKSHOPS_DATA = parseWorkshopsData();
+
+// Returns a "Workshop Benefits" list + full "Frequently Asked Questions"
+// section for a given workshop id, or '' if the id/data isn't found.
+function workshopFaqHtml(id) {
+  const data = WORKSHOPS_DATA[id];
+  if (!data) return '';
+  let html = '';
+  if (data.benefits.length) {
+    html += `<h2>Workshop Benefits</h2><ul>${data.benefits.map((b) => `<li>${b}</li>`).join('')}</ul>`;
+  }
+  if (data.faq.length) {
+    html += '<h2>Frequently Asked Questions</h2>';
+    html += data.faq.map((f) => `<h3>${f.q}</h3><p>${f.a}</p>`).join('');
+  }
+  return html;
+}
+
+// ─── Real blog post data, parsed from src/data/blogPosts.ts ───────────────────
+// Same rationale as parseWorkshopsData() above — used to build the blog index
+// page's link list below, and reused again by the RSS generator further down.
+function parseBlogPosts() {
+  const blogDataPath = path.resolve(__dirname, '..', 'src', 'data', 'blogPosts.ts');
+  if (!fs.existsSync(blogDataPath)) return [];
+  const blogSrc = fs.readFileSync(blogDataPath, 'utf-8');
+  const chunks = blogSrc.split(/\n {4}slug: '/).slice(1);
+
+  function grabField(chunk, field) {
+    const re = new RegExp(`${field}:\\s*\\n?\\s*(['"])([\\s\\S]*?)\\1,`);
+    const m = chunk.match(re);
+    return m ? m[2] : null;
+  }
+
+  return chunks
+    .map((chunk) => {
+      const slugMatch = chunk.match(/^([^']+)'/);
+      if (!slugMatch) return null;
+      return {
+        slug: slugMatch[1],
+        title: grabField(chunk, 'title'),
+        publishDate: grabField(chunk, 'publishDate'),
+        excerpt: grabField(chunk, 'excerpt'),
+        category: grabField(chunk, 'category'),
+      };
+    })
+    .filter((p) => p && p.title && p.publishDate)
+    .sort((a, b) => (a.publishDate < b.publishDate ? 1 : -1)); // newest first
+}
+
+const BLOG_POSTS = parseBlogPosts();
+
+// Builds the full linked post list for the /blog index page's noscript
+// content — real titles, excerpts, and links, sourced from BLOG_POSTS above.
+function blogIndexListHtml() {
+  if (!BLOG_POSTS.length) return '';
+  return `<ol>${BLOG_POSTS.map(
+    (p) => `<li><a href="/blog/${p.slug}">${p.title}</a> — ${p.excerpt || ''}</li>`
+  ).join('')}</ol>`;
+}
 
 // ─── Route metadata + visible noscript body content ──────────────────────────
 
@@ -51,18 +190,83 @@ const routes = [
     path: '/',
     title: 'Art Workshops Delhi NCR | ₹600/person | 1,500+ | Kraftykinni',
     description: 'Art workshops in Delhi, Gurgaon & Noida for corporate teams, schools & events. ₹600/person, all materials included. Fevicryl-certified artist.',
-    h1: 'Art & DIY Workshops in Delhi NCR',
+    h1: 'Art Workshops in Delhi NCR',
     bodyContent: `
-      <h1>Art & DIY Workshops in Delhi NCR</h1>
-      <p>Kraftykinni offers hands-on guided art workshops for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Led by Shramita Govil, Fevicryl Certified Artist, with 50+ workshops and 1,500+ happy participants. All materials included from ₹600 per person.</p>
-      <h2>Workshop Pricing Tiers</h2>
+      <article>
+      <h1>Art Workshops in Delhi NCR</h1>
+      <p>Kraftykinni runs hands-on, guided art workshops for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Shramita Govil, a Fevicryl Certified Artist, leads every session. The studio has delivered 50+ workshops to 1,500+ participants so far in 2026. Materials are included from ₹600 per person, and no prior art experience is needed.</p>
+
+      <h2>Key Takeaways</h2>
       <ul>
-        <li>Intimate (20–50 pax): ₹800 per person — all materials included</li>
-        <li>Standard (50–100 pax): ₹700 per person — all materials included</li>
-        <li>Large (100+ pax): ₹600 per person — all materials included</li>
+        <li>13 signature workshop activities, from Lippan Art to Clay Art</li>
+        <li>Pricing scales down as group size goes up: ₹800 to ₹600 per person</li>
+        <li>Serves Delhi, Gurgaon, Noida in person, plus pan-India online with materials shipped</li>
+        <li>All supplies included — you only provide tables, chairs, and the group</li>
       </ul>
-      <h2>13 Signature Workshop Activities</h2>
-      <p>Boho Canvas Art, Bottle Lamp Art, Lippan Art, Tie &amp; Dye, Trinket Tray Painting, Mandala Art, Clay Art, MDF Fridge Magnet, Glass Painting, Texture Art, Block Printing, Tote Bag Painting, Canvas Pouch Painting.</p>
+
+      <h2>What art workshops does Kraftykinni offer?</h2>
+      <p>There are 13 signature activities to choose from: Boho Canvas Art, Bottle Lamp Art, <a href="/workshops/lippan-art">Lippan Art</a>, Tie &amp; Dye, Trinket Tray Painting, <a href="/workshops/mandala-art">Mandala Art</a>, Clay Art, MDF Fridge Magnet, Glass Painting, Texture Art, Block Printing, Tote Bag Painting, and Canvas Pouch Painting. Each one is picked based on group size, event setting, and how much time is available — a corporate offsite and a school art day rarely call for the same activity.</p>
+
+      <dl>
+        <dt>Lippan Art</dt>
+        <dd>A traditional Kutch mudwork craft that embeds mirror pieces into clay relief patterns — read the <a href="/blog/lippan-art-complete-beginners-guide-kutch-mirror-work">full beginner's guide</a>.</dd>
+        <dt>Mandala Art</dt>
+        <dd>Geometric, symmetrical patterns built outward from a central point — popular for its calming, meditative pace.</dd>
+        <dt>Tie &amp; Dye</dt>
+        <dd>A resist-dyeing technique where fabric is folded, twisted, and bound before colour is applied.</dd>
+      </dl>
+
+      <h2>How much do Kraftykinni workshops cost?</h2>
+      <p>Pricing depends on group size. Larger groups cost less per person because setup and facilitation time are shared across more participants:</p>
+      <table>
+        <caption>Kraftykinni workshop pricing by group size</caption>
+        <thead>
+          <tr><th>Tier</th><th>Group size</th><th>Price per person</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Intimate</td><td>20–50 pax</td><td>₹800</td></tr>
+          <tr><td>Standard</td><td>50–100 pax</td><td>₹700</td></tr>
+          <tr><td>Large</td><td>100+ pax</td><td>₹600</td></tr>
+        </tbody>
+      </table>
+      <p>All three tiers include every art supply. You only need to provide a table, chairs, and your group — Kraftykinni brings everything else and cleans up after.</p>
+
+      <h2>How does booking work?</h2>
+      <ol>
+        <li>Get in touch by <a href="/#contact">WhatsApp, phone, or the contact form</a> with your group size and preferred date.</li>
+        <li>Pick a workshop activity — Shramita can recommend one based on your event type.</li>
+        <li>Confirm with 7 days' notice and a 50% deposit (UPI, bank transfer, or cash).</li>
+        <li>Kraftykinni arrives with all materials, runs the session, and cleans up.</li>
+      </ol>
+
+      <h2>Why do corporate teams choose hands-on art workshops?</h2>
+      <p>Many corporate teams default to standard offsites, quizzes, or happy hours for team building. On the other hand, a growing number of event planners are choosing hands-on creative workshops instead, since every participant leaves with something they physically made rather than just a shared afternoon. For a deeper look at this option, see the <a href="/corporate-art-workshops">corporate art workshops page</a> or read about <a href="/blog/best-corporate-team-building-activities-gurgaon-2026">team-building activities in Gurgaon</a>. General research on workplace team building is summarised on <a href="https://en.wikipedia.org/wiki/Team_building" rel="noopener">Wikipedia</a>.</p>
+
+      <h2>What do past participants say?</h2>
+      <blockquote>
+        <p>"What an amazing time! I haven't had that much fun in years, it really brought out my inner child. Thank you Mam for this workshop."</p>
+        <cite>— Saiyam Jain</cite>
+      </blockquote>
+      <blockquote>
+        <p>"Kraftykinni brought such a creative, refreshing energy to our corporate event. The team loved every moment and the art they created was stunning. Highly recommended!"</p>
+        <cite>— Gurjeet</cite>
+      </blockquote>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Do participants need prior art experience?</h3>
+      <p>No — all sessions are guided step-by-step by Shramita. Every participant creates something they are proud of, regardless of their art background.</p>
+      <h3>What is the minimum group size?</h3>
+      <p>Kraftykinni caters to groups from 20 up to 200+ participants. For smaller groups, reach out directly and Shramita will do her best to accommodate.</p>
+      <h3>Do you provide all the materials?</h3>
+      <p>Yes. Every art supply is included — paints, canvases, brushes, aprons, and activity-specific materials. You only need to provide tables and chairs.</p>
+      <h3>Where do you conduct workshops?</h3>
+      <p>In person across <a href="/workshops-in-delhi">Delhi</a>, <a href="/workshops-in-gurgaon">Gurgaon</a>, and <a href="/workshops-in-noida">Noida</a>, plus online pan-India with materials shipped to participants.</p>
+      <h3>What are the payment and booking terms?</h3>
+      <p>Seven days' advance notice is required, along with a 50% deposit to confirm. UPI, bank transfer, or cash are all accepted.</p>
+
+      <h2>Is Kraftykinni right for your event?</h2>
+      <p>Kraftykinni works well for three kinds of hosts: <a href="/corporate-art-workshops">corporate teams</a> planning an offsite or annual day, <a href="/school-art-workshops">schools</a> running an art day or fest, and <a href="/private-art-workshops">private hosts</a> organising a birthday, kitty party, or baby shower. Read more about Shramita's background on the <a href="/about">About page</a>, or browse recent write-ups on the <a href="/blog">blog</a>.</p>
+      </article>
     `,
   },
 
@@ -252,7 +456,9 @@ const routes = [
     h1: 'Kraftykinni Blog — Workshop Ideas, Guides & Stories',
     bodyContent: `
       <h1>Kraftykinni Blog — Workshop Ideas, Guides & Stories</h1>
-      <p>Practical guides on team building, event planning, and art workshops from Shramita Govil and the Kraftykinni team in Delhi NCR. Read our latest posts on corporate art activities, school workshop planning, and creative event ideas.</p>
+      <p>Practical guides on team building, event planning, and art workshops from Shramita Govil and the Kraftykinni team in Delhi NCR. Real write-ups from real bookings — corporate offsites, school annual days, birthdays, and heritage-craft deep dives — plus a beginner's guide to Lippan Art.</p>
+      <h2>All Posts</h2>
+      ${blogIndexListHtml()}
     `,
   },
   {
@@ -691,35 +897,35 @@ const routes = [
     title: 'Lippan Art Workshop Delhi NCR — Kutch Mirror Work | Kraftykinni',
     description: 'Lippan Art workshop in Delhi NCR — Kutch mirror work in a guided session. Corporate, schools & events. All materials included. ₹600–₹800/person.',
     h1: 'Lippan Art Workshop in Delhi NCR',
-    bodyContent: `<h1>Lippan Art Workshop in Delhi NCR</h1><p>Lippan Art is a centuries-old folk craft from the Kutch region of Gujarat where artisans use clay and mirror work to create intricate wall decorations. In our Lippan Art workshop, participants experience this meditative craft firsthand — shaping clay patterns, embedding mirrors, and creating a piece of genuine Indian heritage they can take home. It is one of our most requested activities for corporate teams and school groups alike.</p><h2>What you make</h2><p>A finished Lippan Art wall piece with clay patterning and embedded mirrors — a unique, display-ready piece of folk art.</p><h2>Who it is for</h2><p>Perfect for corporate team-building events, school art days, college fests, and private parties. No prior art experience needed. Duration: 2 to 2.5 hours. Group size: 20 to 200+ participants. Location: Delhi, Gurgaon, Noida and online pan-India. All materials included. Pricing from ₹600 per person.</p><h2>Why this activity works for corporate teams</h2><p>The meditative, repetitive nature of shaping clay and placing mirrors creates a calm, focused atmosphere — a rare and valuable contrast to the pace of corporate life. Every participant produces a strikingly beautiful piece, regardless of prior art experience. Lippan Art is one of the highest-rated activities in participant feedback across all 13 Kraftykinni workshops.</p>`,
+    bodyContent: `<h1>Lippan Art Workshop in Delhi NCR</h1><p>Lippan Art is a centuries-old folk craft from the Kutch region of Gujarat where artisans use clay and mirror work to create intricate wall decorations. In our Lippan Art workshop, participants experience this meditative craft firsthand — shaping clay patterns, embedding mirrors, and creating a piece of genuine Indian heritage they can take home. It is one of our most requested activities for corporate teams and school groups alike.</p><h2>What you make</h2><p>A finished Lippan Art wall piece with clay patterning and embedded mirrors — a unique, display-ready piece of folk art.</p><h2>Who it is for</h2><p>Perfect for corporate team-building events, school art days, college fests, and private parties. No prior art experience needed. Duration: 2 to 2.5 hours. Group size: 20 to 200+ participants. Location: Delhi, Gurgaon, Noida and online pan-India. All materials included. Pricing from ₹600 per person.</p><h2>Why this activity works for corporate teams</h2><p>The meditative, repetitive nature of shaping clay and placing mirrors creates a calm, focused atmosphere — a rare and valuable contrast to the pace of corporate life. Every participant produces a strikingly beautiful piece, regardless of prior art experience. Lippan Art is one of the highest-rated activities in participant feedback across all 13 Kraftykinni workshops.</p>${workshopFaqHtml('lippan-art')}`,
   },
   {
     path: '/workshops/mandala-art',
     title: 'Mandala Art Workshop Delhi NCR — Stress Relief | Kraftykinni',
     description: 'Mandala Art workshop in Delhi NCR. Meditative mandala painting for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     h1: 'Mandala Art Workshop in Delhi NCR',
-    bodyContent: `<h1>Mandala Art Workshop in Delhi NCR</h1><p>Mandala art is one of the most universally loved art forms — symmetrical, meditative, and endlessly satisfying to create. Our Mandala Art workshops guide participants through building their own mandala from the centre outward, using dotting tools, colours, and repetitive patterns that calm the mind and engage full attention. Popular as a corporate wellness activity and equally loved by school students.</p><h2>What you make</h2><p>A colourful, symmetric mandala artwork on canvas or paper — a beautiful piece to display or gift.</p><h2>Who it is for</h2><p>Ideal for corporate wellness sessions, mental health awareness events, school art days, and team-building retreats. Duration: 1.5 to 2 hours. Pricing from ₹600 per person. All materials included.</p><h2>Why mandala art works as a corporate activity</h2><p>Scientific research consistently links repetitive pattern-making with reduced cortisol levels and improved focus. For HR teams planning a wellness day, a mindfulness workshop, or simply a positive break from the work week, Mandala Art delivers measurable impact alongside a beautiful physical takeaway.</p>`,
+    bodyContent: `<h1>Mandala Art Workshop in Delhi NCR</h1><p>Mandala art is one of the most universally loved art forms — symmetrical, meditative, and endlessly satisfying to create. Our Mandala Art workshops guide participants through building their own mandala from the centre outward, using dotting tools, colours, and repetitive patterns that calm the mind and engage full attention. Popular as a corporate wellness activity and equally loved by school students.</p><h2>What you make</h2><p>A colourful, symmetric mandala artwork on canvas or paper — a beautiful piece to display or gift.</p><h2>Who it is for</h2><p>Ideal for corporate wellness sessions, mental health awareness events, school art days, and team-building retreats. Duration: 1.5 to 2 hours. Pricing from ₹600 per person. All materials included.</p><h2>Why mandala art works as a corporate activity</h2><p>Scientific research consistently links repetitive pattern-making with reduced cortisol levels and improved focus. For HR teams planning a wellness day, a mindfulness workshop, or simply a positive break from the work week, Mandala Art delivers measurable impact alongside a beautiful physical takeaway.</p>${workshopFaqHtml('mandala-art')}`,
   },
   {
     path: '/workshops/tie-and-dye',
     title: 'Tie & Dye Workshop Delhi NCR — High-Energy Team Activity | Kraftykinni',
     description: 'Tie & Dye workshop in Delhi NCR. High-energy fabric dyeing for corporate teams, schools & events. Wearable takeaway. All materials included. ₹600–₹800/person.',
     h1: 'Tie & Dye Workshop in Delhi NCR',
-    bodyContent: `<h1>Tie and Dye Workshop in Delhi NCR</h1><p>Tie and Dye is the workshop that fills a room with laughter, colour, and energy. Participants fold, twist, and bind fabric before applying vibrant dyes — and every single piece turns out uniquely different. Because the outcome is a wearable item — a t-shirt, dupatta, or tote — participants carry the memory of the event into their daily lives long after the workshop ends.</p><h2>What you make</h2><p>A one-of-a-kind tie-dye fabric item — t-shirt, tote bag, or dupatta — to wear and keep.</p><h2>Who it is for</h2><p>Best for high-energy corporate events, college fests, team outings, and large group gatherings of 50 to 200+ people. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p><h2>Why Tie and Dye is popular for large corporate events</h2><p>Unlike most art activities, Tie and Dye creates visible, energetic activity across a room. The process is visual, tactile, and social — groups naturally interact and compare results. For annual day events, outdoor corporate events, and high-energy onboarding programmes, Tie and Dye is consistently the highest-energy option in the Kraftykinni catalogue.</p>`,
+    bodyContent: `<h1>Tie and Dye Workshop in Delhi NCR</h1><p>Tie and Dye is the workshop that fills a room with laughter, colour, and energy. Participants fold, twist, and bind fabric before applying vibrant dyes — and every single piece turns out uniquely different. Because the outcome is a wearable item — a t-shirt, dupatta, or tote — participants carry the memory of the event into their daily lives long after the workshop ends.</p><h2>What you make</h2><p>A one-of-a-kind tie-dye fabric item — t-shirt, tote bag, or dupatta — to wear and keep.</p><h2>Who it is for</h2><p>Best for high-energy corporate events, college fests, team outings, and large group gatherings of 50 to 200+ people. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p><h2>Why Tie and Dye is popular for large corporate events</h2><p>Unlike most art activities, Tie and Dye creates visible, energetic activity across a room. The process is visual, tactile, and social — groups naturally interact and compare results. For annual day events, outdoor corporate events, and high-energy onboarding programmes, Tie and Dye is consistently the highest-energy option in the Kraftykinni catalogue.</p>${workshopFaqHtml('tie-and-dye')}`,
   },
   {
     path: '/workshops/boho-canvas',
     title: 'Boho Canvas Art Workshop Delhi NCR — Abstract Painting | Kraftykinni',
     description: 'Boho Canvas Art workshop in Delhi NCR. Guided abstract canvas painting for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     h1: 'Boho Canvas Art Workshop in Delhi NCR',
-    bodyContent: `<h1>Boho Canvas Art Workshop in Delhi NCR</h1><p>Boho Canvas Art combines warm earthy tones, abstract composition, and layered textures into a painting style that looks impressive but requires no drawing skills. Participants learn to blend colours, layer shapes, and create the bohemian aesthetic that has become one of the most popular contemporary art styles for home décor. Each canvas is unique to the person who painted it.</p><h2>What you make</h2><p>A finished boho-style canvas painting in earthy, warm tones — ready to hang at home or gift.</p><h2>Who it is for</h2><p>Popular choice for corporate team events, art days at schools and colleges, and private birthday or kitty parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    bodyContent: `<h1>Boho Canvas Art Workshop in Delhi NCR</h1><p>Boho Canvas Art combines warm earthy tones, abstract composition, and layered textures into a painting style that looks impressive but requires no drawing skills. Participants learn to blend colours, layer shapes, and create the bohemian aesthetic that has become one of the most popular contemporary art styles for home décor. Each canvas is unique to the person who painted it.</p><h2>What you make</h2><p>A finished boho-style canvas painting in earthy, warm tones — ready to hang at home or gift.</p><h2>Who it is for</h2><p>Popular choice for corporate team events, art days at schools and colleges, and private birthday or kitty parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('boho-canvas')}`,
   },
   {
     path: '/workshops/bottle-lamp-art',
     title: 'Bottle Lamp Art Workshop Delhi NCR — Upcycling Craft | Kraftykinni',
     description: 'Bottle Lamp Art workshop in Delhi NCR. Transform glass bottles into glowing lamps. Corporate & school sessions. All materials included. ₹600–₹800/person.',
     h1: 'Bottle Lamp Art Workshop in Delhi NCR',
-    bodyContent: `<h1>Bottle Lamp Art Workshop in Delhi NCR</h1><p>Bottle Lamp Art is one of our most magical workshops — participants paint and decorate glass bottles, which are then fitted with fairy lights to create glowing home décor pieces. It blends sustainability through upcycling, creativity, and a deeply satisfying result. When the lights come on at the end of the session, the room transforms.</p><h2>What you make</h2><p>A hand-painted glass bottle lamp with fairy lights — a glowing, functional piece of home décor.</p><h2>Who it is for</h2><p>Great for corporate gifting events, school craft days, private parties, and eco-themed corporate events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    bodyContent: `<h1>Bottle Lamp Art Workshop in Delhi NCR</h1><p>Bottle Lamp Art is one of our most magical workshops — participants paint and decorate glass bottles, which are then fitted with fairy lights to create glowing home décor pieces. It blends sustainability through upcycling, creativity, and a deeply satisfying result. When the lights come on at the end of the session, the room transforms.</p><h2>What you make</h2><p>A hand-painted glass bottle lamp with fairy lights — a glowing, functional piece of home décor.</p><h2>Who it is for</h2><p>Great for corporate gifting events, school craft days, private parties, and eco-themed corporate events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('bottle-lamp-art')}`,
   },
   {
     path: '/workshops/block-printing',
@@ -756,14 +962,14 @@ const routes = [
     title: 'Clay Art Workshop Delhi NCR — Therapeutic Sculpting | Kraftykinni',
     description: 'Clay Art workshop in Delhi NCR. Hands-on clay sculpting for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     h1: 'Clay Art Workshop in Delhi NCR',
-    bodyContent: `<h1>Clay Art Workshop in Delhi NCR</h1><p>Working with clay is one of the most grounding, stress-relieving creative experiences available. Our Clay Art workshops guide participants through sculpting small 3D objects — decorative bowls, figures, jewellery holders, or fridge magnets — using air-dry clay. The tactile nature of the material engages the nervous system and produces a state of calm focus that participants often describe as genuinely therapeutic.</p><h2>What you make</h2><p>A handcrafted clay sculpture or functional object — air-dried and ready to take home.</p><h2>Who it is for</h2><p>Ideal for corporate wellness days, school art sessions, stress management workshops, and mindfulness events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    bodyContent: `<h1>Clay Art Workshop in Delhi NCR</h1><p>Working with clay is one of the most grounding, stress-relieving creative experiences available. Our Clay Art workshops guide participants through sculpting small 3D objects — decorative bowls, figures, jewellery holders, or fridge magnets — using air-dry clay. The tactile nature of the material engages the nervous system and produces a state of calm focus that participants often describe as genuinely therapeutic.</p><h2>What you make</h2><p>A handcrafted clay sculpture or functional object — air-dried and ready to take home.</p><h2>Who it is for</h2><p>Ideal for corporate wellness days, school art sessions, stress management workshops, and mindfulness events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('clay-art')}`,
   },
   {
     path: '/workshops/glass-painting',
     title: 'Glass Painting Workshop Delhi NCR — Translucent Art | Kraftykinni',
     description: 'Glass Painting workshop in Delhi NCR. Learn glass painting in a guided group session. Corporate, school & events. All materials included. ₹600–₹800/person.',
     h1: 'Glass Painting Workshop in Delhi NCR',
-    bodyContent: `<h1>Glass Painting Workshop in Delhi NCR</h1><p>Glass Painting produces some of the most visually spectacular results of any workshop activity — translucent colours that glow when light passes through them. Participants paint directly onto glass surfaces using special glass paints, creating geometric or floral patterns that look stunning on display. It is a medium that most people have never tried, which makes the experience feel novel and memorable.</p><h2>What you make</h2><p>A hand-painted glass piece — a frame, bottle, or panel — with translucent painted designs.</p><h2>Who it is for</h2><p>Popular at corporate events, school art days, and private parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    bodyContent: `<h1>Glass Painting Workshop in Delhi NCR</h1><p>Glass Painting produces some of the most visually spectacular results of any workshop activity — translucent colours that glow when light passes through them. Participants paint directly onto glass surfaces using special glass paints, creating geometric or floral patterns that look stunning on display. It is a medium that most people have never tried, which makes the experience feel novel and memorable.</p><h2>What you make</h2><p>A hand-painted glass piece — a frame, bottle, or panel — with translucent painted designs.</p><h2>Who it is for</h2><p>Popular at corporate events, school art days, and private parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('glass-painting')}`,
   },
   {
     path: '/workshops/texture-art',
@@ -805,21 +1011,21 @@ const routes = [
     title: 'Trinket Tray Painting Workshop Delhi NCR — Desk Décor | Kraftykinni',
     description: 'Trinket Tray Painting workshop in Delhi NCR. Paint your own decorative desk tray. Corporate & school sessions. All materials included. ₹600–₹800/person.',
     h1: 'Trinket Tray Painting Workshop in Delhi NCR',
-    bodyContent: `<h1>Trinket Tray Painting Workshop in Delhi NCR</h1><p>Trinket Tray Painting gives participants a plain MDF or ceramic tray and the freedom to transform it into something beautiful. Using acrylic paints, brushes, and simple decorative techniques, each tray becomes a unique piece of functional desk art. It is a quick, satisfying activity that produces immediate results.</p><h2>What you make</h2><p>A hand-painted trinket or jewellery tray — colourful, functional, and personalised.</p><h2>Who it is for</h2><p>Great for corporate events, school workshops, office parties, and bridal events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    bodyContent: `<h1>Trinket Tray Painting Workshop in Delhi NCR</h1><p>Trinket Tray Painting gives participants a plain MDF or ceramic tray and the freedom to transform it into something beautiful. Using acrylic paints, brushes, and simple decorative techniques, each tray becomes a unique piece of functional desk art. It is a quick, satisfying activity that produces immediate results.</p><h2>What you make</h2><p>A hand-painted trinket or jewellery tray — colourful, functional, and personalised.</p><h2>Who it is for</h2><p>Great for corporate events, school workshops, office parties, and bridal events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('trinket-tray')}`,
   },
   {
     path: '/workshops/mdf-fridge-magnet',
     title: 'MDF Fridge Magnet Workshop Delhi NCR | Kraftykinni',
     description: 'MDF Fridge Magnet painting workshop in Delhi NCR. Fun, quick craft for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     h1: 'MDF Fridge Magnet Painting Workshop in Delhi NCR',
-    bodyContent: `<h1>MDF Fridge Magnet Painting Workshop in Delhi NCR</h1><p>The MDF Fridge Magnet workshop is proof that great art does not need a large canvas. Participants paint and personalise small MDF shapes — animals, letters, frames, or abstract forms — which become fridge magnets they take home. The activity is quick, cheerful, and produces a result that participants see every single day when they open their fridge.</p><h2>What you make</h2><p>A set of hand-painted MDF fridge magnets — personalised, colourful, and daily-use.</p><h2>Who it is for</h2><p>Perfect for quick corporate engagement sessions, school craft days, large events with tight schedules, and children's parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    bodyContent: `<h1>MDF Fridge Magnet Painting Workshop in Delhi NCR</h1><p>The MDF Fridge Magnet workshop is proof that great art does not need a large canvas. Participants paint and personalise small MDF shapes — animals, letters, frames, or abstract forms — which become fridge magnets they take home. The activity is quick, cheerful, and produces a result that participants see every single day when they open their fridge.</p><h2>What you make</h2><p>A set of hand-painted MDF fridge magnets — personalised, colourful, and daily-use.</p><h2>Who it is for</h2><p>Perfect for quick corporate engagement sessions, school craft days, large events with tight schedules, and children's parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('mdf-fridge-magnet')}`,
   },
   {
     path: '/workshops/canvas-pouch',
     title: 'Canvas Pouch Painting Workshop Delhi NCR | Kraftykinni',
     description: 'Canvas Pouch Painting workshop in Delhi NCR. Personalise your own canvas pouch with fabric paints. Corporate, school & events. All materials included.',
     h1: 'Canvas Pouch Painting Workshop in Delhi NCR',
-    bodyContent: `<h1>Canvas Pouch Painting Workshop in Delhi NCR</h1><p>Canvas Pouch Painting lets participants personalise a compact fabric pouch using fabric paints, fine brushes, and stencils. The smaller canvas encourages precision and detailed work — participants focus deeply on their design and leave with a pouch they actually use for makeup, stationery, or accessories.</p><h2>What you make</h2><p>A hand-painted canvas pouch — personalised with the participant's own design and ready for daily use.</p><h2>Who it is for</h2><p>Ideal for corporate gifting events, school sessions, college workshops, and intimate private parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>`,
+    bodyContent: `<h1>Canvas Pouch Painting Workshop in Delhi NCR</h1><p>Canvas Pouch Painting lets participants personalise a compact fabric pouch using fabric paints, fine brushes, and stencils. The smaller canvas encourages precision and detailed work — participants focus deeply on their design and leave with a pouch they actually use for makeup, stationery, or accessories.</p><h2>What you make</h2><p>A hand-painted canvas pouch — personalised with the participant's own design and ready for daily use.</p><h2>Who it is for</h2><p>Ideal for corporate gifting events, school sessions, college workshops, and intimate private parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('canvas-pouch')}`,
   },
   {
     path: '/workshops/wall-rope-art',
@@ -955,7 +1161,32 @@ const routes = [
     title: 'Art Workshops in Noida | Corporate & School Sessions | Kraftykinni',
     description: 'Art workshops in Noida and Greater Noida for corporate teams, schools & private events. 13 activities, all materials included. ₹600–₹800/person.',
     h1: 'Art Workshops in Noida',
-    bodyContent: `<h1>Art Workshops in Noida — Corporate and School Sessions</h1><p>Noida has rapidly grown into one of the most active corporate and educational hubs in the NCR, and Kraftykinni serves both. We conduct corporate art workshops for companies across Sector 62, Sector 16, and Film City Road, as well as school and college workshops for institutions in Noida and Greater Noida. Our workshops at Amity University are among our most frequently repeated.</p><h2>Areas We Cover in Noida</h2><p>Sector 62, Sector 16, Film City Road, Sector 18, Expressway, Greater Noida, Knowledge Park, Sector 125, and all areas across Noida and Greater Noida.</p><h2>All 13 Activities Available in Noida</h2><p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting.</p><h2>Pricing</h2><p>₹800 per person for groups of 20–50, ₹700 per person for 50–100 participants, ₹600 per person for 100+ participants. All art materials included.</p>`,
+    bodyContent: `<h1>Art Workshops in Noida — Corporate and School Sessions</h1>
+      <p>Noida has rapidly grown into one of the most active corporate and educational hubs in the NCR, and Kraftykinni serves both. We conduct corporate art workshops for companies across Sector 62, Sector 16, and Film City Road, as well as school and college workshops for institutions in Noida and Greater Noida. Our workshops at Amity University are among our most frequently repeated.</p>
+      <h2>Areas We Cover in Noida</h2>
+      <p>Sector 62, Sector 16, Film City Road, Sector 18, Expressway, Greater Noida, Knowledge Park, Sector 125, and all areas across Noida and Greater Noida.</p>
+      <h2>All 13 Activities Available in Noida</h2>
+      <p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting.</p>
+      <h2>Pricing for Art Workshops in Noida</h2>
+      <ul>
+        <li><strong>Small Group (20–50 people):</strong> ₹800 per person — all materials included</li>
+        <li><strong>Standard (50–100 people):</strong> ₹700 per person — all materials included</li>
+        <li><strong>Large Group (100+ people):</strong> ₹600 per person — all materials included</li>
+      </ul>
+      <p>A 50% deposit confirms the booking. Minimum 7 days advance notice required.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Do you conduct art workshops across all areas of Noida?</h3>
+      <p>Yes — Kraftykinni travels to your location anywhere in Noida and Greater Noida, including Sector 62, Sector 16, Film City Road, Sector 18, the Expressway corridor, Knowledge Park, and Sector 125. If your area is not listed, reach out and we will confirm availability.</p>
+      <h3>What is the cost of an art workshop in Noida?</h3>
+      <p>Pricing starts at ₹800 per person for groups of 20–50, ₹700 per person for 50–100 participants, and ₹600 per person for groups of 100+. All art materials, facilitation, setup, and cleanup are included.</p>
+      <h3>Do you work with universities and colleges in Noida?</h3>
+      <p>Yes — Amity University is one of our most frequently repeated bookings, alongside other colleges and schools across Noida and Greater Noida. Sessions are adapted for student groups, college fests, and orientation events.</p>
+      <h3>How far in advance should I book an art workshop in Noida?</h3>
+      <p>A minimum of 7 days advance notice is required to arrange materials and confirm logistics. A 50% deposit confirms your booking.</p>
+      <h3>Do participants need any prior art experience?</h3>
+      <p>No prior art experience is needed. Every Kraftykinni session is guided step by step by Shramita Govil, Fevicryl Certified Artist. Participants of all skill levels finish with a completed artwork they are proud of.</p>
+      <h3>What is the minimum group size for an art workshop in Noida?</h3>
+      <p>The minimum group size is 20 participants, with sessions scaling up to 200+ in a single booking. Additional facilitators are brought in for larger groups.</p>`,
   },
 ];
 
@@ -1008,14 +1239,18 @@ function injectMeta(html, route) {
   // title / description / canonical tags for JS crawlers (Bing, Googlebot).
   html = html.replace('</head>', `  ${DATA_RH_CLEANUP_SCRIPT}\n  </head>`);
 
-  // Build the noscript block ONLY — no hidden crawler div (that was cloaking)
+  // Build the noscript block ONLY — no hidden crawler div (that was cloaking).
+  // Structured with real <nav>/<main>/<footer> landmarks (not just divs) so
+  // non-JS crawlers and AI bots see standard semantic HTML and a full set of
+  // internal links on every single page, not just whatever bodyContent covers.
   const noscriptBlock = `
     <noscript>
       <div style="font-family:sans-serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333;">
-        ${bodyContent || `<h1>${h1}</h1><p>Please enable JavaScript to view this page.</p>`}
-        <p><strong>Contact:</strong> kraftykinni@gmail.com | +91 9599622210</p>
-        <p><strong>Service area:</strong> Delhi, Gurgaon, Noida and online pan-India</p>
-        <p><strong>Pricing:</strong> ₹600–₹800 per person, all materials included</p>
+        ${SITE_NAV_LINKS}
+        <main>
+          ${bodyContent || `<h1>${h1}</h1><p>Please enable JavaScript to view this page.</p>`}
+        </main>
+        ${SITE_FOOTER_LINKS}
       </div>
     </noscript>`;
 
@@ -1078,8 +1313,8 @@ console.log('    Each page has:\n' +
             '      • No hidden cloaking divs\n');
 
 // ─── 2. Regenerate sitemap.xml ────────────────────────────────────────────────
-
-const today = new Date().toISOString().slice(0, 10);
+// (today was computed once near the top of this file, and reused above as the
+// "Last updated" freshness signal injected into every page's noscript footer)
 
 const sitemapEntries = [
   { loc: '/',                              priority: '1.0', changefreq: 'monthly' },
@@ -1136,3 +1371,49 @@ ${sitemapEntries.map(({ loc, priority, changefreq }) => `  <url>
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf-8');
 fs.writeFileSync(path.join(distDir,   'sitemap.xml'), sitemapXml, 'utf-8');
 console.log(`🗺️   Sitemap regenerated with lastmod: ${today}\n`);
+
+// ─── 3. Generate rss.xml from BLOG_POSTS (parsed near the top of this file,
+// and already reused by the /blog index page above) ───────────────────────────
+function escapeXml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+if (BLOG_POSTS.length) {
+  const rssItems = BLOG_POSTS
+    .map((post) => {
+      const url = `${base}/blog/${post.slug}`;
+      const pubDate = new Date(post.publishDate).toUTCString();
+      return `    <item>
+      <title>${escapeXml(post.title)}</title>
+      <link>${url}</link>
+      <guid>${url}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <description>${escapeXml(post.excerpt || '')}</description>
+    </item>`;
+    })
+    .join('\n');
+
+  const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Kraftykinni Blog</title>
+  <link>${base}/blog</link>
+  <description>Art workshop guides, event write-ups, and craft tips from Kraftykinni — Delhi NCR.</description>
+  <language>en-in</language>
+  <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${rssItems}
+</channel>
+</rss>
+`;
+
+  fs.writeFileSync(path.join(publicDir, 'rss.xml'), rssXml, 'utf-8');
+  fs.writeFileSync(path.join(distDir, 'rss.xml'), rssXml, 'utf-8');
+  console.log(`📰  RSS feed generated with ${BLOG_POSTS.length} posts (rss.xml)\n`);
+} else {
+  console.warn('⚠️   src/data/blogPosts.ts not found or empty — skipped RSS generation.');
+}

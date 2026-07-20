@@ -1,0 +1,23 @@
+{
+  "name": "Kraftykinni — Art Workshops Delhi NCR",
+  "short_name": "Kraftykinni",
+  "description": "Hands-on art workshops for corporate teams, schools & private events across Delhi, Gurgaon & Noida.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#D23855",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

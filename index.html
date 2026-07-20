@@ -15,6 +15,32 @@
     <!-- Canonical — non-www, no trailing slash -->
     <link data-rh="true" rel="canonical" href="https://kraftykinni.in/" />
 
+    <!-- Web App Manifest — installability + modern web signal -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#D23855" />
+
+    <!-- RSS feed autodiscovery — lets feed readers and AI content aggregators
+         find new blog posts without re-crawling the whole site. Generated at
+         build time by scripts/prerender.mjs from src/data/blogPosts.ts. -->
+    <link rel="alternate" type="application/rss+xml" title="Kraftykinni Blog" href="/rss.xml" />
+
+    <!-- Referrer-Policy via meta (GitHub Pages can't set HTTP response headers,
+         so this is the browser-honored fallback for a static host). Restricts
+         how much of our URL leaks to third parties on outbound links/requests. -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Content-Security-Policy via meta (same GitHub Pages header limitation).
+         Allows only the origins the site actually uses: Google Fonts, GA/gtag,
+         AdSense, the WhatsApp/mailto protocols, and the Cloudflare image CDN.
+         NOTE: X-Frame-Options, X-Content-Type-Options and Permissions-Policy
+         cannot be set via <meta> — browsers only honor those as real HTTP
+         response headers, which GitHub Pages does not support. Setting them
+         requires fronting the domain with Cloudflare (free tier) and adding a
+         Transform Rule / Worker, or moving hosting to a platform that supports
+         custom headers (e.g. Cloudflare Pages, Netlify). Flagging for Shramita
+         to decide — not something fixable from the repo alone. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://cdn.kraftykinni.in https://www.google-analytics.com https://pagead2.googlesyndication.com https://*.googlesyndication.com; connect-src 'self' https://www.google-analytics.com https://api.web3forms.com; frame-src https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com; base-uri 'self'; form-action 'self' https://api.web3forms.com;" />
+
     <!-- GitHub Pages SPA routing: restores URL stored by 404.html
          Also strips any trailing slash that slipped through -->
     <script>
@@ -87,6 +113,7 @@
   "@type": "LocalBusiness",
   "name": "Kraftykinni",
   "image": "https://cdn.kraftykinni.in/logo.jpeg",
+  "logo": "https://cdn.kraftykinni.in/logo.jpeg",
   "@id": "https://kraftykinni.in/",
   "url": "https://kraftykinni.in/",
   "telephone": "+919599622210",

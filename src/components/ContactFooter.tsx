@@ -23,7 +23,7 @@ export default function ContactFooter() {
       links: [
         { label: "All Workshops",          to: "/#workshops" },
         { label: "Corporate Workshops",    to: "/corporate-art-workshops" },
-        { label: "School Workshops",       to: "/school-workshops" },
+        { label: "School Workshops",       to: "/school-art-workshops" },
         { label: "Lippan Art",             to: "/workshops/lippan-art" },
         { label: "Mandala Art",            to: "/workshops/mandala-art" },
         { label: "Tie & Dye",             to: "/workshops/tie-and-dye" },
@@ -37,6 +37,7 @@ export default function ContactFooter() {
         { label: "MDF Fridge Magnet",      to: "/workshops/mdf-fridge-magnet" },
         { label: "Trinket Tray Painting",  to: "/workshops/trinket-tray" },
         { label: "Canvas Pouch Painting",  to: "/workshops/canvas-pouch" },
+        { label: "Wall & Rope Art",        to: "/workshops/wall-rope-art" },
       ],
     },
     {
