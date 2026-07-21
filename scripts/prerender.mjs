@@ -212,7 +212,7 @@ const routes = [
     bodyContent: `
       <article>
       <h1>Kraftykinni Art Workshops in Delhi NCR</h1>
-      <p>Kraftykinni runs hands-on, guided art workshops for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Shramita Govil, a <a href="https://www.pidilite.com/consumer-brands/fevicryl" rel="noopener">Fevicryl Certified Artist</a>, leads every session herself. According to Kraftykinni's own booking records, the studio has delivered 50+ workshops to 1,500+ participants so far in 2026. Materials are included from ₹600 per person, and no prior art experience is needed.</p>
+      <p>Kraftykinni runs hands-on, guided art workshops for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Shramita Govil, a <a href="https://www.pidilite.com/consumer-brands/fevicryl" rel="noopener">Fevicryl Certified Artist</a>, leads every session herself. Materials are included from ₹600 per person, and no prior art experience is needed.</p>
 
       <nav aria-label="Page contents">
         <h2>On this page</h2>
@@ -226,6 +226,7 @@ const routes = [
           <li><a href="#testimonials">What do past participants say?</a></li>
           <li><a href="#faq">Frequently Asked Questions</a></li>
           <li><a href="#who-its-for">Is Kraftykinni right for your event?</a></li>
+          <li><a href="#summary">Key Takeaways</a></li>
         </ul>
       </nav>
 
@@ -240,7 +241,7 @@ const routes = [
           <li><strong>Price:</strong> ₹600–₹800 per person, all materials included</li>
           <li><strong>Coverage:</strong> Delhi, Gurgaon, Noida in person; pan-India online with shipped kits</li>
           <li><strong>Booking lead time:</strong> 7 days' notice, 50% deposit</li>
-          <li><strong>Track record:</strong> 50+ workshops, 1,500+ participants as of July 2026 (Kraftykinni's own booking data)</li>
+          <li><strong>Track record:</strong> 50+ workshops, 1,500+ participants as of July 2026 (source: Kraftykinni's own internal booking records, not a third-party count)</li>
         </ul>
       </section>
 
@@ -248,7 +249,10 @@ const routes = [
         <h2>What art workshops does Kraftykinni offer?</h2>
         <p>There are 13 signature activities to choose from, grouped into three categories. Each one is picked based on group size, event setting, and how much time is available — a corporate offsite and a school art day rarely call for the same activity. As a result, Shramita usually asks a few quick questions before recommending one.</p>
 
-        <img src="https://cdn.kraftykinni.in/logo.jpeg" alt="Kraftykinni logo — art workshops in Delhi NCR" width="120" height="120" loading="lazy" />
+        <figure>
+          <img src="https://cdn.kraftykinni.in/assets/lippan-art-opt.webp" alt="Finished Lippan Art mud-and-mirror workshop piece made by a Kraftykinni participant" width="640" height="480" />
+          <figcaption>A finished Lippan Art piece from a Kraftykinni workshop — mud relief work embedded with mirror pieces.</figcaption>
+        </figure>
 
         <h3>Signature Workshops</h3>
         <p><a href="/workshops/lippan-art">Lippan Art</a>, <a href="/workshops/wall-rope-art">Wall &amp; Rope Art</a>, Tie &amp; Dye, Boho Canvas Art, Bottle Lamp Art, and Trinket Tray Painting.</p>
@@ -271,7 +275,7 @@ const routes = [
 
       <section id="pricing">
         <h2>How much do Kraftykinni workshops cost?</h2>
-        <p>Pricing depends on group size. Larger groups cost less per person because setup and facilitation time are shared across more participants:</p>
+        <p>Pricing depends on group size. Larger groups cost less per person, since setup and facilitation time are shared across more participants:</p>
         <table>
           <caption>Kraftykinni workshop pricing by group size</caption>
           <thead>
@@ -283,22 +287,29 @@ const routes = [
             <tr><td>Large</td><td>100+ pax</td><td>₹600</td></tr>
           </tbody>
         </table>
-        <p>All three tiers include every art supply. You only need to provide a table, chairs, and your group — Kraftykinni brings everything else and cleans up after. If you are unsure which tier applies, try sending your expected headcount through the contact form and Shramita will confirm the price directly.</p>
+        <p>All three tiers include every art supply. You only need to provide a table, chairs, and your group — Kraftykinni brings everything else and cleans up afterward. If you are unsure which tier applies, try sending your expected headcount through the contact form.</p>
       </section>
 
       <section id="booking">
         <h2>How does booking work?</h2>
+        <p>Booking is a simple four-step process, and most hosts hear back the same day. <strong>Deposit:</strong> 50% · <strong>Notice period:</strong> 7 days minimum · <strong>Payment methods:</strong> UPI, bank transfer, or cash.</p>
         <ol>
           <li>Get in touch by <a href="/#contact">WhatsApp, phone, or the contact form</a> with your group size and preferred date.</li>
           <li>Pick a workshop activity — Shramita can recommend one based on your event type.</li>
           <li>Confirm with 7 days' notice and a 50% deposit (UPI, bank transfer, or cash).</li>
           <li>Kraftykinni arrives with all materials, runs the session, and cleans up.</li>
         </ol>
+        <p>For instance, here is a message template you can copy directly into WhatsApp to start a booking:</p>
+        <pre><code>Hi Shramita! I'd like to book a workshop.
+Group size: [e.g. 40]
+Preferred date: [DD/MM/YYYY]
+City: Delhi / Gurgaon / Noida</code></pre>
       </section>
 
       <section id="why-workshops">
         <h2>Why do corporate teams choose hands-on art workshops?</h2>
-        <p>Many corporate teams default to standard offsites, quizzes, or happy hours for team building. On the other hand, a growing number of event planners are choosing hands-on creative workshops instead, since every participant leaves with something they physically made rather than just a shared afternoon. For example, a session that ends with 40 finished Lippan Art pieces on a conference-room table tends to generate more conversation afterward than a trivia night does. For a deeper look at this option, see the <a href="/corporate-art-workshops">corporate art workshops page</a> or read the <a href="/blog/clay-trinket-painting-workshop-cars24-gurgaon">CARS24 Gurgaon workshop case study</a> and the <a href="/blog/best-corporate-team-building-activities-gurgaon-2026">team-building activities in Gurgaon</a> guide. General research on workplace team building is summarised on <a href="https://en.wikipedia.org/wiki/Team_building" rel="noopener">Wikipedia</a>.</p>
+        <p>Many corporate teams default to standard offsites, quizzes, or happy hours for team building. On the other hand, a growing number of event planners are choosing hands-on creative workshops instead, since every participant leaves with something they physically made rather than just a shared afternoon. For instance, a session that ends with 40 finished Lippan Art pieces on a conference-room table tends to generate more conversation afterward than a trivia night does.</p>
+        <p>In addition, experiential team building of this kind gives quieter employees a low-pressure way to take part, since the creative facilitation itself does the work of starting conversation. For a deeper look at this option, see the <a href="/corporate-art-workshops">corporate art workshops page</a> or read the <a href="/blog/clay-trinket-painting-workshop-cars24-gurgaon">CARS24 Gurgaon workshop case study</a> and the <a href="/blog/best-corporate-team-building-activities-gurgaon-2026">team-building activities in Gurgaon</a> guide. General research on workplace team building is summarised on <a href="https://en.wikipedia.org/wiki/Team_building" rel="noopener">Wikipedia</a>.</p>
       </section>
 
       <section id="comparison">
@@ -309,7 +320,7 @@ const routes = [
           <li><strong>Vs. office happy hours:</strong> a guided art workshop gives quieter team members a structured way to participate, since the activity itself creates conversation rather than relying on small talk.</li>
           <li><strong>Vs. outdoor sports days:</strong> art workshops need no special venue or weather, and work for mixed-fitness or mixed-age groups without anyone sitting out.</li>
         </ul>
-        <p>None of these formats is objectively better — the right choice depends on your team's size, budget, and what you want people to remember afterward.</p>
+        <p>None of these formats is objectively better. Instead, the right choice depends on your team's size, budget, and what you want people to remember afterward.</p>
       </section>
 
       <section id="testimonials">
@@ -350,7 +361,18 @@ const routes = [
 
       <section id="who-its-for">
         <h2>Is Kraftykinni right for your event?</h2>
-        <p>Kraftykinni works well for three kinds of hosts: <a href="/corporate-art-workshops">corporate teams</a> planning an offsite or annual day, <a href="/school-art-workshops">schools</a> running an art day or fest, and <a href="/private-art-workshops">private hosts</a> organising a birthday, kitty party, or baby shower. If none of the 13 activities above stands out yet, try the <a href="/about">About page</a> for more on Shramita's background, or browse recent write-ups on the <a href="/blog">blog</a> for real event examples.</p>
+        <p>Kraftykinni works well for three kinds of hosts: <a href="/corporate-art-workshops">corporate teams</a> planning an offsite or annual day, <a href="/school-art-workshops">schools</a> running an art day or fest, and <a href="/private-art-workshops">private hosts</a> organising a birthday, kitty party, or baby shower. Meanwhile, if none of the 13 activities above stands out yet, try the <a href="/about">About page</a> for more on Shramita's background, or browse recent write-ups on the <a href="/blog">blog</a> for real event examples.</p>
+      </section>
+
+      <section id="summary">
+        <h2>Key Takeaways</h2>
+        <ul>
+          <li>13 guided art workshops across Delhi, Gurgaon, and Noida, from ₹600 per person</li>
+          <li>All materials included — no prior art experience needed</li>
+          <li>Booking needs 7 days' notice and a 50% deposit</li>
+          <li>Best fit for corporate teams, schools, and private hosts who want participants to leave with something they made</li>
+        </ul>
+        <p>In short, if you need a guided, hands-on activity for a group in Delhi NCR, Kraftykinni is a straightforward studio to shortlist and contact directly for a quote.</p>
       </section>
       </article>
     `,
