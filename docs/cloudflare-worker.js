@@ -76,6 +76,19 @@ export default {
       'Permissions-Policy',
       'camera=(), microphone=(), geolocation=(), interest-cohort=()'
     );
+
+    // Lets you always confirm THIS script is the one actually live, from any
+    // HTTP client, instead of guessing from headers that happen to match:
+    //   (Invoke-WebRequest -Uri "https://kraftykinni.in/" -Method Head).Headers["X-Agent-Ready-Worker"]
+    newResponse.headers.set('X-Agent-Ready-Worker', 'v3');
+
+    // ── B3. API Catalog (RFC 9727) ─────────────────────────────────────────
+    // GitHub Pages serves /.well-known/api-catalog (no file extension) as
+    // application/octet-stream by default. Force the correct media type so
+    // it validates as a proper linkset+json document.
+    if (url.pathname === '/.well-known/api-catalog') {
+      newResponse.headers.set('Content-Type', 'application/linkset+json; charset=utf-8');
+    }
     // Keep this in sync with the <meta http-equiv="Content-Security-Policy">
     // in index.html — same allowed origins (Google Fonts, GA, AdSense,
     // the Cloudflare image CDN, and the Web3Forms contact endpoint).

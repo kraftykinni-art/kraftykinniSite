@@ -1,0 +1,22 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://kraftykinni.in/",
+      "service-desc": [
+        {
+          "href": "https://kraftykinni.in/.well-known/agent-skills/index.json",
+          "type": "application/json",
+          "title": "Agent Skills index — how an AI agent should help someone book a Kraftykinni workshop"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://kraftykinni.in/llms.txt",
+          "type": "text/plain",
+          "title": "llms.txt — full site map for LLMs, with a Markdown twin of every page"
+        }
+      ]
+    }
+  ],
+  "_note": "Kraftykinni is a static, no-login marketing site with no backend REST/GraphQL API and nothing requiring authentication. This catalog lists the site's real agent-facing interfaces (the Agent Skills document and the llms.txt content index) rather than a traditional service-desc/OpenAPI document, per RFC 9727."
+}

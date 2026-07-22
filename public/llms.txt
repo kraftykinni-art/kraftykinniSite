@@ -46,5 +46,6 @@ Booking: 7 days advance notice, 50% deposit confirms a booking, minimum 20 parti
 ## Agent resources
 - Any page above is also available as clean Markdown at the same URL with a .md extension, or via `Accept: text/markdown`
 - Agent Skills index: https://kraftykinni.in/.well-known/agent-skills/index.json
+- API catalog (RFC 9727): https://kraftykinni.in/.well-known/api-catalog
 - Sitemap: https://kraftykinni.in/sitemap.xml
 - RSS feed: https://kraftykinni.in/rss.xml
