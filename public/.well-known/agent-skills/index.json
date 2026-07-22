@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "book-kraftykinni-workshop",
+      "type": "skill-md",
+      "description": "How to help someone book a Kraftykinni art workshop in Delhi NCR — pricing, lead time, deposit terms, and the available activities.",
+      "url": "/.well-known/agent-skills/book-kraftykinni-workshop/SKILL.md",
+      "digest": "sha256:232bc31da0551f2ac06f38ddf0291211f669f36bd86003dba724db6d586e21d6"
+    }
+  ]
+}

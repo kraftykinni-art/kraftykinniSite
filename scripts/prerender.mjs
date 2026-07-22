@@ -1298,6 +1298,76 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
 ];
 
+// ─── Markdown twins (Markdown Negotiation for AI agents) ────────────────────
+// Every prerendered route also gets a flat-file Markdown twin at the same
+// path with a .md extension (homepage → index.md). A Cloudflare Worker in
+// front of GitHub Pages (see docs/cloudflare-agent-readiness-worker.js) serves
+// this twin instead of the .html file when a request's Accept header prefers
+// text/markdown — this is what agents/crawlers actually parse most cleanly.
+
+function stripTags(str) {
+  return String(str)
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&nbsp;/g, ' ')
+    .trim();
+}
+
+function htmlToMarkdown(html) {
+  if (!html) return '';
+  let md = html;
+  md = md.replace(/<nav[\s\S]*?<\/nav>/g, '');
+  md = md.replace(/<footer[\s\S]*?<\/footer>/g, '');
+  md = md.replace(/<h1[^>]*>([\s\S]*?)<\/h1>/g, (_, t) => `\n# ${stripTags(t)}\n`);
+  md = md.replace(/<h2[^>]*>([\s\S]*?)<\/h2>/g, (_, t) => `\n## ${stripTags(t)}\n`);
+  md = md.replace(/<h3[^>]*>([\s\S]*?)<\/h3>/g, (_, t) => `\n### ${stripTags(t)}\n`);
+  md = md.replace(/<h4[^>]*>([\s\S]*?)<\/h4>/g, (_, t) => `\n#### ${stripTags(t)}\n`);
+  md = md.replace(/<a\s+[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/g, (_, href, text) => {
+    const url = href.startsWith('http') ? href : `https://kraftykinni.in${href}`;
+    return `[${stripTags(text)}](${url})`;
+  });
+  md = md.replace(/<strong[^>]*>([\s\S]*?)<\/strong>/g, (_, t) => `**${stripTags(t)}**`);
+  md = md.replace(/<b>([\s\S]*?)<\/b>/g, (_, t) => `**${stripTags(t)}**`);
+  md = md.replace(/<em[^>]*>([\s\S]*?)<\/em>/g, (_, t) => `*${stripTags(t)}*`);
+  md = md.replace(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/g, (_, t) => `\n> ${stripTags(t)}\n`);
+  md = md.replace(/<li[^>]*>([\s\S]*?)<\/li>/g, (_, t) => `- ${stripTags(t)}\n`);
+  md = md.replace(/<\/?(ul|ol)[^>]*>/g, '\n');
+  md = md.replace(/<time[^>]*>([\s\S]*?)<\/time>/g, (_, t) => stripTags(t));
+  md = md.replace(/<p[^>]*>([\s\S]*?)<\/p>/g, (_, t) => `\n${stripTags(t)}\n`);
+  md = stripTags(md);
+  md = md.replace(/\n{3,}/g, '\n\n').trim();
+  return md;
+}
+
+// Site-wide "more pages" list, built once from the real routes array so it
+// always matches whatever pages actually exist — no separate list to drift.
+const NAV_MD = routes
+  .map((r) => `- [${r.title.split(' | ')[0]}](https://kraftykinni.in${r.path})`)
+  .join('\n');
+
+function buildMarkdownDoc(route) {
+  const canonical = `https://kraftykinni.in${route.path}`;
+  const bodyMd = htmlToMarkdown(route.bodyContent) || `# ${route.h1 || route.title}`;
+  return `---
+title: ${route.title}
+description: ${route.description}
+canonical: ${canonical}
+last_updated: ${today}
+---
+
+${bodyMd}
+
+---
+
+**Contact:** kraftykinni@gmail.com | +91 9599622210
+**Service area:** Delhi, Gurgaon, Noida and pan-India (materials shipped)
+**Pricing:** ₹600–₹800 per person, all materials included
+
+## More pages on this site
+${NAV_MD}
+`;
+}
+
 // ─── HTML injection helper ────────────────────────────────────────────────────
 
 function injectMeta(html, route) {
@@ -1413,7 +1483,15 @@ for (const route of routes) {
   }
 
   fs.writeFileSync(filePath, html, 'utf-8');
-  console.log(`✅  ${route.path === '/' ? '/' : route.path + '.html'}`);
+
+  // Markdown twin — same path, .md extension (homepage → index.md)
+  const mdPath = route.path === '/'
+    ? path.join(distDir, 'index.md')
+    : path.join(distDir, `${route.path}.md`);
+  fs.mkdirSync(path.dirname(mdPath), { recursive: true });
+  fs.writeFileSync(mdPath, buildMarkdownDoc(route), 'utf-8');
+
+  console.log(`✅  ${route.path === '/' ? '/' : route.path + '.html'}  (+ .md twin)`);
   created++;
 }
 
@@ -1529,3 +1607,29 @@ ${rssItems}
 } else {
   console.warn('⚠️   src/data/blogPosts.ts not found or empty — skipped RSS generation.');
 }
+
+// ─── 4. Generate llms.txt (site-wide agent/LLM entry point) ─────────────────
+// llms.txt is an informal, still-evolving community convention (not an IETF
+// or W3C standard) — a plain-Markdown index that points agents/LLMs at the
+// site's real content instead of making them scrape rendered HTML. Safe to
+// publish because every fact below already lives in the site/skill content.
+const llmsTxt = `# Kraftykinni
+
+> Hands-on creative art workshops for corporate teams, schools & private events across Delhi, Gurgaon and Noida, India. Guided by Shramita Govil, Fevicryl Certified Artist. ₹600–₹800 per person, all materials included.
+
+Contact: kraftykinni@gmail.com | +91 9599622210
+Booking: 7 days advance notice, 50% deposit confirms a booking, minimum 20 participants (scales to 200+)
+
+## Pages
+${routes.map((r) => `- [${r.title.split(' | ')[0]}](https://kraftykinni.in${r.path === '/' ? '/index' : r.path}.md): ${r.description}`).join('\n')}
+
+## Agent resources
+- Any page above is also available as clean Markdown at the same URL with a .md extension, or via \`Accept: text/markdown\`
+- Agent Skills index: https://kraftykinni.in/.well-known/agent-skills/index.json
+- Sitemap: https://kraftykinni.in/sitemap.xml
+- RSS feed: https://kraftykinni.in/rss.xml
+`;
+
+fs.writeFileSync(path.join(publicDir, 'llms.txt'), llmsTxt, 'utf-8');
+fs.writeFileSync(path.join(distDir, 'llms.txt'), llmsTxt, 'utf-8');
+console.log('🤖  llms.txt regenerated\n');

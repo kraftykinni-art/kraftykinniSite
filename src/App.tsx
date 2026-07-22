@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import WhatsAppButton from './components/WhatsAppButton';
 import ScrollToTop from './components/ScrollToTop';
+import { useWebMCP } from './hooks/useWebMCP';
 
 import HomePage from './pages/HomePage';
 
@@ -22,6 +23,10 @@ const EmployeeEngagementGurgaonPage = lazy(() => import('./pages/EmployeeEngagem
 
 export default function App() {
   const location = useLocation();
+
+  // Register WebMCP tools (list_workshops / get_workshop_details / start_booking)
+  // so an agent driving the browser can query workshops and trigger booking.
+  useWebMCP();
 
   // Fire GA4 page_view on every SPA route change.
   // send_page_view:false in index.html prevents the duplicate initial hit.
