@@ -22,6 +22,9 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: Bytespider
 Allow: /
 
@@ -32,10 +35,8 @@ User-agent: meta-externalagent
 Allow: /
 
 # Content Signals (https://contentsignals.org) — states usage preferences
-# for AI crawlers separately from crawl access. search=yes/ai-input=yes lets
-# Kraftykinni be found and cited by AI search/answer engines; ai-train=no
-# opts out of using site content to train models. Confirm with Shramita
-# before changing ai-train to yes.
+# for AI crawlers separately from crawl access. Kraftykinni allows AI
+# search/answer citation and permits training use on this content.
 Content-Signal: /: search=yes, ai-input=yes, ai-train=yes
 
 Sitemap: https://kraftykinni.in/sitemap.xml
