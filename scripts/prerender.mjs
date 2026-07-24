@@ -955,6 +955,47 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
 
   {
+    path: '/blog/independence-day-bottle-art-workshop-delhi-ncr',
+    title: 'Independence Day Bottle Art Workshop Delhi NCR | Kraftykinni',
+    description: 'Celebrate Independence Day 2026 with tricolour bottle art and Har Ghar Tiranga jars. Hands-on workshops for schools, offices and families across Delhi NCR.',
+    h1: 'Independence Day 2026 — Tricolour Bottle Art & Har Ghar Tiranga Workshops in Delhi NCR',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Independence Day 2026 — Tricolour Bottle Art & Har Ghar Tiranga Workshops in Delhi NCR',
+        'description': 'Celebrate Independence Day 2026 with tricolour bottle art and Har Ghar Tiranga jars. Hands-on workshops for schools, offices and families across Delhi NCR.',
+        'url': 'https://kraftykinni.in/blog/independence-day-bottle-art-workshop-delhi-ncr/',
+        'datePublished': '2026-07-24',
+        'dateModified': '2026-07-24',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/independence-day-bottle-art-workshop-delhi-ncr/' },
+      },
+    ],
+    bodyContent: `<h1>Independence Day 2026 — Tricolour Bottle Art & Har Ghar Tiranga Workshops in Delhi NCR</h1>
+      <p>Independence Day this year falls on a Saturday — which gives schools, offices, and families a rare window to turn the flag hoisting and patriotic songs into something people actually make with their hands. Kraftykinni's Independence Day bottle art takes an ordinary bottle or jar, adds tricolour paint, a monument mural, or a Har Ghar Tiranga-style tag, and hands people a finished piece by the end of the session.</p>
+      <h2>Why Bottle Art Works So Well for Independence Day</h2>
+      <p>Independence Day events tend to default to a flag hoisting and a patriotic playlist — fine, but rarely something a participant keeps. Bottle art changes that: a group sits down with paints and a plain bottle, and 60 to 90 minutes later everyone has a tricolour vase, a monument-mural bottle, or a set of Har Ghar Tiranga jars in front of them. For schools, it works as a class activity or a station at a bigger 15 August celebration. For corporate teams, a session at the town hall fits naturally alongside the flag hoisting without needing outdoor space. For private groups, housing societies and family gatherings get a genuinely festive activity where the tricolour theme does the decorating for you.</p>
+      <h2>What Independence Day Bottle Art Looks Like in Practice</h2>
+      <p>Monument-mural bottles use an arch or monument silhouette painted in blue against a bright orange-and-white bottle, finished with a small flag on a stick and a "Proud to Be Indian" tag, with silver-dipped dried flowers for a gift-worthy finish. Har Ghar Tiranga jars take their name from India's flag campaign: three small bottles in saffron, white, and green get polka dots and a hand-painted flower, then a round tag reading हर, घर, and तिरंगा, so the three jars read as one phrase when displayed together.</p>
+      <h2>The Workshops Kraftykinni Runs for Independence Day</h2>
+      <p>Independence Day bottle art runs as part of Kraftykinni's existing Bottle Lamp Art workshop, adapted with a tricolour theme for the season, using Fevicryl acrylic colours and finishing elements like dried flowers, twine, and flags. A single-bottle session runs 60 to 90 minutes; a three-jar Har Ghar Tiranga set runs closer to 90 minutes. Both formats work for groups of 15 to 200+ across Delhi, Gurgaon, and Noida, led by Shramita Govil, Fevicryl Certified Artist, with online kits available pan-India.</p>
+      <h2>How to Book for Independence Day 2026</h2>
+      <p>Independence Day is 15 August 2026. Minimum 7 days advance notice required; 2 to 3 weeks recommended given seasonal demand. WhatsApp +91 9599622210 with your date, location, group size, and preferred format. Confirmation within 24 hours.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What craft activity works best for Independence Day in a Delhi NCR school?</h3>
+      <p>Tricolour monument-mural bottle art and Har Ghar Tiranga jar sets are the strongest options, producing a finished take-home piece within a single art period. Groups of 20 to 300+ across Delhi, Gurgaon, and Noida, from ₹600 per student.</p>
+      <h3>Can Kraftykinni run an Independence Day workshop at our corporate office in Delhi NCR?</h3>
+      <p>Yes. Kraftykinni runs corporate Independence Day bottle art sessions at offices across Delhi, Gurgaon, and Noida. Group sizes from 20 to 200+, starting at ₹600 per person, all materials included. WhatsApp +91 9599622210 with your date and group size.</p>
+      <h3>What is Har Ghar Tiranga bottle art?</h3>
+      <p>Har Ghar Tiranga bottle art takes its name from India's "every home, a tricolour" flag campaign. Participants paint three small bottles — saffron, white, and green — with a hand-painted flower and a Hindi tag, so the set together reads हर घर तिरंगा.</p>
+      <h3>How much does an Independence Day art workshop cost in Delhi NCR?</h3>
+      <p>Kraftykinni Independence Day workshops start at ₹600 per person for groups of 100+, ₹700 for groups of 50 to 100, and ₹800 for groups of 20 to 50. All materials included, no additional venue or logistics charges.</p>
+    `,
+  },
+
+  {
     path: '/blog/block-printing-workshop-delhi-israeli-family',
     title: 'Block Printing Workshop Delhi: Israel to India | Kraftykinni',
     description: 'A private block printing workshop in Delhi for a mother-daughter duo from Israel — the craft, the story, and the fabric they took home. Book with Kraftykinni.',
@@ -1543,6 +1584,7 @@ const sitemapEntries = [
   { loc: '/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/block-printing-workshop-delhi-israeli-family', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/independence-day-bottle-art-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';

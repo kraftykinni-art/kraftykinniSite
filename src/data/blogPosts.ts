@@ -954,4 +954,68 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'independence-day-bottle-art-workshop-delhi-ncr',
+    title: 'Independence Day 2026 — Tricolour Bottle Art & Har Ghar Tiranga Workshops in Delhi NCR',
+    metaTitle: 'Independence Day Bottle Art Workshop Delhi NCR | KK',
+    metaDescription:
+      'Celebrate Independence Day 2026 with tricolour bottle art and Har Ghar Tiranga jars. Hands-on workshops for schools, offices and families across Delhi NCR.',
+    publishDate: '2026-07-24',
+    category: 'Workshop Guides' as const,
+    excerpt:
+      "Independence Day is 15 August — and this year, instead of just a flag hoisting and a patriotic playlist, we're showing what the day looks like when paint, a plain bottle, and the tricolour come together in a single hands-on session.",
+    keywords: [
+      'independence day craft activity Delhi NCR',
+      'tricolour bottle art workshop Delhi',
+      'Har Ghar Tiranga craft workshop',
+      'independence day workshop for schools Delhi',
+      '15 August activity ideas Delhi NCR',
+      'patriotic craft workshop Gurgaon Noida',
+      'corporate independence day activity Delhi NCR',
+      'bottle art workshop Delhi NCR',
+    ],
+    sections: [
+      {
+        body: `Independence Day this year falls on a Saturday — which gives schools, offices, and families a rare window to turn the flag hoisting and patriotic songs into something people actually make with their hands.\n\nThat's the idea behind Independence Day bottle art: take an ordinary glass bottle or jar, add tricolour paint, a monument mural, or a Har Ghar Tiranga-style tag, and hand people a finished piece by the end of the session — not just a memory of a speech.`,
+        image: 'https://cdn.kraftykinni.in/independence-day-tricolor-bottle-vase-gateway-of-india-kraftykinni.webp',
+        imageAlt: 'Hand-painted Independence Day bottle vase with an Indian monument arch mural, a miniature tricolour flag, a "Proud to Be Indian" tag and silver-dipped dried flowers — Kraftykinni bottle art workshop Delhi NCR',
+      },
+      {
+        heading: 'Why Bottle Art Works So Well for Independence Day',
+        body: `Independence Day events tend to default to the same formats every year: a flag hoisting, a patriotic playlist, maybe a fancy-dress competition for younger students. All of it is fine, but very little of it produces something a participant keeps.\n\nBottle art changes that. A group sits down with paints, brushes, and a plain bottle, and 60 to 90 minutes later, everyone has a tricolour vase, a monument-mural bottle, or a set of Har Ghar Tiranga jars sitting in front of them. The activity does the same job as a patriotic assembly — it marks the occasion — but it leaves behind an object instead of just an announcement.\n\n**For schools:** Independence Day bottle art works as a class activity, an art-period special, or a station at a bigger 15 August celebration. Students paint their own take on the tricolour or a national monument, which turns a top-down celebration into something personal.\n\n**For corporate teams:** Independence Day is one of the few dates every office marks on the calendar regardless of industry. A bottle art session at the town hall or in the cafeteria gives teams a shared activity that fits naturally alongside the flag hoisting, without needing outdoor space or heavy logistics.\n\n**For private groups:** Housing societies, kitty parties, and family gatherings around 15 August get a genuinely festive activity — one where the tricolour theme does the decorating for you.`,
+      },
+      {
+        heading: 'What Independence Day Bottle Art Looks Like in Practice',
+        body: `The two formats that come up most often for Independence Day are monument-mural bottles and Har Ghar Tiranga jars.\n\nMonument-mural bottles use an arch or monument silhouette — painted in blue against a bright orange-and-white bottle — finished with a small flag on a stick and a tag reading "Proud to Be Indian." Silver-dipped dried flowers around the flag give the piece a finished, gift-worthy look rather than a rushed classroom craft.\n\nHar Ghar Tiranga jars take their name directly from India's flag campaign of the same name. Three small bottles, one each in saffron, white, and green, get a coat of polka dots and a hand-painted flower, then a round tag reading हर, घर, and तिरंगा — so the three jars read as one phrase when displayed together. It's a simple format, but displaying it as a set is what makes it work as home décor rather than a one-off craft.`,
+        image: 'https://cdn.kraftykinni.in/har-ghar-tiranga-mini-bottle-art-kraftykinni.webp',
+        imageAlt: 'Set of three Har Ghar Tiranga mini bottle art jars in saffron, white and green with hand-painted flowers and Hindi tricolour tags, styled with greenery — Kraftykinni Independence Day workshop Delhi NCR',
+      },
+      {
+        heading: 'The Workshops Kraftykinni Runs for Independence Day',
+        body: `Kraftykinni runs Independence Day bottle art as part of its existing Bottle Lamp Art workshop, adapted with a tricolour and patriotic theme for the season. Participants work with Fevicryl acrylic colours, fine brushes for lettering and mural detail, and finishing elements like dried flowers, twine, and flags.\n\nA single-bottle session (monument mural or a large tricolour vase) runs 60 to 90 minutes. A Har Ghar Tiranga set — three smaller jars per participant — runs closer to 90 minutes given the extra painting and lettering per piece. Both formats work for groups of 15 to 200+, and for school assemblies, corporate town halls, and private family sessions alike.\n\nAll materials are included in the per-person cost, and the facilitator brings everything and handles setup. Sessions across Delhi, Gurgaon, and Noida are led by Shramita Govil, Fevicryl Certified Artist. Online sessions with material kits shipped pan-India are also available for distributed teams. See our full [bottle art workshop page](/workshops/bottle-lamp-art/) or explore [corporate workshops](/corporate-art-workshops/) and [school workshops](/school-art-workshops/) for format details.`,
+      },
+      {
+        heading: 'How to Book for Independence Day 2026',
+        body: `Independence Day is 15 August 2026 — a little over three weeks from now, which is exactly the window when school and office calendars start locking in dates.\n\nKraftykinni recommends a minimum of 7 days advance notice for all bookings, and 2 to 3 weeks for dates close to 15 August given seasonal demand. To book or check availability, WhatsApp **+91 9599622210** with your date, location (Delhi / Gurgaon / Noida), group size, and preferred format — monument mural, tricolour vase, or Har Ghar Tiranga set. We confirm within 24 hours.\n\nFor schools planning a 15 August assembly or special art period, our team can coordinate on timing, space, and batch size — read more about [school art workshops here](/school-art-workshops/). For corporate teams marking Independence Day at the office, group sizes run from 20 to 200+ with full logistics support — read more about [corporate art workshops here](/corporate-art-workshops/). All sessions are designed and led by [Shramita Govil, Fevicryl-certified artist](/about/).`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What craft activity works best for Independence Day in a Delhi NCR school?',
+        a: 'Tricolour monument-mural bottle art and Har Ghar Tiranga jar sets are the strongest Independence Day options for schools. Both use a plain bottle as the base and produce a finished, take-home piece within a single art period. Kraftykinni runs these sessions for student groups of 20 to 300+ across Delhi, Gurgaon, and Noida, with all materials included from ₹600 per student.',
+      },
+      {
+        q: 'Can Kraftykinni run an Independence Day workshop at our corporate office in Delhi NCR?',
+        a: 'Yes. Kraftykinni runs corporate Independence Day bottle art sessions — tricolour vases, monument murals, and Har Ghar Tiranga jar sets — at offices across Delhi, Gurgaon, and Noida. The facilitator brings all materials and handles setup and cleanup. Group sizes run from 20 to 200+, starting at ₹600 per person, all materials included. WhatsApp +91 9599622210 with your date and group size to check availability.',
+      },
+      {
+        q: 'What is Har Ghar Tiranga bottle art?',
+        a: 'Har Ghar Tiranga bottle art takes its name from India\'s "every home, a tricolour" flag campaign. Participants paint a set of three small bottles or jars — one each in saffron, white, and green — with polka dots, a hand-painted flower, and a Hindi tag, so the three jars together spell out हर घर तिरंगा when displayed as a set. It is one of Kraftykinni\'s Independence Day bottle art formats.',
+      },
+      {
+        q: 'How much does an Independence Day art workshop cost in Delhi NCR?',
+        a: 'Kraftykinni Independence Day bottle art workshops start at ₹600 per person for groups of 100+, ₹700 per person for groups of 50 to 100, and ₹800 per person for groups of 20 to 50. All materials are included — bottles, Fevicryl paints, brushes, tags, and finishing details. There are no additional venue or logistics charges; the facilitator travels to your location.',
+      },
+    ],
+  },
 ];
