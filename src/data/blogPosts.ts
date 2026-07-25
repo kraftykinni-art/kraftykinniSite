@@ -1018,4 +1018,80 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr',
+    title: 'Raksha Bandhan 2026 — Hand-Painted MDF Fridge Magnet Gifts for Siblings in Delhi NCR',
+    metaTitle: 'Raksha Bandhan MDF Fridge Magnet Workshop Delhi NCR | KK',
+    metaDescription:
+      'Celebrate Raksha Bandhan 2026 with hand-painted MDF fridge magnet gifts for siblings. Personalised workshops for schools, offices, families in Delhi NCR.',
+    publishDate: '2026-07-25',
+    category: 'Workshop Guides' as const,
+    excerpt:
+      "Raksha Bandhan falls on 28 August this year — and instead of another store-bought rakhi set, we're showing what the day looks like when siblings sit down and paint their own MDF keepsake plaque, together.",
+    keywords: [
+      'raksha bandhan gift workshop Delhi NCR',
+      'MDF fridge magnet painting workshop Delhi',
+      'raksha bandhan craft activity 2026',
+      'personalised sibling gift workshop Delhi',
+      'rakhi gift ideas Delhi NCR',
+      'corporate raksha bandhan activity Gurgaon',
+      'raksha bandhan workshop for schools Delhi',
+      'MDF plaque painting Delhi NCR',
+    ],
+    sections: [
+      {
+        body: `Raksha Bandhan this year falls on Friday, 28 August — a little over four weeks from now, and enough runway for a gift that takes more than a five-minute online order.\n\nKraftykinni's Raksha Bandhan MDF plaque workshop gives siblings a different kind of rakhi gift: a hand-painted wooden plaque or fridge magnet, personalised with a name, a private joke, or a message a store-bought rakhi hamper never quite manages.`,
+        image: 'https://cdn.kraftykinni.in/raksha-bandhan-big-brother-superhero-mdf-plaque-kraftykinni.webp',
+        imageAlt: "Hand-painted yellow MDF plaque reading \"I don't need a superhero, I have a big brother\" with cartoon brother and sister illustration, hand-lettered in blue and black — Kraftykinni Raksha Bandhan gift workshop Delhi NCR",
+      },
+      {
+        heading: 'Why a Hand-Painted Plaque Beats a Store-Bought Rakhi Gift',
+        body: `Most Raksha Bandhan gifts follow the same script: a rakhi, a box of sweets, an envelope. All of it is fine, but very little of it is something the sibling actually made.\n\nA Kraftykinni MDF plaque workshop changes that. Participants sit down with a plain wooden shape — a rectangle, a circle, a die-cut couch or figure — and paint a message onto it themselves. "I don't need a superhero, I have a big brother." A private joke about who always steals the remote. The plaque becomes personal because the sibling giving it painted every letter and colour choice — not something picked off a shelf.\n\n**For schools:** a pre-Raksha Bandhan art period works well here — students paint a plaque for a sibling at home, turning a classroom craft session into a real Rakhi gift.\n\n**For corporate teams:** a plaque or fridge magnet session doubles as a festive employee engagement activity in the run-up to 28 August, giving an office's Rakhi gifting gesture more substance than a bought hamper.\n\n**For private groups:** sisters and brothers getting together before Rakhi, a kitty party, or a family gathering can turn gift-shopping into an afternoon everyone spends painting together instead.`,
+      },
+      {
+        heading: 'What Raksha Bandhan Plaque Art Looks Like in Practice',
+        body: `Humour travels well on a small wooden canvas. One of the most requested formats is the sibling-on-a-sofa design — two painted figures wrestling over a TV remote — which works because almost every sibling relationship has lived some version of that exact scene. Painted in warm orange and teal with polka-dot upholstery detail, the piece reads as affectionate teasing rather than generic décor, and it's usually the plaque siblings laugh at hardest when they unwrap it.`,
+        image: 'https://cdn.kraftykinni.in/raksha-bandhan-sibling-remote-fight-mdf-magnet-kraftykinni.webp',
+        imageAlt: 'Three hand-painted wooden sofa-shaped fridge magnets showing brother and sister figures fighting over a TV remote, orange couch with polka-dot upholstery detail — Kraftykinni Raksha Bandhan MDF magnet workshop Delhi NCR',
+      },
+      {
+        heading: 'The Tom & Jerry Bond Plaque',
+        body: `A teal rectangular plaque reading "Tom & Jerry Bond — We Love, Fight, Care" is another popular pick — two painted figures holding hands, framed by a hand-lettered caption that sums up most sibling relationships in five words. Because every piece is painted by hand rather than printed, no two plaques from the same session look identical, even when several participants choose the same quote.`,
+        image: 'https://cdn.kraftykinni.in/raksha-bandhan-tom-jerry-bond-mdf-plaque-kraftykinni.webp',
+        imageAlt: 'Hand-painted teal MDF plaque reading "Tom & Jerry Bond — We Love, Fight, Care" with two cartoon sibling figures holding hands, yellow dashed border — Kraftykinni Raksha Bandhan workshop Delhi NCR',
+      },
+      {
+        heading: 'Making It a Family Set',
+        body: `For siblings with more than one brother or sister to acknowledge, a circular hoop-style plaque works well — "We don't need a superhero, we have a little brother" — painted across an ombré teal-to-blue background with three figures standing together. It's the format Kraftykinni recommends when a participant wants one keepsake to represent the whole sibling group rather than a single relationship.`,
+        image: 'https://cdn.kraftykinni.in/raksha-bandhan-little-brother-superhero-mdf-plaque-kraftykinni.webp',
+        imageAlt: "Hand-painted circular MDF hoop plaque with teal-to-blue ombré background reading \"We don't need a superhero, we have a little brother\" with three cartoon sibling figures — Kraftykinni Raksha Bandhan workshop Delhi NCR",
+      },
+      {
+        heading: 'The Workshop Kraftykinni Runs for Raksha Bandhan',
+        body: `Kraftykinni runs this as part of its existing MDF Fridge Magnet workshop, adapted with Raksha Bandhan quotes and sibling-themed illustrations for the season. Participants paint with Fevicryl acrylic colours on pre-cut MDF shapes, using stencils or freehand lettering — no prior art experience needed. Each participant typically finishes 2 to 3 pieces, and a session runs 1 to 2 hours depending on design complexity.\n\nThe workshop works for groups of 20 to 200+ across Delhi, Gurgaon, and Noida, and is also available online with material kits shipped pan-India for distributed teams or siblings living apart. All materials are included in the per-person cost.`,
+      },
+      {
+        heading: 'How to Book for Raksha Bandhan 2026',
+        body: `Raksha Bandhan 2026 falls on Friday, 28 August — just over four weeks away. Kraftykinni recommends a minimum of 7 days advance notice for all bookings, and 2 to 3 weeks for dates in the week around 28 August given seasonal demand. To book or check availability, WhatsApp **+91 9599622210** with your date, location (Delhi / Gurgaon / Noida), group size, and preferred format.\n\nFor schools planning a pre-Rakhi art period, read more about [school art workshops here](/school-art-workshops/). For corporate teams looking to add a festive activity before 28 August, read more about [corporate art workshops here](/corporate-art-workshops/). All sessions are designed and led by [Shramita Govil, Fevicryl-certified artist](/about/), and the full activity is detailed on the [MDF Fridge Magnet workshop page](/workshops/mdf-fridge-magnet/).`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What craft activity works best for Raksha Bandhan in a Delhi NCR school?',
+        a: 'Hand-painted MDF plaques and fridge magnets are the strongest Raksha Bandhan options for schools — students personalise a wooden plaque with a message or illustration for a sibling at home, finishing within a single art period. Kraftykinni runs these sessions for student groups of 20 to 300+ across Delhi, Gurgaon, and Noida, with all materials included from ₹600 per student.',
+      },
+      {
+        q: 'Can Kraftykinni run a Raksha Bandhan workshop at our corporate office in Delhi NCR?',
+        a: 'Yes. Kraftykinni runs corporate MDF plaque and fridge magnet sessions for Raksha Bandhan at offices across Delhi, Gurgaon, and Noida. The facilitator brings all materials and handles setup and cleanup. Group sizes run from 20 to 200+, starting at ₹600 per person, all materials included. WhatsApp +91 9599622210 with your date and group size to check availability.',
+      },
+      {
+        q: "Can MDF plaques be personalised with a sibling's name or a specific message?",
+        a: 'Yes. Participants can paint any message or illustration they choose onto their MDF plaque or magnet, including a sibling\'s name or a private joke, guided by stencils or freehand lettering. Popular Raksha Bandhan formats include quote plaques, couch-scene magnets, and multi-figure hoop designs, but the wording and colours are chosen by each participant.',
+      },
+      {
+        q: 'How much does a Raksha Bandhan art workshop cost in Delhi NCR?',
+        a: 'Kraftykinni Raksha Bandhan MDF plaque workshops start at ₹600 per person for groups of 100+, ₹700 per person for groups of 50 to 100, and ₹800 per person for groups of 20 to 50. All materials are included — MDF shapes, Fevicryl paints, brushes, and magnet backings. There are no additional venue or logistics charges; the facilitator travels to your location.',
+      },
+    ],
+  },
 ];
