@@ -1041,6 +1041,51 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
 
   {
+    path: '/blog/friendship-day-photo-magnet-workshop-delhi-ncr',
+    title: 'Friendship Day Photo Magnet Workshop Delhi NCR | KK',
+    description: 'Celebrate Friendship Day 2026 with hand-painted photo magnets for best friends. Personalised MDF magnet workshops in Delhi, Gurgaon and Noida.',
+    h1: 'Friendship Day 2026 — Hand-Painted Photo Magnets for Best Friends in Delhi NCR',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Friendship Day 2026 — Hand-Painted Photo Magnets for Best Friends in Delhi NCR',
+        'description': 'Celebrate Friendship Day 2026 with hand-painted photo magnets for best friends. Personalised MDF magnet workshops in Delhi, Gurgaon and Noida.',
+        'url': 'https://kraftykinni.in/blog/friendship-day-photo-magnet-workshop-delhi-ncr/',
+        'datePublished': '2026-07-28',
+        'dateModified': '2026-07-28',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/friendship-day-photo-magnet-workshop-delhi-ncr/' },
+      },
+    ],
+    bodyContent: `<h1>Friendship Day 2026 — Hand-Painted Photo Magnets for Best Friends in Delhi NCR</h1>
+      <p>Friendship Day falls on Sunday, 2 August this year — less than a week away. Kraftykinni's photo magnet workshop gives a friend group a different kind of gift: a hand-painted MDF magnet with an actual photo of the two of you set into a painted frame, made by hand rather than picked off a shelf.</p>
+      <h2>Why a Photo Magnet Beats a Store-Bought Friendship Band</h2>
+      <p>Most Friendship Day gifts follow the same script: a band, a card, a box of chocolates — fine, but none of it something either friend actually made. A Kraftykinni photo magnet workshop changes that: participants paint a frame around a printed photo of themselves and a friend, finished with hand-sculpted details. For schools and colleges, a pre-Friendship Day art period turns a classroom craft session into a real gift. For corporate teams, a photo magnet session doubles as a festive employee engagement activity around 2 August. For private groups, a friend circle can turn Friendship Day plans into an afternoon of painting together.</p>
+      <h2>Works for Any Duo</h2>
+      <p>The format isn't limited to one photo style — a round frame with a polka-dot border and a hand-sculpted rose works just as well for any pair, with painting choices entirely up to whoever's holding the brush.</p>
+      <h2>The Batch Reunion Magnet</h2>
+      <p>For friend groups from school or college, a themed magnet works particularly well — a circular frame with a "Class Of" illustration and hand-sculpted details around the edge, a popular pick when a batch of friends wants one keepsake that nods to where the friendship started.</p>
+      <h2>Personalising With a Name</h2>
+      <p>Not every piece needs a photo. A name, a heart, and a few hand-sculpted flowers on a painted MDF base is its own kind of Friendship Day keepsake, useful when a friend prefers a nameplate-style gift over a photo piece.</p>
+      <h2>The Workshop Kraftykinni Runs for Friendship Day</h2>
+      <p>Kraftykinni runs this as part of its existing MDF Fridge Magnet workshop, adapted with photo transfers and Friendship Day details. Participants paint pre-cut MDF shapes with Fevicryl acrylic colours and finish them with hand-sculpted clay details — no experience needed. Each participant typically finishes 1 to 2 pieces in a 1 to 2 hour session, for groups of 20 to 200+ across Delhi, Gurgaon, and Noida, with online kits shipped pan-India.</p>
+      <h2>How to Book for Friendship Day 2026</h2>
+      <p>Friendship Day 2026 is 2 August 2026 — less than a week away. WhatsApp +91 9599622210 as soon as possible with your date, location, group size, and the photos you'd like used; confirmation within 24 hours on whether it can be arranged in time.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What craft activity works best for Friendship Day in Delhi NCR?</h3>
+      <p>Hand-painted MDF photo magnets are the strongest option — friends personalise a wooden magnet with a printed photo within a single session. Groups of 20 to 200+ across Delhi, Gurgaon, and Noida, from ₹600 per person.</p>
+      <h3>Can Kraftykinni run a Friendship Day workshop at our corporate office in Delhi NCR?</h3>
+      <p>Yes. Kraftykinni runs corporate photo magnet sessions for Friendship Day at offices across Delhi, Gurgaon, and Noida. Group sizes from 20 to 200+, starting at ₹600 per person, all materials included. WhatsApp +91 9599622210 with your date and group size.</p>
+      <h3>Can the magnet include an actual photo of us?</h3>
+      <p>Yes. Each photo magnet is built around a printed photo set into a hand-painted MDF frame. It helps to share the image you want used when you confirm your booking so it is ready in time.</p>
+      <h3>How much does a Friendship Day photo magnet workshop cost in Delhi NCR?</h3>
+      <p>Kraftykinni Friendship Day workshops start at ₹600 per person for groups of 100+, ₹700 for groups of 50 to 100, and ₹800 for groups of 20 to 50. All materials included, no additional venue or logistics charges.</p>
+    `,
+  },
+
+  {
     path: '/blog/block-printing-workshop-delhi-israeli-family',
     title: 'Block Printing Workshop Delhi: Israel to India | Kraftykinni',
     description: 'A private block printing workshop in Delhi for a mother-daughter duo from Israel — the craft, the story, and the fabric they took home. Book with Kraftykinni.',
@@ -1631,6 +1676,7 @@ const sitemapEntries = [
   { loc: '/blog/block-printing-workshop-delhi-israeli-family', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/independence-day-bottle-art-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/friendship-day-photo-magnet-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';

@@ -63,6 +63,10 @@ ROUTES = [
     "/blog/clay-trinket-painting-workshop-cars24-gurgaon",
     "/blog/summer-art-workshop-for-schools-delhi-ncr",
     "/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026",
+    "/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr",
+    "/blog/independence-day-bottle-art-workshop-delhi-ncr",
+    "/blog/raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr",
+    "/blog/friendship-day-photo-magnet-workshop-delhi-ncr",
 ]
 
 # SEO length thresholds
