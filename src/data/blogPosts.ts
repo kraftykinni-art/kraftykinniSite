@@ -1170,4 +1170,77 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'dot-mandala-art-corporate-workshop-noida',
+    title: 'Dot Mandala Art at a Noida Corporate Office — 20 People, One Desk-Side Afternoon',
+    metaTitle: 'Dot Mandala Art Corporate Workshop Noida | KK',
+    metaDescription:
+      'A 20-person team in Noida Sector 90 traded desks for dot mandala art with Kraftykinni — a relaxed, no-experience corporate reset. See how the session ran.',
+    publishDate: '2026-08-02',
+    category: 'Corporate' as const,
+    excerpt:
+      'Last week, a 20-person team at a Noida Sector 90 office pushed back their keyboards and picked up dotting tools instead. This is what a desk-side Dot Mandala Art session actually looks like — and why it works as a corporate reset.',
+    keywords: [
+      'dot mandala art workshop corporate',
+      'corporate art workshop Noida',
+      'mandala art workshop Delhi NCR',
+      'employee engagement activity Noida',
+      'desk side art workshop corporate',
+      'corporate wellness activity Noida',
+      'team building activity Noida',
+    ],
+    sections: [
+      {
+        body: `Last week, a 20-person team at an office in Noida Sector 90 didn't head offsite for their team activity. Kraftykinni brought the studio to them — straight to the office floor. Keyboards were pushed back, laptops were closed, and standard desks were covered in palettes, dotting tools, and blank round wooden discs.\\n\\nBy 3:00 PM they were managers, analysts, and developers. By 3:30 PM they were just people trying to figure out how to keep their dot spacing even. That shift — from job title to just-a-person-with-a-paintbrush — is the entire point of a desk-side [Dot Mandala Art workshop](/workshops/mandala-art/).`,
+        image: 'https://cdn.kraftykinni.in/noida-corporate-dot-mandala-workshop-group-kraftykinni.webp',
+        imageAlt: 'A 20-person corporate team in Noida Sector 90 holding up their finished hand-painted dot mandala artworks after a Kraftykinni desk-side workshop',
+      },
+      {
+        heading: 'What Is Dot Mandala Art?',
+        body: `Dot Mandala Art is a variation of Kraftykinni's [Mandala Art workshop](/workshops/mandala-art/) built entirely from dots rather than brush strokes. Participants use fine dotting tools and acrylic paints to build symmetrical, radiating patterns one dot at a time — on a round wooden or MDF base rather than canvas.\\n\\nIt is slower and more meditative than free-hand painting, which is exactly why it works so well as a corporate reset: there is no fast way to rush a dot mandala, so the activity forces a genuine pause. No prior art experience is needed — the technique is entirely about patience and repetition, not skill.`,
+        image: 'https://cdn.kraftykinni.in/corporate-dot-mandala-workshop-in-progress-kraftykinni.webp',
+        imageAlt: 'Corporate team members using dotting tools and acrylic paint to build dot mandala art at their desks during a Kraftykinni Noida workshop',
+      },
+      {
+        heading: 'How the Session Ran',
+        body: `The session ran desk-side rather than in a separate breakout room — Shramita set up directly at the team's own workstations with all materials: acrylic paints, dotting tools, brushes, and pre-cut round bases. No offsite venue, no additional logistics, just the existing office floor repurposed for an hour.\\n\\nThe results captured very different personalities in the room. There were carefully detailed dot mandalas, a few serene landscape pieces, and — by participant account — one deeply stressed-out cartoon character that had the whole floor laughing. Every finished piece was different, even though everyone started with the same blank round base and the same dotting technique.`,
+        image: 'https://cdn.kraftykinni.in/dot-mandala-art-finished-pieces-corporate-kraftykinni.webp',
+        imageAlt: 'Two finished dot mandala artworks — one blue and white wave pattern, one colourful abstract design — held up by a workshop participant in Noida',
+      },
+      {
+        heading: 'Why It Works as a Corporate Reset',
+        body: `There is something genuinely disarming about watching corporate hierarchy fall away the moment everyone is handed a paintbrush and a set of dots to fill in. For that hour, nobody was checking their inbox — the pressure of being "perfect" at work was replaced by the simple, grounding act of getting a dot pattern to line up evenly.\\n\\n"Burnout" gets talked about often in HR and workplace circles, usually as something to be solved with more rest. But sometimes the better reset for an overworked mind isn't doing nothing — it's doing something completely different with your hands for an hour. That is the specific value a dot mandala session offers over a generic break: full attention, low stakes, and a real object to show for it at the end.`,
+        image: 'https://cdn.kraftykinni.in/dot-mandala-sunset-artwork-corporate-kraftykinni.webp',
+        imageAlt: 'A finished dot mandala artwork in warm sunset colours, held up by a corporate workshop participant in Noida',
+      },
+      {
+        heading: 'Book a Desk-Side Dot Mandala Session for Your Team',
+        body: `Kraftykinni runs Dot Mandala Art as a desk-side or boardroom corporate session — no offsite venue required. Shramita brings all materials (dotting tools, acrylic paints, round bases) and handles setup and cleanup; your team just needs desks or tables.\\n\\nGroups from 20 to 200+, across Delhi, Gurgaon, and Noida. Pricing starts at ₹600 per person, all materials included. To book or check availability, WhatsApp **+91 9599622210** or see our [corporate art workshops page](/corporate-art-workshops/) and [Noida workshops page](/workshops-in-noida/).`,
+        image: 'https://cdn.kraftykinni.in/corporate-art-workshop-branded-kraftykinni-noida.webp',
+        imageAlt: 'A Kraftykinni team member holding a branded "Corporate Art Workshop" card at the entrance of the Noida office where the session was held',
+      },
+    ],
+    faq: [
+      {
+        q: 'What is Dot Mandala Art?',
+        a: 'Dot Mandala Art is a version of mandala painting built entirely from dots rather than brush strokes. Using fine dotting tools and acrylic paint, participants build a symmetrical, radiating pattern one dot at a time on a round wooden or MDF base. It requires patience rather than prior art skill, making it a genuinely meditative activity.',
+      },
+      {
+        q: 'Can Kraftykinni run a Dot Mandala Art workshop at our office in Noida?',
+        a: 'Yes. Kraftykinni runs desk-side and boardroom Dot Mandala Art sessions for corporate teams across Noida, Delhi, and Gurgaon. The facilitator brings all materials and works directly at your existing office space — no separate venue is needed. A recent session ran for a 20-person team at a Noida Sector 90 office.',
+      },
+      {
+        q: 'Do participants need any art experience?',
+        a: 'No. Dot Mandala Art is guided step by step and relies on repetition rather than freehand drawing skill, so participants with zero art background produce a complete, symmetric piece by the end of the session.',
+      },
+      {
+        q: 'How long does a Dot Mandala Art corporate session take?',
+        a: 'A desk-side session can run in about an hour for a focused group activity, or 1.5 to 2 hours for a fuller workshop format with a demonstration and more detailed pieces. Kraftykinni adapts the format and duration to fit your team\'s schedule.',
+      },
+      {
+        q: 'What does a Dot Mandala Art corporate workshop cost in Noida?',
+        a: 'Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100, and ₹800 per person for groups of 20–50. All materials — dotting tools, acrylic paints, and round bases — are included, with no separate venue charge since sessions run at your own office.',
+      },
+    ],
+  },
 ];

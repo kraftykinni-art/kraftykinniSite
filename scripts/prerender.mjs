@@ -1086,6 +1086,49 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
 
   {
+    path: '/blog/dot-mandala-art-corporate-workshop-noida',
+    title: 'Dot Mandala Art Corporate Workshop Noida | KK',
+    description: 'A 20-person team in Noida Sector 90 traded desks for dot mandala art with Kraftykinni — a relaxed, no-experience corporate reset. See how the session ran.',
+    h1: 'Dot Mandala Art at a Noida Corporate Office — 20 People, One Desk-Side Afternoon',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Dot Mandala Art at a Noida Corporate Office — 20 People, One Desk-Side Afternoon',
+        'description': 'A 20-person team in Noida Sector 90 traded desks for dot mandala art with Kraftykinni — a relaxed, no-experience corporate reset. See how the session ran.',
+        'url': 'https://kraftykinni.in/blog/dot-mandala-art-corporate-workshop-noida/',
+        'datePublished': '2026-08-02',
+        'dateModified': '2026-08-02',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/dot-mandala-art-corporate-workshop-noida/' },
+      },
+    ],
+    bodyContent: `<h1>Dot Mandala Art at a Noida Corporate Office — 20 People, One Desk-Side Afternoon</h1>
+      <p>Last week, a 20-person team at an office in Noida Sector 90 didn't head offsite for their team activity. Kraftykinni brought the studio to them, straight to the office floor — keyboards pushed back, laptops closed, desks covered in palettes, dotting tools, and blank round wooden discs. By 3:00 PM they were managers, analysts, and developers. By 3:30 PM they were just people trying to keep their dot spacing even.</p>
+      <h2>What Is Dot Mandala Art?</h2>
+      <p>Dot Mandala Art is a variation of Kraftykinni's Mandala Art workshop built entirely from dots rather than brush strokes. Participants use fine dotting tools and acrylic paints to build symmetrical, radiating patterns one dot at a time on a round wooden or MDF base. It is slower and more meditative than free-hand painting, which is exactly why it works as a corporate reset — there is no fast way to rush a dot mandala. No prior art experience is needed.</p>
+      <h2>How the Session Ran</h2>
+      <p>The session ran desk-side rather than in a separate breakout room — set up directly at the team's own workstations with all materials included, no offsite venue or added logistics. The results captured very different personalities in the room: carefully detailed dot mandalas, a few serene landscape pieces, and one deeply stressed-out cartoon character that had the whole floor laughing. Every finished piece was different, even though everyone started with the same blank base and the same technique.</p>
+      <h2>Why It Works as a Corporate Reset</h2>
+      <p>There is something genuinely disarming about watching corporate hierarchy fall away the moment everyone is handed a paintbrush and a set of dots to fill in. For that hour, nobody was checking their inbox. "Burnout" is talked about often in workplace circles, usually as something solved with more rest — but sometimes the better reset for an overworked mind is doing something completely different with your hands for an hour, with a real object to show for it at the end.</p>
+      <h2>Book a Desk-Side Dot Mandala Session for Your Team</h2>
+      <p>Kraftykinni runs Dot Mandala Art as a desk-side or boardroom corporate session, no offsite venue required. Groups from 20 to 200+, across Delhi, Gurgaon, and Noida. Pricing starts at ₹600 per person, all materials included. WhatsApp +91 9599622210 to book or check availability.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What is Dot Mandala Art?</h3>
+      <p>A version of mandala painting built entirely from dots rather than brush strokes, using fine dotting tools and acrylic paint on a round wooden or MDF base. It requires patience rather than prior art skill.</p>
+      <h3>Can Kraftykinni run a Dot Mandala Art workshop at our office in Noida?</h3>
+      <p>Yes. Kraftykinni runs desk-side and boardroom Dot Mandala Art sessions for corporate teams across Noida, Delhi, and Gurgaon, working directly at your existing office space. A recent session ran for a 20-person team at a Noida Sector 90 office.</p>
+      <h3>Do participants need any art experience?</h3>
+      <p>No. The activity is guided step by step and relies on repetition rather than freehand drawing skill.</p>
+      <h3>How long does a Dot Mandala Art corporate session take?</h3>
+      <p>A desk-side session can run in about an hour, or 1.5 to 2 hours for a fuller workshop format with a demonstration and more detailed pieces.</p>
+      <h3>What does a Dot Mandala Art corporate workshop cost in Noida?</h3>
+      <p>Pricing starts at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for groups of 20–50. All materials included, no separate venue charge since sessions run at your own office.</p>
+    `,
+  },
+
+  {
     path: '/blog/block-printing-workshop-delhi-israeli-family',
     title: 'Block Printing Workshop Delhi: Israel to India | Kraftykinni',
     description: 'A private block printing workshop in Delhi for a mother-daughter duo from Israel — the craft, the story, and the fabric they took home. Book with Kraftykinni.',
@@ -1677,6 +1720,7 @@ const sitemapEntries = [
   { loc: '/blog/independence-day-bottle-art-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/friendship-day-photo-magnet-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/dot-mandala-art-corporate-workshop-noida', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';
