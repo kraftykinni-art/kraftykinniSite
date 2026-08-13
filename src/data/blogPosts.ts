@@ -883,9 +883,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'world-environment-day-upcycled-bottle-art-workshop-delhi-ncr',
     title: 'World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On',
-    metaTitle: 'World Environment Day — Upcycled Bottle Art Workshop | KK',
+    metaTitle: 'World Environment Day — Bottle Art Workshop | Kraftykinni',
     metaDescription:
-      'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles & jars into mandala planters, home décor & gifts. Workshops across Delhi NCR.',
+      'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles into mandala planters and décor. Workshops across Delhi NCR.',
     publishDate: '2026-05-30',
     category: 'Workshop Guides' as const,
     excerpt:
@@ -1021,7 +1021,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr',
     title: 'Raksha Bandhan 2026 — Hand-Painted MDF Fridge Magnet Gifts for Siblings in Delhi NCR',
-    metaTitle: 'Raksha Bandhan MDF Fridge Magnet Workshop Delhi NCR | KK',
+    metaTitle: 'Raksha Bandhan MDF Fridge Magnet Workshop | Kraftykinni',
     metaDescription:
       'Celebrate Raksha Bandhan 2026 with hand-painted MDF fridge magnet gifts for siblings. Personalised workshops for schools, offices, families in Delhi NCR.',
     publishDate: '2026-07-25',
@@ -1097,7 +1097,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'friendship-day-photo-magnet-workshop-delhi-ncr',
     title: 'Friendship Day 2026 — Hand-Painted Photo Magnets for Best Friends in Delhi NCR',
-    metaTitle: 'Friendship Day Photo Magnet Workshop Delhi NCR | KK',
+    metaTitle: 'Friendship Day Photo Magnet Workshop | Kraftykinni',
     metaDescription:
       'Celebrate Friendship Day 2026 with hand-painted photo magnets for best friends. Personalised MDF magnet workshops in Delhi, Gurgaon and Noida.',
     publishDate: '2026-07-28',
@@ -1173,7 +1173,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'dot-mandala-art-corporate-workshop-noida',
     title: 'Dot Mandala Art at a Noida Corporate Office — 20 People, One Desk-Side Afternoon',
-    metaTitle: 'Dot Mandala Art Corporate Workshop Noida | KK',
+    metaTitle: 'Dot Mandala Art Corporate Workshop | Kraftykinni',
     metaDescription:
       'A 20-person team in Noida Sector 90 traded desks for dot mandala art with Kraftykinni — a relaxed, no-experience corporate reset. See how the session ran.',
     publishDate: '2026-08-02',
@@ -1246,7 +1246,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'janmashtami-krishna-art-workshop-delhi-ncr',
     title: 'Janmashtami 2026 — Dahi Handi Matki Painting and Radha Krishna Trinket Trays in Delhi NCR',
-    metaTitle: 'Janmashtami Craft Workshop Ideas Delhi NCR | KK',
+    metaTitle: 'Janmashtami Craft Workshop Ideas Delhi NCR | Kraftykinni',
     metaDescription:
       'Celebrate Janmashtami 2026 with hand-painted Dahi Handi matkis and mirror-work Radha Krishna trinket trays. School and private workshops across Delhi NCR.',
     publishDate: '2026-08-13',

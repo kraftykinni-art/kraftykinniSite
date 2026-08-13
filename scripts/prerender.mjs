@@ -442,7 +442,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Annual Day Art Activities for Schools in Delhi NCR</h2>
       <p>Annual day planning committees consistently choose Kraftykinni because every student completes a finished, display-worthy piece within the session — no half-finished work, no mess to clean up. The most popular annual day activities are Tote Bag Painting, Mandala Art, Lippan Art, Tie and Dye, and Block Printing. Each one scales to 100+ students simultaneously and produces a finished artwork students take home.</p>
       <h2>Why Schools Choose Kraftykinni</h2>
-      <p>All art materials are provided — paints, canvases, brushes, aprons, and activity-specific supplies. We travel to your school anywhere in Delhi NCR and set up before the session. Every student completes a finished, display-worthy piece they take home. Fevicryl-certified facilitation ensures professional guidance. Group sizes from 30 students to full school assemblies of 300+.</p>
+      <p>All art materials are provided — paints, canvases, brushes, aprons, and activity-specific supplies. We travel to your school anywhere in Delhi NCR and set up before the session. Every student completes a finished, display-worthy piece they take home. Sessions are led by Shramita Govil, Fevicryl Certified Artist with 50+ workshops and 1,500+ participants. Group sizes from 30 students to full school assemblies of 300+.</p>
       <h2>Activities by Grade Group</h2>
       <h3>Primary (Grade 3–5)</h3>
       <p>MDF Fridge Magnet, Clay Art, Tote Bag Painting, Canvas Pouch. Simple, tactile activities that develop fine motor skills and creative confidence.</p>
@@ -600,7 +600,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Why Lippan Art Works So Well in a Group</h2>
       <p>Geometric patterns are inherently forgiving, mirror placement produces repeatable small successes, and every finished piece looks different despite being made with the same materials.</p>
       <h2>Who Should Try a Lippan Art Workshop</h2>
-      <p>Kraftykinni runs Lippan Art workshops across Delhi, Gurgaon, and Noida for corporate teams, schools, and private events. Groups from 20 to 200+, starting at Rs. 600 per person.</p>
+      <p>Kraftykinni runs Lippan Art workshops across Delhi, Gurgaon, and Noida for corporate teams, schools, and private events, led by Shramita Govil, Fevicryl Certified Artist. Groups from 20 to 200+, starting at Rs. 600 per person.</p>
     `,
   },
   {
@@ -630,7 +630,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>2–10. Other options</h2>
       <p>The full list includes Escape Rooms, Cooking Competitions, Pottery workshops, Photography Walks, Indoor Sports Days, Improv Workshops, Scavenger Hunts, Board Game sessions, and Mixology events — each assessed on group size flexibility and real team outcomes.</p>
       <h2>Book a workshop for your Gurgaon team</h2>
-      <p>Kraftykinni runs art workshops for corporate teams across Gurgaon, Delhi, and Noida. All materials are included. Starting at ₹600 per person. Contact us to discuss your event date and preferred activity.</p>
+      <p>Kraftykinni runs art workshops for corporate teams across Gurgaon, Delhi, and Noida, led by Shramita Govil, Fevicryl Certified Artist. All materials are included. Starting at ₹600 per person. Contact us to discuss your event date and preferred activity.</p>
     `,
   },
 
@@ -673,7 +673,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>8. Glass Painting</h2>
       <p>Transparent glass paint on tiles or bottles creates stained-glass-style pieces. Works well as a competition format.</p>
       <h2>Book an art workshop for your school annual day</h2>
-      <p>Kraftykinni runs structured art workshops for schools across Delhi, Gurgaon, and Noida. All materials included. Groups from 30 to 300+ students. Starting at Rs 600 per student. Contact us to discuss your annual day date.</p>
+      <p>Kraftykinni runs structured art workshops for schools across Delhi, Gurgaon, and Noida, led by Shramita Govil, Fevicryl Certified Artist. All materials included. Groups from 30 to 300+ students. Starting at Rs 600 per student. Contact us to discuss your annual day date.</p>
     `,
   },
 
@@ -711,7 +711,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h3>Canvas Pouch Painting</h3>
       <p>The compact option for tighter budgets. Guests paint a small canvas pouch — practical, personal, and usable every day.</p>
       <h2>Book an Art Workshop for Your Birthday Party in Delhi NCR</h2>
-      <p>Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida. Starting at ₹600 per person, all materials included. Contact us via WhatsApp or the contact form to discuss your date.</p>
+      <p>Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida, led by Shramita Govil, Fevicryl Certified Artist. Starting at ₹600 per person, all materials included. Contact us via WhatsApp or the contact form to discuss your date.</p>
     `,
   },
   {
@@ -811,7 +811,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Why It Worked for a Corporate Team</h2>
       <p>Corporate art workshops work because they lower the social stakes. There is no scoreboard, no performance, no seniority. When a director and a junior analyst are both trying to figure out how to paint a strawberry on a clay heart, hierarchy disappears. The shared technical challenge — and the shared mild confusion — levels the room. By the time people are comparing finished pieces, they have been talking naturally for two hours. That is what team-building actually looks like when it works. Cars24 ran this session mid-week, and the feedback from participants was consistent: it was relaxing in a way they did not expect a work activity to be. The combination of working with clay (tactile, grounding) and painting (focused, absorbing) produces a genuine decompression effect. Participants described it as calming without being passive — they were making something real.</p>
       <h2>Book a Similar Workshop for Your Team</h2>
-      <p>Kraftykinni runs Clay Trinket Painting sessions for corporate groups across Delhi, Gurgaon, and Noida. All materials are provided and included in the price. Shramita handles setup and cleanup — your team just needs tables, chairs, and two hours. Groups from 20 to 200+. Pricing from Rs 600 per person. WhatsApp +91 9599622210 or visit kraftykinni.in to book.</p>
+      <p>Kraftykinni runs Clay Trinket Painting sessions for corporate groups across Delhi, Gurgaon, and Noida, led by Shramita Govil, Fevicryl Certified Artist. All materials are provided and included in the price. Shramita handles setup and cleanup — your team just needs tables, chairs, and two hours. Groups from 20 to 200+. Pricing from Rs 600 per person. WhatsApp +91 9599622210 or visit kraftykinni.in to book.</p>
     `,
   },
 
@@ -849,7 +849,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Tie & Dye — the Activity That Works for Any Age</h2>
       <p>For primary school students (Class 3 and below), Tie & Dye is the most reliable choice. The moment of reveal — when students untie their fabric and see what they have created — is one of the most reliably joyful moments in a school workshop context.</p>
       <h2>Book a Summer Workshop for Your School</h2>
-      <p>Kraftykinni runs summer art workshops for schools across Delhi, Gurgaon, and Noida. All materials are included. Groups from 30 students to full school batches of 300+. Starting at ₹600 per student. WhatsApp +91 9599622210 or visit kraftykinni.in/school-workshops to enquire.</p>
+      <p>Kraftykinni runs summer art workshops for schools across Delhi, Gurgaon, and Noida, led by Shramita Govil, Fevicryl Certified Artist. All materials are included. Groups from 30 students to full school batches of 300+. Starting at ₹600 per student. WhatsApp +91 9599622210 or visit kraftykinni.in/school-workshops to enquire.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>What is the best summer art activity for school students in Delhi NCR?</h3>
       <p>For primary school students (Class 3–5), Tie & Dye and Photo Frame Craft work best. For middle and senior school students (Class 6–12), Lippan Art and Mandala Art consistently produce the most impressive finished pieces.</p>
@@ -913,15 +913,15 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr',
-    title: 'World Environment Day 2026 — Upcycled Bottle Art Workshop | Kraftykinni',
-    description: 'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles & jars into mandala planters, home décor & gifts. Workshops across Delhi NCR.',
+    title: 'World Environment Day 2026 — Bottle Art Workshop | Kraftykinni',
+    description: 'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles into mandala planters and décor. Workshops across Delhi NCR.',
     h1: 'World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On',
     schemas: [
       {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
         'headline': 'World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On',
-        'description': 'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles & jars into mandala planters, home décor & gifts. Workshops across Delhi NCR.',
+        'description': 'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles into mandala planters and décor. Workshops across Delhi NCR.',
         'url': 'https://kraftykinni.in/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr/',
         'datePublished': '2026-05-30',
         'dateModified': '2026-05-30',
@@ -939,7 +939,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Message Bottles — Making Sustainability Personal</h2>
       <p>Message bottle art gives every piece a personal dimension. Participants paint a word or phrase onto the bottle surface — "Home Sweet Home", "Love", "Family" — and the message becomes part of the design. Because no two people paint the same way, no two bottles ever look identical. Jute twine and dried flower finishing details move the result from craft project to something that could sit on a café shelf or a living room sideboard.</p>
       <h2>The Workshops Kraftykinni Runs for Environment Day</h2>
-      <p>Kraftykinni runs two primary formats for World Environment Day: Bottle Art Workshop (90 minutes, groups of 20 to 200+) where participants decorate upcycled bottles using Fevicryl colours, lettering, and decorative finishes; and Dot Mandala Planter Workshop (step-by-step guided, no experience needed, groups of 30 to 150). Both are available across Delhi, Gurgaon, and Noida, and online pan-India with shipped material kits. Pricing from ₹600 per person, all materials included.</p>
+      <p>Kraftykinni runs two primary formats for World Environment Day: Bottle Art Workshop (90 minutes, groups of 20 to 200+) where participants decorate upcycled bottles using Fevicryl colours, lettering, and decorative finishes; and Dot Mandala Planter Workshop (step-by-step guided, no experience needed, groups of 30 to 150). Both are led by Shramita Govil, Fevicryl Certified Artist, and available across Delhi, Gurgaon, and Noida, and online pan-India with shipped material kits. Pricing from ₹600 per person, all materials included.</p>
       <h2>How to Book for World Environment Day 2026</h2>
       <p>World Environment Day is 5 June 2026. Minimum 7 days advance notice required; 2 to 3 weeks strongly recommended for June dates. WhatsApp +91 9599622210 with your date, location, group size, and preferred activity. Confirmation within 24 hours.</p>
       <h2>Frequently Asked Questions</h2>
@@ -997,7 +997,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr',
-    title: 'Raksha Bandhan MDF Fridge Magnet Workshop Delhi NCR | KK',
+    title: 'Raksha Bandhan MDF Fridge Magnet Workshop | Kraftykinni',
     description: 'Celebrate Raksha Bandhan 2026 with hand-painted MDF fridge magnet gifts for siblings. Personalised workshops for schools, offices, families in Delhi NCR.',
     h1: 'Raksha Bandhan 2026 — Hand-Painted MDF Fridge Magnet Gifts for Siblings in Delhi NCR',
     schemas: [
@@ -1025,7 +1025,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Making It a Family Set</h2>
       <p>For siblings with more than one brother or sister to acknowledge, a circular hoop-style plaque reading "We don't need a superhero, we have a little brother" — painted across a teal-to-blue ombré background with three figures — works well as one keepsake representing the whole sibling group.</p>
       <h2>The Workshop Kraftykinni Runs for Raksha Bandhan</h2>
-      <p>Kraftykinni runs this as part of its existing MDF Fridge Magnet workshop, adapted with Raksha Bandhan quotes and sibling-themed illustrations. Participants paint with Fevicryl acrylic colours on pre-cut MDF shapes using stencils or freehand lettering — no experience needed. Each participant typically finishes 2 to 3 pieces in a 1 to 2 hour session, for groups of 20 to 200+ across Delhi, Gurgaon, and Noida, with online kits shipped pan-India. All materials included.</p>
+      <p>Kraftykinni runs this as part of its existing MDF Fridge Magnet workshop, adapted with Raksha Bandhan quotes and sibling-themed illustrations. Participants paint with Fevicryl acrylic colours on pre-cut MDF shapes using stencils or freehand lettering — no experience needed. Sessions are led by Shramita Govil, Fevicryl Certified Artist. Each participant typically finishes 2 to 3 pieces in a 1 to 2 hour session, for groups of 20 to 200+ across Delhi, Gurgaon, and Noida, with online kits shipped pan-India. All materials included.</p>
       <h2>How to Book for Raksha Bandhan 2026</h2>
       <p>Raksha Bandhan 2026 is 28 August 2026. Minimum 7 days advance notice required; 2 to 3 weeks recommended for dates near 28 August. WhatsApp +91 9599622210 with your date, location, group size, and preferred format. Confirmation within 24 hours.</p>
       <h2>Frequently Asked Questions</h2>
@@ -1042,7 +1042,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/friendship-day-photo-magnet-workshop-delhi-ncr',
-    title: 'Friendship Day Photo Magnet Workshop Delhi NCR | KK',
+    title: 'Friendship Day Photo Magnet Workshop | Kraftykinni',
     description: 'Celebrate Friendship Day 2026 with hand-painted photo magnets for best friends. Personalised MDF magnet workshops in Delhi, Gurgaon and Noida.',
     h1: 'Friendship Day 2026 — Hand-Painted Photo Magnets for Best Friends in Delhi NCR',
     schemas: [
@@ -1070,7 +1070,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Personalising With a Name</h2>
       <p>Not every piece needs a photo. A name, a heart, and a few hand-sculpted flowers on a painted MDF base is its own kind of Friendship Day keepsake, useful when a friend prefers a nameplate-style gift over a photo piece.</p>
       <h2>The Workshop Kraftykinni Runs for Friendship Day</h2>
-      <p>Kraftykinni runs this as part of its existing MDF Fridge Magnet workshop, adapted with photo transfers and Friendship Day details. Participants paint pre-cut MDF shapes with Fevicryl acrylic colours and finish them with hand-sculpted clay details — no experience needed. Each participant typically finishes 1 to 2 pieces in a 1 to 2 hour session, for groups of 20 to 200+ across Delhi, Gurgaon, and Noida, with online kits shipped pan-India.</p>
+      <p>Kraftykinni runs this as part of its existing MDF Fridge Magnet workshop, adapted with photo transfers and Friendship Day details. Participants paint pre-cut MDF shapes with Fevicryl acrylic colours and finish them with hand-sculpted clay details — no experience needed. Sessions are led by Shramita Govil, Fevicryl Certified Artist. Each participant typically finishes 1 to 2 pieces in a 1 to 2 hour session, for groups of 20 to 200+ across Delhi, Gurgaon, and Noida, with online kits shipped pan-India.</p>
       <h2>How to Book for Friendship Day 2026</h2>
       <p>Friendship Day 2026 is 2 August 2026 — less than a week away. WhatsApp +91 9599622210 as soon as possible with your date, location, group size, and the photos you'd like used; confirmation within 24 hours on whether it can be arranged in time.</p>
       <h2>Frequently Asked Questions</h2>
@@ -1087,7 +1087,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/dot-mandala-art-corporate-workshop-noida',
-    title: 'Dot Mandala Art Corporate Workshop Noida | KK',
+    title: 'Dot Mandala Art Corporate Workshop | Kraftykinni',
     description: 'A 20-person team in Noida Sector 90 traded desks for dot mandala art with Kraftykinni — a relaxed, no-experience corporate reset. See how the session ran.',
     h1: 'Dot Mandala Art at a Noida Corporate Office — 20 People, One Desk-Side Afternoon',
     schemas: [
@@ -1113,7 +1113,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Why It Works as a Corporate Reset</h2>
       <p>There is something genuinely disarming about watching corporate hierarchy fall away the moment everyone is handed a paintbrush and a set of dots to fill in. For that hour, nobody was checking their inbox. "Burnout" is talked about often in workplace circles, usually as something solved with more rest — but sometimes the better reset for an overworked mind is doing something completely different with your hands for an hour, with a real object to show for it at the end.</p>
       <h2>Book a Desk-Side Dot Mandala Session for Your Team</h2>
-      <p>Kraftykinni runs Dot Mandala Art as a desk-side or boardroom corporate session, no offsite venue required. Groups from 20 to 200+, across Delhi, Gurgaon, and Noida. Pricing starts at ₹600 per person, all materials included. WhatsApp +91 9599622210 to book or check availability.</p>
+      <p>Kraftykinni runs Dot Mandala Art as a desk-side or boardroom corporate session, led by Shramita Govil, Fevicryl Certified Artist, with no offsite venue required. Groups from 20 to 200+, across Delhi, Gurgaon, and Noida. Pricing starts at ₹600 per person, all materials included. WhatsApp +91 9599622210 to book or check availability.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>What is Dot Mandala Art?</h3>
       <p>A version of mandala painting built entirely from dots rather than brush strokes, using fine dotting tools and acrylic paint on a round wooden or MDF base. It requires patience rather than prior art skill.</p>
@@ -1473,7 +1473,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/janmashtami-krishna-art-workshop-delhi-ncr',
-    title: 'Janmashtami Craft Workshop Ideas Delhi NCR | KK',
+    title: 'Janmashtami Craft Workshop Ideas Delhi NCR | Kraftykinni',
     description: 'Celebrate Janmashtami 2026 with hand-painted Dahi Handi matkis and mirror-work Radha Krishna trinket trays. School and private workshops across Delhi NCR.',
     h1: 'Janmashtami 2026 — Dahi Handi Matki Painting and Radha Krishna Trinket Trays in Delhi NCR',
     schemas: [
