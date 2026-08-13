@@ -68,6 +68,7 @@ ROUTES = [
     "/blog/raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr",
     "/blog/friendship-day-photo-magnet-workshop-delhi-ncr",
     "/blog/dot-mandala-art-corporate-workshop-noida",
+    "/blog/janmashtami-krishna-art-workshop-delhi-ncr",
 ]
 
 # SEO length thresholds

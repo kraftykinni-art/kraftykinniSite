@@ -1470,6 +1470,49 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h3>What is the minimum group size for an art workshop in Noida?</h3>
       <p>The minimum group size is 20 participants, with sessions scaling up to 200+ in a single booking. Additional facilitators are brought in for larger groups.</p>`,
   },
+
+  {
+    path: '/blog/janmashtami-krishna-art-workshop-delhi-ncr',
+    title: 'Janmashtami Craft Workshop Ideas Delhi NCR | KK',
+    description: 'Celebrate Janmashtami 2026 with hand-painted Dahi Handi matkis and mirror-work Radha Krishna trinket trays. School and private workshops across Delhi NCR.',
+    h1: 'Janmashtami 2026 — Dahi Handi Matki Painting and Radha Krishna Trinket Trays in Delhi NCR',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Janmashtami 2026 — Dahi Handi Matki Painting and Radha Krishna Trinket Trays in Delhi NCR',
+        'description': 'Celebrate Janmashtami 2026 with hand-painted Dahi Handi matkis and mirror-work Radha Krishna trinket trays. School and private workshops across Delhi NCR.',
+        'url': 'https://kraftykinni.in/blog/janmashtami-krishna-art-workshop-delhi-ncr/',
+        'datePublished': '2026-08-13',
+        'dateModified': '2026-08-13',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/janmashtami-krishna-art-workshop-delhi-ncr/' },
+      },
+    ],
+    bodyContent: `<h1>Janmashtami 2026 — Dahi Handi Matki Painting and Radha Krishna Trinket Trays in Delhi NCR</h1>
+      <p>Every year in the days before Janmashtami, Delhi NCR classrooms and living rooms turn into miniature Vrindavans — peacock feathers, mini matkis, and Radha-Krishna cutouts start appearing well before the festival itself. Krishna Janmashtami falls on Friday, 4 September 2026, and it remains one of the busiest festival-craft windows on the Kraftykinni calendar. This year Kraftykinni is running two Janmashtami-themed variations of its regular workshops: a hand-painted Dahi Handi matki, and a mirror-embellished Radha Krishna trinket tray, both built on techniques Shramita Govil, a Fevicryl Certified Artist, already teaches year-round.</p>
+      <h2>Dahi Handi Matki Painting — A Clay Art Variation</h2>
+      <p>The Dahi Handi — the pot Krishna is said to have raided for butter as a child — is the most recognisable symbol of Janmashtami. Participants start with a plain clay pot and build it up with acrylic paint, hand-lettering such as "Radhe Krishna," a string of beads, and cotton stuffed at the rim to represent the makhan spilling out, finished with a peacock feather and a small Krishna-and-cow figurine. Sessions run 1.5 to 2 hours, no sculpting experience needed.</p>
+      <h2>Radha Krishna Mirror Trinket Tray — A Trinket Tray Painting Variation</h2>
+      <p>This option builds on the regular Trinket Tray Painting workshop. Participants paint a Radha Krishna scene at the centre of a round MDF tray, bordered by a lotus-petal frame finished with small mirror pieces, echoing the mirror-inlay technique from the Lippan Art workshop. It runs as a guided, step-by-step session, and the finished tray doubles as a jewellery or desk tray for the rest of the year.</p>
+      <h2>Why Janmashtami Craft Works Well for Schools and Home Puja</h2>
+      <p>For schools, a hands-on craft period complements dress-up and storytelling and sends every child home with something they made. For private bookings, a hand-painted matki or trinket tray gives families a puja-ready decoration without needing to source one from a shop.</p>
+      <h2>Book a Janmashtami Workshop in Delhi NCR</h2>
+      <p>Kraftykinni runs both workshops for schools, housing societies, and private bookings across Delhi, Gurgaon, and Noida ahead of Janmashtami on 4 September 2026. Pricing starts at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for groups of 20–50, all materials included. WhatsApp +91 9599622210 to book.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is Janmashtami in 2026?</h3>
+      <p>Krishna Janmashtami falls on Friday, 4 September 2026. Booking a festival craft session a week or two ahead is recommended.</p>
+      <h3>What is Dahi Handi Matki Painting?</h3>
+      <p>A Janmashtami variation of the Clay Art workshop, where participants hand-paint a plain clay pot with festival motifs to recreate the Dahi Handi.</p>
+      <h3>What is the Radha Krishna Trinket Tray workshop?</h3>
+      <p>A themed version of the Trinket Tray Painting workshop — a hand-painted Radha Krishna scene with a mirror-embellished lotus border on a round MDF tray.</p>
+      <h3>Are these workshops suitable for schools?</h3>
+      <p>Yes. Both formats run in 1.5 to 2 hours, fit comfortably into a school festival period, and need no prior art experience.</p>
+      <h3>How do I book a Janmashtami workshop before September 4?</h3>
+      <p>WhatsApp +91 9599622210 with your preferred date, location, and group size. Booking a week or two ahead is recommended.</p>
+    `,
+  },
 ];
 
 // ─── Markdown twins (Markdown Negotiation for AI agents) ────────────────────
@@ -1721,6 +1764,7 @@ const sitemapEntries = [
   { loc: '/blog/raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/friendship-day-photo-magnet-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/dot-mandala-art-corporate-workshop-noida', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/janmashtami-krishna-art-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';

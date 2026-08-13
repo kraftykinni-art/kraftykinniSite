@@ -1243,4 +1243,69 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'janmashtami-krishna-art-workshop-delhi-ncr',
+    title: 'Janmashtami 2026 — Dahi Handi Matki Painting and Radha Krishna Trinket Trays in Delhi NCR',
+    metaTitle: 'Janmashtami Craft Workshop Ideas Delhi NCR | KK',
+    metaDescription:
+      'Celebrate Janmashtami 2026 with hand-painted Dahi Handi matkis and mirror-work Radha Krishna trinket trays. School and private workshops across Delhi NCR.',
+    publishDate: '2026-08-13',
+    category: 'Workshop Guides' as const,
+    excerpt:
+      'Krishna Janmashtami falls on Friday, 4 September 2026. Kraftykinni is running two festival-themed workshop variations this year — a hand-painted Dahi Handi matki and a mirror-work Radha Krishna trinket tray — for schools, housing societies, and private bookings across Delhi NCR.',
+    keywords: [
+      'janmashtami craft workshop Delhi NCR',
+      'dahi handi matki painting workshop',
+      'radha krishna trinket tray workshop',
+      'janmashtami art workshop for schools',
+      'krishna janmashtami craft ideas Delhi',
+    ],
+    sections: [
+      {
+        body: `Every year in the days before Janmashtami, Delhi NCR classrooms and living rooms turn into miniature Vrindavans — peacock feathers, mini matkis, and Radha-Krishna cutouts start appearing on desks and windowsills well before the festival itself. Krishna Janmashtami falls on Friday, 4 September 2026, and it remains one of the busiest festival-craft windows on the Kraftykinni calendar, especially for schools running dress-up-and-craft days and families decorating for puja at home.\n\nThis year Kraftykinni is running two Janmashtami-themed variations of its regular workshops: a hand-painted Dahi Handi matki, and a mirror-embellished Radha Krishna trinket tray. Both are built on techniques [Shramita Govil](/about/), a Fevicryl Certified Artist, already teaches year-round — Clay Art and Trinket Tray Painting — adapted with festival motifs, so schools and families get something that actually looks like Janmashtami rather than a generic craft with a diya glued on.`,
+      },
+      {
+        heading: 'Dahi Handi Matki Painting — A Clay Art Variation',
+        body: `The Dahi Handi — the pot Krishna is said to have raided for butter as a child — is the most recognisable symbol of Janmashtami, and painting one is a natural fit for the [Clay Art workshop](/workshops/clay-art/). Participants start with a plain clay pot and build it up with acrylic paint, hand-lettering such as "Radhe Krishna," a string of beads around the neck, and cotton stuffed at the rim to represent the makhan spilling out.\n\nThe finishing touches — a peacock feather, a small Krishna-and-cow figurine, string lights tucked around the base — turn a plain clay pot into a piece that works equally well as a puja centrepiece or a keepsake for the rest of the year. Setup follows the same format as the standard Clay Art sessions: 1.5 to 2 hours, no sculpting experience needed, and every participant leaves with their own finished matki. Schools running a Janmashtami craft period usually pair this with a Radha-Krishna dress-up segment; families booking it for home puja usually want it a few days ahead of the 4th, so the paint has time to fully cure before it goes on display.`,
+        image: 'https://cdn.kraftykinni.in/janmashtami-dahi-handi-matki-painting-kraftykinni.webp',
+        imageAlt: 'Hand-painted Dahi Handi matki for Janmashtami with Radhe Krishna lettering, cotton makhan, peacock feather and a Krishna figurine — Kraftykinni Clay Art workshop',
+      },
+      {
+        heading: 'Radha Krishna Mirror Trinket Tray — A Trinket Tray Painting Variation',
+        body: `The second Janmashtami option builds on the regular [Trinket Tray Painting workshop](/workshops/trinket-tray/). Instead of a freeform pattern, participants paint a Radha Krishna scene at the centre of a round MDF tray — Krishna playing the flute is the most requested pose — bordered by a lotus-petal frame finished with small mirror pieces, echoing the mirror-inlay technique from the [Lippan Art workshop](/workshops/lippan-art/).\n\nIt takes longer than a standard trinket tray session because of the figure painting and mirror placement, so it runs as a guided, step-by-step session rather than a freeform one. Shramita demonstrates the Radha Krishna outline first, then participants build up colour and mirror detail at their own pace, working from a plain tray to a finished piece across the session. The tray works as festive wall decor through Janmashtami and doubles as a jewellery or trinket tray for the rest of the year, which is part of why it is popular with schools looking for a craft that does not get put away after a week.`,
+        image: 'https://cdn.kraftykinni.in/janmashtami-radha-krishna-mirror-trinket-tray-kraftykinni.webp',
+        imageAlt: 'Hand-painted round Radha Krishna trinket tray with mirror-work lotus border, made in a Kraftykinni Janmashtami Trinket Tray Painting workshop in Delhi NCR',
+      },
+      {
+        heading: 'Why Janmashtami Craft Works Well for Schools and Home Puja',
+        body: `For schools, Janmashtami sits in the small group of festivals where a hands-on craft period genuinely complements the rest of the day's programme — dress-up as Radha and Krishna, a short retelling of the birth story, and a craft table that sends every child home with something they made rather than something bought. It also gives teachers a structured activity block that does not need last-minute props beyond what the workshop brings, since Kraftykinni handles material setup and cleanup for the group.\n\nFor private bookings, the appeal is more practical: a hand-painted matki or trinket tray gives families a puja-ready decoration without needing to source one from a shop, and it is an activity parents can do with children in the days leading up to the festival rather than the rush on the 4th itself. Housing society and kitty-party groups have also booked the trinket tray format as a shorter festive activity slot ahead of Janmashtami gatherings.`,
+      },
+      {
+        heading: 'Book a Janmashtami Workshop in Delhi NCR',
+        body: `Kraftykinni runs both the Dahi Handi Matki Painting and Radha Krishna Trinket Tray workshops for schools, housing societies, and private bookings across Delhi, Gurgaon, and Noida, in the run-up to Janmashtami on 4 September 2026. Sessions run 1.5 to 2 hours, with pricing starting at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for groups of 20–50 — all materials included. To check availability before the festival, WhatsApp **+91 9599622210** or see our [school workshops page](/school-art-workshops/) for group bookings.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'When is Janmashtami in 2026?',
+        a: 'Krishna Janmashtami falls on Friday, 4 September 2026. Schools and families in Delhi NCR typically book festival craft sessions in the week or two before the date, so pieces like a painted matki or trinket tray are ready in time for puja and dress-up day.',
+      },
+      {
+        q: 'What is Dahi Handi Matki Painting?',
+        a: 'It is a Janmashtami variation of Kraftykinni\'s Clay Art workshop, where participants hand-paint a plain clay pot with festival motifs — lettering, beads, a peacock feather, and cotton to represent spilling butter — to recreate the Dahi Handi, the pot associated with Krishna\'s childhood butter-stealing stories.',
+      },
+      {
+        q: 'What is the Radha Krishna Trinket Tray workshop?',
+        a: 'It is a themed version of Kraftykinni\'s Trinket Tray Painting workshop. Participants paint a Radha Krishna scene on a round MDF tray, finished with a mirror-embellished lotus border. The tray doubles as festive Janmashtami decor and a functional jewellery or desk tray afterward.',
+      },
+      {
+        q: 'Are these workshops suitable for schools?',
+        a: 'Yes. Both formats are designed for group settings and run in 1.5 to 2 hours, which fits comfortably into a school festival period. No prior art experience is needed, and every student takes home a finished piece.',
+      },
+      {
+        q: 'How do I book a Janmashtami workshop before September 4?',
+        a: 'WhatsApp +91 9599622210 with your preferred date, location (Delhi, Gurgaon, or Noida), and group size. Booking a week or two ahead of Janmashtami is recommended since this is a high-demand festival window.',
+      },
+    ],
+  },
 ];
