@@ -69,6 +69,7 @@ ROUTES = [
     "/blog/friendship-day-photo-magnet-workshop-delhi-ncr",
     "/blog/dot-mandala-art-corporate-workshop-noida",
     "/blog/janmashtami-krishna-art-workshop-delhi-ncr",
+    "/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr",
 ]
 
 # SEO length thresholds

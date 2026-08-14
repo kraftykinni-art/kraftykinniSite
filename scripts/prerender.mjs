@@ -1513,6 +1513,55 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>WhatsApp +91 9599622210 with your preferred date, location, and group size. Booking a week or two ahead is recommended.</p>
     `,
   },
+
+  {
+    path: '/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr',
+    title: 'Ganesh Chaturthi Clay Idol Workshop Delhi NCR | Kraftykinni',
+    description: 'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate CSR and private workshops in Delhi NCR.',
+    h1: 'Ganesh Chaturthi 2026 — Eco-Friendly Clay Ganpati Idol Painting Workshops in Delhi NCR',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Ganesh Chaturthi 2026 — Eco-Friendly Clay Ganpati Idol Painting Workshops in Delhi NCR',
+        'description': 'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate CSR and private workshops in Delhi NCR.',
+        'url': 'https://kraftykinni.in/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr/',
+        'datePublished': '2026-08-14',
+        'dateModified': '2026-08-14',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr/' },
+      },
+    ],
+    bodyContent: `<h1>Ganesh Chaturthi 2026 — Eco-Friendly Clay Ganpati Idol Painting Workshops in Delhi NCR</h1>
+      <p>Every September, Delhi NCR balconies and puja corners fill up with Ganpati idols bought in a hurry from the nearest stall — usually Plaster of Paris, usually painted in the same handful of factory colours. Ganesh Chaturthi falls on Monday, 14 September 2026, and this year Kraftykinni is running it differently: a hands-on workshop where participants paint their own eco-friendly clay Ganpati idol from a plain, unpainted base. The workshop is a variation of Kraftykinni's regular Clay Art workshop, led by Shramita Govil, a Fevicryl Certified Artist, running for schools, housing societies, corporate CSR days, and private home-puja bookings across Delhi, Gurgaon, and Noida.</p>
+      <h2>Why Clay, Not Plaster of Paris</h2>
+      <p>Kraftykinni's Ganpati idols are made from natural clay rather than Plaster of Paris — clay dissolves cleanly during visarjan, while POP idols do not break down the same way and are widely discouraged for that reason. Participants start with a plain, unpainted clay idol rather than a template that is already coloured in, so every finished Ganpati looks slightly different.</p>
+      <h2>How the Painting Session Works</h2>
+      <p>Each participant works on their own plain clay idol using acrylic paints, fine brushes, and metallic gold detailing for the crown, jewellery, and dhoti. Shramita demonstrates the base colours and traditional detailing first, then participants build up their own idol at their own pace, finishing with small extras like a garland, a modak, or a mouse at the base. A session runs 1.5 to 2 hours, no prior experience needed, and every participant leaves with their own finished, immersion-ready idol.</p>
+      <h2>Ganesh Wall Hangings — An MDF Fridge Magnet Variation</h2>
+      <p>Kraftykinni also runs a Ganesh wall-hanging format built on the same technique as the MDF Fridge Magnet workshop — a hand-cut MDF shape, hand-painted rather than moulded. The base is cut into a small plaque with a Ganesh face and trunk in profile, finished with acrylic colour, a pearl bead border, a jute hanging cord strung with wooden beads, and a small brass bell. It works as a door or entrance hanging through the festival and stays up as a keepsake afterward.</p>
+      <h2>Ganesh Tealight Holders — A Trinket Tray Painting Variation</h2>
+      <p>The second add-on format builds on the Trinket Tray Painting workshop, using the same round MDF base and mirror-inlay technique from Lippan Art. Participants paint a Ganesh silhouette on a small stand, then finish a round base with a mirror-cutwork border, with a tealight seated at the centre — a quicker table-top piece that suits kitty parties and festive evenings.</p>
+      <h2>Who These Workshops Are For</h2>
+      <p>Schools use the clay idol session as a Ganesh Chaturthi craft period paired with a short story of Ganesha's birth, with the wall hanging as a quicker add-on for younger grades. Housing societies and RWAs book the idol session ahead of their society's Ganpati sthapana, often adding the tealight holder as a shorter evening craft slot. Corporate teams increasingly book the clay idol workshop as a CSR or sustainability-linked activity, since the "no Plaster of Paris" choice gives a wellness day a genuine, tangible angle. Private bookings tend to be families wanting a hand-painted idol for home puja, sometimes with the wall hanging or tealight holder added on.</p>
+      <h2>Book a Ganesh Chaturthi Workshop in Delhi NCR</h2>
+      <p>Kraftykinni runs the eco-friendly Clay Ganpati idol workshop, along with the MDF wall hanging and mirror-work tealight holder formats, for schools, housing societies, corporate CSR days, and private bookings across Delhi, Gurgaon, and Noida, ahead of Ganesh Chaturthi on 14 September 2026. Sessions run 1.5 to 2 hours, with pricing starting at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for groups of 20–50 — all materials included. WhatsApp +91 9599622210 to check availability.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is Ganesh Chaturthi in 2026?</h3>
+      <p>Ganesh Chaturthi falls on Monday, 14 September 2026. Schools, housing societies, and families in Delhi NCR typically book festival craft sessions in the two weeks before the date.</p>
+      <h3>Why use a clay Ganpati idol instead of Plaster of Paris?</h3>
+      <p>Clay idols dissolve cleanly during visarjan, while Plaster of Paris idols do not break down the same way and are widely discouraged for that reason. Kraftykinni's clay idols are genuinely immersion-safe, not just decorative.</p>
+      <h3>What does the Ganesh Chaturthi clay idol workshop actually involve?</h3>
+      <p>Participants hand-paint their own plain, unpainted clay Ganpati idol using acrylic paints and metallic gold detailing, guided step by step by Shramita Govil, a Fevicryl Certified Artist. Sessions run 1.5 to 2 hours.</p>
+      <h3>What other Ganesh Chaturthi craft formats does Kraftykinni offer besides the clay idol?</h3>
+      <p>Kraftykinni also runs a hand-painted MDF Ganesh wall hanging (a variation of the MDF Fridge Magnet workshop) and a mirror-work Ganesh tealight holder (a variation of Trinket Tray Painting), both as shorter add-on activities alongside the main clay idol session.</p>
+      <h3>Can this be booked as a corporate CSR activity?</h3>
+      <p>Yes. Companies book the eco-friendly clay Ganpati idol workshop as a CSR or sustainability-linked activity ahead of Ganesh Chaturthi, replacing a Plaster of Paris purchase with a hands-on, immersion-safe alternative the team makes themselves.</p>
+      <h3>How much does a Ganesh Chaturthi workshop cost in Delhi NCR?</h3>
+      <p>Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100, and ₹800 per person for groups of 20–50. All materials are included, with no separate venue charge since Kraftykinni travels to your location.</p>
+    `,
+  },
 ];
 
 // ─── Markdown twins (Markdown Negotiation for AI agents) ────────────────────
@@ -1765,6 +1814,7 @@ const sitemapEntries = [
   { loc: '/blog/friendship-day-photo-magnet-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/dot-mandala-art-corporate-workshop-noida', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/janmashtami-krishna-art-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';
