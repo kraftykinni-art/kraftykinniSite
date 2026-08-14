@@ -1517,14 +1517,14 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr',
     title: 'Ganesh Chaturthi Clay Idol Workshop Delhi NCR | Kraftykinni',
-    description: 'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate CSR and private workshops in Delhi NCR.',
+    description: 'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate and private workshops in Delhi NCR.',
     h1: 'Ganesh Chaturthi 2026 — Eco-Friendly Clay Ganpati Idol Painting Workshops in Delhi NCR',
     schemas: [
       {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
         'headline': 'Ganesh Chaturthi 2026 — Eco-Friendly Clay Ganpati Idol Painting Workshops in Delhi NCR',
-        'description': 'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate CSR and private workshops in Delhi NCR.',
+        'description': 'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate and private workshops in Delhi NCR.',
         'url': 'https://kraftykinni.in/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr/',
         'datePublished': '2026-08-14',
         'dateModified': '2026-08-14',

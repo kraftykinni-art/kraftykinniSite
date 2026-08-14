@@ -1313,7 +1313,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Ganesh Chaturthi 2026 — Eco-Friendly Clay Ganpati Idol Painting Workshops in Delhi NCR',
     metaTitle: 'Ganesh Chaturthi Clay Idol Workshop Delhi NCR | Kraftykinni',
     metaDescription:
-      'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate CSR and private workshops in Delhi NCR.',
+      'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate and private workshops in Delhi NCR.',
     publishDate: '2026-08-14',
     category: 'Workshop Guides' as const,
     excerpt:
