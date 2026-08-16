@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "motion/react";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -6,9 +7,11 @@ import {
   Linkedin,
   PinIcon as Pinterest,
   Send,
+  ChevronDown,
 } from "lucide-react";
 
 export default function ContactFooter() {
+  const [showMoreDetails, setShowMoreDetails] = useState(false);
   const socialLinks = [
     { icon: <Youtube size={20} />,   href: "https://www.youtube.com/@kraftykinni",    label: "YouTube" },
     { icon: <Instagram size={20} />, href: "https://www.instagram.com/kraftykinni",   label: "Instagram" },
@@ -190,58 +193,72 @@ export default function ContactFooter() {
                   <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite" placeholder="Your Name" />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite" placeholder="your@email.com" />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                  <input type="tel" id="phone" name="phone" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite" placeholder="+91 98765 43210" />
-                </div>
-                <div>
-                  <label htmlFor="groupSize" className="block text-sm font-medium text-gray-700 mb-2">Group Size</label>
-                  <select id="groupSize" name="groupSize" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600">
-                    <option value="">Select Size</option>
-                    <option value="20-50">20 - 50 pax</option>
-                    <option value="50-100">50 - 100 pax</option>
-                    <option value="100+">100+ pax</option>
-                  </select>
+                  <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite" placeholder="+91 98765 43210" />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
-                  <input type="date" id="date" name="date" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600" />
-                </div>
-                <div>
-                  <label htmlFor="workshop" className="block text-sm font-medium text-gray-700 mb-2">Workshop Interest</label>
-                  <select id="workshop" name="workshop" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600">
-                    <option value="">Select Workshop</option>
-                    <option>Boho Canvas Art</option>
-                    <option>Bottle Lamp Art</option>
-                    <option>Lippan Art</option>
-                    <option>Tie &amp; Dye</option>
-                    <option>Trinket Tray Painting</option>
-                    <option>Mandala Art</option>
-                    <option>Block Printing</option>
-                    <option>Clay Art</option>
-                    <option>MDF Fridge Magnet</option>
-                    <option>Glass Painting</option>
-                    <option>Texture Art</option>
-                    <option>Tote Bag Painting</option>
-                    <option>Canvas Pouch Painting</option>
-                    <option>Not Sure Yet</option>
-                  </select>
-                </div>
-              </div>
+              {!showMoreDetails && (
+                <button
+                  type="button"
+                  onClick={() => setShowMoreDetails(true)}
+                  className="flex items-center gap-1.5 text-sm font-medium text-brand-pink hover:text-brand-pink-light transition-colors"
+                >
+                  <ChevronDown size={16} />
+                  Add more details (optional) — helps us send a faster proposal
+                </button>
+              )}
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite resize-none" placeholder="Tell us more about your event..."></textarea>
-              </div>
+              {showMoreDetails && (
+                <div className="space-y-6 animate-[slideUpFade_0.3s_ease-out_both]">
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" name="email" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite" placeholder="your@email.com" />
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+                      <input type="date" id="date" name="date" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600" />
+                    </div>
+                    <div>
+                      <label htmlFor="groupSize" className="block text-sm font-medium text-gray-700 mb-2">Group Size</label>
+                      <select id="groupSize" name="groupSize" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600">
+                        <option value="">Select Size</option>
+                        <option value="20-50">20 - 50 pax</option>
+                        <option value="50-100">50 - 100 pax</option>
+                        <option value="100+">100+ pax</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="workshop" className="block text-sm font-medium text-gray-700 mb-2">Workshop Interest</label>
+                    <select id="workshop" name="workshop" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite text-gray-600">
+                      <option value="">Select Workshop</option>
+                      <option>Boho Canvas Art</option>
+                      <option>Bottle Lamp Art</option>
+                      <option>Lippan Art</option>
+                      <option>Tie &amp; Dye</option>
+                      <option>Trinket Tray Painting</option>
+                      <option>Mandala Art</option>
+                      <option>Block Printing</option>
+                      <option>Clay Art</option>
+                      <option>MDF Fridge Magnet</option>
+                      <option>Glass Painting</option>
+                      <option>Texture Art</option>
+                      <option>Tote Bag Painting</option>
+                      <option>Canvas Pouch Painting</option>
+                      <option>Not Sure Yet</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-brand-pink focus:border-transparent outline-none transition-all bg-brand-offwhite resize-none" placeholder="Tell us more about your event..."></textarea>
+                  </div>
+                </div>
+              )}
 
               <button type="submit" className="w-full bg-brand-pink hover:bg-brand-pink-light text-white px-8 py-4 rounded-xl text-base font-medium transition-all hover:shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
                 Send Request <Send size={18} />

@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, Star } from 'lucide-react';
 
 const CDN = 'https://cdn.kraftykinni.in/assets';
 const bohoArt = `${CDN}/boho-art.webp`;
@@ -9,6 +9,11 @@ const lippanArt = `${CDN}/lippan-art.webp`;
 const lippanArtMobile = `${CDN}/lippan-art-mobile.webp`;
 const tieAndDye = `${CDN}/tie-and-dye.webp`;
 const tieAndDyeMobile = `${CDN}/tie-and-dye-mobile.webp`;
+
+// Real Google Business Profile URL — same one already cited on
+// testimonial blockquotes in scripts/prerender.mjs.
+const GOOGLE_PROFILE_URL =
+  'https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v';
 
 export default function Hero() {
   return (
@@ -54,6 +59,30 @@ export default function Hero() {
                 Request a Quote
               </a>
             </div>
+
+            <a
+              href={GOOGLE_PROFILE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-6 group"
+              aria-label="4.9 out of 5 stars on Google, based on 18 reviews — open our Google Business Profile"
+            >
+              <div className="flex items-center gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star
+                    key={i}
+                    size={16}
+                    className="fill-amber-400 text-amber-400"
+                  />
+                ))}
+              </div>
+              <span className="text-sm font-semibold text-brand-charcoal group-hover:text-brand-pink transition-colors">
+                4.9
+              </span>
+              <span className="text-sm text-gray-500 group-hover:text-brand-pink transition-colors underline decoration-gray-300 group-hover:decoration-brand-pink underline-offset-2">
+                18 Google Reviews
+              </span>
+            </a>
           </div>
 
           {/* Image Grid */}

@@ -1,9 +1,12 @@
 import { MessageCircle } from 'lucide-react';
 
+const PREFILLED_MESSAGE =
+  "Hi Kraftykinni! I'm interested in booking an art workshop. Could you share more details?";
+
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/919599622210"
+      href={`https://wa.me/919599622210?text=${encodeURIComponent(PREFILLED_MESSAGE)}`}
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => {
