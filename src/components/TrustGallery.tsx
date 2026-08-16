@@ -35,7 +35,7 @@ const photos: GalleryPhoto[] = [
   {
     src: 'https://cdn.kraftykinni.in/corporate-workshop-coaster-painting-closeup-kraftykinni.webp',
     alt: 'Close-up of corporate participants hand-painting a coaster together',
-    tag: 'Max Tower Corporate Workshop',
+    tag: 'Max Estate Corporate Workshop',
   },
   {
     src: 'https://cdn.kraftykinni.in/summer-workshop-mall-kids-event-kraftykinni.webp',
