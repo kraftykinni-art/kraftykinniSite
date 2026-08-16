@@ -27,3 +27,26 @@ html {
   0% { transform: scale(0); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
+
+@keyframes slideUpFade {
+  0% { transform: translateY(16px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes pingRing {
+  0% { transform: scale(1); opacity: 0.55; }
+  80% { transform: scale(1.9); opacity: 0; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+
+@keyframes attentionPulse {
+  0%, 88% { transform: scale(1); }
+  92% { transform: scale(1.06); }
+  96% { transform: scale(0.99); }
+  100% { transform: scale(1); }
+}
