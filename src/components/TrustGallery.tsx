@@ -15,7 +15,7 @@ const photos: GalleryPhoto[] = [
   {
     src: 'https://cdn.kraftykinni.in/school-assembly-stage-mass-workshop-kraftykinni.webp',
     alt: 'Students on stage holding their finished artwork at a school Kraftykinni workshop',
-    tag: 'Cambridge University',
+    tag: 'Cambridge School',
   },
   {
     src: 'https://cdn.kraftykinni.in/founder-hands-on-teaching-workshop-kraftykinni.webp',
