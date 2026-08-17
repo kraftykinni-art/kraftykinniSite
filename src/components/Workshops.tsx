@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { Clock } from 'lucide-react';
+import { Clock, Tag } from 'lucide-react';
 import { workshopsData, type Category } from '../data/workshops';
 
 const categories: Category[] = ['All', 'Signature', 'Heritage', 'Everyday'];
@@ -57,39 +57,50 @@ export default function Workshops() {
                 transition={{ duration: 0.3 }}
                 key={workshop.id}
               >
-                {/* Each card is now a real link — good for SEO and navigation */}
-                <Link
-                  to={`/workshops/${workshop.id}`}
-                  className="group block bg-brand-offwhite rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
-                >
-                  <div className="aspect-[4/3] overflow-hidden relative">
-                    <img
-                      src={workshop.image}
-                      alt={`${workshop.title} workshop in Delhi NCR`}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      width={600}
-                      height={450}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-brand-slate">
-                      {workshop.category}
+                {/* Card is a group; the main Link covers image+details.
+                    "See pricing" is a separate anchor below it (can't nest
+                    an <a> inside another <a>). */}
+                <div className="group bg-brand-offwhite rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                  <Link to={`/workshops/${workshop.id}`} className="block">
+                    <div className="aspect-[4/3] overflow-hidden relative">
+                      <img
+                        src={workshop.image}
+                        alt={`${workshop.title} workshop in Delhi NCR`}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        width={600}
+                        height={450}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-brand-slate">
+                        {workshop.category}
+                      </div>
                     </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-serif text-xl font-bold text-brand-slate mb-2">
-                      {workshop.title}
-                    </h3>
-                    <div className="flex items-center text-sm text-brand-slate/60 mb-4">
-                      <Clock size={16} className="mr-2" />
-                      {workshop.duration}
+                    <div className="px-6 pt-6">
+                      <h3 className="font-serif text-xl font-bold text-brand-slate mb-2">
+                        {workshop.title}
+                      </h3>
+                      <div className="flex items-center text-sm text-brand-slate/60 mb-4">
+                        <Clock size={16} className="mr-2" />
+                        {workshop.duration}
+                      </div>
+                      <span className="text-brand-pink font-medium text-sm group-hover:underline underline-offset-4">
+                        View Details →
+                      </span>
                     </div>
-                    <span className="text-brand-pink font-medium text-sm group-hover:underline underline-offset-4">
-                      View Details →
-                    </span>
+                  </Link>
+
+                  <div className="px-6 pb-6 pt-3">
+                    <a
+                      href="#pricing"
+                      className="inline-flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-brand-pink transition-colors"
+                    >
+                      <Tag size={12} />
+                      See pricing →
+                    </a>
                   </div>
-                </Link>
+                </div>
               </motion.div>
             ))}
           </AnimatePresence>

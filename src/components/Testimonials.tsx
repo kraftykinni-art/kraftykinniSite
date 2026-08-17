@@ -12,6 +12,7 @@ export default function Testimonials() {
     { name: 'Cars24', logo: `${CDN}/cars24-logo-kraftykinni.webp` },
     { name: 'DoubleTree by Hilton', logo: `${CDN}/doubletree-hilton-logo-kraftykinni.webp` },
     { name: 'Bhutani Alphathum', logo: `${CDN}/bhutani-alphathum-logo-kraftykinni.webp` },
+    { name: 'Tiny Town', logo: `${CDN}/tiny-town-logo-kraftykinni.webp` },
   ];
 
   const testimonials = [
@@ -40,7 +41,7 @@ export default function Testimonials() {
           <h3 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-10">
             Trusted By
           </h3>
-          <div className="flex flex-wrap justify-center items-stretch gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 sm:gap-6 max-w-3xl mx-auto justify-items-center">
             {clients.map((client, index) => (
               <motion.div
                 key={index}
@@ -48,7 +49,7 @@ export default function Testimonials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="flex items-center justify-center w-36 h-24 sm:w-40 sm:h-28 bg-white rounded-2xl border border-gray-100 shadow-sm px-6 py-5 hover:shadow-md transition-shadow"
+                className="flex items-center justify-center w-full h-28 sm:h-32 bg-white rounded-2xl border border-gray-100 shadow-sm px-5 py-4 hover:shadow-md transition-shadow"
               >
                 <img
                   src={client.logo}
