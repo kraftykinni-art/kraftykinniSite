@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import InstagramPopup from '../components/InstagramPopup';
 
 // Lazy-load below-fold components to reduce initial JS bundle
-const About = lazy(() => import('../components/About'));
+const AboutIntro = lazy(() => import('../components/AboutIntro'));
 const TrustGallery = lazy(() => import('../components/TrustGallery'));
 const Testimonials = lazy(() => import('../components/Testimonials'));
 const Workshops = lazy(() => import('../components/Workshops'));
@@ -24,9 +24,9 @@ export default function HomePage() {
         <Hero />
         <Suspense fallback={<div className="min-h-[200px]" />}>
           <TrustGallery />
-          <About />
-          <Testimonials />
           <Workshops />
+          <AboutIntro />
+          <Testimonials />
           <PricingFAQ />
         </Suspense>
       </main>

@@ -1,17 +1,17 @@
 import { motion } from 'motion/react';
-import { Quote, Star } from 'lucide-react';
+import { Quote } from 'lucide-react';
 
-// Real Google Business Profile URL — same one already cited on
-// testimonial blockquotes in scripts/prerender.mjs.
-const GOOGLE_PROFILE_URL =
-  'https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v';
+const CDN = 'https://cdn.kraftykinni.in';
 
 export default function Testimonials() {
   const clients = [
-    'Amity University',
-    'Jaypee Public School',
-    'ABC Tower',
-    'Model National Public School',
+    { name: 'Amity University', logo: `${CDN}/amity-university-logo-kraftykinni.webp` },
+    { name: 'Max Estate', logo: `${CDN}/max-estate-logo-kraftykinni.webp` },
+    { name: 'Cambridge School', logo: `${CDN}/cambridge-school-logo-kraftykinni.webp` },
+    { name: 'Jaypee Public School', logo: `${CDN}/jaypee-public-school-logo-kraftykinni.webp` },
+    { name: 'Cars24', logo: `${CDN}/cars24-logo-kraftykinni.webp` },
+    { name: 'DoubleTree by Hilton', logo: `${CDN}/doubletree-hilton-logo-kraftykinni.webp` },
+    { name: 'Bhutani Alphathum', logo: `${CDN}/bhutani-alphathum-logo-kraftykinni.webp` },
   ];
 
   const testimonials = [
@@ -37,52 +37,29 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Trusted By */}
         <div className="mb-24 text-center">
-          <h3 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-8">
+          <h3 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-10">
             Trusted By
           </h3>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+          <div className="flex flex-wrap justify-center items-stretch gap-4 sm:gap-6">
             {clients.map((client, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="px-6 py-3 bg-white rounded-full shadow-sm border border-gray-100 text-sm font-medium text-brand-charcoal"
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="flex items-center justify-center w-36 h-24 sm:w-40 sm:h-28 bg-white rounded-2xl border border-gray-100 shadow-sm px-6 py-5 hover:shadow-md transition-shadow"
               >
-                {client}
+                <img
+                  src={client.logo}
+                  alt={`${client.name} — Kraftykinni client`}
+                  loading="lazy"
+                  className="max-h-full max-w-full object-contain"
+                />
               </motion.div>
             ))}
           </div>
         </div>
-
-        {/* Google Rating Summary */}
-        <motion.a
-          href={GOOGLE_PROFILE_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="group flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 mb-16 py-6 px-8 bg-white rounded-3xl shadow-sm border border-gray-100 max-w-xl mx-auto hover:shadow-md transition-shadow"
-          aria-label="4.9 out of 5 stars on Google, based on 18 reviews — open our Google Business Profile"
-        >
-          <div className="flex items-center gap-1">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} size={22} className="fill-amber-400 text-amber-400" />
-            ))}
-          </div>
-          <div className="text-center sm:text-left">
-            <div className="flex items-baseline gap-1.5 justify-center sm:justify-start">
-              <span className="font-serif text-2xl font-bold text-brand-slate">4.9</span>
-              <span className="text-sm text-gray-500">out of 5</span>
-            </div>
-            <span className="text-sm text-brand-pink font-medium underline decoration-brand-pink/30 group-hover:decoration-brand-pink transition-colors">
-              Based on 18 Google Reviews
-            </span>
-          </div>
-        </motion.a>
 
         {/* Testimonials */}
         <div className="text-center mb-16">
