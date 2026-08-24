@@ -116,7 +116,16 @@ function parseWorkshopsData() {
         faq.push({ q: m[2].replace(/\\'/g, "'"), a: m[4].replace(/\\'/g, "'") });
       }
     }
-    byId[id] = { benefits, faq };
+    const howToStepsMatch = chunk.match(/howToSteps:\s*\[([\s\S]*?)\n {4}\],/);
+    const howToSteps = [];
+    if (howToStepsMatch) {
+      const stepRe = /name:\s*(['"])([\s\S]*?)\1,\s*text:\s*(['"])([\s\S]*?)\3,/g;
+      let step;
+      while ((step = stepRe.exec(howToStepsMatch[1])) !== null) {
+        howToSteps.push({ name: step[2], text: step[4] });
+      }
+    }
+    byId[id] = { benefits, faq, howToSteps };
   }
   return byId;
 }
@@ -1640,6 +1649,70 @@ ${NAV_MD}
 function injectMeta(html, route) {
   const { path: routePath, title, description, h1, bodyContent, ogImage } = route;
   const canonical = `https://kraftykinni.in${routePath}`;
+  const pageTitle = title.length < 30
+    ? `${title} | Kraftykinni Art Workshops`
+    : title;
+  const boundedTitle = pageTitle.length <= 60
+    ? pageTitle
+    : `${pageTitle.slice(0, 57).trimEnd()}...`;
+  const boundedDescription = description.length <= 160
+    ? description
+    : `${description.slice(0, 157).trimEnd()}...`;
+  const workshopId = routePath.startsWith('/workshops/') ? routePath.split('/')[2] : null;
+  const workshopData = workshopId ? WORKSHOPS_DATA[workshopId] : null;
+  const generatedSchemas = [];
+
+  if (routePath === '/') {
+    generatedSchemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Kraftykinni',
+      url: 'https://kraftykinni.in/',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://www.google.com/search?q=site%3Akraftykinni.in+{search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    });
+  }
+
+  generatedSchemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: boundedTitle,
+    description: boundedDescription,
+    url: canonical,
+    dateModified: today,
+    inLanguage: 'en-IN',
+    isPartOf: { '@type': 'WebSite', name: 'Kraftykinni', url: 'https://kraftykinni.in/' },
+  });
+
+  if (workshopData?.faq?.length) {
+    generatedSchemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: workshopData.faq.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: { '@type': 'Answer', text: item.a },
+      })),
+    });
+  }
+
+  if (workshopData?.howToSteps?.length) {
+    generatedSchemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: `How to create ${title}`,
+      description: `Step-by-step instructions for the ${title} at Kraftykinni.`,
+      step: workshopData.howToSteps.map((step, index) => ({
+        '@type': 'HowToStep',
+        position: index + 1,
+        name: step.name,
+        text: step.text,
+      })),
+    });
+  }
 
   // Update meta tags
   // Strip ALL existing <title> tags (with or without attributes) — prevents duplicate title issue
@@ -1647,23 +1720,23 @@ function injectMeta(html, route) {
   // Remove non-standard <meta name="title"> — BingMaster counts it as a second title tag
   html = html.replace(/<meta name="title"[^>]*>/g, '');
   // Inject the page title with data-rh="true" so React-Helmet updates (not duplicates) it on hydration
-  html = html.replace('</head>', `  <title data-rh="true">${title}</title>\n  </head>`);
+  html = html.replace('</head>', `  <title data-rh="true">${boundedTitle}</title>\n  </head>`);
   // All injected meta tags carry data-rh="true" so React-Helmet replaces them on mount
   // rather than appending new tags alongside them (which causes the 2× description / canonical issue)
   // NOTE: index.html carries data-rh="true" as the first attribute on both tags,
   // so the old narrower patterns never matched.  These attribute-order-agnostic
   // regexes fix the canonical-mismatch and duplicate-description bugs.
-  html = html.replace(/<meta\b[^>]*\bname="description"[^>]*>/, `<meta data-rh="true" name="description" content="${description}">`);
+  html = html.replace(/<meta\b[^>]*\bname="description"[^>]*>/, `<meta data-rh="true" name="description" content="${boundedDescription}">`);
   html = html.replace(/<link\b[^>]*\brel="canonical"[^>]*>/, `<link data-rh="true" rel="canonical" href="${canonical}" />`);
   // hreflang tags are self-referencing per page (see index.html comment) — keep
   // them in sync with canonical so every route points to itself, not home.
   html = html.replace(/<link rel="alternate" hreflang="en-in" href="[^"]*" \/>/, `<link rel="alternate" hreflang="en-in" href="${canonical}" />`);
   html = html.replace(/<link rel="alternate" hreflang="x-default" href="[^"]*" \/>/, `<link rel="alternate" hreflang="x-default" href="${canonical}" />`);
-  html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta data-rh="true" property="og:title" content="${title}">`);
-  html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta data-rh="true" property="og:description" content="${description}">`);
+  html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta data-rh="true" property="og:title" content="${boundedTitle}">`);
+  html = html.replace(/<meta property="og:description" content="[^"]*">/, `<meta data-rh="true" property="og:description" content="${boundedDescription}">`);
   html = html.replace(/<meta property="og:url" content="[^"]*">/, `<meta data-rh="true" property="og:url" content="${canonical}">`);
-  html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta data-rh="true" name="twitter:title" content="${title}">`);
-  html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta data-rh="true" name="twitter:description" content="${description}">`);
+  html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta data-rh="true" name="twitter:title" content="${boundedTitle}">`);
+  html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta data-rh="true" name="twitter:description" content="${boundedDescription}">`);
 
   // Update og:image / twitter:image if route specifies a custom image
   if (ogImage) {
@@ -1675,8 +1748,9 @@ function injectMeta(html, route) {
   }
 
   // Inject per-route JSON-LD schemas into <head>
-  if (route.schemas && route.schemas.length > 0) {
-    const schemaScripts = route.schemas
+  const schemas = [...generatedSchemas, ...(route.schemas || [])];
+  if (schemas.length > 0) {
+    const schemaScripts = schemas
       .map(s => `  <script type="application/ld+json">${JSON.stringify(s)}</script>`)
       .join('\n');
     html = html.replace('</head>', `${schemaScripts}\n  </head>`);
