@@ -47,7 +47,7 @@ public/
 
 scripts/
 └── prerender.mjs    # Postbuild: copies index.html into every route folder
-                     # so GitHub Pages serves 200 OK to Googlebot on all 20 URLs
+                     # so GitHub Pages serves 200 OK to Googlebot on all 42 URLs
 ```
 
 ---
@@ -101,7 +101,10 @@ npm run dev
 ```bash
 npm run build
 # Runs: vite build → scripts/prerender.mjs (postbuild)
-# Output: dist/ with pre-rendered index.html for all 20 routes + fresh sitemap.xml
+# Output: dist/ with pre-rendered HTML for all 42 routes + fresh sitemap.xml
+
+# Verify every generated route contains visible HTML for non-JavaScript crawlers
+npm run validate:prerender
 ```
 
 Push to `main` — GitHub Actions (`.github/workflows/deploy.yml`) runs the build and deploys to GitHub Pages automatically.
@@ -125,6 +128,7 @@ Push to `main` — GitHub Actions (`.github/workflows/deploy.yml`) runs the buil
 
 - Per-page title, meta description, canonical, OG, and Twitter Card tags via react-helmet-async
 - JSON-LD: LocalBusiness + AggregateRating + Review (homepage), Service + BreadcrumbList + FAQPage (all major pages)
-- Pre-rendered static HTML for all 20 routes — Googlebot sees real content, not a JS shell
+- Pre-rendered static HTML for all 42 routes — crawlers see real content, not a JS shell
+- Build-time validation confirms all 42 generated routes contain visible HTML content
 - Sitemap auto-regenerated with today's lastmod on every build
 - All images converted to WebP, lazy-loaded except LCP hero images (fetchPriority=high)

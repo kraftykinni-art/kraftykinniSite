@@ -5,7 +5,8 @@
  *  - REMOVED the hidden #crawler-content div (position:absolute; left:-9999px).
  *    That pattern is a cloaking risk — Google executes JS and sees both the hidden
  *    text AND the React-rendered content, which violates Google's cloaking policy.
- *  - Kept the <noscript> block — fully legitimate for non-JS crawlers (Bing, etc.)
+ *  - Injects a semantic HTML shell into #root — visible to crawlers and replaced
+ *    by React when JavaScript loads
  *  - Added a small inline <script> to each pre-rendered page that strips a trailing
  *    slash from the URL via history.replaceState (no reload). This prevents
  *    /page/ and /page being treated as separate URLs in GSC.
@@ -33,12 +34,12 @@ if (!fs.existsSync(template)) {
 const baseHtml = fs.readFileSync(template, 'utf-8');
 
 // Build date — used both as the sitemap lastmod AND as a genuine, auto-updating
-// freshness signal ("Last updated") in every page's noscript block. Real
+// freshness signal ("Last updated") in every page's static HTML shell. Real
 // because it reflects the actual last build/deploy date, not a hardcoded string.
 const today = new Date().toISOString().slice(0, 10);
 
 // ─── Site-wide navigation + footer links, injected into EVERY route's
-// noscript block. Without this, only the route's own bodyContent was visible
+// static shell. Without this, only the route's own bodyContent was visible
 // to non-JS crawlers (AI bots included) — the real <Navbar>/<ContactFooter>
 // React components never render under <noscript>, so pages had zero
 // internal links, no ARIA landmarks, and no About/Contact/Privacy links
@@ -1687,36 +1688,23 @@ function injectMeta(html, route) {
   // title / description / canonical tags for JS crawlers (Bing, Googlebot).
   html = html.replace('</head>', `  ${DATA_RH_CLEANUP_SCRIPT}\n  </head>`);
 
-  // Build the noscript block ONLY — no hidden crawler div (that was cloaking).
-  // Structured with real <nav>/<main>/<footer> landmarks (not just divs) so
-  // non-JS crawlers and AI bots see standard semantic HTML and a full set of
-  // internal links on every single page, not just whatever bodyContent covers.
-  const noscriptBlock = `
-    <noscript>
-      <div style="font-family:sans-serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333;">
-        ${SITE_NAV_LINKS}
-        <main>
-          ${bodyContent || `<h1>${h1}</h1><p>Please enable JavaScript to view this page.</p>`}
-        </main>
-        ${SITE_FOOTER_LINKS}
-      </div>
-    </noscript>`;
+  // Build a real HTML shell inside #root. This is intentionally visible rather
+  // than hidden or wrapped in noscript: crawlers that do not execute JavaScript
+  // must receive meaningful page content before React replaces the shell.
+  const staticShell = `
+    <div style="font-family:sans-serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333;">
+      ${SITE_NAV_LINKS}
+      <main>
+        ${bodyContent || `<h1>${h1}</h1><p>Please enable JavaScript to view this page.</p>`}
+      </main>
+      ${SITE_FOOTER_LINKS}
+    </div>`;
 
-  // Strip the ORIGINAL hardcoded homepage <noscript> block that lives inside
-  // <div id="root"> in the base template. Without this, every non-homepage
-  // pre-rendered page ends up shipping TWO noscript blocks — its own correct
-  // one, plus the homepage's "Kraftykinni: Corporate Art & DIY Workshops..."
-  // block baked in from the template — which is duplicate/irrelevant content
-  // for non-JS crawlers (Bing) and a minor content-quality issue for Google.
+  // Remove the original homepage shell from the base template and insert the
+  // route-specific static content instead.
   html = html.replace(
-    /<div id="root">\s*<noscript>[\s\S]*?<\/noscript>\s*<\/div>/,
-    '<div id="root"></div>'
-  );
-
-  // Inject the route-specific noscript before the (now-empty) root div
-  html = html.replace(
-    '<div id="root">',
-    `${noscriptBlock}\n    <div id="root">`
+    /<div id="root">[\s\S]*?<\/div>/,
+    `<div id="root">${staticShell}</div>`
   );
 
   return html;
@@ -1765,7 +1753,7 @@ console.log(`\n🎉  Pre-rendered ${created} routes.`);
 console.log('    Each page has:\n' +
             '      • Unique title + meta injected\n' +
             '      • Trailing-slash fix script in <head>\n' +
-            '      • <noscript> content block for non-JS crawlers\n' +
+            '      • semantic HTML shell for non-JS crawlers\n' +
             '      • No hidden cloaking divs\n');
 
 // ─── 2. Regenerate sitemap.xml ────────────────────────────────────────────────
