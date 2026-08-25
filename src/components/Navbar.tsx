@@ -13,7 +13,7 @@ function scrollToSection(id: string) {
 
 const serviceLinks = [
   { name: 'Corporate Workshops', href: '/corporate-art-workshops' },
-  { name: 'School & College Workshops', href: '/school-workshops' },
+  { name: 'School & College Workshops', href: '/school-art-workshops' },
   { name: 'Private Events',      href: '/private-art-workshops' },
 ];
 

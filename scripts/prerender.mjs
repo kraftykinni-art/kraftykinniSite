@@ -546,6 +546,22 @@ City: Delhi / Gurgaon / Noida</code></pre>
     `,
   },
 
+  // ── Thank You (post-form-submit; noindex, not in sitemap) ──────────────────
+  {
+    path: '/thank-you',
+    title: 'Thank You for Your Enquiry | Kraftykinni',
+    description: "We've received your enquiry and will get back to you within 24 hours with a customised proposal.",
+    h1: 'Thank you for reaching out!',
+    noindex: true,
+    bodyContent: `
+      <h1>Thank you for reaching out!</h1>
+      <p>We've received your enquiry and will get back to you within 24 hours with a customised proposal.</p>
+      <h2>What happens next</h2>
+      <p>Shramita will review your event details and workshop preferences. You'll receive a tailored proposal with activity options and pricing within 24 hours. We'll confirm the date, venue, and all materials — then you just show up and create.</p>
+      <p><a href="/">Back to Kraftykinni</a></p>
+    `,
+  },
+
   // ── Privacy Policy ────────────────────────────────────────────────────────
   {
     path: '/privacy-policy',
@@ -1738,6 +1754,12 @@ function injectMeta(html, route) {
   html = html.replace(/<meta name="twitter:title" content="[^"]*">/, `<meta data-rh="true" name="twitter:title" content="${boundedTitle}">`);
   html = html.replace(/<meta name="twitter:description" content="[^"]*">/, `<meta data-rh="true" name="twitter:description" content="${boundedDescription}">`);
 
+  // Override the default "index, follow" robots meta for routes that shouldn't
+  // be indexed (currently just /thank-you — a post-form-submit page).
+  if (route.noindex) {
+    html = html.replace(/<meta name="robots" content="[^"]*">/, `<meta data-rh="true" name="robots" content="noindex, nofollow">`);
+  }
+
   // Update og:image / twitter:image if route specifies a custom image
   if (ogImage) {
     html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta data-rh="true" property="og:image" content="${ogImage}">`);
@@ -1955,7 +1977,7 @@ Contact: kraftykinni@gmail.com | +91 9599622210
 Booking: 7 days advance notice, 50% deposit confirms a booking, minimum 20 participants (scales to 200+)
 
 ## Pages
-${routes.map((r) => `- [${r.title.split(' | ')[0]}](https://kraftykinni.in${r.path === '/' ? '/index' : r.path}.md): ${r.description}`).join('\n')}
+${routes.filter((r) => !r.noindex).map((r) => `- [${r.title.split(' | ')[0]}](https://kraftykinni.in${r.path === '/' ? '/index' : r.path}.md): ${r.description}`).join('\n')}
 
 ## Agent resources
 - Any page above is also available as clean Markdown at the same URL with a .md extension, or via \`Accept: text/markdown\`
