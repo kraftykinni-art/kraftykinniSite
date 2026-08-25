@@ -63,6 +63,23 @@ const SITE_FOOTER_LINKS = `
       <p><strong>Contact:</strong> <a href="mailto:kraftykinni@gmail.com">kraftykinni@gmail.com</a> | <a href="tel:+919599622210">+91 9599622210</a></p>
       <p><strong>Service area:</strong> Delhi, Gurgaon, Noida and online pan-India</p>
       <p><strong>Pricing:</strong> ₹600–₹800 per person, all materials included</p>
+      <p>Led by Shramita Govil, a Fevicryl Certified Artist, with 50+ workshops and 1,500+ participants.</p>
+      <p><strong>Workshops:</strong>
+        <a href="/workshops/lippan-art">Lippan Art</a> ·
+        <a href="/workshops/mandala-art">Mandala Art</a> ·
+        <a href="/workshops/tie-and-dye">Tie &amp; Dye</a> ·
+        <a href="/workshops/boho-canvas">Boho Canvas</a> ·
+        <a href="/workshops/bottle-lamp-art">Bottle Lamp Art</a> ·
+        <a href="/workshops/block-printing">Block Printing</a> ·
+        <a href="/workshops/clay-art">Clay Art</a> ·
+        <a href="/workshops/glass-painting">Glass Painting</a> ·
+        <a href="/workshops/texture-art">Texture Art</a> ·
+        <a href="/workshops/tote-bag-painting">Tote Bag Painting</a> ·
+        <a href="/workshops/trinket-tray">Trinket Tray</a> ·
+        <a href="/workshops/mdf-fridge-magnet">MDF Fridge Magnet</a> ·
+        <a href="/workshops/canvas-pouch">Canvas Pouch</a> ·
+        <a href="/workshops/wall-rope-art">Wall &amp; Rope Art</a>
+      </p>
       <p>
         <a href="/about">About Kraftykinni</a> ·
         <a href="/#contact">Contact / Book a Workshop</a> ·
@@ -265,13 +282,13 @@ const routes = [
         </figure>
 
         <h3>Signature Workshops</h3>
-        <p><a href="/workshops/lippan-art">Lippan Art</a>, <a href="/workshops/wall-rope-art">Wall &amp; Rope Art</a>, Tie &amp; Dye, Boho Canvas Art, Bottle Lamp Art, and Trinket Tray Painting.</p>
+        <p><a href="/workshops/lippan-art">Lippan Art</a>, <a href="/workshops/wall-rope-art">Wall &amp; Rope Art</a>, <a href="/workshops/tie-and-dye">Tie &amp; Dye</a>, <a href="/workshops/boho-canvas">Boho Canvas Art</a>, <a href="/workshops/bottle-lamp-art">Bottle Lamp Art</a>, and <a href="/workshops/trinket-tray">Trinket Tray Painting</a>.</p>
 
         <h3>Heritage Craft Workshops</h3>
-        <p><a href="/workshops/mandala-art">Mandala Art</a> and Block Printing — traditional Indian craft techniques adapted into guided group sessions.</p>
+        <p><a href="/workshops/mandala-art">Mandala Art</a> and <a href="/workshops/block-printing">Block Printing</a> — traditional Indian craft techniques adapted into guided group sessions.</p>
 
         <h3>Everyday Craft Workshops</h3>
-        <p>Clay Art, Glass Painting, Texture Art, Tote Bag Painting, MDF Fridge Magnet, and Canvas Pouch Painting — quicker, lower-cost activities well suited to shorter event slots.</p>
+        <p><a href="/workshops/clay-art">Clay Art</a>, <a href="/workshops/glass-painting">Glass Painting</a>, <a href="/workshops/texture-art">Texture Art</a>, <a href="/workshops/tote-bag-painting">Tote Bag Painting</a>, <a href="/workshops/mdf-fridge-magnet">MDF Fridge Magnet</a>, and <a href="/workshops/canvas-pouch">Canvas Pouch Painting</a> — quicker, lower-cost activities well suited to shorter event slots.</p>
 
         <dl>
           <dt>Lippan Art</dt>
@@ -550,7 +567,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/thank-you',
     title: 'Thank You for Your Enquiry | Kraftykinni',
-    description: "We've received your enquiry and will get back to you within 24 hours with a customised proposal.",
+    description: "We've received your enquiry. Kraftykinni will get back to you within 24 hours with a customised art workshop proposal for your group.",
     h1: 'Thank you for reaching out!',
     noindex: true,
     bodyContent: `
@@ -1668,12 +1685,18 @@ function injectMeta(html, route) {
   const pageTitle = title.length < 30
     ? `${title} | Kraftykinni Art Workshops`
     : title;
+  const brandSuffix = ' | Kraftykinni';
+  const titleWithoutBrand = pageTitle.endsWith(brandSuffix)
+    ? pageTitle.slice(0, -brandSuffix.length)
+    : pageTitle;
   const boundedTitle = pageTitle.length <= 60
     ? pageTitle
-    : `${pageTitle.slice(0, 57).trimEnd()}...`;
-  const boundedDescription = description.length <= 160
+    : pageTitle.endsWith(brandSuffix)
+      ? `${titleWithoutBrand.slice(0, 60 - brandSuffix.length - 3).trimEnd()}...${brandSuffix}`
+      : `${pageTitle.slice(0, 57).trimEnd()}...`;
+  const boundedDescription = description.length <= 155
     ? description
-    : `${description.slice(0, 157).trimEnd()}...`;
+    : `${description.slice(0, 152).trimEnd()}...`;
   const workshopId = routePath.startsWith('/workshops/') ? routePath.split('/')[2] : null;
   const workshopData = workshopId ? WORKSHOPS_DATA[workshopId] : null;
   const generatedSchemas = [];

@@ -34,6 +34,7 @@ import re
 import sys
 import textwrap
 import time
+import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -47,30 +48,28 @@ except ImportError:
 
 BASE_URL = "https://kraftykinni.in"
 
-ROUTES = [
-    "/",
-    "/corporate-art-workshops",
-    "/school-art-workshops",
-    "/private-art-workshops",
-    "/about",
-    "/blog",
-    "/blog/lippan-art-complete-beginners-guide-kutch-mirror-work",
-    "/blog/best-corporate-team-building-activities-gurgaon-2026",
-    "/blog/annual-day-activity-ideas-schools-delhi-ncr",
-    "/blog/art-workshop-ideas-birthday-party-delhi-ncr",
-    "/blog/bottle-lamp-art-workshop-school-delhi-ncr",
-    "/blog/mothers-day-art-workshop-gift-delhi-ncr",
-    "/blog/clay-trinket-painting-workshop-cars24-gurgaon",
-    "/blog/summer-art-workshop-for-schools-delhi-ncr",
-    "/blog/fathers-day-gift-ideas-art-workshop-delhi-ncr-2026",
-    "/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr",
-    "/blog/independence-day-bottle-art-workshop-delhi-ncr",
-    "/blog/raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr",
-    "/blog/friendship-day-photo-magnet-workshop-delhi-ncr",
-    "/blog/dot-mandala-art-corporate-workshop-noida",
-    "/blog/janmashtami-krishna-art-workshop-delhi-ncr",
-    "/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr",
-]
+NOINDEX_ROUTES = {"/thank-you"}
+
+
+def get_routes() -> list[str]:
+    """Read crawlable routes from the source sitemap and add post-submit pages."""
+    sitemap_path = Path(__file__).with_name("public") / "sitemap.xml"
+    try:
+        root = ET.parse(sitemap_path).getroot()
+    except (ET.ParseError, OSError) as exc:
+        raise RuntimeError(f"Unable to read route manifest {sitemap_path}: {exc}") from exc
+
+    routes = []
+    for loc in root.findall(".//{*}loc"):
+        route = urlparse((loc.text or "").strip()).path or "/"
+        route = route.rstrip("/") or "/"
+        if route not in routes:
+            routes.append(route)
+
+    for route in NOINDEX_ROUTES:
+        if route not in routes:
+            routes.append(route)
+    return routes
 
 # SEO length thresholds
 TITLE_MIN = 30
@@ -124,9 +123,9 @@ def fetch_html(url: str) -> tuple[int, str]:
 
 def load_local_html(dist_dir: Path, route: str) -> tuple[int, str]:
     rel = route.lstrip("/")
-    candidates = [
+    candidates = [dist_dir / "index.html"] if route == "/" else [
+        dist_dir / f"{rel}.html",
         dist_dir / rel / "index.html",
-        dist_dir / "index.html",
     ]
     for p in candidates:
         if p.exists():
@@ -136,7 +135,7 @@ def load_local_html(dist_dir: Path, route: str) -> tuple[int, str]:
 
 # â”€â”€ Core validation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-def validate_html(url: str, html: str) -> list[dict]:
+def validate_html(url: str, html: str, expected_noindex: bool = False) -> list[dict]:
     soup  = BeautifulSoup(html, "html.parser")
     head  = soup.head or BeautifulSoup("", "html.parser")
     body  = soup.body or BeautifulSoup("", "html.parser")
@@ -270,8 +269,12 @@ def validate_html(url: str, html: str) -> list[dict]:
     else:
         content = robots.get("content", "").lower()
         if "noindex" in content:
-            issue("error", "ROBOTS_NOINDEX",
-                  f'Page is set to noindex: content="{content}"')
+            if expected_noindex:
+                issue("ok", "ROBOTS_NOINDEX_EXPECTED",
+                      f'Page is intentionally noindex: content="{content}"')
+            else:
+                issue("error", "ROBOTS_NOINDEX",
+                      f'Page is set to noindex: content="{content}"')
         else:
             issue("ok", "ROBOTS_OK", f'robots: {content}')
 
@@ -588,7 +591,8 @@ def main():
                         help="Show all passing checks, not just failures")
     args = parser.parse_args()
 
-    urls     = [f"{BASE_URL}{r}" for r in ROUTES] if not args.url else [args.url]
+    routes  = get_routes() if not args.url else []
+    urls    = [f"{BASE_URL}{r}" for r in routes] if not args.url else [args.url]
     dist_dir = Path(args.local) if args.local else None
 
     total_errors = total_warnings = total_pages = 0
@@ -626,7 +630,7 @@ def main():
             print(f"    {c(YELLOW, 'âš  WARNING')}  [HTTP_{status}] Unexpected status {status}")
             total_warnings += 1
 
-        page_issues = validate_html(url, html)
+        page_issues = validate_html(url, html, route in NOINDEX_ROUTES)
         e, w = print_issues(page_issues, verbose=args.verbose)
         total_errors   += e
         total_warnings += w
