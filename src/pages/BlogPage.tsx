@@ -140,6 +140,9 @@ export default function BlogPage() {
               Practical guides on team building, event planning, and art workshops
               from Shramita Govil and the Kraftykinni team in Delhi&nbsp;NCR.
             </p>
+            <p className="text-sm text-brand-charcoal/60 leading-relaxed mt-4">
+              Posts are grouped into four areas: Corporate, School &amp; College, Private Events, and Workshop Guides.
+            </p>
           </motion.div>
         </section>
 

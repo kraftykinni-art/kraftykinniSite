@@ -26,6 +26,13 @@ export interface WorkshopHowToStep {
   text: string;
 }
 
+// Optional real-world reference backing a claim made in the workshop's intro
+// (e.g. the craft's documented history, or the certified materials used).
+export interface WorkshopCitation {
+  text: string;
+  url: string;
+}
+
 export interface Workshop {
   id: string;
   title: string;
@@ -42,6 +49,7 @@ export interface Workshop {
   keywords: string[];
   faq?: WorkshopFaqItem[];
   howToSteps?: WorkshopHowToStep[];
+  citation?: WorkshopCitation;
 }
 
 export const workshopsData: Workshop[] = [
@@ -59,6 +67,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Lippan Art workshop in Delhi NCR by Kraftykinni. Experience traditional Kutch mirror work in a guided group session. Corporate team building, schools & private events. All materials included. ₹600–₹800/person.',
     pageHeadline: 'Lippan Art Workshop in Delhi NCR',
     intro: 'Lippan Art is a centuries-old folk craft from the Kutch region of Gujarat where artisans use clay and mirror work to create intricate wall decorations. In our Lippan Art workshop, participants experience this meditative craft firsthand — shaping clay patterns, embedding mirrors, and creating a piece of genuine Indian heritage they can take home. It is one of our most requested activities for corporate teams and school groups alike.',
+    citation: { text: 'Materials for the session include Fevicryl craft clay and acrylic colours — the certified product line Shramita Govil trained on.', url: 'https://www.pidilite.com/consumer-brands/fevicryl' },
     whatYouMake: 'A finished Lippan Art wall piece with clay patterning and embedded mirrors — a unique, display-ready piece of folk art.',
     whoBenefits: 'Perfect for corporate team-building events, school art days, college fests, and private parties. No prior art experience needed.',
     keywords: ['lippan art workshop Delhi', 'lippan art class Delhi NCR', 'kutch mirror work workshop', 'lippan art corporate activity', 'folk art workshop Delhi NCR'],
@@ -129,6 +138,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Wall Rope Art workshop in Delhi NCR by Kraftykinni. Create a hand-coiled rope wall hanging painted with earthy botanicals and boho designs. Corporate, school & private events. All materials included. ₹600–₹800/person.',
     pageHeadline: 'Wall Rope Art Workshop in Delhi NCR',
     intro: 'Wall Rope Art is one of our most visually striking workshops — participants coil natural cotton rope into circular forms and paint them with earthy botanical motifs, sunrise scenes, and boho-inspired designs that become show-stopping wall décor. The combination of tactile rope-work and freehand painting makes it uniquely satisfying: part sculpture, part canvas. Every piece is different, and every participant walks away genuinely surprised by what they have created.',
+    citation: { text: 'The rope-coiling technique is related to macramé, a centuries-old knotting craft traditionally used for wall hangings, plant holders, and home décor.', url: 'https://en.wikipedia.org/wiki/Macram%C3%A9' },
     whatYouMake: 'A hand-coiled rope wall hanging painted with earthy botanical and boho motifs — unique, display-ready home décor.',
     whoBenefits: 'Ideal for corporate team-building events, school art days, private parties, and bachelorette events where a distinctive, Instagram-worthy takeaway is desired.',
     keywords: ['wall rope art workshop Delhi', 'rope art class Delhi NCR', 'rope wall hanging workshop', 'boho rope art workshop', 'rope craft workshop Delhi NCR'],
@@ -199,6 +209,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Mandala Art workshop in Delhi NCR by Kraftykinni. Meditative, stress-relieving mandala painting sessions for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     pageHeadline: 'Mandala Art Workshop in Delhi NCR',
     intro: 'Mandala art is one of the most universally loved art forms — symmetrical, meditative, and endlessly satisfying to create. Our Mandala Art workshops guide participants through building their own mandala from the centre outward, using dotting tools, colours, and repetitive patterns that calm the mind and engage full attention. Popular as a corporate wellness activity and equally loved by school students.',
+    citation: { text: "The mandala's radial, symmetrical design has long been used across Hindu and Buddhist traditions as a focus for meditation.", url: 'https://en.wikipedia.org/wiki/Mandala' },
     whatYouMake: 'A colourful, symmetric mandala artwork on canvas or paper — a beautiful piece to display or gift.',
     whoBenefits: 'Ideal for corporate wellness sessions, mental health awareness events, school art days, and team-building retreats.',
     keywords: ['mandala art workshop Delhi', 'mandala painting class Delhi NCR', 'mandala art corporate workshop', 'stress relief art workshop Delhi', 'mandala workshop team building'],
@@ -243,6 +254,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Tie & Dye workshop in Delhi NCR by Kraftykinni. High-energy fabric dyeing sessions for corporate teams, schools & private events. Wearable takeaway. All materials included. ₹600–₹800/person.',
     pageHeadline: 'Tie & Dye Workshop in Delhi NCR',
     intro: 'Tie & Dye is the workshop that fills a room with laughter, colour, and energy. Participants fold, twist, and bind fabric before applying vibrant dyes — and every single piece turns out uniquely different, making it a perfect metaphor for teamwork and individuality. Because the outcome is a wearable item — a t-shirt, dupatta, or tote — participants carry the memory of the event into their daily lives long after the workshop ends.',
+    citation: { text: 'Resist-dyeing traditions span centuries across multiple cultures — from Indian bandhani to Japanese shibori.', url: 'https://en.wikipedia.org/wiki/Tie-dye' },
     whatYouMake: 'A one-of-a-kind tie-dye fabric item — t-shirt, tote bag, or dupatta — to wear and keep.',
     whoBenefits: 'Best for high-energy corporate events, college fests, team outings, and large group gatherings of 50 to 200+ people.',
     keywords: ['tie dye workshop Delhi', 'tie and dye class Delhi NCR', 'tie dye corporate workshop', 'fabric dyeing workshop Delhi', 'team building tie dye activity'],
@@ -287,6 +299,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Boho Canvas Art workshop in Delhi NCR by Kraftykinni. Guided abstract canvas painting sessions for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     pageHeadline: 'Boho Canvas Art Workshop in Delhi NCR',
     intro: 'Boho Canvas Art combines warm earthy tones, abstract composition, and layered textures into a painting style that looks impressive but requires no drawing skills. Participants learn to blend colours, layer shapes, and create the bohemian aesthetic that has become one of the most popular contemporary art styles for home décor. Each canvas is unique to the person who painted it — and every participant walks away with a gallery-ready piece.',
+    citation: { text: 'Materials for the session include Fevicryl acrylic colours, the certified product line Shramita Govil trained on.', url: 'https://www.pidilite.com/consumer-brands/fevicryl' },
     whatYouMake: 'A finished boho-style canvas painting in earthy, warm tones — ready to hang at home or gift.',
     whoBenefits: 'Popular choice for corporate team events, art days at schools and colleges, and private birthday or kitty parties.',
     keywords: ['canvas painting workshop Delhi', 'boho art workshop Delhi NCR', 'abstract painting class Delhi', 'canvas painting corporate activity', 'boho canvas workshop team building'],
@@ -331,6 +344,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Bottle Lamp Art workshop in Delhi NCR by Kraftykinni. Creative upcycling workshop — transform glass bottles into glowing lamps. Corporate & school sessions. All materials included.',
     pageHeadline: 'Bottle Lamp Art Workshop in Delhi NCR',
     intro: 'Bottle Lamp Art is one of our most magical workshops — participants paint and decorate glass bottles, which are then fitted with fairy lights to create glowing home décor pieces. It blends sustainability (upcycling glass bottles), creativity, and a deeply satisfying result. When the lights come on at the end of the session, the room transforms. It is one of the most photographed and shared activities from any event.',
+    citation: { text: 'Turning a used bottle into a lamp is a small-scale example of upcycling — transforming a waste item into something of higher value rather than discarding it.', url: 'https://en.wikipedia.org/wiki/Upcycling' },
     whatYouMake: 'A hand-painted glass bottle lamp with fairy lights — a glowing, functional piece of home décor.',
     whoBenefits: 'Great for corporate gifting events, school craft days, private parties, and eco-themed corporate events.',
     keywords: ['bottle lamp art workshop Delhi', 'glass bottle art class', 'upcycling craft workshop Delhi NCR', 'creative workshop Delhi', 'bottle painting workshop'],
@@ -375,6 +389,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Block Printing workshop in Delhi NCR by Kraftykinni. Learn traditional Indian block printing on fabric. Corporate & school sessions. All materials included. ₹600–₹800/person.',
     pageHeadline: 'Block Printing Workshop in Delhi NCR',
     intro: 'Block Printing is one of India\'s most treasured textile traditions, originating in Rajasthan and Gujarat. Participants learn to apply natural pigments using carved wooden blocks to create repeat patterns on fabric — a rhythmic, meditative process that produces strikingly beautiful results. Our Block Printing workshops are popular both as a cultural heritage activity and as a stress-relief exercise for corporate teams.',
+    citation: { text: 'Block printing is part of the wider craft of woodblock printing, documented as one of the oldest textile and print techniques, used across Asia and Europe.', url: 'https://en.wikipedia.org/wiki/Woodblock_printing' },
     whatYouMake: 'A block-printed fabric item — tote bag, dupatta, or fabric panel — in traditional or contemporary patterns.',
     whoBenefits: 'Excellent for corporate cultural events, school heritage days, college fests, and curated team-building sessions.',
     keywords: ['block printing workshop Delhi', 'traditional block printing class NCR', 'fabric printing workshop Delhi', 'block print corporate workshop', 'Indian craft workshop Delhi'],
@@ -445,6 +460,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Clay Art workshop in Delhi NCR by Kraftykinni. Hands-on clay sculpting sessions for corporate teams, schools & private events. All materials included. ₹600–₹800/person.',
     pageHeadline: 'Clay Art Workshop in Delhi NCR',
     intro: 'Working with clay is one of the most grounding, stress-relieving creative experiences available. Our Clay Art workshops guide participants through sculpting small 3D objects — decorative bowls, figures, jewellery holders, or fridge magnets — using air-dry clay. The tactile nature of the material engages the nervous system and produces a state of calm focus that participants often describe as genuinely therapeutic.',
+    citation: { text: 'Hand-building and shaping clay is one of humanity\'s oldest crafts — pottery dates back thousands of years and is still valued today for the same tactile, repetitive shaping process.', url: 'https://en.wikipedia.org/wiki/Pottery' },
     whatYouMake: 'A handcrafted clay sculpture or functional object — air-dried and ready to take home.',
     whoBenefits: 'Ideal for corporate wellness days, school art sessions, stress management workshops, and mindfulness events.',
     keywords: ['clay art workshop Delhi', 'clay sculpting class Delhi NCR', 'pottery workshop Delhi', 'clay art corporate workshop', 'craft workshop Delhi NCR'],
@@ -489,6 +505,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Glass Painting workshop in Delhi NCR by Kraftykinni. Learn glass painting techniques in a guided group session. Corporate, school & private events. All materials included.',
     pageHeadline: 'Glass Painting Workshop in Delhi NCR',
     intro: 'Glass Painting produces some of the most visually spectacular results of any workshop activity — translucent colours that glow when light passes through them. Participants paint directly onto glass surfaces using special glass paints, creating geometric or floral patterns that look stunning on display. It is a medium that most people have never tried, which makes the experience feel novel and memorable.',
+    citation: { text: 'The technique draws on reverse glass painting, a centuries-old art form practised from Europe to India, prized for its glowing, translucent colour effect.', url: 'https://en.wikipedia.org/wiki/Reverse_glass_painting' },
     whatYouMake: 'A hand-painted glass piece — a frame, bottle, or panel — with translucent painted designs.',
     whoBenefits: 'Popular at corporate events, school art days, and private parties where participants want a unique, display-worthy outcome.',
     keywords: ['glass painting workshop Delhi', 'glass art class Delhi NCR', 'glass painting corporate workshop', 'stained glass workshop Delhi', 'creative glass workshop NCR'],
@@ -603,6 +620,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Tote Bag Painting workshop in Delhi NCR by Kraftykinni. Custom branding for corporate events. Eco-friendly takeaway from ₹600/person. All materials included. Groups from 20 to 200+.',
     pageHeadline: 'Tote Bag Painting Workshop in Delhi NCR',
     intro: 'Tote Bag Painting is one of our most sustainable and practically useful workshops. Each participant paints their own cotton tote bag using fabric paints and stencils, creating a personalised, eco-friendly bag they will actually use. For corporates, we can incorporate brand elements or event themes — making it an excellent branded gifting workshop. The outcome is both a creative achievement and a daily reminder of the experience.',
+    citation: { text: 'The tote bag itself is widely promoted as a reusable alternative to single-use plastic bags, part of why it works well as a sustainability-themed corporate takeaway.', url: 'https://en.wikipedia.org/wiki/Tote_bag' },
     whatYouMake: 'A hand-painted cotton tote bag with personalised or themed designs — durable, usable, eco-friendly.',
     whoBenefits: 'Excellent for corporate gifting events, sustainability-themed workshops, school events, and private parties.',
     keywords: ['tote bag painting workshop Delhi', 'fabric painting workshop Delhi NCR', 'eco craft workshop Delhi', 'tote bag art class', 'sustainable corporate workshop Delhi'],
@@ -647,6 +665,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Trinket Tray Painting workshop in Delhi NCR by Kraftykinni. Paint your own decorative jewellery or desk tray. Corporate & school sessions. All materials included.',
     pageHeadline: 'Trinket Tray Painting Workshop in Delhi NCR',
     intro: 'Trinket Tray Painting gives participants a plain MDF or ceramic tray and the freedom to transform it into something beautiful. Using acrylic paints, brushes, and simple decorative techniques, each tray becomes a unique piece of functional desk art. It is a quick, satisfying activity that produces immediate results — ideal for shorter event slots or as an add-on activity alongside a main workshop.',
+    citation: { text: 'Materials include Fevicryl acrylic paints on an MDF base, the certified product line Shramita Govil trained on.', url: 'https://www.pidilite.com/consumer-brands/fevicryl' },
     whatYouMake: 'A hand-painted trinket or jewellery tray — colourful, functional, and personalised.',
     whoBenefits: 'Great for corporate events, school workshops, office parties, and bridal events as a fun, functional craft.',
     keywords: ['trinket tray painting workshop Delhi', 'decorative tray painting class', 'craft workshop Delhi NCR', 'desk decor art workshop', 'jewellery tray painting Delhi'],
@@ -691,6 +710,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'MDF Fridge Magnet painting workshop in Delhi NCR by Kraftykinni. Fun, quick craft activity for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     pageHeadline: 'MDF Fridge Magnet Painting Workshop in Delhi NCR',
     intro: 'The MDF Fridge Magnet workshop is proof that great art does not need a large canvas. Participants paint and personalise small MDF shapes — animals, letters, frames, or abstract forms — which become fridge magnets they take home. The activity is quick, cheerful, and produces a result that participants see every single day when they open their fridge. It is one of our most popular activities for corporate employee engagement events.',
+    citation: { text: 'Refrigerator magnets have been a household fixture since the 1920s, valued as both everyday tools and keepsakes.', url: 'https://en.wikipedia.org/wiki/Refrigerator_magnet' },
     whatYouMake: 'A set of hand-painted MDF fridge magnets — personalised, colourful, and daily-use.',
     whoBenefits: 'Perfect for quick corporate engagement sessions, school craft days, large events with tight schedules, and children\'s parties.',
     keywords: ['MDF fridge magnet workshop Delhi', 'magnet painting class Delhi NCR', 'quick craft workshop Delhi', 'fun corporate art activity Delhi', 'fridge magnet painting workshop'],
@@ -735,6 +755,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Canvas Pouch Painting workshop in Delhi NCR by Kraftykinni. Personalise your own canvas pouch with fabric paints. Corporate, school & private event sessions. All materials included.',
     pageHeadline: 'Canvas Pouch Painting Workshop in Delhi NCR',
     intro: 'Canvas Pouch Painting lets participants personalise a compact fabric pouch using fabric paints, fine brushes, and stencils. The smaller canvas encourages precision and detailed work — participants focus deeply on their design and leave with a pouch they actually use for makeup, stationery, or accessories. It is a quieter, more focused activity that works well as a complement to higher-energy workshops at the same event.',
+    citation: { text: 'Materials include Fevicryl fabric colours, the certified product line Shramita Govil trained on.', url: 'https://www.pidilite.com/consumer-brands/fevicryl' },
     whatYouMake: 'A hand-painted canvas pouch — personalised with the participant\'s own design and ready for daily use.',
     whoBenefits: 'Ideal for corporate gifting events, school sessions, college workshops, and intimate private parties.',
     keywords: ['canvas pouch painting workshop Delhi', 'pouch painting class Delhi NCR', 'fabric craft workshop Delhi', 'personalised pouch workshop', 'canvas bag art class Delhi'],

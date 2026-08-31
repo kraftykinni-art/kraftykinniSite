@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import About from '../components/About';
 import ContactFooter from '../components/ContactFooter';
+import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 
 export default function AboutPage() {
   const title = 'Fevicryl Certified Art Workshop Facilitator Delhi NCR | Kraftykinni';
@@ -18,12 +19,10 @@ export default function AboutPage() {
       '@type': 'LocalBusiness',
       name: 'Kraftykinni',
       url: 'https://kraftykinni.in',
+      sameAs: KRAFTYKINNI_SAME_AS,
     },
     url: canonical,
-    sameAs: [
-      'https://www.instagram.com/kraftykinni',
-      'https://www.linkedin.com/in/kraftykinni/',
-    ],
+    sameAs: KRAFTYKINNI_SAME_AS,
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       name: 'Fevicryl Certified Artist',
@@ -38,6 +37,15 @@ export default function AboutPage() {
       'Lippan Art', 'Mandala Art', 'Tie and Dye', 'Block Printing',
       'Clay Art', 'Texture Art', 'Glass Painting', 'Boho Canvas Art',
       'Wall Rope Art',
+    ],
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
+      { '@type': 'ListItem', position: 2, name: 'About', item: canonical },
     ],
   };
 
@@ -59,6 +67,7 @@ export default function AboutPage() {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content="https://cdn.kraftykinni.in/workshops/profile.webp" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       <main className="pt-20">
         <About />
@@ -67,3 +76,4 @@ export default function AboutPage() {
     </>
   );
 }
+

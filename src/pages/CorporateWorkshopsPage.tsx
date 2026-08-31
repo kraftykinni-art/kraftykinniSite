@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Sparkles, CheckCircle2, ArrowRight, Clock, Users, IndianRupee, Award } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
+import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 import PricingFAQ from '../components/PricingFAQ';
+import Testimonials from '../components/Testimonials';
+import KeyTakeaways from '../components/KeyTakeaways';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
 
@@ -64,7 +67,7 @@ export default function CorporateWorkshopsPage() {
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org', '@type': 'Service',
           name: 'Corporate Art Workshops Delhi NCR', description,
-          provider: { '@type': 'LocalBusiness', name: 'Kraftykinni', url: 'https://kraftykinni.in', telephone: '+919599622210', email: 'kraftykinni@gmail.com' },
+          provider: { '@type': 'LocalBusiness', name: 'Kraftykinni', url: 'https://kraftykinni.in', telephone: '+919599622210', email: 'kraftykinni@gmail.com', sameAs: KRAFTYKINNI_SAME_AS },
           areaServed: [{ '@type': 'City', name: 'Delhi' }, { '@type': 'City', name: 'Gurgaon' }, { '@type': 'City', name: 'Noida' }],
           serviceType: 'Corporate Team Building Art Workshop',
           offers: { '@type': 'AggregateOffer', lowPrice: '600', highPrice: '800', priceCurrency: 'INR', offerCount: '3' },
@@ -239,6 +242,14 @@ export default function CorporateWorkshopsPage() {
             </div>
           </div>
         </section>
+
+        <KeyTakeaways points={[
+          '13 guided art activities for teams of 20 to 200+, all materials included',
+          '₹600–₹800 per person, depending on group size',
+          'In person across Delhi, Gurgaon, and Noida, or online pan-India',
+          "7 days' notice and a 50% deposit confirm a date",
+        ]} />
+        <Testimonials />
 
       </main>
       <ContactFooter />

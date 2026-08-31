@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Sparkles, ArrowRight, CheckCircle2, Users, Clock, Package } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
+import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 import PricingFAQ from '../components/PricingFAQ';
+import Testimonials from '../components/Testimonials';
+import KeyTakeaways from '../components/KeyTakeaways';
 import ContactFooter from '../components/ContactFooter';
 
 const schoolFaqs = [
@@ -112,7 +115,7 @@ export default function SchoolWorkshopsPage() {
           '@context': 'https://schema.org', '@type': 'Service',
           name: 'Art Workshops for Schools & Colleges Delhi NCR',
           description,
-          provider: { '@type': 'LocalBusiness', name: 'Kraftykinni', url: 'https://kraftykinni.in', telephone: '+919599622210', email: 'kraftykinni@gmail.com' },
+          provider: { '@type': 'LocalBusiness', name: 'Kraftykinni', url: 'https://kraftykinni.in', telephone: '+919599622210', email: 'kraftykinni@gmail.com', sameAs: KRAFTYKINNI_SAME_AS },
           areaServed: [{ '@type': 'City', name: 'Delhi' }, { '@type': 'City', name: 'Gurgaon' }, { '@type': 'City', name: 'Noida' }],
           serviceType: 'School Art Workshop',
           audience: { '@type': 'Audience', audienceType: 'Students, Schools, Colleges' },
@@ -405,6 +408,14 @@ export default function SchoolWorkshopsPage() {
 
         {/* FAQ section — visible content matching schema */}
         <PricingFAQ extraFaqs={schoolFaqs} />
+
+        <KeyTakeaways points={[
+          'Groups from 30 students up to full school assemblies of 300+',
+          '₹600–₹800 per student, all materials included, facilitator travels to your school',
+          'Activities recommended by grade group, from primary through college',
+          'CBSE and ICSE curriculum links available on request',
+        ]} />
+        <Testimonials />
 
       </main>
       <ContactFooter />

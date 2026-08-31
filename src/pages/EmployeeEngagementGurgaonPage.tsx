@@ -5,6 +5,9 @@ import { Sparkles, CheckCircle2, ArrowRight, Users, IndianRupee, Clock, Star } f
 import { workshopsData } from '../data/workshops';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
+import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
+import Testimonials from '../components/Testimonials';
+import KeyTakeaways from '../components/KeyTakeaways';
 
 const whyArtForEngagement = [
   {
@@ -110,6 +113,7 @@ export default function EmployeeEngagementGurgaonPage() {
       url: 'https://kraftykinni.in',
       telephone: '+919599622210',
       email: 'kraftykinni@gmail.com',
+      sameAs: KRAFTYKINNI_SAME_AS,
     },
     areaServed: { '@type': 'City', name: 'Gurgaon' },
     serviceType: 'Employee Engagement Art Workshop',
@@ -478,6 +482,14 @@ export default function EmployeeEngagementGurgaonPage() {
             </div>
           </div>
         </section>
+
+        <KeyTakeaways points={[
+          'Groups of 20 to 200+ at Gurgaon offices, ₹600–₹800 per person',
+          'Popular for quarterly team days, appreciation days, onboarding, and annual days',
+          'Lippan Art, Mandala Art, and Tie & Dye are the most-requested activities',
+          'All materials brought directly to DLF Cyber City, Udyog Vihar, and nearby offices',
+        ]} />
+        <Testimonials />
 
       </main>
       <ContactFooter />

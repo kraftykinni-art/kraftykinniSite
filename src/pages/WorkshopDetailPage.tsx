@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { Clock, CheckCircle2, ArrowLeft, Users, MapPin, Package, Award, ChevronDown } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
+import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
 
@@ -27,7 +28,7 @@ export default function WorkshopDetailPage() {
     '@type': 'Service',
     name: workshop.pageHeadline,
     description: workshop.metaDescription,
-    provider: { '@type': 'LocalBusiness', name: 'Kraftykinni', url: 'https://kraftykinni.in', telephone: '+919599622210' },
+    provider: { '@type': 'LocalBusiness', name: 'Kraftykinni', url: 'https://kraftykinni.in', telephone: '+919599622210', sameAs: KRAFTYKINNI_SAME_AS },
     areaServed: [{ '@type': 'City', name: 'Delhi' }, { '@type': 'City', name: 'Gurgaon' }, { '@type': 'City', name: 'Noida' }],
     serviceType: `${workshop.title} Workshop`,
     offers: { '@type': 'AggregateOffer', lowPrice: '600', highPrice: '800', priceCurrency: 'INR' },
@@ -143,6 +144,15 @@ export default function WorkshopDetailPage() {
                 </div>
 
                 <p className="text-gray-600 font-light leading-relaxed text-lg mb-8">{workshop.intro}</p>
+
+                {workshop.citation && (
+                  <p className="text-sm text-gray-400 font-light -mt-6 mb-8">
+                    {workshop.citation.text}{' '}
+                    <a href={workshop.citation.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-brand-pink">
+                      Source
+                    </a>
+                  </p>
+                )}
 
                 <div className="bg-white rounded-2xl border border-gray-100 p-6 mb-8 shadow-sm">
                   <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">What you make & take home</p>

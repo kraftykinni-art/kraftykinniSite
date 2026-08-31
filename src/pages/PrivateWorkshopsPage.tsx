@@ -8,6 +8,9 @@ import {
 import { workshopsData } from '../data/workshops';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
+import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
+import Testimonials from '../components/Testimonials';
+import KeyTakeaways from '../components/KeyTakeaways';
 
 // ── Private event types ───────────────────────────────────────────────────────
 
@@ -161,6 +164,7 @@ export default function PrivateWorkshopsPage() {
             url: 'https://kraftykinni.in',
             telephone: '+919599622210',
             email: 'kraftykinni@gmail.com',
+            sameAs: KRAFTYKINNI_SAME_AS,
           },
           areaServed: [
             { '@type': 'City', name: 'Delhi' },
@@ -529,6 +533,14 @@ export default function PrivateWorkshopsPage() {
             </div>
           </div>
         </section>
+
+        <KeyTakeaways points={[
+          'Birthdays, kitty parties, bachelorettes, and baby showers across Delhi NCR',
+          'Groups from 10 to 80+ guests, ₹600–₹800 per person, all materials included',
+          "Kraftykinni travels to your home, a café, or a rented venue",
+          'No experience needed — every guest leaves with a finished piece',
+        ]} />
+        <Testimonials />
 
       </main>
       <ContactFooter />

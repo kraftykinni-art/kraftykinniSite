@@ -3,6 +3,9 @@ import { Link, useLocation, Navigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Sparkles, MapPin, ArrowRight } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
+import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
+import Testimonials from '../components/Testimonials';
+import KeyTakeaways from '../components/KeyTakeaways';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
 
@@ -18,6 +21,12 @@ const locationData = {
     intro: 'Delhi is home to some of the most active corporate campuses, schools, and private event venues in India — and Kraftykinni runs art workshops across all three segments. We conduct guided art and DIY workshops at corporate offices in Connaught Place, Bhikaji Cama Place, and Nehru Place, at schools and colleges across North Delhi, South Delhi, Dwarka, and Rohini, and at private venues for birthdays, kitty parties, and bachelorettes.\n\nEvery session is led by Shramita Govil, Fevicryl Certified Artist, who brings all materials directly to your space. You provide the venue, tables, and chairs — we handle everything else, from setup to facilitation to cleanup. Sessions run 1.5 to 2.5 hours and every participant leaves with a finished piece of artwork.\n\nWhether you are an HR manager planning a team-building day, a school teacher organising an annual day activity, or a family hosting a birthday in South Delhi, Kraftykinni has run workshops for your exact situation — across Delhi, many times over. Pricing starts at ₹600 per person with all materials included.',
     areas: ['Connaught Place', 'South Delhi', 'Dwarka', 'Rohini', 'Lajpat Nagar', 'Saket', 'Vasant Kunj', 'Nehru Place'],
     localSchema: { addressLocality: 'New Delhi', addressRegion: 'Delhi', postalCode: '110001' },
+    keyTakeaways: [
+      'All 13 signature activities available across Delhi',
+      '₹600–₹800 per person depending on group size, minimum 20 participants',
+      'Covers Connaught Place, South Delhi, Dwarka, Rohini, Nehru Place, and more',
+      "7 days' notice and a 50% deposit confirm your booking",
+    ],
     faqs: [
       { q: 'Do you conduct art workshops across all areas of Delhi?', a: 'Yes — Kraftykinni travels to your location anywhere in Delhi, including South Delhi, North Delhi, Dwarka, Rohini, Connaught Place, Saket, Vasant Kunj, and Nehru Place. If your area is not listed, reach out and we will confirm availability.' },
       { q: 'What art workshops are available in Delhi?', a: 'All 13 Kraftykinni signature activities are available in Delhi: Lippan Art, Mandala Art, Tie & Dye, Boho Canvas Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, and Canvas Pouch Painting.' },
@@ -42,6 +51,12 @@ const locationData = {
     intro: "Gurgaon's corporate ecosystem is exactly where Kraftykinni thrives. We regularly conduct corporate art workshops for teams in Gurgaon's major business hubs — from DLF Cyber City to Udyog Vihar and MG Road. Companies in Gurgaon choose Kraftykinni for quarterly team-building events, employee appreciation days, onboarding workshops, and annual day activities. We bring all art supplies directly to your Gurgaon office or preferred venue — no logistics burden on your HR team.",
     areas: ['DLF Cyber City', 'Udyog Vihar', 'MG Road', 'Sohna Road', 'Golf Course Road', 'Sector 29', 'Sector 56', 'Manesar'],
     localSchema: { addressLocality: 'Gurgaon', addressRegion: 'Haryana', postalCode: '122001' },
+    keyTakeaways: [
+      'Covers DLF Cyber City, Udyog Vihar, MG Road, Golf Course Road, and Sohna Road',
+      '₹600–₹800 per person, all materials included',
+      'Lippan Art, Boho Canvas, Block Printing, and Mandala Art are top picks',
+      "7 days' notice and a 50% deposit confirm a date",
+    ],
     faqs: [
       { q: 'Do you conduct art workshops in Gurgaon offices?', a: 'Yes — Kraftykinni travels to your Gurgaon office with all materials. We regularly conduct workshops at offices in DLF Cyber City, Udyog Vihar, MG Road, and Golf Course Road.' },
       { q: 'What is the cost of a corporate art workshop in Gurgaon?', a: 'Pricing starts at ₹800 per person for groups of 20–50, ₹700 per person for 50–100, and ₹600 per person for 100+ participants. All materials are included.' },
@@ -60,6 +75,12 @@ const locationData = {
     intro: 'Noida has rapidly grown into one of the most active corporate and educational hubs in the NCR, and Kraftykinni serves both. We conduct corporate art workshops for companies across Sector 62, Sector 16, and Film City Road, as well as school and college workshops for institutions in Noida and Greater Noida. Our workshops at Amity University are among our most frequently repeated — a testament to how well our sessions work for student groups.',
     areas: ['Sector 62', 'Sector 16', 'Film City Road', 'Sector 18', 'Expressway', 'Greater Noida', 'Knowledge Park', 'Sector 125'],
     localSchema: { addressLocality: 'Noida', addressRegion: 'Uttar Pradesh', postalCode: '201301' },
+    keyTakeaways: [
+      'Covers Sector 62, Sector 16, Film City Road, Greater Noida, and Knowledge Park',
+      '₹600–₹800 per person, minimum group size of 20',
+      'Regular facilitator for Amity University student events',
+      "7 days' notice and a 50% deposit confirm your booking",
+    ],
     faqs: [
       { q: 'Do you conduct art workshops in Noida and Greater Noida?', a: 'Yes — Kraftykinni travels to offices, schools, and event venues across Noida and Greater Noida, including Sector 62, Sector 16, Film City Road, Knowledge Park, and along the Expressway.' },
       { q: 'What is the cost of an art workshop in Noida?', a: 'Pricing starts at ₹800 per person for groups of 20–50, ₹700 per person for 50–100, and ₹600 per person for 100+ participants. All materials are included. No hidden charges.' },
@@ -207,6 +228,7 @@ export default function LocationPage() {
           address: { '@type': 'PostalAddress', ...loc.localSchema, addressCountry: 'IN' },
           areaServed: { '@type': 'City', name: loc.city },
           priceRange: '₹600 - ₹800 per person',
+          sameAs: KRAFTYKINNI_SAME_AS,
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org', '@type': 'BreadcrumbList',
@@ -484,6 +506,9 @@ export default function LocationPage() {
             </div>
           </div>
         </section>
+
+        <KeyTakeaways points={(loc as typeof locationData.noida).keyTakeaways} />
+        <Testimonials />
 
       </main>
       <ContactFooter />

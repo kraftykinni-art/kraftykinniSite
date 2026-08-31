@@ -1,6 +1,8 @@
 import { motion } from 'motion/react';
 import { CheckCircle, Star, Heart, Lightbulb, Shield } from 'lucide-react';
 import AboutIntro from './AboutIntro';
+import Testimonials from './Testimonials';
+import KeyTakeaways from './KeyTakeaways';
 
 export default function About() {
   const values = [
@@ -133,6 +135,12 @@ export default function About() {
               <p className="text-gray-600 font-light leading-relaxed text-lg mb-8">
                 Kraftykinni's credibility comes from consistent, high-quality facilitation across a wide range of audiences and settings. Here is what we bring to every booking.
               </p>
+              <p className="text-sm text-gray-400 font-light -mt-4 mb-8">
+                The Fevicryl certification is issued by{' '}
+                <a href="https://www.pidilite.com/consumer-brands/fevicryl" target="_blank" rel="noopener noreferrer" className="underline hover:text-brand-pink">
+                  Pidilite Industries
+                </a>, the maker of the craft materials used across Kraftykinni sessions.
+              </p>
               <ul className="space-y-4">
                 {credentials.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600 font-light leading-relaxed">
@@ -165,6 +173,14 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <KeyTakeaways points={[
+        'Fevicryl Certified Artist with 50+ workshops conducted across Delhi NCR',
+        '1,500+ participants trained across corporate, school, university, and private settings',
+        'Regular facilitator at Amity University, Delhi and Noida campuses',
+        'Available in person across Delhi, Gurgaon, and Noida, and online pan-India',
+      ]} />
+      <Testimonials />
 
     </section>
   );
