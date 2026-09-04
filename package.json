@@ -9,8 +9,9 @@
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
+    "validate:links": "python validate_links.py --root dist",
     "validate:prerender": "node scripts/validate-prerender.mjs",
-    "postbuild": "node scripts/prerender.mjs && npm run validate:prerender"
+    "postbuild": "node scripts/prerender.mjs && python validate_links.py --root dist && npm run validate:prerender"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",

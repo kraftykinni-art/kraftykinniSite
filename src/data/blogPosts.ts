@@ -1389,4 +1389,85 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'trending-art-craft-workshops-delhi-ncr',
+    title: "What's Trending in Art & Craft Workshops in Delhi NCR Right Now (2026)",
+    metaTitle: "What's Trending in Art & Craft Workshops? | Kraftykinni",
+    metaDescription:
+      "What's trending in art and craft workshops in 2026 — personalization, mindful crafts, eco-friendly materials — from Kraftykinni's Delhi NCR sessions.",
+    publishDate: '2026-09-04',
+    category: 'Workshop Guides' as const,
+    excerpt:
+      "Personalized keepsakes, slow meditative crafts like Dot Mandala Art, and eco-friendly materials are what's actually driving workshop bookings in 2026 — here's what that looks like across Kraftykinni's real sessions this year.",
+    keywords: [
+      'what is trending in art and craft',
+      'trending art and craft workshops 2026',
+      'creative workshops Delhi NCR',
+      'DIY workshop trends Delhi',
+      'art and craft workshop trends 2026',
+      'corporate team building trends Gurgaon',
+      'mandala art classes Delhi NCR',
+    ],
+    sections: [
+      {
+        body: `If you've searched for what's trending in art and craft lately, the honest answer isn't a single new craft — it's a shift in what people want the craft to do for them. Across the workshops Kraftykinni has run through 2026, three things keep repeating: participants want something personal, not generic; something slow, not another five-minute activity; and something made from materials that don't feel wasteful.\\n\nEverything below comes from actual sessions Kraftykinni has run this year, not a trend report — here's what that looks like in practice, across the workshops Delhi NCR is actually booking right now.`,
+      },
+      {
+        heading: 'Personalization Has Replaced Generic Craft Kits',
+        body: `The single biggest shift this year has been away from "everyone paints the same template" toward pieces built around a specific person or relationship. For Friendship Day, Kraftykinni's [MDF Fridge Magnet workshop](/workshops/mdf-fridge-magnet) turned into a personalized photo-magnet session — participants brought a photo of a friend and painted a magnet built around that exact picture, not a generic design. The same shift showed up for Raksha Bandhan, where siblings painted magnets referencing real in-jokes rather than a standard rakhi motif.\\n\nThis isn't a one-off request anymore. It's the difference between a craft session and a keepsake, and it's why personalization now comes up in nearly every private-event and gifting enquiry Kraftykinni gets.`,
+        image: 'https://cdn.kraftykinni.in/friendship-day-photo-magnet-friends-kraftykinni.webp',
+        imageAlt: 'Hand-painted personalized photo magnet made by a participant at a Kraftykinni workshop in Delhi NCR',
+      },
+      {
+        heading: 'Slow, Meditative Crafts Are Winning Over Quick DIY',
+        body: `The second shift is toward activities that take genuine, unhurried time rather than another 20-minute craft. [Dot Mandala Art](/workshops/mandala-art) is the clearest example — at [a recent corporate session in Noida](/blog/dot-mandala-art-corporate-workshop-noida), a 20-person team spent an hour building symmetrical patterns one dot at a time at their own desks. There's no way to rush a dot mandala, and that's the point: it forces a real pause in a way a five-minute craft can't.\\n\nThis isn't just a Kraftykinni observation — it's showing up in what people are actually searching for, with steady interest in mandala art classes across Delhi NCR alongside a broader pull toward workshops that double as a genuine mental reset rather than pure entertainment.`,
+        image: 'https://cdn.kraftykinni.in/dot-mandala-sunset-artwork-corporate-kraftykinni.webp',
+        imageAlt: 'Finished dot mandala artwork in warm sunset colours from a Kraftykinni corporate mindfulness workshop',
+      },
+      {
+        heading: 'Eco-Conscious Materials Are Now a Default Expectation',
+        body: `A few years ago, "eco-friendly craft" was a request schools or CSR teams made specifically for Environment Day. In 2026, it's closer to a default expectation. Kraftykinni's [Clay Art](/workshops/clay-art) workshop now runs an eco-friendly clay Ganpati idol format for Ganesh Chaturthi — natural clay instead of Plaster of Paris, so the idol dissolves cleanly at visarjan instead of sitting in a landfill. The same instinct drives the [upcycled bottle art](/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr) sessions Kraftykinni runs through the year, where the craft material is literally a bottle someone was about to throw away.\\n\nFor corporate teams, this has become a genuine CSR angle rather than a nice-to-have: a hands-on, immersion-safe alternative the team makes themselves does more for a sustainability week than a poster ever will.`,
+        image: 'https://cdn.kraftykinni.in/ganesh-chaturthi-eco-friendly-clay-ganpati-idol-kraftykinni.webp',
+        imageAlt: 'Hand-painted eco-friendly clay Ganpati idol from a Kraftykinni Ganesh Chaturthi workshop in Delhi NCR',
+      },
+      {
+        heading: 'Heritage Indian Crafts Are Finding a Wider Audience',
+        body: `The third pattern is renewed interest in traditional Indian craft techniques — not as a museum topic, but as something people actually want to sit down and learn. [Lippan Art](/workshops/lippan-art), the mirror-inlay mud work that originates from Kutch, Gujarat, remains one of Kraftykinni's most-searched workshops on its own. [Block printing](/workshops/block-printing) has drawn interest from an unexpected direction too — [a recent session welcomed an Israeli family](/blog/block-printing-workshop-delhi-israeli-family) learning the technique together, a reminder that these heritage crafts travel well beyond their region of origin.\\n\nBoth crafts share what makes them work as workshops: a clear, teachable technique with centuries of tradition behind it, and a finished piece that looks nothing like generic mass-market decor.`,
+        image: 'https://cdn.kraftykinni.in/block-printing-israel-mother-daughter-learning-kraftykinni.webp',
+        imageAlt: 'A mother and daughter learning traditional Indian block printing together at a Kraftykinni workshop in Delhi NCR',
+      },
+      {
+        heading: 'What This Means for Corporate Teams Booking in Gurgaon and Delhi',
+        body: `For corporate teams, all three shifts point the same way: art workshops are being booked less as generic entertainment and more as a deliberate reset — personalized, unhurried, and increasingly tied to a real CSR or wellness goal rather than just "something different for the offsite." That's especially visible in [Gurgaon](/workshops-in-gurgaon), where Kraftykinni continues to see steady enquiry volume for [corporate team-building sessions](/corporate-art-workshops) that run desk-side rather than needing a separate offsite venue.\\n\nIf your team is planning something around the upcoming festive season — Navratri, Diwali, or a corporate wellness day — these are the formats worth building around: Dot Mandala Art for a genuine reset, a personalized keepsake format like MDF magnets or trinket trays for a gifting angle, and an eco-friendly option like the clay idol workshop if sustainability is part of the brief.`,
+        image: 'https://cdn.kraftykinni.in/corporate-art-workshop-branded-kraftykinni-noida.webp',
+        imageAlt: 'A Kraftykinni team member at a branded corporate art workshop setup in Delhi NCR',
+      },
+      {
+        heading: 'Book a Workshop Built Around Where Craft Is Headed',
+        body: `Kraftykinni runs all of the formats mentioned here — Dot Mandala Art, personalized MDF magnets and trinket trays, eco-friendly clay idols, Lippan Art, and block printing — for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Every session is led by [Shramita Govil](/about), a Fevicryl Certified Artist, with pricing starting at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for 20–50, all materials included.\\n\nTo check availability or talk through which format fits your group, WhatsApp **+91 9599622210** with your date, location, and group size.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'What is trending in art and craft right now?',
+        a: 'In 2026, three trends are driving most craft workshop bookings: personalization (custom photo magnets and named keepsakes over generic templates), slow and meditative formats like Dot Mandala Art over quick five-minute crafts, and eco-conscious materials such as natural clay idols and upcycled bottle art. Kraftykinni, a Delhi NCR art workshop studio, has run all three formats across corporate, school, and private bookings through 2026.',
+      },
+      {
+        q: 'What are the most popular creative workshops in Delhi NCR right now?',
+        a: "Dot Mandala Art, personalized MDF photo-magnet workshops, and heritage crafts like Lippan Art and block printing are among the most-booked creative workshops in Delhi NCR in 2026, based on Kraftykinni's own session bookings across corporate, school, and private events.",
+      },
+      {
+        q: 'Are DIY workshops still popular in Delhi NCR?',
+        a: 'Yes — DIY and hands-on craft workshops remain in steady demand across Delhi NCR for corporate team building, school events, and private celebrations. What has changed in 2026 is the format: participants increasingly prefer personalized, unhurried sessions like Dot Mandala Art or custom photo-magnet painting over quick generic craft activities.',
+      },
+      {
+        q: "What's a good corporate team-building activity trend in Gurgaon?",
+        a: 'Desk-side or boardroom art workshops that double as a wellness reset are the strongest corporate team-building trend in Gurgaon right now — Dot Mandala Art in particular, since it needs no offsite venue and gives every participant a finished piece. Kraftykinni runs these sessions for teams of 20 to 200+ across Gurgaon, Delhi, and Noida.',
+      },
+      {
+        q: 'Does Kraftykinni use eco-friendly materials?',
+        a: "Yes. Kraftykinni's Ganesh Chaturthi workshop uses natural clay idols instead of Plaster of Paris, and its Environment Day sessions turn upcycled bottles into painted planters and décor. Both are run as regular workshop formats, not one-off specials, for schools, corporate teams, and private groups across Delhi NCR.",
+      },
+    ],
+  },
 ];

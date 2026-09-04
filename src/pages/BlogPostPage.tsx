@@ -28,6 +28,15 @@ function readingTime(post: BlogPost): number {
   return Math.max(1, Math.round(wordCount / 200));
 }
 
+function normalizeArticleText(text: string): string {
+  return text
+    .replace(/\\r\\n/g, '\n')
+    .replace(/\\n/g, '\n')
+    .replace(/\/n/g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
 const CATEGORY_COLORS: Record<BlogPost['category'], string> = {
   'Corporate': 'bg-brand-pink/10 text-brand-pink',
   'School & College': 'bg-blue-50 text-blue-600',
@@ -42,7 +51,7 @@ const CATEGORY_COLORS: Record<BlogPost['category'], string> = {
  * Splits on double newlines into paragraphs.
  */
 function BodyText({ text }: { text: string }) {
-  const paragraphs = text.split('\n\n').filter(Boolean);
+  const paragraphs = normalizeArticleText(text).split(/\n\s*\n+/).filter(Boolean);
 
   // Parse a single string segment into bold / link / plain spans
   function renderInline(raw: string) {

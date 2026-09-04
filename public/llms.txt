@@ -48,6 +48,7 @@ Booking: 7 days advance notice, 50% deposit confirms a booking, minimum 20 parti
 - [Art Workshops in Noida](https://kraftykinni.in/workshops-in-noida.md): Art workshops in Noida and Greater Noida for corporate teams, schools & private events. 13 activities, all materials included. ₹600–₹800/person.
 - [Janmashtami Craft Workshop Ideas Delhi NCR](https://kraftykinni.in/blog/janmashtami-krishna-art-workshop-delhi-ncr.md): Celebrate Janmashtami 2026 with hand-painted Dahi Handi matkis and mirror-work Radha Krishna trinket trays. School and private workshops across Delhi NCR.
 - [Ganesh Chaturthi Clay Idol Workshop Delhi NCR](https://kraftykinni.in/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr.md): Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate and private workshops in Delhi NCR.
+- [What's Trending in Art & Craft Workshops?](https://kraftykinni.in/blog/trending-art-craft-workshops-delhi-ncr.md): What's trending in art and craft workshops in 2026 — personalization, mindful crafts, eco-friendly materials — from Kraftykinni's Delhi NCR sessions.
 
 ## Agent resources
 - Any page above is also available as clean Markdown at the same URL with a .md extension, or via `Accept: text/markdown`
