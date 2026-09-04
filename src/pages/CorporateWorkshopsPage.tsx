@@ -117,7 +117,7 @@ export default function CorporateWorkshopsPage() {
                   Hands-on, guided creative sessions for corporate teams of 20 to 200+ across Delhi, Gurgaon and Noida. Every participant creates something real — and takes it home.
                 </p>
                 <p className="text-base text-gray-500 font-light leading-relaxed mb-10">
-                  Led by <strong className="font-medium text-brand-charcoal">Shramita Govil</strong>, Fevicryl-certified artist with 50+ workshops and 1,500+ happy participants. All 13 activities available. All materials included.
+                  Led by <strong className="font-medium text-brand-charcoal">Shramita Govil</strong>, Fevicryl-certified artist with 50+ workshops and 1,500+ happy participants. All {workshopsData.length} activities available. All materials included.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   {/* Fixed: was scrolling to wrong element — now uses useBookNow */}
@@ -177,7 +177,7 @@ export default function CorporateWorkshopsPage() {
         <section id="activities" className="py-24 bg-brand-offwhite">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-slate mb-4">13 Signature <span className="text-brand-pink italic">Workshop Activities</span></h2>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-slate mb-4">{workshopsData.length} Signature <span className="text-brand-pink italic">Workshop Activities</span></h2>
               <div className="w-24 h-1 bg-brand-pink mx-auto rounded-full mb-6" />
               <p className="text-lg text-brand-slate/70 max-w-2xl mx-auto">Each activity is self-contained, fully facilitated, and results in a takeaway. Click any activity to learn more.</p>
             </div>
@@ -244,7 +244,7 @@ export default function CorporateWorkshopsPage() {
         </section>
 
         <KeyTakeaways points={[
-          '13 guided art activities for teams of 20 to 200+, all materials included',
+          `${workshopsData.length} guided art activities for teams of 20 to 200+, all materials included`,
           '₹600–₹800 per person, depending on group size',
           'In person across Delhi, Gurgaon, and Noida, or online pan-India',
           "7 days' notice and a 50% deposit confirm a date",

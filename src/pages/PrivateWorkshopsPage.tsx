@@ -380,7 +380,7 @@ export default function PrivateWorkshopsPage() {
               </h2>
               <div className="w-24 h-1 bg-brand-pink mx-auto rounded-full mb-6" />
               <p className="text-lg text-brand-slate/70 max-w-2xl mx-auto">
-                Our top picks for private events. Browse all 13 workshops on the homepage and we will help you choose the right one.
+                Our top picks for private events. Browse all {workshopsData.length} workshops on the homepage and we will help you choose the right one.
               </p>
             </div>
 
@@ -428,7 +428,7 @@ export default function PrivateWorkshopsPage() {
                 to="/#workshops"
                 className="inline-flex items-center gap-2 bg-brand-offwhite hover:bg-brand-pink/10 text-brand-charcoal hover:text-brand-pink border border-gray-200 px-8 py-4 rounded-full text-sm font-medium transition-all"
               >
-                Browse All 13 Activities →
+                Browse All {workshopsData.length} Activities →
               </Link>
             </div>
           </div>

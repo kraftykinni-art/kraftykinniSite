@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Users, Palette, Award, CheckCircle } from 'lucide-react';
+import { workshopsData } from '../data/workshops';
 const profileImg = 'https://cdn.kraftykinni.in/assets/profile.webp';
 
 // Shared by HomePage (as a short homepage teaser) and About.tsx (as the
@@ -9,7 +10,7 @@ export default function AboutIntro() {
   const stats = [
     { icon: <Palette size={24} />, value: '50+', label: 'Workshops' },
     { icon: <Users size={24} />, value: '1500+', label: 'Happy Participants' },
-    { icon: <CheckCircle size={24} />, value: '13', label: 'Activities' },
+    { icon: <CheckCircle size={24} />, value: '20+', label: 'Activities' },
     { icon: <Award size={24} />, value: 'Certified', label: 'Fevicryl Artist' },
   ];
 
@@ -65,7 +66,7 @@ export default function AboutIntro() {
                 Her Fevicryl certification is India's most recognised credential in art education and gives participants the assurance that they are learning from a trained, qualified professional who understands both technique and pedagogy.
               </p>
               <p>
-                Kraftykinni operates primarily across Delhi, Gurgaon, and Noida, with online sessions available for teams across India. All 13 signature activities are available for corporate bookings, school programmes, college events, and private occasions.
+                Kraftykinni operates primarily across Delhi, Gurgaon, and Noida, with online sessions available for teams across India. All {workshopsData.length} signature activities are available for corporate bookings, school programmes, college events, and private occasions.
               </p>
             </div>
           </motion.div>

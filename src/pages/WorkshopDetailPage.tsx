@@ -299,7 +299,7 @@ export default function WorkshopDetailPage() {
             </div>
             <div className="text-center mt-8">
               <Link to="/corporate-art-workshops" className="inline-flex items-center gap-2 text-brand-pink font-medium hover:underline underline-offset-4 text-sm">
-                View all 13 workshop activities →
+                View all {workshopsData.length} workshop activities →
               </Link>
             </div>
           </div>

@@ -81,7 +81,7 @@ const gradeGroups = [
   },
   {
     group: 'College & University',
-    activities: 'All 13 activities available — full corporate range',
+    activities: `All ${workshopsData.length} activities available — full corporate range`,
     desc: 'College groups enjoy the full Kraftykinni repertoire. Lippan Art and Boho Canvas are particularly popular for fest events and orientation days.',
   },
 ];
@@ -89,7 +89,7 @@ const gradeGroups = [
 export default function SchoolWorkshopsPage() {
   const title = 'School Art Workshops Delhi NCR — Annual Day & Events | Kraftykinni';
   const description =
-    'Art workshops for schools in Delhi NCR — Annual Day, Art Week & student events. From ₹600/student, facilitator travels to your school. Grades 3 to college. 13 activities, all materials included.';
+    `Art workshops for schools in Delhi NCR — Annual Day, Art Week & student events. From ₹600/student, facilitator travels to your school. Grades 3 to college. ${workshopsData.length} activities, all materials included.`;
   const canonical = 'https://kraftykinni.in/school-art-workshops';
 
   return (
@@ -141,7 +141,7 @@ export default function SchoolWorkshopsPage() {
           name: 'How to Book a School Art Workshop with Kraftykinni',
           description: 'Steps to book a guided art workshop for your school in Delhi NCR. Sessions from ₹600/student, all materials included, facilitator travels to your school.',
           step: [
-            { '@type': 'HowToStep', position: 1, name: 'Choose an activity', text: 'Browse the 13 Kraftykinni signature activities and shortlist 2–3 that match your student age group and event theme.' },
+            { '@type': 'HowToStep', position: 1, name: 'Choose an activity', text: `Browse the ${workshopsData.length} Kraftykinni signature activities and shortlist 2–3 that match your student age group and event theme.` },
             { '@type': 'HowToStep', position: 2, name: 'Send an enquiry', text: 'WhatsApp +91 9599622210 or fill the contact form with your school name, event date, expected student count, and preferred activity.' },
             { '@type': 'HowToStep', position: 3, name: 'Confirm your date', text: 'Shramita confirms availability within 24 hours. A 50% deposit is required to secure the booking.' },
             { '@type': 'HowToStep', position: 4, name: 'We arrive and set up', text: 'Kraftykinni arrives at your school with all materials — paints, canvases, aprons, brushes. Setup takes 20–30 minutes before the session starts.' },
@@ -297,7 +297,7 @@ export default function SchoolWorkshopsPage() {
                 to="/corporate-art-workshops"
                 className="inline-flex items-center gap-2 text-brand-pink font-medium hover:underline underline-offset-4 text-sm"
               >
-                View all 13 workshop activities →
+                View all {workshopsData.length} workshop activities →
               </Link>
             </div>
           </div>

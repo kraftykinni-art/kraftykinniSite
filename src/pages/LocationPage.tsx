@@ -16,20 +16,20 @@ const locationData = {
     headline: 'Art Workshops in Delhi',
     heroPink: 'Book a Session Today',
     metaTitle: 'Art Workshops in Delhi | Corporate & School | Kraftykinni',
-    metaDescription: 'Kraftykinni conducts art and DIY workshops across Delhi — corporate team building, school sessions, and private events. 13 activities, all materials included. Led by Fevicryl-certified artist Shramita Govil. ₹600–₹800/person.',
+    metaDescription: `Kraftykinni conducts art and DIY workshops across Delhi — corporate team building, school sessions, and private events. ${workshopsData.length} activities, all materials included. Led by Fevicryl-certified artist Shramita Govil. ₹600–₹800/person.`,
     keywords: 'art workshop in Delhi, DIY workshop Delhi, creative workshop Delhi, corporate art workshop Delhi, craft class Delhi, team building art Delhi',
     intro: 'Delhi is home to some of the most active corporate campuses, schools, and private event venues in India — and Kraftykinni runs art workshops across all three segments. We conduct guided art and DIY workshops at corporate offices in Connaught Place, Bhikaji Cama Place, and Nehru Place, at schools and colleges across North Delhi, South Delhi, Dwarka, and Rohini, and at private venues for birthdays, kitty parties, and bachelorettes.\n\nEvery session is led by Shramita Govil, Fevicryl Certified Artist, who brings all materials directly to your space. You provide the venue, tables, and chairs — we handle everything else, from setup to facilitation to cleanup. Sessions run 1.5 to 2.5 hours and every participant leaves with a finished piece of artwork.\n\nWhether you are an HR manager planning a team-building day, a school teacher organising an annual day activity, or a family hosting a birthday in South Delhi, Kraftykinni has run workshops for your exact situation — across Delhi, many times over. Pricing starts at ₹600 per person with all materials included.',
     areas: ['Connaught Place', 'South Delhi', 'Dwarka', 'Rohini', 'Lajpat Nagar', 'Saket', 'Vasant Kunj', 'Nehru Place'],
     localSchema: { addressLocality: 'New Delhi', addressRegion: 'Delhi', postalCode: '110001' },
     keyTakeaways: [
-      'All 13 signature activities available across Delhi',
+      `All ${workshopsData.length} signature activities available across Delhi`,
       '₹600–₹800 per person depending on group size, minimum 20 participants',
       'Covers Connaught Place, South Delhi, Dwarka, Rohini, Nehru Place, and more',
       "7 days' notice and a 50% deposit confirm your booking",
     ],
     faqs: [
       { q: 'Do you conduct art workshops across all areas of Delhi?', a: 'Yes — Kraftykinni travels to your location anywhere in Delhi, including South Delhi, North Delhi, Dwarka, Rohini, Connaught Place, Saket, Vasant Kunj, and Nehru Place. If your area is not listed, reach out and we will confirm availability.' },
-      { q: 'What art workshops are available in Delhi?', a: 'All 13 Kraftykinni signature activities are available in Delhi: Lippan Art, Mandala Art, Tie & Dye, Boho Canvas Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, and Canvas Pouch Painting.' },
+      { q: 'What art workshops are available in Delhi?', a: `All ${workshopsData.length} Kraftykinni signature activities are available in Delhi: Lippan Art, Mandala Art, Tie & Dye, Boho Canvas Art, Wall & Rope Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, Canvas Pouch Painting, Botanical Dyeing Printing, Rock Painting, Umbrella Painting, Cap Painting, Canvas Pearl Art, Clay Mirror Art, and Mirror Painting.` },
       { q: 'What is the cost of an art workshop in Delhi?', a: 'Pricing starts at ₹800 per person for groups of 20–50, ₹700 per person for 50–100 participants, and ₹600 per person for groups of 100+. All art materials, facilitation, setup, and cleanup are included. There are no hidden charges.' },
       { q: 'What occasions are art workshops suitable for in Delhi?', a: 'Kraftykinni runs workshops for corporate team-building days, employee engagement events, school annual days, college fests, birthday parties, kitty parties, bachelorette parties, and private social gatherings. Any group occasion with 20 or more participants is a good fit.' },
       { q: 'How far in advance should I book an art workshop in Delhi?', a: 'A minimum of 7 days advance notice is required to arrange materials and confirm logistics. For large groups of 150+ or multi-activity sessions, 10–14 days is preferred. A 50% deposit confirms your booking.' },
@@ -46,7 +46,7 @@ const locationData = {
     headline: 'Art Workshops in Gurgaon',
     heroPink: 'For Corporate Teams & Events',
     metaTitle: 'Art Workshops in Gurgaon | Team Building | Kraftykinni',
-    metaDescription: 'Kraftykinni conducts corporate art workshops and team-building sessions in Gurgaon. Office visits, off-site events, school sessions. 13 activities, all materials included. ₹600–₹800/person.',
+    metaDescription: `Kraftykinni conducts corporate art workshops and team-building sessions in Gurgaon. Office visits, off-site events, school sessions. ${workshopsData.length} activities, all materials included. ₹600–₹800/person.`,
     keywords: 'art workshop Gurgaon, corporate art workshop Gurgaon, team building workshop Gurgaon, creative workshop Gurugram, DIY workshop Gurugram',
     intro: "Gurgaon's corporate ecosystem is exactly where Kraftykinni thrives. We regularly conduct corporate art workshops for teams in Gurgaon's major business hubs — from DLF Cyber City to Udyog Vihar and MG Road. Companies in Gurgaon choose Kraftykinni for quarterly team-building events, employee appreciation days, onboarding workshops, and annual day activities. We bring all art supplies directly to your Gurgaon office or preferred venue — no logistics burden on your HR team.",
     areas: ['DLF Cyber City', 'Udyog Vihar', 'MG Road', 'Sohna Road', 'Golf Course Road', 'Sector 29', 'Sector 56', 'Manesar'],
@@ -247,7 +247,7 @@ export default function LocationPage() {
                 }))
               : [
                   { '@type': 'Question', name: `Do you conduct art workshops in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `Yes — Kraftykinni conducts art and DIY workshops across ${loc.city}, travelling to your office, school, or event venue with all materials included.` } },
-                  { '@type': 'Question', name: `What art workshops are available in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `All 13 Kraftykinni signature activities are available in ${loc.city}: Lippan Art, Mandala Art, Tie & Dye, Boho Canvas Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, and Canvas Pouch Painting.` } },
+                  { '@type': 'Question', name: `What art workshops are available in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `All ${workshopsData.length} Kraftykinni signature activities are available in ${loc.city}: Lippan Art, Mandala Art, Tie & Dye, Boho Canvas Art, Wall & Rope Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, Canvas Pouch Painting, Botanical Dyeing Printing, Rock Painting, Umbrella Painting, Cap Painting, Canvas Pearl Art, Clay Mirror Art, and Mirror Painting.` } },
                   { '@type': 'Question', name: `What is the cost of an art workshop in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100 participants, and ₹800 per person for groups of 20–50. All art materials are included.` } },
                 ]
           ),
@@ -401,7 +401,7 @@ export default function LocationPage() {
               <h2 className="font-serif text-4xl font-bold text-brand-slate mb-4">
                 Activities Available in <span className="text-brand-pink italic">{loc.city}</span>
               </h2>
-              <p className="text-brand-slate/70 max-w-2xl mx-auto">All 13 signature workshop activities are available in {loc.city}. Click any activity to learn more.</p>
+              <p className="text-brand-slate/70 max-w-2xl mx-auto">All {workshopsData.length} signature workshop activities are available in {loc.city}. Click any activity to learn more.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {workshopsData.map((w, i) => (
@@ -449,7 +449,7 @@ export default function LocationPage() {
                 {[
                   { num: '50+', label: 'Workshops in Delhi NCR' },
                   { num: '1500+', label: 'Happy participants' },
-                  { num: '13', label: 'Signature activities' },
+                  { num: String(workshopsData.length), label: 'Signature activities' },
                   { num: '₹600', label: 'Starting per person' },
                 ].map((s) => (
                   <div key={s.label} className="p-8 bg-brand-offwhite rounded-2xl border border-gray-100 shadow-sm text-center">

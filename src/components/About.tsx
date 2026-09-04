@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { CheckCircle, Star, Heart, Lightbulb, Shield } from 'lucide-react';
+import { workshopsData } from '../data/workshops';
 import AboutIntro from './AboutIntro';
 import Testimonials from './Testimonials';
 import KeyTakeaways from './KeyTakeaways';
@@ -48,7 +49,7 @@ export default function About() {
     },
     {
       year: 'Growing Across Delhi NCR',
-      text: 'Word spread quickly. Corporate HR teams discovered that art workshops were among the most effective team-building activities available — producing physical takeaways, building camaraderie, and providing genuine stress relief. Schools found that Kraftykinni sessions were both curriculum-friendly and deeply engaging for students. Today, Kraftykinni operates across Delhi, Gurgaon, and Noida with 13 signature activities and a growing roster of repeat clients.',
+      text: `Word spread quickly. Corporate HR teams discovered that art workshops were among the most effective team-building activities available — producing physical takeaways, building camaraderie, and providing genuine stress relief. Schools found that Kraftykinni sessions were both curriculum-friendly and deeply engaging for students. Today, Kraftykinni operates across Delhi, Gurgaon, and Noida with ${workshopsData.length} signature activities and a growing roster of repeat clients.`,
     },
   ];
 

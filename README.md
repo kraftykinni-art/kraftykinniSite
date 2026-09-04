@@ -26,7 +26,7 @@ src/
 ├── components/      # Shared UI: Navbar, Hero, About, Workshops, PricingFAQ,
 │                    #   Testimonials, ContactFooter, WhatsAppButton
 ├── data/
-│   └── workshops.ts # Single source of truth for all 13 workshop definitions
+│   └── workshops.ts # Single source of truth for all 21 workshop definitions
 │                    #   including SEO meta, keywords, intro copy per workshop
 ├── hooks/
 │   └── useBookNow.ts

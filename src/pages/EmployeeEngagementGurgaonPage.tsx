@@ -386,7 +386,7 @@ export default function EmployeeEngagementGurgaonPage() {
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-slate mt-2">
                 Top Workshop Activities <span className="text-brand-pink italic">for Gurgaon Teams</span>
               </h2>
-              <p className="text-brand-slate/70 mt-3 max-w-xl mx-auto">Six of our 13 signature activities work especially well for corporate employee engagement. All materials included.</p>
+              <p className="text-brand-slate/70 mt-3 max-w-xl mx-auto">Six of our {workshopsData.length} signature activities work especially well for corporate employee engagement. All materials included.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {activities.map((act, i) => {
@@ -425,7 +425,7 @@ export default function EmployeeEngagementGurgaonPage() {
                 to="/corporate-art-workshops"
                 className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-charcoal hover:text-brand-pink hover:border-brand-pink/30 px-6 py-3 rounded-full text-sm font-medium transition-all"
               >
-                View all 13 activities <ArrowRight size={16} />
+                View all {workshopsData.length} activities <ArrowRight size={16} />
               </Link>
             </div>
           </div>

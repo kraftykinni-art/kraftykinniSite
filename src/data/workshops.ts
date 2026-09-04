@@ -13,6 +13,13 @@ const textureTissueArt = `${CDN}/texture-tissue-art-opt.webp`;
 const toteBag = `${CDN}/tote-bag-opt.webp`;
 const canvasPouch = `${CDN}/canvas-pouch-opt.webp`;
 const wallRopeArt = `${CDN}/wall-rope-art-opt.webp`;
+const pressedFlowerArt = `${CDN}/pressed-flower-art-opt.webp`;
+const rockPainting = `${CDN}/rock-painting-opt.webp`;
+const umbrellaPainting = `${CDN}/umbrella-painting-opt.webp`;
+const capPainting = `${CDN}/cap-painting-opt.webp`;
+const pearlStringArt = `${CDN}/pearl-string-art-opt.webp`;
+const clayMirrorArtImg = `${CDN}/clay-mirror-art-opt.webp`;
+const mirrorPaintingImg = `${CDN}/mirror-painting-opt.webp`;
 
 export type Category = 'All' | 'Signature' | 'Heritage' | 'Everyday';
 
@@ -783,6 +790,320 @@ export const workshopsData: Workshop[] = [
       {
         q: 'Can Canvas Pouch Painting be booked for a group in Delhi NCR?',
         a: 'Yes — Kraftykinni conducts this workshop for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. All materials — canvas pouches, fabric paints, brushes, and stencils — are included in the per-person price. Online sessions with shipped kits are also available for pan-India teams.',
+      },
+    ],
+  },
+  {
+    id: 'botanical-dyeing-printing',
+    title: 'Botanical Dyeing Printing',
+    category: 'Signature',
+    image: pressedFlowerArt,
+    duration: '1.5 – 2 Hours',
+    benefits: [
+      'Turns real flowers into a lasting, one-of-a-kind fabric or paper keepsake',
+      'Calming, unhurried process that rewards patience over painting skill',
+      'A genuinely eco-conscious craft — made entirely from real, foraged botanicals',
+    ],
+    metaDescription: 'Botanical Dyeing Printing workshop in Delhi NCR by Kraftykinni. Hammer and press real flowers onto fabric or paper for a one-of-a-kind keepsake. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    pageHeadline: 'Botanical Dyeing Printing Workshop in Delhi NCR',
+    intro: 'Botanical Dyeing Printing — also known as flower pounding or botanical hammer printing — transfers the real colour and shape of fresh flowers directly onto fabric or paper, with no paint involved. Participants arrange petals and leaves onto their surface, then gently hammer each one to release its natural pigment, leaving a delicate, one-of-a-kind print behind. It is a slow, meditative craft that produces genuinely unique results every time, since no two flowers press exactly the same way.',
+    citation: { text: 'The technique of pressing flowers to preserve their colour and shape for decorative work dates back to 16th-century Japan, where it developed into the art form known as oshibana.', url: 'https://en.wikipedia.org/wiki/Oshibana' },
+    whatYouMake: 'A hand-pressed botanical print on fabric (tote bag, cushion cover, or cloth panel) or paper — made entirely from real flowers and leaves, unique and one-of-a-kind.',
+    whoBenefits: 'Ideal for private events, birthday parties, kitty parties, and corporate wellness or sustainability-themed days. Also popular with schools for nature-study tie-ins.',
+    keywords: ['botanical dyeing printing workshop Delhi', 'flower pounding workshop Delhi NCR', 'flower hammering craft class', 'botanical art workshop Delhi', 'nature craft workshop Delhi NCR'],
+    faq: [
+      {
+        q: 'What is Botanical Dyeing Printing?',
+        a: 'Botanical Dyeing Printing, also called flower pounding or botanical hammer printing, transfers the natural colour and shape of fresh flowers and leaves directly onto fabric or paper. Participants arrange botanicals onto their surface and gently hammer each one, releasing its pigment to leave a delicate, permanent print — no paint is used at all.',
+      },
+      {
+        q: 'Do I need any art experience to participate?',
+        a: 'No experience is needed. The technique relies on careful arranging and gentle, even hammering rather than drawing or painting skill, so it works well for complete beginners and children alike.',
+      },
+      {
+        q: 'What materials are used?',
+        a: 'Kraftykinni provides fresh flowers and leaves, a fabric or paper base (tote bags, cloth panels, or cards), a hammer, and a protective covering sheet. Everything is included in the per-person price.',
+      },
+      {
+        q: 'How long does a Botanical Dyeing Printing workshop take?',
+        a: 'A session runs for 1.5 to 2 hours, including a short demonstration, hands-on arranging and hammering time, and a finishing period to seal and pack the finished piece.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A finished piece of fabric or paper botanical art — a genuinely one-of-a-kind print made from real flowers, ready to display or gift.',
+      },
+      {
+        q: 'Can Botanical Dyeing Printing be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 15 to 150+ across Delhi, Gurgaon, and Noida. All materials are included in the per-person price.',
+      },
+    ],
+  },
+  {
+    id: 'rock-painting',
+    title: 'Rock Painting',
+    category: 'Everyday',
+    image: rockPainting,
+    duration: '1 – 1.5 Hours',
+    benefits: [
+      'Quick, low-pressure activity that works for every age and skill level',
+      'Turns a plain stone into a genuinely giftable, display-worthy mini artwork',
+      'Easy to scale to very large groups since each canvas is small and self-contained',
+    ],
+    metaDescription: 'Rock Painting workshop in Delhi NCR by Kraftykinni. Paint smooth stones into colourful mini landscapes and patterns. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    pageHeadline: 'Rock Painting Workshop in Delhi NCR',
+    intro: 'Rock Painting gives each participant a smooth stone and a set of acrylic paints, and asks for nothing more than a little focus. Popular designs range from miniature mountain-and-sunset landscapes to abstract dot patterns and geometric line work. Because the canvas is small, the activity moves quickly — most participants finish a first piece well within the hour and often start a second. It is one of our most relaxed, no-pressure workshop formats.',
+    whatYouMake: 'One or more hand-painted decorative stones — mini landscape scenes, geometric patterns, or abstract designs, ready to display or gift.',
+    whoBenefits: 'Great for large school groups, quick corporate engagement sessions, kids\' birthday parties, and any event where a fast, low-mess activity is needed.',
+    keywords: ['rock painting workshop Delhi', 'stone painting class Delhi NCR', 'pebble art workshop Delhi', 'kids rock painting party', 'quick craft activity Delhi NCR'],
+    faq: [
+      {
+        q: 'What is the Rock Painting workshop?',
+        a: 'Participants paint smooth stones using acrylic colours and fine brushes, creating mini landscapes, geometric patterns, or abstract designs. It is a quick, low-mess activity that produces a finished, giftable piece in well under an hour.',
+      },
+      {
+        q: 'Is Rock Painting suitable for large groups?',
+        a: 'Yes — because each canvas is small and self-contained, Rock Painting scales easily to very large groups. It is a popular choice for school events and corporate sessions with tight time slots.',
+      },
+      {
+        q: 'Do participants need any art experience?',
+        a: 'No experience is needed. Stencils and simple guided patterns are available for anyone who wants a starting point, while confident painters can go freehand.',
+      },
+      {
+        q: 'What materials are used?',
+        a: 'Kraftykinni provides smooth painting stones, acrylic paints, fine brushes, and a protective sealant finish. Everything is included in the per-person price.',
+      },
+      {
+        q: 'How long does the workshop take?',
+        a: 'A session runs for 1 to 1.5 hours. Acrylic paint dries quickly, so most participants complete and finish more than one stone within the session.',
+      },
+      {
+        q: 'Can Rock Painting be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 20 to 300+ across Delhi, Gurgaon, and Noida. All materials are included in the per-person price.',
+      },
+    ],
+  },
+  {
+    id: 'umbrella-painting',
+    title: 'Umbrella Painting',
+    category: 'Signature',
+    image: umbrellaPainting,
+    duration: '2 – 2.5 Hours',
+    benefits: [
+      'A genuinely functional canvas — the finished umbrella gets used, not shelved',
+      'Large surface area encourages bold, expressive designs',
+      'A standout monsoon-season activity that photographs beautifully',
+    ],
+    metaDescription: 'Umbrella Painting workshop in Delhi NCR by Kraftykinni. Hand-paint a plain umbrella with florals or bold designs. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    pageHeadline: 'Umbrella Painting Workshop in Delhi NCR',
+    intro: 'Umbrella Painting hands participants a plain umbrella canopy and fabric paints, and lets them cover it edge to edge with florals, patterns, or bold freehand designs. The curved, panelled surface is larger and more forgiving than a canvas, so even a simple design reads as intentional once it wraps around the umbrella. Best of all, it is genuinely functional — participants use the umbrella through the monsoon season, not just display it.',
+    citation: { text: 'Materials include Fevicryl fabric colours, the certified product line Shramita Govil trained on.', url: 'https://www.pidilite.com/consumer-brands/fevicryl' },
+    whatYouMake: 'A hand-painted fabric umbrella with a personalised floral or pattern design — genuinely usable and display-worthy.',
+    whoBenefits: 'A standout monsoon-season activity for private parties, corporate wellness days, and college fests. Also works well as a branded corporate gifting piece.',
+    keywords: ['umbrella painting workshop Delhi', 'monsoon craft workshop Delhi NCR', 'hand painted umbrella class', 'fabric painting workshop Delhi', 'corporate monsoon activity Delhi NCR'],
+    faq: [
+      {
+        q: 'What is the Umbrella Painting workshop?',
+        a: 'Participants paint a plain fabric umbrella using fabric paints and fine brushes, covering the canopy with florals, patterns, or freehand designs. The finished umbrella is genuinely usable, not just decorative.',
+      },
+      {
+        q: 'Is Umbrella Painting a good monsoon-season activity?',
+        a: 'Yes — it is one of our most popular seasonal workshops. The activity is festive, photogenic, and produces something participants actually use once the rains begin.',
+      },
+      {
+        q: 'Do participants need any art experience?',
+        a: 'No experience is needed. The larger, panelled umbrella surface is forgiving, and Shramita provides stencils and design guidance for anyone who wants a starting point.',
+      },
+      {
+        q: 'What materials are used?',
+        a: 'Kraftykinni provides plain fabric umbrellas, Fevicryl fabric colours, and fine brushes. Everything is included in the per-person price.',
+      },
+      {
+        q: 'How long does the workshop take?',
+        a: 'A session runs for 2 to 2.5 hours, given the larger surface area. Fabric paint dries within 20 to 30 minutes so umbrellas are ready to pack before the session ends.',
+      },
+      {
+        q: 'Can Umbrella Painting be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 15 to 150+ across Delhi, Gurgaon, and Noida. All materials are included in the per-person price.',
+      },
+    ],
+  },
+  {
+    id: 'cap-painting',
+    title: 'Cap Painting',
+    category: 'Everyday',
+    image: capPainting,
+    duration: '1.5 – 2 Hours',
+    benefits: [
+      'A wearable, everyday keepsake — not just a shelf decoration',
+      'Compact canvas keeps the activity quick without feeling rushed',
+      'Popular as a personalised corporate or college gifting item',
+    ],
+    metaDescription: 'Cap Painting workshop in Delhi NCR by Kraftykinni. Hand-paint a plain cap with florals or your own design. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    pageHeadline: 'Cap Painting Workshop in Delhi NCR',
+    intro: 'Cap Painting gives each participant a plain cotton cap and fabric paints to build a personalised design across the panel and brim — florals, lettering, abstract colour blocks, or a favourite motif. The compact surface keeps the session quick and focused, and the finished cap is something participants actually wear afterward rather than put away. It works especially well as a personalised takeaway for college fests and corporate gifting days.',
+    citation: { text: 'Materials include Fevicryl fabric colours, the certified product line Shramita Govil trained on.', url: 'https://www.pidilite.com/consumer-brands/fevicryl' },
+    whatYouMake: 'A hand-painted cotton cap with a personalised design — wearable, durable, and ready to use immediately.',
+    whoBenefits: 'Popular for college fests, corporate gifting days, birthday parties, and school craft sessions.',
+    keywords: ['cap painting workshop Delhi', 'hat painting class Delhi NCR', 'fabric cap art workshop', 'personalised cap painting Delhi', 'college fest craft activity Delhi NCR'],
+    faq: [
+      {
+        q: 'What is the Cap Painting workshop?',
+        a: 'Participants paint a plain cotton cap using fabric paints and fine brushes, building a personalised design across the panel and brim — florals, lettering, or abstract patterns. The finished cap is wearable immediately.',
+      },
+      {
+        q: 'Is Cap Painting good for corporate or college gifting?',
+        a: 'Yes — it is a popular choice for branded gifting events. Company logos or event themes can be pre-printed on the cap before the session, with participants personalising further with their own painted designs.',
+      },
+      {
+        q: 'Do participants need any art experience?',
+        a: 'No experience is needed. The compact canvas is easy to work with, and stencils are available for anyone who wants a guided design.',
+      },
+      {
+        q: 'What materials are used?',
+        a: 'Kraftykinni provides plain cotton caps, Fevicryl fabric colours, and fine brushes. Everything is included in the per-person price.',
+      },
+      {
+        q: 'How long does the workshop take?',
+        a: 'A session runs for 1.5 to 2 hours. Fabric paint dries within 15 to 20 minutes, so caps are fully finished and ready to wear before the session ends.',
+      },
+      {
+        q: 'Can Cap Painting be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. All materials are included in the per-person price.',
+      },
+    ],
+  },
+  {
+    id: 'canvas-pearl-art',
+    title: 'Canvas Pearl Art',
+    category: 'Signature',
+    image: pearlStringArt,
+    duration: '2 – 2.5 Hours',
+    benefits: [
+      'An elegant, premium-feel keepsake unlike any other workshop on our list',
+      'Rewards patience and precision — deeply satisfying to build up piece by piece',
+      'A genuinely display-ready wall piece, not just a craft-table project',
+    ],
+    metaDescription: 'Canvas Pearl Art workshop in Delhi NCR by Kraftykinni. Build radiating pearl patterns on a black canvas for an elegant wall piece. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    pageHeadline: 'Canvas Pearl Art Workshop in Delhi NCR',
+    intro: 'Canvas Pearl Art adapts the traditional string-and-nail technique — normally built with thread wound around pins — using pearls glued directly onto a black canvas instead. Participants build radiating, spiral, or symmetrical patterns one pearl at a time, working outward from a central point. The black background makes every pearl stand out, and the finished piece has a genuinely elegant, gallery-ready look that is unlike anything else in our workshop catalogue.',
+    citation: { text: 'The technique draws on string art, where thread wound around a grid of points builds geometric patterns — this workshop swaps thread for pearls glued directly onto the canvas.', url: 'https://en.wikipedia.org/wiki/String_art' },
+    whatYouMake: 'A hand-built canvas pearl art piece — an elegant, display-ready wall piece with a radiating or spiral pearl pattern on a black background.',
+    whoBenefits: 'A premium option for private events, corporate gifting, bridal showers, and anyone wanting a genuinely elegant keepsake activity.',
+    keywords: ['canvas pearl art workshop Delhi', 'pearl art class Delhi NCR', 'string art workshop Delhi', 'elegant craft workshop Delhi NCR', 'pearl canvas art class'],
+    faq: [
+      {
+        q: 'What is Canvas Pearl Art?',
+        a: 'Canvas Pearl Art adapts the traditional string-and-nail technique using pearls glued directly onto a black canvas instead of thread wound around pins. Participants build radiating or spiral patterns one pearl at a time, working outward from a central point.',
+      },
+      {
+        q: 'Do I need any art experience to participate?',
+        a: 'No experience is needed, though the activity rewards patience — placing each pearl carefully is more important than any drawing or painting skill. Shramita guides participants through the pattern layout before pearl placement begins.',
+      },
+      {
+        q: 'What materials are used?',
+        a: 'Kraftykinni provides a black canvas, decorative pearls in varying sizes, adhesive, and a marked guide for the radiating pattern. Everything is included in the per-person price.',
+      },
+      {
+        q: 'How long does the workshop take?',
+        a: 'A session runs for 2 to 2.5 hours, since building up a full pearl pattern takes more time than a painted piece. The adhesive sets quickly so the canvas is ready to handle and pack by the end of the session.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A finished canvas pearl art piece — an elegant, display-ready wall piece unlike anything else in our workshop catalogue.',
+      },
+      {
+        q: 'Can Canvas Pearl Art be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 15 to 100+ across Delhi, Gurgaon, and Noida. All materials are included in the per-person price.',
+      },
+    ],
+  },
+  {
+    id: 'clay-mirror-art',
+    title: 'Clay Mirror Art',
+    category: 'Signature',
+    image: clayMirrorArtImg,
+    duration: '2 – 2.5 Hours',
+    benefits: [
+      'A genuinely functional keepsake — a mirror participants actually use, not just display',
+      'Hands-on clay sculpting builds patience and fine motor focus',
+      'Every finished frame is unique, since no two flower arrangements are identical',
+    ],
+    metaDescription: 'Clay Mirror Art workshop in Delhi NCR by Kraftykinni. Sculpt a floral clay frame around a mirror for a genuinely usable keepsake. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    pageHeadline: 'Clay Mirror Art Workshop in Delhi NCR',
+    intro: 'Clay Mirror Art gives each participant a small mirror and a set of air-dry clay to build an entirely hand-sculpted floral frame around it. Participants shape individual petals, leaves, and blooms, then arrange and press them around the mirror\'s edge one piece at a time. Unlike a purely decorative craft, the finished mirror is genuinely functional — something participants actually use at home, not just set on a shelf.',
+    citation: { text: 'Hand-building and shaping clay is one of humanity\'s oldest crafts — pottery dates back thousands of years and is still valued today for the same tactile, repetitive shaping process.', url: 'https://en.wikipedia.org/wiki/Pottery' },
+    whatYouMake: 'A hand-sculpted clay flower mirror frame — a genuinely usable mirror with a fully personalised floral border.',
+    whoBenefits: 'Ideal for private events, corporate gifting, school craft days, and anyone wanting a functional keepsake rather than a purely decorative one.',
+    keywords: ['clay mirror art workshop Delhi', 'clay flower mirror class Delhi NCR', 'mirror decoration workshop Delhi', 'clay craft workshop Delhi NCR', 'handmade mirror frame class'],
+    faq: [
+      {
+        q: 'What is the Clay Mirror Art workshop?',
+        a: 'Participants shape air-dry clay into individual petals, leaves, and blooms, then arrange and press them around the edge of a small mirror to build a fully hand-sculpted floral frame. The finished mirror is genuinely usable, not just decorative.',
+      },
+      {
+        q: 'Do I need any art experience to participate?',
+        a: 'No experience is needed. Shaping simple clay petals and leaves is easy to pick up, and Shramita guides the arrangement so every frame looks intentional regardless of skill level.',
+      },
+      {
+        q: 'What materials are used?',
+        a: 'Kraftykinni provides a small mirror, air-dry craft clay in multiple colours, and basic shaping tools. Everything is included in the per-person price.',
+      },
+      {
+        q: 'How long does the workshop take?',
+        a: 'A session runs for 2 to 2.5 hours, covering shaping, arranging, and a short setting period before the mirror is ready to handle and pack.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A finished clay mirror art piece — a genuinely usable mirror with a unique, hand-sculpted floral frame.',
+      },
+      {
+        q: 'Can Clay Mirror Art be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 15 to 150+ across Delhi, Gurgaon, and Noida. All materials are included in the per-person price.',
+      },
+    ],
+  },
+  {
+    id: 'mirror-painting',
+    title: 'Mirror Painting',
+    category: 'Everyday',
+    image: mirrorPaintingImg,
+    duration: '1.5 – 2 Hours',
+    benefits: [
+      'Transforms a plain mirror into a genuinely functional piece of wall art',
+      'Reflective surface makes every finished piece look more dramatic than the effort involved',
+      'Works well for both bold illustrative scenes and delicate detail work',
+    ],
+    metaDescription: 'Mirror Painting workshop in Delhi NCR by Kraftykinni. Hand-paint an illustrated scene directly onto a mirror for wall-ready décor. Corporate, school & private events. All materials included. ₹600–₹800/person.',
+    pageHeadline: 'Mirror Painting Workshop in Delhi NCR',
+    intro: 'Mirror Painting has participants paint an illustrated scene — botanical motifs, woodland characters, or bold pattern work — directly onto the surface of a mirror using fine brushes and glass-safe paints. The reflective background behind the painted design gives even a simple illustration real visual depth, and the finished piece works equally well as a wall-mounted mirror or a piece of standalone décor.',
+    citation: { text: 'The technique draws on reverse glass painting, a centuries-old art form practised from Europe to India, prized for its glowing, translucent colour effect.', url: 'https://en.wikipedia.org/wiki/Reverse_glass_painting' },
+    whatYouMake: 'A hand-painted illustrated mirror — a wall-ready piece that is genuinely functional as well as decorative.',
+    whoBenefits: 'Great for private events, school art days, corporate gifting, and anyone wanting a decorative piece that doubles as a usable mirror.',
+    keywords: ['mirror painting workshop Delhi', 'painted mirror class Delhi NCR', 'glass and mirror art workshop', 'decorative mirror painting Delhi', 'wall mirror art class'],
+    faq: [
+      {
+        q: 'What is the Mirror Painting workshop?',
+        a: 'Participants paint an illustrated scene — botanical motifs, woodland characters, or bold pattern work — directly onto the surface of a mirror using glass-safe paints and fine brushes. The reflective background gives the finished piece real visual depth.',
+      },
+      {
+        q: 'Do I need any art experience to participate?',
+        a: 'No experience is needed. Stencils and traced outlines are available for anyone who wants a guided design, and Shramita provides colour and detail guidance throughout.',
+      },
+      {
+        q: 'What materials are used?',
+        a: 'Kraftykinni provides a plain mirror, glass-safe acrylic paints, and fine brushes. Everything is included in the per-person price.',
+      },
+      {
+        q: 'How long does the workshop take?',
+        a: 'A session runs for 1.5 to 2 hours. Paint dries within 20 to 30 minutes, so mirrors are ready to handle and pack before the session ends.',
+      },
+      {
+        q: 'What does each participant take home?',
+        a: 'A finished hand-painted mirror — wall-ready, genuinely functional, and unique to the participant\'s own design.',
+      },
+      {
+        q: 'Can Mirror Painting be booked for a group in Delhi NCR?',
+        a: 'Yes — Kraftykinni conducts this workshop for groups of 20 to 200+ across Delhi, Gurgaon, and Noida. All materials are included in the per-person price.',
       },
     ],
   },
