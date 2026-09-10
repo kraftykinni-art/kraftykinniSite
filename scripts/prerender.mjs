@@ -291,6 +291,7 @@ const routes = [
 
       <section id="pricing">
         <h2>How much do Kraftykinni workshops cost?</h2>
+        <h3>Pricing by Group Size</h3>
         <p>Pricing depends on group size. Larger groups cost less per person, since setup and facilitation time are shared across more participants:</p>
         <table>
           <caption>Kraftykinni workshop pricing by group size</caption>
@@ -303,6 +304,7 @@ const routes = [
             <tr><td>Large</td><td>100+ pax</td><td>₹600</td></tr>
           </tbody>
         </table>
+        <h3>What's Included</h3>
         <p>All three tiers include every art supply. You only need to provide a table, chairs, and your group — Kraftykinni brings everything else and cleans up afterward. If you are unsure which tier applies, try sending your expected headcount through the contact form.</p>
       </section>
 
@@ -324,7 +326,9 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
       <section id="why-workshops">
         <h2>Why do corporate teams choose hands-on art workshops?</h2>
+        <h3>A Physical Takeaway Beats a Shared Memory</h3>
         <p>Many corporate teams default to standard offsites, quizzes, or happy hours for team building. On the other hand, a growing number of event planners are choosing hands-on creative workshops instead, since every participant leaves with something they physically made rather than just a shared afternoon. For instance, a session that ends with 40 finished Lippan Art pieces on a conference-room table tends to generate more conversation afterward than a trivia night does.</p>
+        <h3>Why It Works for Quieter Employees Too</h3>
         <p>In addition, experiential team building of this kind gives quieter employees a low-pressure way to take part, since the creative facilitation itself does the work of starting conversation. For a deeper look at this option, see the <a href="/corporate-art-workshops">corporate art workshops page</a> or read the <a href="/blog/clay-trinket-painting-workshop-cars24-gurgaon">CARS24 Gurgaon workshop case study</a> and the <a href="/blog/best-corporate-team-building-activities-gurgaon-2026">team-building activities in Gurgaon</a> guide. General research on workplace team building is summarised on <a href="https://en.wikipedia.org/wiki/Team_building" rel="noopener">Wikipedia</a>.</p>
       </section>
 

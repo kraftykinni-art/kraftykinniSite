@@ -420,7 +420,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Book a Bottle Lamp Art Workshop for Your School',
-        body: `[Bottle Lamp Art is one of Kraftykinni's 13 signature workshop activities](/workshops/bottle-lamp-art), conducted by [Shramita Govil, Fevicryl Certified Artist](/about). Sessions are available across Delhi, Gurgaon, and Noida. Kraftykinni provides facilitation and guidance for the workshop. Materials can be arranged by the school or provided by Kraftykinni on request.\n\nGroup sizes from 30 to 300+ students. Duration: 90 minutes to 2 hours depending on group size and detail level. Pricing from ₹600 per student, all materials included. A minimum of 7 days notice is required to organise materials for large groups.\n\nTo book or enquire, WhatsApp +91 9599622210 or use the form below with your event date, student count, and grade group. Shramita confirms availability within 24 hours.`,
+        body: `[Bottle Lamp Art is one of Kraftykinni's signature workshop activities](/workshops/bottle-lamp-art), conducted by [Shramita Govil, Fevicryl Certified Artist](/about). Sessions are available across Delhi, Gurgaon, and Noida. Kraftykinni provides facilitation and guidance for the workshop. Materials can be arranged by the school or provided by Kraftykinni on request.\n\nGroup sizes from 30 to 300+ students. Duration: 90 minutes to 2 hours depending on group size and detail level. Pricing from ₹600 per student, all materials included. A minimum of 7 days notice is required to organise materials for large groups.\n\nTo book or enquire, WhatsApp +91 9599622210 or use the form below with your event date, student count, and grade group. Shramita confirms availability within 24 hours.`,
       },
     ],
     faq: [

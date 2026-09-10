@@ -74,8 +74,7 @@ export const workshopsData: Workshop[] = [
     metaDescription: 'Lippan Art workshop in Delhi NCR by Kraftykinni. Experience traditional Kutch mirror work in a guided group session. Corporate team building, schools & private events. All materials included. ₹600–₹800/person.',
     pageHeadline: 'Lippan Art Workshop in Delhi NCR',
     intro: 'Lippan Art is a centuries-old folk craft from the Kutch region of Gujarat where artisans use clay and mirror work to create intricate wall decorations. In our Lippan Art workshop, participants experience this meditative craft firsthand — shaping clay patterns, embedding mirrors, and creating a piece of genuine Indian heritage they can take home. It is one of our most requested activities for corporate teams and school groups alike.',
-    citation: { text: 'Materials for the session include Fevicryl craft clay and acrylic colours — the certified product line Shramita Govil trained on.', url: 'https://www.pidilite.com/consumer-brands/fevicryl' },
-    whatYouMake: 'A finished Lippan Art wall piece with clay patterning and embedded mirrors — a unique, display-ready piece of folk art.',
+    citation: { text: "Gujarat's official tourism board documents mud and mirror work as a traditional Kutch handicraft, still practised by local artisans and prized for its decorative wall pieces.", url: 'https://gujarattourism.com/handicrafts/mud-work.html' },
     whoBenefits: 'Perfect for corporate team-building events, school art days, college fests, and private parties. No prior art experience needed.',
     keywords: ['lippan art workshop Delhi', 'lippan art class Delhi NCR', 'kutch mirror work workshop', 'lippan art corporate activity', 'folk art workshop Delhi NCR'],
     faq: [
