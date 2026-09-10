@@ -7,7 +7,16 @@ import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 import Testimonials from '../components/Testimonials';
 import KeyTakeaways from '../components/KeyTakeaways';
 import ContactFooter from '../components/ContactFooter';
+import HeroImageCollage from '../components/HeroImageCollage';
 import { useBookNow } from '../hooks/useBookNow';
+
+// Real workshop photos (already used on the homepage/workshop pages) picked per
+// city for hero visual variety — not new assets, just a different real mix each.
+const heroImageIds: Record<string, [string, string, string, string]> = {
+  delhi:   ['lippan-art', 'mandala-art', 'block-printing', 'clay-art'],
+  gurgaon: ['boho-canvas', 'mandala-art', 'block-printing', 'lippan-art'],
+  noida:   ['mandala-art', 'tote-bag-painting', 'clay-art', 'lippan-art'],
+};
 
 const locationData = {
   delhi: {
@@ -268,26 +277,40 @@ export default function LocationPage() {
         {/* Hero */}
         <section className="py-16 bg-brand-offwhite relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8">
-                <MapPin size={16} className="text-brand-pink" />
-                <span className="text-xs font-bold uppercase tracking-widest text-brand-charcoal">Kraftykinni · {loc.city}</span>
-              </div>
-              <h1 className="font-serif text-5xl md:text-6xl font-bold text-brand-slate leading-tight mb-6">
-                {loc.headline} — <br /><span className="text-brand-pink italic">{loc.heroPink}</span>
-              </h1>
-              <p className="text-lg text-gray-600 font-light leading-relaxed mb-10">{loc.intro}</p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button onClick={bookNow}
-                  className="inline-flex items-center justify-center gap-2 bg-brand-pink hover:bg-brand-pink-light text-white px-8 py-4 rounded-full text-base font-medium transition-all hover:shadow-lg hover:-translate-y-1">
-                  Book a Workshop in {loc.city} <ArrowRight size={18} />
-                </button>
-                <Link to="/corporate-art-workshops"
-                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-brand-charcoal border border-gray-200 px-8 py-4 rounded-full text-base font-medium transition-all">
-                  Corporate Workshops
-                </Link>
-              </div>
-            </motion.div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8">
+                  <MapPin size={16} className="text-brand-pink" />
+                  <span className="text-xs font-bold uppercase tracking-widest text-brand-charcoal">Kraftykinni · {loc.city}</span>
+                </div>
+                <h1 className="font-serif text-5xl md:text-6xl font-bold text-brand-slate leading-tight mb-6">
+                  {loc.headline} — <br /><span className="text-brand-pink italic">{loc.heroPink}</span>
+                </h1>
+                <p className="text-lg text-gray-600 font-light leading-relaxed mb-10">{loc.intro}</p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <button onClick={bookNow}
+                    className="inline-flex items-center justify-center gap-2 bg-brand-pink hover:bg-brand-pink-light text-white px-8 py-4 rounded-full text-base font-medium transition-all hover:shadow-lg hover:-translate-y-1">
+                    Book a Workshop in {loc.city} <ArrowRight size={18} />
+                  </button>
+                  <Link to="/corporate-art-workshops"
+                    className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-brand-charcoal border border-gray-200 px-8 py-4 rounded-full text-base font-medium transition-all">
+                    Corporate Workshops
+                  </Link>
+                </div>
+              </motion.div>
+
+              <HeroImageCollage
+                images={heroImageIds[key].map((id) => {
+                  const w = workshopsData.find((w) => w.id === id)!;
+                  return { src: w.image, alt: `${w.title} workshop in ${loc.city}` };
+                }) as [
+                  { src: string; alt: string },
+                  { src: string; alt: string },
+                  { src: string; alt: string },
+                  { src: string; alt: string },
+                ]}
+              />
+            </div>
           </div>
         </section>
 

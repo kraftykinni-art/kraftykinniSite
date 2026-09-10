@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { Sparkles, CheckCircle2, ArrowRight, Users, IndianRupee, Clock, Star } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
 import ContactFooter from '../components/ContactFooter';
+import HeroImageCollage from '../components/HeroImageCollage';
 import { useBookNow } from '../hooks/useBookNow';
 import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 import Testimonials from '../components/Testimonials';
@@ -185,11 +186,11 @@ export default function EmployeeEngagementNoidaPage() {
         {/* Hero */}
         <section className="py-16 bg-brand-offwhite relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="max-w-3xl"
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8">
                 <Sparkles size={16} className="text-brand-pink" />
@@ -220,8 +221,22 @@ export default function EmployeeEngagementNoidaPage() {
                 </Link>
               </div>
             </motion.div>
+
+            <HeroImageCollage
+              images={(['mandala-art', 'tote-bag-painting', 'tie-and-dye', 'lippan-art'] as const).map((id) => {
+                const w = workshopsData.find((w) => w.id === id)!;
+                return { src: w.image, alt: `${w.title} workshop in Noida` };
+              }) as [
+                { src: string; alt: string },
+                { src: string; alt: string },
+                { src: string; alt: string },
+                { src: string; alt: string },
+              ]}
+            />
+            </div>
           </div>
         </section>
+
 
         {/* Stats bar */}
         <section className="py-10 bg-white border-y border-gray-100">
