@@ -17,11 +17,19 @@ const serviceLinks = [
   { name: 'Private Events',      href: '/private-art-workshops' },
 ];
 
+const locationLinks = [
+  { name: 'Workshops in Delhi',   href: '/workshops-in-delhi' },
+  { name: 'Workshops in Gurgaon', href: '/workshops-in-gurgaon' },
+  { name: 'Workshops in Noida',   href: '/workshops-in-noida' },
+];
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isLocationsOpen, setIsLocationsOpen] = useState(false);
   const servicesRef = useRef<HTMLDivElement>(null);
+  const locationsRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -34,12 +42,16 @@ export default function Navbar() {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setIsServicesOpen(false);
+    setIsLocationsOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (servicesRef.current && !servicesRef.current.contains(e.target as Node)) {
         setIsServicesOpen(false);
+      }
+      if (locationsRef.current && !locationsRef.current.contains(e.target as Node)) {
+        setIsLocationsOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -140,6 +152,41 @@ export default function Navbar() {
                 )}
             </div>
 
+            {/* Locations dropdown */}
+            <div ref={locationsRef} className="relative">
+              <button
+                onClick={() => setIsLocationsOpen((prev) => !prev)}
+                onMouseEnter={() => setIsLocationsOpen(true)}
+                className="flex items-center gap-1 text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors"
+                aria-expanded={isLocationsOpen}
+                aria-haspopup="true"
+              >
+                Locations
+                <ChevronDown
+                  size={14}
+                  className={`transition-transform duration-200 ${isLocationsOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+
+              {isLocationsOpen && (
+                  <div
+                    onMouseLeave={() => setIsLocationsOpen(false)}
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden animate-[fadeInUp_0.15s_ease-out_both]"
+                  >
+                    {locationLinks.map((link) => (
+                      <Link
+                        key={link.name}
+                        to={link.href}
+                        className="block px-5 py-3 text-sm font-medium text-brand-charcoal hover:text-brand-pink hover:bg-brand-offwhite transition-colors"
+                        onClick={() => setIsLocationsOpen(false)}
+                      >
+                        {link.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+            </div>
+
             <Link to="/about" className="text-sm font-medium text-brand-charcoal hover:text-brand-pink transition-colors">
               About
             </Link>
@@ -185,6 +232,19 @@ export default function Navbar() {
               <div className="border-t border-gray-100 pt-4 space-y-3">
                 <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Services</p>
                 {serviceLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="block text-base font-medium text-brand-charcoal hover:text-brand-pink transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+              {/* Locations — flat links with label */}
+              <div className="border-t border-gray-100 pt-4 space-y-3">
+                <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Locations</p>
+                {locationLinks.map((link) => (
                   <Link
                     key={link.name}
                     to={link.href}

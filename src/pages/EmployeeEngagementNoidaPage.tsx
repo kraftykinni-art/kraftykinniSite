@@ -1,0 +1,557 @@
+import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import { motion } from 'motion/react';
+import { Sparkles, CheckCircle2, ArrowRight, Users, IndianRupee, Clock, Star } from 'lucide-react';
+import { workshopsData } from '../data/workshops';
+import ContactFooter from '../components/ContactFooter';
+import { useBookNow } from '../hooks/useBookNow';
+import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
+import Testimonials from '../components/Testimonials';
+import KeyTakeaways from '../components/KeyTakeaways';
+
+const whyArtForEngagement = [
+  {
+    title: 'Creates conversation across hierarchies',
+    desc: 'When 40 people are painting together, no one is thinking about org charts. Senior managers and interns end up at the same table, comparing colours, helping each other — genuine peer interaction without a structured icebreaker.',
+  },
+  {
+    title: 'Every participant gets a physical takeaway',
+    desc: 'A finished artwork they made themselves. It sits on a desk, goes home, gets photographed. The memory of the event travels with them. No other team activity produces this.',
+  },
+  {
+    title: 'Zero logistics burden on your HR team',
+    desc: 'Kraftykinni arrives with every art supply, sets up before the session, and cleans up after. You provide tables, chairs, and your team. That\'s it.',
+  },
+  {
+    title: 'Works for every group size in Noida',
+    desc: 'From a 20-person leadership team offsite to a 150+ person student or annual-day event — pricing and format scale accordingly. One facilitator per 40 participants ensures quality.',
+  },
+  {
+    title: 'No experience needed — truly inclusive',
+    desc: 'Step-by-step facilitation by a Fevicryl Certified Artist means everyone succeeds regardless of their art background. The least artistic person in the room usually surprises themselves.',
+  },
+  {
+    title: 'Supports wellbeing alongside engagement',
+    desc: 'Art is measurably stress-reducing. For teams in Noida\'s fast-moving IT and media offices, a guided creative session does double duty: engagement event and genuine mental reset.',
+  },
+];
+
+const activities = [
+  { id: 'lippan-art',      label: 'Lippan Art',    note: 'Most requested for corporate groups' },
+  { id: 'mandala-art',     label: 'Mandala Art',   note: 'Best for mindfulness & wellness days' },
+  { id: 'tie-and-dye',     label: 'Tie & Dye',     note: 'High energy, great for large groups' },
+  { id: 'boho-canvas',     label: 'Boho Canvas',   note: 'Popular at off-site retreats' },
+  { id: 'tote-bag-painting', label: 'Tote Bag Painting', note: 'Doubles as a branded takeaway' },
+  { id: 'clay-art',        label: 'Clay Art',       note: 'Ideal for wellness & decompression' },
+];
+
+const useCases = [
+  {
+    heading: 'Quarterly Team-Building Events',
+    body: 'The most common booking format. HR teams across Sector 62 and Film City Road run these quarterly to maintain team cohesion between performance cycles. A 90-minute guided art session fills an afternoon slot without requiring an external venue.',
+  },
+  {
+    heading: 'Desk-Side Corporate Resets',
+    body: 'Not every session needs a conference room. Kraftykinni has run guided sessions directly at participants\' desks during a work shift — a low-disruption way to give a team a genuine mental break without pulling them off-site.',
+  },
+  {
+    heading: 'Employee Appreciation Days',
+    body: 'When you want to signal investment in your people rather than just entertainment, a creative session works well. Employees frequently describe it as "the first company event I actually enjoyed." The artwork they take home is a daily reminder of the gesture.',
+  },
+  {
+    heading: 'Annual Day & Fest Activities',
+    body: 'For large annual days and college fests in Noida, art workshops are an effective structured activity before or after the formal programme. Groups of 100 to 150+ are accommodated with additional facilitators at no extra logistics cost.',
+  },
+  {
+    heading: 'Onboarding & New Hire Orientation',
+    body: 'Art workshops as part of onboarding have become popular among Noida\'s IT and media companies. A creative session on day one signals company culture and breaks the ice across cohorts far more effectively than a team quiz.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What makes art workshops a good employee engagement activity compared to other options?',
+    a: 'Art workshops sit in a category most team activities don\'t reach: collaborative and creative without being competitive. There\'s no scoring, no elimination, and no performance pressure. The shared creative process produces genuine conversation, and every participant walks out with a physical takeaway — a rare outcome from a corporate event. In Noida\'s fast-paced IT and media environment, the stress-reducing effect of creative work is an added benefit HR managers frequently mention.',
+  },
+  {
+    q: 'Can you handle our team of 100+ at our Noida office?',
+    a: 'Yes. Our standard format handles 20 to 150+ participants. For groups above 60, we bring additional facilitators to ensure quality of experience. Pricing drops to ₹600 per person at 100+ scale. The setup requires standard office tables and chairs — we bring all art supplies.',
+  },
+  {
+    q: 'Which activity works best for a Noida corporate team of 20–50 people?',
+    a: 'Mandala Art and Lippan Art are our top picks for desk-side or smaller conference-room sessions — they work well within a fixed time slot without needing a large open floor. Boho Canvas and Tie & Dye suit larger, higher-energy groups better. We recommend based on your group\'s profile and event tone — reach out and we\'ll suggest the best fit.',
+  },
+  {
+    q: 'Do you come to our office in Sector 62 or Sector 90?',
+    a: 'Yes — we travel to your office or event venue across Noida, including Sector 62, Sector 16, Sector 90, Film City Road, Sector 18, Knowledge Park, Sector 125, and Greater Noida. You do not need to book an external venue. We only need tables, chairs, and your team.',
+  },
+  {
+    q: 'What is the per-person cost for a corporate employee engagement workshop in Noida?',
+    a: 'Pricing scales with group size: ₹800/person for groups of 20–50, ₹700/person for 50–100, and ₹600/person for 100+. All art materials are included. A 50% deposit confirms the date; minimum 7 days notice required.',
+  },
+  {
+    q: 'Do you also work with colleges and universities in Noida?',
+    a: 'Yes — Amity University is one of Kraftykinni\'s most frequently repeated bookings, alongside other institutions across the Knowledge Park and Sector 125 belt, for fests, orientation days, and student events.',
+  },
+];
+
+export default function EmployeeEngagementNoidaPage() {
+  const bookNow = useBookNow();
+
+  const title = 'Employee Engagement Activities Noida | Art Workshops | Kraftykinni';
+  const description = 'Guided art workshops for employee engagement in Noida. Teams of 20–150+, all materials supplied. Lippan Art, Mandala, Tie & Dye at your Sector 62 or Sector 90 office. ₹600/person.';
+  const canonical = 'https://kraftykinni.in/employee-engagement-activities-noida';
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Employee Engagement Art Workshops — Noida',
+    description,
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'Kraftykinni',
+      url: 'https://kraftykinni.in',
+      telephone: '+919599622210',
+      email: 'kraftykinni@gmail.com',
+      sameAs: KRAFTYKINNI_SAME_AS,
+    },
+    areaServed: { '@type': 'City', name: 'Noida' },
+    serviceType: 'Employee Engagement Art Workshop',
+    offers: {
+      '@type': 'AggregateOffer',
+      lowPrice: '600',
+      highPrice: '800',
+      priceCurrency: 'INR',
+      offerCount: '3',
+    },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://kraftykinni.in/' },
+      { '@type': 'ListItem', position: 2, name: 'Corporate Art Workshops', item: 'https://kraftykinni.in/corporate-art-workshops' },
+      { '@type': 'ListItem', position: 3, name: 'Employee Engagement Activities Noida', item: canonical },
+    ],
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ q, a }) => ({
+      '@type': 'Question',
+      name: q,
+      acceptedAnswer: { '@type': 'Answer', text: a },
+    })),
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content="employee engagement activities Noida, team building Noida, employee engagement workshop Noida, art workshop team building Noida, corporate engagement activities Noida, team outing Noida" />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://cdn.kraftykinni.in/og-corporate.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Kraftykinni" />
+        <meta property="og:locale" content="en_IN" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://cdn.kraftykinni.in/og-corporate.jpg" />
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+      </Helmet>
+
+      <main className="pt-24 bg-brand-offwhite">
+
+        {/* Breadcrumb */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2">
+          <nav className="flex items-center gap-2 text-sm text-gray-400 flex-wrap" aria-label="Breadcrumb">
+            <Link to="/" className="hover:text-brand-pink transition-colors">Home</Link>
+            <span>/</span>
+            <Link to="/corporate-art-workshops" className="hover:text-brand-pink transition-colors">Corporate Workshops</Link>
+            <span>/</span>
+            <span className="text-brand-charcoal font-medium">Employee Engagement — Noida</span>
+          </nav>
+        </div>
+
+        {/* Hero */}
+        <section className="py-16 bg-brand-offwhite relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="max-w-3xl"
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-gray-200 shadow-sm mb-8">
+                <Sparkles size={16} className="text-brand-pink" />
+                <span className="text-xs font-bold uppercase tracking-widest text-brand-charcoal">Noida · Corporate Workshops</span>
+              </div>
+              <h1 className="font-serif text-5xl md:text-6xl font-bold text-brand-slate leading-tight mb-6">
+                Employee Engagement<br />
+                <span className="text-brand-pink italic">Activities in Noida</span>
+              </h1>
+              <p className="text-lg text-gray-600 font-light leading-relaxed mb-4">
+                Noida's IT, media, and education sector books Kraftykinni for one reason: art workshops produce outcomes other team activities don't. Genuine conversation, cross-hierarchy interaction, and a physical takeaway every employee keeps.
+              </p>
+              <p className="text-lg text-gray-600 font-light leading-relaxed mb-10">
+                Guided sessions for teams of 20 to 150+ across Sector 62, Sector 16, Sector 90, Film City Road, and Knowledge Park. All materials included. Starting at ₹600 per person.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button
+                  onClick={bookNow}
+                  className="inline-flex items-center justify-center gap-2 bg-brand-pink hover:bg-brand-pink-light text-white px-8 py-4 rounded-full text-base font-medium transition-all hover:shadow-lg hover:-translate-y-1"
+                >
+                  Book an Engagement Session <ArrowRight size={18} />
+                </button>
+                <Link
+                  to="/corporate-art-workshops"
+                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-brand-charcoal border border-gray-200 px-8 py-4 rounded-full text-base font-medium transition-all"
+                >
+                  See Full Corporate Page
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Stats bar */}
+        <section className="py-10 bg-white border-y border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {[
+                { icon: <Users size={20} className="text-brand-pink" />, num: '20–150+', label: 'participants per session' },
+                { icon: <IndianRupee size={20} className="text-brand-pink" />, num: '₹600', label: 'per person at scale' },
+                { icon: <Clock size={20} className="text-brand-pink" />, num: '90 min', label: 'typical session length' },
+                { icon: <Star size={20} className="text-brand-pink" />, num: '50+', label: 'corporate & institutional events done' },
+              ].map((s) => (
+                <div key={s.label} className="flex items-start gap-3">
+                  <div className="mt-0.5 flex-shrink-0">{s.icon}</div>
+                  <div>
+                    <p className="font-serif text-2xl font-bold text-brand-slate leading-none">{s.num}</p>
+                    <p className="text-xs text-gray-400 mt-1">{s.label}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Use Cases */}
+        <section className="py-20 bg-brand-offwhite">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-12">
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">When Teams Book Us</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-slate mt-2">
+                Employee Engagement <span className="text-brand-pink italic">Use Cases in Noida</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {useCases.map((uc, i) => (
+                <motion.div
+                  key={uc.heading}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.06 }}
+                  className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7"
+                >
+                  <h3 className="font-serif text-lg font-bold text-brand-slate mb-3">{uc.heading}</h3>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">{uc.body}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonial — Noida (Amity University) */}
+        <section className="py-12 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <blockquote className="relative">
+              <span className="absolute -top-4 left-0 text-7xl text-brand-pink/15 font-serif leading-none select-none">&ldquo;</span>
+              <p className="font-serif text-xl md:text-2xl text-brand-slate font-medium leading-snug mb-5 relative z-10">
+                "The workshop was an absolute hit with our students! Shramita's energy and creativity made it a memorable experience. Everyone walked away with something beautiful they made themselves."
+              </p>
+              <footer className="text-sm text-gray-400">
+                <strong className="text-brand-charcoal font-semibold">Aparajita</strong>
+                <span className="mx-2">·</span>
+                Amity University, Noida
+              </footer>
+            </blockquote>
+          </div>
+        </section>
+
+        {/* Amity University Case Study */}
+        <section className="py-20 bg-brand-offwhite">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-10">
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">Case Study</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-slate mt-2 mb-3">
+                Repeat Workshops at <span className="text-brand-pink italic">Amity University</span>
+              </h2>
+              <p className="text-gray-600 font-light leading-relaxed max-w-2xl">
+                Amity University's campus in Noida is one of Kraftykinni's most regular institutional clients — and one of the clearest examples of how a well-run session earns a repeat booking.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+              <div className="space-y-6">
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">The Brief</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    Amity University needed creative engagement sessions for student cohorts across different faculties and events — orientation programmes, fests, annual days, and student wellness days. Groups ranged from 40 to 150+ students.
+                  </p>
+                </div>
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">What We Ran</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    Multiple sessions across Lippan Art, Mandala Art, and Tote Bag Painting — activities that work well for student groups because they're structured enough to guide a large room, but open-ended enough that every student's output looks different.
+                  </p>
+                </div>
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">The Outcome</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    Amity has rebooked Kraftykinni across multiple events and different faculties — a pattern that tells its own story. Every student leaves with finished artwork they made. The sessions are frequently described as a highlight of the event calendar.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white rounded-3xl border border-gray-100 shadow-sm p-8 lg:sticky lg:top-28">
+                <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-6">By the Numbers</div>
+                <div className="space-y-5">
+                  {[
+                    { num: 'Multiple', label: 'repeat bookings across faculties and events' },
+                    { num: '40–150+', label: 'student participants per session' },
+                    { num: '3+', label: 'different workshop activities run on campus' },
+                    { num: '0', label: 'logistics burden on the organising team' },
+                  ].map((s) => (
+                    <div key={s.label} className="flex items-start gap-4 border-b border-gray-100 pb-5 last:border-0 last:pb-0">
+                      <span className="font-serif text-2xl font-bold text-brand-pink leading-none flex-shrink-0 w-24">{s.num}</span>
+                      <span className="text-sm text-brand-charcoal font-light leading-snug mt-1">{s.label}</span>
+                    </div>
+                  ))}
+                </div>
+                <button
+                  onClick={bookNow}
+                  className="mt-8 w-full inline-flex items-center justify-center gap-2 bg-brand-pink hover:bg-brand-pink-light text-white px-6 py-3.5 rounded-full text-sm font-medium transition-all hover:shadow-lg hover:-translate-y-0.5"
+                >
+                  Book a Session Like This <ArrowRight size={16} />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Sector 90 Corporate Case Study */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-10">
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">Case Study</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-slate mt-2 mb-3">
+                A Sector 90 <span className="text-brand-pink italic">Desk-Side Reset</span>
+              </h2>
+              <p className="text-gray-600 font-light leading-relaxed max-w-2xl">
+                A 20-person team at a Sector 90 office — in the Bhutani Alphathum corridor — traded desks for dot mandala art during a single work shift.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+              <div className="space-y-6">
+                <div className="bg-brand-offwhite rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">The Brief</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    A Sector 90 company wanted a low-disruption way to give a 20-person team a genuine mental break, without pulling them off-site or off their shift.
+                  </p>
+                </div>
+                <div className="bg-brand-offwhite rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">What We Ran</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    A desk-side dot mandala art session during a 3:00–3:30pm shift window — participants built symmetrical patterns, landscapes, and even a stressed-cartoon piece, one dot at a time, right at their own desks.
+                  </p>
+                </div>
+                <div className="bg-brand-offwhite rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">The Outcome</div>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm">
+                    A relaxed, no-experience corporate reset that fit inside a single afternoon — proof that an engagement session doesn't need a conference room or a full day off the floor to land well.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-brand-offwhite rounded-3xl border border-gray-100 shadow-sm p-8 lg:sticky lg:top-28">
+                <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-6">By the Numbers</div>
+                <div className="space-y-5">
+                  {[
+                    { num: '20', label: 'participants, one afternoon shift' },
+                    { num: '30 min', label: 'desk-side session window' },
+                    { num: 'Sector 90', label: 'Bhutani Alphathum corridor, Noida' },
+                    { num: '0', label: 'venue change or off-site travel needed' },
+                  ].map((s) => (
+                    <div key={s.label} className="flex items-start gap-4 border-b border-gray-100 pb-5 last:border-0 last:pb-0">
+                      <span className="font-serif text-2xl font-bold text-brand-pink leading-none flex-shrink-0 w-24">{s.num}</span>
+                      <span className="text-sm text-brand-charcoal font-light leading-snug mt-1">{s.label}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link
+                  to="/blog/dot-mandala-art-corporate-workshop-noida"
+                  className="mt-8 w-full inline-flex items-center justify-center gap-2 bg-white border border-gray-200 text-brand-charcoal hover:text-brand-pink hover:border-brand-pink/30 px-6 py-3.5 rounded-full text-sm font-medium transition-all"
+                >
+                  Read the Full Story <ArrowRight size={16} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why art works */}
+        <section className="py-20 bg-brand-offwhite">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">Why It Works</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-slate mt-2">
+                Why Noida Teams Choose <span className="text-brand-pink italic">Art Workshops</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {whyArtForEngagement.map((item, i) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, scale: 0.97 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.06 }}
+                  className="flex gap-4 bg-white rounded-2xl border border-gray-100 shadow-sm p-6"
+                >
+                  <CheckCircle2 size={20} className="text-brand-pink flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold text-brand-slate mb-2 text-sm">{item.title}</h3>
+                    <p className="text-brand-charcoal font-light leading-relaxed text-sm">{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Activities */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">What We Run</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-slate mt-2">
+                Top Workshop Activities <span className="text-brand-pink italic">for Noida Teams</span>
+              </h2>
+              <p className="text-brand-slate/70 mt-3 max-w-xl mx-auto">Six of our {workshopsData.length} signature activities work especially well for corporate employee engagement. All materials included.</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {activities.map((act, i) => {
+                const workshop = workshopsData.find((w) => w.id === act.id);
+                if (!workshop) return null;
+                return (
+                  <motion.div
+                    key={act.id}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.06 }}
+                  >
+                    <Link to={`/workshops/${act.id}`} className="group block bg-brand-offwhite rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all">
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img
+                          src={workshop.image}
+                          alt={`${act.label} employee engagement workshop Noida`}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div className="p-5">
+                        <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-1">{act.note}</div>
+                        <h3 className="font-serif text-lg font-bold text-brand-slate mb-2">{act.label}</h3>
+                        <span className="text-brand-pink font-medium text-sm group-hover:underline underline-offset-4">View Details →</span>
+                      </div>
+                    </Link>
+                  </motion.div>
+                );
+              })}
+            </div>
+            <div className="text-center mt-10">
+              <Link
+                to="/corporate-art-workshops"
+                className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-charcoal hover:text-brand-pink hover:border-brand-pink/30 px-6 py-3 rounded-full text-sm font-medium transition-all"
+              >
+                View all {workshopsData.length} activities <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="py-20 bg-brand-offwhite">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl font-bold text-brand-slate mb-10 text-center">
+              Frequently Asked <span className="text-brand-pink italic">Questions</span>
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, i) => (
+                <details key={i} className="group bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer list-none hover:bg-gray-50 transition-colors">
+                    <span className="font-semibold text-brand-slate text-sm pr-4 leading-snug">{faq.q}</span>
+                    <span className="text-brand-pink flex-shrink-0 transition-transform duration-200 group-open:rotate-45">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 3v10M3 8h10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-6 pb-5">
+                    <p className="text-brand-charcoal/80 text-sm leading-relaxed">{faq.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="font-serif text-3xl font-bold text-brand-slate mb-4">
+              Ready to Plan Your <span className="text-brand-pink italic">Team Session?</span>
+            </h2>
+            <p className="text-gray-600 font-light mb-8 leading-relaxed">
+              Share your group size, preferred date, and Noida location. We'll confirm availability and suggest the best activity for your team within 24 hours.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                onClick={bookNow}
+                className="inline-flex items-center justify-center gap-2 bg-brand-pink hover:bg-brand-pink-light text-white px-8 py-4 rounded-full text-base font-medium transition-all hover:shadow-lg hover:-translate-y-1"
+              >
+                Get in Touch <ArrowRight size={18} />
+              </button>
+              <Link
+                to="/workshops-in-noida"
+                className="inline-flex items-center justify-center gap-2 bg-white border border-gray-200 text-brand-charcoal hover:text-brand-pink px-8 py-4 rounded-full text-base font-medium transition-all"
+              >
+                Art Workshops in Noida →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <KeyTakeaways points={[
+          'Groups of 20 to 150+ at Noida offices, colleges, and universities, ₹600–₹800 per person',
+          'Popular for quarterly team days, desk-side resets, onboarding, and annual days/fests',
+          'Lippan Art, Mandala Art, and Tie & Dye are the most-requested activities',
+          'All materials brought directly to Sector 62, Sector 90, Film City Road, and nearby offices',
+        ]} />
+        <Testimonials />
+
+      </main>
+      <ContactFooter />
+    </>
+  );
+}

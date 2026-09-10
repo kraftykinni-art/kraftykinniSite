@@ -470,7 +470,7 @@ export const workshopsData: Workshop[] = [
     citation: { text: 'Hand-building and shaping clay is one of humanity\'s oldest crafts — pottery dates back thousands of years and is still valued today for the same tactile, repetitive shaping process.', url: 'https://en.wikipedia.org/wiki/Pottery' },
     whatYouMake: 'A handcrafted clay sculpture or functional object — air-dried and ready to take home.',
     whoBenefits: 'Ideal for corporate wellness days, school art sessions, stress management workshops, and mindfulness events.',
-    keywords: ['clay art workshop Delhi', 'clay sculpting class Delhi NCR', 'pottery workshop Delhi', 'clay art corporate workshop', 'craft workshop Delhi NCR'],
+    keywords: ['clay art workshop Delhi', 'clay sculpting class Delhi NCR', 'air dry clay workshop Delhi', 'Fevicryl Mouldit clay workshop', 'clay art corporate workshop', 'craft workshop Delhi NCR'],
     faq: [
       {
         q: 'What happens in a Clay Art workshop?',

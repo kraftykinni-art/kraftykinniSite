@@ -1512,6 +1512,61 @@ City: Delhi / Gurgaon / Noida</code></pre>
     `,
   },
 
+  // ── Employee Engagement Noida ─────────────────────────────────────────────
+  {
+    path: '/employee-engagement-activities-noida',
+    title: 'Employee Engagement Activities Noida | Art Workshops | Kraftykinni',
+    description: 'Guided art workshops for employee engagement in Noida. 20–150+, all materials supplied. Lippan Art, Mandala, Tie & Dye at your Sector 62 or Sector 90 office.',
+    h1: 'Employee Engagement Activities in Noida',
+    ogImage: 'https://cdn.kraftykinni.in/og-corporate.jpg',
+    bodyContent: `
+      <h1>Employee Engagement Activities in Noida — Art Workshops by Kraftykinni</h1>
+      <p>Kraftykinni runs guided art workshops for employee engagement across Noida — at Sector 62, Sector 16, Sector 90, and Film City Road offices, as well as Knowledge Park and Sector 125 institutions. All materials included, all supplies brought to your venue. Groups of 20 to 150+. Starting at ₹600 per person.</p>
+      <h2>Why Art Workshops for Employee Engagement?</h2>
+      <p>Art workshops sit in a category most team activities don't reach: collaborative and creative without being competitive. There's no scoring, no elimination, and no performance pressure. The shared creative process produces genuine conversation across hierarchies, and every participant walks out with a physical artwork they made themselves — a rare outcome from a corporate event.</p>
+      <h2>Popular Use Cases in Noida</h2>
+      <h3>Quarterly Team-Building Events</h3>
+      <p>The most common booking format. HR teams across Sector 62 and Film City Road run these quarterly to maintain team cohesion. A 90-minute guided art session fills an afternoon slot without requiring an external venue.</p>
+      <h3>Desk-Side Corporate Resets</h3>
+      <p>Not every session needs a conference room. Kraftykinni has run guided sessions directly at participants' desks during a work shift — a low-disruption way to give a team a genuine mental break without pulling them off-site.</p>
+      <h3>Employee Appreciation Days</h3>
+      <p>A creative session signals investment in your people. Employees frequently describe it as "the first company event I actually enjoyed." The artwork they take home is a daily reminder of the gesture.</p>
+      <h3>Annual Day & Fest Activities</h3>
+      <p>For large annual days and college fests in Noida, art workshops are an effective structured activity before or after the formal programme. Groups of 100 to 150+ accommodated.</p>
+      <h3>Onboarding & New Hire Orientation</h3>
+      <p>A creative session on day one signals company culture and breaks the ice across cohorts far more effectively than a team quiz.</p>
+      <h2>Pricing</h2>
+      <ul>
+        <li>20–50 participants: ₹800 per person — all materials included</li>
+        <li>50–100 participants: ₹700 per person — all materials included</li>
+        <li>100+ participants: ₹600 per person — all materials included</li>
+      </ul>
+      <h2>Top Activities for Corporate Engagement</h2>
+      <p>Lippan Art (most requested for corporate groups), Mandala Art (ideal for mindfulness days), Tie & Dye (high energy, great for large groups), Boho Canvas (popular at off-site retreats), Tote Bag Painting (doubles as a branded takeaway), Clay Art (ideal for wellness sessions).</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Can you handle 100+ participants at our Noida office?</h3>
+      <p>Yes. Standard format handles 20 to 150+ participants. For groups above 60, we bring additional facilitators. Pricing drops to Rs 600 per person at 100+ scale.</p>
+      <h3>Do you come to Sector 62 / Sector 90?</h3>
+      <p>Yes — we travel to your office across all of Noida including Sector 62, Sector 16, Sector 90, Film City Road, Sector 18, Knowledge Park, Sector 125, and Greater Noida. You do not need to book an external venue.</p>
+      <h3>Do you also work with colleges and universities in Noida?</h3>
+      <p>Yes — Amity University is one of our most frequently repeated bookings, alongside other institutions across the Knowledge Park and Sector 125 belt.</p>
+      <h2>A Session That Shows What We Do</h2>
+      <p>A 20-person team at a Sector 90 office — in the Bhutani Alphathum corridor — traded desks for dot mandala art during a single 3:00–3:30pm shift window, building symmetrical patterns, landscapes, and even a stressed-cartoon piece, one dot at a time. <a href="/blog/dot-mandala-art-corporate-workshop-noida/">Read the full Sector 90 case study</a>.</p>
+      <h2>What Past Participants Say</h2>
+      <blockquote cite="https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v">
+        <p>"The workshop was an absolute hit with our students! Shramita's energy and creativity made it a memorable experience. Everyone walked away with something beautiful they made themselves."</p>
+        <cite>— Aparajita, Amity University, Google review</cite>
+      </blockquote>
+      <h2>Key Takeaways</h2>
+      <ul>
+        <li>Groups of 20 to 150+ at Noida offices, colleges, and universities, ₹600–₹800 per person</li>
+        <li>Popular for quarterly team days, desk-side resets, onboarding, and annual days/fests</li>
+        <li>Lippan Art, Mandala Art, and Tie &amp; Dye are the most-requested activities</li>
+        <li>All materials brought directly to Sector 62, Sector 90, Film City Road, and nearby offices</li>
+      </ul>
+    `,
+  },
+
   // ── Location pages ────────────────────────────────────────────────────────
   {
     path: '/workshops-in-delhi',
@@ -1631,6 +1686,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Sector 62, Sector 16, Film City Road, Sector 18, Expressway, Greater Noida, Knowledge Park, Sector 125, and all areas across Noida and Greater Noida.</p>
       <h2>All ${TOTAL_WORKSHOPS} Activities Available in Noida</h2>
       <p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Wall &amp; Rope Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting, Botanical Dyeing Printing, Rock Painting, Umbrella Painting, Cap Painting, Canvas Pearl Art, Clay Mirror Art, Mirror Painting.</p>
+      <h2>Employee Engagement in Noida</h2>
+      <p>Art workshops are one of the highest-rated <a href="/employee-engagement-activities-noida/">employee engagement activities in Noida</a>. Post-event surveys consistently show that participants rate art sessions above conventional team games and off-site dinners for connection and enjoyment. The session structure — everyone making something at the same table — removes hierarchy and creates natural conversation between people who rarely interact across departments.</p>
       <h2>Pricing for Art Workshops in Noida</h2>
       <ul>
         <li><strong>Small Group (20–50 people):</strong> ₹800 per person — all materials included</li>
@@ -1902,6 +1959,11 @@ const BREADCRUMB_LABELS = {
   '/thank-you': 'Thank You',
   '/employee-engagement-activities-gurgaon': {
     name: 'Employee Engagement Activities Gurgaon',
+    parentPath: '/corporate-art-workshops',
+    parentName: 'Corporate Art Workshops',
+  },
+  '/employee-engagement-activities-noida': {
+    name: 'Employee Engagement Activities Noida',
     parentPath: '/corporate-art-workshops',
     parentName: 'Corporate Art Workshops',
   },
@@ -2255,6 +2317,7 @@ const sitemapEntries = [
   { loc: '/workshops-in-gurgaon',          priority: '0.8', changefreq: 'monthly' },
   { loc: '/workshops-in-noida',            priority: '0.8', changefreq: 'monthly' },
   { loc: '/employee-engagement-activities-gurgaon', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/employee-engagement-activities-noida', priority: '0.8', changefreq: 'monthly' },
   { loc: '/about',                         priority: '0.6', changefreq: 'yearly'  },
   { loc: '/privacy-policy',               priority: '0.2', changefreq: 'yearly'  },
   { loc: '/blog',                          priority: '0.7', changefreq: 'weekly'  },

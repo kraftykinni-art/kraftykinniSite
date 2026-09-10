@@ -1,4 +1,5 @@
-import { ArrowRight, Sparkles, Star } from 'lucide-react';
+import { ArrowRight, Sparkles, Star, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CDN = 'https://cdn.kraftykinni.in/assets';
 const bohoArt = `${CDN}/boho-art.webp`;
@@ -40,9 +41,19 @@ export default function Hero() {
               <span className="text-brand-pink italic">in Delhi NCR</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-lg leading-relaxed font-light">
+            <p className="text-lg md:text-xl text-gray-600 mb-4 max-w-lg leading-relaxed font-light">
               Hands-on creative sessions for corporate teams, schools, colleges & private events.
             </p>
+
+            <div className="flex items-center gap-2 mb-10 text-sm text-brand-charcoal flex-wrap">
+              <MapPin size={16} className="text-brand-pink flex-shrink-0" />
+              <span className="font-medium">We conduct workshops in</span>
+              <Link to="/workshops-in-delhi" className="font-semibold text-brand-pink hover:text-brand-pink-light underline underline-offset-4 transition-colors">Delhi</Link>
+              <span>·</span>
+              <Link to="/workshops-in-gurgaon" className="font-semibold text-brand-pink hover:text-brand-pink-light underline underline-offset-4 transition-colors">Gurgaon</Link>
+              <span>·</span>
+              <Link to="/workshops-in-noida" className="font-semibold text-brand-pink hover:text-brand-pink-light underline underline-offset-4 transition-colors">Noida</Link>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a

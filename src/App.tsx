@@ -2,6 +2,7 @@ import { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import WhatsAppButton from './components/WhatsAppButton';
+import CallButton from './components/CallButton';
 import ScrollToTop from './components/ScrollToTop';
 import { useWebMCP } from './hooks/useWebMCP';
 
@@ -20,6 +21,7 @@ const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const EmployeeEngagementGurgaonPage = lazy(() => import('./pages/EmployeeEngagementGurgaonPage'));
+const EmployeeEngagementNoidaPage = lazy(() => import('./pages/EmployeeEngagementNoidaPage'));
 
 export default function App() {
   const location = useLocation();
@@ -55,6 +57,7 @@ export default function App() {
           <Route path="/workshops-in-gurgaon" element={<LocationPage />} />
           <Route path="/workshops-in-noida" element={<LocationPage />} />
           <Route path="/employee-engagement-activities-gurgaon" element={<EmployeeEngagementGurgaonPage />} />
+          <Route path="/employee-engagement-activities-noida" element={<EmployeeEngagementNoidaPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
@@ -63,6 +66,7 @@ export default function App() {
       </Routes>
       </Suspense>
       <WhatsAppButton />
+      <CallButton />
     </div>
   );
 }
