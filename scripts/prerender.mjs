@@ -631,9 +631,11 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h1>Privacy Policy</h1>
       <p>This website is operated by Kraftykinni, a creative art workshop business based in Delhi NCR, India. Kraftykinni is founded and run by Shramita Govil. If you have any questions about this policy, contact us at kraftykinni@gmail.com.</p>
       <h2>What information we collect</h2>
-      <p>We collect information only when you voluntarily submit our contact form. The form asks for your name, email address, phone number (optional), group size, preferred date, and a message. We do not use cookies, analytics trackers, or any other form of passive data collection.</p>
+      <p>We collect information only when you voluntarily submit our contact form. The form asks for your name, email address, phone number (optional), group size, preferred date, and a message. We also use Google Analytics (GA4) to understand overall site traffic. We do not use any other form of passive data collection.</p>
       <h2>How your information is used</h2>
       <p>The information you submit is used solely to respond to your enquiry and send you a customised workshop proposal. Our contact form is powered by Web3Forms, which forwards your submission to our email address. We do not store your form data on our own servers.</p>
+      <h2>Third-party services</h2>
+      <p>We use Web3Forms to process contact form submissions. We also use Google Analytics (GA4) to understand overall traffic to this website, including which pages are viewed and whether visitors click our WhatsApp button, call link, or submit our contact form. We do not use Meta Pixel or any advertising trackers, and we do not use Google Analytics data for advertising or retargeting purposes.</p>
       <h2>Data sharing</h2>
       <p>We do not sell, rent, or share your personal information with any third party for marketing purposes. Your contact details are used only by Kraftykinni to follow up on your workshop enquiry.</p>
       <h2>Your rights</h2>

@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
             <h1 className="font-serif text-4xl font-bold text-brand-slate mb-2">
               Privacy <span className="text-brand-pink italic">Policy</span>
             </h1>
-            <p className="text-sm text-gray-400 mb-10">Last updated: April 2026</p>
+            <p className="text-sm text-gray-400 mb-10">Last updated: September 2026</p>
 
             <div className="prose prose-gray max-w-none space-y-8 text-gray-600 font-light leading-relaxed">
 
@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
               <section>
                 <h2 className="font-serif text-xl font-bold text-brand-slate mb-3">What information we collect</h2>
                 <p>
-                  We collect information only when you voluntarily submit our contact form. The form asks for your name, email address, phone number (optional), group size, preferred date, and a message. We do not use cookies, analytics trackers, or any other form of passive data collection on this website.
+                  We collect information only when you voluntarily submit our contact form. The form asks for your name, email address, phone number (optional), group size, preferred date, and a message. We also use Google Analytics (GA4) to understand overall site traffic — see the "Third-party services" section below for details. We do not use any other form of passive data collection on this website.
                 </p>
               </section>
 
@@ -78,7 +78,13 @@ export default function PrivacyPolicyPage() {
                   We use Web3Forms to process contact form submissions. Web3Forms receives the data you enter in the form and delivers it to us via email. You can review Web3Forms' own privacy practices at{' '}
                   <a href="https://web3forms.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-pink hover:underline underline-offset-2">
                     web3forms.com/privacy
-                  </a>. We do not use Google Analytics, Meta Pixel, or any advertising trackers.
+                  </a>.
+                </p>
+                <p>
+                  We also use Google Analytics (GA4) to understand overall traffic to this website, including which pages are viewed and whether visitors click our WhatsApp button, call link, or submit our contact form. Google Analytics may use cookies as part of this. We do not use Meta Pixel or any advertising trackers, and we do not use Google Analytics data for advertising or retargeting purposes. You can read Google's own privacy practices at{' '}
+                  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-pink hover:underline underline-offset-2">
+                    policies.google.com/privacy
+                  </a>.
                 </p>
               </section>
 
