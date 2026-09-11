@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(scriptDir, '..', 'dist');
-const expectedRouteCount = 52;
+const expectedRouteCount = 53;
 const representativeRoutes = [
   ['index.html', 'Kraftykinni Art Workshops in Delhi NCR'],
   ['about.html', 'About Kraftykinni'],

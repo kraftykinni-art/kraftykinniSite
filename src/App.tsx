@@ -16,6 +16,7 @@ const LocationPage = lazy(() => import('./pages/LocationPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const PrivateWorkshopsPage = lazy(() => import('./pages/PrivateWorkshopsPage'));
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
+const TermsOfServicePage = lazy(() => import('./pages/TermsOfServicePage'));
 const ThankYouPage = lazy(() => import('./pages/ThankYouPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
@@ -59,6 +60,7 @@ export default function App() {
           <Route path="/employee-engagement-activities-gurgaon" element={<EmployeeEngagementGurgaonPage />} />
           <Route path="/employee-engagement-activities-noida" element={<EmployeeEngagementNoidaPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />

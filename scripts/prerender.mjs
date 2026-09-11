@@ -641,6 +641,34 @@ City: Delhi / Gurgaon / Noida</code></pre>
     `,
   },
 
+  {
+    path: '/terms-of-service',
+    title: 'Terms of Service | Kraftykinni',
+    description: "Kraftykinni's terms of service — booking, cancellation, rescheduling, materials, recording, and liability terms for art workshops in Delhi NCR.",
+    h1: 'Terms of Service',
+    bodyContent: `
+      <h1>Terms of Service</h1>
+      <p>Kraftykinni is an art workshop business founded and run by Shramita Govil, registered in Noida, Uttar Pradesh under Udyam Registration for Micro, Small and Medium Enterprises (MSME). By booking a workshop with Kraftykinni, you agree to the terms on this page. Questions can be sent to kraftykinni@gmail.com before confirming your booking.</p>
+      <h2>Booking and payment</h2>
+      <p>A booking is confirmed once a 50% deposit is received, with a minimum of 7 days' notice ahead of the event date. Deposits can be paid via UPI, bank transfer, or cash. The remaining balance is due on the day of the workshop unless otherwise agreed in writing.</p>
+      <h2>Cancellation policy</h2>
+      <p>Kraftykinni operates a strict no-refund policy on cancellations made by the client once a booking is confirmed. The deposit and any advance payment are non-refundable if you choose to cancel.</p>
+      <p>If Kraftykinni needs to cancel a confirmed session — for example, due to illness or an urgent, unavoidable circumstance — a rescheduled date will be offered first. If rescheduling isn't possible, a full refund will be provided.</p>
+      <h2>Rescheduling</h2>
+      <p>Clients may request to reschedule an upcoming session. Rescheduling is subject to slot availability on your requested new date; if that date isn't available, Kraftykinni will offer alternative dates based on current availability. Rescheduling is not automatic and should be requested as early as possible.</p>
+      <h2>Materials and venue arrangements</h2>
+      <p>Kraftykinni provides all workshop activity materials — art supplies, clay, mirrors, paints, and similar items — as agreed for the chosen activity, or based on the client's specific preference where discussed in advance. The client is responsible for arranging the basic venue setup: tables, chairs, and adequate space for the group. Kraftykinni does not arrange the venue itself.</p>
+      <h2>Photography and recording</h2>
+      <p>Kraftykinni records photos and video of workshop sessions as standard practice, for portfolio and marketing use, without requiring prior consent for each session. Clients with a specific concern about being photographed or recorded can raise it with us in advance for discussion.</p>
+      <h2>Supervision of children</h2>
+      <p>For workshops involving children — school sessions, birthday parties, and similar events — supervision and overall responsibility for the children present rests with whoever is hosting or has arranged the venue, not with Kraftykinni.</p>
+      <h2>Liability</h2>
+      <p>Kraftykinni takes reasonable care in facilitating each workshop and in the materials it supplies. To the extent permitted by law, Kraftykinni's liability in connection with any booking is limited to the amount paid for that session. Kraftykinni is not responsible for pre-existing conditions of the venue, or for loss or damage arising from circumstances outside its reasonable control.</p>
+      <h2>Governing law</h2>
+      <p>These terms are governed by the laws of India, and any disputes arising from a booking with Kraftykinni are subject to the jurisdiction of the courts in Noida, Uttar Pradesh.</p>
+    `,
+  },
+
   // ── Blog ─────────────────────────────────────────────────────────────────
   {
     path: '/blog',
@@ -1959,6 +1987,7 @@ const BREADCRUMB_LABELS = {
   '/private-art-workshops': 'Private Art Workshops',
   '/about': 'About',
   '/privacy-policy': 'Privacy Policy',
+  '/terms-of-service': 'Terms of Service',
   '/blog': 'Blog',
   '/thank-you': 'Thank You',
   '/employee-engagement-activities-gurgaon': {
@@ -2324,6 +2353,7 @@ const sitemapEntries = [
   { loc: '/employee-engagement-activities-noida', priority: '0.8', changefreq: 'monthly' },
   { loc: '/about',                         priority: '0.6', changefreq: 'yearly'  },
   { loc: '/privacy-policy',               priority: '0.2', changefreq: 'yearly'  },
+  { loc: '/terms-of-service',             priority: '0.2', changefreq: 'yearly'  },
   { loc: '/blog',                          priority: '0.7', changefreq: 'weekly'  },
   { loc: '/blog/lippan-art-complete-beginners-guide-kutch-mirror-work', priority: '0.7', changefreq: 'monthly' },
   { loc: '/blog/bottle-lamp-art-workshop-school-delhi-ncr', priority: '0.7', changefreq: 'monthly' },
