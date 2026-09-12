@@ -1410,41 +1410,41 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        body: `If you've searched for what's trending in art and craft lately, the honest answer isn't a single new craft — it's a shift in what people want the craft to do for them. Across the workshops Kraftykinni has run through 2026, three things keep repeating: participants want something personal, not generic; something slow, not another five-minute activity; and something made from materials that don't feel wasteful.\\n\nEverything below comes from actual sessions Kraftykinni has run this year, not a trend report — here's what that looks like in practice, across the workshops Delhi NCR is actually booking right now.`,
+        body: `If you've searched for what's trending in art and craft lately, the honest answer isn't a single new craft — it's a shift in what people want the craft to do for them. Across the workshops Kraftykinni has run through 2026, three things keep repeating: participants want something personal, not generic; something slow, not another five-minute activity; and something made from materials that don't feel wasteful.\n\nEverything below comes from actual sessions Kraftykinni has run this year, not a trend report — here's what that looks like in practice, across the workshops Delhi NCR is actually booking right now.`,
       },
       {
         heading: 'Personalization Has Replaced Generic Craft Kits',
-        body: `The single biggest shift this year has been away from "everyone paints the same template" toward pieces built around a specific person or relationship. For Friendship Day, Kraftykinni's [MDF Fridge Magnet workshop](/workshops/mdf-fridge-magnet) turned into a personalized photo-magnet session — participants brought a photo of a friend and painted a magnet built around that exact picture, not a generic design. The same shift showed up for Raksha Bandhan, where siblings painted magnets referencing real in-jokes rather than a standard rakhi motif.\\n\nThis isn't a one-off request anymore. It's the difference between a craft session and a keepsake, and it's why personalization now comes up in nearly every private-event and gifting enquiry Kraftykinni gets.`,
+        body: `The single biggest shift this year has been away from "everyone paints the same template" toward pieces built around a specific person or relationship. For Friendship Day, Kraftykinni's [MDF Fridge Magnet workshop](/workshops/mdf-fridge-magnet) turned into a personalized photo-magnet session — participants brought a photo of a friend and painted a magnet built around that exact picture, not a generic design. The same shift showed up for Raksha Bandhan, where siblings painted magnets referencing real in-jokes rather than a standard rakhi motif.\n\nThis isn't a one-off request anymore. It's the difference between a craft session and a keepsake, and it's why personalization now comes up in nearly every private-event and gifting enquiry Kraftykinni gets.`,
         image: 'https://cdn.kraftykinni.in/friendship-day-photo-magnet-friends-kraftykinni.webp',
         imageAlt: 'Hand-painted personalized photo magnet made by a participant at a Kraftykinni workshop in Delhi NCR',
       },
       {
         heading: 'Slow, Meditative Crafts Are Winning Over Quick DIY',
-        body: `The second shift is toward activities that take genuine, unhurried time rather than another 20-minute craft. [Dot Mandala Art](/workshops/mandala-art) is the clearest example — at [a recent corporate session in Noida](/blog/dot-mandala-art-corporate-workshop-noida), a 20-person team spent an hour building symmetrical patterns one dot at a time at their own desks. There's no way to rush a dot mandala, and that's the point: it forces a real pause in a way a five-minute craft can't.\\n\nThis isn't just a Kraftykinni observation — it's showing up in what people are actually searching for, with steady interest in mandala art classes across Delhi NCR alongside a broader pull toward workshops that double as a genuine mental reset rather than pure entertainment.`,
+        body: `The second shift is toward activities that take genuine, unhurried time rather than another 20-minute craft. [Dot Mandala Art](/workshops/mandala-art) is the clearest example — at [a recent corporate session in Noida](/blog/dot-mandala-art-corporate-workshop-noida), a 20-person team spent an hour building symmetrical patterns one dot at a time at their own desks. There's no way to rush a dot mandala, and that's the point: it forces a real pause in a way a five-minute craft can't.\n\nThis isn't just a Kraftykinni observation — it's showing up in what people are actually searching for, with steady interest in mandala art classes across Delhi NCR alongside a broader pull toward workshops that double as a genuine mental reset rather than pure entertainment.`,
         image: 'https://cdn.kraftykinni.in/dot-mandala-sunset-artwork-corporate-kraftykinni.webp',
         imageAlt: 'Finished dot mandala artwork in warm sunset colours from a Kraftykinni corporate mindfulness workshop',
       },
       {
         heading: 'Eco-Conscious Materials Are Now a Default Expectation',
-        body: `A few years ago, "eco-friendly craft" was a request schools or CSR teams made specifically for Environment Day. In 2026, it's closer to a default expectation. Kraftykinni's [Clay Art](/workshops/clay-art) workshop now runs an eco-friendly clay Ganpati idol format for Ganesh Chaturthi — natural clay instead of Plaster of Paris, so the idol dissolves cleanly at visarjan instead of sitting in a landfill. The same instinct drives the [upcycled bottle art](/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr) sessions Kraftykinni runs through the year, where the craft material is literally a bottle someone was about to throw away.\\n\nFor corporate teams, this has become a genuine CSR angle rather than a nice-to-have: a hands-on, immersion-safe alternative the team makes themselves does more for a sustainability week than a poster ever will.`,
+        body: `A few years ago, "eco-friendly craft" was a request schools or CSR teams made specifically for Environment Day. In 2026, it's closer to a default expectation. Kraftykinni's [Clay Art](/workshops/clay-art) workshop now runs an eco-friendly clay Ganpati idol format for Ganesh Chaturthi — natural clay instead of Plaster of Paris, so the idol dissolves cleanly at visarjan instead of sitting in a landfill. The same instinct drives the [upcycled bottle art](/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr) sessions Kraftykinni runs through the year, where the craft material is literally a bottle someone was about to throw away.\n\nFor corporate teams, this has become a genuine CSR angle rather than a nice-to-have: a hands-on, immersion-safe alternative the team makes themselves does more for a sustainability week than a poster ever will.`,
         image: 'https://cdn.kraftykinni.in/ganesh-chaturthi-eco-friendly-clay-ganpati-idol-kraftykinni.webp',
         imageAlt: 'Hand-painted eco-friendly clay Ganpati idol from a Kraftykinni Ganesh Chaturthi workshop in Delhi NCR',
       },
       {
         heading: 'Heritage Indian Crafts Are Finding a Wider Audience',
-        body: `The third pattern is renewed interest in traditional Indian craft techniques — not as a museum topic, but as something people actually want to sit down and learn. [Lippan Art](/workshops/lippan-art), the mirror-inlay mud work that originates from Kutch, Gujarat, remains one of Kraftykinni's most-searched workshops on its own. [Block printing](/workshops/block-printing) has drawn interest from an unexpected direction too — [a recent session welcomed an Israeli family](/blog/block-printing-workshop-delhi-israeli-family) learning the technique together, a reminder that these heritage crafts travel well beyond their region of origin.\\n\nBoth crafts share what makes them work as workshops: a clear, teachable technique with centuries of tradition behind it, and a finished piece that looks nothing like generic mass-market decor.`,
+        body: `The third pattern is renewed interest in traditional Indian craft techniques — not as a museum topic, but as something people actually want to sit down and learn. [Lippan Art](/workshops/lippan-art), the mirror-inlay mud work that originates from Kutch, Gujarat, remains one of Kraftykinni's most-searched workshops on its own. [Block printing](/workshops/block-printing) has drawn interest from an unexpected direction too — [a recent session welcomed an Israeli family](/blog/block-printing-workshop-delhi-israeli-family) learning the technique together, a reminder that these heritage crafts travel well beyond their region of origin.\n\nBoth crafts share what makes them work as workshops: a clear, teachable technique with centuries of tradition behind it, and a finished piece that looks nothing like generic mass-market decor.`,
         image: 'https://cdn.kraftykinni.in/block-printing-israel-mother-daughter-learning-kraftykinni.webp',
         imageAlt: 'A mother and daughter learning traditional Indian block printing together at a Kraftykinni workshop in Delhi NCR',
       },
       {
         heading: 'What This Means for Corporate Teams Booking in Gurgaon and Delhi',
-        body: `For corporate teams, all three shifts point the same way: art workshops are being booked less as generic entertainment and more as a deliberate reset — personalized, unhurried, and increasingly tied to a real CSR or wellness goal rather than just "something different for the offsite." That's especially visible in [Gurgaon](/workshops-in-gurgaon), where Kraftykinni continues to see steady enquiry volume for [corporate team-building sessions](/corporate-art-workshops) that run desk-side rather than needing a separate offsite venue.\\n\nIf your team is planning something around the upcoming festive season — Navratri, Diwali, or a corporate wellness day — these are the formats worth building around: Dot Mandala Art for a genuine reset, a personalized keepsake format like MDF magnets or trinket trays for a gifting angle, and an eco-friendly option like the clay idol workshop if sustainability is part of the brief.`,
+        body: `For corporate teams, all three shifts point the same way: art workshops are being booked less as generic entertainment and more as a deliberate reset — personalized, unhurried, and increasingly tied to a real CSR or wellness goal rather than just "something different for the offsite." That's especially visible in [Gurgaon](/workshops-in-gurgaon), where Kraftykinni continues to see steady enquiry volume for [corporate team-building sessions](/corporate-art-workshops) that run desk-side rather than needing a separate offsite venue.\n\nIf your team is planning something around the upcoming festive season — Navratri, Diwali, or a corporate wellness day — these are the formats worth building around: Dot Mandala Art for a genuine reset, a personalized keepsake format like MDF magnets or trinket trays for a gifting angle, and an eco-friendly option like the clay idol workshop if sustainability is part of the brief.`,
         image: 'https://cdn.kraftykinni.in/corporate-art-workshop-branded-kraftykinni-noida.webp',
         imageAlt: 'A Kraftykinni team member at a branded corporate art workshop setup in Delhi NCR',
       },
       {
         heading: 'Book a Workshop Built Around Where Craft Is Headed',
-        body: `Kraftykinni runs all of the formats mentioned here — Dot Mandala Art, personalized MDF magnets and trinket trays, eco-friendly clay idols, Lippan Art, and block printing — for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Every session is led by [Shramita Govil](/about), a Fevicryl Certified Artist, with pricing starting at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for 20–50, all materials included.\\n\nTo check availability or talk through which format fits your group, WhatsApp **+91 9599622210** with your date, location, and group size.`,
+        body: `Kraftykinni runs all of the formats mentioned here — Dot Mandala Art, personalized MDF magnets and trinket trays, eco-friendly clay idols, Lippan Art, and block printing — for corporate teams, schools, and private events across Delhi, Gurgaon, and Noida. Every session is led by [Shramita Govil](/about), a Fevicryl Certified Artist, with pricing starting at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for 20–50, all materials included.\n\nTo check availability or talk through which format fits your group, WhatsApp **+91 9599622210** with your date, location, and group size.`,
       },
     ],
     faq: [
@@ -1467,6 +1467,189 @@ export const blogPosts: BlogPost[] = [
       {
         q: 'Does Kraftykinni use eco-friendly materials?',
         a: "Yes. Kraftykinni's Ganesh Chaturthi workshop uses natural clay idols instead of Plaster of Paris, and its Environment Day sessions turn upcycled bottles into painted planters and décor. Both are run as regular workshop formats, not one-off specials, for schools, corporate teams, and private groups across Delhi NCR.",
+      },
+    ],
+  },
+  {
+    slug: 'diwali-diya-painting-workshop-delhi-ncr',
+    title: 'Corporate Diwali Celebration Ideas for Delhi NCR: 10 Creative Activities Employees Actually Enjoy',
+    metaTitle: 'Corporate Diwali Activities Delhi NCR 2026 | Kraftykinni',
+    metaDescription:
+      'Planning a corporate Diwali celebration in Delhi, Gurgaon or Noida? 10 hands-on Diwali art activities, pricing, group-size guidance and how Kraftykinni runs them for 20-200+ employees.',
+    publishDate: '2026-09-12',
+    category: 'Corporate' as const,
+    excerpt:
+      "Diwali falls on Sunday, 8 November 2026. Beyond décor, sweets and games, hands-on creative activities give employees something to actually participate in — and something they take home. Here are 10 corporate Diwali workshop ideas Kraftykinni runs across Delhi, Gurgaon and Noida, from a premium Lippan flagship to a budget-friendly diya set.",
+    keywords: [
+      'corporate diwali celebration ideas delhi ncr',
+      'corporate diwali activities delhi ncr',
+      'corporate diwali party ideas gurgaon',
+      'diwali office activities delhi',
+      'diwali team building activities',
+      'diwali art workshop corporate',
+      'diya painting corporate event',
+      'creative diwali activities for employees',
+    ],
+    sections: [
+      {
+        body: `Planning a Diwali celebration for your office in Delhi, Gurgaon or Noida? Beyond décor, sweets and games, hands-on creative activities give employees something to participate in — and something they can take home.\n\nKraftykinni runs corporate Diwali art workshops for **20–200+ employees**, all-beginner-friendly, with materials included and no prior art experience required. This guide covers what makes a Diwali activity actually work for an office, ten formats we run, how to pick between them, and what to expect on the day.`,
+      },
+      {
+        heading: 'What Makes a Good Corporate Diwali Activity',
+        body: `Not every "festive" activity works well in an office setting. Before picking a format, it's worth checking it against a few basics:`,
+        listItems: [
+          'Easy to join — nobody should need prior art experience',
+          'Scalable — the same format should work for 20 people and 150 people',
+          'Time-efficient — ideally 60–120 minutes, so it fits around a workday',
+          "Inclusive — doesn't unintentionally exclude anyone from participating",
+          'Take-home — employees leave with something they actually made',
+          'Office-friendly — minimal mess, simple setup, easy cleanup',
+          'Photogenic — gives your internal comms team something worth sharing',
+        ],
+      },
+      {
+        heading: '10 Corporate Diwali Art Activities for Employees',
+        body: `We're not going to pretend all ten of these are equally good for every office. For most corporate teams, we point people first toward Lippan Décor, Diwali Lantern Making, Clay Diya Hanging or Premium Diya Painting — they combine easy participation with a genuinely useful take-home piece. The rest are strong options once you know what you're optimising for: budget, novelty, sustainability, or team bonding.`,
+      },
+      {
+        heading: '1. Luxury Lippan / Mirror-Work Diwali Décor',
+        body: `**Best for:** premium employee celebrations · **Duration:** 90–120 min · **Group size:** 20–100+ · **Take-home:** Yes\n\nOur flagship Diwali format. Employees build a mirror-and-clay decorative piece using the same [Lippan Art](/workshops/lippan-art) technique — mud-and-mirror inlay work from Kutch, Gujarat — on a festive base with pearl and metallic detailing. This is the one to lead with when you want the celebration to feel like a premium experience rather than a children's craft activity.`,
+        image: 'https://cdn.kraftykinni.in/assets/lippan-art-opt.webp',
+        imageAlt: 'Hand-crafted Lippan mirror-inlay art piece with festive detailing — Kraftykinni corporate Diwali workshop Delhi NCR',
+      },
+      {
+        heading: '2. Diwali Lantern Making',
+        body: `**Best for:** a visual, photographable centrepiece · **Duration:** 75–90 min · **Group size:** 20–150 · **Take-home:** Yes\n\nEmployees paint and decorate a lantern structure, fitted with a warm LED tealight. The moment everyone switches their lantern on and the office lights dim for a group photograph is the highlight — a genuine reveal moment that photographs well for internal comms, which is why this works particularly well for larger office Diwali parties.`,
+        image: 'https://cdn.kraftykinni.in/assets/bottle-art-opt.webp',
+        imageAlt: 'Hand-painted lantern lit up for a Diwali reveal moment — Kraftykinni corporate Diwali workshop Delhi NCR',
+      },
+      {
+        heading: '3. Premium Diya Painting',
+        body: `**Best for:** budget-friendly, high-volume events · **Duration:** 60–75 min · **Group size:** 30–200+ · **Take-home:** Yes\n\nOur most-requested Diwali format, and the easiest to position as "Create Your Festive Diwali Set" rather than plain diya painting. Employees hand-paint clay diyas with acrylic colours, metallic detailing and optional mirror or bead work using the same [Clay Art](/workshops/clay-art) technique — no wheel, no kiln, and every design comes out different.`,
+        image: 'https://cdn.kraftykinni.in/assets/clay-art-mdf-opt.webp',
+        imageAlt: 'Hand-painted clay diyas with festive metallic detailing — Kraftykinni corporate Diwali diya painting workshop',
+      },
+      {
+        heading: '4. Clay Diya Hanging — Handmade Diwali Décor',
+        body: `**Best for:** hands-on, make-it-yourself experiences · **Duration:** 75–90 min · **Group size:** 20–150 · **Take-home:** Yes\n\nA step up from painting alone — employees shape their own diya, lotus, tealight holder or festive hanging in air-dry clay before painting it, building on the same [Clay Art](/workshops/clay-art) format. This works especially well for IT companies and wellness or employee-engagement days, since the making itself, not just the painting, is the point.`,
+      },
+      {
+        heading: '5. Mirror-Work Diwali Tealight Holder',
+        body: `**Best for:** a premium alternative to diya painting · **Duration:** 75–90 min · **Group size:** 20–100 · **Take-home:** Yes\n\nAn MDF base combined with a clay-and-mirror relief and a warm LED candle, using the same technique as our [Clay & Mirror Art](/workshops/clay-mirror-art) workshop. A good option when a client says they already did diya painting last year and want something that still feels festive but different.`,
+        image: 'https://cdn.kraftykinni.in/assets/clay-mirror-art-opt.webp',
+        imageAlt: 'Clay-and-mirror Diwali tealight holder with festive detailing — Kraftykinni corporate Diwali workshop Delhi NCR',
+      },
+      {
+        heading: '6. Madhubani Diwali Canvas Art',
+        body: `**Best for:** cultural/heritage art on canvas · **Duration:** 90 min · **Group size:** 20–80 · **Take-home:** Yes\n\nEmployees paint a simplified Madhubani or Gond-inspired folk-art design on a small canvas, styled around a Diwali theme. This suits senior-management sessions, women's employee groups and premium offsites better than very large 300+ person parties — the technique rewards a bit more time than our faster formats.`,
+      },
+      {
+        heading: '7. Upcycled Shubh Labh Festive Hanging',
+        body: `**Best for:** a sustainability/CSR angle · **Duration:** 75–90 min · **Group size:** 20–100 · **Take-home:** Yes\n\nA personalised festive door or wall hanging built from reclaimed and reusable craft materials, using the same upcycled-hanging technique as our [Wall Rope Art](/workshops/wall-rope-art) workshop. Positioning it as "upcycled" rather than "waste material" gives HR a genuine eco-friendly story for sustainability-linked Diwali events.`,
+        image: 'https://cdn.kraftykinni.in/assets/wall-rope-art-opt.webp',
+        imageAlt: 'Upcycled festive hanging made from reclaimed craft materials — Kraftykinni corporate Diwali workshop Delhi NCR',
+      },
+      {
+        heading: '8. Glow-in-the-Dark Diwali Mandala',
+        body: `**Best for:** the "we haven't done this before" moment · **Duration:** 60–75 min · **Group size:** 20–150 · **Take-home:** Yes\n\nOur novelty pick. Employees build a small festive mandala — diyas, stars, lotus, Diwali motifs — using UV-reactive and regular acrylic colours on the same [Mandala Art](/workshops/mandala-art) format, then experience a glow reveal under dim or blacklight conditions at the end. The wow moment is the reveal, not the painting technique, so we keep this to a 60–75 minute flow with 5–10 minutes set aside purely for the reveal and photographs.`,
+        image: 'https://cdn.kraftykinni.in/assets/mandala-art-opt.webp',
+        imageAlt: 'Glow-reactive Diwali mandala art mid-session — Kraftykinni corporate Diwali workshop Delhi NCR',
+      },
+      {
+        heading: '9. Diwali Mandala Art Plate',
+        body: `**Best for:** short sessions, very large groups · **Duration:** 45–60 min · **Group size:** up to 300+ · **Take-home:** Yes\n\nAn MDF plate decorated with mandala patterns, festive colours and embellishments using our standard [Mandala Art](/workshops/mandala-art) format. This is the easiest activity to run operationally — the format to reach for when HR says "we have 200 employees and only an hour."`,
+      },
+      {
+        heading: '10. Corporate Diwali Collaborative Canvas',
+        body: `**Best for:** team-building, not individual keepsakes · **Duration:** 60–90 min · **Group size:** 30–200+ · **Take-home:** No individual piece — the artwork stays with the company\n\nInstead of everyone painting their own canvas, the group is split into teams, each responsible for one section of a large collaborative artwork — themed around something like "Our India, Our Festival, Our Future," built on our [Boho Canvas](/workshops/boho-canvas) format and often incorporating the company's name or colours. The selling point isn't the finished artwork; it's that the entire team created one piece together, which gives HR a genuine team-building story rather than just a festive activity.`,
+      },
+      {
+        heading: 'Which Diwali Activity Fits Your Team',
+        body: `A quick way to narrow the ten down to two or three options worth pitching internally:`,
+        listItems: [
+          '20–40 employees → Lippan Décor or Clay Diya Hanging',
+          '50–100 employees → Diwali Lantern or Premium Diya Painting',
+          '100–200+ employees → Diya Painting, Mandala Plate or Collaborative Canvas',
+          'Want a premium experience → Lippan Décor',
+          'Short 60-minute slot → Mandala Plate or Premium Diya Painting',
+          'Team-building focus → Collaborative Canvas',
+          'Something different from last year\'s diya painting → Glow Mandala or Diwali Lantern',
+          'Sustainability/CSR angle → Upcycled Shubh Labh Hanging',
+          'MNC or premium office → Lippan Décor or Madhubani Canvas',
+        ],
+      },
+      {
+        heading: 'What a Corporate Diwali Workshop Costs in Delhi NCR',
+        body: `Kraftykinni's standard workshop pricing is **₹800 per person for groups of 20–50, ₹700 for 50–100, and ₹600 for 100+**, all materials included. Diwali-specific formats with festive materials, mirror or metallic work and premium packaging — Lippan Décor, the Lantern and the Mirror Tealight Holder in particular — are typically priced toward the upper end of that range or slightly above it, depending on the exact materials chosen.\n\nWe don't lock every Diwali product to one fixed number upfront because group size, venue and exact materials all move the final quote — but this gives you a realistic budget range to plan around before you reach out.`,
+      },
+      {
+        heading: 'How a Kraftykinni Corporate Diwali Workshop Works',
+        body: `**Before the event** — you pick the activity, group size, date and any branding or theme.\n\n**On the day** — Kraftykinni brings all materials and sets up at your office. [Shramita Govil](/about), a Fevicryl Certified Artist, walks the group through a short demonstration, then guides participants step-by-step through the activity.\n\n**At the end** — employees finish their piece, and everything is packaged for them to take home (or, for the Collaborative Canvas, the finished artwork stays with the company). Setup and cleanup are handled by Kraftykinni.`,
+      },
+      {
+        heading: 'Why Art Works Especially Well for Corporate Diwali',
+        body: `Corporate Diwali celebrations tend to default to DJ, sweets, games and décor — all things employees watch or consume rather than do. A creative workshop flips that: employees participate, and they leave with something they made themselves rather than a photo booth print or a party favour.\n\nKraftykinni has run 50+ corporate workshops for 1,500+ participants across Delhi, Gurgaon and Noida, led by [Shramita Govil](/about), a Fevicryl Certified Artist. Every session is designed for beginners — no prior art experience is assumed — and scales from 20 to 200+ participants with full setup and cleanup handled on-site.`,
+      },
+      {
+        heading: 'Corporate Diwali Activities in Gurgaon and Noida',
+        body: `**Gurgaon** — we run sessions across Cyber City, Udyog Vihar, Golf Course Road, Sohna Road and DLF Cyber Park. Gurgaon's MNC-heavy office base tends to lean toward the premium end — Lippan Décor, the Mirror Tealight Holder and the Glow Mandala all work well here. See our [corporate art workshops](/corporate-art-workshops) and [employee engagement activities in Gurgaon](/employee-engagement-activities-gurgaon) pages for group formats and pricing.\n\n**Noida** — we run sessions across Sectors 62, 63, 135, 142 and 16/18. Diya Painting, the Diwali Lantern and the Mandala Plate tend to work best for Noida's larger, more price-sensitive office events. See our [employee engagement activities in Noida](/employee-engagement-activities-noida) page for group formats.`,
+      },
+      {
+        heading: 'Planning Timeline for Your Office Diwali Workshop',
+        body: `Diwali falls on Sunday, 8 November 2026, so most offices run their celebration in the weeks leading up to it.`,
+        listItems: [
+          '6–8 weeks before — shortlist your activity and vendor',
+          '4–6 weeks before — confirm participant count and finalise the artwork format',
+          '2–3 weeks before — lock in materials, any branding, and logistics',
+          '1 week before — confirm final attendance and venue setup',
+          'Event day — Kraftykinni handles workshop setup and facilitation on-site',
+        ],
+      },
+      {
+        heading: 'Who Else Books a Diwali Workshop',
+        body: `**Schools** run diya painting or festive fridge magnets as a Diwali craft period ahead of the school break — see our [school workshops page](/school-art-workshops) for group bookings.\n\n**Cafés** book lamp art or diya painting as a festive pop-up session for customers, a sip-and-craft format alongside chai and Diwali snacks.\n\n**Colleges and universities** book a live diya-painting or fridge-magnet stall as part of their annual Diwali Mela.\n\n**Event managers** book Kraftykinni as the craft-activity vendor for a client's Diwali event, slotting any of the ten formats above into a larger celebration programme.`,
+      },
+      {
+        heading: 'Get a Corporate Diwali Quote',
+        body: `Planning your office Diwali celebration? Tell us your employee count, location and preferred date, and we'll recommend a workshop that fits your team, timing and budget. Sessions run 60 to 120 minutes depending on the format, with pricing starting at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for groups of 20–50 — all materials included.\n\nTo check availability, WhatsApp **+91 9599622210** with your employee count, location (Delhi, Gurgaon or Noida), preferred date, and which of the ten formats you'd like to run.`,
+      },
+    ],
+    faq: [
+      {
+        q: 'When is Diwali in 2026?',
+        a: 'Diwali (Lakshmi Puja) falls on Sunday, 8 November 2026. Most corporate offices in Delhi NCR book their celebration workshop through October and into early November, ahead of the date.',
+      },
+      {
+        q: 'What are the best Diwali activities for corporate offices in Delhi NCR?',
+        a: 'For most corporate teams, we recommend Luxury Lippan Décor, Diwali Lantern Making, Clay Diya Hanging or Premium Diya Painting — they combine easy participation with a genuinely useful take-home piece. Kraftykinni also runs a Mirror Tealight Holder, Madhubani Canvas Art, an Upcycled Shubh Labh Hanging, a Glow-in-the-Dark Mandala, a Mandala Art Plate, and a Collaborative Canvas for team-building.',
+      },
+      {
+        q: 'How much does a corporate Diwali art workshop cost?',
+        a: 'Standard pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100, and ₹600 for 100+, all materials included. Diwali-specific formats with mirror or metallic work — Lippan Décor, the Lantern, and the Mirror Tealight Holder — are typically priced toward the upper end of that range depending on materials.',
+      },
+      {
+        q: 'Which Diwali activity works best for 100+ employees?',
+        a: 'Premium Diya Painting, the Diwali Mandala Art Plate, and the Corporate Diwali Collaborative Canvas all scale comfortably to 100–300+ participants in a single 45–90 minute session.',
+      },
+      {
+        q: 'Can the workshop be conducted at our Gurgaon or Noida office?',
+        a: "Yes. Kraftykinni travels to your office across Delhi, Gurgaon (Cyber City, Udyog Vihar, Golf Course Road, Sohna Road, DLF Cyber Park) and Noida (Sectors 62, 63, 135, 142, 16/18), and handles all setup and cleanup on-site.",
+      },
+      {
+        q: 'Do employees need previous art experience?',
+        a: 'No. Every format is designed for complete beginners, guided step-by-step by Shramita Govil, a Fevicryl Certified Artist. No prior art experience is assumed for any of the ten activities.',
+      },
+      {
+        q: 'Can the artwork be customised to our company colours or branding?',
+        a: 'Yes, particularly for the Corporate Diwali Collaborative Canvas, which is often built around the company name or brand colours as its central theme. Other formats can also incorporate light branding on request.',
+      },
+      {
+        q: 'How long does a corporate Diwali workshop take?',
+        a: 'Most formats run 60 to 120 minutes. The Diwali Mandala Art Plate and Premium Diya Painting are the fastest at 45–75 minutes, while Lippan Décor and Clay Diya Hanging run closer to 90–120 minutes.',
+      },
+      {
+        q: 'Do you run Diwali craft workshops for schools, cafés or colleges too?',
+        a: 'Yes. Schools book diya painting or fridge magnets as a Diwali craft period, cafés run festive pop-up sessions for customers, and colleges book a live workshop stall for their annual Diwali Mela. Event managers can also book Kraftykinni as the craft-activity vendor for a client\'s Diwali event.',
       },
     ],
   },

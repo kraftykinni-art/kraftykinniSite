@@ -1894,6 +1894,89 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Yes. Kraftykinni's Ganesh Chaturthi workshop uses natural clay idols instead of Plaster of Paris, and its Environment Day sessions turn upcycled bottles into painted planters and décor.</p>
     `,
   },
+
+  {
+    path: '/blog/diwali-diya-painting-workshop-delhi-ncr',
+    title: 'Corporate Diwali Activities Delhi NCR 2026 | Kraftykinni',
+    description: 'Planning a corporate Diwali celebration in Delhi, Gurgaon or Noida? 10 hands-on Diwali art activities, pricing, group-size guidance and how Kraftykinni runs them for 20-200+ employees.',
+    h1: 'Corporate Diwali Celebration Ideas for Delhi NCR: 10 Creative Activities Employees Actually Enjoy',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Corporate Diwali Celebration Ideas for Delhi NCR: 10 Creative Activities Employees Actually Enjoy',
+        'description': 'Planning a corporate Diwali celebration in Delhi, Gurgaon or Noida? 10 hands-on Diwali art activities, pricing, group-size guidance and how Kraftykinni runs them for 20-200+ employees.',
+        'url': 'https://kraftykinni.in/blog/diwali-diya-painting-workshop-delhi-ncr/',
+        'datePublished': '2026-09-11',
+        'dateModified': '2026-09-12',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/diwali-diya-painting-workshop-delhi-ncr/' },
+      },
+    ],
+    bodyContent: `<h1>Corporate Diwali Celebration Ideas for Delhi NCR: 10 Creative Activities Employees Actually Enjoy</h1>
+      <p>Diwali falls on Sunday, 8 November 2026. Beyond décor, sweets and games, hands-on creative activities give employees something to actually participate in — and something they take home. Kraftykinni runs corporate Diwali art workshops for 20–200+ employees, all-beginner-friendly, with materials included, across Delhi, Gurgaon, and Noida, led by Shramita Govil, a Fevicryl Certified Artist.</p>
+      <h2>What Makes a Good Corporate Diwali Activity</h2>
+      <p>Easy to join with no prior art experience needed; scalable from 20 to 150+ people; time-efficient at 60–120 minutes; inclusive; take-home; office-friendly with minimal mess; and photogenic for internal comms.</p>
+      <h2>10 Corporate Diwali Art Activities for Employees</h2>
+      <p>For most corporate teams, we recommend Lippan Décor, Diwali Lantern Making, Clay Diya Hanging or Premium Diya Painting first — they combine easy participation with a genuinely useful take-home piece.</p>
+      <h3>1. Luxury Lippan / Mirror-Work Diwali Décor</h3>
+      <p>Our flagship Diwali format — a mirror-and-clay decorative piece using the Lippan Art technique from Kutch, Gujarat, with pearl and metallic detailing. 90–120 minutes, groups of 20–100+.</p>
+      <h3>2. Diwali Lantern Making</h3>
+      <p>Employees paint and decorate a lantern fitted with an LED tealight, ending in a group lights-on reveal. 75–90 minutes, groups of 20–150.</p>
+      <h3>3. Premium Diya Painting</h3>
+      <p>Our most-requested format — hand-painted clay diyas with acrylic colours, metallic detailing and optional mirror or bead work, using the Clay Art technique. 60–75 minutes, groups of 30–200+.</p>
+      <h3>4. Clay Diya Hanging — Handmade Diwali Décor</h3>
+      <p>Employees shape their own diya, lotus, tealight holder or festive hanging in air-dry clay before painting it. 75–90 minutes, groups of 20–150.</p>
+      <h3>5. Mirror-Work Diwali Tealight Holder</h3>
+      <p>An MDF base combined with a clay-and-mirror relief and an LED candle. A premium alternative for offices that already ran diya painting last year. 75–90 minutes, groups of 20–100.</p>
+      <h3>6. Madhubani Diwali Canvas Art</h3>
+      <p>A simplified Madhubani or Gond-inspired folk-art design on canvas, styled around a Diwali theme. Suits senior-management sessions and premium offsites. 90 minutes, groups of 20–80.</p>
+      <h3>7. Upcycled Shubh Labh Festive Hanging</h3>
+      <p>A personalised festive hanging built from reclaimed and reusable craft materials — a genuine sustainability/CSR angle. 75–90 minutes, groups of 20–100.</p>
+      <h3>8. Glow-in-the-Dark Diwali Mandala</h3>
+      <p>A small festive mandala using UV-reactive and regular acrylic colours, ending in a glow reveal under dim or blacklight conditions. 60–75 minutes, groups of 20–150.</p>
+      <h3>9. Diwali Mandala Art Plate</h3>
+      <p>An MDF plate decorated with mandala patterns and festive embellishments — the easiest format to run operationally for very large groups. 45–60 minutes, up to 300+ participants.</p>
+      <h3>10. Corporate Diwali Collaborative Canvas</h3>
+      <p>Teams each paint one section of a large collaborative artwork, often incorporating the company's name or colours — a genuine team-building story rather than an individual keepsake. 60–90 minutes, groups of 30–200+.</p>
+      <h2>Which Diwali Activity Fits Your Team</h2>
+      <p>20–40 employees: Lippan Décor or Clay Diya Hanging. 50–100 employees: Diwali Lantern or Premium Diya Painting. 100–200+ employees: Diya Painting, Mandala Plate or Collaborative Canvas. Premium experience: Lippan Décor. Short 60-minute slot: Mandala Plate or Diya Painting. Team-building focus: Collaborative Canvas. Something different from last year: Glow Mandala or Diwali Lantern. Sustainability angle: Upcycled Shubh Labh Hanging.</p>
+      <h2>What a Corporate Diwali Workshop Costs in Delhi NCR</h2>
+      <p>Standard pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100, and ₹600 for 100+, all materials included. Diwali-specific formats with mirror or metallic work — Lippan Décor, the Lantern, and the Mirror Tealight Holder — are typically priced toward the upper end of that range or slightly above it, depending on materials.</p>
+      <h2>How a Kraftykinni Corporate Diwali Workshop Works</h2>
+      <p>You pick the activity, group size, date and theme in advance. On the day, Kraftykinni brings all materials and sets up at your office; Shramita Govil runs a short demonstration then guides participants step-by-step. Employees take their finished piece home, and setup/cleanup is handled by Kraftykinni.</p>
+      <h2>Why Art Works Especially Well for Corporate Diwali</h2>
+      <p>Kraftykinni has run 50+ corporate workshops for 1,500+ participants across Delhi, Gurgaon, and Noida. Every session is designed for beginners and scales from 20 to 200+ participants with full setup and cleanup handled on-site.</p>
+      <h2>Corporate Diwali Activities in Gurgaon and Noida</h2>
+      <p>Gurgaon: Cyber City, Udyog Vihar, Golf Course Road, Sohna Road, DLF Cyber Park — Lippan Décor, Mirror Tealight Holder and the Glow Mandala work well for this MNC-heavy market. Noida: Sectors 62, 63, 135, 142, 16/18 — Diya Painting, Diwali Lantern and the Mandala Plate suit Noida's larger, price-sensitive office events.</p>
+      <h2>Planning Timeline for Your Office Diwali Workshop</h2>
+      <p>6–8 weeks before: shortlist activity and vendor. 4–6 weeks: confirm participant count and format. 2–3 weeks: lock in materials, branding, logistics. 1 week: confirm attendance and venue setup. Event day: Kraftykinni handles setup and facilitation on-site.</p>
+      <h2>Who Else Books a Diwali Workshop</h2>
+      <p>Schools run diya painting or fridge magnets as a Diwali craft period. Cafés book lamp art or diya painting as a festive pop-up. Colleges book a live workshop stall for their annual Diwali Mela. Event managers book Kraftykinni as the craft-activity vendor for a client's Diwali event.</p>
+      <h2>Get a Corporate Diwali Quote</h2>
+      <p>Tell us your employee count, location, and preferred date, and we'll recommend a workshop that fits your team, timing and budget. WhatsApp +91 9599622210 with your details and which of the ten formats you'd like to run.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is Diwali in 2026?</h3>
+      <p>Diwali (Lakshmi Puja) falls on Sunday, 8 November 2026. Most corporate offices in Delhi NCR book their celebration workshop through October and into early November.</p>
+      <h3>What are the best Diwali activities for corporate offices in Delhi NCR?</h3>
+      <p>Luxury Lippan Décor, Diwali Lantern Making, Clay Diya Hanging and Premium Diya Painting are the top recommendations, combining easy participation with a genuinely useful take-home piece.</p>
+      <h3>How much does a corporate Diwali art workshop cost?</h3>
+      <p>₹800 per person for groups of 20–50, ₹700 for 50–100, and ₹600 for 100+, all materials included. Diwali-specific mirror/metallic formats sit toward the upper end of that range.</p>
+      <h3>Which Diwali activity works best for 100+ employees?</h3>
+      <p>Premium Diya Painting, the Diwali Mandala Art Plate, and the Corporate Diwali Collaborative Canvas all scale comfortably to 100–300+ participants in a single session.</p>
+      <h3>Can the workshop be conducted at our Gurgaon or Noida office?</h3>
+      <p>Yes. Kraftykinni travels to your office across Delhi, Gurgaon, and Noida and handles all setup and cleanup on-site.</p>
+      <h3>Do employees need previous art experience?</h3>
+      <p>No. Every format is designed for complete beginners, guided step-by-step by Shramita Govil, a Fevicryl Certified Artist.</p>
+      <h3>Can the artwork be customised to our company colours or branding?</h3>
+      <p>Yes, particularly the Corporate Diwali Collaborative Canvas, which is often built around the company name or brand colours. Other formats can include light branding on request.</p>
+      <h3>How long does a corporate Diwali workshop take?</h3>
+      <p>Most formats run 60 to 120 minutes. The Mandala Art Plate and Premium Diya Painting are fastest at 45–75 minutes; Lippan Décor and Clay Diya Hanging run closer to 90–120 minutes.</p>
+      <h3>Do you run Diwali craft workshops for schools, cafés or colleges too?</h3>
+      <p>Yes. Schools book diya painting or fridge magnets, cafés run festive pop-up sessions, and colleges book a live workshop stall for their annual Diwali Mela. Event managers can also book Kraftykinni as the craft-activity vendor for a client's Diwali event.</p>
+    `,
+  },
 ];
 
 // ─── Markdown twins (Markdown Negotiation for AI agents) ────────────────────
@@ -2375,6 +2458,7 @@ const sitemapEntries = [
   { loc: '/blog/janmashtami-krishna-art-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/trending-art-craft-workshops-delhi-ncr', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/blog/diwali-diya-painting-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';
