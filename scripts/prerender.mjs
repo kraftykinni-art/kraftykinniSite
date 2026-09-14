@@ -1977,6 +1977,49 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Yes. Schools book diya painting or Madhubani coasters, cafés run festive pop-up sessions, and colleges book a live workshop stall for their annual Diwali Mela. Event managers can also book Kraftykinni as the craft-activity vendor for a client's Diwali event.</p>
     `,
   },
+
+  {
+    path: '/blog/navratri-tie-dye-trinket-tray-workshop-delhi-ncr',
+    title: 'Navratri Workshop Ideas Delhi NCR 2026 | Kraftykinni',
+    description: 'Navratri 2026 office and school workshop ideas: a 9-colours Tie & Dye session for corporate teams and a garba trinket tray for schools. Delhi, Gurgaon, Noida.',
+    h1: 'Navratri 2026 Workshop Ideas — Tie & Dye "9 Colours" Sessions and Garba Trinket Trays in Delhi NCR',
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': 'Navratri 2026 Workshop Ideas — Tie & Dye "9 Colours" Sessions and Garba Trinket Trays in Delhi NCR',
+        'description': 'Navratri 2026 office and school workshop ideas: a 9-colours Tie & Dye session for corporate teams and a garba trinket tray for schools. Delhi, Gurgaon, Noida.',
+        'url': 'https://kraftykinni.in/blog/navratri-tie-dye-trinket-tray-workshop-delhi-ncr/',
+        'datePublished': '2026-09-25',
+        'dateModified': '2026-09-25',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/navratri-tie-dye-trinket-tray-workshop-delhi-ncr/' },
+      },
+    ],
+    bodyContent: `<h1>Navratri 2026 Workshop Ideas — Tie & Dye "9 Colours" Sessions and Garba Trinket Trays in Delhi NCR</h1>
+      <p>Most Delhi NCR offices already do some version of the "9 colours of Navratri" tradition — wearing the colour assigned to each of the nine days. Navratri Ghatasthapana falls on Sunday, 11 October 2026, and Kraftykinni is running two festival-timed workshops this year: a Tie & Dye session built around the 9-colours idea for corporate teams, and a garba-ready Trinket Tray for schools and private bookings, both variations of workshops Shramita Govil, a Fevicryl Certified Artist, runs year-round.</p>
+      <h2>"9 Colours of Navratri" Tie & Dye — A Corporate Workshop</h2>
+      <p>Using the regular Tie & Dye workshop format, participants fold, twist, and bind a plain t-shirt, tote bag, or dupatta before applying dye in that day's Navratri colour, so the take-home piece ties directly to the festival. Sessions run 1.5 to 2 hours and scale from 20 to 200+ participants.</p>
+      <h2>Garba Trinket Tray — A Practical Take on Trinket Tray Painting</h2>
+      <p>A themed version of the Trinket Tray Painting workshop. Participants paint a plain MDF tray with bold colours, mirror-work borders, or Navratri-colour patterns, creating somewhere for bangles and jewellery to land during garba and dandiya nights, and an everyday jewellery or desk tray afterward.</p>
+      <h2>Why This Works for Offices and Schools</h2>
+      <p>For offices, it replaces a passive colour-of-the-day tradition with an active one and photographs well for internal comms. For schools, a garba trinket tray session fits well as a pre-festival craft period and sends students home with something practical rather than a decoration.</p>
+      <h2>Book a Navratri Workshop in Delhi NCR</h2>
+      <p>Kraftykinni runs both workshops for corporate teams, schools, and private bookings across Delhi, Gurgaon, and Noida ahead of Navratri on 11 October 2026. Pricing starts at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for groups of 20–50, all materials included. WhatsApp +91 9599622210 to book.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is Navratri in 2026?</h3>
+      <p>Navratri Ghatasthapana falls on Sunday, 11 October 2026. Booking a festival workshop two to three weeks ahead is recommended.</p>
+      <h3>What is the "9 Colours of Navratri" Tie & Dye workshop?</h3>
+      <p>A Navratri variation of the Tie & Dye workshop, where participants dye a t-shirt, tote bag, or dupatta in that day's assigned Navratri colour.</p>
+      <h3>What is the Garba Trinket Tray workshop?</h3>
+      <p>A themed version of the Trinket Tray Painting workshop — a hand-painted MDF tray to hold bangles and jewellery during garba and dandiya nights.</p>
+      <h3>Is the Tie & Dye workshop suitable for large offices?</h3>
+      <p>Yes. It scales from 20 to 200+ participants, runs 1.5 to 2 hours, and needs no prior experience.</p>
+      <h3>How do I book a Navratri workshop before October 11?</h3>
+      <p>WhatsApp +91 9599622210 with your preferred date, location, and group size. Booking two to three weeks ahead is recommended.</p>
+    `,
+  },
 ];
 
 // ─── Markdown twins (Markdown Negotiation for AI agents) ────────────────────
@@ -2459,6 +2502,7 @@ const sitemapEntries = [
   { loc: '/blog/ganesh-chaturthi-clay-ganpati-idol-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/trending-art-craft-workshops-delhi-ncr', priority: '0.8', changefreq: 'monthly' },
   { loc: '/blog/corporate-diwali-celebration-ideas-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/navratri-tie-dye-trinket-tray-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';
