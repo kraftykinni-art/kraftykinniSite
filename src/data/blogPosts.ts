@@ -1727,4 +1727,78 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'daughters-day-personalised-gifts-workshop-delhi-ncr',
+    title: "Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR",
+    metaTitle: "Daughter's Day Gift Ideas Delhi NCR 2026 | Kraftykinni",
+    metaDescription:
+      "Daughter's Day 2026 falls on 27 September. Handmade, personalised gift ideas from Kraftykinni — custom canvas art, clay keepsakes, and made-to-order nameplates.",
+    publishDate: '2026-09-24',
+    category: 'Private Events' as const,
+    excerpt:
+      "Daughter's Day falls on Sunday, 27 September 2026. Kraftykinni puts together a few different ways to mark it — a personalised canvas piece, a hand-sculpted clay keepsake, and made-to-order nameplates and monogram wall hangings — for anyone who'd rather give something made than bought.",
+    keywords: [
+      "daughter's day gift ideas delhi",
+      'personalised gifts for daughter delhi ncr',
+      'custom nameplate gift delhi',
+      'handmade gift for daughter',
+      "daughter's day workshop delhi",
+      'monogram wall hanging gift',
+    ],
+    sections: [
+      {
+        body: `India's Daughter's Day falls on the last Sunday of September — Sunday, 27 September 2026 this year. It's a quieter occasion than Mother's Day or Father's Day, and gifting for it tends to default to flowers or a card. Kraftykinni puts together a few handmade alternatives instead, split across two different ways of getting one: a guided private workshop session, or a made-to-order custom piece.`,
+      },
+      {
+        heading: 'A Personalised Canvas Piece — Boho Canvas Art',
+        body: `The regular [Boho Canvas Art workshop](/workshops/boho-canvas) is normally an abstract, earthy-tone painting format — but for a private Daughter's Day booking, it can be taken further into a fully personalised portrait piece, like the one shown here: a hand-painted character with a floral crown, built specifically for the person receiving it rather than following the usual abstract template.\n\nA private one-on-one or small-group session runs 1.5 to 2 hours, with no drawing experience needed — the guided format works the same way whether the result is an abstract composition or a custom character design like this.`,
+        image: 'https://cdn.kraftykinni.in/assets/daughters-day-boho-girl-canvas-kraftykinni.webp',
+        imageAlt: "Hand-painted personalised boho-style canvas art with a floral crown character, a customised Daughter's Day gift from Kraftykinni",
+      },
+      {
+        heading: 'A Clay Keepsake — Personalised Photo Charm',
+        body: `Built on the regular [Clay Art workshop](/workshops/clay-art), this variation sculpts a small hand-painted clay frame around a photo — in this case, a heart-accented charm holding a baby photo. It's a genuinely different kind of keepsake from a printed photo frame, since every border, dot, and heart is shaped by hand rather than moulded or mass-produced.\n\nLike the standard Clay Art format, it's a tactile, guided session — the personalisation is in the photo and the colours chosen, not in a different technique.`,
+        image: 'https://cdn.kraftykinni.in/assets/daughters-day-baby-photo-clay-charm-kraftykinni.webp',
+        imageAlt: "Hand-sculpted clay photo charm with a heart accent, holding a personalised baby photo, a Kraftykinni Clay Art keepsake",
+      },
+      {
+        heading: 'Made-to-Order: Personalised Name Letters and Monogram Wall Hangings',
+        body: `These two are different from the workshops above — they're made-to-order pieces, not a group session you book. Personalised wooden name letters, hand-painted individually with a different pattern or theme on each letter, make a name-spelling wall display. A monogram wall hanging takes a single initial and builds a small hand-painted scene inside it — in this example, a tiny bookshelf tucked into the letter "S".\n\nBoth are commissioned individually rather than taught as a workshop, so pricing depends on the number of letters, size, and design detail. To order one for Daughter's Day, WhatsApp Kraftykinni directly with the name or initial you'd like and a sense of the style — there's no group booking process for these, just a direct conversation about what you want made.`,
+        image: 'https://cdn.kraftykinni.in/assets/daughters-day-personalised-name-letters-kraftykinni.webp',
+        imageAlt: "Hand-painted personalised wooden name letters with floral, donut, and ocean designs, a made-to-order Kraftykinni keepsake",
+      },
+      {
+        heading: 'Monogram Wall Hangings',
+        body: `A monogram wall hanging takes the same made-to-order approach but built around a single initial instead of a full name. The letter becomes a small shadow-box scene — in this example, a tiny hand-painted bookshelf, complete with tiny books, a plant, and a star, tucked inside the letter "S". It works well as a standalone piece for a bedroom or study, or alongside the name letters as a matched pair.`,
+        image: 'https://cdn.kraftykinni.in/assets/daughters-day-monogram-wall-hanging-kraftykinni.webp',
+        imageAlt: "Hand-painted monogram wall hanging shaped like the letter S with a tiny bookshelf scene inside, a made-to-order Kraftykinni piece",
+      },
+      {
+        heading: "Book a Workshop or Order a Custom Piece",
+        body: `For the Boho Canvas Art or Clay Art sessions, private bookings in Delhi, Gurgaon, and Noida start at ₹600–800 per person depending on group size, all materials included — WhatsApp **+91 9599622210** with your preferred date and group size. For a made-to-order nameplate or monogram wall hanging, message the same number directly with the name/initial and design you have in mind for a custom quote — these are made individually rather than priced per person.`,
+      },
+    ],
+    faq: [
+      {
+        q: "When is Daughter's Day in 2026?",
+        a: "India's Daughter's Day falls on the last Sunday of September — Sunday, 27 September 2026.",
+      },
+      {
+        q: 'Can the Boho Canvas Art workshop be personalised into a portrait, not just an abstract design?',
+        a: 'Yes — for private bookings, the Boho Canvas Art format can be adapted into a fully personalised character or portrait piece rather than the usual abstract composition, built specifically around the person receiving it.',
+      },
+      {
+        q: 'What is the personalised clay photo charm?',
+        a: 'It is a variation of the Clay Art workshop where a small hand-painted clay frame is sculpted around a chosen photo, finished with decorative details like a heart accent — a handmade alternative to a printed photo frame.',
+      },
+      {
+        q: 'Are the personalised name letters and monogram wall hangings a workshop I can book?',
+        a: "No — these are made-to-order pieces Kraftykinni creates individually, not a group workshop. WhatsApp +91 9599622210 directly with the name or initial and design you'd like for a custom quote.",
+      },
+      {
+        q: "How do I book a Daughter's Day workshop or order a custom piece?",
+        a: 'WhatsApp +91 9599622210. For the Boho Canvas Art or Clay Art private workshops, share your preferred date, location, and group size. For a custom nameplate or monogram wall hanging, share the name/initial and design you want instead.',
+      },
+    ],
+  },
 ];

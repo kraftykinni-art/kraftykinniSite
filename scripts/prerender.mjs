@@ -2020,6 +2020,49 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>WhatsApp +91 9599622210 with your preferred date, location, and group size. Booking two to three weeks ahead is recommended.</p>
     `,
   },
+
+  {
+    path: '/blog/daughters-day-personalised-gifts-workshop-delhi-ncr',
+    title: "Daughter's Day Gift Ideas Delhi NCR 2026 | Kraftykinni",
+    description: "Daughter's Day 2026 falls on 27 September. Handmade, personalised gift ideas from Kraftykinni — custom canvas art, clay keepsakes, and made-to-order nameplates.",
+    h1: "Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR",
+        'description': "Daughter's Day 2026 falls on 27 September. Handmade, personalised gift ideas from Kraftykinni — custom canvas art, clay keepsakes, and made-to-order nameplates.",
+        'url': 'https://kraftykinni.in/blog/daughters-day-personalised-gifts-workshop-delhi-ncr/',
+        'datePublished': '2026-09-24',
+        'dateModified': '2026-09-24',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about/' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/daughters-day-personalised-gifts-workshop-delhi-ncr/' },
+      },
+    ],
+    bodyContent: `<h1>Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR</h1>
+      <p>India's Daughter's Day falls on the last Sunday of September — Sunday, 27 September 2026. Kraftykinni puts together a few handmade alternatives to flowers or a card, split across two ways of getting one: a guided private workshop session, or a made-to-order custom piece.</p>
+      <h2>A Personalised Canvas Piece — Boho Canvas Art</h2>
+      <p>The regular Boho Canvas Art workshop is normally an abstract, earthy-tone painting format, but for a private Daughter's Day booking it can be taken further into a fully personalised portrait piece — a hand-painted character built specifically for the person receiving it. A private session runs 1.5 to 2 hours with no drawing experience needed.</p>
+      <h2>A Clay Keepsake — Personalised Photo Charm</h2>
+      <p>Built on the regular Clay Art workshop, this variation sculpts a small hand-painted clay frame around a chosen photo, finished with decorative details like a heart accent — a handmade alternative to a printed photo frame.</p>
+      <h2>Made-to-Order: Personalised Name Letters and Monogram Wall Hangings</h2>
+      <p>These are made-to-order pieces, not a group workshop. Personalised wooden name letters, each hand-painted with its own pattern, spell out a name for wall display. A monogram wall hanging builds a small hand-painted scene inside a single initial. Pricing depends on the number of letters, size, and design detail — WhatsApp Kraftykinni directly with the name or initial you'd like for a custom quote.</p>
+      <h2>Book a Workshop or Order a Custom Piece</h2>
+      <p>For the Boho Canvas Art or Clay Art sessions, private bookings in Delhi, Gurgaon, and Noida start at ₹600–800 per person depending on group size, all materials included. For a made-to-order nameplate or monogram wall hanging, message the same number directly with the name/initial and design you have in mind. WhatsApp +91 9599622210 either way.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>When is Daughter's Day in 2026?</h3>
+      <p>India's Daughter's Day falls on the last Sunday of September — Sunday, 27 September 2026.</p>
+      <h3>Can the Boho Canvas Art workshop be personalised into a portrait, not just an abstract design?</h3>
+      <p>Yes — for private bookings, the format can be adapted into a fully personalised character or portrait piece rather than the usual abstract composition.</p>
+      <h3>What is the personalised clay photo charm?</h3>
+      <p>A variation of the Clay Art workshop where a small hand-painted clay frame is sculpted around a chosen photo, finished with details like a heart accent.</p>
+      <h3>Are the personalised name letters and monogram wall hangings a workshop I can book?</h3>
+      <p>No — these are made-to-order pieces Kraftykinni creates individually, not a group workshop. WhatsApp +91 9599622210 directly with the name or initial and design you'd like.</p>
+      <h3>How do I book a Daughter's Day workshop or order a custom piece?</h3>
+      <p>WhatsApp +91 9599622210. For the Boho Canvas Art or Clay Art private workshops, share your preferred date, location, and group size. For a custom nameplate or monogram wall hanging, share the name/initial and design you want instead.</p>
+    `,
+  },
 ];
 
 // ─── Markdown twins (Markdown Negotiation for AI agents) ────────────────────
@@ -2503,6 +2546,7 @@ const sitemapEntries = [
   { loc: '/blog/trending-art-craft-workshops-delhi-ncr', priority: '0.8', changefreq: 'monthly' },
   { loc: '/blog/corporate-diwali-celebration-ideas-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
   { loc: '/blog/navratri-tie-dye-trinket-tray-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/daughters-day-personalised-gifts-workshop-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
 ];
 
 const base = 'https://kraftykinni.in';

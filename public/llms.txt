@@ -60,6 +60,7 @@ Booking: 7 days advance notice, 50% deposit confirms a booking, minimum 20 parti
 - [What's Trending in Art & Craft Workshops?](https://kraftykinni.in/blog/trending-art-craft-workshops-delhi-ncr.md): What's trending in art and craft workshops in 2026 — personalization, mindful crafts, eco-friendly materials — from Kraftykinni's Delhi NCR sessions.
 - [Corporate Diwali Activities Delhi NCR 2026](https://kraftykinni.in/blog/corporate-diwali-celebration-ideas-delhi-ncr.md): Planning a corporate Diwali celebration in Delhi, Gurgaon or Noida? 9 hands-on Diwali art activities, pricing, group-size guidance and how Kraftykinni runs them for 20-200+ employees.
 - [Navratri Workshop Ideas Delhi NCR 2026](https://kraftykinni.in/blog/navratri-tie-dye-trinket-tray-workshop-delhi-ncr.md): Navratri 2026 office and school workshop ideas: a 9-colours Tie & Dye session for corporate teams and a garba trinket tray for schools. Delhi, Gurgaon, Noida.
+- [Daughter's Day Gift Ideas Delhi NCR 2026](https://kraftykinni.in/blog/daughters-day-personalised-gifts-workshop-delhi-ncr.md): Daughter's Day 2026 falls on 27 September. Handmade, personalised gift ideas from Kraftykinni — custom canvas art, clay keepsakes, and made-to-order nameplates.
 
 ## Agent resources
 - Any page above is also available as clean Markdown at the same URL with a .md extension, or via `Accept: text/markdown`
