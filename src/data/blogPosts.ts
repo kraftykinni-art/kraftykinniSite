@@ -1209,7 +1209,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Why It Works as a Corporate Reset',
-        body: `There is something genuinely disarming about watching corporate hierarchy fall away the moment everyone is handed a paintbrush and a set of dots to fill in. For that hour, nobody was checking their inbox — the pressure of being "perfect" at work was replaced by the simple, grounding act of getting a dot pattern to line up evenly.\n\n"Burnout" gets talked about often in HR and workplace circles, usually as something to be solved with more rest. But sometimes the better reset for an overworked mind isn't doing nothing — it's doing something completely different with your hands for an hour. That is the specific value a dot mandala session offers over a generic break: full attention, low stakes, and a real object to show for it at the end.`,
+        body: `There is something genuinely disarming about watching corporate hierarchy fall away the moment everyone is handed a paintbrush and a set of dots to fill in. For that hour, nobody was checking their inbox — the pressure of being "perfect" at work was replaced by the simple, grounding act of getting a dot pattern to line up evenly.\n\n"Burnout" gets talked about often in HR and workplace circles, usually as something to be solved with more rest. But sometimes the better reset for an overworked mind isn't doing nothing — it's doing something completely different with your hands for an hour. That is the specific value a dot mandala session offers over a generic break: full attention, low stakes, and a real object to show for it at the end.\n\nPlanning something around World Mental Health Day on 10 October? See our guide to [art workshops for stress relief in Delhi NCR](/blog/world-mental-health-day-art-workshop-delhi-ncr).`,
         image: 'https://cdn.kraftykinni.in/dot-mandala-sunset-artwork-corporate-kraftykinni.webp',
         imageAlt: 'A finished dot mandala artwork in warm sunset colours, held up by a corporate workshop participant in Noida',
       },
@@ -1798,6 +1798,116 @@ export const blogPosts: BlogPost[] = [
       {
         q: "How do I book a Daughter's Day workshop or order a custom piece?",
         a: 'WhatsApp +91 9599622210. For the Boho Canvas Art or Clay Art private workshops, share your preferred date, location, and group size. For a custom nameplate or monogram wall hanging, share the name/initial and design you want instead.',
+      },
+    ],
+  },
+  {
+    slug: 'world-mental-health-day-art-workshop-delhi-ncr',
+    title: "World Mental Health Day 2026: Art Workshops for Stress Relief in Delhi NCR",
+    metaTitle: "World Mental Health Day Art Workshop Delhi NCR | Kraftykinni",
+    metaDescription:
+      "World Mental Health Day is 10 October. Guided mandala, clay and Lippan art breaks for teams, schools and adults in Delhi, Gurgaon and Noida. Book now.",
+    publishDate: "2026-09-29",
+    category: 'Workshop Guides' as const,
+    excerpt:
+      "World Mental Health Day falls on Saturday, 10 October 2026, and this year's theme is about listening. Kraftykinni looks at how a guided, screen-free art break — dot mandala, clay, Lippan and rope art — can give teams, schools and adults a calm hour, and where a creative session stops and professional support begins.",
+    keywords: [
+      "world mental health day workshop delhi",
+      "stress relief art workshop delhi ncr",
+      "corporate wellness workshop gurgaon",
+      "mandala art for stress relief",
+      "art activity for employee wellbeing",
+      "mindfulness art workshop noida",
+      "creative wellbeing workshop for schools delhi",
+    ],
+    sections: [
+      {
+        body: `World Mental Health Day is observed every year on 10 October — this year that is Saturday, 10 October 2026. For most workplaces and schools it passes with a poster, an email, or a short talk. Kraftykinni's take is simpler: give people a genuine, screen-free hour to slow down, use their hands, and sit next to each other without a meeting agenda.\n\nThis post covers what a guided art break can and cannot do, which Kraftykinni workshops suit that purpose best, and how teams, schools and adults across Delhi, Gurgaon and Noida can book one. A quick note up front: these are creative sessions, not therapy or treatment, and they are not a substitute for professional mental health support.`,
+      },
+      {
+        heading: "This Year's Theme: Lived Experiences Heard",
+        body: `The World Federation for Mental Health has set the 2026 theme as ["Lived Experiences Heard: Real Voices, Real Change"](https://wfmh.global/news/2026.26-08-11_world-mental-health-day-2026). It is a theme about listening to people's own accounts of what they go through, rather than talking over them.\n\nAn art session cannot do that work on its own. What it can do is create a low-pressure setting where colleagues, classmates or friends are side by side, hands busy, and conversation happens naturally instead of being forced. Many people find it easier to talk while they are doing something with their hands, and a group art activity gives that setting without anyone being put on the spot.`,
+      },
+      {
+        heading: "Why a Hands-On Creative Break Helps People Slow Down",
+        body: `Most working days are made of screens, notifications and back-to-back calls. A guided art session is close to the opposite: one task, one surface, materials in front of you, and no way to multitask. Slow, repetitive, tactile work — placing dots, pressing clay, coiling rope — gives attention somewhere gentle to rest, and many participants describe coming out of a session calmer and more talkative than they went in.\n\nKraftykinni's sessions are built around that idea. There is no grading, no prior experience needed, and every participant ends the hour with a finished object of their own. That low-stakes, visible result is a large part of why people leave a session feeling lighter rather than drained.`,
+      },
+      {
+        heading: "Dot Mandala Art — A Desk-Side Reset for Teams",
+        body: `If you want a single workshop for World Mental Health Day, [Dot Mandala Art](/workshops/mandala-art) is the most natural fit. Participants use fine dotting tools and acrylic paint to build a symmetrical pattern one dot at a time on a round wooden base. It cannot be rushed, which is exactly why it works as a pause.\n\nKraftykinni ran this format for a 20-person team at an office in Noida Sector 90, set up desk-side so nobody had to travel anywhere. Laptops were closed, the floor got quieter, and by the end managers and analysts were comparing dot spacing rather than checking inboxes. The full account is in the [Noida dot mandala case study](/blog/dot-mandala-art-corporate-workshop-noida).`,
+        image: "https://cdn.kraftykinni.in/noida-corporate-dot-mandala-workshop-group-kraftykinni.webp",
+        imageAlt: "A 20-person corporate team in Noida holding up their finished hand-painted dot mandala artworks after a Kraftykinni desk-side workshop",
+      },
+      {
+        body: `The sessions are guided step by step, so participants with no art background still finish a complete, symmetric piece. Sessions can run in about an hour for a focused break, or up to 1.5 to 2 hours with a demonstration and more detailed designs.`,
+        image: "https://cdn.kraftykinni.in/corporate-dot-mandala-workshop-in-progress-kraftykinni.webp",
+        imageAlt: "Corporate team members using dotting tools and acrylic paint to build dot mandala art at their desks during a Kraftykinni workshop in Noida",
+      },
+      {
+        heading: "Clay Art — Tactile and Grounding",
+        body: `For groups that prefer to work with their hands rather than a brush, [Clay Art](/workshops/clay-art) is a good alternative. Participants shape and paint small air-dry clay pieces using Fevicryl Mouldit, and the physical act of pressing, rolling and shaping tends to be absorbing in a way that screen work is not. It suits school groups, adult hobby sessions and corporate teams equally, and it needs no experience.\n\nMany participants say the tactile side is what they enjoy most, and the session ends with a keepsake they made themselves rather than something bought.`,
+      },
+      {
+        heading: "Lippan Art and Wall Rope Art — Slow, Repetitive, Absorbing",
+        body: `Two of Kraftykinni's heritage-style workshops are especially good for a calm, unhurried session. In [Lippan Art](/workshops/lippan-art), participants build raised clay patterns and place small mirrors by hand, following the Kutch folk tradition. In [Wall Rope Art](/workshops/wall-rope-art), cotton rope is coiled into a spiral and painted, which is repetitive and focused in a similar way.\n\nBoth formats reward patience over skill, and both leave participants with a piece they can hang at home or at their desk.`,
+        image: "https://cdn.kraftykinni.in/assets/lippan-art-opt.webp",
+        imageAlt: "Hand-finished Lippan Art clay and mirror work piece from a Kraftykinni workshop in Delhi NCR",
+      },
+      {
+        heading: "Who These Sessions Are For",
+        body: `**Corporate teams.** A desk-side or boardroom session is an easy way to mark World Mental Health Day without booking an offsite. Kraftykinni brings all materials and handles setup and cleanup, for groups from 20 to 200+. See the [corporate art workshops page](/corporate-art-workshops), or the pages for [employee engagement in Gurgaon](/employee-engagement-activities-gurgaon) and [employee engagement in Noida](/employee-engagement-activities-noida).\n\n**Schools.** Mental Health Day is a good prompt for a calm, non-competitive creative period in place of a regular class. Students can work on Mandala, Clay or Rope Art in a guided format that suits mixed abilities. Details are on the [school art workshops page](/school-art-workshops).\n\n**Adults, friends and kitty parties.** Not everyone has a company or a school to organise this for them. A small private session for friends, a community group or a kitty party is a relaxed way to spend a Saturday, and no drawing experience is needed. See the [private art workshops page](/private-art-workshops).`,
+      },
+      {
+        heading: "A 10-Minute Dot Pattern You Can Try at Your Desk",
+        body: `You do not need a workshop to try the basic idea. Here is a short, free version you can do today with a pen and a sheet of paper:`,
+        listType: 'ol',
+        listItems: [
+          "Draw a small circle in the middle of the page and fill it with a few evenly spaced dots.",
+          "Draw a ring of dots around it, keeping the spacing as even as you can.",
+          "Keep adding rings outward, changing the dot size or the spacing on each ring.",
+          "Breathe slowly, and only focus on the next dot — not on how the whole thing will look.",
+          "Stop after ten minutes, whether or not it is finished.",
+        ],
+        image: "https://cdn.kraftykinni.in/dot-mandala-art-finished-pieces-corporate-kraftykinni.webp",
+        imageAlt: "Two finished dot mandala artworks — one blue and white wave pattern, one colourful abstract design — held up by a workshop participant in Noida",
+      },
+      {
+        heading: "Book a World Mental Health Day Session",
+        body: `Kraftykinni runs Dot Mandala Art, Clay Art, Lippan Art and Wall Rope Art sessions across Delhi, Gurgaon and Noida. Corporate pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100, and ₹800 per person for 20–50, all materials included. Private and school bookings start at ₹600–800 per person depending on group size.\n\nBecause 10 October is a Saturday, most offices and schools will want a session in the days around it. Booking a week or two ahead is recommended. To check availability, WhatsApp **+91 9599622210** with your preferred date, location and group size.`,
+      },
+      {
+        heading: "If You Need More Than a Creative Break",
+        body: `An art session can be a good pause, but it is not treatment. If you or someone you know is struggling with low mood, anxiety, or thoughts of self-harm, please speak to a qualified professional or a trusted person. In India, Tele-MANAS offers free, confidential, 24/7 support in multiple languages on **14416** (or 1800-891-4416).`,
+      },
+    ],
+    faq: [
+      {
+        q: "When is World Mental Health Day 2026?",
+        a: "World Mental Health Day is observed every year on 10 October. In 2026 it falls on Saturday, 10 October.",
+      },
+      {
+        q: "What is the theme of World Mental Health Day 2026?",
+        a: "The World Federation for Mental Health has set the 2026 theme as \"Lived Experiences Heard: Real Voices, Real Change\".",
+      },
+      {
+        q: "Can an art workshop help with stress?",
+        a: "Many people find a guided, screen-free art session a calming break, because slow and repetitive making gives attention somewhere gentle to rest. It is a relaxing activity, not a medical treatment, and it does not replace professional support.",
+      },
+      {
+        q: "Do I need art experience to join a wellbeing workshop?",
+        a: "No. Kraftykinni sessions are guided step by step and rely on patience rather than drawing skill, so participants with no art background finish a complete piece.",
+      },
+      {
+        q: "Which Kraftykinni workshop is best for a calming team activity?",
+        a: "Dot Mandala Art is the most popular choice for a calm team reset because it is slow, structured and easy to run desk-side. Clay Art, Lippan Art and Wall Rope Art are also good, tactile options.",
+      },
+      {
+        q: "Can Kraftykinni run a session at our office or school in Delhi, Gurgaon or Noida?",
+        a: "Yes. Kraftykinni brings all materials and runs sessions at your office, school or venue across Delhi, Gurgaon and Noida. WhatsApp +91 9599622210 with your date, location and group size.",
+      },
+      {
+        q: "Is an art workshop a substitute for therapy?",
+        a: "No. Art sessions are creative and relaxing, but they are not therapy or treatment. If you are struggling, please speak to a qualified professional. In India, Tele-MANAS offers free 24/7 support on 14416.",
       },
     ],
   },
