@@ -44,6 +44,22 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
+    // ── 0. Trailing-slash 301 → canonical no-slash URL ───────────────────
+    // GitHub Pages serves flat files (workshops-in-delhi.html), so a request
+    // for /workshops-in-delhi/ has no file behind it and only recovers via the
+    // client-side 404.html script. Redirect at the edge instead, so Google sees
+    // one URL. Runs before any fetch. Query string is preserved. Root "/" and
+    // /.well-known/ paths are left alone.
+    if (
+      (request.method === 'GET' || request.method === 'HEAD') &&
+      url.pathname.length > 1 &&
+      url.pathname.endsWith('/') &&
+      !url.pathname.startsWith('/.well-known/')
+    ) {
+      url.pathname = url.pathname.replace(/\/+$/, '');
+      return Response.redirect(url.toString(), 301);
+    }
+
     // ── B1. Markdown Negotiation ──────────────────────────────────────────
     // Skip well-known/asset paths — they have no .md twin.
     if (
@@ -80,7 +96,7 @@ export default {
     // Lets you always confirm THIS script is the one actually live, from any
     // HTTP client, instead of guessing from headers that happen to match:
     //   (Invoke-WebRequest -Uri "https://kraftykinni.in/" -Method Head).Headers["X-Agent-Ready-Worker"]
-    newResponse.headers.set('X-Agent-Ready-Worker', 'v3');
+    newResponse.headers.set('X-Agent-Ready-Worker', 'v4');
 
     // ── B3. API Catalog (RFC 9727) ─────────────────────────────────────────
     // GitHub Pages serves /.well-known/api-catalog (no file extension) as

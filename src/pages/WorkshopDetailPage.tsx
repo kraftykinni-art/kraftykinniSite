@@ -18,10 +18,12 @@ export default function WorkshopDetailPage() {
 
   const related = workshopsData.filter((w) => w.id !== workshop.id && w.category === workshop.category).slice(0, 4);
   const relatedFinal = related.length >= 2 ? related : workshopsData.filter((w) => w.id !== workshop.id).slice(0, 4);
-  // Use stable public/workshops/ path — avoids broken OG images from Vite's content-hash changes
-  const ogImage = `https://cdn.kraftykinni.in/workshops/${workshop.id}.webp`;
+  // Use the same CDN image the page already displays. The old
+  // cdn.kraftykinni.in/workshops/<id>.webp path returned 404 (cdn_image_report.csv).
+  const ogImage = workshop.image;
 
-  const canonical = `https://kraftykinni.in/workshops/${workshop.id}/`;
+  // No trailing slash — must match the prerendered canonical in scripts/prerender.mjs.
+  const canonical = `https://kraftykinni.in/workshops/${workshop.id}`;
 
   const schema = {
     '@context': 'https://schema.org',
