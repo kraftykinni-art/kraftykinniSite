@@ -723,17 +723,17 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/blog/best-corporate-team-building-activities-gurgaon-2026',
     title: 'Team Building Activities in Gurgaon 2026 | Kraftykinni',
-    description: 'Top 10 team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person.',
+    description: 'Top 10 team building activities in Gurgaon for 2026, from art workshops to escape rooms. Honest picks with real team outcomes. Workshops from ₹600/person.',
     h1: 'Best Corporate Team Building Activities in Gurgaon 2026',
     schemas: [
       {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
         'headline': 'Team Building Activities in Gurgaon 2026 | Kraftykinni',
-        'description': 'Top 10 team building activities in Gurgaon for 2026. From art workshops to offsite games — honest picks with real team outcomes. ₹600/person.',
+        'description': 'Top 10 team building activities in Gurgaon for 2026, from art workshops to escape rooms. Honest picks with real team outcomes. Workshops from ₹600/person.',
         'url': 'https://kraftykinni.in/blog/best-corporate-team-building-activities-gurgaon-2026',
         'datePublished': '2026-04-27',
-        'dateModified': '2026-04-27',
+        'dateModified': '2026-10-13',
         'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about' },
         'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
         'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/best-corporate-team-building-activities-gurgaon-2026' },
@@ -741,6 +741,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
     ],
     bodyContent: `
       <h1>Best Corporate Team Building Activities in Gurgaon 2026</h1>
+      <p><strong>Updated October 2026.</strong></p>
       <p>Gurgaon's corporate event scene is full of options — escape rooms, bowling, and go-karting have their place. But after running 50+ team workshops across Cyber City, Udyog Vihar, and DLF Cyber Park, we've seen which activities actually produce conversation, connection, and something teams talk about months later.</p>
       <h2>1. Art Workshop — the #1 pick for genuine connection</h2>
       <p>Art workshops consistently outperform every other team activity on one metric: conversation. Kraftykinni runs guided art sessions starting at ₹600 per person across Gurgaon, with 13 workshop activities — Lippan Art, Tie and Dye, Boho Canvas, Mandala Art, and more. Every participant takes a finished artwork home. Groups from 20 to 200+ are accommodated. For a real example, read how <a href="/blog/clay-trinket-painting-workshop-cars24-gurgaon">40 Cars24 employees made hand-painted clay trinkets at their Gurgaon office</a> in a single afternoon session.</p>
@@ -2629,6 +2630,61 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Yes. Kraftykinni runs Tote Bag Painting for groups of 20 to 200+ across Delhi, Gurgaon and Noida, with all materials included.</p>
     `,
   },
+  {
+    path: '/blog/block-printing-workshop-delhi-ncr-guide',
+    title: "Block Printing Workshop Delhi NCR Guide | Kraftykinni",
+    description: "Block printing workshop in Delhi NCR: how a session runs, what you print, 1.5–2 hours, groups of 20–200+, from ₹600 per person, all materials included.",
+    h1: "Block Printing Workshop in Delhi NCR: How a Session Works, What You Print and Booking",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Block Printing Workshop in Delhi NCR: How a Session Works, What You Print and Booking",
+        'description': "Block printing workshop in Delhi NCR: how a session runs, what you print, 1.5–2 hours, groups of 20–200+, from ₹600 per person, all materials included.",
+        'url': 'https://kraftykinni.in/blog/block-printing-workshop-delhi-ncr-guide',
+        'image': 'https://cdn.kraftykinni.in/assets/block-printing-opt.webp',
+        'datePublished': '2026-10-27',
+        'dateModified': '2026-10-27',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/block-printing-workshop-delhi-ncr-guide' },
+      },
+    ],
+    bodyContent: `<h1>Block Printing Workshop in Delhi NCR: How a Session Works, What You Print and Booking</h1>
+      <p>In a block printing workshop, each participant loads a carved wooden block with fabric colour and stamps it onto cloth, building a repeat pattern by hand. The rhythm of loading, pressing and lifting is relaxing, and the result is a fabric piece people actually use.</p>
+      <p>This guide explains how a Kraftykinni session runs, what you print, who books it and what booking involves in Delhi, Gurgaon and Noida. The full workshop page is <a href="/workshops/block-printing">Block Printing</a>.</p>
+      <h2>Materials Included</h2>
+      <p>Kraftykinni supplies everything and sets it up at each workstation before the session begins: carved wooden blocks, fabric colours, printing pads and a fabric item to print on. Blocks come in traditional geometric, floral and paisley designs.</p>
+      <h2>How a Block Printing Session Works</h2>
+      <p>Sessions run for 1.5 to 2 hours and are guided by Shramita Govil, a Fevicryl Certified Artist:</p>
+      <ol><li><strong>Choose a block and colours.</strong> Pick a geometric, floral or paisley block, and Shramita helps you choose a palette that suits the fabric.</li><li><strong>Load the block.</strong> Press it firmly and evenly onto the printing pad for an even coat of colour. Shramita demonstrates the right pressure and angle.</li><li><strong>Stamp the fabric.</strong> Press the inked block onto the fabric, hold for a moment and lift cleanly in one motion.</li><li><strong>Build the repeat pattern.</strong> Keep stamping in a grid or a freeform layout with consistent spacing. You can combine several blocks and colours.</li><li><strong>Heat-set the colour.</strong> Once the design is finished, the colour is heat-set so the fabric is washable and durable.</li></ol>
+      <h2>What You Take Home</h2>
+      <p>Each participant takes home a block-printed fabric item, usually a tote bag, dupatta or fabric panel, in traditional or contemporary patterns. Because the colour is heat-set, the piece is washable and ready to use or wear.</p>
+      <h2>Do You Need Experience?</h2>
+      <p>No. The technique is straightforward: load the block, press firmly and lift cleanly. Shramita demonstrates first and then guides everyone through spacing, pattern repetition and colour combinations.</p>
+      <h2>Who Books a Block Printing Workshop</h2>
+      <p>It suits corporate cultural events, school heritage days, college fests and team-building sessions. Companies also book it as a wellness activity, because the stamping rhythm is calming. See <a href="/corporate-art-workshops">corporate art workshops</a> and <a href="/school-art-workshops">school art workshops</a> for group formats.</p>
+      <p>Private groups book it too. For a real example, read about a <a href="/blog/block-printing-workshop-delhi-israeli-family">private block printing workshop in Delhi for a mother and daughter visiting from Israel</a>.</p>
+      <h2>Group Size, Cost and Booking</h2>
+      <p>Kraftykinni runs Block Printing for groups of 20 to 200+ across Delhi, Gurgaon and Noida, at your venue. Pricing is ₹600–₹800 per person with all materials included. For corporate groups it is <strong>₹800</strong> for 20–50 people, <strong>₹700</strong> for 50–100 and <strong>₹600</strong> for 100+.</p>
+      <p>Corporate bookings need a minimum of 7 days' notice and a 50% deposit to confirm the date. Private groups of 10 or more can book with a minimum of 5 days' notice through our <a href="/private-art-workshops">private art workshops</a> page.</p>
+      <h2>Book a Block Printing Workshop</h2>
+      <p>To check availability, WhatsApp <strong>+91 9599622210</strong> with your group size, location, preferred date and which fabric item you would like to print. You can also read more about <a href="/about">Shramita Govil and Kraftykinni</a>.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What happens in a Block Printing workshop?</h3>
+      <p>Participants choose a carved wooden block, load it with fabric colour on a printing pad and stamp a repeat pattern onto fabric, guided by Shramita Govil. The colour is then heat-set so the piece is washable.</p>
+      <h3>How long does the workshop last?</h3>
+      <p>Sessions run for 1.5 to 2 hours, including a demonstration and hands-on stamping time to complete the fabric piece.</p>
+      <h3>What does each participant take home?</h3>
+      <p>A block-printed fabric item, usually a tote bag, dupatta or fabric panel. It is heat-set, washable and ready to use.</p>
+      <h3>Do participants need any prior experience?</h3>
+      <p>No. Shramita demonstrates the technique and guides participants through spacing, pattern repetition and colour combinations.</p>
+      <h3>How much does a block printing workshop cost?</h3>
+      <p>Pricing is ₹600–₹800 per person with all materials included. For corporate groups it is ₹800 for 20–50, ₹700 for 50–100 and ₹600 for 100+.</p>
+      <h3>Can it be booked for a group across Delhi NCR?</h3>
+      <p>Yes. Kraftykinni runs Block Printing for groups of 20 to 200+ across Delhi, Gurgaon and Noida, and brings blocks, colours, printing pads and fabric items to your venue.</p>
+    `,
+  },
 ];
 
 // ─── Markdown twins (Markdown Negotiation for AI agents) ────────────────────
@@ -3122,6 +3178,7 @@ const sitemapEntries = [
   { loc: '/blog/team-building-activities-noida-2026', priority: '0.8', changefreq: 'monthly' },
   { loc: '/blog/painting-workshop-for-adults-delhi-ncr-groups', priority: '0.8', changefreq: 'monthly' },
   { loc: '/blog/tote-bag-painting-workshop-delhi-ncr-guide', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/blog/block-printing-workshop-delhi-ncr-guide', priority: '0.8', changefreq: 'monthly' },
 ];
 
 const base = 'https://kraftykinni.in';
