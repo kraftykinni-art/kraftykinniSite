@@ -282,14 +282,14 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'lippan-art-complete-beginners-guide-kutch-mirror-work',
-    title: "Lippan Art — A Complete Beginner's Guide to Kutch Mirror Work",
-    metaTitle: "Beginner's Guide to Lippan Art & Kutch Mirror Work",
+    title: "How to Make Lippan Art: A Beginner's Guide to Kutch Mirror Work",
+    metaTitle: "How to Make Lippan Art: Beginner's Guide | Kraftykinni",
     metaDescription:
-      "Lippan Art explained — the Kutch mirror-work tradition, materials, step-by-step process, and why it's the top group workshop activity in Delhi NCR.",
+      "Learn how to make Lippan Art: materials, 5 steps and what a guided Lippan Art workshop in Delhi NCR involves. From ₹600/person, all materials included.",
     publishDate: '2026-05-01',
     category: 'Workshop Guides',
     excerpt:
-      "Lippan Art is a 500-year-old craft from the Kutch region of Gujarat, and it produces some of the most striking wall pieces you'll see in Indian craft. Clay, mirrors, and geometric patterns — here's everything you need to know before your first session.",
+      "Lippan Art is a centuries-old craft from the Kutch region of Gujarat, and it produces some of the most striking wall pieces you'll see in Indian craft. Clay, mirrors, and geometric patterns — here's how to make it, step by step, before your first session.",
     keywords: [
       'lippan art tutorial',
       'kutch lippan art',
@@ -301,7 +301,7 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        body: `Lippan Art is a 500-year-old craft from the Kutch region of Gujarat. Originally practised by women of the Rabari and Mutwa communities, it was used to decorate the interior walls of mud homes — geometric patterns built from clay and studded with tiny mirrors that caught and scattered light. Today, the same tradition produces striking contemporary wall pieces, decorative objects, and jewellery-style panels that sit comfortably in both Indian and minimalist interiors.\n\nAt Kraftykinni, Lippan Art is our most requested workshop activity — and the one that produces the most surprise from first-timers. Participants who arrive convinced they have no artistic ability finish with wall pieces that look gallery-ready. That gap between expectation and outcome is what makes it one of the most satisfying crafts we teach.`,
+        body: `Lippan Art is a centuries-old folk craft from the Kutch region of Gujarat, where clay patterns are built up on a surface and small mirrors are pressed into them so the piece catches the light. You can learn the basic technique in a single guided session of around two hours, and no art experience is needed.\n\nThis guide explains how to make Lippan Art step by step: the materials, the five stages from base coat to metallic painting, and what to expect if you book a [Lippan Art workshop](/workshops/lippan-art) in Delhi, Gurgaon or Noida. At Kraftykinni it is the most requested workshop activity, and first-timers consistently finish with a wall piece they want to display.`,
       },
       {
         heading: 'The Tradition Behind the Craft',
@@ -2147,6 +2147,578 @@ export const blogPosts: BlogPost[] = [
       {
         q: "How far in advance should we book?",
         a: "A minimum of 7 days' notice is required, along with a 50% deposit to confirm the date.",
+      },
+    ],
+  },
+  {
+    slug: 'mandala-art-workshop-delhi-ncr-beginners-guide',
+    title: "Mandala Art Workshop in Delhi NCR: A Beginner's Guide to Making Your First Mandala",
+    metaTitle: "Mandala Art Workshop Delhi NCR: Beginner Guide | Kraftykinni",
+    metaDescription:
+      "New to mandala art? See how a guided mandala workshop works in Delhi NCR: no experience needed, 1.5–2 hours, ₹600–₹800/person, all materials included.",
+    publishDate: '2026-10-17',
+    category: 'Workshop Guides' as const,
+    excerpt:
+      "A beginner's guide to the Kraftykinni Mandala Art workshop: what mandala art is, how a guided session runs, what you take home, and how teams across Delhi, Gurgaon and Noida book one.",
+    keywords: [
+      "mandala art workshop",
+      "mandala art workshop Delhi NCR",
+      "mandala art classes Delhi NCR",
+      "mandala painting workshop Delhi",
+      "beginner mandala art",
+      "dot mandala art workshop",
+      "mandala art for stress relief",
+      "corporate mandala workshop",
+    ],
+    sections: [
+      {
+        body: `If you have never picked up a dotting tool, a mandala workshop is one of the easiest places to start. You build a symmetrical pattern from the centre outward, one repeated shape at a time, and a facilitator guides you through every step. No drawing skill is needed.\n\nThis beginner's guide explains what mandala art is, how a Kraftykinni session runs, what you take home and how to book a [Mandala Art workshop](/workshops/mandala-art) for your team, school or group in Delhi, Gurgaon and Noida.`,
+        image: "https://cdn.kraftykinni.in/dot-mandala-sunset-artwork-corporate-kraftykinni.webp",
+        imageAlt: "Finished dot mandala artwork in warm sunset colours held up by a workshop participant — Noida — Kraftykinni",
+      },
+      {
+        heading: "What Is Mandala Art?",
+        body: `Mandala art is the practice of creating symmetrical, circular patterns that radiate outward from a central point, using repeating shapes, dots and colours. The word mandala comes from Sanskrit and means "circle".\n\nIn Kraftykinni's workshop, participants build their own mandala from the centre outward with dotting tools and brushes. Because the pattern is structured and repetitive, it gives you a clear next step at every point, which is why beginners tend to feel at ease with it.`,
+      },
+      {
+        heading: "Mandala Art vs Dot Mandala Art",
+        body: `The two names are closely related. Dot Mandala Art is a variation of the Mandala Art workshop that is built entirely from dots rather than brush strokes. Participants use fine dotting tools and acrylic paint to build the pattern one dot at a time, on a round wooden or MDF base rather than canvas.\n\nIt is slower and more meditative than free-hand painting, because a dot mandala cannot be rushed. You can read how this played out for a real team in our [Noida dot mandala case study](/blog/dot-mandala-art-corporate-workshop-noida).`,
+      },
+      {
+        heading: "Do You Need Art Experience?",
+        body: `No. Shramita Govil, a Fevicryl Certified Artist, guides the group step by step from the very first dot. The structured, symmetrical nature of mandala art means every participant ends up with a finished piece, whatever their background in art.`,
+      },
+      {
+        heading: "What Happens in a Mandala Art Session",
+        body: `A session runs for 1.5 to 2 hours and moves at a relaxed pace. Participants work at their own speed and finish when they are satisfied with the piece.`,
+        listItems: [
+          "A brief introduction to the art form.",
+          "A guided demonstration of the technique.",
+          "Hands-on creation, building your mandala from the centre outward with dotting tools, colours and repeating patterns.",
+          "Kraftykinni brings all materials, and every participant takes their finished mandala home.",
+        ],
+        listType: 'ol',
+        image: "https://cdn.kraftykinni.in/corporate-dot-mandala-workshop-in-progress-kraftykinni.webp",
+        imageAlt: "Team members using dotting tools and acrylic paint to build dot mandala art at their desks during a workshop — Noida — Kraftykinni",
+      },
+      {
+        heading: "What You Take Home",
+        body: `Every participant completes a colourful, symmetric mandala on canvas or paper. It is display-ready, so it works as a piece for a desk or a wall, or as a gift. The dot mandala format is painted on a round wooden base instead.\n\nBecause each person chooses their own colours and patterns, no two finished pieces look alike, even when the whole group starts from the same technique.`,
+        image: "https://cdn.kraftykinni.in/dot-mandala-art-finished-pieces-corporate-kraftykinni.webp",
+        imageAlt: "Two finished dot mandala artworks, one blue and white wave pattern and one colourful abstract design — Noida — Kraftykinni",
+      },
+      {
+        heading: "Who Books a Mandala Art Workshop",
+        body: `The workshop is a popular pick for corporate wellness sessions, mental health awareness events, school art days and team-building retreats. Many HR teams book it as a calm, screen-free break during busy periods.\n\nA guided art break gives people a slow, hands-on hour. It is a creative session, not therapy or treatment, and it does not replace professional mental health support. For ideas around that theme, see our guide to [art workshops for stress relief in Delhi NCR](/blog/world-mental-health-day-art-workshop-delhi-ncr). Teams can see how the formats compare on our [corporate art workshops](/corporate-art-workshops) page.`,
+      },
+      {
+        heading: "Group Size, Cost and Booking",
+        body: `Kraftykinni runs Mandala Art workshops for groups of 20 to 200+ participants across Delhi, Gurgaon and Noida, at your venue. Pricing is ₹600–₹800 per person with all materials included. Online Mandala Art sessions with shipped kits are also available pan-India.\n\nFor corporate bookings, Kraftykinni asks for a minimum of 7 days' notice and a 50% deposit to confirm the date.`,
+      },
+      {
+        heading: "Book a Mandala Art Workshop",
+        body: `To check availability, WhatsApp **+91 9599622210** with your group size, location (Delhi, Gurgaon or Noida), preferred date and whether you would like Mandala Art or the dot mandala format. You can also read more about [Shramita Govil and Kraftykinni](/about).`,
+      },
+    ],
+    faq: [
+      {
+        q: "What is a mandala art workshop?",
+        a: "A mandala art workshop is a guided session where participants build a symmetrical, circular pattern from the centre outward using dotting tools, brushes and colours. Kraftykinni supplies all materials and every participant takes their finished piece home.",
+      },
+      {
+        q: "Do I need any art experience to join?",
+        a: "No. Shramita Govil guides the group step by step from the first dot, so every participant finishes a piece regardless of their artistic background.",
+      },
+      {
+        q: "How long is the Mandala Art workshop?",
+        a: "Sessions run for 1.5 to 2 hours, including a brief introduction, a guided demonstration and hands-on creation time.",
+      },
+      {
+        q: "What is the difference between mandala art and dot mandala art?",
+        a: "Dot Mandala Art is a variation of Mandala Art built entirely from dots rather than brush strokes, painted with dotting tools on a round wooden or MDF base.",
+      },
+      {
+        q: "How much does a mandala art workshop cost in Delhi NCR?",
+        a: "Pricing is ₹600–₹800 per person with all materials included.",
+      },
+      {
+        q: "How many people can join?",
+        a: "Kraftykinni runs Mandala Art workshops for 20 to 200+ participants across Delhi, Gurgaon and Noida. Online sessions with shipped kits are also available pan-India.",
+      },
+    ],
+  },
+  {
+    slug: 'texture-art-workshop-delhi-ncr-beginners-guide',
+    title: "Texture Art Workshop in Delhi NCR: A Beginner's Guide to Layered Mixed-Media Canvas",
+    metaTitle: "Texture Art Workshop Delhi NCR: Beginner Guide | Kraftykinni",
+    metaDescription:
+      "What is a texture art workshop? 6 steps, 1.5–2 hours, no experience needed. Layered canvas for teams in Delhi NCR from ₹600/person, all materials included.",
+    publishDate: '2026-10-18',
+    category: 'Workshop Guides' as const,
+    excerpt:
+      "A beginner's guide to the Kraftykinni Texture Art workshop: the materials, the six steps, how long it takes, what you take home and how to book it across Delhi, Gurgaon and Noida.",
+    keywords: [
+      "texture art workshop",
+      "texture art workshop Delhi NCR",
+      "mixed media workshop Delhi NCR",
+      "textured canvas class",
+      "abstract art workshop Delhi",
+      "texture art for beginners",
+      "corporate texture art workshop",
+    ],
+    sections: [
+      {
+        body: `Texture Art builds a canvas in layers. Instead of painting a picture, you press tissue paper and fabric scraps into acrylic paste, then add colour on top, so the surface has real physical depth. Because the result is abstract, there is no wrong way to do it, which makes it a good first art workshop for people who feel nervous about painting.\n\nThis guide explains how the Kraftykinni [Texture Art workshop](/workshops/texture-art) works: the materials, the steps, the time it takes and how groups in Delhi, Gurgaon and Noida can book it.`,
+        image: "https://cdn.kraftykinni.in/assets/texture-tissue-art-opt.webp",
+        imageAlt: "Texture Art workshop canvas with layered tissue paper and acrylic paste — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "What Is Texture Art?",
+        body: `Texture Art is a mixed-media painting technique where layers of materials, including tissue paper, acrylic paste, fabric scraps and paint, are built up on a canvas to create physical depth and dimension. The results are abstract and tactile, even for people who have never painted before.`,
+      },
+      {
+        heading: "Materials Provided",
+        body: `All materials are provided and included in the price, so participants do not need to bring anything:`,
+        listItems: [
+          "Canvas boards",
+          "Acrylic paste",
+          "Tissue paper",
+          "Fabric scraps",
+          "Acrylic colours",
+          "Palette knives",
+          "Brushes",
+        ],
+      },
+      {
+        heading: "How a Texture Art Session Works, Step by Step",
+        body: `The session runs for 1.5 to 2 hours. Shramita Govil, a Fevicryl Certified Artist, walks the group through each layer:`,
+        listItems: [
+          "**Gather your materials.** Everything is laid out at your station, with no prep needed.",
+          "**Apply the first texture layer.** Use a palette knife to spread acrylic paste across the canvas in broad strokes. Uneven strokes add character.",
+          "**Add tissue and fabric layers.** Tear tissue paper into irregular pieces and press them into the wet paste to make wrinkled, raised surfaces. Some areas are dense and others sparse, which builds contrast.",
+          "**Build depth with paint.** Apply acrylic colours over the textured surface with a palette knife and brush. The colour settles differently on raised and recessed areas.",
+          "**Add finishing details.** Refine with highlight colours, edge detailing or extra texture. Shramita helps you judge when the piece feels complete.",
+          "**Take your canvas home.** The finished canvas is display-ready once dry.",
+        ],
+        listType: 'ol',
+      },
+      {
+        heading: "Why Texture Art Suits Beginners",
+        body: `The process is abstract and exploratory, so there is no wrong outcome to worry about. Participants who feel intimidated by art often relax once they see the layers taking shape, and no prior painting experience is needed.\n\nEvery canvas is different. Because the process is abstract, no two participants end up with the same piece, which makes each one a personal keepsake.`,
+      },
+      {
+        heading: "Who Books a Texture Art Workshop",
+        body: `Texture Art is a popular choice for corporate creative-thinking sessions, team-building workshops and employee engagement events. It also suits school art days and private events where participants want something visually striking.\n\nIf you are comparing formats for a team, our [corporate art workshops](/corporate-art-workshops) page lists the full set of activities.`,
+      },
+      {
+        heading: "Group Size, Cost and Booking",
+        body: `Kraftykinni runs Texture Art workshops for groups of 20 to 200+ participants at your venue across Delhi, Gurgaon and Noida, with pricing of ₹600–₹800 per person and all materials included. Participants only need comfortable clothes they do not mind getting a little paint on.\n\nTo check availability, WhatsApp **+91 9599622210** with your group size, location, preferred date and the activity you would like. You can read more about [Shramita Govil and Kraftykinni](/about).`,
+      },
+    ],
+    faq: [
+      {
+        q: "What is Texture Art?",
+        a: "Texture Art is a mixed-media painting technique where layers of tissue paper, acrylic paste, fabric scraps and paint are built up on a canvas to create physical depth. The results are abstract and tactile.",
+      },
+      {
+        q: "Do I need painting experience to join?",
+        a: "No. The process is abstract and exploratory, so there is no wrong outcome. Shramita Govil guides everyone through each layer from the beginning.",
+      },
+      {
+        q: "What materials are included?",
+        a: "Canvas boards, acrylic paste, tissue paper, fabric scraps, acrylic colours, palette knives and brushes are all provided and included in the price.",
+      },
+      {
+        q: "How long does the Texture Art workshop last?",
+        a: "The session runs for 1.5 to 2 hours, including a brief introduction, a guided demonstration and hands-on creation time at your own pace.",
+      },
+      {
+        q: "Can Texture Art be booked for a corporate group?",
+        a: "Yes. Kraftykinni accommodates groups of 20 to 200+ participants and runs sessions at client venues across Delhi, Gurgaon and Noida.",
+      },
+      {
+        q: "What do participants take home?",
+        a: "Every participant takes home their own finished Texture Art canvas, a unique layered piece that is display-ready once dry.",
+      },
+    ],
+  },
+  {
+    slug: 'boho-wall-art-workshop-delhi-ncr',
+    title: "Boho Wall Art Workshops in Delhi NCR: Wall Rope Art vs Canvas Pearl Art vs Boho Canvas",
+    metaTitle: "Boho Wall Art Workshop Delhi NCR: 3 Formats | Kraftykinni",
+    metaDescription:
+      "Compare three boho wall décor workshops in Delhi NCR: Wall Rope Art, Canvas Pearl Art and Boho Canvas. Duration, materials, group size, ₹600–₹800/person.",
+    publishDate: '2026-10-19',
+    category: 'Workshop Guides' as const,
+    excerpt:
+      "Three Kraftykinni workshops end with a piece you hang on the wall: Wall Rope Art, Canvas Pearl Art and Boho Canvas Art. This guide compares duration, materials, what you make and group size so you can pick the right one.",
+    keywords: [
+      "boho wall art workshop Delhi NCR",
+      "boho wall decor workshop",
+      "wall rope art workshop",
+      "canvas pearl art workshop",
+      "boho canvas art workshop",
+      "wall hanging workshop Delhi",
+      "boho art workshop for groups",
+    ],
+    sections: [
+      {
+        body: `If you want a workshop that ends with something to hang on the wall, Kraftykinni offers three boho-style options: Wall Rope Art, Canvas Pearl Art and Boho Canvas Art. All three are guided step by step by Shramita Govil, a Fevicryl Certified Artist, with every material supplied.\n\nThis guide compares them side by side, using the details from each workshop page, so you can pick the one that fits your group, your time and your budget. Pricing is the same for all three: ₹600–₹800 per person.`,
+      },
+      {
+        heading: "Wall Rope Art: Coiled Rope, Painted by Hand",
+        body: `[Wall Rope Art](/workshops/wall-rope-art) is part sculpture, part canvas. Participants coil natural cotton rope into a circular form on a base board, then paint it with earthy botanical motifs, sunrise scenes and boho-inspired designs.\n\n**Duration:** 2 to 2.5 hours, including the coiling demonstration, guided painting, a drying period and fitting the hanging cord.\n\n**Materials provided:** natural cotton rope, a base board, strong adhesive, acrylic paints in an earthy palette, fine and flat brushes and a jute hanging cord.\n\n**You take home:** a circular rope wall hanging painted with your own design, ready to hang on a nail or hook.\n\n**Group size:** 20 to 200+ participants.`,
+        image: "https://cdn.kraftykinni.in/assets/wall-rope-art-opt.webp",
+        imageAlt: "Wall Rope Art workshop piece, a coiled rope wall hanging painted with boho motifs — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "Canvas Pearl Art: Pearls on Black Canvas",
+        body: `[Canvas Pearl Art](/workshops/canvas-pearl-art) adapts the traditional string-and-nail technique. Instead of thread wound around pins, participants glue pearls directly onto a black canvas, building radiating, spiral or symmetrical patterns one pearl at a time from a central point.\n\n**Duration:** 2 to 2.5 hours, because a full pearl pattern takes more time than a painted piece.\n\n**Materials provided:** a black canvas, decorative pearls in varying sizes, adhesive and a marked guide for the radiating pattern.\n\n**You take home:** a pearl pattern on black canvas, a display-ready wall piece with a more elegant, premium look than the other two.\n\n**Group size:** 15 to 100+ participants.`,
+        image: "https://cdn.kraftykinni.in/assets/pearl-string-art-opt.webp",
+        imageAlt: "Canvas Pearl Art workshop piece with a pearl pattern on a black canvas — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "Boho Canvas Art: Earthy, Abstract Painting",
+        body: `[Boho Canvas Art](/workshops/boho-canvas) is an abstract painting style in warm earthy tones such as terracotta, ochre, cream and sage, layered with loose shapes and simple texture techniques. It looks sophisticated but needs no drawing skills.\n\n**Duration:** 1.5 to 2 hours, the shortest of the three.\n\n**Materials provided:** a stretched canvas, acrylic paints in an earthy palette, brushes of various sizes, palette knives and optional texture elements such as dried flowers or twine.\n\n**You take home:** a finished boho-style canvas painting, unique to each participant and ready to hang or gift.\n\n**Group size:** 20 to 200+ participants.`,
+        image: "https://cdn.kraftykinni.in/assets/boho-art-opt.webp",
+        imageAlt: "Boho Canvas Art workshop painting in warm earthy tones — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "Side-by-Side Comparison",
+        body: `Here is how the three workshops compare on the points that usually decide a booking:`,
+        listItems: [
+          "**Shortest session:** Boho Canvas Art (1.5 to 2 hours). Wall Rope Art and Canvas Pearl Art both run 2 to 2.5 hours.",
+          "**Most hands-on building:** Wall Rope Art, where you coil the rope yourself before painting it.",
+          "**Most elegant, premium look:** Canvas Pearl Art, with pearls on a black background.",
+          "**Most free-form and forgiving:** Boho Canvas Art, because the style has no strict rules about placement or precision.",
+          "**Largest groups:** Wall Rope Art and Boho Canvas Art run for 20 to 200+ participants. Canvas Pearl Art runs for 15 to 100+.",
+        ],
+      },
+      {
+        heading: "Which Boho Wall Art Workshop Should You Choose?",
+        body: `Choose **Boho Canvas Art** if you have the shortest time slot or a mixed group of complete beginners. Choose **Wall Rope Art** if you want a more tactile, craft-led session with a hanging piece at the end. Choose **Canvas Pearl Art** if you want a refined keepsake and your group is 15 to 100+, and you have 2 to 2.5 hours for patient, detailed work.\n\nAll three need no prior art experience.`,
+      },
+      {
+        heading: "Booking for Teams, Schools and Private Groups",
+        body: `Corporate and school groups can see the wider activity list on our [corporate art workshops](/corporate-art-workshops) page. For birthdays, kitty parties and other private events, see our [private art workshops](/private-art-workshops) page, which covers groups of 10 to 80+ at ₹600–₹800 per person with all materials included.\n\nKraftykinni brings the materials and runs the session at your venue across Delhi, Gurgaon and Noida. To check availability, WhatsApp **+91 9599622210** with your group size, location, preferred date and the workshop you would like.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What is the difference between Wall Rope Art and Boho Canvas Art?",
+        a: "Wall Rope Art is a coiled cotton rope wall hanging that you build and then paint, and it runs 2 to 2.5 hours. Boho Canvas Art is an abstract painting on a stretched canvas in earthy tones, and it runs 1.5 to 2 hours.",
+      },
+      {
+        q: "How long does each boho wall art workshop take?",
+        a: "Boho Canvas Art runs 1.5 to 2 hours. Wall Rope Art and Canvas Pearl Art each run 2 to 2.5 hours.",
+      },
+      {
+        q: "Do I need art experience for these workshops?",
+        a: "No. Shramita Govil guides every session step by step, and none of the three requires prior art experience.",
+      },
+      {
+        q: "What is the group size for each workshop?",
+        a: "Wall Rope Art and Boho Canvas Art accommodate 20 to 200+ participants. Canvas Pearl Art accommodates 15 to 100+.",
+      },
+      {
+        q: "How much does a boho wall art workshop cost in Delhi NCR?",
+        a: "Pricing is ₹600–₹800 per person with all materials included.",
+      },
+      {
+        q: "Can I book one of these workshops for a private party?",
+        a: "Yes. Private groups of 10 to 80+ can book at ₹600–₹800 per person, with all materials included. See the private art workshops page for details.",
+      },
+    ],
+  },
+  {
+    slug: 'team-building-activities-noida-2026',
+    title: "Team Building Activities in Noida 2026: Occasions, Formats and Costs for Corporate Teams",
+    metaTitle: "Team Building Activities in Noida 2026 | Kraftykinni",
+    metaDescription:
+      "Planning team building in Noida? See 5 occasions that suit art workshops, which format fits your team, group sizes of 20–150+ and costs from ₹600/person.",
+    publishDate: '2026-10-21',
+    category: 'Corporate' as const,
+    excerpt:
+      "Quarterly team days, desk-side resets, appreciation days, annual days and onboarding: a Noida guide to when an art workshop works as a team building activity, which format to pick, and what it costs.",
+    keywords: [
+      "team building activities Noida",
+      "corporate team building Noida",
+      "team outing Noida",
+      "employee engagement activities Noida",
+      "art workshop team building Noida",
+      "corporate team activities Noida office",
+      "team building ideas Noida",
+    ],
+    sections: [
+      {
+        body: `Team building in Noida usually has to fit a tight brief: a fixed slot in the calendar, a mixed group of colleagues and little appetite for logistics. A guided art workshop is one option that meets that brief, because the facilitator brings every supply and the session runs at your own office or venue.\n\nThis guide covers the occasions when teams in Noida book art workshops, which format suits which group, and what it costs. It draws on Kraftykinni's work with Noida offices and colleges. For the full service page, see our [employee engagement activities in Noida](/employee-engagement-activities-noida).`,
+      },
+      {
+        heading: "1. Quarterly Team-Building Events",
+        body: `This is the most common booking format. HR teams across Sector 62 and Film City Road run these quarterly to keep teams connected between performance cycles. A 90-minute guided art session fills an afternoon slot without requiring an external venue.`,
+      },
+      {
+        heading: "2. Desk-Side Resets During the Workday",
+        body: `Not every session needs a conference room. Kraftykinni has run guided sessions directly at participants' desks during a work shift, which gives a team a mental break without taking them off-site.\n\nA 20-person team at an office in Noida Sector 90 did exactly this with Dot Mandala Art, at their own workstations with no venue change. Read the full account in our [Noida dot mandala case study](/blog/dot-mandala-art-corporate-workshop-noida).`,
+        image: "https://cdn.kraftykinni.in/noida-corporate-dot-mandala-workshop-group-kraftykinni.webp",
+        imageAlt: "A 20-person corporate team holding up finished dot mandala artworks after a desk-side workshop — Noida — Kraftykinni",
+      },
+      {
+        heading: "3. Employee Appreciation Days",
+        body: `When you want to signal investment in your people rather than just entertainment, a creative session can work well. Every participant takes home the artwork they made, which stays with them after the event.`,
+      },
+      {
+        heading: "4. Annual Days and Fests",
+        body: `For large annual days and college fests in Noida, an art workshop is a structured activity to run before or after the formal programme. Groups of 100 to 150+ are accommodated, with additional facilitators brought in at no extra logistics cost.`,
+      },
+      {
+        heading: "5. Onboarding and New-Hire Orientation",
+        body: `A creative session on day one gives a new cohort something to do together instead of a quiz or a slide deck. Because there is no scoring or competition, newer joiners can take part on equal footing with the rest of the team.`,
+      },
+      {
+        heading: "Which Format Fits Your Noida Team?",
+        body: `All sessions are guided step by step by Shramita Govil, a Fevicryl Certified Artist, and no art experience is needed. As a starting point:`,
+        listItems: [
+          "**Most requested for corporate groups:** [Lippan Art](/workshops/lippan-art)",
+          "**Mindfulness and wellness days:** [Mandala Art](/workshops/mandala-art)",
+          "**High energy and large groups:** [Tie & Dye](/workshops/tie-and-dye)",
+          "**Off-site retreats:** [Boho Canvas Art](/workshops/boho-canvas)",
+          "**A branded takeaway:** [Tote Bag Painting](/workshops/tote-bag-painting)",
+          "**Decompression and wellness days:** [Clay Art](/workshops/clay-art)",
+        ],
+        image: "https://cdn.kraftykinni.in/corporate-dot-mandala-workshop-in-progress-kraftykinni.webp",
+        imageAlt: "Team members building dot mandala art with dotting tools at their desks — Noida — Kraftykinni",
+      },
+      {
+        heading: "Teams of 20 to 50",
+        body: `For smaller teams working in a fixed time slot or a smaller conference room, Mandala Art and Lippan Art are the top picks, because they do not need a large open floor. Boho Canvas and Tie & Dye suit larger, higher-energy groups better. Kraftykinni will recommend a format based on your group's profile and the tone of the event.`,
+      },
+      {
+        heading: "Group Size, Cost and Notice",
+        body: `For Noida offices, colleges and universities, Kraftykinni runs sessions for 20 to 150+ participants. Above 60 participants, additional facilitators are brought in. All art supplies are included, and you provide tables and chairs.\n\nPricing is per person: **₹800** for groups of 20–50, **₹700** for 50–100 and **₹600** for 100+. A 50% deposit confirms the date, and the minimum notice is 7 days.`,
+      },
+      {
+        heading: "Where in Noida",
+        body: `Kraftykinni travels to your office or event venue across Noida, including Sector 62, Sector 16, Sector 90, Film City Road, Sector 18, Knowledge Park, Sector 125 and Greater Noida. You do not need to book an external venue.`,
+      },
+      {
+        heading: "Colleges and Universities in Noida",
+        body: `Amity University in Noida is one of Kraftykinni's most frequently repeated bookings, with sessions for orientation programmes, fests, annual days and student wellness days for groups of 40 to 150+. The activities run there include Lippan Art, Mandala Art and Tote Bag Painting.`,
+      },
+      {
+        heading: "Book a Team Building Workshop in Noida",
+        body: `Browse [art workshops in Noida](/workshops-in-noida) or see our wider [corporate art workshops](/corporate-art-workshops) page. Teams in Gurgaon can read our guide to [team building activities in Gurgaon](/blog/best-corporate-team-building-activities-gurgaon-2026). To check availability, WhatsApp **+91 9599622210** with your group size, Noida location, preferred date and the activity you have in mind.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What is a good team building activity for a Noida office?",
+        a: "A guided art workshop that runs at your own office is a good fit when you want a structured, non-competitive activity with a physical takeaway. Kraftykinni brings every supply and cleans up afterwards.",
+      },
+      {
+        q: "How many people can join a team building workshop in Noida?",
+        a: "Kraftykinni runs sessions for 20 to 150+ participants at Noida offices, colleges and universities. Additional facilitators are brought in for larger groups.",
+      },
+      {
+        q: "How much does a team building art workshop cost in Noida?",
+        a: "Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, with all art materials included.",
+      },
+      {
+        q: "Can the workshop run at our desks or office in Noida?",
+        a: "Yes. Kraftykinni has run sessions directly at participants' desks during a work shift, as well as at offices and venues across Noida, including Sector 62 and Sector 90.",
+      },
+      {
+        q: "How far in advance should we book a Noida team building session?",
+        a: "A minimum of 7 days' notice is required, with a 50% deposit to confirm the date.",
+      },
+    ],
+  },
+  {
+    slug: 'painting-workshop-for-adults-delhi-ncr-groups',
+    title: "Painting Workshop for Adults in Delhi NCR: Ideas for Groups of 10 or More",
+    metaTitle: "Painting Workshop for Adults in Delhi NCR | Kraftykinni",
+    metaDescription:
+      "Painting workshop for adults in Delhi NCR: canvas, glass, mirror and tote options for groups of 10+. No experience needed. ₹600–₹800/person, all inclusive.",
+    publishDate: '2026-10-22',
+    category: 'Private Events' as const,
+    excerpt:
+      "Looking for a painting workshop for adults in Delhi NCR? This guide compares the painting formats Kraftykinni runs for groups of 10 or more, with durations, what you make and how booking works.",
+    keywords: [
+      "painting workshop for adults Delhi NCR",
+      "adult painting workshop group",
+      "painting workshop for groups Delhi",
+      "art workshop for adults Delhi",
+      "canvas painting workshop Delhi NCR",
+      "kitty party painting workshop",
+      "painting workshop at home Delhi NCR",
+    ],
+    sections: [
+      {
+        body: `A painting workshop for adults works best when it asks for no skill and still ends with something worth keeping. Kraftykinni runs guided painting sessions for groups of 10 or more across Delhi, Gurgaon and Noida, led step by step by Shramita Govil, a Fevicryl Certified Artist, with every material supplied.\n\nThis guide compares the painting formats on offer, explains which suits which occasion and covers the practical details of booking. Pricing is ₹600–₹800 per person, all inclusive.`,
+        image: "https://cdn.kraftykinni.in/assets/boho-art-opt.webp",
+        imageAlt: "Boho Canvas Art painting in warm earthy tones from an adult group workshop — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "Who Books Painting Workshops for Adults",
+        body: `Private groups book these sessions for birthday parties, kitty parties, bachelorettes and baby showers, and for friend or family get-togethers. Kraftykinni comes to your home, a banquet hall, a café or any space you have booked, so nobody has to travel. For a wider look at party formats, see our guide to [art workshop ideas for a birthday party in Delhi NCR](/blog/art-workshop-ideas-birthday-party-delhi-ncr).`,
+      },
+      {
+        heading: "Painting Formats to Choose From",
+        body: `All of these are painting-led and need no prior experience. Durations are the ones listed on each workshop page:`,
+        listItems: [
+          "**[Boho Canvas Art](/workshops/boho-canvas)** (1.5–2 hours): an abstract painting in warm earthy tones such as terracotta, ochre, cream and sage. It needs no drawing skills.",
+          "**[Glass Painting](/workshops/glass-painting)** (1.5–2 hours): translucent paints applied to glass frames or panels with outliner pens, giving designs that glow when light passes through.",
+          "**[Mirror Painting](/workshops/mirror-painting)** (1.5–2 hours): an illustrated scene painted directly onto a mirror with glass-safe paints, so the piece is both functional and decorative.",
+          "**[Mandala Art](/workshops/mandala-art)** (1.5–2 hours): a symmetric mandala built from the centre outward with dotting tools and brushes.",
+          "**[Texture Art](/workshops/texture-art)** (1.5–2 hours): a layered, abstract mixed-media canvas using tissue paper, acrylic paste and paint.",
+          "**[Tote Bag Painting](/workshops/tote-bag-painting)** (1.5–2 hours): a cotton tote you paint with a personal or themed design and can use afterwards.",
+          "**[Canvas Pouch Painting](/workshops/canvas-pouch)** (1.5–2 hours): a compact fabric pouch painted with fabric paints, brushes and stencils.",
+          "**[Rock Painting](/workshops/rock-painting)** (1–1.5 hours): smooth stones painted with acrylics, the quickest option on this list.",
+        ],
+        image: "https://cdn.kraftykinni.in/assets/glass-painting-opt.webp",
+        imageAlt: "Glass Painting workshop piece with translucent painted designs — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "Which Painting Workshop Suits Which Occasion",
+        body: `Kraftykinni recommends a format based on your group size, age range and how hands-on you want the session to be. As a starting point:`,
+        listItems: [
+          "**Birthday parties:** Boho Canvas Art and Glass Painting are the most popular choices, because both produce display-ready artwork guests keep as a memory.",
+          "**Themed events such as bachelorettes and baby showers:** Tote Bag Painting and Canvas Pouch Painting are particularly easy to theme, and colour palettes and personal touches can be worked in.",
+          "**A calmer, focused session:** Mandala Art, where the structured pattern gives you a clear next step at every point.",
+          "**A short slot:** Rock Painting, which runs 1 to 1.5 hours.",
+        ],
+        image: "https://cdn.kraftykinni.in/assets/mirror-painting-opt.webp",
+        imageAlt: "Mirror Painting workshop piece with an illustrated scene on a mirror — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "Do Adults Need Painting Experience?",
+        body: `No. Every session is guided step by step, so someone who has never held a paintbrush can finish a piece they are happy with. Guests take their artwork home at the end.`,
+      },
+      {
+        heading: "Group Size, Cost and Booking",
+        body: `Private bookings are for groups of 10 to 80+ participants, at ₹600–₹800 per person with all art supplies included. Sessions run 1.5 to 2.5 hours depending on the activity. For groups under 10, get in touch to discuss options.\n\nKraftykinni needs a minimum of 5 days' notice and a 50% deposit to confirm the date. For weekend dates, especially Saturdays, book about 2 weeks ahead because slots fill quickly. Your space only needs tables, chairs and adequate lighting. Online sessions with kits shipped pan-India are also available.`,
+      },
+      {
+        heading: "Booking for a Workplace Group Instead?",
+        body: `For office teams of 20 or more, see our [corporate art workshops](/corporate-art-workshops) page, where pricing scales with group size. Private groups can read more on our [private art workshops](/private-art-workshops) page.`,
+      },
+      {
+        heading: "Book a Painting Workshop for Your Group",
+        body: `To check availability, WhatsApp **+91 9599622210** with your group size, location (Delhi, Gurgaon or Noida), preferred date and the painting format you have in mind. You can also read more about [Shramita Govil and Kraftykinni](/about).`,
+      },
+    ],
+    faq: [
+      {
+        q: "Is there a painting workshop for adults in Delhi NCR?",
+        a: "Yes. Kraftykinni runs guided painting workshops for adult groups of 10 or more across Delhi, Gurgaon and Noida, including Boho Canvas Art, Glass Painting, Mirror Painting and Tote Bag Painting.",
+      },
+      {
+        q: "Do adults need any painting experience?",
+        a: "No. Every session is guided step by step by a Fevicryl Certified Artist, so complete beginners finish a piece they can take home.",
+      },
+      {
+        q: "What is the minimum group size for a private painting workshop?",
+        a: "Kraftykinni accepts private bookings from groups of 10 upward. For groups under 10, get in touch to discuss options.",
+      },
+      {
+        q: "How much does an adult painting workshop cost?",
+        a: "Pricing is ₹600–₹800 per person, all inclusive, regardless of group size.",
+      },
+      {
+        q: "Can the workshop be held at my home?",
+        a: "Yes. Kraftykinni comes to your home, a banquet hall, a café or any venue you have booked, and only needs tables, chairs and adequate lighting.",
+      },
+    ],
+  },
+  {
+    slug: 'tote-bag-painting-workshop-delhi-ncr-guide',
+    title: "Tote Bag Painting Workshop in Delhi NCR: How a Session Works, Branding Options and Booking",
+    metaTitle: "Tote Bag Painting Workshop Delhi NCR Guide | Kraftykinni",
+    metaDescription:
+      "Tote bag painting workshop in Delhi NCR: how a session runs, branding options, 1.5–2 hours, groups of 20–200+, from ₹600/person, all materials included.",
+    publishDate: '2026-10-23',
+    category: 'Workshop Guides' as const,
+    excerpt:
+      "A guide to the Kraftykinni Tote Bag Painting workshop: what happens in a session, stencils versus freehand, adding company branding, who books it and how it is priced across Delhi, Gurgaon and Noida.",
+    keywords: [
+      "tote bag painting workshop Delhi NCR",
+      "tote bag painting workshop",
+      "fabric painting workshop Delhi NCR",
+      "branded gifting workshop",
+      "corporate tote bag painting",
+      "eco craft workshop Delhi",
+      "tote bag art class",
+    ],
+    sections: [
+      {
+        body: `In a tote bag painting workshop, each participant paints a plain cotton tote bag with fabric colours, and leaves with a personalised bag they can use the next day. It is one of Kraftykinni's most practical formats, because the finished piece is something people carry rather than something they store.\n\nThis guide explains how a session runs, how stencils and freehand painting work, how company branding can be added and what booking involves for groups in Delhi, Gurgaon and Noida. The full workshop page is [Tote Bag Painting](/workshops/tote-bag-painting).`,
+        image: "https://cdn.kraftykinni.in/assets/tote-bag-opt.webp",
+        imageAlt: "Hand-painted cotton tote bag from a Tote Bag Painting workshop — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "What Happens in a Tote Bag Painting Workshop",
+        body: `Sessions run for 1.5 to 2 hours and are guided by Shramita Govil, a Fevicryl Certified Artist:`,
+        listItems: [
+          "Each participant receives a plain cotton tote bag.",
+          "Shramita guides the group through design layout, colour mixing and fabric painting techniques.",
+          "Participants paint their bag with fabric colours, fine brushes and stencils.",
+          "Fabric paint dries within 15 to 20 minutes, so participants can handle and pack their tote before the session ends.",
+        ],
+        listType: 'ol',
+      },
+      {
+        heading: "Materials Included",
+        body: `Everything is supplied and included in the per-person price: tote bags, fabric paints, brushes, stencils and palette boards.`,
+      },
+      {
+        heading: "Stencils or Freehand?",
+        body: `No painting experience is needed. Participants who prefer a guided design can use stencils, and those who want to paint freehand get support from Shramita. Both approaches produce good results, so a mixed group can work side by side.`,
+      },
+      {
+        heading: "Adding Company Branding",
+        body: `For corporate events, Kraftykinni can pre-print your company logo or event branding on the bags before the workshop. Participants then personalise the bag further with their own painted design, which gives you a branded gift that is also handmade. Brand elements and event themes can also be worked into the design without printing.\n\nTote Bag Painting and Canvas Pouch Painting are the two formats Kraftykinni recommends most often for branded gifting. For a wider look at formats, see our guide to [corporate art workshops in Delhi NCR](/blog/corporate-art-workshops-delhi-ncr-guide).`,
+      },
+      {
+        heading: "A Sustainability-Themed Option",
+        body: `Each participant creates a reusable cotton bag, which suits sustainability or eco-themed events by reducing dependence on single-use plastic bags while also producing a personal piece of art.`,
+      },
+      {
+        heading: "Who Books a Tote Bag Painting Workshop",
+        body: `The page lists corporate gifting events, sustainability-themed workshops, school events and private parties. Schools use it as a classroom or annual-day activity, which is covered in our guide to [annual day activity ideas for schools in Delhi NCR](/blog/annual-day-activity-ideas-schools-delhi-ncr). For birthday and group celebrations, see our [birthday party workshop ideas](/blog/art-workshop-ideas-birthday-party-delhi-ncr), and for school bookings visit [school art workshops](/school-art-workshops).`,
+      },
+      {
+        heading: "Group Size, Cost and Booking",
+        body: `Kraftykinni runs Tote Bag Painting for groups of 20 to 200+ across Delhi, Gurgaon and Noida, at your venue. Pricing is ₹600–₹800 per person with all materials included. For corporate groups it is **₹800** for 20–50 people, **₹700** for 50–100 and **₹600** for 100+.\n\nCorporate bookings need a minimum of 7 days' notice and a 50% deposit to confirm the date. Private groups of 10 or more can book too, with a minimum of 5 days' notice, through our [private art workshops](/private-art-workshops) page.`,
+      },
+      {
+        heading: "Book a Tote Bag Painting Workshop",
+        body: `See our [corporate art workshops](/corporate-art-workshops) page for the wider activity list. To check availability, WhatsApp **+91 9599622210** with your group size, location, preferred date and whether you would like branding on the bags. You can also read more about [Shramita Govil and Kraftykinni](/about).`,
+      },
+    ],
+    faq: [
+      {
+        q: "What happens in a Tote Bag Painting workshop?",
+        a: "Each participant receives a plain cotton tote bag and paints it with fabric colours, fine brushes and stencils, guided by Shramita Govil through layout, colour mixing and fabric painting techniques. They take the bag home to use.",
+      },
+      {
+        q: "Can we add corporate branding to the tote bags?",
+        a: "Yes. Kraftykinni can pre-print your company logo or event branding on the bags before the workshop, and participants then add their own painted design.",
+      },
+      {
+        q: "Do participants need painting experience?",
+        a: "No. Stencils are available for guided designs, and Shramita supports anyone who wants to paint freehand.",
+      },
+      {
+        q: "How long does the workshop last?",
+        a: "Sessions run for 1.5 to 2 hours. Fabric paint dries within 15 to 20 minutes, so participants can pack their tote before the session ends.",
+      },
+      {
+        q: "How much does a tote bag painting workshop cost?",
+        a: "Pricing is ₹600–₹800 per person with all materials included. For corporate groups it is ₹800 for 20–50, ₹700 for 50–100 and ₹600 for 100+.",
+      },
+      {
+        q: "Can it be booked for a group across Delhi NCR?",
+        a: "Yes. Kraftykinni runs Tote Bag Painting for groups of 20 to 200+ across Delhi, Gurgaon and Noida, with all materials included.",
       },
     ],
   },
