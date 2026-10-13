@@ -1917,7 +1917,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Diwali Art Workshop Delhi NCR: Schools, Groups | Kraftykinni",
     metaDescription:
       "Book a Diwali art workshop in Delhi NCR for schools, colleges, cafés, societies and home groups. Diya painting, Lippan and Madhubani, ₹600–₹800/person.",
-    publishDate: '2026-10-15',
+    publishDate: '2026-10-03',
     category: 'School & College' as const,
     excerpt:
       "Diwali falls on Sunday, 8 November 2026. Here is how schools, colleges, cafés, residential societies and home groups of 10 or more can book a Diwali art workshop in Delhi NCR: three formats, group sizes, pricing and booking deadlines.",
@@ -2032,7 +2032,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Corporate Art Workshops: A Delhi NCR Guide | Kraftykinni",
     metaDescription:
       "What a corporate art workshop is, how a session runs, formats, group sizes of 20–200+, cost from ₹600/person and how to book in Delhi, Gurgaon and Noida.",
-    publishDate: '2026-10-16',
+    publishDate: '2026-10-01',
     category: 'Corporate' as const,
     excerpt:
       "A corporate art workshop is a guided session where every team member makes a finished artwork to keep. This guide explains how a session runs, the formats Kraftykinni offers, group sizes, cost and how to book across Delhi, Gurgaon and Noida.",
@@ -2071,8 +2071,8 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Corporate Art Workshop Formats",
         body: `Sessions run between 1 and 2.5 hours depending on the activity. Here are the formats grouped by the duration listed on each workshop page.\n\n**1 to 1.5 hours:** [Rock Painting](/workshops/rock-painting).\n\n**1.5 to 2 hours:** [Mandala Art](/workshops/mandala-art), [Tie & Dye](/workshops/tie-and-dye), [Boho Canvas Art](/workshops/boho-canvas), [Bottle Lamp Art](/workshops/bottle-lamp-art), [Block Printing](/workshops/block-printing), [Clay Art](/workshops/clay-art), [Glass Painting](/workshops/glass-painting), [Texture Art](/workshops/texture-art), [Tote Bag Painting](/workshops/tote-bag-painting), [Trinket Tray Painting](/workshops/trinket-tray), [MDF Fridge Magnet](/workshops/mdf-fridge-magnet), [Canvas Pouch Painting](/workshops/canvas-pouch), [Botanical Dyeing Printing](/workshops/botanical-dyeing-printing), [Cap Painting](/workshops/cap-painting) and [Mirror Painting](/workshops/mirror-painting).\n\n**2 to 2.5 hours:** [Lippan Art](/workshops/lippan-art), [Wall Rope Art](/workshops/wall-rope-art), [Umbrella Painting](/workshops/umbrella-painting), [Canvas Pearl Art](/workshops/canvas-pearl-art) and [Clay Mirror Art](/workshops/clay-mirror-art).`,
-        image: "https://cdn.kraftykinni.in/corporate-office-team-painted-plates-workshop-kraftykinni.webp",
-        imageAlt: "Corporate office team holding hand-painted decorative plates after an art workshop — Delhi NCR — Kraftykinni",
+        image: "https://cdn.kraftykinni.in/cars24-trinket-workshop-in-progress.jpeg",
+        imageAlt: "Facilitator guiding a participant hand-painting a clay trinket at a corporate office art workshop — Gurgaon — Kraftykinni",
       },
       {
         heading: "How to Choose a Format",
@@ -2156,7 +2156,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Mandala Art Workshop Delhi NCR: Beginner Guide | Kraftykinni",
     metaDescription:
       "New to mandala art? See how a guided mandala workshop works in Delhi NCR: no experience needed, 1.5–2 hours, ₹600–₹800/person, all materials included.",
-    publishDate: '2026-10-17',
+    publishDate: '2026-10-06',
     category: 'Workshop Guides' as const,
     excerpt:
       "A beginner's guide to the Kraftykinni Mandala Art workshop: what mandala art is, how a guided session runs, what you take home, and how teams across Delhi, Gurgaon and Noida book one.",
@@ -2253,7 +2253,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Texture Art Workshop Delhi NCR: Beginner Guide | Kraftykinni",
     metaDescription:
       "What is a texture art workshop? 6 steps, 1.5–2 hours, no experience needed. Layered canvas for teams in Delhi NCR from ₹600/person, all materials included.",
-    publishDate: '2026-10-18',
+    publishDate: '2026-10-09',
     category: 'Workshop Guides' as const,
     excerpt:
       "A beginner's guide to the Kraftykinni Texture Art workshop: the materials, the six steps, how long it takes, what you take home and how to book it across Delhi, Gurgaon and Noida.",
@@ -2348,7 +2348,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Boho Wall Art Workshop Delhi NCR: 3 Formats | Kraftykinni",
     metaDescription:
       "Compare three boho wall décor workshops in Delhi NCR: Wall Rope Art, Canvas Pearl Art and Boho Canvas. Duration, materials, group size, ₹600–₹800/person.",
-    publishDate: '2026-10-19',
+    publishDate: '2026-10-04',
     category: 'Workshop Guides' as const,
     excerpt:
       "Three Kraftykinni workshops end with a piece you hang on the wall: Wall Rope Art, Canvas Pearl Art and Boho Canvas Art. This guide compares duration, materials, what you make and group size so you can pick the right one.",
@@ -2436,7 +2436,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Team Building Activities in Noida 2026 | Kraftykinni",
     metaDescription:
       "Planning team building in Noida? See 5 occasions that suit art workshops, which format fits your team, group sizes of 20–150+ and costs from ₹600/person.",
-    publishDate: '2026-10-21',
+    publishDate: '2026-10-11',
     category: 'Corporate' as const,
     excerpt:
       "Quarterly team days, desk-side resets, appreciation days, annual days and onboarding: a Noida guide to when an art workshop works as a team building activity, which format to pick, and what it costs.",
@@ -2539,7 +2539,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Painting Workshop for Adults in Delhi NCR | Kraftykinni",
     metaDescription:
       "Painting workshop for adults in Delhi NCR: canvas, glass, mirror and tote options for groups of 10+. No experience needed. ₹600–₹800/person, all inclusive.",
-    publishDate: '2026-10-22',
+    publishDate: '2026-10-07',
     category: 'Private Events' as const,
     excerpt:
       "Looking for a painting workshop for adults in Delhi NCR? This guide compares the painting formats Kraftykinni runs for groups of 10 or more, with durations, what you make and how booking works.",
@@ -2636,7 +2636,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Tote Bag Painting Workshop Delhi NCR Guide | Kraftykinni",
     metaDescription:
       "Tote bag painting workshop in Delhi NCR: how a session runs, branding options, 1.5–2 hours, groups of 20–200+, from ₹600/person, all materials included.",
-    publishDate: '2026-10-23',
+    publishDate: '2026-10-12',
     category: 'Workshop Guides' as const,
     excerpt:
       "A guide to the Kraftykinni Tote Bag Painting workshop: what happens in a session, stencils versus freehand, adding company branding, who books it and how it is priced across Delhi, Gurgaon and Noida.",
@@ -2728,7 +2728,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: "Block Printing Workshop Delhi NCR Guide | Kraftykinni",
     metaDescription:
       "Block printing workshop in Delhi NCR: how a session runs, what you print, 1.5–2 hours, groups of 20–200+, from ₹600 per person, all materials included.",
-    publishDate: '2026-10-27',
+    publishDate: '2026-10-14',
     category: 'Workshop Guides' as const,
     excerpt:
       "A guide to the Kraftykinni Block Printing workshop: the materials, the six steps from choosing a block to heat-setting the fabric, what you take home, who books it and how it is priced across Delhi, Gurgaon and Noida.",
