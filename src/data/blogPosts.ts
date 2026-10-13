@@ -1610,7 +1610,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Who Else Books a Diwali Workshop',
-        body: `**Schools** run diya painting or Madhubani coasters as a Diwali craft period ahead of the school break — see our [school workshops page](/school-art-workshops) for group bookings.\n\n**Cafés** book jar painting or diya painting as a festive pop-up session for customers, a sip-and-craft format alongside chai and Diwali snacks.\n\n**Colleges and universities** book a live diya-painting or coaster-painting stall as part of their annual Diwali Mela.\n\n**Event managers** book Kraftykinni as the craft-activity vendor for a client's Diwali event, slotting any of the nine formats above into a larger celebration programme.`,
+        body: `**Schools** run diya painting or Madhubani coasters as a Diwali craft period ahead of the school break — see our [school workshops page](/school-art-workshops) for group bookings.\n\n**Cafés** book jar painting or diya painting as a festive pop-up session for customers, a sip-and-craft format alongside chai and Diwali snacks.\n\n**Colleges and universities** book a live diya-painting or coaster-painting stall as part of their annual Diwali Mela.\n\n**Event managers** book Kraftykinni as the craft-activity vendor for a client's Diwali event, slotting any of the nine formats above into a larger celebration programme.\n\nRunning Diwali for a school, college, café, residential society or home group rather than an office? Read our [Diwali art workshop guide for schools, societies and home groups](/blog/diwali-art-workshop-schools-societies-delhi-ncr).`,
       },
       {
         heading: 'Get a Corporate Diwali Quote',
@@ -1908,6 +1908,245 @@ export const blogPosts: BlogPost[] = [
       {
         q: "Is an art workshop a substitute for therapy?",
         a: "No. Art sessions are creative and relaxing, but they are not therapy or treatment. If you are struggling, please speak to a qualified professional. In India, Tele-MANAS offers free 24/7 support on 14416.",
+      },
+    ],
+  },
+  {
+    slug: 'diwali-art-workshop-schools-societies-delhi-ncr',
+    title: "Diwali Art Workshop in Delhi NCR for Schools, Colleges, Cafés and Home Groups",
+    metaTitle: "Diwali Art Workshop Delhi NCR: Schools, Groups | Kraftykinni",
+    metaDescription:
+      "Book a Diwali art workshop in Delhi NCR for schools, colleges, cafés, societies and home groups. Diya painting, Lippan and Madhubani, ₹600–₹800/person.",
+    publishDate: '2026-10-15',
+    category: 'School & College' as const,
+    excerpt:
+      "Diwali falls on Sunday, 8 November 2026. Here is how schools, colleges, cafés, residential societies and home groups of 10 or more can book a Diwali art workshop in Delhi NCR: three formats, group sizes, pricing and booking deadlines.",
+    keywords: [
+      "diwali art workshop delhi ncr",
+      "diwali workshop for schools delhi ncr",
+      "diya painting workshop delhi ncr",
+      "diwali craft workshop for societies delhi",
+      "diwali workshop for colleges delhi",
+      "madhubani coaster painting workshop",
+      "lippan mirror tealight holder workshop",
+      "diwali art activity for home groups delhi",
+    ],
+    sections: [
+      {
+        body: `Diwali falls on Sunday, 8 November 2026. If you are organising a Diwali art workshop in Delhi NCR for a school, a college fest, a café, a residential society or a group of friends and family, this guide covers the three Diwali formats Kraftykinni runs for these groups: Diya Painting, the Lippan Mirror Tealight Holder and Madhubani Art Coasters.\n\nEvery session is guided step by step by [Shramita Govil](/about), a Fevicryl Certified Artist, with all materials included and no prior art experience needed. Looking for an office celebration instead? See our guide to [Diwali workshop ideas for offices](/blog/corporate-diwali-celebration-ideas-delhi-ncr).`,
+      },
+      {
+        heading: "Who Books a Diwali Art Workshop",
+        body: `**Schools** run Diya Painting or Madhubani Art Coasters as a Diwali craft period. Kraftykinni's school workshops cover students from Grade 3 through college level, and the facilitator travels to your school. The [school art workshops page](/school-art-workshops) has group formats and pricing.\n\n**Colleges** book a live Diya Painting or coaster-painting stall as part of an annual Diwali Mela.\n\n**Cafés** book Diya Painting or Diwali Jar Painting as a festive pop-up session for customers, a sip-and-craft format alongside chai and Diwali snacks.\n\n**Residential societies and community groups** book a private session at a club, community hall or residential complex, so neighbours can make something together for Diwali.\n\n**Home groups of 10 or more**, whether family, friends or a kitty party, book a session in a living room or a rented venue. Kraftykinni brings all the supplies and you provide tables, chairs and good lighting. Details are on the [private art workshops page](/private-art-workshops).`,
+      },
+      {
+        heading: "Three Diwali Art Workshop Formats for Schools and Groups",
+        body: `These are the same three formats that appear in our guide for offices, with notes here for schools, colleges, cafés, societies and home groups. In each one, every participant finishes a piece to take home.`,
+      },
+      {
+        heading: "1. Diya Painting",
+        body: `**Duration:** 60–75 minutes · **Take-home:** Yes\n\nParticipants hand-paint clay diyas with acrylic colours, floral motifs and metallic detailing, using the same [Clay Art](/workshops/clay-art) technique. There is no wheel and no kiln, and every design comes out different. It is our most-requested Diwali format, and at 60–75 minutes it is one of the shorter ones, which suits a school period or a stall at a college Diwali Mela.`,
+        image: "https://cdn.kraftykinni.in/assets/diwali-diya-painting-opt.webp",
+        imageAlt: "Hand-painted clay diyas with festive floral detailing — Diwali diya painting workshop — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "2. Lippan Mirror Tealight Holder",
+        body: `**Duration:** 75–90 minutes · **Take-home:** Yes\n\nParticipants build a round mirror-inlay plate around a central tealight, using the same [Lippan Art](/workshops/lippan-art) technique, the mud-and-mirror inlay work from Kutch, Gujarat. It is a good option when a group has already done diya painting before and wants something that still feels festive but different.`,
+        image: "https://cdn.kraftykinni.in/assets/lippan-tealight-holder-opt.webp",
+        imageAlt: "Lippan mirror-work Diwali tealight holder plate — Lippan Art workshop — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "3. Madhubani Art Coasters",
+        body: `**Duration:** 60–90 minutes · **Take-home:** Yes\n\nParticipants hand-paint a Madhubani folk-art design onto a set of wooden coasters. Elephants, fish and birds are popular motifs. It gives a school or college group a cultural-heritage angle, along with a functional piece that people actually use at home.`,
+        image: "https://cdn.kraftykinni.in/assets/madhubani-art-coasters-opt.webp",
+        imageAlt: "Hand-painted Madhubani art coasters with elephant, fish and bird motifs — Diwali workshop — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "Which Diwali Format Fits Your Group",
+        body: `A quick way to narrow the three down:`,
+        listItems: [
+          "School Diwali craft period → Diya Painting or Madhubani Art Coasters",
+          "College Diwali Mela stall → Diya Painting or Madhubani Art Coasters",
+          "Café festive pop-up → Diya Painting or Diwali Jar Painting",
+          "Residential society or home group that wants a display piece → Lippan Mirror Tealight Holder",
+          "Shorter slot → Diya Painting (60–75 minutes)",
+          "Cultural or heritage angle → Madhubani Art Coasters",
+          "Did diya painting last year → Lippan Mirror Tealight Holder",
+        ],
+      },
+      {
+        heading: "Group Size, Pricing and Notice for Diwali Workshops",
+        body: `The terms depend on who is booking.\n\n**Schools and colleges:** groups from 20 students up to 200+. Pricing is ₹800 per student for 20–50 students, ₹700 for 50–100 and ₹600 for 100+, all materials included. Minimum 7 days' advance notice, with a 50% deposit to confirm the booking.\n\n**Residential societies and home groups (private bookings):** groups from 10 participants upward. Pricing is ₹600–₹800 per person regardless of group size, all materials included. Minimum 5 days' notice, with a 50% deposit to confirm your date.\n\n**Cafés:** share your date and the expected number of participants when you enquire, and we will confirm the details for a pop-up session.\n\nThe final quote depends on the format, group size and materials you choose.`,
+      },
+      {
+        heading: "Booking Deadlines for Diwali 2026",
+        body: `Diwali is on Sunday, 8 November 2026. The notice periods above count back from your event date, not from Diwali itself. A session held on Diwali Sunday needs a private booking by **Tuesday, 3 November** (5 days' notice) or a school or college booking by **Sunday, 1 November** (7 days' notice).\n\nThose are minimums, not recommendations. Weekend dates fill first, and for private groups we suggest booking about two weeks ahead for a Saturday. For Saturday, 7 November, that means enquiring by around 24 October.`,
+      },
+      {
+        heading: "How a Diwali Art Workshop Works",
+        body: `**Before the event**: you choose the format, group size, date and venue.\n\n**On the day**: Kraftykinni brings all the materials. [Shramita Govil](/about) demonstrates the technique and then guides everyone step by step. For private bookings you only need to provide tables, chairs and adequate lighting.\n\n**At the end**: every participant finishes a piece to take home. Kraftykinni has run 50+ workshops for 1,500+ participants across Delhi, Gurgaon and Noida.`,
+      },
+      {
+        heading: "Book a Diwali Art Workshop",
+        body: `To check availability, WhatsApp **+91 9599622210** with your school, society, café or group name, the expected number of participants, your location (Delhi, Gurgaon or Noida), your preferred date and which of the three formats you would like to run.`,
+      },
+    ],
+    faq: [
+      {
+        q: "When is Diwali in 2026?",
+        a: "Diwali (Lakshmi Puja) falls on Sunday, 8 November 2026.",
+      },
+      {
+        q: "What is the minimum group size for a Diwali art workshop?",
+        a: "Schools and colleges book from 20 students upward. Private groups such as residential societies and home groups book from 10 participants upward.",
+      },
+      {
+        q: "How much does a Diwali art workshop cost for schools, societies and home groups?",
+        a: "For schools and colleges, pricing is ₹800 per student for 20–50 students, ₹700 for 50–100 and ₹600 for 100+. For private groups it is ₹600–₹800 per person regardless of group size. All materials are included, and the final quote depends on the format and materials.",
+      },
+      {
+        q: "How much notice do you need for a Diwali workshop?",
+        a: "Schools and colleges need a minimum of 7 days' notice. Private bookings need a minimum of 5 days' notice. A 50% deposit confirms the booking. Weekend dates fill first, so book earlier where you can.",
+      },
+      {
+        q: "Which Diwali workshop is best for school students?",
+        a: "Schools typically run Diya Painting or Madhubani Art Coasters as a Diwali craft period. Diya Painting takes 60–75 minutes and Madhubani Art Coasters take 60–90 minutes.",
+      },
+      {
+        q: "Do participants need art experience?",
+        a: "No. Every session is guided step by step by Shramita Govil, a Fevicryl Certified Artist, and every participant finishes a piece to take home.",
+      },
+      {
+        q: "Can the workshop be held at our school, society or home?",
+        a: "Yes. Kraftykinni brings all materials and runs sessions across Delhi, Gurgaon and Noida. For private bookings you need to provide tables, chairs and adequate lighting.",
+      },
+      {
+        q: "I am organising Diwali for an office. Is this the right page?",
+        a: "This guide is for schools, colleges, cafés, societies and home groups. For an office celebration, read our separate guide to Diwali workshop ideas for offices, linked at the top of this post.",
+      },
+    ],
+  },
+  {
+    slug: 'corporate-art-workshops-delhi-ncr-guide',
+    title: "Corporate Art Workshops in Delhi NCR: A Complete Guide to Formats, Cost and Booking",
+    metaTitle: "Corporate Art Workshops: A Delhi NCR Guide | Kraftykinni",
+    metaDescription:
+      "What a corporate art workshop is, how a session runs, formats, group sizes of 20–200+, cost from ₹600/person and how to book in Delhi, Gurgaon and Noida.",
+    publishDate: '2026-10-16',
+    category: 'Corporate' as const,
+    excerpt:
+      "A corporate art workshop is a guided session where every team member makes a finished artwork to keep. This guide explains how a session runs, the formats Kraftykinni offers, group sizes, cost and how to book across Delhi, Gurgaon and Noida.",
+    keywords: [
+      "corporate art workshops",
+      "corporate workshops Delhi NCR",
+      "corporate craft workshops",
+      "art workshops for corporates",
+      "corporate art workshop Delhi NCR",
+      "corporate art workshop Gurgaon",
+      "corporate art workshop Noida",
+      "what is a corporate art workshop",
+    ],
+    sections: [
+      {
+        body: `A corporate art workshop is a guided creative session where a team sits down together and each person makes a finished piece of artwork to keep. No drawing skill is needed, because a facilitator walks the whole group through the technique step by step.\n\nThis guide explains what a session looks like, the formats Kraftykinni runs, group sizes, cost and how booking works for teams in Delhi, Gurgaon and Noida. If you are ready to request a quote, our [corporate art workshops](/corporate-art-workshops) page has the full activity list.`,
+        image: "https://cdn.kraftykinni.in/noida-corporate-dot-mandala-workshop-group-kraftykinni.webp",
+        imageAlt: "Dot mandala art workshop, a 20-person corporate team holding up finished artworks — Noida — Kraftykinni",
+      },
+      {
+        heading: "What Is a Corporate Art Workshop?",
+        body: `In a corporate art workshop, a team makes something with its hands, together, in one sitting. Everyone works on the same activity, such as painting a canvas, building a mirror-inlay piece or block-printing fabric. Everyone finishes with an object they made and take home.\n\nCompanies book these sessions for team-building days, employee engagement events, festival celebrations, wellbeing days and large annual days. You may also see them called corporate craft workshops or art workshops for corporates. The format is the same: a facilitated, beginner-friendly session with all materials supplied.`,
+      },
+      {
+        heading: "What Happens in a Session",
+        body: `A Kraftykinni session follows the same simple pattern regardless of the activity:`,
+        listItems: [
+          "Kraftykinni brings every art supply and sets up before the session. Your venue only needs tables and chairs.",
+          "Shramita Govil, a Fevicryl Certified Artist, demonstrates the technique to the whole group.",
+          "Participants work step by step with guidance. No prior art experience is assumed.",
+          "Every participant finishes a piece and takes it home.",
+          "Kraftykinni cleans up afterwards.",
+        ],
+        listType: 'ol',
+      },
+      {
+        heading: "Corporate Art Workshop Formats",
+        body: `Sessions run between 1 and 2.5 hours depending on the activity. Here are the formats grouped by the duration listed on each workshop page.\n\n**1 to 1.5 hours:** [Rock Painting](/workshops/rock-painting).\n\n**1.5 to 2 hours:** [Mandala Art](/workshops/mandala-art), [Tie & Dye](/workshops/tie-and-dye), [Boho Canvas Art](/workshops/boho-canvas), [Bottle Lamp Art](/workshops/bottle-lamp-art), [Block Printing](/workshops/block-printing), [Clay Art](/workshops/clay-art), [Glass Painting](/workshops/glass-painting), [Texture Art](/workshops/texture-art), [Tote Bag Painting](/workshops/tote-bag-painting), [Trinket Tray Painting](/workshops/trinket-tray), [MDF Fridge Magnet](/workshops/mdf-fridge-magnet), [Canvas Pouch Painting](/workshops/canvas-pouch), [Botanical Dyeing Printing](/workshops/botanical-dyeing-printing), [Cap Painting](/workshops/cap-painting) and [Mirror Painting](/workshops/mirror-painting).\n\n**2 to 2.5 hours:** [Lippan Art](/workshops/lippan-art), [Wall Rope Art](/workshops/wall-rope-art), [Umbrella Painting](/workshops/umbrella-painting), [Canvas Pearl Art](/workshops/canvas-pearl-art) and [Clay Mirror Art](/workshops/clay-mirror-art).`,
+        image: "https://cdn.kraftykinni.in/corporate-office-team-painted-plates-workshop-kraftykinni.webp",
+        imageAlt: "Corporate office team holding hand-painted decorative plates after an art workshop — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "How to Choose a Format",
+        body: `Kraftykinni recommends an activity based on your group size, the tone of the event and the time you have. As a starting point:`,
+        listItems: [
+          "Most requested for corporate groups → Lippan Art, Mandala Art or Boho Canvas Art",
+          "Outdoor or high-energy events → Tie & Dye",
+          "Branded gifting → Tote Bag Painting or Canvas Pouch Painting",
+          "A calm desk-side reset → Dot Mandala Art, a variation of Mandala Art",
+          "A short slot → Rock Painting, or a desk-side Dot Mandala session of about an hour",
+        ],
+      },
+      {
+        heading: "Real Examples From Delhi NCR Offices",
+        body: `**Gurgaon:** 40 Cars24 employees made hand-painted clay trinkets with Fevicryl Mouldit at their office in a session of about two hours. Read the full [Cars24 Gurgaon case study](/blog/clay-trinket-painting-workshop-cars24-gurgaon).\n\n**Noida:** a 20-person team at a Sector 90 office ran a desk-side Dot Mandala Art session at their own workstations, with no offsite venue. Read the [Noida dot mandala case study](/blog/dot-mandala-art-corporate-workshop-noida).\n\nLooking for a ranked list of team activities rather than an explainer? Our guide to [team building activities in Gurgaon](/blog/best-corporate-team-building-activities-gurgaon-2026) compares art workshops with other options. Teams planning broader programmes can also see the pages on [employee engagement activities in Gurgaon](/employee-engagement-activities-gurgaon) and [employee engagement activities in Noida](/employee-engagement-activities-noida).`,
+      },
+      {
+        heading: "Group Size and Venue",
+        body: `Kraftykinni's corporate sessions are for teams of 20 to 200+ participants across Delhi, Gurgaon and Noida. The large-group format is designed for 100 to 200+ participants, and additional facilitators are brought in if required.\n\nSessions can run at your office, a rented venue, a hotel banquet hall or an outdoor space, on any day of the week including weekends. For distributed teams, Kraftykinni also runs live online sessions pan-India, with the materials shipped to each participant.`,
+      },
+      {
+        heading: "What a Corporate Art Workshop Costs",
+        body: `Pricing is per person and scales with group size, with all materials included:\n\n**₹800 per person** for groups of 20–50, **₹700** for 50–100 and **₹600** for 100+.\n\nFinal pricing depends on customisation. Most activities can be aligned to your brand palette or event theme, and Tote Bag Painting and Canvas Pouch Painting are particularly popular as branded gifting workshops.`,
+        image: "https://cdn.kraftykinni.in/corporate-workshop-coaster-painting-closeup-kraftykinni.webp",
+        imageAlt: "Close-up of corporate participants hand-painting a coaster together at an art workshop — Delhi NCR — Kraftykinni",
+      },
+      {
+        heading: "How Booking Works",
+        body: `Booking a corporate art workshop takes four steps:`,
+        listItems: [
+          "Share your team size, location, preferred date and the activity you have in mind.",
+          "Kraftykinni recommends a format that fits your group size, event tone and time available.",
+          "Confirm the date with a minimum of 7 days' notice and a 50% deposit. UPI, bank transfer and cash are accepted.",
+          "On the day, Kraftykinni brings the materials, runs the session and cleans up.",
+        ],
+        listType: 'ol',
+      },
+      {
+        heading: "Plan a Corporate Art Workshop for Your Team",
+        body: `See the activities, pricing and logistics on our [corporate art workshops](/corporate-art-workshops) page. To check availability, WhatsApp **+91 9599622210** with your team size, location (Delhi, Gurgaon or Noida), preferred date and the activity you would like to run.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What is a corporate art workshop?",
+        a: "A corporate art workshop is a guided creative session where a team makes a finished piece of artwork together, led by a facilitator. Kraftykinni supplies all materials, and every participant takes their piece home.",
+      },
+      {
+        q: "How long does a corporate art workshop take?",
+        a: "Most activities run 1.5 to 2.5 hours depending on the format. Rock Painting is shorter at 1 to 1.5 hours, and a desk-side Dot Mandala session can run in about an hour for a focused group activity.",
+      },
+      {
+        q: "How many people can join a corporate art workshop?",
+        a: "Kraftykinni runs corporate sessions for 20 to 200+ participants. The large-group format is designed for 100 to 200+ participants, with additional facilitators brought in if required.",
+      },
+      {
+        q: "Do employees need art experience?",
+        a: "No. Every session is guided step by step by a Fevicryl Certified Artist, so participants of any ability finish a piece they are proud of.",
+      },
+      {
+        q: "How much does a corporate art workshop cost in Delhi NCR?",
+        a: "Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included. Final pricing depends on customisation.",
+      },
+      {
+        q: "Can the workshop be held at our office, off-site or online?",
+        a: "Yes. Sessions run at your office, a rented venue, a hotel banquet hall or an outdoor space, on any day including weekends. Live online sessions are available pan-India with materials shipped to each participant.",
+      },
+      {
+        q: "Can we add our company branding?",
+        a: "Yes. Kraftykinni can work with your brand palette and theme across most activities, and Tote Bag Painting and Canvas Pouch Painting are particularly popular as branded gifting workshops.",
+      },
+      {
+        q: "How far in advance should we book?",
+        a: "A minimum of 7 days' notice is required, along with a 50% deposit to confirm the date.",
       },
     ],
   },
