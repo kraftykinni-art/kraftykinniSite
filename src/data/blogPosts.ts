@@ -254,7 +254,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Book an art workshop for your birthday party in Delhi NCR',
-        body: `Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida. Every session is led by Shramita Govil, a Fevicryl Certified Artist with 50+ workshops and 1,500+ participants across Delhi NCR.\n\nGet in touch via WhatsApp or the contact form to discuss your date, group size, and preferred activity. We'll confirm availability and send a quote within 24 hours. [Browse all workshop activities](/workshops/lippan-art) or [read about private events](/private-art-workshops) to find the format that suits your group.`,
+        body: `Kraftykinni runs private art workshops for birthday parties, kitty parties, bachelorette celebrations, and baby showers across Delhi, Gurgaon, and Noida. Every session is led by Shramita Govil, a Fevicryl Certified Artist with 50+ workshops and 1,500+ participants across Delhi NCR.\n\nGet in touch via WhatsApp or the contact form to discuss your date, group size, and preferred activity. We'll confirm availability and send a quote within 24 hours. [Browse all workshop activities](/workshops/lippan-art) or [read about private events](/private-art-workshops) to find the format that suits your group. Planning a party for children? See how three recent [kids' birthday art workshops in Delhi and Noida](/blog/kids-birthday-party-art-workshop-delhi-noida) worked, from ages 4 to 11.`,
       },
     ],
     faq: [
@@ -2811,6 +2811,135 @@ export const blogPosts: BlogPost[] = [
       {
         q: "Can it be booked for a group across Delhi NCR?",
         a: "Yes. Kraftykinni runs Block Printing for groups of 20 to 200+ across Delhi, Gurgaon and Noida, and brings blocks, colours, printing pads and fabric items to your venue.",
+      },
+    ],
+  },
+  {
+    slug: 'kids-birthday-party-art-workshop-delhi-noida',
+    title: "Kids' Birthday Party Art Workshops in Delhi NCR: Three Parties, Three Crafts (October 2026)",
+    metaTitle: "Kids Birthday Art Parties Delhi & Noida | Kraftykinni",
+    metaDescription:
+      "See how 3 kids' birthday parties in Delhi and Noida used clay mirror art, DIY spinner kits and fridge magnets. ₹600–₹800/person, all materials included.",
+    publishDate: '2026-10-25',
+    category: 'Private Events' as const,
+    excerpt:
+      "Between 17 and 24 October 2026, Kraftykinni ran three kids' birthday art workshops: two in Delhi and one in Noida, for guests aged 4 to 11. Here is what each craft involved and how to choose one for your own party.",
+    keywords: [
+      "kids birthday party art workshop Delhi NCR",
+      "art and craft birthday party for kids Delhi",
+      "birthday party craft activity for kids",
+      "DIY return gift workshop for kids",
+      "art party for kids Noida",
+      "clay mirror art birthday party",
+      "birthday party activities for 10 year olds",
+    ],
+    sections: [
+      {
+        body: `Between 17 and 24 October 2026, Kraftykinni ran three kids' birthday art workshops: two in Delhi and one in Noida. Two were at the families' homes and one was at a café, and the guests ranged from 4 to 11 years old. Each party used a different craft, and every child went home with something they had made.\n\nThis post records what we ran, what the children made and how the format changed with age and venue, so you can pick the right one for your own party. If you are planning a birthday for adults, our guide to [art workshop ideas for a birthday party in Delhi NCR](/blog/art-workshop-ideas-birthday-party-delhi-ncr) covers that.`,
+      },
+      {
+        heading: "What Is the Best Art Activity for a Kids' Birthday Party in Delhi NCR?",
+        body: `It depends on the ages. For guests aged 4 to 7, a compact craft such as painting and decorating clay fridge magnets works well, because each child finishes a small piece they will see at home every day. For guests aged 10 to 11, a more involved build such as Clay Mirror Art or a DIY kit holds attention for longer.\n\nAll three formats run at ₹600–₹800 per person with materials included, and Kraftykinni brings everything to your home, café or hired venue in Delhi, Gurgaon or Noida.`,
+      },
+      {
+        heading: "The Three Parties at a Glance",
+        body: `Here are the three October 2026 parties side by side:`,
+        listItems: [
+          "**17 October, Delhi (at home):** DIY kits with a colour-mixing spinner and a photo frame. A boy's birthday, guests aged 10 to 11.",
+          "**18 October, Delhi (Diggin café):** Clay Mirror Art. A girl's birthday, guests aged 10 to 11.",
+          "**24 October, Noida (at home):** Clay Fridge Magnet. Guests aged 4 to 7.",
+        ],
+      },
+      {
+        heading: "Delhi, 17 October: DIY Spinner and Photo Frame Kits at a Football-Themed Home Party",
+        body: `The first party was a boy's birthday at home in Delhi, with guests aged 10 to 11 and a blue-and-white football theme. Instead of one shared project, every child got a personal kit, packed and labelled with the birthday child's name before the guests sat down.`,
+        image: "https://cdn.kraftykinni.in/kids-birthday-diy-spinner-photo-frame-kits-delhi-kraftykinni.webp",
+        imageAlt: "Personalised DIY kit bags with wooden pieces and tempera colours laid out for a kids' birthday workshop in Delhi — Kraftykinni",
+      },
+      {
+        heading: "How the Kit Worked for 10 to 11 Year Olds",
+        body: `Each kit held wooden pieces to paint and assemble, a set of tempera colours with a brush and a colour-mixing chart. Children painted a colour-wheel spinner and decorated a photo frame, using the chart to mix their own shades instead of only using colours straight from the pot. At this age, a small rule to follow gives children something to work out as well as something to paint.\n\nFloor seating on a mat worked well. The children sat in a loose circle and compared results as they went. Each child took home the finished spinner and frame, so the kit doubled as the return gift.`,
+        image: "https://cdn.kraftykinni.in/kids-birthday-diy-spinner-painting-delhi-home-kraftykinni.webp",
+        imageAlt: "Children painting colour-wheel spinners on a mat at a football-themed birthday party in Delhi — Kraftykinni",
+      },
+      {
+        heading: "Delhi, 18 October: Clay Mirror Art at Diggin Café",
+        body: `The second party was a girl's birthday at Diggin café in Delhi, again for guests aged 10 to 11. The tables were set in the café's outdoor seating area before the guests arrived, with a mirror, packs of air-dry clay in assorted colours, glue and a dreamcatcher kit at each place. The dreamcatcher kit is part of Kraftykinni's standard setup for this workshop.`,
+        image: "https://cdn.kraftykinni.in/kids-birthday-clay-mirror-art-dreamcatcher-setup-delhi-kraftykinni.webp",
+        imageAlt: "Café table laid with mirrors, coloured air-dry clay packs and dreamcatcher kits for a kids' birthday Clay Mirror Art workshop in Delhi — Kraftykinni",
+      },
+      {
+        heading: "What the Children Made: Clay Mirror Art",
+        body: `[Clay Mirror Art](/workshops/clay-mirror-art) is a sculpting workshop. Children shape air-dry clay into letters, flowers and small motifs, then press them around the edge of a mirror. At this party the pieces included clay lettering, sunflowers and other flowers, and small fruit and animal shapes.\n\nThe finished mirror is usable, not only decorative, so it works as the return gift. The workshop page lists a duration of 2 to 2.5 hours.\n\nIf you are planning a party at a café, check with the venue in advance that an outside activity is allowed, and ask for a long table or a clear block of seating. Kraftykinni handles setup, facilitation and cleanup.`,
+        image: "https://cdn.kraftykinni.in/kids-birthday-clay-mirror-art-finished-mirror-delhi-kraftykinni.webp",
+        imageAlt: "Finished mirror with clay lettering, a sunflower and fruit motifs made by a child at a birthday workshop in Delhi — Kraftykinni",
+      },
+      {
+        heading: "Noida, 24 October: Clay Fridge Magnets at a Home Party for 4 to 7 Year Olds",
+        body: `The third party was at a home in Noida, for guests aged 4 to 7, with a pink-and-gold balloon backdrop. Each child worked on their own coloured sheet laid on the floor, which marks out a personal space and protects the surface underneath.\n\nChildren painted and decorated round fridge magnets with brushes and clay details. A magnet is small, so younger children can finish it in one sitting, and it ends up somewhere they see every day. Related workshop pages: [MDF Fridge Magnet](/workshops/mdf-fridge-magnet) and [Clay Art](/workshops/clay-art).`,
+        image: "https://cdn.kraftykinni.in/kids-birthday-clay-fridge-magnet-painting-noida-kraftykinni.webp",
+        imageAlt: "Top-down view of children painting round fridge magnets on coloured sheets at a kids' birthday workshop in Noida — Kraftykinni",
+      },
+      {
+        heading: "Keeping a Group of 4 to 7 Year Olds Focused",
+        body: `For the youngest guests we kept the setup simple: one sheet and one set of materials per child, everything within reach, and the birthday decorations as the backdrop. Each child took their magnet home at the end of the party.`,
+        image: "https://cdn.kraftykinni.in/kids-birthday-party-art-workshop-noida-home-kraftykinni.webp",
+        imageAlt: "Children painting fridge magnets on coloured sheets at a pink-and-gold birthday party at home in Noida — Kraftykinni",
+      },
+      {
+        heading: "Which Format Suits Which Age",
+        body: `These are the ages we worked with this month. For other age groups, message us and we will suggest a format.`,
+        listItems: [
+          "**Ages 4 to 7:** Clay Fridge Magnet. A small piece, painted and decorated by each child on their own sheet.",
+          "**Ages 10 to 11, build and paint:** DIY kits with a colour-mixing spinner and a photo frame. Structured, with a chart to follow.",
+          "**Ages 10 to 11, sculpt:** Clay Mirror Art, where children shape clay letters and flowers around a mirror.",
+        ],
+      },
+      {
+        heading: "Home or Café: What Changes",
+        body: `At home, floor seating on a mat worked for both parties, and the children stayed close to the birthday decorations. A café or hired hall needs tables and chairs and, as above, the venue's agreement. Kraftykinni brings the materials in either case and handles setup, facilitation and cleanup.`,
+      },
+      {
+        heading: "Where Kraftykinni Hosts Kids' Birthday Workshops",
+        body: `Kraftykinni runs kids' birthday workshops across Delhi, Gurgaon and Noida, at your home, a farmhouse, a club, a café or a hired venue. For area details, see our pages for [workshops in Delhi](/workshops-in-delhi), [workshops in Gurgaon](/workshops-in-gurgaon) and [workshops in Noida](/workshops-in-noida).`,
+      },
+      {
+        heading: "Pricing and Booking",
+        body: `Pricing is ₹600–₹800 per person with all materials included: ₹800 for groups of 15 to 50, ₹700 for 50 to 100 and ₹600 for groups above 100. All materials used are child-safe.\n\nA minimum of 7 days' notice and a 50% deposit confirm the date. For weekend dates between November and February, the peak party season, book three to four weeks ahead.`,
+      },
+      {
+        heading: "Book a Kids' Birthday Art Workshop",
+        body: `To check availability, WhatsApp **+91 9599622210** with the date, city, venue, number of children and their ages. You can also read about [private art workshops](/private-art-workshops) or learn more about [Shramita Govil and Kraftykinni](/about).`,
+      },
+    ],
+    faq: [
+      {
+        q: "What is the best art activity for a kids' birthday party in Delhi NCR?",
+        a: "It depends on the ages. Clay fridge magnets suit guests aged 4 to 7, while Clay Mirror Art and DIY kits with a colour-mixing spinner and photo frame suit guests aged 10 to 11. Kraftykinni runs all three across Delhi, Gurgaon and Noida.",
+      },
+      {
+        q: "How much does a kids' birthday art workshop cost in Delhi NCR?",
+        a: "Pricing is ₹600–₹800 per person with all materials included: ₹800 for groups of 15 to 50, ₹700 for 50 to 100 and ₹600 above 100.",
+      },
+      {
+        q: "What age group are the birthday workshops suitable for?",
+        a: "Kraftykinni's recent birthday parties had guests aged 4 to 11. The craft is chosen by age, so tell us the ages when you enquire.",
+      },
+      {
+        q: "Can the workshop be held at home or at a café?",
+        a: "Yes. Kraftykinni has run kids' birthday workshops at homes in Delhi and Noida and at a café in Delhi. For a café, check with the venue that an outside activity is allowed.",
+      },
+      {
+        q: "Are the materials safe for children?",
+        a: "Yes. All materials used in Kraftykinni's workshops are child-safe.",
+      },
+      {
+        q: "Can the workshop replace return gifts?",
+        a: "Yes. Each child takes home what they made, such as a spinner and photo frame, a clay mirror or a fridge magnet, so no separate return gift is needed.",
+      },
+      {
+        q: "How far in advance should I book a kids' birthday workshop?",
+        a: "A minimum of 7 days' notice and a 50% deposit are required. For weekend dates between November and February, book three to four weeks ahead.",
       },
     ],
   },
