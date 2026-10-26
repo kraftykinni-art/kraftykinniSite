@@ -19,6 +19,7 @@
 
 import fs   from 'fs';
 import path from 'path';
+import vm   from 'vm';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -159,6 +160,64 @@ const WORKSHOPS_DATA = parseWorkshopsData();
 // old literal "13" did once Wall & Rope Art and later workshops were added).
 const TOTAL_WORKSHOPS = Object.keys(WORKSHOPS_DATA).length;
 
+// ─── Block 5: city landing copy + case studies ───────────────────────────────
+// src/data/cityLanding.ts and src/data/caseStudies.ts are the single source for
+// both the React pages and this plain-HTML copy. Each file keeps its data as a
+// plain literal between `/* @prerender:start */` and `/* @prerender:end */`;
+// we evaluate exactly that literal (no TypeScript inside it), so the two copies
+// cannot drift apart.
+function loadPrerenderLiteral(fileName) {
+  const filePath = path.resolve(__dirname, '..', 'src', 'data', fileName);
+  const src = fs.readFileSync(filePath, 'utf-8');
+  const m = src.match(/\/\* @prerender:start \*\/([\s\S]*?)\/\* @prerender:end \*\//);
+  if (!m) {
+    console.error(`❌  ${fileName}: @prerender:start / @prerender:end markers not found.`);
+    process.exit(1);
+  }
+  try {
+    return vm.runInNewContext(`(${m[1]})`);
+  } catch (err) {
+    console.error(`❌  ${fileName}: the data between the @prerender markers must be a plain object/array literal (${err.message}).`);
+    process.exit(1);
+  }
+}
+const CITY_LANDING = loadPrerenderLiteral('cityLanding.ts');
+const CASE_STUDIES = loadPrerenderLiteral('caseStudies.ts');
+
+const escHtml = (text) => String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+// Audience sections (students, kids, adults, corporate) for one city route.
+function cityAudiencesHtml(cityKey) {
+  const c = CITY_LANDING[cityKey];
+  if (!c) throw new Error(`cityLanding.ts has no entry for "${cityKey}"`);
+  const blocks = c.audiences.map((a) =>
+    `<h3>${escHtml(a.title)}</h3>` +
+    `<p>${escHtml(a.body)}</p>` +
+    `<ul><li><strong>Group size:</strong> ${escHtml(a.groupSize)}</li><li><strong>Price:</strong> ${escHtml(a.price)}</li></ul>` +
+    (a.note ? `<p>${escHtml(a.note)}</p>` : '') +
+    (a.link ? `<p><a href="${a.link.to}">${escHtml(a.link.label)}</a></p>` : '')
+  ).join('');
+  return `<h2>${escHtml(c.heading)}</h2><p>${escHtml(c.intro)}</p>${blocks}`;
+}
+
+// The two extra FAQs, placed inside each city route's existing FAQ section so
+// parseFaqFromBody() adds them to the FAQPage schema too.
+function cityFaqHtml(cityKey) {
+  const c = CITY_LANDING[cityKey];
+  if (!c) throw new Error(`cityLanding.ts has no entry for "${cityKey}"`);
+  return c.faqs.map((f) => `<h3>${escHtml(f.q)}</h3><p>${escHtml(f.a)}</p>`).join('');
+}
+
+// Case-study cards for one audience ('corporate' | 'school').
+function caseStudiesHtml(audience) {
+  return CASE_STUDIES.filter((s) => s.audience === audience).map((s) =>
+    `<h3>${escHtml(s.client)}: ${escHtml(s.activity)}</h3>` +
+    `<p>${escHtml(s.summary)}</p>` +
+    `<ul><li><strong>Group size:</strong> ${escHtml(s.groupSize)}</li><li><strong>Duration:</strong> ${escHtml(s.duration)}</li><li><strong>Venue:</strong> ${escHtml(s.venue)}</li></ul>` +
+    `<p><a href="/blog/${s.postSlug}">Read the full case study</a></p>`
+  ).join('');
+}
+
 // Returns a "Workshop Benefits" list + full "Frequently Asked Questions"
 // section for a given workshop id, or '' if the id/data isn't found.
 function workshopFaqHtml(id) {
@@ -214,6 +273,16 @@ const ALL_BLOG_POSTS = parseBlogPosts();
 // and RSS below. Rebuild on or after the publish date to release them.
 const BLOG_POSTS = ALL_BLOG_POSTS.filter((p) => p.publishDate <= today);
 const UNPUBLISHED_SLUGS = new Set(ALL_BLOG_POSTS.filter((p) => p.publishDate > today).map((p) => p.slug));
+for (const study of CASE_STUDIES) {
+  if (!ALL_BLOG_POSTS.some((p) => p.slug === study.postSlug)) {
+    console.error(`❌  caseStudies.ts: "${study.id}" links to /blog/${study.postSlug}, which is not in blogPosts.ts.`);
+    process.exit(1);
+  }
+  if (UNPUBLISHED_SLUGS.has(study.postSlug)) {
+    console.error(`❌  caseStudies.ts: "${study.id}" links to /blog/${study.postSlug}, which is not published yet.`);
+    process.exit(1);
+  }
+}
 if (UNPUBLISHED_SLUGS.size) {
   console.log(`⏳  ${UNPUBLISHED_SLUGS.size} scheduled blog post(s) not yet published: ${[...UNPUBLISHED_SLUGS].join(', ')}\n`);
 }
@@ -456,6 +525,9 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting.</p>
       <h2>Logistics</h2>
       <p>Group size: 20 to 200+ participants. Location: Delhi, Gurgaon, Noida, and online pan-India. All art supplies provided by Kraftykinni. Your venue needs only tables and chairs. Duration: 1.5 to 2.5 hours depending on activity. Minimum 7 days booking notice required with 50% deposit to confirm. Payment via UPI, bank transfer, or cash.</p>
+      <h2>Recent Corporate Sessions</h2>
+      <p>Real sessions we have run, with the group size, duration and venue.</p>
+      ${caseStudiesHtml('corporate')}
       <h2>Frequently Asked Questions</h2>
       <h3>What makes art workshops better than other corporate team-building activities?</h3>
       <p>Unlike games or quizzes, art workshops produce a physical outcome every participant keeps. The shared creative process builds camaraderie without competition. Participants frequently describe the experience as genuinely therapeutic.</p>
@@ -526,8 +598,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
         <li><strong>Large Group (100+ students):</strong> ₹600 per student — all materials included</li>
       </ul>
       <p>A 50% deposit confirms the booking. Minimum 7 days advance notice required for large groups. WhatsApp +91 9599622210 for a custom quote for 200+ students or multi-session bookings.</p>
-      <h2>School Case Study — Jaypee Public School, Noida</h2>
-      <p>Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student decorated their bottle using Fevicryl Mouldit and acrylic colours, taking home a finished, display-worthy lamp. The upcycling theme aligned with the school's sustainability focus for the event. Read the full case study at kraftykinni.in/blog/bottle-lamp-art-workshop-school-delhi-ncr/</p>
+      <h2>Recent School Session</h2>
+      ${caseStudiesHtml('school')}
       <h2>Occasions We Cover</h2>
       <p>Annual Day activities, Art Week celebrations, inter-school events, student orientation days, Teacher's Day programmes, farewell events, college fests, and creative enrichment classes. Curriculum-aligned sessions available for CBSE and ICSE schools.</p>
       <h2>Frequently Asked Questions</h2>
@@ -1659,6 +1731,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
         <li><strong>Large Group (100+ people):</strong> ₹600 per person — all materials included</li>
       </ul>
       <p>A 50% deposit confirms the booking. Minimum 7 days advance notice required.</p>
+      ${cityAudiencesHtml('delhi')}
       <h2>Frequently Asked Questions</h2>
       <h3>Do you conduct art workshops across all areas of Delhi?</h3>
       <p>Yes — Kraftykinni travels to your location anywhere in Delhi, including South Delhi, North Delhi, Dwarka, Rohini, Connaught Place, Saket, Vasant Kunj, and Nehru Place. If your area is not listed, reach out and we will confirm availability.</p>
@@ -1680,6 +1753,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Yes — Kraftykinni covers all of Delhi, including East Delhi and North Delhi. Distance within the city is not a constraint. Send your location and we will confirm availability within 24 hours.</p>
       <h3>Can you accommodate a mixed group of children and adults in Delhi?</h3>
       <p>Yes — Mandala Art, Tote Bag Painting, and Canvas Pouch Painting work well for mixed-age groups. These are popular for family birthday parties where children and adults participate together. Shramita adjusts the facilitation pace to suit the group.</p>
+      ${cityFaqHtml('delhi')}
       <h2>Where We Conduct Workshops in Delhi</h2>
       <p><strong>Corporate Offices:</strong> Offices in Connaught Place, Bhikaji Cama Place, and Nehru Place are our most frequent Delhi bookings. We set up on your conference room floor or cafeteria — setup takes 20 minutes and we handle all cleanup.</p>
       <p><strong>Schools &amp; Colleges:</strong> We work with schools across Vasant Kunj, Dwarka, Rohini, and Saket for annual days and art sessions. Groups of 30 to 300+ students in assembly halls or classrooms.</p>
@@ -1722,6 +1796,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
         <li><strong>Standard (50–100 people):</strong> ₹700 per person — all materials included</li>
         <li><strong>Large Group (100+ people):</strong> ₹600 per person — all materials included</li>
       </ul>
+      ${cityAudiencesHtml('gurgaon')}
       <h2>Frequently Asked Questions</h2>
       <h3>Do you conduct art workshops at Gurgaon offices?</h3>
       <p>Yes — Kraftykinni travels to your Gurgaon office with all materials. We regularly run workshops at offices in DLF Cyber City, Udyog Vihar, MG Road, Golf Course Road, and Sohna Road. Setup takes 20–30 minutes and we handle all cleanup after the session.</p>
@@ -1733,6 +1808,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Minimum 7 days advance notice is required to arrange materials and confirm logistics. A 50% deposit secures the date. Shramita confirms availability within 24 hours of your enquiry.</p>
       <h3>Can you run a workshop at an off-site venue in Gurgaon?</h3>
       <p>Yes — we work at office cafeterias, hotel banquet rooms, co-working spaces, and outdoor terrace venues across Gurgaon. You only need to provide tables, chairs, and a flat work surface. We bring everything else.</p>
+      ${cityFaqHtml('gurgaon')}
       <h2>What Past Participants Say</h2>
       <blockquote cite="https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v">
         <p>"My child had a lovely experience at the magnet art workshop. Shramita is a lovely and humble host and children were really enjoying. Her skill set is worth appreciating."</p>
@@ -1766,6 +1842,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
         <li><strong>Large Group (100+ people):</strong> ₹600 per person — all materials included</li>
       </ul>
       <p>A 50% deposit confirms the booking. Minimum 7 days advance notice required.</p>
+      ${cityAudiencesHtml('noida')}
       <h2>Frequently Asked Questions</h2>
       <h3>Do you conduct art workshops across all areas of Noida?</h3>
       <p>Yes — Kraftykinni travels to your location anywhere in Noida and Greater Noida, including Sector 62, Sector 16, Film City Road, Sector 18, the Expressway corridor, Knowledge Park, and Sector 125. If your area is not listed, reach out and we will confirm availability.</p>
@@ -1779,6 +1856,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>No prior art experience is needed. Every Kraftykinni session is guided step by step by Shramita Govil, Fevicryl Certified Artist. Participants of all skill levels finish with a completed artwork they are proud of.</p>
       <h3>What is the minimum group size for an art workshop in Noida?</h3>
       <p>The minimum group size is 20 participants, with sessions scaling up to 200+ in a single booking. Additional facilitators are brought in for larger groups.</p>
+      ${cityFaqHtml('noida')}
       <h2>What Past Participants Say</h2>
       <blockquote cite="https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v">
         <p>"This workshop felt like therapy! Working with clay was incredibly soothing, and the environment was so positive. It's a great way to unwind and reconnect with your creative side."</p>

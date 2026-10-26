@@ -4,6 +4,8 @@ import { motion } from 'motion/react';
 import { Sparkles, ArrowRight, CheckCircle2, Users, Clock, Package } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
 import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
+import { caseStudiesFor } from '../data/caseStudies';
+import CaseStudyCard from '../components/CaseStudyCard';
 import PricingFAQ from '../components/PricingFAQ';
 import Testimonials from '../components/Testimonials';
 import KeyTakeaways from '../components/KeyTakeaways';
@@ -378,31 +380,15 @@ export default function SchoolWorkshopsPage() {
           </div>
         </section>
 
-        {/* Case study strip — Jaypee Public School */}
+        {/* Block 5: school case study. Data in src/data/caseStudies.ts, mirrored in scripts/prerender.mjs. */}
         <section className="py-16 bg-white">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-brand-offwhite rounded-3xl border border-gray-100 p-8 md:p-12 flex flex-col md:flex-row gap-8 items-start">
-              <div className="shrink-0">
-                <div className="w-14 h-14 rounded-2xl bg-brand-pink/10 flex items-center justify-center">
-                  <Sparkles size={26} className="text-brand-pink" />
-                </div>
-              </div>
-              <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">School Case Study</p>
-                <h3 className="font-serif text-2xl font-bold text-brand-slate mb-4">
-                  Bottle Lamp Art at Jaypee Public School, Noida
-                </h3>
-                <p className="text-gray-600 font-light leading-relaxed mb-6">
-                  Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student decorated their bottle using Fevicryl Mouldit and acrylic colours, taking home a finished, display-worthy lamp. The upcycling theme aligned with the school's sustainability focus for the event.
-                </p>
-                <Link
-                  to="/blog/bottle-lamp-art-workshop-school-delhi-ncr"
-                  className="inline-flex items-center gap-2 text-brand-pink font-medium hover:underline underline-offset-4 text-sm"
-                >
-                  Read the full case study <ArrowRight size={15} />
-                </Link>
-              </div>
-            </div>
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl font-bold text-brand-slate text-center mb-8">
+              Recent School <span className="text-brand-pink italic">Session</span>
+            </h2>
+            {caseStudiesFor('school').map((study) => (
+              <CaseStudyCard key={study.id} study={study} />
+            ))}
           </div>
         </section>
 

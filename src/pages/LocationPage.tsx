@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { Sparkles, MapPin, ArrowRight } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
 import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
+import { cityLanding } from '../data/cityLanding';
 import Testimonials from '../components/Testimonials';
 import KeyTakeaways from '../components/KeyTakeaways';
 import ContactFooter from '../components/ContactFooter';
@@ -230,6 +231,10 @@ export default function LocationPage() {
 
   const loc = locationData[key];
   const canonical = `https://kraftykinni.in/${loc.slug}`;
+  // Block 5: audience sections + 2 extra FAQs live in src/data/cityLanding.ts
+  // (mirrored into scripts/prerender.mjs from the same file).
+  const landing = cityLanding[key];
+  const allFaqs = [...(loc as typeof locationData.delhi).faqs, ...landing.faqs];
 
   return (
     <>
@@ -265,18 +270,10 @@ export default function LocationPage() {
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org', '@type': 'FAQPage',
-          mainEntity: (
-            (loc as typeof locationData.delhi).faqs
-              ? (loc as typeof locationData.delhi).faqs.map(({ q, a }) => ({
-                  '@type': 'Question', name: q,
-                  acceptedAnswer: { '@type': 'Answer', text: a },
-                }))
-              : [
-                  { '@type': 'Question', name: `Do you conduct art workshops in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `Yes — Kraftykinni conducts art and DIY workshops across ${loc.city}, travelling to your office, school, or event venue with all materials included.` } },
-                  { '@type': 'Question', name: `What art workshops are available in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `All ${workshopsData.length} Kraftykinni signature activities are available in ${loc.city}: Lippan Art, Mandala Art, Tie & Dye, Boho Canvas Art, Wall & Rope Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Bottle Lamp Art, MDF Fridge Magnet, Trinket Tray Painting, Canvas Pouch Painting, Botanical Dyeing Printing, Rock Painting, Umbrella Painting, Cap Painting, Canvas Pearl Art, Clay Mirror Art, and Mirror Painting.` } },
-                  { '@type': 'Question', name: `What is the cost of an art workshop in ${loc.city}?`, acceptedAnswer: { '@type': 'Answer', text: `Pricing starts at ₹600 per person for groups of 100+, ₹700 per person for 50–100 participants, and ₹800 per person for groups of 20–50. All art materials are included.` } },
-                ]
-          ),
+          mainEntity: allFaqs.map(({ q, a }) => ({
+            '@type': 'Question', name: q,
+            acceptedAnswer: { '@type': 'Answer', text: a },
+          })),
         })}</script>
       </Helmet>
 
@@ -434,6 +431,45 @@ export default function LocationPage() {
           </section>
         )}
 
+        {/* Block 5: audience sections (students, kids, adults, corporate) with group size and price.
+            Text lives in src/data/cityLanding.ts and is mirrored in scripts/prerender.mjs. */}
+        <section className="py-20 bg-brand-offwhite" aria-labelledby="audiences-heading">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mb-10 max-w-2xl">
+              <span className="text-xs font-bold uppercase tracking-widest text-brand-pink">In {loc.city}</span>
+              <h2 id="audiences-heading" className="font-serif text-3xl font-bold text-brand-slate mt-2 mb-3">
+                {landing.heading}
+              </h2>
+              <p className="text-gray-600 font-light leading-relaxed">{landing.intro}</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {landing.audiences.map((a) => (
+                <div key={a.key} className="flex flex-col bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+                  <div className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-3">{a.label}</div>
+                  <h3 className="font-serif text-xl font-bold text-brand-slate mb-3">{a.title}</h3>
+                  <p className="text-brand-charcoal font-light leading-relaxed text-sm mb-5">{a.body}</p>
+                  <dl className="mt-auto grid grid-cols-1 gap-3 rounded-xl bg-brand-offwhite p-4 text-sm">
+                    <div>
+                      <dt className="text-xs font-bold uppercase tracking-widest text-gray-400">Group size</dt>
+                      <dd className="font-medium text-brand-charcoal">{a.groupSize}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-xs font-bold uppercase tracking-widest text-gray-400">Price</dt>
+                      <dd className="font-medium text-brand-charcoal">{a.price}</dd>
+                    </div>
+                  </dl>
+                  {a.note && <p className="mt-3 text-xs text-gray-500">{a.note}</p>}
+                  {a.link && (
+                    <Link to={a.link.to} className="mt-4 text-sm font-medium text-brand-pink hover:underline underline-offset-4">
+                      {a.link.label} →
+                    </Link>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Activities */}
         <section className="py-24 bg-brand-offwhite">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -503,30 +539,28 @@ export default function LocationPage() {
         </section>
 
         {/* City FAQ section — renders visible content matching FAQPage schema */}
-        {(loc as typeof locationData.delhi).faqs && (
-          <section className="py-20 bg-brand-offwhite">
-            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 className="font-serif text-3xl font-bold text-brand-slate text-center mb-10">
-                Frequently Asked <span className="text-brand-pink italic">Questions</span>
-              </h2>
-              <div className="space-y-4">
-                {(loc as typeof locationData.delhi).faqs.map((faq, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: i * 0.07 }}
-                    className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6"
-                  >
-                    <h3 className="font-semibold text-brand-slate mb-2 text-base leading-snug">{faq.q}</h3>
-                    <p className="text-gray-600 font-light text-sm leading-relaxed">{faq.a}</p>
-                  </motion.div>
-                ))}
-              </div>
+        <section className="py-20 bg-brand-offwhite">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl font-bold text-brand-slate text-center mb-10">
+              Frequently Asked <span className="text-brand-pink italic">Questions</span>
+            </h2>
+            <div className="space-y-4">
+              {allFaqs.map((faq, i) => (
+                <motion.div
+                  key={faq.q}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: Math.min(i, 6) * 0.07 }}
+                  className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6"
+                >
+                  <h3 className="font-semibold text-brand-slate mb-2 text-base leading-snug">{faq.q}</h3>
+                  <p className="text-gray-600 font-light text-sm leading-relaxed">{faq.a}</p>
+                </motion.div>
+              ))}
             </div>
-          </section>
-        )}
+          </div>
+        </section>
 
         {/* Related reading */}
         <section className="py-12 bg-white">

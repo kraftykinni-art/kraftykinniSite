@@ -4,6 +4,8 @@ import { motion } from 'motion/react';
 import { Sparkles, CheckCircle2, ArrowRight, Clock, Users, IndianRupee, Award } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
 import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
+import { caseStudiesFor } from '../data/caseStudies';
+import CaseStudyCard from '../components/CaseStudyCard';
 import PricingFAQ from '../components/PricingFAQ';
 import Testimonials from '../components/Testimonials';
 import KeyTakeaways from '../components/KeyTakeaways';
@@ -214,6 +216,23 @@ export default function CorporateWorkshopsPage() {
                   <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">{item.label}</p>
                   <p className="font-medium text-brand-charcoal text-sm leading-relaxed">{item.value}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Block 5: real corporate sessions. Data in src/data/caseStudies.ts, mirrored in scripts/prerender.mjs. */}
+        <section className="py-24 bg-brand-offwhite">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-4xl font-bold text-brand-slate mb-4">
+                Recent Corporate <span className="text-brand-pink italic">Sessions</span>
+              </h2>
+              <p className="text-brand-slate/70 max-w-xl mx-auto">Real sessions we have run, with the group size, duration and venue.</p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {caseStudiesFor('corporate').map((study) => (
+                <CaseStudyCard key={study.id} study={study} />
               ))}
             </div>
           </div>
