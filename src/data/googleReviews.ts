@@ -45,22 +45,37 @@ export const googleReviewSummary: GoogleReviewSummary | null = {
 // Seeded from reviews already listed in the site's earlier markup. Check them
 // against your Google listing and replace or remove as needed.
 export const googleReviews: GoogleReview[] = [
+
   {
-    author: 'Daily Uplift',
+    author: 'Neha Gupta',
     rating: 5,
-    text: 'Such a cool and engaging workshop! The energy was great, and it kept me interested from start to finish. Would definitely join again.',
-    date: '2026-04-26',
+    text: 'Had a wonderful experience with the block printing workshop! Shamita was knowledgeable, patient, and explained everything clearly.',
+    date: '2026-10-12',
   },
   {
-    author: 'Saiyam Jain',
+    author: 'Sakshi Bisht',
     rating: 5,
-    text: "What an amazing time! I haven't had that much fun in years, it really brought out my inner child. Thank you Mam for this workshop.",
-    date: '2026-04-24',
+    text: 'I had really amazing experience at the Lippan art workshop held in Amity University Noida. The workshop was wonderful.',
+    date: '2026-09-28',
+  },
+
+  {
+    author: 'Mahima Chhabra',
+    rating: 5,
+    text: 'Superb experience!! Very professional and organized. Loved it!!!',
+    date: '2026-09-21',
+  },
+  {
+    author: 'Anushka Jaiswal',
+    rating: 5,
+    text: 'I had an amazing experience at this art workshop! It was very well organized, and I truly enjoyed every moment. Highly recommended for anyone who loves creativity.',
+    date: '2026-05-04',
   },
   {
     author: 'Rishabh Garg',
     rating: 5,
-    text: "My child had a lovely experience at the magnet art workshop. Shramita is a lovely and humble host and children were really enjoying. Her skill set is worth appreciating. Thank you Ma'am for doing such lively work for kids.",
+    text: "My child had a lovely experience at the magnet art workshop. Shramita is a lovely and humble host, and children were really enjoying. Her skill set is worth appreciating. Thank you Ma'am for doing such lively work for kids.",
     date: '2026-04-17',
   },
+
 ];
