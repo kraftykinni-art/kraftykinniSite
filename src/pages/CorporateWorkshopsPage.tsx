@@ -41,8 +41,8 @@ const corporateFaqs = [
 export default function CorporateWorkshopsPage() {
   const bookNow = useBookNow();
 
-  const title = 'Corporate Art Workshops Delhi NCR | ₹600/person | Kraftykinni';
-  const description = 'Art workshops for corporate teams in Delhi NCR. 20–200+ participants, all materials supplied. Lippan, Mandala, Tie & Dye + 10 more. Zero prep. Book now.';
+  const title = 'Corporate Art Workshops Delhi NCR | From ₹600 | Kraftykinni';
+  const description = 'Guided art workshops for teams of 20–200+. Lippan, Tie & Dye, Mandala + 10 more. Zero logistics — we bring everything. Delhi, Gurgaon, Noida.';
   const canonical = 'https://kraftykinni.in/corporate-art-workshops';
 
   return (

@@ -87,9 +87,9 @@ const gradeGroups = [
 ];
 
 export default function SchoolWorkshopsPage() {
-  const title = 'School Art Workshops Delhi NCR — Annual Day & Events | Kraftykinni';
+  const title = 'School Art Workshops Delhi NCR — Annual Day | Kraftykinni';
   const description =
-    `Art workshops for schools in Delhi NCR — Annual Day, Art Week & student events. From ₹600/student, facilitator travels to your school. Grades 3 to college. ${workshopsData.length} activities, all materials included.`;
+    'Art workshops for schools in Delhi NCR. Annual Day, Art Week & student events. ₹600/student, all materials included. Facilitator travels to your school.';
   const canonical = 'https://kraftykinni.in/school-art-workshops';
 
   return (

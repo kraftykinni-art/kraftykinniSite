@@ -99,8 +99,8 @@ const faqs = [
 export default function EmployeeEngagementNoidaPage() {
   const bookNow = useBookNow();
 
-  const title = 'Employee Engagement Activities Noida | Art Workshops | Kraftykinni';
-  const description = 'Guided art workshops for employee engagement in Noida. Teams of 20–150+, all materials supplied. Lippan Art, Mandala, Tie & Dye at your Sector 62 or Sector 90 office. ₹600/person.';
+  const title = 'Employee Engagement Activities Noida | Kraftykinni';
+  const description = 'Guided art workshops for employee engagement in Noida. Teams of 20–150+, all materials supplied, at your Sector 62 or Sector 90 office. ₹600/person.';
   const canonical = 'https://kraftykinni.in/employee-engagement-activities-noida';
 
   const schema = {

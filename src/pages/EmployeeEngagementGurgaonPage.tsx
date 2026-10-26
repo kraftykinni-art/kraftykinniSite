@@ -99,8 +99,8 @@ const faqs = [
 export default function EmployeeEngagementGurgaonPage() {
   const bookNow = useBookNow();
 
-  const title = 'Employee Engagement Activities Gurgaon | Art Workshops | Kraftykinni';
-  const description = 'Guided art workshops for employee engagement in Gurgaon. Teams of 20–200+, all materials supplied. Lippan Art, Mandala, Tie & Dye at your Cyber City or Udyog Vihar office. ₹600/person.';
+  const title = 'Employee Engagement Activities Gurgaon | Kraftykinni';
+  const description = 'Guided art workshops for employee engagement in Gurgaon. Teams of 20–200+, all materials supplied, at your Cyber City or Udyog Vihar office. ₹600/person.';
   const canonical = 'https://kraftykinni.in/employee-engagement-activities-gurgaon';
 
   const schema = {

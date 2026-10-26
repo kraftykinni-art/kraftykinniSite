@@ -403,7 +403,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
     path: '/corporate-art-workshops',
     // Updated title: was getting 12 impressions, 0 clicks at position 2.4
     // Added pricing + social proof to compete with local-pack displacing clicks
-    title: 'Corporate Art Workshops Delhi NCR | ₹600/person | Kraftykinni',
+    title: 'Corporate Art Workshops Delhi NCR | From ₹600 | Kraftykinni',
     description: 'Guided art workshops for teams of 20–200+. Lippan, Tie & Dye, Mandala + 10 more. Zero logistics — we bring everything. Delhi, Gurgaon, Noida.',
     ogImage: 'https://cdn.kraftykinni.in/og-corporate.jpg',
     h1: 'Corporate Art Workshops in Delhi NCR',
@@ -754,7 +754,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/annual-day-activity-ideas-schools-delhi-ncr',
-    title: 'Annual Day Activity Ideas for Schools in Delhi NCR | Kraftykinni',
+    title: 'Annual Day Art Ideas for Schools Delhi NCR | Kraftykinni',
     description: '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, for 50–300 students. Led by a Fevicryl-certified artist.',
     h1: 'Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)',
     schemas: [
@@ -797,7 +797,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/art-workshop-ideas-birthday-party-delhi-ncr',
-    title: 'Art Workshop Ideas for Birthday Parties Delhi NCR | Kraftykinni',
+    title: 'Birthday Party Art Workshop Ideas Delhi NCR | Kraftykinni',
     description: 'Planning a birthday party in Delhi NCR? Art workshops let every guest create and take home a keepsake. ₹600/person, all materials included.',
     h1: 'Art Workshop Ideas for Birthday Parties in Delhi NCR',
     schemas: [
@@ -901,7 +901,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/clay-trinket-painting-workshop-cars24-gurgaon',
-    title: 'Clay Trinket Painting Workshop — Cars24 Gurgaon | Kraftykinni',
+    title: 'Clay Trinket Workshop — Cars24 Gurgaon | Kraftykinni',
     description: '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session.',
     h1: 'Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon',
     schemas: [
@@ -1031,7 +1031,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/world-environment-day-upcycled-bottle-art-workshop-delhi-ncr',
-    title: 'World Environment Day 2026 — Bottle Art Workshop | Kraftykinni',
+    title: 'World Environment Day 2026 Bottle Art | Kraftykinni',
     description: 'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles into mandala planters and décor. Workshops across Delhi NCR.',
     h1: 'World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On',
     schemas: [
@@ -1249,7 +1249,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/blog/block-printing-workshop-delhi-israeli-family',
     title: 'Block Printing Workshop Delhi: Israel to India | Kraftykinni',
-    description: 'A private block printing workshop in Delhi for a mother-daughter duo from Israel — the craft, the story, and the fabric they took home. Book with Kraftykinni.',
+    description: 'A private block printing workshop in Delhi for a mother-daughter duo from Israel: the craft, the story and the fabric they took home. Book with us.',
     h1: 'A Block Printing Workshop in Delhi, for a Mother and Daughter Visiting from Israel',
     schemas: [
       {
@@ -1294,7 +1294,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   // ── Workshop detail pages ─────────────────────────────────────────────────
   {
     path: '/workshops/lippan-art',
-    title: 'Lippan Art Workshop Delhi NCR — Kutch Mirror Work | Kraftykinni',
+    title: 'Lippan Art Workshop Delhi NCR — Mirror Work | Kraftykinni',
     description: 'Lippan Art workshop in Delhi NCR — Kutch mirror work in a guided session. Corporate, schools & events. All materials included. ₹600–₹800/person.',
     h1: 'Lippan Art Workshop in Delhi NCR',
     bodyContent: `<h1>Lippan Art Workshop in Delhi NCR</h1><p>Lippan Art is a centuries-old folk craft from the Kutch region of Gujarat where artisans use clay and mirror work to create intricate wall decorations. In our Lippan Art workshop, participants experience this meditative craft firsthand — shaping clay patterns, embedding mirrors, and creating a piece of genuine Indian heritage they can take home. It is one of our most requested activities for corporate teams and school groups alike.</p><p>Materials for the session include <a href="https://www.pidilite.com/consumer-brands/fevicryl" rel="noopener">Fevicryl</a> craft clay and acrylic colours — the certified product line Shramita Govil trained on.</p><h2>What you make</h2><p>A finished Lippan Art wall piece with clay patterning and embedded mirrors — a unique, display-ready piece of folk art.</p><h2>Who it is for</h2><p>Perfect for corporate team-building events, school art days, college fests, and private parties. No prior art experience needed. Duration: 2 to 2.5 hours. Group size: 20 to 200+ participants. Location: Delhi, Gurgaon, Noida and online pan-India. All materials included. Pricing from ₹600 per person.</p><h2>Why this activity works for corporate teams</h2><p>The meditative, repetitive nature of shaping clay and placing mirrors creates a calm, focused atmosphere — a rare and valuable contrast to the pace of corporate life. Every participant produces a strikingly beautiful piece, regardless of prior art experience. Lippan Art is one of the highest-rated activities in participant feedback across all ${TOTAL_WORKSHOPS} Kraftykinni workshops.</p>${workshopFaqHtml('lippan-art')}`,
@@ -1308,29 +1308,29 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
   {
     path: '/workshops/tie-and-dye',
-    title: 'Tie & Dye Workshop Delhi NCR — High-Energy Team Activity | Kraftykinni',
-    description: 'Tie & Dye workshop in Delhi NCR. High-energy fabric dyeing for corporate teams, schools & events. Wearable takeaway. All materials included. ₹600–₹800/person.',
+    title: 'Tie & Dye Workshop Delhi NCR — Team Activity | Kraftykinni',
+    description: 'Tie & Dye workshop in Delhi NCR. High-energy fabric dyeing for teams, schools & events. Wearable takeaway. All materials included. ₹600–₹800/person.',
     h1: 'Tie & Dye Workshop in Delhi NCR',
     bodyContent: `<h1>Tie and Dye Workshop in Delhi NCR</h1><p>Tie and Dye is the workshop that fills a room with laughter, colour, and energy. Participants fold, twist, and bind fabric before applying vibrant dyes — and every single piece turns out uniquely different. Because the outcome is a wearable item — a t-shirt, dupatta, or tote — participants carry the memory of the event into their daily lives long after the workshop ends.</p><p>Resist-dyeing traditions span centuries across multiple cultures — from Indian <em>bandhani</em> to Japanese <em>shibori</em> — as documented on <a href="https://en.wikipedia.org/wiki/Tie-dye" rel="noopener">Wikipedia</a>.</p><h2>What you make</h2><p>A one-of-a-kind tie-dye fabric item — t-shirt, tote bag, or dupatta — to wear and keep.</p><h2>Who it is for</h2><p>Best for high-energy corporate events, college fests, team outings, and large group gatherings of 50 to 200+ people. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p><h2>Why Tie and Dye is popular for large corporate events</h2><p>Unlike most art activities, Tie and Dye creates visible, energetic activity across a room. The process is visual, tactile, and social — groups naturally interact and compare results. For annual day events, outdoor corporate events, and high-energy onboarding programmes, Tie and Dye is consistently the highest-energy option in the Kraftykinni catalogue.</p>${workshopFaqHtml('tie-and-dye')}`,
   },
   {
     path: '/workshops/boho-canvas',
-    title: 'Boho Canvas Art Workshop Delhi NCR — Abstract Painting | Kraftykinni',
+    title: 'Boho Canvas Workshop Delhi NCR — Abstract Art | Kraftykinni',
     description: 'Boho Canvas Art workshop in Delhi NCR. Guided abstract canvas painting for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     h1: 'Boho Canvas Art Workshop in Delhi NCR',
     bodyContent: `<h1>Boho Canvas Art Workshop in Delhi NCR</h1><p>Boho Canvas Art combines warm earthy tones, abstract composition, and layered textures into a painting style that looks impressive but requires no drawing skills. Participants learn to blend colours, layer shapes, and create the bohemian aesthetic that has become one of the most popular contemporary art styles for home décor. Each canvas is unique to the person who painted it.</p><p>Materials for the session include <a href="https://www.pidilite.com/consumer-brands/fevicryl" rel="noopener">Fevicryl</a> acrylic colours, the certified product line Shramita Govil trained on.</p><h2>What you make</h2><p>A finished boho-style canvas painting in earthy, warm tones — ready to hang at home or gift.</p><h2>Who it is for</h2><p>Popular choice for corporate team events, art days at schools and colleges, and private birthday or kitty parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('boho-canvas')}`,
   },
   {
     path: '/workshops/bottle-lamp-art',
-    title: 'Bottle Lamp Art Workshop Delhi NCR — Upcycling Craft | Kraftykinni',
+    title: 'Bottle Lamp Art Workshop Delhi NCR — Upcycled | Kraftykinni',
     description: 'Bottle Lamp Art workshop in Delhi NCR. Transform glass bottles into glowing lamps. Corporate & school sessions. All materials included. ₹600–₹800/person.',
     h1: 'Bottle Lamp Art Workshop in Delhi NCR',
     bodyContent: `<h1>Bottle Lamp Art Workshop in Delhi NCR</h1><p>Bottle Lamp Art is one of our most magical workshops — participants paint and decorate glass bottles, which are then fitted with fairy lights to create glowing home décor pieces. It blends sustainability through upcycling, creativity, and a deeply satisfying result. When the lights come on at the end of the session, the room transforms.</p><p>Turning a used bottle into a lamp is a small-scale example of <a href="https://en.wikipedia.org/wiki/Upcycling" rel="noopener">upcycling</a> — transforming a waste item into something of higher value rather than discarding it.</p><h2>What you make</h2><p>A hand-painted glass bottle lamp with fairy lights — a glowing, functional piece of home décor.</p><h2>Who it is for</h2><p>Great for corporate gifting events, school craft days, private parties, and eco-themed corporate events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('bottle-lamp-art')}`,
   },
   {
     path: '/workshops/block-printing',
-    title: 'Block Printing Workshop Delhi NCR — Indian Craft | Kraftykinni',
-    description: 'Block Printing workshop in Delhi NCR. Learn traditional Indian block printing on fabric. Corporate & school sessions. All materials included. ₹600–₹800/person.',
+    title: 'Block Printing Workshop Delhi NCR — Heritage | Kraftykinni',
+    description: 'Block Printing workshop in Delhi NCR. Learn traditional Indian block printing on fabric. Corporate & school sessions. Materials included. ₹600–₹800/person.',
     h1: 'Block Printing Workshop in Delhi NCR',
     bodyContent: `<h1>Block Printing Workshop in Delhi NCR</h1>
       <p>Block Printing is one of India's most treasured textile traditions, originating in Rajasthan and Gujarat over 500 years ago. Participants learn to apply fabric colours using carved wooden blocks to create repeat patterns on cloth — a rhythmic, meditative process that produces strikingly beautiful results. Popular both as a cultural heritage activity and as a stress-relief exercise for corporate teams.</p>
@@ -1345,7 +1345,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Block Printing is the top heritage craft choice for corporate cultural events, India-themed office programmes, and school heritage day activities. For corporates, it combines the engagement of a hands-on creative activity with genuine cultural depth — participants leave knowing something real about Indian textile history, not just with a craft souvenir. For schools, it provides a natural cross-curricular link to history, geography, and social studies units on Indian heritage crafts.</p>
       <p>The rhythmic stamping process is deeply calming — it is one of the most frequently cited activities for stress relief in post-workshop feedback. Groups that arrive stressed or distracted consistently settle into focused, quiet engagement within the first 10 minutes of stamping.</p>
       <h2>Internal Link — Corporate Art Workshops</h2>
-      <p>Block Printing is one of ${TOTAL_WORKSHOPS} activities available through Kraftykinni's <a href="/corporate-art-workshops/">corporate art workshop</a> programme. It is particularly popular for India Heritage Day events, cultural immersion programmes, and sustainability-themed corporate days.</p>
+      <p>Block Printing is one of ${TOTAL_WORKSHOPS} activities available through Kraftykinni's <a href="/corporate-art-workshops">corporate art workshop</a> programme. It is particularly popular for India Heritage Day events, cultural immersion programmes, and sustainability-themed corporate days.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>What is Block Printing?</h3>
       <p>A traditional Indian textile art form from Rajasthan and Gujarat, where carved wooden or foam blocks are dipped in fabric colour and stamped onto cloth to create repeat patterns. One of India's oldest craft traditions, still commercially practised in Jaipur and Sanganer.</p>
@@ -1360,21 +1360,21 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
   {
     path: '/workshops/clay-art',
-    title: 'Clay Art Workshop Delhi NCR — Therapeutic Sculpting | Kraftykinni',
+    title: 'Clay Art Workshop Delhi NCR — Sculpting | Kraftykinni',
     description: 'Clay Art workshop in Delhi NCR. Hands-on clay sculpting for corporate teams, schools & events. All materials included. ₹600–₹800/person.',
     h1: 'Clay Art Workshop in Delhi NCR',
     bodyContent: `<h1>Clay Art Workshop in Delhi NCR</h1><p>Working with clay is one of the most grounding, stress-relieving creative experiences available. Our Clay Art workshops guide participants through sculpting small 3D objects — decorative bowls, figures, jewellery holders, or fridge magnets — using air-dry clay. The tactile nature of the material engages the nervous system and produces a state of calm focus that participants often describe as genuinely therapeutic.</p><p>Hand-building and shaping clay is one of humanity's oldest crafts — <a href="https://en.wikipedia.org/wiki/Pottery" rel="noopener">pottery</a> dates back thousands of years, and the same tactile, repetitive shaping process is still valued today for its calming effect.</p><h2>What you make</h2><p>A handcrafted clay sculpture or functional object — air-dried and ready to take home.</p><h2>Who it is for</h2><p>Ideal for corporate wellness days, school art sessions, stress management workshops, and mindfulness events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('clay-art')}`,
   },
   {
     path: '/workshops/glass-painting',
-    title: 'Glass Painting Workshop Delhi NCR — Translucent Art | Kraftykinni',
+    title: 'Glass Painting Workshop Delhi NCR — For Teams | Kraftykinni',
     description: 'Glass Painting workshop in Delhi NCR. Learn glass painting in a guided group session. Corporate, school & events. All materials included. ₹600–₹800/person.',
     h1: 'Glass Painting Workshop in Delhi NCR',
     bodyContent: `<h1>Glass Painting Workshop in Delhi NCR</h1><p>Glass Painting produces some of the most visually spectacular results of any workshop activity — translucent colours that glow when light passes through them. Participants paint directly onto glass surfaces using special glass paints, creating geometric or floral patterns that look stunning on display. It is a medium that most people have never tried, which makes the experience feel novel and memorable.</p><p>The technique draws on <a href="https://en.wikipedia.org/wiki/Reverse_glass_painting" rel="noopener">reverse glass painting</a>, a centuries-old art form practised from Europe to India, prized for its glowing, translucent colour effect.</p><h2>What you make</h2><p>A hand-painted glass piece — a frame, bottle, or panel — with translucent painted designs.</p><h2>Who it is for</h2><p>Popular at corporate events, school art days, and private parties. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('glass-painting')}`,
   },
   {
     path: '/workshops/texture-art',
-    title: 'Texture Art Workshop Delhi NCR — Beginner-Friendly | Kraftykinni',
+    title: 'Texture Art Workshop Delhi NCR — Beginner | Kraftykinni',
     description: 'Texture Art workshop in Delhi NCR. Layered mixed-media canvas — tissue, acrylic & paste. Beginner-friendly. Corporate, schools & events. From ₹600/person.',
     h1: 'Texture Art Workshop in Delhi NCR',
     bodyContent: `<h1>Texture Art Workshop in Delhi NCR</h1>
@@ -1402,14 +1402,14 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
   {
     path: '/workshops/tote-bag-painting',
-    title: 'Tote Bag Painting Workshop Delhi NCR — ₹600/person | Kraftykinni',
+    title: 'Tote Bag Painting Workshop Delhi NCR — ₹600 | Kraftykinni',
     description: 'Tote Bag Painting workshop in Delhi NCR. Custom branding for corporate events. Eco-friendly, functional takeaway. All materials included. ₹600–₹800/person.',
     h1: 'Tote Bag Painting Workshop in Delhi NCR',
     bodyContent: `<h1>Tote Bag Painting Workshop in Delhi NCR</h1><p>Tote Bag Painting is one of our most sustainable and practically useful workshops. Each participant paints their own cotton tote bag using fabric paints and stencils, creating a personalised, eco-friendly bag they will actually use. For corporates, we can incorporate brand elements or event themes — making it an excellent branded gifting workshop. Pricing from ₹600 per person, all materials included.</p><p>The <a href="https://en.wikipedia.org/wiki/Tote_bag" rel="noopener">tote bag</a> itself is widely promoted as a reusable alternative to single-use plastic bags, part of why it works well as a sustainability-themed corporate takeaway.</p><h2>What you make</h2><p>A hand-painted cotton tote bag with personalised or themed designs — durable, usable, and eco-friendly. Fabric paint dries within 15 to 20 minutes, so every participant can handle and pack their tote before the workshop ends.</p><h2>Custom Branding for Corporate Events</h2><p>Tote Bag Painting is the only Kraftykinni activity where company branding can be incorporated directly onto the artwork. We can pre-print your logo or event theme on the bags before the session — participants then personalise them further with their own painted designs. The result is a branded gifting piece that is genuinely handmade, not a generic promotional item. HR teams running CSR days, sustainability events, or onboarding programmes have used this format to create takeaways that employees actually keep and use — providing ongoing brand visibility long after the event ends.</p><h2>Why Tote Bag Painting Works for Corporate Gifting</h2><p>Most corporate event takeaways are forgotten within a week. A hand-painted tote bag is different: it is functional, eco-friendly, and visibly personal. Participants use it for groceries, commuting, and errands — which means your brand remains visible for months. It is the most environmentally conscious activity in the Kraftykinni catalogue, making it the top choice for sustainability-themed events, Earth Day programmes, and CSR workshops across Delhi NCR.</p><h2>Who it is for</h2><p>Excellent for corporate gifting events, sustainability-themed workshops, school annual days, and private parties. Duration: 1.5 to 2 hours. Groups from 20 to 200+. Pricing from ₹600 per person.</p><h2>Frequently Asked Questions</h2><h3>Can you add our company logo to the tote bags?</h3><p>Yes — Kraftykinni can pre-print your company logo or event theme on the bags before the workshop. Participants then add their own painted designs around the branding, creating a personalised gifting piece.</p><h3>What fabric and paint is used?</h3><p>We use plain cotton canvas tote bags and professional-grade fabric acrylic colours. The paint is non-toxic, water-resistant once dry, and safe for daily use. Stencils and fine brushes are provided for all skill levels.</p><h3>Is the painted design washable?</h3><p>Yes — fabric acrylic paint is wash-fast once fully dry and heat-set. We recommend a gentle first hand-wash before machine washing, and turning the bag inside out for subsequent washes.</p>`,
   },
   {
     path: '/workshops/trinket-tray',
-    title: 'Trinket Tray Painting Workshop Delhi NCR — Desk Décor | Kraftykinni',
+    title: 'Trinket Tray Painting Workshop Delhi NCR | Kraftykinni',
     description: 'Trinket Tray Painting workshop in Delhi NCR. Paint your own decorative desk tray. Corporate & school sessions. All materials included. ₹600–₹800/person.',
     h1: 'Trinket Tray Painting Workshop in Delhi NCR',
     bodyContent: `<h1>Trinket Tray Painting Workshop in Delhi NCR</h1><p>Trinket Tray Painting gives participants a plain MDF or ceramic tray and the freedom to transform it into something beautiful. Using acrylic paints, brushes, and simple decorative techniques, each tray becomes a unique piece of functional desk art. It is a quick, satisfying activity that produces immediate results.</p><p>Materials include <a href="https://www.pidilite.com/consumer-brands/fevicryl" rel="noopener">Fevicryl</a> acrylic paints on an MDF base, the same certified product line Shramita Govil trained on.</p><h2>What you make</h2><p>A hand-painted trinket or jewellery tray — colourful, functional, and personalised.</p><h2>Who it is for</h2><p>Great for corporate events, school workshops, office parties, and bridal events. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('trinket-tray')}`,
@@ -1430,7 +1430,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
   {
     path: '/workshops/wall-rope-art',
-    title: 'Wall Rope Art Workshop Delhi NCR — Boho Wall Décor | Kraftykinni',
+    title: 'Wall Rope Art Workshop Delhi NCR — Boho Décor | Kraftykinni',
     description: 'Wall Rope Art workshop in Delhi NCR: coil and paint a boho rope wall hanging to take home. ₹600–₹800/person, all materials included.',
     ogImage: 'https://cdn.kraftykinni.in/assets/wall-rope-art-opt.webp',
     h1: 'Wall Rope Art Workshop in Delhi NCR',
@@ -1441,7 +1441,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/workshops/botanical-dyeing-printing',
     title: 'Botanical Dyeing Printing Workshop Delhi NCR | Kraftykinni',
-    description: 'Botanical Dyeing Printing workshop in Delhi NCR. Hammer real flowers onto fabric or paper for a one-of-a-kind keepsake. All materials included. ₹600–₹800/person.',
+    description: 'Botanical Dyeing Printing workshop in Delhi NCR. Hammer real flowers onto fabric or paper for a unique keepsake. Materials included. ₹600–₹800/person.',
     h1: 'Botanical Dyeing Printing Workshop in Delhi NCR',
     bodyContent: `<h1>Botanical Dyeing Printing Workshop in Delhi NCR</h1><p>Botanical Dyeing Printing — also known as flower pounding or botanical hammer printing — transfers the real colour and shape of fresh flowers directly onto fabric or paper, with no paint involved. Participants arrange petals and leaves onto their surface, then gently hammer each one to release its natural pigment, leaving a delicate, one-of-a-kind print behind.</p><p>The technique of pressing flowers to preserve their colour and shape for decorative work dates back to 16th-century Japan, where it developed into the art form known as <a href="https://en.wikipedia.org/wiki/Oshibana" rel="noopener">oshibana</a>.</p><h2>What you make</h2><p>A hand-pressed botanical print on fabric or paper — made entirely from real flowers and leaves, unique and one-of-a-kind.</p><h2>Who it is for</h2><p>Ideal for private events, birthday parties, kitty parties, and corporate wellness or sustainability-themed days. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('botanical-dyeing-printing')}`,
   },
@@ -1477,7 +1477,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/workshops/canvas-pearl-art',
     title: 'Canvas Pearl Art Workshop Delhi NCR | Kraftykinni',
-    description: 'Canvas Pearl Art workshop in Delhi NCR. Build radiating pearl patterns on a black canvas for an elegant wall piece. All materials included. ₹600–₹800/person.',
+    description: 'Canvas Pearl Art workshop in Delhi NCR. Build radiating pearl patterns on a black canvas for an elegant wall piece. Materials included. ₹600–₹800/person.',
     h1: 'Canvas Pearl Art Workshop in Delhi NCR',
     bodyContent: `<h1>Canvas Pearl Art Workshop in Delhi NCR</h1><p>Canvas Pearl Art adapts the traditional string-and-nail technique — normally built with thread wound around pins — using pearls glued directly onto a black canvas instead. Participants build radiating, spiral, or symmetrical patterns one pearl at a time, working outward from a central point.</p><p>The technique draws on <a href="https://en.wikipedia.org/wiki/String_art" rel="noopener">string art</a>, where thread wound around a grid of points builds geometric patterns — this workshop swaps thread for pearls glued directly onto the canvas.</p><h2>What you make</h2><p>A hand-built canvas pearl art piece — an elegant, display-ready wall piece with a radiating or spiral pearl pattern on a black background.</p><h2>Who it is for</h2><p>A premium option for private events, corporate gifting, bridal showers, and anyone wanting a genuinely elegant keepsake activity. Duration: 2 to 2.5 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('canvas-pearl-art')}`,
   },
@@ -1486,7 +1486,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/workshops/clay-mirror-art',
     title: 'Clay Mirror Art Workshop Delhi NCR | Kraftykinni',
-    description: 'Clay Mirror Art workshop in Delhi NCR. Sculpt a floral clay frame around a mirror for a genuinely usable keepsake. All materials included. ₹600–₹800/person.',
+    description: 'Clay Mirror Art workshop in Delhi NCR. Sculpt a floral clay frame around a mirror for a genuinely usable keepsake. Materials included. ₹600–₹800/person.',
     h1: 'Clay Mirror Art Workshop in Delhi NCR',
     bodyContent: `<h1>Clay Mirror Art Workshop in Delhi NCR</h1><p>Clay Mirror Art gives each participant a small mirror and a set of air-dry clay to build an entirely hand-sculpted floral frame around it. Participants shape individual petals, leaves, and blooms, then arrange and press them around the mirror's edge one piece at a time. Unlike a purely decorative craft, the finished mirror is genuinely functional — something participants actually use at home, not just set on a shelf.</p><p>Hand-building and shaping clay is one of humanity's oldest crafts — <a href="https://en.wikipedia.org/wiki/Pottery" rel="noopener">pottery</a> dates back thousands of years and is still valued today for the same tactile, repetitive shaping process.</p><h2>What you make</h2><p>A hand-sculpted clay flower mirror frame — a genuinely usable mirror with a fully personalised floral border.</p><h2>Who it is for</h2><p>Ideal for private events, corporate gifting, school craft days, and anyone wanting a functional keepsake rather than a purely decorative one. Duration: 2 to 2.5 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('clay-mirror-art')}`,
   },
@@ -1495,7 +1495,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/workshops/mirror-painting',
     title: 'Mirror Painting Workshop Delhi NCR | Kraftykinni',
-    description: 'Mirror Painting workshop in Delhi NCR. Hand-paint an illustrated scene directly onto a mirror for wall-ready décor. All materials included. ₹600–₹800/person.',
+    description: 'Mirror Painting workshop in Delhi NCR. Hand-paint an illustrated scene directly onto a mirror for wall-ready décor. Materials included. ₹600–₹800/person.',
     h1: 'Mirror Painting Workshop in Delhi NCR',
     bodyContent: `<h1>Mirror Painting Workshop in Delhi NCR</h1><p>Mirror Painting has participants paint an illustrated scene — botanical motifs, woodland characters, or bold pattern work — directly onto the surface of a mirror using fine brushes and glass-safe paints. The reflective background behind the painted design gives even a simple illustration real visual depth, and the finished piece works equally well as a wall-mounted mirror or a piece of standalone décor.</p><p>The technique draws on <a href="https://en.wikipedia.org/wiki/Reverse_glass_painting" rel="noopener">reverse glass painting</a>, a centuries-old art form practised from Europe to India, prized for its glowing, translucent colour effect.</p><h2>What you make</h2><p>A hand-painted illustrated mirror — a wall-ready piece that is genuinely functional as well as decorative.</p><h2>Who it is for</h2><p>Great for private events, school art days, corporate gifting, and anyone wanting a decorative piece that doubles as a usable mirror. Duration: 1.5 to 2 hours. All materials included. Pricing from ₹600 per person.</p>${workshopFaqHtml('mirror-painting')}`,
   },
@@ -1503,8 +1503,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
   // ── Employee Engagement Gurgaon ──────────────────────────────────────────
   {
     path: '/employee-engagement-activities-gurgaon',
-    title: 'Employee Engagement Activities Gurgaon | Art Workshops | Kraftykinni',
-    description: 'Guided art workshops for employee engagement in Gurgaon. 20–200+, all materials supplied. Lippan Art, Mandala, Tie & Dye at your Cyber City or Udyog Vihar office.',
+    title: 'Employee Engagement Activities Gurgaon | Kraftykinni',
+    description: 'Guided art workshops for employee engagement in Gurgaon. Teams of 20–200+, all materials supplied, at your Cyber City or Udyog Vihar office. ₹600/person.',
     h1: 'Employee Engagement Activities in Gurgaon',
     ogImage: 'https://cdn.kraftykinni.in/og-corporate.jpg',
     bodyContent: `
@@ -1552,8 +1552,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
   // ── Employee Engagement Noida ─────────────────────────────────────────────
   {
     path: '/employee-engagement-activities-noida',
-    title: 'Employee Engagement Activities Noida | Art Workshops | Kraftykinni',
-    description: 'Guided art workshops for employee engagement in Noida. 20–150+, all materials supplied. Lippan Art, Mandala, Tie & Dye at your Sector 62 or Sector 90 office.',
+    title: 'Employee Engagement Activities Noida | Kraftykinni',
+    description: 'Guided art workshops for employee engagement in Noida. Teams of 20–150+, all materials supplied, at your Sector 62 or Sector 90 office. ₹600/person.',
     h1: 'Employee Engagement Activities in Noida',
     ogImage: 'https://cdn.kraftykinni.in/og-corporate.jpg',
     bodyContent: `
@@ -1588,7 +1588,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h3>Do you also work with colleges and universities in Noida?</h3>
       <p>Yes — Amity University is one of our most frequently repeated bookings, alongside other institutions across the Knowledge Park and Sector 125 belt.</p>
       <h2>A Session That Shows What We Do</h2>
-      <p>A 20-person team at a Sector 90 office — in the Bhutani Alphathum corridor — traded desks for dot mandala art during a single 3:00–3:30pm shift window, building symmetrical patterns, landscapes, and even a stressed-cartoon piece, one dot at a time. <a href="/blog/dot-mandala-art-corporate-workshop-noida/">Read the full Sector 90 case study</a>.</p>
+      <p>A 20-person team at a Sector 90 office — in the Bhutani Alphathum corridor — traded desks for dot mandala art during a single 3:00–3:30pm shift window, building symmetrical patterns, landscapes, and even a stressed-cartoon piece, one dot at a time. <a href="/blog/dot-mandala-art-corporate-workshop-noida">Read the full Sector 90 case study</a>.</p>
       <h2>What Past Participants Say</h2>
       <blockquote cite="https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v">
         <p>"The workshop was an absolute hit with our students! Shramita's energy and creativity made it a memorable experience. Everyone walked away with something beautiful they made themselves."</p>
@@ -1607,8 +1607,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
   // ── Location pages ────────────────────────────────────────────────────────
   {
     path: '/workshops-in-delhi',
-    title: 'Art Workshops in Delhi | Corporate & School Sessions | Kraftykinni',
-    description: `Art workshops across Delhi for corporate teams, schools & private events. ${TOTAL_WORKSHOPS} activities, all materials included. Fevicryl-certified artist. ₹600–₹800/person.`,
+    title: 'Art Workshops in Delhi | Corporate & School | Kraftykinni',
+    description: `Art workshops across Delhi for corporate teams, schools & private events. ${TOTAL_WORKSHOPS} activities, all materials included. Fevicryl artist. ₹600–₹800/person.`,
     h1: 'Art Workshops in Delhi',
     bodyContent: `<h1>Art Workshops in Delhi — Book a Session Today</h1>
       <p>Delhi is home to some of the most active corporate campuses, schools, and private event venues in India — and Kraftykinni runs art workshops across all three segments. We conduct guided art and DIY workshops at corporate offices in Connaught Place, Bhikaji Cama Place, and Nehru Place, at schools and colleges across North Delhi, South Delhi, Dwarka, and Rohini, and at private venues for birthdays, kitty parties, and bachelorettes.</p>
@@ -1651,7 +1651,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p><strong>Schools &amp; Colleges:</strong> We work with schools across Vasant Kunj, Dwarka, Rohini, and Saket for annual days and art sessions. Groups of 30 to 300+ students in assembly halls or classrooms.</p>
       <p><strong>Private Homes &amp; Event Venues:</strong> Birthday parties, kitty parties, and bachelorettes in South Delhi, Hauz Khas, and central Delhi. At your home, a rented farmhouse, or a café — we adapt to any space.</p>
       <h2>A Session That Shows What We Do</h2>
-      <p>Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student took home a finished, display-worthy lamp. The upcycling theme aligned with the school's sustainability focus. <a href="/blog/bottle-lamp-art-workshop-school-delhi-ncr/">Read the full Jaypee School case study</a>.</p>
+      <p>Jaypee Public School booked a full-school Bottle Lamp Art session with Kraftykinni — 150+ students creating upcycled glass bottle lamps in a single afternoon. Each student took home a finished, display-worthy lamp. The upcycling theme aligned with the school's sustainability focus. <a href="/blog/bottle-lamp-art-workshop-school-delhi-ncr">Read the full Jaypee School case study</a>.</p>
       <h2>What Past Participants Say</h2>
       <blockquote cite="https://www.google.com/maps/place/KraftyKinni/@28.5032749,77.3817466,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce9fb49d4e935:0xbed5ad5b5362b002!8m2!3d28.5032702!4d77.3843215!16s%2Fg%2F11svwnn70v">
         <p>"Our students were completely engaged throughout the session. Shramita made it so easy and fun — even the shy kids opened up. We'd love to have Kraftykinni back again!"</p>
@@ -1667,8 +1667,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
   {
     path: '/workshops-in-gurgaon',
-    title: 'Art Workshops in Gurgaon | Corporate Team Building | Kraftykinni',
-    description: `Corporate art workshops and team-building in Gurgaon. Office visits, off-site events, school sessions. ${TOTAL_WORKSHOPS} activities, all materials included. ₹600–₹800/person.`,
+    title: 'Art Workshops in Gurgaon | Team Building | Kraftykinni',
+    description: `Corporate art workshops and team building in Gurgaon. Office or off-site, plus school sessions. ${TOTAL_WORKSHOPS} activities, all materials included. ₹600–₹800/person.`,
     h1: 'Art Workshops in Gurgaon',
     bodyContent: `<h1>Art Workshops in Gurgaon — For Corporate Teams and Events</h1>
       <p>Gurgaon's corporate ecosystem is exactly where Kraftykinni thrives. We regularly conduct corporate art workshops for teams in Gurgaon's major business hubs — from DLF Cyber City to Udyog Vihar, MG Road, Sohna Road, and Golf Course Road. Companies in Gurgaon choose Kraftykinni for quarterly team-building events, employee appreciation days, onboarding workshops, and annual day activities. We bring all art supplies directly to your Gurgaon office or preferred venue — no logistics burden on your HR team.</p>
@@ -1681,7 +1681,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>All ${TOTAL_WORKSHOPS} Activities Available in Gurgaon</h2>
       <p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Wall &amp; Rope Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting, Botanical Dyeing Printing, Rock Painting, Umbrella Painting, Cap Painting, Canvas Pearl Art, Clay Mirror Art, Mirror Painting.</p>
       <h2>Employee Engagement in Gurgaon</h2>
-      <p>Art workshops are one of the highest-rated <a href="/employee-engagement-activities-gurgaon/">employee engagement activities in Gurgaon</a>. Post-event surveys consistently show that participants rate art sessions above conventional team games and off-site dinners for connection and enjoyment. The session structure — everyone making something at the same table — removes hierarchy and creates natural conversation between people who rarely interact across departments.</p>
+      <p>Art workshops are one of the highest-rated <a href="/employee-engagement-activities-gurgaon">employee engagement activities in Gurgaon</a>. Post-event surveys consistently show that participants rate art sessions above conventional team games and off-site dinners for connection and enjoyment. The session structure — everyone making something at the same table — removes hierarchy and creates natural conversation between people who rarely interact across departments.</p>
       <h2>Pricing</h2>
       <ul>
         <li><strong>Small Group (20–50 people):</strong> ₹800 per person — all materials included</li>
@@ -1714,7 +1714,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
   {
     path: '/workshops-in-noida',
-    title: 'Art Workshops in Noida | Corporate & School Sessions | Kraftykinni',
+    title: 'Art Workshops in Noida | Corporate & School | Kraftykinni',
     description: `Art workshops in Noida and Greater Noida for corporate teams, schools & private events. ${TOTAL_WORKSHOPS} activities, all materials included. ₹600–₹800/person.`,
     h1: 'Art Workshops in Noida',
     bodyContent: `<h1>Art Workshops in Noida — Corporate and School Sessions</h1>
@@ -1724,7 +1724,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>All ${TOTAL_WORKSHOPS} Activities Available in Noida</h2>
       <p>Lippan Art, Mandala Art, Tie and Dye, Boho Canvas Art, Wall &amp; Rope Art, Bottle Lamp Art, Block Printing, Clay Art, Glass Painting, Texture Art, Tote Bag Painting, Trinket Tray Painting, MDF Fridge Magnet, Canvas Pouch Painting, Botanical Dyeing Printing, Rock Painting, Umbrella Painting, Cap Painting, Canvas Pearl Art, Clay Mirror Art, Mirror Painting.</p>
       <h2>Employee Engagement in Noida</h2>
-      <p>Art workshops are one of the highest-rated <a href="/employee-engagement-activities-noida/">employee engagement activities in Noida</a>. Post-event surveys consistently show that participants rate art sessions above conventional team games and off-site dinners for connection and enjoyment. The session structure — everyone making something at the same table — removes hierarchy and creates natural conversation between people who rarely interact across departments.</p>
+      <p>Art workshops are one of the highest-rated <a href="/employee-engagement-activities-noida">employee engagement activities in Noida</a>. Post-event surveys consistently show that participants rate art sessions above conventional team games and off-site dinners for connection and enjoyment. The session structure — everyone making something at the same table — removes hierarchy and creates natural conversation between people who rarely interact across departments.</p>
       <h2>Pricing for Art Workshops in Noida</h2>
       <ul>
         <li><strong>Small Group (20–50 people):</strong> ₹800 per person — all materials included</li>
@@ -1901,7 +1901,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/blog/corporate-diwali-celebration-ideas-delhi-ncr',
     title: 'Corporate Diwali Activities Delhi NCR 2026 | Kraftykinni',
-    description: 'Planning a corporate Diwali celebration in Delhi, Gurgaon or Noida? 9 hands-on Diwali art activities, pricing, group-size guidance and how Kraftykinni runs them for 20-200+ employees.',
+    description: 'Planning a corporate Diwali in Delhi, Gurgaon or Noida? 9 hands-on Diwali art activities, pricing and group-size guidance for 20-200+ employees.',
     h1: 'Corporate Diwali Celebration Ideas for Delhi NCR: 9 Creative Activities Employees Actually Enjoy',
     schemas: [
       {
@@ -1985,7 +1985,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/blog/navratri-tie-dye-trinket-tray-workshop-delhi-ncr',
     title: 'Navratri Workshop Ideas Delhi NCR 2026 | Kraftykinni',
-    description: 'Navratri 2026 office and school workshop ideas: a 9-colours Tie & Dye session for corporate teams and a garba trinket tray for schools. Delhi, Gurgaon, Noida.',
+    description: 'Navratri 2026 workshop ideas: a 9-colours Tie & Dye session for corporate teams and a garba trinket tray for schools. Delhi, Gurgaon, Noida.',
     h1: 'Navratri 2026 Workshop Ideas — Tie & Dye "9 Colours" Sessions and Garba Trinket Trays in Delhi NCR',
     schemas: [
       {
@@ -2028,7 +2028,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
   {
     path: '/blog/daughters-day-personalised-gifts-workshop-delhi-ncr',
     title: "Daughter's Day Gift Ideas Delhi NCR 2026 | Kraftykinni",
-    description: "Daughter's Day 2026 falls on 27 September. Handmade, personalised gift ideas from Kraftykinni — custom canvas art, clay keepsakes, and made-to-order nameplates.",
+    description: 'Daughter\'s Day 2026 falls on 27 September. Handmade, personalised gift ideas: custom canvas art, clay keepsakes and made-to-order nameplates.',
     h1: "Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR",
     schemas: [
       {
@@ -2928,6 +2928,40 @@ function buildBreadcrumbSchema(route, workshopData) {
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: trail };
 }
 
+// ─── SEO length guard (replaces the old silent "..." truncation) ─────────────
+// Titles must be <= 60 characters and meta descriptions <= 155 characters, as
+// they will actually appear in <title> / <meta name="description">. Instead of
+// cutting text off with "...", the build now fails and lists every offender so
+// the copy gets rewritten properly.
+const MAX_TITLE = 60;
+const MAX_DESCRIPTION = 155;
+
+// Short titles get a brand suffix (same rule injectMeta has always applied).
+function pageTitleFor(title) {
+  return title.length < 30 ? `${title} | Kraftykinni Art Workshops` : title;
+}
+
+function assertSeoLengths(routeList) {
+  const offenders = [];
+  for (const route of routeList) {
+    const finalTitle = pageTitleFor(route.title);
+    if (finalTitle.length > MAX_TITLE) {
+      offenders.push({ path: route.path, field: 'title', length: finalTitle.length, max: MAX_TITLE, text: finalTitle });
+    }
+    if (route.description.length > MAX_DESCRIPTION) {
+      offenders.push({ path: route.path, field: 'description', length: route.description.length, max: MAX_DESCRIPTION, text: route.description });
+    }
+  }
+  if (offenders.length) {
+    console.error(`\n❌  SEO length check failed: ${offenders.length} offender(s)\n`);
+    for (const o of offenders) {
+      console.error(`  ${o.path}\n    ${o.field}: ${o.length} chars (max ${o.max}, over by ${o.length - o.max})\n    "${o.text}"\n`);
+    }
+    process.exit(1);
+  }
+  console.log(`✅  SEO length check: 0 offenders across ${routeList.length} routes (titles <= ${MAX_TITLE}, descriptions <= ${MAX_DESCRIPTION}).\n`);
+}
+
 // Auto-parses an FAQPage schema straight out of a route's own visible
 // bodyContent, so the schema can never drift out of sync with what a reader
 // (or non-JS crawler) actually sees on the page. Handles both FAQ markup
@@ -2958,21 +2992,12 @@ function parseFaqFromBody(bodyContent) {
 function injectMeta(html, route) {
   const { path: routePath, title, description, h1, bodyContent, ogImage } = route;
   const canonical = `https://kraftykinni.in${routePath}`;
-  const pageTitle = title.length < 30
-    ? `${title} | Kraftykinni Art Workshops`
-    : title;
-  const brandSuffix = ' | Kraftykinni';
-  const titleWithoutBrand = pageTitle.endsWith(brandSuffix)
-    ? pageTitle.slice(0, -brandSuffix.length)
-    : pageTitle;
-  const boundedTitle = pageTitle.length <= 60
-    ? pageTitle
-    : pageTitle.endsWith(brandSuffix)
-      ? `${titleWithoutBrand.slice(0, 60 - brandSuffix.length - 3).trimEnd()}...${brandSuffix}`
-      : `${pageTitle.slice(0, 57).trimEnd()}...`;
-  const boundedDescription = description.length <= 155
-    ? description
-    : `${description.slice(0, 152).trimEnd()}...`;
+  const pageTitle = pageTitleFor(title);
+  // No silent truncation any more: assertSeoLengths() (run before any file is
+  // written) fails the build if a title is over 60 or a description is over 155
+  // characters, so what is written here is always exactly what was authored.
+  const boundedTitle = pageTitle;
+  const boundedDescription = description;
   const workshopId = routePath.startsWith('/workshops/') ? routePath.split('/')[2] : null;
   const workshopData = workshopId ? WORKSHOPS_DATA[workshopId] : null;
   const generatedSchemas = [];
@@ -3159,6 +3184,8 @@ function injectMeta(html, route) {
 }
 
 // ─── 1. Pre-render routes ────────────────────────────────────────────────────
+
+assertSeoLengths(routes);
 
 let created = 0;
 

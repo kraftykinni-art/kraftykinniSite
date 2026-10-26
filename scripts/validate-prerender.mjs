@@ -64,5 +64,33 @@ for (const [relativePath, expectedText] of representativeRoutes) {
   if (!html.includes(expectedText)) fail(`${relativePath} does not contain route-specific text: ${expectedText}`);
 }
 
+// ─── Internal links must not end in "/" (home page excepted) ─────────────────
+// Canonical URLs on this site have no trailing slash. A link such as
+// /corporate-art-workshops/ forces a redirect/duplicate URL, so every <a href>
+// in dist that points back at kraftykinni.in must be slash-free. "/" itself and
+// "/#section" (both the home page) are allowed.
+const SITE_ORIGIN = 'https://kraftykinni.in';
+const slashOffenders = [];
+for (const filePath of htmlFiles) {
+  const html = fs.readFileSync(filePath, 'utf8');
+  const relativePath = path.relative(distDir, filePath).replaceAll(path.sep, '/');
+  for (const match of html.matchAll(/<a\b[^>]*?\bhref\s*=\s*(?:"([^"]*)"|'([^']*)')/gi)) {
+    const href = (match[1] ?? match[2] ?? '').trim();
+    let internalPath = null;
+    if (href.startsWith('/') && !href.startsWith('//')) internalPath = href;
+    else if (href.startsWith(SITE_ORIGIN)) internalPath = href.slice(SITE_ORIGIN.length) || '/';
+    if (internalPath === null) continue;
+    internalPath = internalPath.split('#')[0].split('?')[0];
+    if (internalPath.length > 1 && internalPath.endsWith('/')) {
+      slashOffenders.push(`${relativePath}: ${href}`);
+    }
+  }
+}
+if (slashOffenders.length) {
+  fail(`${slashOffenders.length} internal link(s) end in "/" (use the slash-free URL):\n  - ${[...new Set(slashOffenders)].join('\n  - ')}`);
+} else {
+  console.log(`Internal link check passed: no trailing-slash links in ${htmlFiles.length} HTML files.`);
+}
+
 if (process.exitCode) process.exit();
 console.log(`Prerender validation passed: ${routeFiles.length} routes contain visible HTML content.`);

@@ -79,19 +79,19 @@ export default function WorkshopDetailPage() {
   return (
     <>
       <Helmet>
-        <title>{workshop.pageHeadline} | Kraftykinni</title>
+        <title>{workshop.metaTitle}</title>
         <meta name="description" content={workshop.metaDescription} />
         <meta name="keywords" content={workshop.keywords.join(', ')} />
         <link rel="canonical" href={canonical} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Kraftykinni" />
-        <meta property="og:title" content={`${workshop.pageHeadline} | Kraftykinni`} />
+        <meta property="og:title" content={workshop.metaTitle} />
         <meta property="og:description" content={workshop.metaDescription} />
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${workshop.pageHeadline} | Kraftykinni`} />
+        <meta name="twitter:title" content={workshop.metaTitle} />
         <meta name="twitter:description" content={workshop.metaDescription} />
         <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>

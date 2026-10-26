@@ -16,7 +16,7 @@ export default function HomePage() {
     <>
       <Helmet>
         <title>Art Workshops Delhi NCR | ₹600/person | 1,500+ | Kraftykinni</title>
-        <meta name="description" content="Premium art & DIY workshops for corporate teams, schools & events in Delhi, Gurgaon & Noida. Book Tie & Dye, Lippan & Boho Art with Fevicryl artist Shramita Govil." />
+        <meta name="description" content="Art workshops in Delhi, Gurgaon & Noida for corporate teams, schools & events. ₹600/person, all materials included. Fevicryl-certified artist." />
         <link rel="canonical" href="https://kraftykinni.in/" />
       </Helmet>
 

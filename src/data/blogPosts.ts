@@ -122,7 +122,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'annual-day-activity-ideas-schools-delhi-ncr',
     title: 'Annual Day Activity Ideas for Schools in Delhi NCR (Art-Based Edition)',
-    metaTitle: 'Annual Day Art Activity Ideas for Schools Delhi NCR | KK',
+    metaTitle: 'Annual Day Art Ideas for Schools Delhi NCR | Kraftykinni',
     metaDescription:
       '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, for 50–300 students. Led by a Fevicryl-certified artist.',
     publishDate: '2026-04-28',
@@ -284,9 +284,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'lippan-art-complete-beginners-guide-kutch-mirror-work',
     title: "How to Make Lippan Art: A Beginner's Guide to Kutch Mirror Work",
-    metaTitle: "How to Make Lippan Art: Beginner's Guide | Kraftykinni",
+    metaTitle: 'How to Make Lippan Art: Beginner\'s Guide | Kraftykinni',
     metaDescription:
-      "Learn how to make Lippan Art: materials, 5 steps and what a guided Lippan Art workshop in Delhi NCR involves. From ₹600/person, all materials included.",
+      'Learn how to make Lippan Art: materials, 5 steps and what a guided Lippan Art workshop in Delhi NCR involves. From ₹600/person, all materials included.',
     publishDate: '2026-05-01',
     category: 'Workshop Guides',
     excerpt:
@@ -456,9 +456,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'mothers-day-art-workshop-gift-delhi-ncr',
     title: "Mother's Day Art Workshop Gift Ideas in Delhi NCR — Make Something She'll Keep",
-    metaTitle: "Mother's Day Art Workshop Gift Ideas Delhi NCR | Kraftykinni",
+    metaTitle: 'Mother\'s Day Art Workshop Gift Ideas Delhi NCR | Kraftykinni',
     metaDescription:
-      "Skip the flowers. Gift a Mother's Day art workshop in Delhi NCR. Lippan Art, Bottle Lamp, Clay — ₹600/person, all materials included.",
+      'Skip the flowers. Gift a Mother\'s Day art workshop in Delhi NCR. Lippan Art, Bottle Lamp, Clay — ₹600/person, all materials included.',
     publishDate: '2026-05-05',
     category: 'Private Events',
     excerpt:
@@ -537,7 +537,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'clay-trinket-painting-workshop-cars24-gurgaon',
     title: 'Clay Trinket Painting Workshop at Cars24 Gurgaon — 40 Participants, One Relaxing Afternoon',
-    metaTitle: 'Clay Trinket Workshop — Cars24 Gurgaon Case Study | KK',
+    metaTitle: 'Clay Trinket Workshop — Cars24 Gurgaon | Kraftykinni',
     metaDescription:
       '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session.',
     publishDate: '2026-04-29',
@@ -611,7 +611,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'summer-art-workshop-for-schools-delhi-ncr',
     title: 'Summer Art Workshops for Schools in Delhi NCR — A Complete Planning Guide',
-    metaTitle: 'Summer Art Workshop for Schools Delhi NCR | Kraftykinni',
+    metaTitle: 'Summer Art Workshops for Schools Delhi NCR | Kraftykinni',
     metaDescription:
       'Planning a summer art workshop for your school in Delhi NCR? Covers activities, age groups & sizes. Facilitator travels to you. ₹600/student.',
     publishDate: '2026-05-08',
@@ -709,9 +709,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'fathers-day-gift-ideas-art-workshop-delhi-ncr-2026',
     title: "Father's Day Gift Ideas 2026 — Handmade Art Workshops in Delhi NCR",
-    metaTitle: "Father's Day Art Workshop Gift Ideas 2026 | Kraftykinni",
+    metaTitle: 'Father\'s Day Art Workshop Gift Ideas 2026 | Kraftykinni',
     metaDescription:
-      "Handmade Father's Day gift workshops in Delhi NCR — Clay Magnet, Bottle Art & Clay Trinket. Guided sessions from ₹600/person, all materials included.",
+      'Handmade Father\'s Day gift workshops in Delhi NCR — Clay Magnet, Bottle Art & Clay Trinket. Guided sessions from ₹600/person, all materials included.',
     publishDate: '2026-05-18',
     category: 'Private Events' as const,
     excerpt:
@@ -801,9 +801,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'block-printing-workshop-delhi-israeli-family',
     title: 'A Block Printing Workshop in Delhi, for a Mother and Daughter Visiting from Israel',
-    metaTitle: 'Block Printing Workshop Delhi: Israel to India | KK',
+    metaTitle: 'Block Printing Workshop Delhi: Israel to India | Kraftykinni',
     metaDescription:
-      'A private block printing workshop in Delhi for a mother-daughter duo from Israel — the craft, the story, and the fabric they took home. Book with Kraftykinni.',
+      'A private block printing workshop in Delhi for a mother-daughter duo from Israel: the craft, the story and the fabric they took home. Book with us.',
     publishDate: '2026-07-19',
     category: 'Private Events' as const,
     excerpt:
@@ -884,7 +884,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'world-environment-day-upcycled-bottle-art-workshop-delhi-ncr',
     title: 'World Environment Day 2026 — How Upcycled Bottle Art Makes Sustainability Hands-On',
-    metaTitle: 'World Environment Day — Bottle Art Workshop | Kraftykinni',
+    metaTitle: 'World Environment Day 2026 Bottle Art | Kraftykinni',
     metaDescription:
       'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles into mandala planters and décor. Workshops across Delhi NCR.',
     publishDate: '2026-05-30',
@@ -958,7 +958,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'independence-day-bottle-art-workshop-delhi-ncr',
     title: 'Independence Day 2026 — Tricolour Bottle Art & Har Ghar Tiranga Workshops in Delhi NCR',
-    metaTitle: 'Independence Day Bottle Art Workshop Delhi NCR | KK',
+    metaTitle: 'Independence Day Bottle Art Workshop Delhi NCR | Kraftykinni',
     metaDescription:
       'Celebrate Independence Day 2026 with tricolour bottle art and Har Ghar Tiranga jars. Hands-on workshops for schools, offices and families across Delhi NCR.',
     publishDate: '2026-07-24',
@@ -1393,9 +1393,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'trending-art-craft-workshops-delhi-ncr',
     title: "What's Trending in Art & Craft Workshops in Delhi NCR Right Now (2026)",
-    metaTitle: "What's Trending in Art & Craft Workshops? | Kraftykinni",
+    metaTitle: 'What\'s Trending in Art & Craft Workshops? | Kraftykinni',
     metaDescription:
-      "What's trending in art and craft workshops in 2026 — personalization, mindful crafts, eco-friendly materials — from Kraftykinni's Delhi NCR sessions.",
+      'What\'s trending in art and craft workshops in 2026 — personalization, mindful crafts, eco-friendly materials — from Kraftykinni\'s Delhi NCR sessions.',
     publishDate: '2026-09-04',
     category: 'Workshop Guides' as const,
     excerpt:
@@ -1476,7 +1476,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Corporate Diwali Celebration Ideas for Delhi NCR: 9 Creative Activities Employees Actually Enjoy',
     metaTitle: 'Corporate Diwali Activities Delhi NCR 2026 | Kraftykinni',
     metaDescription:
-      'Planning a corporate Diwali celebration in Delhi, Gurgaon or Noida? 9 hands-on Diwali art activities, pricing, group-size guidance and how Kraftykinni runs them for 20-200+ employees.',
+      'Planning a corporate Diwali in Delhi, Gurgaon or Noida? 9 hands-on Diwali art activities, pricing and group-size guidance for 20-200+ employees.',
     publishDate: '2026-09-12',
     category: 'Corporate' as const,
     excerpt:
@@ -1666,7 +1666,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Navratri 2026 Workshop Ideas — Tie & Dye "9 Colours" Sessions and Garba Trinket Trays in Delhi NCR',
     metaTitle: 'Navratri Workshop Ideas Delhi NCR 2026 | Kraftykinni',
     metaDescription:
-      'Navratri 2026 office and school workshop ideas: a 9-colours Tie & Dye session for corporate teams and a garba trinket tray for schools. Delhi, Gurgaon, Noida.',
+      'Navratri 2026 workshop ideas: a 9-colours Tie & Dye session for corporate teams and a garba trinket tray for schools. Delhi, Gurgaon, Noida.',
     publishDate: '2026-09-25',
     category: 'Workshop Guides' as const,
     excerpt:
@@ -1731,9 +1731,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'daughters-day-personalised-gifts-workshop-delhi-ncr',
     title: "Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR",
-    metaTitle: "Daughter's Day Gift Ideas Delhi NCR 2026 | Kraftykinni",
+    metaTitle: 'Daughter\'s Day Gift Ideas Delhi NCR 2026 | Kraftykinni',
     metaDescription:
-      "Daughter's Day 2026 falls on 27 September. Handmade, personalised gift ideas from Kraftykinni — custom canvas art, clay keepsakes, and made-to-order nameplates.",
+      'Daughter\'s Day 2026 falls on 27 September. Handmade, personalised gift ideas: custom canvas art, clay keepsakes and made-to-order nameplates.',
     publishDate: '2026-09-24',
     category: 'Private Events' as const,
     excerpt:
@@ -1805,9 +1805,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'world-mental-health-day-art-workshop-delhi-ncr',
     title: "World Mental Health Day 2026: Art Workshops for Stress Relief in Delhi NCR",
-    metaTitle: "World Mental Health Day Art Workshop Delhi NCR | Kraftykinni",
+    metaTitle: 'World Mental Health Day Art Workshop Delhi NCR | Kraftykinni',
     metaDescription:
-      "World Mental Health Day is 10 October. Guided mandala, clay and Lippan art breaks for teams, schools and adults in Delhi, Gurgaon and Noida. Book now.",
+      'World Mental Health Day is 10 October. Guided mandala, clay and Lippan art breaks for teams, schools and adults in Delhi, Gurgaon and Noida. Book now.',
     publishDate: "2026-09-29",
     category: 'Workshop Guides' as const,
     excerpt:
@@ -1915,9 +1915,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'diwali-art-workshop-schools-societies-delhi-ncr',
     title: "Diwali Art Workshop in Delhi NCR for Schools, Colleges, Cafés and Home Groups",
-    metaTitle: "Diwali Art Workshop Delhi NCR: Schools, Groups | Kraftykinni",
+    metaTitle: 'Diwali Art Workshop Delhi NCR: Schools, Groups | Kraftykinni',
     metaDescription:
-      "Book a Diwali art workshop in Delhi NCR for schools, colleges, cafés, societies and home groups. Diya painting, Lippan and Madhubani, ₹600–₹800/person.",
+      'Book a Diwali art workshop in Delhi NCR for schools, colleges, cafés, societies and home groups. Diya painting, Lippan and Madhubani, ₹600–₹800/person.',
     publishDate: '2026-10-03',
     category: 'School & College' as const,
     excerpt:
@@ -2030,9 +2030,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'corporate-art-workshops-delhi-ncr-guide',
     title: "Corporate Art Workshops in Delhi NCR: A Complete Guide to Formats, Cost and Booking",
-    metaTitle: "Corporate Art Workshops: A Delhi NCR Guide | Kraftykinni",
+    metaTitle: 'Corporate Art Workshops: A Delhi NCR Guide | Kraftykinni',
     metaDescription:
-      "What a corporate art workshop is, how a session runs, formats, group sizes of 20–200+, cost from ₹600/person and how to book in Delhi, Gurgaon and Noida.",
+      'What a corporate art workshop is, how a session runs, formats, group sizes of 20–200+, cost from ₹600/person and how to book in Delhi, Gurgaon and Noida.',
     publishDate: '2026-10-01',
     category: 'Corporate' as const,
     excerpt:
@@ -2154,9 +2154,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'mandala-art-workshop-delhi-ncr-beginners-guide',
     title: "Mandala Art Workshop in Delhi NCR: A Beginner's Guide to Making Your First Mandala",
-    metaTitle: "Mandala Art Workshop Delhi NCR: Beginner Guide | Kraftykinni",
+    metaTitle: 'Mandala Art Workshop Delhi NCR: Beginner Guide | Kraftykinni',
     metaDescription:
-      "New to mandala art? See how a guided mandala workshop works in Delhi NCR: no experience needed, 1.5–2 hours, ₹600–₹800/person, all materials included.",
+      'New to mandala art? See how a guided mandala workshop works in Delhi NCR: no experience needed, 1.5–2 hours, ₹600–₹800/person, all materials included.',
     publishDate: '2026-10-06',
     category: 'Workshop Guides' as const,
     excerpt:
@@ -2251,9 +2251,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'texture-art-workshop-delhi-ncr-beginners-guide',
     title: "Texture Art Workshop in Delhi NCR: A Beginner's Guide to Layered Mixed-Media Canvas",
-    metaTitle: "Texture Art Workshop Delhi NCR: Beginner Guide | Kraftykinni",
+    metaTitle: 'Texture Art Workshop Delhi NCR: Beginner Guide | Kraftykinni',
     metaDescription:
-      "What is a texture art workshop? 6 steps, 1.5–2 hours, no experience needed. Layered canvas for teams in Delhi NCR from ₹600/person, all materials included.",
+      'What is a texture art workshop? 6 steps, 1.5–2 hours, no experience needed. Layered canvas for teams in Delhi NCR from ₹600/person, all materials included.',
     publishDate: '2026-10-09',
     category: 'Workshop Guides' as const,
     excerpt:
@@ -2346,9 +2346,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'boho-wall-art-workshop-delhi-ncr',
     title: "Boho Wall Art Workshops in Delhi NCR: Wall Rope Art vs Canvas Pearl Art vs Boho Canvas",
-    metaTitle: "Boho Wall Art Workshop Delhi NCR: 3 Formats | Kraftykinni",
+    metaTitle: 'Boho Wall Art Workshop Delhi NCR: 3 Formats | Kraftykinni',
     metaDescription:
-      "Compare three boho wall décor workshops in Delhi NCR: Wall Rope Art, Canvas Pearl Art and Boho Canvas. Duration, materials, group size, ₹600–₹800/person.",
+      'Compare three boho wall décor workshops in Delhi NCR: Wall Rope Art, Canvas Pearl Art and Boho Canvas. Duration, materials, group size, ₹600–₹800/person.',
     publishDate: '2026-10-04',
     category: 'Workshop Guides' as const,
     excerpt:
@@ -2434,9 +2434,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'team-building-activities-noida-2026',
     title: "Team Building Activities in Noida 2026: Occasions, Formats and Costs for Corporate Teams",
-    metaTitle: "Team Building Activities in Noida 2026 | Kraftykinni",
+    metaTitle: 'Team Building Activities in Noida 2026 | Kraftykinni',
     metaDescription:
-      "Planning team building in Noida? See 5 occasions that suit art workshops, which format fits your team, group sizes of 20–150+ and costs from ₹600/person.",
+      'Planning team building in Noida? See 5 occasions that suit art workshops, which format fits your team, group sizes of 20–150+ and costs from ₹600/person.',
     publishDate: '2026-10-11',
     category: 'Corporate' as const,
     excerpt:
@@ -2537,9 +2537,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'painting-workshop-for-adults-delhi-ncr-groups',
     title: "Painting Workshop for Adults in Delhi NCR: Ideas for Groups of 10 or More",
-    metaTitle: "Painting Workshop for Adults in Delhi NCR | Kraftykinni",
+    metaTitle: 'Painting Workshop for Adults in Delhi NCR | Kraftykinni',
     metaDescription:
-      "Painting workshop for adults in Delhi NCR: canvas, glass, mirror and tote options for groups of 10+. No experience needed. ₹600–₹800/person, all inclusive.",
+      'Painting workshop for adults in Delhi NCR: canvas, glass, mirror and tote options for groups of 10+. No experience needed. ₹600–₹800/person, all inclusive.',
     publishDate: '2026-10-07',
     category: 'Private Events' as const,
     excerpt:
@@ -2634,9 +2634,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'tote-bag-painting-workshop-delhi-ncr-guide',
     title: "Tote Bag Painting Workshop in Delhi NCR: How a Session Works, Branding Options and Booking",
-    metaTitle: "Tote Bag Painting Workshop Delhi NCR Guide | Kraftykinni",
+    metaTitle: 'Tote Bag Painting Workshop Delhi NCR Guide | Kraftykinni',
     metaDescription:
-      "Tote bag painting workshop in Delhi NCR: how a session runs, branding options, 1.5–2 hours, groups of 20–200+, from ₹600/person, all materials included.",
+      'Tote bag painting workshop in Delhi NCR: how a session runs, branding options, 1.5–2 hours, groups of 20–200+, from ₹600/person, all materials included.',
     publishDate: '2026-10-12',
     category: 'Workshop Guides' as const,
     excerpt:
@@ -2726,9 +2726,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'block-printing-workshop-delhi-ncr-guide',
     title: "Block Printing Workshop in Delhi NCR: How a Session Works, What You Print and Booking",
-    metaTitle: "Block Printing Workshop Delhi NCR Guide | Kraftykinni",
+    metaTitle: 'Block Printing Workshop Delhi NCR Guide | Kraftykinni',
     metaDescription:
-      "Block printing workshop in Delhi NCR: how a session runs, what you print, 1.5–2 hours, groups of 20–200+, from ₹600 per person, all materials included.",
+      'Block printing workshop in Delhi NCR: how a session runs, what you print, 1.5–2 hours, groups of 20–200+, from ₹600 per person, all materials included.',
     publishDate: '2026-10-14',
     category: 'Workshop Guides' as const,
     excerpt:
@@ -2818,9 +2818,9 @@ export const blogPosts: BlogPost[] = [
   {
     slug: 'kids-birthday-party-art-workshop-delhi-noida',
     title: "Kids' Birthday Art Workshops in Delhi NCR: 3 Real Parties",
-    metaTitle: "Kids Birthday Art Parties Delhi & Noida | Kraftykinni",
+    metaTitle: 'Kids Birthday Art Parties Delhi & Noida | Kraftykinni',
     metaDescription:
-      "See how 3 kids' birthday parties in Delhi and Noida used clay mirror art, DIY spinner kits and fridge magnets. ₹600–₹800/person, all materials included.",
+      'See how 3 kids\' birthday parties in Delhi and Noida used clay mirror art, DIY spinner kits and fridge magnets. ₹600–₹800/person, all materials included.',
     publishDate: '2026-10-25',
     category: 'Private Events' as const,
     excerpt:
