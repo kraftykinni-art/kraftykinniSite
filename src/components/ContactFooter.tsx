@@ -9,6 +9,7 @@ import {
   Send,
   ChevronDown,
 } from "lucide-react";
+import { trackContactClick } from "../utils/analytics";
 
 export default function ContactFooter() {
   const [showMoreDetails, setShowMoreDetails] = useState(false);
@@ -136,14 +137,7 @@ export default function ContactFooter() {
                   <h4 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">Call / WhatsApp</h4>
                   <a
                     href="tel:+919599622210"
-                    onClick={() => {
-                      if (typeof window !== 'undefined' && (window as any).gtag) {
-                        (window as any).gtag('event', 'phone_click', {
-                          event_category: 'contact',
-                          event_label: 'footer_call_link',
-                        });
-                      }
-                    }}
+                    onClick={() => trackContactClick('phone_click', 'footer_call')}
                     className="text-lg font-medium hover:text-brand-pink transition-colors"
                   >
                     +91 95996 22210
