@@ -2,7 +2,6 @@ import { motion } from 'motion/react';
 import { CheckCircle, Star, Heart, Lightbulb, Shield } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
 import AboutIntro from './AboutIntro';
-import Testimonials from './Testimonials';
 import KeyTakeaways from './KeyTakeaways';
 
 export default function About() {
@@ -181,7 +180,6 @@ export default function About() {
         'Regular facilitator at Amity University, Delhi and Noida campuses',
         'Available in person across Delhi, Gurgaon, and Noida, and online pan-India',
       ]} />
-      <Testimonials />
 
     </section>
   );

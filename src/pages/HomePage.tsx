@@ -6,7 +6,6 @@ import InstagramPopup from '../components/InstagramPopup';
 // Lazy-load below-fold components to reduce initial JS bundle
 const AboutIntro = lazy(() => import('../components/AboutIntro'));
 const TrustGallery = lazy(() => import('../components/TrustGallery'));
-const Testimonials = lazy(() => import('../components/Testimonials'));
 const GoogleReviews = lazy(() => import('../components/GoogleReviews'));
 const Workshops = lazy(() => import('../components/Workshops'));
 const PricingFAQ = lazy(() => import('../components/PricingFAQ'));
@@ -27,7 +26,6 @@ export default function HomePage() {
           <TrustGallery />
           <Workshops />
           <AboutIntro />
-          <Testimonials />
           <GoogleReviews location="home_reviews" />
           <PricingFAQ />
         </Suspense>

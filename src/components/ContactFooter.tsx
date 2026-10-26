@@ -58,7 +58,7 @@ export default function ContactFooter() {
       heading: "Company",
       links: [
         { label: "About Kraftykinni", to: "/about" },
-        { label: "Testimonials",      to: "/#testimonials" },
+        { label: "Reviews",           to: "/#reviews" },
         { label: "Pricing",           to: "/#pricing" },
         { label: "FAQ",               to: "/#faq" },
         { label: "Contact",           to: "/#contact" },

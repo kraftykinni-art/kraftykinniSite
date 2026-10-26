@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles, Star, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { googleReviewSummary } from '../data/googleReviews';
 
 const CDN = 'https://cdn.kraftykinni.in/assets';
 const bohoArt = `${CDN}/boho-art.webp`;
@@ -71,29 +72,27 @@ export default function Hero() {
               </a>
             </div>
 
-            <a
-              href={GOOGLE_PROFILE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-6 group"
-              aria-label="4.9 out of 5 stars on Google, based on 18 reviews — open our Google Business Profile"
-            >
-              <div className="flex items-center gap-0.5">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    size={16}
-                    className="fill-amber-400 text-amber-400"
-                  />
-                ))}
-              </div>
-              <span className="text-sm font-semibold text-brand-charcoal group-hover:text-brand-pink transition-colors">
-                4.9
-              </span>
-              <span className="text-sm text-gray-500 group-hover:text-brand-pink transition-colors underline decoration-gray-300 group-hover:decoration-brand-pink underline-offset-2">
-                18 Google Reviews
-              </span>
-            </a>
+            {googleReviewSummary && (
+              <a
+                href={GOOGLE_PROFILE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 mt-6 group"
+                aria-label={`${googleReviewSummary.rating.toFixed(1)} out of 5 stars on Google, based on ${googleReviewSummary.count} reviews — open our Google Business Profile`}
+              >
+                <div className="flex items-center gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} size={16} className="fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <span className="text-sm font-semibold text-brand-charcoal group-hover:text-brand-pink transition-colors">
+                  {googleReviewSummary.rating.toFixed(1)}
+                </span>
+                <span className="text-sm text-gray-500 group-hover:text-brand-pink transition-colors underline decoration-gray-300 group-hover:decoration-brand-pink underline-offset-2">
+                  {googleReviewSummary.count} Google Reviews
+                </span>
+              </a>
+            )}
           </div>
 
           {/* Image Grid */}

@@ -36,7 +36,7 @@ export default function GoogleReviews({ location }: { location: string }) {
   const summary = googleReviewSummary;
 
   return (
-    <section className="py-16 bg-white" aria-labelledby={`${location}-heading`}>
+    <section id="reviews" className="py-16 bg-white" aria-labelledby={`${location}-heading`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 id={`${location}-heading`} className="font-serif text-3xl font-bold text-brand-slate mb-3">
