@@ -727,6 +727,21 @@ City: Delhi / Gurgaon / Noida</code></pre>
     `,
   },
 
+  // ── Review short link (noindex, not in sitemap) ────────────────────────────
+  {
+    path: '/review',
+    title: 'Write a Google Review | Kraftykinni',
+    description: 'Short link to write a Google review for Kraftykinni art workshops. Opens the Google review box for the Kraftykinni listing.',
+    h1: 'Write a Google review for Kraftykinni',
+    noindex: true,
+    bodyContent: `
+      <h1>Write a Google review for Kraftykinni</h1>
+      <p>Thank you for taking part in a Kraftykinni art workshop. This short link takes you to Google, where you can write a review of your experience. Your review helps other schools, teams and families in Delhi, Gurgaon and Noida find us, and every review is read by Shramita Govil.</p>
+      <p><a href="https://search.google.com/local/writereview?placeid=ChIJNenUSfvpDDkRArBiU1ut1b4">Write a Google review</a></p>
+      <p><a href="/">Back to Kraftykinni</a></p>
+    `,
+  },
+
   // ── Privacy Policy ────────────────────────────────────────────────────────
   {
     path: '/privacy-policy',
@@ -3244,6 +3259,7 @@ const BREADCRUMB_LABELS = {
   '/terms-of-service': 'Terms of Service',
   '/blog': 'Blog',
   '/thank-you': 'Thank You',
+  '/review': 'Write a Google Review',
   '/employee-engagement-activities-gurgaon': {
     name: 'Employee Engagement Activities Gurgaon',
     parentPath: '/corporate-art-workshops',

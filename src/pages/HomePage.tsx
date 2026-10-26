@@ -7,6 +7,7 @@ import InstagramPopup from '../components/InstagramPopup';
 const AboutIntro = lazy(() => import('../components/AboutIntro'));
 const TrustGallery = lazy(() => import('../components/TrustGallery'));
 const Testimonials = lazy(() => import('../components/Testimonials'));
+const GoogleReviews = lazy(() => import('../components/GoogleReviews'));
 const Workshops = lazy(() => import('../components/Workshops'));
 const PricingFAQ = lazy(() => import('../components/PricingFAQ'));
 const ContactFooter = lazy(() => import('../components/ContactFooter'));
@@ -27,6 +28,7 @@ export default function HomePage() {
           <Workshops />
           <AboutIntro />
           <Testimonials />
+          <GoogleReviews location="home_reviews" />
           <PricingFAQ />
         </Suspense>
       </main>

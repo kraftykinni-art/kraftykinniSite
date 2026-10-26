@@ -8,6 +8,7 @@ import { caseStudiesFor } from '../data/caseStudies';
 import CaseStudyCard from '../components/CaseStudyCard';
 import PricingFAQ from '../components/PricingFAQ';
 import Testimonials from '../components/Testimonials';
+import GoogleReviews from '../components/GoogleReviews';
 import KeyTakeaways from '../components/KeyTakeaways';
 import ContactFooter from '../components/ContactFooter';
 
@@ -402,6 +403,7 @@ export default function SchoolWorkshopsPage() {
           'CBSE and ICSE curriculum links available on request',
         ]} />
         <Testimonials />
+        <GoogleReviews location="school_reviews" />
 
       </main>
       <ContactFooter />

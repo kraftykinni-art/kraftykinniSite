@@ -10,6 +10,7 @@ import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
 import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 import Testimonials from '../components/Testimonials';
+import GoogleReviews from '../components/GoogleReviews';
 import KeyTakeaways from '../components/KeyTakeaways';
 
 // ── Private event types ───────────────────────────────────────────────────────
@@ -562,6 +563,7 @@ export default function PrivateWorkshopsPage() {
           'No experience needed — every guest leaves with a finished piece',
         ]} />
         <Testimonials />
+        <GoogleReviews location="private_reviews" />
 
       </main>
       <ContactFooter />

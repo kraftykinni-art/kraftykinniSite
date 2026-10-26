@@ -21,6 +21,7 @@ const ThankYouPage = lazy(() => import('./pages/ThankYouPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const ReviewRedirectPage = lazy(() => import('./pages/ReviewRedirectPage'));
 const EmployeeEngagementGurgaonPage = lazy(() => import('./pages/EmployeeEngagementGurgaonPage'));
 const EmployeeEngagementNoidaPage = lazy(() => import('./pages/EmployeeEngagementNoidaPage'));
 
@@ -64,6 +65,7 @@ export default function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
+        <Route path="/review" element={<ReviewRedirectPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       </Suspense>

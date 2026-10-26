@@ -8,6 +8,7 @@ import { caseStudiesFor } from '../data/caseStudies';
 import CaseStudyCard from '../components/CaseStudyCard';
 import PricingFAQ from '../components/PricingFAQ';
 import Testimonials from '../components/Testimonials';
+import GoogleReviews from '../components/GoogleReviews';
 import KeyTakeaways from '../components/KeyTakeaways';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
@@ -288,6 +289,7 @@ export default function CorporateWorkshopsPage() {
           "7 days' notice and a 50% deposit confirm a date",
         ]} />
         <Testimonials />
+        <GoogleReviews location="corporate_reviews" />
 
       </main>
       <ContactFooter />

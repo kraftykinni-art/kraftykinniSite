@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import About from '../components/About';
 import ContactFooter from '../components/ContactFooter';
+import GoogleReviews from '../components/GoogleReviews';
 import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 
 export default function AboutPage() {
@@ -71,6 +72,7 @@ export default function AboutPage() {
       </Helmet>
       <main className="pt-20">
         <About />
+        <GoogleReviews location="about_reviews" />
         <ContactFooter />
       </main>
     </>

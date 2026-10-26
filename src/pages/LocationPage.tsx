@@ -6,6 +6,7 @@ import { workshopsData } from '../data/workshops';
 import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 import { cityLanding } from '../data/cityLanding';
 import Testimonials from '../components/Testimonials';
+import GoogleReviews from '../components/GoogleReviews';
 import KeyTakeaways from '../components/KeyTakeaways';
 import ContactFooter from '../components/ContactFooter';
 import HeroImageCollage from '../components/HeroImageCollage';
@@ -601,6 +602,7 @@ export default function LocationPage() {
 
         <KeyTakeaways points={(loc as typeof locationData.noida).keyTakeaways} />
         <Testimonials />
+        <GoogleReviews location="city_reviews" />
 
       </main>
       <ContactFooter />
