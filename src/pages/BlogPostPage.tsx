@@ -311,6 +311,10 @@ export default function BlogPostPage() {
                 </div>
               )}
 
+              {section.image && section.imageCaption && (
+                <p className="text-sm text-brand-charcoal/70 italic text-center -mt-3 mb-6">{section.imageCaption}</p>
+              )}
+
               {section.listItems && section.listItems.length > 0 && (
                 section.listType === 'ol' ? (
                   <ol className="list-decimal list-outside ml-5 space-y-2 mb-5">
