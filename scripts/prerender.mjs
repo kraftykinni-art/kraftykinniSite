@@ -12,7 +12,7 @@
  *    /page/ and /page being treated as separate URLs in GSC.
  *  - Updated corporate page title + description for better CTR
  *    ("corporate art workshop" was at position 2.42 with 0 clicks — title fix)
- *  - Regenerates public/sitemap.xml with today's date as lastmod.
+ *  - Regenerates public/sitemap.xml with a per-page lastmod (blog posts use updatedDate/publishDate).
  *
  * Run automatically via `npm run build` → postbuild hook.
  */
@@ -58,7 +58,8 @@ const SITE_NAV_LINKS = `
       <a href="/about">About</a>
     </nav>`;
 
-const SITE_FOOTER_LINKS = `
+function siteFooterLinks(lastMod) {
+  return `
     <footer>
       <p><strong>Contact:</strong> <a href="mailto:kraftykinni@gmail.com">kraftykinni@gmail.com</a> | <a href="tel:+919599622210">+91 9599622210</a></p>
       <p><strong>Service area:</strong> Delhi, Gurgaon, Noida and online pan-India</p>
@@ -86,8 +87,9 @@ const SITE_FOOTER_LINKS = `
         <a href="/privacy-policy">Privacy Policy</a> ·
         <a href="/blog">Blog</a>
       </p>
-      <p>Last updated: <time datetime="${today}">${today}</time></p>
+      <p>Last updated: <time datetime="${lastMod}">${lastMod}</time></p>
     </footer>`;
+}
 
 // ─── Trailing-slash fix script (injected into every pre-rendered page) ────────
 // Runs synchronously before React boots so the URL is clean before any
@@ -195,6 +197,7 @@ function parseBlogPosts() {
         slug: slugMatch[1],
         title: grabField(chunk, 'title'),
         publishDate: grabField(chunk, 'publishDate'),
+        updatedDate: grabField(chunk, 'updatedDate'),
         excerpt: grabField(chunk, 'excerpt'),
         category: grabField(chunk, 'category'),
       };
@@ -203,7 +206,36 @@ function parseBlogPosts() {
     .sort((a, b) => (a.publishDate < b.publishDate ? 1 : -1)); // newest first
 }
 
-const BLOG_POSTS = parseBlogPosts();
+const ALL_BLOG_POSTS = parseBlogPosts();
+// Future-dated posts stay hidden until their publishDate arrives (same rule as
+// the client in src/data/blogPosts.ts). They are dropped from routes, sitemap
+// and RSS below. Rebuild on or after the publish date to release them.
+const BLOG_POSTS = ALL_BLOG_POSTS.filter((p) => p.publishDate <= today);
+const UNPUBLISHED_SLUGS = new Set(ALL_BLOG_POSTS.filter((p) => p.publishDate > today).map((p) => p.slug));
+if (UNPUBLISHED_SLUGS.size) {
+  console.log(`⏳  ${UNPUBLISHED_SLUGS.size} scheduled blog post(s) not yet published: ${[...UNPUBLISHED_SLUGS].join(', ')}\n`);
+}
+
+// ─── Per-page "last modified" dates ──────────────────────────────────────────
+// Blog posts: updatedDate if set, otherwise publishDate (from blogPosts.ts).
+// /blog index: the newest post date. Every other page: PAGE_LASTMOD below.
+// When you materially edit a non-blog page, set its date here. Pages not
+// listed use PAGE_LASTMOD_DEFAULT.
+const PAGE_LASTMOD_DEFAULT = '2026-10-26';
+const PAGE_LASTMOD = {
+  // '/about': '2026-10-26',
+};
+function lastModFor(routePath) {
+  const m = routePath.match(/^\/blog\/(.+)$/);
+  if (m) {
+    const post = BLOG_POSTS.find((x) => x.slug === m[1]);
+    if (post) return post.updatedDate || post.publishDate;
+  }
+  if (routePath === '/blog' && BLOG_POSTS.length) {
+    return BLOG_POSTS.map((x) => x.updatedDate || x.publishDate).sort().pop();
+  }
+  return PAGE_LASTMOD[routePath] || PAGE_LASTMOD_DEFAULT;
+}
 
 // Builds the full linked post list for the /blog index page's noscript
 // content — real titles, excerpts, and links, sourced from BLOG_POSTS above.
@@ -216,7 +248,7 @@ function blogIndexListHtml() {
 
 // ─── Route metadata + visible noscript body content ──────────────────────────
 
-const routes = [
+const allRoutes = [
   // ── Homepage ─────────────────────────────────────────────────────────────
   // Included so the pre-rendered dist/index.html gets a proper <noscript> H1
   // that Bing (and other non-JS crawlers) can read without executing JavaScript.
@@ -1918,6 +1950,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       },
     ],
     bodyContent: `<h1>Corporate Diwali Celebration Ideas for Delhi NCR: 9 Creative Activities Employees Actually Enjoy</h1>
+      <p><strong>Updated 26 October 2026.</strong> Diwali is on Sunday, 8 November, and corporate Diwali workshops need at least 10 days' advance booking. That makes 29 October the last date to book a session that falls on or before Diwali itself.</p>
       <p>Diwali falls on Sunday, 8 November 2026. Beyond décor, sweets and games, hands-on creative activities give employees something to actually participate in — and something they take home. Kraftykinni runs corporate Diwali art workshops for 20–200+ employees, all-beginner-friendly, with materials included, across Delhi, Gurgaon, and Noida, led by Shramita Govil, a Fevicryl Certified Artist.</p>
       <h2>What Makes a Good Corporate Diwali Activity</h2>
       <p>Easy to join with no prior art experience needed; scalable from 20 to 150+ people; time-efficient at 60–120 minutes; inclusive; take-home; office-friendly with minimal mess; and photogenic for internal comms.</p>
@@ -1952,15 +1985,20 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Corporate Diwali Activities in Gurgaon and Noida</h2>
       <p>Gurgaon: Cyber City, Udyog Vihar, Golf Course Road, Sohna Road, DLF Cyber Park — the Lippan Ganesha Canvas Art, Lippan Mirror Tealight Holder and Mini Lippan Art Wall Hanging work well for this MNC-heavy market. Noida: Sectors 62, 63, 135, 142, 16/18 — Diya Painting, Diwali Jar Painting and Madhubani Art Coasters suit Noida's larger, price-sensitive office events.</p>
       <h2>Planning Timeline for Your Office Diwali Workshop</h2>
-      <p>6–8 weeks before: shortlist activity and vendor. 4–6 weeks: confirm participant count and format. 2–3 weeks: lock in materials, branding, logistics. 1 week: confirm attendance and venue setup. Event day: Kraftykinni handles setup and facilitation on-site.</p>
+      <p>6–8 weeks before: shortlist activity and vendor. 4–6 weeks: confirm participant count and format. 2–3 weeks: lock in materials, branding, logistics. 10 days: the last date we can take a booking. 1 week: confirm attendance and venue setup. Event day: Kraftykinni handles setup and facilitation on-site.</p>
+      <h2>Booking Late? Your Last-Minute Diwali Options</h2>
+      <p>Corporate Diwali workshops need at least 10 days' advance booking. With Diwali on Sunday, 8 November, the last date to book a session on or before Diwali is 29 October.</p>
+      <p>If you are close to that cut-off, choose a format that fits a short slot, such as Diya Painting or the Mini Lippan Art Wall Hanging, both 60–75 minutes. If you have already missed it, a celebration date after Diwali can still be booked with 10 days' notice. WhatsApp +91 9599622210 with your date, headcount and location, and we will confirm what is available.</p>
       <h2>Who Else Books a Diwali Workshop</h2>
       <p>Schools run diya painting or Madhubani coasters as a Diwali craft period. Cafés book jar painting or diya painting as a festive pop-up. Colleges book a live workshop stall for their annual Diwali Mela. Event managers book Kraftykinni as the craft-activity vendor for a client's Diwali event.</p>
       <p>Running Diwali for a school, college, café, residential society or home group rather than an office? Read our <a href="/blog/diwali-art-workshop-schools-societies-delhi-ncr">Diwali art workshop guide for schools, societies and home groups</a>.</p>
       <h2>Get a Corporate Diwali Quote</h2>
-      <p>Tell us your employee count, location, and preferred date, and we'll recommend a workshop that fits your team, timing and budget. WhatsApp +91 9599622210 with your details and which of the nine formats you'd like to run.</p>
+      <p>Tell us your employee count, location, and preferred date, and we'll recommend a workshop that fits your team, timing and budget. WhatsApp +91 9599622210 with your details and which of the nine formats you'd like to run. Corporate Diwali bookings need at least 10 days' advance notice.</p>
       <h2>Frequently Asked Questions</h2>
       <h3>When is Diwali in 2026?</h3>
       <p>Diwali (Lakshmi Puja) falls on Sunday, 8 November 2026. Most corporate offices in Delhi NCR book their celebration workshop through October and into early November.</p>
+      <h3>How far in advance do I need to book a corporate Diwali workshop?</h3>
+      <p>At least 10 days in advance. With Diwali on 8 November 2026, the last date to book a session on or before Diwali is 29 October. Sessions after Diwali can be booked with the same 10 days of notice.</p>
       <h3>What are the best Diwali activities for corporate offices in Delhi NCR?</h3>
       <p>The Lippan Ganesha Canvas Art, Diya Painting and the Lippan Mirror Tealight Holder are the top recommendations, combining easy participation with a genuinely useful take-home piece.</p>
       <h3>How much does a corporate Diwali art workshop cost?</h3>
@@ -2027,15 +2065,15 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   {
     path: '/blog/daughters-day-personalised-gifts-workshop-delhi-ncr',
-    title: "Daughter's Day Gift Ideas Delhi NCR 2026 | Kraftykinni",
-    description: 'Daughter\'s Day 2026 falls on 27 September. Handmade, personalised gift ideas: custom canvas art, clay keepsakes and made-to-order nameplates.',
-    h1: "Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR",
+    title: "Daughter's Day Gift Ideas Delhi NCR | Kraftykinni",
+    description: 'Daughter\'s Day gift ideas in Delhi NCR: handmade, personalised custom canvas art, clay keepsakes and made-to-order nameplates.',
+    h1: "Daughter's Day — Personalised Craft Gifts and Keepsakes in Delhi NCR",
     schemas: [
       {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
-        'headline': "Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR",
-        'description': "Daughter's Day 2026 falls on 27 September. Handmade, personalised gift ideas from Kraftykinni — custom canvas art, clay keepsakes, and made-to-order nameplates.",
+        'headline': "Daughter's Day — Personalised Craft Gifts and Keepsakes in Delhi NCR",
+        'description': "Handmade, personalised Daughter's Day gift ideas from Kraftykinni — custom canvas art, clay keepsakes, and made-to-order nameplates.",
         'url': 'https://kraftykinni.in/blog/daughters-day-personalised-gifts-workshop-delhi-ncr',
         'datePublished': '2026-09-24',
         'dateModified': '2026-09-24',
@@ -2044,8 +2082,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
         'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/daughters-day-personalised-gifts-workshop-delhi-ncr' },
       },
     ],
-    bodyContent: `<h1>Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR</h1>
-      <p>India's Daughter's Day falls on the last Sunday of September — Sunday, 27 September 2026. Kraftykinni puts together a few handmade alternatives to flowers or a card, split across two ways of getting one: a guided private workshop session, or a made-to-order custom piece.</p>
+    bodyContent: `<h1>Daughter's Day — Personalised Craft Gifts and Keepsakes in Delhi NCR</h1>
+      <p>India's Daughter's Day falls on the last Sunday of September every year. Kraftykinni puts together a few handmade alternatives to flowers or a card, split across two ways of getting one: a guided private workshop session, or a made-to-order custom piece.</p>
       <h2>A Personalised Canvas Piece — Boho Canvas Art</h2>
       <p>The regular Boho Canvas Art workshop is normally an abstract, earthy-tone painting format, but for a private Daughter's Day booking it can be taken further into a fully personalised portrait piece — a hand-painted character built specifically for the person receiving it. A private session runs 1.5 to 2 hours with no drawing experience needed.</p>
       <h2>A Clay Keepsake — Personalised Photo Charm</h2>
@@ -2055,8 +2093,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Book a Workshop or Order a Custom Piece</h2>
       <p>For the Boho Canvas Art or Clay Art sessions, private bookings in Delhi, Gurgaon, and Noida start at ₹600–800 per person depending on group size, all materials included. For a made-to-order nameplate or monogram wall hanging, message the same number directly with the name/initial and design you have in mind. WhatsApp +91 9599622210 either way.</p>
       <h2>Frequently Asked Questions</h2>
-      <h3>When is Daughter's Day in 2026?</h3>
-      <p>India's Daughter's Day falls on the last Sunday of September — Sunday, 27 September 2026.</p>
+      <h3>When is Daughter's Day?</h3>
+      <p>India's Daughter's Day falls on the last Sunday of September every year.</p>
       <h3>Can the Boho Canvas Art workshop be personalised into a portrait, not just an abstract design?</h3>
       <p>Yes — for private bookings, the format can be adapted into a fully personalised character or portrait piece rather than the usual abstract composition.</p>
       <h3>What is the personalised clay photo charm?</h3>
@@ -2780,7 +2818,206 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>Yes. Kraftykinni runs Block Printing for groups of 20 to 200+ across Delhi, Gurgaon and Noida, and brings blocks, colours, printing pads and fabric items to your venue.</p>
     `,
   },
+
+  // ── Seasonal posts (Children's Day, Christmas, Lohri, Republic Day) ──────
+  {
+    path: '/blog/childrens-day-art-workshop-schools-delhi-ncr',
+    title: "Children's Day Art Workshop Delhi NCR Schools | Kraftykinni",
+    description: "Children's Day (14 November) art workshop ideas for Delhi NCR schools: clay, fridge magnets, tote bags and more. From ₹600/student, materials included.",
+    h1: "Children's Day Art Workshop Ideas for Schools in Delhi NCR",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Children's Day Art Workshop Ideas for Schools in Delhi NCR",
+        'description': "Children's Day (14 November) art workshop ideas for Delhi NCR schools: clay, fridge magnets, tote bags and more. From ₹600/student, materials included.",
+        'url': 'https://kraftykinni.in/blog/childrens-day-art-workshop-schools-delhi-ncr',
+        'datePublished': '2026-10-26',
+        'dateModified': '2026-10-26',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/childrens-day-art-workshop-schools-delhi-ncr' },
+      },
+    ],
+    bodyContent: `<h1>Children's Day Art Workshop Ideas for Schools in Delhi NCR</h1>
+      <p>Children's Day is celebrated on 14 November across India, and in 2026 it falls on a Saturday, so schools planning something around it should settle the date early. Most schools fill the occasion with performances, games and treats. A guided art session adds something every child actually makes and takes home.</p>
+      <p>Kraftykinni runs these sessions at schools across Delhi, Gurgaon and Noida. The facilitator brings every material, sets up, runs the session and clears up afterwards, so the school only needs to provide a space and a time slot.</p>
+      <h2>Why an Art Workshop Works for Children's Day</h2>
+      <p>Children's Day events often turn out to be something children watch or receive. An art workshop reverses that: every student is the maker. Sessions are guided step by step by <a href="/about">Shramita Govil</a>, a Fevicryl Certified Artist, and are designed for beginners, so no child needs prior art experience to finish a piece.</p>
+      <p>Because every student takes their piece home, the day leaves behind something they can show their family, not just a memory of the event.</p>
+      <h2>Workshop Formats That Suit a Children's Day Session</h2>
+      <p>These formats come from the regular Kraftykinni workshop menu. Durations are the ones listed on each workshop page, and all materials are included.</p>
+      <ul><li>Clay Art: a hand-built air-dry clay piece (1.5–2 hours)</li><li>MDF Fridge Magnets: a set of hand-painted magnets (1.5–2 hours)</li><li>Tote Bag Painting: a hand-painted cotton tote (1.5–2 hours)</li><li>Canvas Pouch: a personalised hand-painted pouch (1.5–2 hours)</li><li>Rock Painting: one or more painted stones (1–1.5 hours), the shortest format and the best fit for a shorter slot</li></ul>
+      <h2>Pricing and Group Sizes</h2>
+      <p>School sessions cost ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included, with no extra venue or logistics charge because the facilitator travels to you. Groups run from 20 to 200+ students, and our team can coordinate batch size and timing with your school.</p>
+      <p>See the <a href="/school-art-workshops">school art workshops</a> page for how a school booking works, or the <a href="/workshops/clay-art">Clay Art</a> and <a href="/workshops/tote-bag-painting">Tote Bag Painting</a> pages for details of two popular formats.</p>
+      <h2>How to Book for Children's Day</h2>
+      <p>Kraftykinni recommends a minimum of 7 days' advance notice for all bookings, and 2 to 3 weeks for dates close to a major occasion because of seasonal demand. Booking early gives you the widest choice of dates and formats.</p>
+      <p>WhatsApp <strong>+91 9599622210</strong> with your location (Delhi, Gurgaon or Noida), group size, preferred date and format. We confirm within 24 hours.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What art activity works best for Children's Day in a school?</h3>
+      <p>Clay Art, MDF fridge magnets, tote bag painting and canvas pouches all work well because every student finishes a piece to take home. Rock Painting is the shortest format at 1 to 1.5 hours, which suits a shorter slot.</p>
+      <h3>How much does a Children's Day art workshop cost for a school?</h3>
+      <p>School workshops cost ₹800 per student for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included. The facilitator travels to your school, so there is no extra venue charge.</p>
+      <h3>Do students need any art experience?</h3>
+      <p>No. Every session is designed for beginners and guided step by step by Shramita Govil, a Fevicryl Certified Artist.</p>
+      <h3>How early should a school book a Children's Day workshop?</h3>
+      <p>Kraftykinni needs a minimum of 7 days' notice, and recommends 2 to 3 weeks for dates close to 14 November because of seasonal demand.</p>
+    `,
+  },
+
+  {
+    path: '/blog/christmas-art-workshop-corporate-schools-delhi-ncr',
+    title: "Christmas Art Workshop Delhi NCR | Kraftykinni",
+    description: "Christmas art workshop ideas for Delhi NCR offices and schools: bottle lamps, glass painting, clay and tote bags. From ₹600/person, materials included.",
+    h1: "Christmas Art Workshop Ideas for Offices and Schools in Delhi NCR",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Christmas Art Workshop Ideas for Offices and Schools in Delhi NCR",
+        'description': "Christmas art workshop ideas for Delhi NCR offices and schools: bottle lamps, glass painting, clay and tote bags. From ₹600/person, materials included.",
+        'url': 'https://kraftykinni.in/blog/christmas-art-workshop-corporate-schools-delhi-ncr',
+        'datePublished': '2026-11-30',
+        'dateModified': '2026-11-30',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/christmas-art-workshop-corporate-schools-delhi-ncr' },
+      },
+    ],
+    bodyContent: `<h1>Christmas Art Workshop Ideas for Offices and Schools in Delhi NCR</h1>
+      <p>Christmas on 25 December falls on a Friday in 2026, which puts the build-up in the last weeks of the year, when offices wind down and schools hold their winter celebrations. A guided art workshop turns that moment into a hands-on activity where everyone leaves with a piece they made themselves.</p>
+      <p>Kraftykinni runs these sessions at offices and schools across Delhi, Gurgaon and Noida. The facilitator brings all materials, sets up, runs the session and handles cleanup.</p>
+      <h2>Why an Art Workshop Fits a Year-End Celebration</h2>
+      <p>Year-end events tend to centre on food, music and gifts that people receive. An art workshop asks everyone to make something instead, and it works for mixed groups because no prior art experience is needed. Sessions are led by <a href="/about">Shramita Govil</a>, a Fevicryl Certified Artist, and every participant takes their finished piece home.</p>
+      <p>For offices, that doubles as a team activity and a personal keepsake. For schools, it gives a class a calm, creative period in the middle of a busy celebration week.</p>
+      <h2>Workshop Formats That Suit Christmas</h2>
+      <p>These formats come from the regular Kraftykinni workshop menu. Each can be themed with festive colours and motifs, so mention the look you want when you enquire.</p>
+      <ul><li>Bottle Lamp Art: a hand-painted glass bottle lamp with fairy lights (1.5–2 hours)</li><li>Glass Painting: a hand-painted frame, bottle or panel with translucent designs (1.5–2 hours)</li><li>Clay Art: a hand-built air-dry clay piece (1.5–2 hours)</li><li>Tote Bag Painting: a hand-painted cotton tote (1.5–2 hours)</li><li>MDF Fridge Magnets: a set of hand-painted magnets (1.5–2 hours)</li></ul>
+      <h2>Pricing and Group Sizes</h2>
+      <p>Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included, with no extra venue or logistics charge because the facilitator travels to you. Groups run from 20 to 200+ participants.</p>
+      <p>See the <a href="/corporate-art-workshops">corporate art workshops</a> page for office bookings and the <a href="/school-art-workshops">school art workshops</a> page for schools. You can also read how <a href="/workshops/bottle-lamp-art">Bottle Lamp Art</a> works step by step.</p>
+      <h2>How to Book for Christmas</h2>
+      <p>Kraftykinni recommends a minimum of 7 days' advance notice for all bookings, and 2 to 3 weeks for dates close to Christmas because December calendars fill quickly.</p>
+      <p>WhatsApp <strong>+91 9599622210</strong> with your location (Delhi, Gurgaon or Noida), group size, preferred date and format. We confirm within 24 hours.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What are good Christmas activity ideas for an office in Delhi NCR?</h3>
+      <p>A guided art workshop works well for a year-end office celebration. Bottle Lamp Art, Glass Painting, Clay Art, Tote Bag Painting and MDF fridge magnets all give each person a finished piece to take home.</p>
+      <h3>Can the workshop be themed for Christmas?</h3>
+      <p>Yes. The formats can be given festive colours and motifs. Tell us the look you want when you enquire and we will plan the session around it.</p>
+      <h3>How much does a Christmas art workshop cost?</h3>
+      <p>Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included.</p>
+      <h3>Can Kraftykinni run a Christmas workshop at a school?</h3>
+      <p>Yes. Kraftykinni runs workshops at schools across Delhi, Gurgaon and Noida, with the facilitator bringing all materials and handling setup and cleanup.</p>
+    `,
+  },
+
+  {
+    path: '/blog/lohri-celebration-art-workshop-corporate-delhi-ncr',
+    title: "Lohri Art Workshop for Offices Delhi NCR | Kraftykinni",
+    description: "Lohri celebration ideas for Delhi NCR offices: diya painting, mandala art, block printing and tie & dye. From ₹600/person, materials included.",
+    h1: "Lohri Celebration Ideas: Art Workshops for Offices in Delhi NCR",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Lohri Celebration Ideas: Art Workshops for Offices in Delhi NCR",
+        'description': "Lohri celebration ideas for Delhi NCR offices: diya painting, mandala art, block printing and tie & dye. From ₹600/person, materials included.",
+        'url': 'https://kraftykinni.in/blog/lohri-celebration-art-workshop-corporate-delhi-ncr',
+        'datePublished': '2026-12-18',
+        'dateModified': '2026-12-18',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/lohri-celebration-art-workshop-corporate-delhi-ncr' },
+      },
+    ],
+    bodyContent: `<h1>Lohri Celebration Ideas: Art Workshops for Offices in Delhi NCR</h1>
+      <p>Lohri is celebrated on 13 January, and in 2027 it falls on a Wednesday. It is a harvest festival marked by bonfires, music and shared food, and many offices in Delhi NCR mark it with a team lunch or a small gathering. A guided art workshop adds an activity where everyone takes part rather than only watching or eating.</p>
+      <p>Kraftykinni sets up at your office across Delhi, Gurgaon and Noida, so an indoor session works even when January mornings are cold.</p>
+      <h2>Why an Art Workshop Works for Lohri</h2>
+      <p>Lohri celebrations at work usually centre on food and conversation. A workshop gives teams a shared task, and because every format is designed for beginners, colleagues at every level can join in. Sessions are led by <a href="/about">Shramita Govil</a>, a Fevicryl Certified Artist, and each participant takes their finished piece home.</p>
+      <p>It also works in a short window: formats run from 1.5 to 2 hours, so the session fits into a half-day celebration.</p>
+      <h2>Workshop Formats That Suit Lohri</h2>
+      <p>These formats come from the regular Kraftykinni workshop menu. All materials are included.</p>
+      <ul><li>Diya Painting using the Clay Art technique: hand-painted clay diyas with acrylic colours</li><li>Mandala Art: a colourful symmetric mandala on canvas or paper (1.5–2 hours)</li><li>Block Printing: a block-printed fabric item such as a tote bag or dupatta (1.5–2 hours)</li><li>Tie & Dye: a one-of-a-kind tie-dye fabric item (1.5–2 hours)</li></ul>
+      <h2>Pricing and Group Sizes</h2>
+      <p>Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included, with no extra venue or logistics charge because the facilitator travels to you. Groups run from 20 to 200+ employees.</p>
+      <p>See the <a href="/corporate-art-workshops">corporate art workshops</a> page for how an office booking works, or the <a href="/workshops/mandala-art">Mandala Art</a> and <a href="/workshops/block-printing">Block Printing</a> pages for two popular formats.</p>
+      <h2>How to Book for Lohri</h2>
+      <p>Kraftykinni recommends a minimum of 7 days' advance notice for all bookings, and 2 to 3 weeks for dates close to a festival. Bookings made before the winter break give you the widest choice of dates.</p>
+      <p>WhatsApp <strong>+91 9599622210</strong> with your location (Delhi, Gurgaon or Noida), group size, preferred date and format. We confirm within 24 hours.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What are good Lohri activity ideas for an office in Delhi NCR?</h3>
+      <p>A guided art workshop is a good fit. Diya Painting, Mandala Art, Block Printing and Tie & Dye are all beginner-friendly, and every employee takes home a finished piece.</p>
+      <h3>How long does a Lohri art workshop take?</h3>
+      <p>Most formats run 1.5 to 2 hours, so a session fits into a half-day celebration.</p>
+      <h3>How much does a corporate Lohri workshop cost?</h3>
+      <p>Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included.</p>
+      <h3>Can the workshop be held at our office?</h3>
+      <p>Yes. Kraftykinni travels to your office across Delhi, Gurgaon and Noida and handles setup and cleanup on site.</p>
+    `,
+  },
+
+  {
+    path: '/blog/republic-day-art-workshop-schools-delhi-ncr',
+    title: "Republic Day Art Workshop Delhi NCR Schools | Kraftykinni",
+    description: "Republic Day art workshop ideas for Delhi NCR schools: tricolour bottle art, tote bags, canvas pouches and rock painting. From ₹600/student.",
+    h1: "Republic Day Art Workshop Ideas for Schools in Delhi NCR",
+    schemas: [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        'headline': "Republic Day Art Workshop Ideas for Schools in Delhi NCR",
+        'description': "Republic Day art workshop ideas for Delhi NCR schools: tricolour bottle art, tote bags, canvas pouches and rock painting. From ₹600/student.",
+        'url': 'https://kraftykinni.in/blog/republic-day-art-workshop-schools-delhi-ncr',
+        'datePublished': '2027-01-02',
+        'dateModified': '2027-01-02',
+        'author': { '@type': 'Person', 'name': 'Shramita Govil', 'url': 'https://kraftykinni.in/about' },
+        'publisher': { '@type': 'Organization', 'name': 'Kraftykinni', 'url': 'https://kraftykinni.in', 'logo': { '@type': 'ImageObject', 'url': 'https://cdn.kraftykinni.in/logo.jpeg' } },
+        'mainEntityOfPage': { '@type': 'WebPage', '@id': 'https://kraftykinni.in/blog/republic-day-art-workshop-schools-delhi-ncr' },
+      },
+    ],
+    bodyContent: `<h1>Republic Day Art Workshop Ideas for Schools in Delhi NCR</h1>
+      <p>Republic Day is on 26 January, and in 2027 it falls on a Tuesday. Schools usually mark it with a flag hoisting, songs and speeches. A guided art workshop adds an activity where every student makes something to take home.</p>
+      <p>Kraftykinni runs these sessions at schools across Delhi, Gurgaon and Noida. The facilitator brings all materials, sets up, runs the session and handles cleanup.</p>
+      <h2>Why an Art Workshop Works for Republic Day</h2>
+      <p>Republic Day programmes are often something students watch or perform in. An art workshop lets every student take part by making their own piece. Sessions are guided step by step by <a href="/about">Shramita Govil</a>, a Fevicryl Certified Artist, and are designed for beginners.</p>
+      <p>If you ran a tricolour activity for Independence Day, our <a href="/blog/independence-day-bottle-art-workshop-delhi-ncr">Independence Day bottle art guide</a> shows the formats that carry over to 26 January.</p>
+      <h2>Workshop Formats That Suit Republic Day</h2>
+      <p>These formats come from the regular Kraftykinni workshop menu. Each can be given a tricolour or patriotic theme, so mention the look you want when you enquire.</p>
+      <ul><li>Bottle Art: a hand-painted bottle in tricolour or monument-mural designs, adapted from Bottle Lamp Art</li><li>Tote Bag Painting: a hand-painted cotton tote (1.5–2 hours)</li><li>Canvas Pouch: a personalised hand-painted pouch (1.5–2 hours)</li><li>Rock Painting: one or more painted stones (1–1.5 hours), the shortest format</li></ul>
+      <h2>Pricing and Group Sizes</h2>
+      <p>School sessions cost ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included, with no extra venue or logistics charge because the facilitator travels to you. Groups run from 20 to 200+ students, and our team can coordinate batch size and timing with your school.</p>
+      <p>See the <a href="/school-art-workshops">school art workshops</a> page for how a school booking works, or the <a href="/workshops/bottle-lamp-art">Bottle Lamp Art</a> page for the base format behind our bottle art.</p>
+      <h2>How to Book for Republic Day</h2>
+      <p>Kraftykinni recommends a minimum of 7 days' advance notice for all bookings, and 2 to 3 weeks for dates close to a major occasion because of seasonal demand. Schools reopening after the winter break should book early.</p>
+      <p>WhatsApp <strong>+91 9599622210</strong> with your location (Delhi, Gurgaon or Noida), group size, preferred date and format. We confirm within 24 hours.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>What art activity works best for Republic Day in a school?</h3>
+      <p>Tricolour bottle art, tote bag painting, canvas pouches and rock painting all let every student finish a piece to take home. Rock Painting is the shortest format at 1 to 1.5 hours.</p>
+      <h3>How much does a Republic Day art workshop cost for a school?</h3>
+      <p>School workshops cost ₹800 per student for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included.</p>
+      <h3>Do students need any art experience?</h3>
+      <p>No. Every session is designed for beginners and guided step by step by Shramita Govil, a Fevicryl Certified Artist.</p>
+      <h3>How early should a school book a Republic Day workshop?</h3>
+      <p>Kraftykinni needs a minimum of 7 days' notice, and recommends 2 to 3 weeks for dates close to 26 January because of seasonal demand.</p>
+    `,
+  },
 ];
+
+// Drop routes for blog posts that are not published yet, and make every blog
+// BlogPosting schema use the post's real dateModified (updatedDate/publishDate
+// from blogPosts.ts) instead of a hand-typed date.
+const routes = allRoutes
+  .filter((r) => !(r.path.startsWith('/blog/') && UNPUBLISHED_SLUGS.has(r.path.slice('/blog/'.length))))
+  .map((r) => {
+    if (r.path.startsWith('/blog/') && Array.isArray(r.schemas)) {
+      for (const s of r.schemas) {
+        if (s['@type'] === 'BlogPosting') s['dateModified'] = lastModFor(r.path);
+      }
+    }
+    return r;
+  });
 
 // ─── Markdown twins (Markdown Negotiation for AI agents) ────────────────────
 // Every prerendered route also gets a flat-file Markdown twin at the same
@@ -2836,7 +3073,7 @@ function buildMarkdownDoc(route) {
 title: ${route.title}
 description: ${route.description}
 canonical: ${canonical}
-last_updated: ${today}
+last_updated: ${lastModFor(route.path)}
 ---
 
 ${bodyMd}
@@ -3022,7 +3259,7 @@ function injectMeta(html, route) {
     name: boundedTitle,
     description: boundedDescription,
     url: canonical,
-    dateModified: today,
+    dateModified: lastModFor(route.path),
     inLanguage: 'en-IN',
     isPartOf: { '@type': 'WebSite', name: 'Kraftykinni', url: 'https://kraftykinni.in/' },
   });
@@ -3092,7 +3329,7 @@ function injectMeta(html, route) {
       headline: boundedTitle,
       description: boundedDescription,
       url: canonical,
-      dateModified: today,
+      dateModified: lastModFor(route.path),
       inLanguage: 'en-IN',
       author: { '@type': 'Person', name: 'Shramita Govil', url: 'https://kraftykinni.in/about' },
       publisher: {
@@ -3170,7 +3407,7 @@ function injectMeta(html, route) {
       <main>
         ${bodyContent || `<h1>${h1}</h1><p>Please enable JavaScript to view this page.</p>`}
       </main>
-      ${SITE_FOOTER_LINKS}
+      ${siteFooterLinks(lastModFor(route.path))}
     </div>`;
 
   // Remove the original homepage shell from the base template and insert the
@@ -3223,6 +3460,10 @@ for (const route of routes) {
   console.log(`✅  ${route.path === '/' ? '/' : route.path + '.html'}  (+ .md twin)`);
   created++;
 }
+
+// Route count for scripts/validate-prerender.mjs, so adding or scheduling blog
+// posts never needs a hand-edited number there.
+fs.writeFileSync(path.join(distDir, 'prerender-manifest.json'), JSON.stringify({ routeCount: created }) + '\n', 'utf-8');
 
 console.log(`\n🎉  Pre-rendered ${created} routes.`);
 console.log('    Each page has:\n' +
@@ -3302,15 +3543,24 @@ const sitemapEntries = [
   { loc: '/blog/kids-birthday-party-art-workshop-delhi-noida', priority: '0.8', changefreq: 'monthly' },
   { loc: '/blog/tote-bag-painting-workshop-delhi-ncr-guide', priority: '0.8', changefreq: 'monthly' },
   { loc: '/blog/block-printing-workshop-delhi-ncr-guide', priority: '0.8', changefreq: 'monthly' },
+  { loc: '/blog/childrens-day-art-workshop-schools-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/christmas-art-workshop-corporate-schools-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/lohri-celebration-art-workshop-corporate-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
+  { loc: '/blog/republic-day-art-workshop-schools-delhi-ncr', priority: '0.8', changefreq: 'yearly' },
 ];
+
+// Scheduled (future-dated) posts are left out until their publishDate has passed.
+const publishedSitemapEntries = sitemapEntries.filter(
+  ({ loc }) => !(loc.startsWith('/blog/') && UNPUBLISHED_SLUGS.has(loc.slice('/blog/'.length))),
+);
 
 const base = 'https://kraftykinni.in';
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${sitemapEntries.map(({ loc, priority, changefreq }) => `  <url>
+${publishedSitemapEntries.map(({ loc, priority, changefreq }) => `  <url>
     <loc>${base}${loc}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastModFor(loc)}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`).join('\n')}
@@ -3319,7 +3569,7 @@ ${sitemapEntries.map(({ loc, priority, changefreq }) => `  <url>
 
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemapXml, 'utf-8');
 fs.writeFileSync(path.join(distDir,   'sitemap.xml'), sitemapXml, 'utf-8');
-console.log(`🗺️   Sitemap regenerated with lastmod: ${today}\n`);
+console.log(`🗺️   Sitemap regenerated (${publishedSitemapEntries.length} URLs, per-page lastmod)\n`);
 
 // ─── 3. Generate rss.xml from BLOG_POSTS (parsed near the top of this file,
 // and already reused by the /blog index page above) ───────────────────────────

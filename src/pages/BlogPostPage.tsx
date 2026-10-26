@@ -155,7 +155,7 @@ export default function BlogPostPage() {
     headline: post.title,
     description: post.metaDescription,
     datePublished: post.publishDate,
-    dateModified: post.publishDate,
+    dateModified: post.updatedDate ?? post.publishDate,
     author: {
       '@type': 'Person',
       name: 'Shramita Govil',
@@ -213,6 +213,7 @@ export default function BlogPostPage() {
         <meta property="og:image" content="https://cdn.kraftykinni.in/logo.jpeg" />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:published_time" content={post.publishDate} />
+        <meta property="article:modified_time" content={post.updatedDate ?? post.publishDate} />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={post.metaTitle} />
         <meta name="twitter:description" content={post.metaDescription} />
@@ -252,6 +253,11 @@ export default function BlogPostPage() {
                 <Calendar size={12} />
                 {formatDate(post.publishDate)}
               </span>
+              {post.updatedDate && post.updatedDate !== post.publishDate && (
+                <span className="text-xs text-gray-400">
+                  Updated {formatDate(post.updatedDate)}
+                </span>
+              )}
               <span className="flex items-center gap-1.5 text-xs text-gray-400">
                 <Clock size={12} />
                 {mins} min read

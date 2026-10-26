@@ -9,6 +9,7 @@ export interface BlogPost {
   metaTitle: string;
   metaDescription: string;
   publishDate: string;
+  updatedDate?: string;  // ISO date of the last real content update — drives dateModified + sitemap lastmod
   category: 'Corporate' | 'School & College' | 'Private Events' | 'Workshop Guides';
   excerpt: string;
   keywords: string[];
@@ -28,7 +29,7 @@ export interface BlogSection {
 
 // ─── Posts ──────────────────────────────────────────────────────────────────
 
-export const blogPosts: BlogPost[] = [
+const allBlogPosts: BlogPost[] = [
   {
     slug: 'best-corporate-team-building-activities-gurgaon-2026',
     title: 'Best Corporate Team Building Activities in Gurgaon 2026',
@@ -36,6 +37,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Top 10 team building activities in Gurgaon for 2026, from art workshops to escape rooms. Honest picks with real team outcomes. Workshops from ₹600/person.',
     publishDate: '2026-04-27',
+    updatedDate: '2026-10-13',
     category: 'Corporate',
     excerpt:
       "Gurgaon's corporate event scene is full of options — escape rooms, bowling, and go-karting have their place. But after running 50+ team workshops across Cyber City and Udyog Vihar, we've seen which activities actually produce conversation, connection, and something teams talk about months later.",
@@ -288,6 +290,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Learn how to make Lippan Art: materials, 5 steps and what a guided Lippan Art workshop in Delhi NCR involves. From ₹600/person, all materials included.',
     publishDate: '2026-05-01',
+    updatedDate: '2026-10-13',
     category: 'Workshop Guides',
     excerpt:
       "Lippan Art is a centuries-old craft from the Kutch region of Gujarat, and it produces some of the most striking wall pieces you'll see in Indian craft. Clay, mirrors, and geometric patterns — here's how to make it, step by step, before your first session.",
@@ -1478,6 +1481,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       'Planning a corporate Diwali in Delhi, Gurgaon or Noida? 9 hands-on Diwali art activities, pricing and group-size guidance for 20-200+ employees.',
     publishDate: '2026-09-12',
+    updatedDate: '2026-10-26',
     category: 'Corporate' as const,
     excerpt:
       "Diwali falls on Sunday, 8 November 2026. Beyond décor, sweets and games, hands-on creative activities give employees something to actually participate in — and something they take home. Here are 9 corporate Diwali workshop ideas Kraftykinni runs across Delhi, Gurgaon and Noida, from a premium Lippan Ganesha canvas to a budget-friendly diya set.",
@@ -1494,7 +1498,7 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        body: `Planning a Diwali celebration for your office in Delhi, Gurgaon or Noida? Beyond décor, sweets and games, hands-on creative activities give employees something to participate in — and something they can take home.\n\nKraftykinni runs corporate Diwali art workshops for **20–200+ employees**, all beginner-friendly, with materials included and no prior art experience required. This guide covers what makes a Diwali activity actually work for an office, nine formats we run, how to pick between them, and what to expect on the day.`,
+        body: `**Updated 26 October 2026.** Diwali is on Sunday, 8 November, and corporate Diwali workshops need at least 10 days' advance booking. That makes 29 October the last date to book a session that falls on or before Diwali itself.\n\nPlanning a Diwali celebration for your office in Delhi, Gurgaon or Noida? Beyond décor, sweets and games, hands-on creative activities give employees something to participate in — and something they can take home.\n\nKraftykinni runs corporate Diwali art workshops for **20–200+ employees**, all beginner-friendly, with materials included and no prior art experience required. This guide covers what makes a Diwali activity actually work for an office, nine formats we run, how to pick between them, and what to expect on the day.`,
       },
       {
         heading: 'What Makes a Good Corporate Diwali Activity',
@@ -1600,14 +1604,19 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Planning Timeline for Your Office Diwali Workshop',
-        body: `Diwali falls on Sunday, 8 November 2026, so most offices run their celebration in the weeks leading up to it.`,
+        body: `Diwali falls on Sunday, 8 November 2026, so most offices run their celebration in the weeks leading up to it. Kraftykinni needs at least 10 days' advance booking for corporate Diwali workshops, so plan backwards from your event date.`,
         listItems: [
           '6–8 weeks before — shortlist your activity and vendor',
           '4–6 weeks before — confirm participant count and finalise the artwork format',
           '2–3 weeks before — lock in materials, any branding, and logistics',
+          '10 days before — the last date we can take a booking',
           '1 week before — confirm final attendance and venue setup',
           'Event day — Kraftykinni handles workshop setup and facilitation on-site',
         ],
+      },
+      {
+        heading: 'Booking Late? Your Last-Minute Diwali Options',
+        body: `Corporate Diwali workshops need at least 10 days' advance booking. With Diwali on Sunday, 8 November, the last date to book a session on or before Diwali is 29 October.\n\nIf you are close to that cut-off, choose a format that fits a short slot, such as Diya Painting or the Mini Lippan Art Wall Hanging, both 60–75 minutes. If you have already missed it, a celebration date after Diwali can still be booked with 10 days' notice. WhatsApp **+91 9599622210** with your date, headcount and location, and we will confirm what is available.`,
       },
       {
         heading: 'Who Else Books a Diwali Workshop',
@@ -1615,13 +1624,17 @@ export const blogPosts: BlogPost[] = [
       },
       {
         heading: 'Get a Corporate Diwali Quote',
-        body: `Planning your office Diwali celebration? Tell us your employee count, location and preferred date, and we'll recommend a workshop that fits your team, timing and budget. Sessions run 60 to 120 minutes depending on the format, with pricing starting at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for groups of 20–50 — all materials included.\n\nTo check availability, WhatsApp **+91 9599622210** with your employee count, location (Delhi, Gurgaon or Noida), preferred date, and which of the nine formats you'd like to run.`,
+        body: `Planning your office Diwali celebration? Tell us your employee count, location and preferred date, and we'll recommend a workshop that fits your team, timing and budget. Sessions run 60 to 120 minutes depending on the format, with pricing starting at ₹600 per person for groups of 100+, ₹700 for 50–100, and ₹800 for groups of 20–50 — all materials included.\n\nTo check availability, WhatsApp **+91 9599622210** with your employee count, location (Delhi, Gurgaon or Noida), preferred date, and which of the nine formats you'd like to run. Corporate Diwali bookings need at least 10 days' advance notice.`,
       },
     ],
     faq: [
       {
         q: 'When is Diwali in 2026?',
         a: 'Diwali (Lakshmi Puja) falls on Sunday, 8 November 2026. Most corporate offices in Delhi NCR book their celebration workshop through October and into early November, ahead of the date.',
+      },
+      {
+        q: 'How far in advance do I need to book a corporate Diwali workshop?',
+        a: 'At least 10 days in advance. With Diwali on 8 November 2026, the last date to book a session on or before Diwali is 29 October. Sessions after Diwali can be booked with the same 10 days of notice.',
       },
       {
         q: 'What are the best Diwali activities for corporate offices in Delhi NCR?',
@@ -1730,14 +1743,15 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'daughters-day-personalised-gifts-workshop-delhi-ncr',
-    title: "Daughter's Day 2026 — Personalised Craft Gifts and Keepsakes in Delhi NCR",
-    metaTitle: 'Daughter\'s Day Gift Ideas Delhi NCR 2026 | Kraftykinni',
+    title: "Daughter's Day — Personalised Craft Gifts and Keepsakes in Delhi NCR",
+    metaTitle: 'Daughter\'s Day Gift Ideas Delhi NCR | Kraftykinni',
     metaDescription:
-      'Daughter\'s Day 2026 falls on 27 September. Handmade, personalised gift ideas: custom canvas art, clay keepsakes and made-to-order nameplates.',
+      'Daughter\'s Day gift ideas in Delhi NCR: handmade, personalised custom canvas art, clay keepsakes and made-to-order nameplates.',
     publishDate: '2026-09-24',
+    updatedDate: '2026-10-26',
     category: 'Private Events' as const,
     excerpt:
-      "Daughter's Day falls on Sunday, 27 September 2026. Kraftykinni puts together a few different ways to mark it — a personalised canvas piece, a hand-sculpted clay keepsake, and made-to-order nameplates and monogram wall hangings — for anyone who'd rather give something made than bought.",
+      "Daughter's Day falls on the last Sunday of September every year. Kraftykinni puts together a few different ways to mark it — a personalised canvas piece, a hand-sculpted clay keepsake, and made-to-order nameplates and monogram wall hangings — for anyone who'd rather give something made than bought.",
     keywords: [
       "daughter's day gift ideas delhi",
       'personalised gifts for daughter delhi ncr',
@@ -1748,7 +1762,7 @@ export const blogPosts: BlogPost[] = [
     ],
     sections: [
       {
-        body: `India's Daughter's Day falls on the last Sunday of September — Sunday, 27 September 2026 this year. It's a quieter occasion than Mother's Day or Father's Day, and gifting for it tends to default to flowers or a card. Kraftykinni puts together a few handmade alternatives instead, split across two different ways of getting one: a guided private workshop session, or a made-to-order custom piece.`,
+        body: `India's Daughter's Day falls on the last Sunday of September every year. It's a quieter occasion than Mother's Day or Father's Day, and gifting for it tends to default to flowers or a card. Kraftykinni puts together a few handmade alternatives instead, split across two different ways of getting one: a guided private workshop session, or a made-to-order custom piece.`,
       },
       {
         heading: 'A Personalised Canvas Piece — Boho Canvas Art',
@@ -1781,8 +1795,8 @@ export const blogPosts: BlogPost[] = [
     ],
     faq: [
       {
-        q: "When is Daughter's Day in 2026?",
-        a: "India's Daughter's Day falls on the last Sunday of September — Sunday, 27 September 2026.",
+        q: "When is Daughter's Day?",
+        a: "India's Daughter's Day falls on the last Sunday of September every year.",
       },
       {
         q: 'Can the Boho Canvas Art workshop be personalised into a portrait, not just an abstract design?',
@@ -2972,4 +2986,267 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'childrens-day-art-workshop-schools-delhi-ncr',
+    title: "Children's Day Art Workshop Ideas for Schools in Delhi NCR",
+    metaTitle: "Children's Day Art Workshop Delhi NCR Schools | Kraftykinni",
+    metaDescription:
+      "Children's Day (14 November) art workshop ideas for Delhi NCR schools: clay, fridge magnets, tote bags and more. From ₹600/student, materials included.",
+    publishDate: '2026-10-26',
+    category: 'School & College' as const,
+    excerpt:
+      "Children's Day on 14 November is usually a day of performances, games and treats. A guided art workshop gives every student something to make and take home, and the school only needs to provide space and a time slot.",
+    keywords: [
+      "children's day activity ideas for schools Delhi NCR",
+      "children's day art workshop Delhi",
+      "14 november school activity Gurgaon Noida",
+      "art workshop for school students Delhi NCR",
+      "children's day craft ideas for school",
+    ],
+    sections: [
+      {
+        body: `Children's Day is celebrated on 14 November across India, and in 2026 it falls on a Saturday, so schools planning something around it should settle the date early. Most schools fill the occasion with performances, games and treats. A guided art session adds something every child actually makes and takes home.\n\nKraftykinni runs these sessions at schools across Delhi, Gurgaon and Noida. The facilitator brings every material, sets up, runs the session and clears up afterwards, so the school only needs to provide a space and a time slot.`,
+      },
+      {
+        heading: "Why an Art Workshop Works for Children's Day",
+        body: `Children's Day events often turn out to be something children watch or receive. An art workshop reverses that: every student is the maker. Sessions are guided step by step by [Shramita Govil](/about), a Fevicryl Certified Artist, and are designed for beginners, so no child needs prior art experience to finish a piece.\n\nBecause every student takes their piece home, the day leaves behind something they can show their family, not just a memory of the event.`,
+      },
+      {
+        heading: "Workshop Formats That Suit a Children's Day Session",
+        body: `These formats come from the regular Kraftykinni workshop menu. Durations are the ones listed on each workshop page, and all materials are included.`,
+        listItems: [
+          "Clay Art: a hand-built air-dry clay piece (1.5–2 hours)",
+          "MDF Fridge Magnets: a set of hand-painted magnets (1.5–2 hours)",
+          "Tote Bag Painting: a hand-painted cotton tote (1.5–2 hours)",
+          "Canvas Pouch: a personalised hand-painted pouch (1.5–2 hours)",
+          "Rock Painting: one or more painted stones (1–1.5 hours), the shortest format and the best fit for a shorter slot",
+        ],
+        listType: 'ul',
+      },
+      {
+        heading: "Pricing and Group Sizes",
+        body: `School sessions cost ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included, with no extra venue or logistics charge because the facilitator travels to you. Groups run from 20 to 200+ students, and our team can coordinate batch size and timing with your school.\n\nSee the [school art workshops](/school-art-workshops) page for how a school booking works, or the [Clay Art](/workshops/clay-art) and [Tote Bag Painting](/workshops/tote-bag-painting) pages for details of two popular formats.`,
+      },
+      {
+        heading: "How to Book for Children's Day",
+        body: `Kraftykinni recommends a minimum of 7 days' advance notice for all bookings, and 2 to 3 weeks for dates close to a major occasion because of seasonal demand. Booking early gives you the widest choice of dates and formats.\n\nWhatsApp **+91 9599622210** with your location (Delhi, Gurgaon or Noida), group size, preferred date and format. We confirm within 24 hours.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What art activity works best for Children's Day in a school?",
+        a: "Clay Art, MDF fridge magnets, tote bag painting and canvas pouches all work well because every student finishes a piece to take home. Rock Painting is the shortest format at 1 to 1.5 hours, which suits a shorter slot.",
+      },
+      {
+        q: "How much does a Children's Day art workshop cost for a school?",
+        a: "School workshops cost ₹800 per student for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included. The facilitator travels to your school, so there is no extra venue charge.",
+      },
+      {
+        q: "Do students need any art experience?",
+        a: "No. Every session is designed for beginners and guided step by step by Shramita Govil, a Fevicryl Certified Artist.",
+      },
+      {
+        q: "How early should a school book a Children's Day workshop?",
+        a: "Kraftykinni needs a minimum of 7 days' notice, and recommends 2 to 3 weeks for dates close to 14 November because of seasonal demand.",
+      },
+    ],
+  },
+  {
+    slug: 'christmas-art-workshop-corporate-schools-delhi-ncr',
+    title: "Christmas Art Workshop Ideas for Offices and Schools in Delhi NCR",
+    metaTitle: "Christmas Art Workshop Delhi NCR | Kraftykinni",
+    metaDescription:
+      "Christmas art workshop ideas for Delhi NCR offices and schools: bottle lamps, glass painting, clay and tote bags. From ₹600/person, materials included.",
+    publishDate: '2026-11-30',
+    category: 'Corporate' as const,
+    excerpt:
+      "Christmas on 25 December is a natural moment for a year-end team session or a school celebration. A guided art workshop gives everyone a festive piece to take home, with all materials and setup handled by Kraftykinni.",
+    keywords: [
+      "christmas activity ideas for office Delhi NCR",
+      "christmas art workshop Gurgaon",
+      "christmas workshop for schools Delhi",
+      "corporate christmas celebration ideas Noida",
+      "year end team activity Delhi NCR",
+    ],
+    sections: [
+      {
+        body: `Christmas on 25 December falls on a Friday in 2026, which puts the build-up in the last weeks of the year, when offices wind down and schools hold their winter celebrations. A guided art workshop turns that moment into a hands-on activity where everyone leaves with a piece they made themselves.\n\nKraftykinni runs these sessions at offices and schools across Delhi, Gurgaon and Noida. The facilitator brings all materials, sets up, runs the session and handles cleanup.`,
+      },
+      {
+        heading: "Why an Art Workshop Fits a Year-End Celebration",
+        body: `Year-end events tend to centre on food, music and gifts that people receive. An art workshop asks everyone to make something instead, and it works for mixed groups because no prior art experience is needed. Sessions are led by [Shramita Govil](/about), a Fevicryl Certified Artist, and every participant takes their finished piece home.\n\nFor offices, that doubles as a team activity and a personal keepsake. For schools, it gives a class a calm, creative period in the middle of a busy celebration week.`,
+      },
+      {
+        heading: "Workshop Formats That Suit Christmas",
+        body: `These formats come from the regular Kraftykinni workshop menu. Each can be themed with festive colours and motifs, so mention the look you want when you enquire.`,
+        listItems: [
+          "Bottle Lamp Art: a hand-painted glass bottle lamp with fairy lights (1.5–2 hours)",
+          "Glass Painting: a hand-painted frame, bottle or panel with translucent designs (1.5–2 hours)",
+          "Clay Art: a hand-built air-dry clay piece (1.5–2 hours)",
+          "Tote Bag Painting: a hand-painted cotton tote (1.5–2 hours)",
+          "MDF Fridge Magnets: a set of hand-painted magnets (1.5–2 hours)",
+        ],
+        listType: 'ul',
+      },
+      {
+        heading: "Pricing and Group Sizes",
+        body: `Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included, with no extra venue or logistics charge because the facilitator travels to you. Groups run from 20 to 200+ participants.\n\nSee the [corporate art workshops](/corporate-art-workshops) page for office bookings and the [school art workshops](/school-art-workshops) page for schools. You can also read how [Bottle Lamp Art](/workshops/bottle-lamp-art) works step by step.`,
+      },
+      {
+        heading: "How to Book for Christmas",
+        body: `Kraftykinni recommends a minimum of 7 days' advance notice for all bookings, and 2 to 3 weeks for dates close to Christmas because December calendars fill quickly.\n\nWhatsApp **+91 9599622210** with your location (Delhi, Gurgaon or Noida), group size, preferred date and format. We confirm within 24 hours.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What are good Christmas activity ideas for an office in Delhi NCR?",
+        a: "A guided art workshop works well for a year-end office celebration. Bottle Lamp Art, Glass Painting, Clay Art, Tote Bag Painting and MDF fridge magnets all give each person a finished piece to take home.",
+      },
+      {
+        q: "Can the workshop be themed for Christmas?",
+        a: "Yes. The formats can be given festive colours and motifs. Tell us the look you want when you enquire and we will plan the session around it.",
+      },
+      {
+        q: "How much does a Christmas art workshop cost?",
+        a: "Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included.",
+      },
+      {
+        q: "Can Kraftykinni run a Christmas workshop at a school?",
+        a: "Yes. Kraftykinni runs workshops at schools across Delhi, Gurgaon and Noida, with the facilitator bringing all materials and handling setup and cleanup.",
+      },
+    ],
+  },
+  {
+    slug: 'lohri-celebration-art-workshop-corporate-delhi-ncr',
+    title: "Lohri Celebration Ideas: Art Workshops for Offices in Delhi NCR",
+    metaTitle: "Lohri Art Workshop for Offices Delhi NCR | Kraftykinni",
+    metaDescription:
+      "Lohri celebration ideas for Delhi NCR offices: diya painting, mandala art, block printing and tie & dye. From ₹600/person, materials included.",
+    publishDate: '2026-12-18',
+    category: 'Corporate' as const,
+    excerpt:
+      "Lohri on 13 January is a harvest festival of bonfires, music and shared food. A guided art workshop adds a hands-on activity to an office celebration, with every employee taking home a piece they made.",
+    keywords: [
+      "lohri celebration ideas for office Delhi NCR",
+      "lohri activity ideas Gurgaon",
+      "lohri art workshop corporate",
+      "lohri team activity Noida",
+      "january office celebration ideas Delhi NCR",
+    ],
+    sections: [
+      {
+        body: `Lohri is celebrated on 13 January, and in 2027 it falls on a Wednesday. It is a harvest festival marked by bonfires, music and shared food, and many offices in Delhi NCR mark it with a team lunch or a small gathering. A guided art workshop adds an activity where everyone takes part rather than only watching or eating.\n\nKraftykinni sets up at your office across Delhi, Gurgaon and Noida, so an indoor session works even when January mornings are cold.`,
+      },
+      {
+        heading: "Why an Art Workshop Works for Lohri",
+        body: `Lohri celebrations at work usually centre on food and conversation. A workshop gives teams a shared task, and because every format is designed for beginners, colleagues at every level can join in. Sessions are led by [Shramita Govil](/about), a Fevicryl Certified Artist, and each participant takes their finished piece home.\n\nIt also works in a short window: formats run from 1.5 to 2 hours, so the session fits into a half-day celebration.`,
+      },
+      {
+        heading: "Workshop Formats That Suit Lohri",
+        body: `These formats come from the regular Kraftykinni workshop menu. All materials are included.`,
+        listItems: [
+          "Diya Painting using the Clay Art technique: hand-painted clay diyas with acrylic colours",
+          "Mandala Art: a colourful symmetric mandala on canvas or paper (1.5–2 hours)",
+          "Block Printing: a block-printed fabric item such as a tote bag or dupatta (1.5–2 hours)",
+          "Tie & Dye: a one-of-a-kind tie-dye fabric item (1.5–2 hours)",
+        ],
+        listType: 'ul',
+      },
+      {
+        heading: "Pricing and Group Sizes",
+        body: `Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included, with no extra venue or logistics charge because the facilitator travels to you. Groups run from 20 to 200+ employees.\n\nSee the [corporate art workshops](/corporate-art-workshops) page for how an office booking works, or the [Mandala Art](/workshops/mandala-art) and [Block Printing](/workshops/block-printing) pages for two popular formats.`,
+      },
+      {
+        heading: "How to Book for Lohri",
+        body: `Kraftykinni recommends a minimum of 7 days' advance notice for all bookings, and 2 to 3 weeks for dates close to a festival. Bookings made before the winter break give you the widest choice of dates.\n\nWhatsApp **+91 9599622210** with your location (Delhi, Gurgaon or Noida), group size, preferred date and format. We confirm within 24 hours.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What are good Lohri activity ideas for an office in Delhi NCR?",
+        a: "A guided art workshop is a good fit. Diya Painting, Mandala Art, Block Printing and Tie & Dye are all beginner-friendly, and every employee takes home a finished piece.",
+      },
+      {
+        q: "How long does a Lohri art workshop take?",
+        a: "Most formats run 1.5 to 2 hours, so a session fits into a half-day celebration.",
+      },
+      {
+        q: "How much does a corporate Lohri workshop cost?",
+        a: "Pricing is ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included.",
+      },
+      {
+        q: "Can the workshop be held at our office?",
+        a: "Yes. Kraftykinni travels to your office across Delhi, Gurgaon and Noida and handles setup and cleanup on site.",
+      },
+    ],
+  },
+  {
+    slug: 'republic-day-art-workshop-schools-delhi-ncr',
+    title: "Republic Day Art Workshop Ideas for Schools in Delhi NCR",
+    metaTitle: "Republic Day Art Workshop Delhi NCR Schools | Kraftykinni",
+    metaDescription:
+      "Republic Day art workshop ideas for Delhi NCR schools: tricolour bottle art, tote bags, canvas pouches and rock painting. From ₹600/student.",
+    publishDate: '2027-01-02',
+    category: 'School & College' as const,
+    excerpt:
+      "Republic Day on 26 January is usually marked with a parade, songs and speeches. A guided art workshop gives students a tricolour piece they make and keep, and Kraftykinni handles all materials and setup.",
+    keywords: [
+      "republic day activity ideas for schools Delhi NCR",
+      "republic day art workshop Delhi",
+      "26 january craft activity school Gurgaon",
+      "tricolour craft workshop Noida",
+      "republic day craft ideas for school",
+    ],
+    sections: [
+      {
+        body: `Republic Day is on 26 January, and in 2027 it falls on a Tuesday. Schools usually mark it with a flag hoisting, songs and speeches. A guided art workshop adds an activity where every student makes something to take home.\n\nKraftykinni runs these sessions at schools across Delhi, Gurgaon and Noida. The facilitator brings all materials, sets up, runs the session and handles cleanup.`,
+      },
+      {
+        heading: "Why an Art Workshop Works for Republic Day",
+        body: `Republic Day programmes are often something students watch or perform in. An art workshop lets every student take part by making their own piece. Sessions are guided step by step by [Shramita Govil](/about), a Fevicryl Certified Artist, and are designed for beginners.\n\nIf you ran a tricolour activity for Independence Day, our [Independence Day bottle art guide](/blog/independence-day-bottle-art-workshop-delhi-ncr) shows the formats that carry over to 26 January.`,
+      },
+      {
+        heading: "Workshop Formats That Suit Republic Day",
+        body: `These formats come from the regular Kraftykinni workshop menu. Each can be given a tricolour or patriotic theme, so mention the look you want when you enquire.`,
+        listItems: [
+          "Bottle Art: a hand-painted bottle in tricolour or monument-mural designs, adapted from Bottle Lamp Art",
+          "Tote Bag Painting: a hand-painted cotton tote (1.5–2 hours)",
+          "Canvas Pouch: a personalised hand-painted pouch (1.5–2 hours)",
+          "Rock Painting: one or more painted stones (1–1.5 hours), the shortest format",
+        ],
+        listType: 'ul',
+      },
+      {
+        heading: "Pricing and Group Sizes",
+        body: `School sessions cost ₹800 per person for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included, with no extra venue or logistics charge because the facilitator travels to you. Groups run from 20 to 200+ students, and our team can coordinate batch size and timing with your school.\n\nSee the [school art workshops](/school-art-workshops) page for how a school booking works, or the [Bottle Lamp Art](/workshops/bottle-lamp-art) page for the base format behind our bottle art.`,
+      },
+      {
+        heading: "How to Book for Republic Day",
+        body: `Kraftykinni recommends a minimum of 7 days' advance notice for all bookings, and 2 to 3 weeks for dates close to a major occasion because of seasonal demand. Schools reopening after the winter break should book early.\n\nWhatsApp **+91 9599622210** with your location (Delhi, Gurgaon or Noida), group size, preferred date and format. We confirm within 24 hours.`,
+      },
+    ],
+    faq: [
+      {
+        q: "What art activity works best for Republic Day in a school?",
+        a: "Tricolour bottle art, tote bag painting, canvas pouches and rock painting all let every student finish a piece to take home. Rock Painting is the shortest format at 1 to 1.5 hours.",
+      },
+      {
+        q: "How much does a Republic Day art workshop cost for a school?",
+        a: "School workshops cost ₹800 per student for groups of 20–50, ₹700 for 50–100 and ₹600 for 100+, all materials included.",
+      },
+      {
+        q: "Do students need any art experience?",
+        a: "No. Every session is designed for beginners and guided step by step by Shramita Govil, a Fevicryl Certified Artist.",
+      },
+      {
+        q: "How early should a school book a Republic Day workshop?",
+        a: "Kraftykinni needs a minimum of 7 days' notice, and recommends 2 to 3 weeks for dates close to 26 January because of seasonal demand.",
+      },
+    ],
+  },
 ];
+
+// Posts dated in the future stay hidden until their publishDate arrives.
+// scripts/prerender.mjs applies the same rule to static pages, sitemap and RSS.
+const todayISO = new Date().toISOString().slice(0, 10);
+export const blogPosts: BlogPost[] = allBlogPosts.filter((p) => p.publishDate <= todayISO);

@@ -4,7 +4,12 @@ import { fileURLToPath } from 'url';
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(scriptDir, '..', 'dist');
-const expectedRouteCount = 67;
+// Written by scripts/prerender.mjs: how many routes it generated this build
+// (scheduled, not-yet-published blog posts are excluded).
+const manifestPath = path.join(distDir, 'prerender-manifest.json');
+const expectedRouteCount = fs.existsSync(manifestPath)
+  ? JSON.parse(fs.readFileSync(manifestPath, 'utf8')).routeCount
+  : null;
 const representativeRoutes = [
   ['index.html', 'Kraftykinni Art Workshops in Delhi NCR'],
   ['about.html', 'About Kraftykinni'],
@@ -36,7 +41,9 @@ function collectHtmlFiles(directory) {
 collectHtmlFiles(distDir);
 
 const routeFiles = htmlFiles.filter((filePath) => path.basename(filePath) !== '404.html');
-if (routeFiles.length !== expectedRouteCount) {
+if (expectedRouteCount === null) {
+  fail('prerender-manifest.json is missing, so the route count cannot be checked');
+} else if (routeFiles.length !== expectedRouteCount) {
   fail(`expected ${expectedRouteCount} prerendered routes, found ${routeFiles.length}`);
 }
 
