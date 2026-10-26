@@ -16,8 +16,15 @@ export default function WorkshopDetailPage() {
 
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const related = workshopsData.filter((w) => w.id !== workshop.id && w.category === workshop.category).slice(0, 4);
-  const relatedFinal = related.length >= 2 ? related : workshopsData.filter((w) => w.id !== workshop.id).slice(0, 4);
+  // Related workshops: 2 from the same category + 2 from the rest, both taken in
+  // rotating order after the current workshop. Rotation spreads inbound links so
+  // every workshop is linked from several others (keep in sync with
+  // relatedWorkshopsFor() in scripts/prerender.mjs).
+  const currentIndex = workshopsData.findIndex((w) => w.id === workshop.id);
+  const rotated = [...workshopsData.slice(currentIndex + 1), ...workshopsData.slice(0, currentIndex)];
+  const sameCategory = rotated.filter((w) => w.category === workshop.category).slice(0, 2);
+  const others = rotated.filter((w) => !sameCategory.includes(w)).slice(0, 2);
+  const relatedFinal = [...sameCategory, ...others];
   // Use the same CDN image the page already displays. The old
   // cdn.kraftykinni.in/workshops/<id>.webp path returned 404 (cdn_image_report.csv).
   const ogImage = workshop.image;
@@ -283,7 +290,7 @@ export default function WorkshopDetailPage() {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl font-bold text-brand-slate mb-8 text-center">
-              You Might Also <span className="text-brand-pink italic">Enjoy</span>
+              Related <span className="text-brand-pink italic">Workshops</span>
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {relatedFinal.map((w) => (

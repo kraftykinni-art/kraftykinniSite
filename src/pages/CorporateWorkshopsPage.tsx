@@ -243,6 +243,25 @@ export default function CorporateWorkshopsPage() {
           </div>
         </section>
 
+        {/* Employee engagement pages */}
+        <section className="py-12 bg-brand-offwhite">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="font-serif text-2xl font-bold text-brand-slate mb-6">
+              Employee Engagement <span className="text-brand-pink italic">by City</span>
+            </h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link to="/employee-engagement-activities-gurgaon"
+                className="px-6 py-3 bg-white hover:bg-brand-pink/10 text-brand-charcoal hover:text-brand-pink border border-gray-200 rounded-full text-sm font-medium transition-colors">
+                Employee engagement activities in Gurgaon →
+              </Link>
+              <Link to="/employee-engagement-activities-noida"
+                className="px-6 py-3 bg-white hover:bg-brand-pink/10 text-brand-charcoal hover:text-brand-pink border border-gray-200 rounded-full text-sm font-medium transition-colors">
+                Employee engagement activities in Noida →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <KeyTakeaways points={[
           `${workshopsData.length} guided art activities for teams of 20 to 200+, all materials included`,
           '₹600–₹800 per person, depending on group size',

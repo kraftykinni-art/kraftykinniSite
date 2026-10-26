@@ -147,7 +147,8 @@ function parseWorkshopsData() {
         howToSteps.push({ name: step[2], text: step[4] });
       }
     }
-    byId[id] = { title, benefits, faq, howToSteps };
+    const categoryMatch = chunk.match(/\n {4}category:\s*'([^']*)',/);
+    byId[id] = { title, category: categoryMatch ? categoryMatch[1] : '', benefits, faq, howToSteps };
   }
   return byId;
 }
@@ -198,6 +199,7 @@ function parseBlogPosts() {
         title: grabField(chunk, 'title'),
         publishDate: grabField(chunk, 'publishDate'),
         updatedDate: grabField(chunk, 'updatedDate'),
+        relatedWorkshop: grabField(chunk, 'relatedWorkshop'),
         excerpt: grabField(chunk, 'excerpt'),
         category: grabField(chunk, 'category'),
       };
@@ -3005,6 +3007,51 @@ City: Delhi / Gurgaon / Noida</code></pre>
   },
 ];
 
+// ─── Internal links mirrored into the plain-HTML copy (Block 4) ───────────────
+// Keep in sync with the React pages: WorkshopDetailPage.tsx (related workshops),
+// BlogPostPage.tsx (related workshop) and LocationPage/Corporate/Private pages.
+function relatedWorkshopsFor(id) {
+  const ids = Object.keys(WORKSHOPS_DATA);
+  const idx = ids.indexOf(id);
+  if (idx === -1) return [];
+  const rotated = [...ids.slice(idx + 1), ...ids.slice(0, idx)];
+  const sameCategory = rotated.filter((x) => WORKSHOPS_DATA[x].category === WORKSHOPS_DATA[id].category).slice(0, 2);
+  const others = rotated.filter((x) => !sameCategory.includes(x)).slice(0, 2);
+  return [...sameCategory, ...others];
+}
+
+const BIRTHDAY_LINK = ['/blog/art-workshop-ideas-birthday-party-delhi-ncr', 'Art workshop ideas for birthday parties in Delhi NCR'];
+const KIDS_BIRTHDAY_LINK = ['/blog/kids-birthday-party-art-workshop-delhi-noida', "Kids' birthday art workshops in Delhi NCR: 3 real parties"];
+const EE_GURGAON_LINK = ['/employee-engagement-activities-gurgaon', 'Employee engagement activities in Gurgaon'];
+const EE_NOIDA_LINK = ['/employee-engagement-activities-noida', 'Employee engagement activities in Noida'];
+const EXTRA_INTERNAL_LINKS = {
+  '/workshops-in-delhi':   { heading: 'Related reading', links: [BIRTHDAY_LINK, EE_GURGAON_LINK, EE_NOIDA_LINK] },
+  '/workshops-in-gurgaon': { heading: 'Related reading', links: [BIRTHDAY_LINK, EE_GURGAON_LINK] },
+  '/workshops-in-noida':   { heading: 'Related reading', links: [BIRTHDAY_LINK, EE_NOIDA_LINK] },
+  '/corporate-art-workshops': { heading: 'Employee engagement by city', links: [EE_GURGAON_LINK, EE_NOIDA_LINK] },
+  '/private-art-workshops':   { heading: 'Planning a birthday party?', links: [BIRTHDAY_LINK, KIDS_BIRTHDAY_LINK] },
+};
+const linkListHtml = (links) => `<ul>${links.map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join('')}</ul>`;
+
+function internalLinksHtmlFor(routePath) {
+  const wm = routePath.match(/^\/workshops\/(.+)$/);
+  if (wm && WORKSHOPS_DATA[wm[1]]) {
+    const rel = relatedWorkshopsFor(wm[1]);
+    if (!rel.length) return '';
+    return `<h2>Related Workshops</h2>${linkListHtml(rel.map((x) => [`/workshops/${x}`, WORKSHOPS_DATA[x].title]))}`;
+  }
+  const bm = routePath.match(/^\/blog\/(.+)$/);
+  if (bm) {
+    const post = BLOG_POSTS.find((x) => x.slug === bm[1]);
+    if (post?.relatedWorkshop && WORKSHOPS_DATA[post.relatedWorkshop]) {
+      return `<p><strong>Related workshop:</strong> <a href="/workshops/${post.relatedWorkshop}">${WORKSHOPS_DATA[post.relatedWorkshop].title}</a></p>`;
+    }
+    return '';
+  }
+  const extra = EXTRA_INTERNAL_LINKS[routePath];
+  return extra ? `<h2>${extra.heading}</h2>${linkListHtml(extra.links)}` : '';
+}
+
 // Drop routes for blog posts that are not published yet, and make every blog
 // BlogPosting schema use the post's real dateModified (updatedDate/publishDate
 // from blogPosts.ts) instead of a hand-typed date.
@@ -3015,6 +3062,10 @@ const routes = allRoutes
       for (const s of r.schemas) {
         if (s['@type'] === 'BlogPosting') s['dateModified'] = lastModFor(r.path);
       }
+    }
+    const extraLinks = internalLinksHtmlFor(r.path);
+    if (extraLinks && typeof r.bodyContent === 'string') {
+      r.bodyContent = `${r.bodyContent}\n      ${extraLinks}`;
     }
     return r;
   });

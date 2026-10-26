@@ -197,6 +197,23 @@ const locationData = {
   context: 'Corporate Team Event, Gurgaon',
 };
 
+// Internal "Related reading" links per city (mirrored in EXTRA_INTERNAL_LINKS in scripts/prerender.mjs).
+const relatedReading: Record<keyof typeof locationData, { to: string; label: string }[]> = {
+  delhi: [
+    { to: '/blog/art-workshop-ideas-birthday-party-delhi-ncr', label: 'Art workshop ideas for birthday parties in Delhi NCR' },
+    { to: '/employee-engagement-activities-gurgaon', label: 'Employee engagement activities in Gurgaon' },
+    { to: '/employee-engagement-activities-noida', label: 'Employee engagement activities in Noida' },
+  ],
+  gurgaon: [
+    { to: '/blog/art-workshop-ideas-birthday-party-delhi-ncr', label: 'Art workshop ideas for birthday parties in Delhi NCR' },
+    { to: '/employee-engagement-activities-gurgaon', label: 'Employee engagement activities in Gurgaon' },
+  ],
+  noida: [
+    { to: '/blog/art-workshop-ideas-birthday-party-delhi-ncr', label: 'Art workshop ideas for birthday parties in Delhi NCR' },
+    { to: '/employee-engagement-activities-noida', label: 'Employee engagement activities in Noida' },
+  ],
+};
+
 const slugToKey: Record<string, keyof typeof locationData> = {
   'workshops-in-delhi':   'delhi',
   'workshops-in-gurgaon': 'gurgaon',
@@ -510,6 +527,24 @@ export default function LocationPage() {
             </div>
           </section>
         )}
+
+        {/* Related reading */}
+        <section className="py-12 bg-white">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-2xl font-bold text-brand-slate mb-5">
+              Related <span className="text-brand-pink italic">reading</span>
+            </h2>
+            <ul className="space-y-3">
+              {relatedReading[key].map((item) => (
+                <li key={item.to}>
+                  <Link to={item.to} className="text-brand-pink font-medium text-sm hover:underline underline-offset-4">
+                    {item.label} →
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
         {/* Cross-location links */}
         <section className="py-12 bg-brand-offwhite">

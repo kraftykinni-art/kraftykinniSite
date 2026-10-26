@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { Calendar, ArrowLeft, ArrowRight, Tag, Clock } from 'lucide-react';
 import { blogPosts, type BlogPost, type BlogFaqItem } from '../data/blogPosts';
+import { workshopsData } from '../data/workshops';
 import ContactFooter from '../components/ContactFooter';
 import { useBookNow } from '../hooks/useBookNow';
 import AdSenseAd from '../components/AdSenseAd';
@@ -183,6 +184,11 @@ export default function BlogPostPage() {
     ],
   };
 
+  // Related workshop (set per post via relatedWorkshop in blogPosts.ts)
+  const relatedWorkshop = post.relatedWorkshop
+    ? workshopsData.find((w) => w.id === post.relatedWorkshop)
+    : undefined;
+
   // Related posts (same category, excluding current)
   const related = blogPosts
     .filter((p) => p.slug !== post.slug && p.category === post.category)
@@ -348,6 +354,30 @@ export default function BlogPostPage() {
           {/* FAQ block */}
           {post.faq && post.faq.length > 0 && (
             <FaqBlock items={post.faq} />
+          )}
+
+          {/* Related workshop */}
+          {relatedWorkshop && (
+            <Link
+              to={`/workshops/${relatedWorkshop.id}`}
+              className="mt-10 flex items-center gap-4 bg-white border border-gray-200 rounded-2xl p-4 hover:shadow-md transition-all group"
+            >
+              <img
+                src={relatedWorkshop.image}
+                alt={`${relatedWorkshop.title} workshop Delhi NCR`}
+                className="w-24 h-20 object-cover rounded-xl flex-shrink-0"
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="flex-1 min-w-0">
+                <p className="text-xs font-bold uppercase tracking-widest text-brand-pink mb-1">Related workshop</p>
+                <p className="font-serif font-bold text-brand-slate group-hover:text-brand-pink transition-colors">
+                  {relatedWorkshop.title}
+                </p>
+                <p className="text-sm text-brand-charcoal/70">{relatedWorkshop.duration} · from ₹600 per person</p>
+              </div>
+              <ArrowRight size={16} className="text-brand-pink flex-shrink-0" />
+            </Link>
           )}
 
           {/* Inline CTA box */}

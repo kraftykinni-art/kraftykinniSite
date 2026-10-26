@@ -9,6 +9,7 @@ export interface BlogPost {
   metaTitle: string;
   metaDescription: string;
   publishDate: string;
+  relatedWorkshop?: string;  // workshop id from workshops.ts — shown as a "Related workshop" link
   updatedDate?: string;  // ISO date of the last real content update — drives dateModified + sitemap lastmod
   category: 'Corporate' | 'School & College' | 'Private Events' | 'Workshop Guides';
   excerpt: string;
@@ -39,6 +40,7 @@ const allBlogPosts: BlogPost[] = [
     publishDate: '2026-04-27',
     updatedDate: '2026-10-13',
     category: 'Corporate',
+    relatedWorkshop: 'lippan-art',
     excerpt:
       "Gurgaon's corporate event scene is full of options — escape rooms, bowling, and go-karting have their place. But after running 50+ team workshops across Cyber City and Udyog Vihar, we've seen which activities actually produce conversation, connection, and something teams talk about months later.",
     keywords: [
@@ -129,6 +131,7 @@ const allBlogPosts: BlogPost[] = [
       '8 art-based annual day activity ideas for schools in Delhi NCR. Structured, mess-free, for 50–300 students. Led by a Fevicryl-certified artist.',
     publishDate: '2026-04-28',
     category: 'School & College',
+    relatedWorkshop: 'tote-bag-painting',
     excerpt:
       "Most schools start planning their annual day in April or May — when the academic calendar clears and the event committee starts arguing about what to do. If you're looking for activities that go beyond a generic craft stall and actually produce something students are proud of, this list is for you.",
     keywords: [
@@ -210,6 +213,7 @@ const allBlogPosts: BlogPost[] = [
       'Planning a birthday party in Delhi NCR? Art workshops let every guest create and take home a keepsake. ₹600/person, all materials included.',
     publishDate: '2026-04-29',
     category: 'Private Events',
+    relatedWorkshop: 'boho-canvas',
     excerpt:
       "The standard Delhi birthday party formula — venue, buffet, DJ, go home — produces a fine evening. But after running art sessions for birthday groups across South Delhi, Gurgaon, and Noida, we've noticed something: guests who make something together remember the evening very differently from guests who just attended it.",
     keywords: [
@@ -292,6 +296,7 @@ const allBlogPosts: BlogPost[] = [
     publishDate: '2026-05-01',
     updatedDate: '2026-10-13',
     category: 'Workshop Guides',
+    relatedWorkshop: 'lippan-art',
     excerpt:
       "Lippan Art is a centuries-old craft from the Kutch region of Gujarat, and it produces some of the most striking wall pieces you'll see in Indian craft. Clay, mirrors, and geometric patterns — here's how to make it, step by step, before your first session.",
     keywords: [
@@ -366,6 +371,7 @@ const allBlogPosts: BlogPost[] = [
     metaDescription: 'How Jaypee Public School Noida ran Bottle Lamp Art for 150+ students using Fevicryl Mouldit. A school art activity guide for Delhi NCR.',
     publishDate: '2026-05-02',
     category: 'School & College',
+    relatedWorkshop: 'bottle-lamp-art',
     excerpt:
       '150+ students at Jaypee Public School Greater Noida turned empty glass bottles into handcrafted decorative lamps using Fevicryl Mouldit and Acrylic Colours — and every single one took their finished piece home on the day.',
     keywords: [
@@ -464,6 +470,7 @@ const allBlogPosts: BlogPost[] = [
       'Skip the flowers. Gift a Mother\'s Day art workshop in Delhi NCR. Lippan Art, Bottle Lamp, Clay — ₹600/person, all materials included.',
     publishDate: '2026-05-05',
     category: 'Private Events',
+    relatedWorkshop: 'glass-painting',
     excerpt:
       "Flowers wilt by Tuesday. A handmade Lippan Art plaque, a painted bottle lamp, or a clay keepsake — those stay on the shelf for years. This Mother's Day, give her an experience she makes with her own hands, and takes home as something real.",
     keywords: [
@@ -545,6 +552,7 @@ const allBlogPosts: BlogPost[] = [
       '40 Cars24 employees made hand-painted clay trinkets using Fevicryl Mouldit at their Gurgaon office. A relaxed, creative corporate team session.',
     publishDate: '2026-04-29',
     category: 'Corporate',
+    relatedWorkshop: 'clay-art',
     excerpt:
       '40 Cars24 employees in Gurgaon sat down with clay, brushes, and Fevicryl colours on 29 April. Two hours later, every single one of them walked out holding something they had made themselves. This is how a Clay Trinket Painting session works when it actually works.',
     keywords: [
@@ -619,6 +627,7 @@ const allBlogPosts: BlogPost[] = [
       'Planning a summer art workshop for your school in Delhi NCR? Covers activities, age groups & sizes. Facilitator travels to you. ₹600/student.',
     publishDate: '2026-05-08',
     category: 'School & College',
+    relatedWorkshop: 'canvas-pouch',
     excerpt:
       "Summer is the one window in the school calendar where there's room to try something outside the syllabus. No exam pressure, smaller groups, and students who actually want to be there — the conditions for a genuinely great workshop are perfect. Here's what schools in Delhi NCR are booking, what works by age group, and how to plan one well.",
     keywords: [
@@ -717,6 +726,7 @@ const allBlogPosts: BlogPost[] = [
       'Handmade Father\'s Day gift workshops in Delhi NCR — Clay Magnet, Bottle Art & Clay Trinket. Guided sessions from ₹600/person, all materials included.',
     publishDate: '2026-05-18',
     category: 'Private Events' as const,
+    relatedWorkshop: 'wall-rope-art',
     excerpt:
       "A tie he won't wear. A mug with \"World's Best Dad\" he already has three of. This Father's Day, gift something handmade — a Fevicryl Mouldit Clay Fridge Magnet, Father's Day Special Bottle Art, Clay Bottle Art, or a handmade Clay Trinket created in a guided art workshop experience in Delhi NCR.",
     keywords: [
@@ -809,6 +819,7 @@ const allBlogPosts: BlogPost[] = [
       'A private block printing workshop in Delhi for a mother-daughter duo from Israel: the craft, the story and the fabric they took home. Book with us.',
     publishDate: '2026-07-19',
     category: 'Private Events' as const,
+    relatedWorkshop: 'block-printing',
     excerpt:
       'A mother and daughter travelling through India reached out to Kraftykinni for a private lesson in traditional block printing — set up right in their hotel room. Here is how the afternoon actually went, paint spill included.',
     keywords: [
@@ -892,6 +903,7 @@ const allBlogPosts: BlogPost[] = [
       'Celebrate World Environment Day 2026 with upcycled bottle art. Turn old bottles into mandala planters and décor. Workshops across Delhi NCR.',
     publishDate: '2026-05-30',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'bottle-lamp-art',
     excerpt:
       "World Environment Day falls on 5 June every year — and this year, instead of a pledge or a social post, we want to show you what sustainability looks like when you put paint, clay, and a discarded bottle in front of a group of people.",
     keywords: [
@@ -966,6 +978,7 @@ const allBlogPosts: BlogPost[] = [
       'Celebrate Independence Day 2026 with tricolour bottle art and Har Ghar Tiranga jars. Hands-on workshops for schools, offices and families across Delhi NCR.',
     publishDate: '2026-07-24',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'bottle-lamp-art',
     excerpt:
       "Independence Day is 15 August — and this year, instead of just a flag hoisting and a patriotic playlist, we're showing what the day looks like when paint, a plain bottle, and the tricolour come together in a single hands-on session.",
     keywords: [
@@ -1030,6 +1043,7 @@ const allBlogPosts: BlogPost[] = [
       'Celebrate Raksha Bandhan 2026 with hand-painted MDF fridge magnet gifts for siblings. Personalised workshops for schools, offices, families in Delhi NCR.',
     publishDate: '2026-07-25',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'mdf-fridge-magnet',
     excerpt:
       "Raksha Bandhan falls on 28 August this year — and instead of another store-bought rakhi set, we're showing what the day looks like when siblings sit down and paint their own MDF keepsake plaque, together.",
     keywords: [
@@ -1106,6 +1120,7 @@ const allBlogPosts: BlogPost[] = [
       'Celebrate Friendship Day 2026 with hand-painted photo magnets for best friends. Personalised MDF magnet workshops in Delhi, Gurgaon and Noida.',
     publishDate: '2026-07-28',
     category: 'Private Events' as const,
+    relatedWorkshop: 'mdf-fridge-magnet',
     excerpt:
       "Friendship Day falls on 2 August this year — instead of another friendship band, we're showing what it looks like when a friend group sits down and paints a personalised photo magnet together.",
     keywords: [
@@ -1182,6 +1197,7 @@ const allBlogPosts: BlogPost[] = [
       'A 20-person team in Noida Sector 90 traded desks for dot mandala art with Kraftykinni — a relaxed, no-experience corporate reset. See how the session ran.',
     publishDate: '2026-08-02',
     category: 'Corporate' as const,
+    relatedWorkshop: 'mandala-art',
     excerpt:
       'Last week, a 20-person team at a Noida Sector 90 office pushed back their keyboards and picked up dotting tools instead. This is what a desk-side Dot Mandala Art session actually looks like — and why it works as a corporate reset.',
     keywords: [
@@ -1255,6 +1271,7 @@ const allBlogPosts: BlogPost[] = [
       'Celebrate Janmashtami 2026 with hand-painted Dahi Handi matkis and mirror-work Radha Krishna trinket trays. School and private workshops across Delhi NCR.',
     publishDate: '2026-08-13',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'trinket-tray',
     excerpt:
       'Krishna Janmashtami falls on Friday, 4 September 2026. Kraftykinni is running two festival-themed workshop variations this year — a hand-painted Dahi Handi matki and a mirror-work Radha Krishna trinket tray — for schools, housing societies, and private bookings across Delhi NCR.',
     keywords: [
@@ -1320,6 +1337,7 @@ const allBlogPosts: BlogPost[] = [
       'Celebrate Ganesh Chaturthi 2026 with a hand-painted eco-friendly clay Ganpati idol from Kraftykinni. School, corporate and private workshops in Delhi NCR.',
     publishDate: '2026-08-14',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'clay-art',
     excerpt:
       'Ganesh Chaturthi falls on Monday, 14 September 2026. Kraftykinni runs a hand-painted eco-friendly clay Ganpati idol workshop — plus MDF wall hangings and mirror-work tealight holders — for schools, housing societies, corporate CSR days, and private bookings across Delhi NCR.',
     keywords: [
@@ -1401,6 +1419,7 @@ const allBlogPosts: BlogPost[] = [
       'What\'s trending in art and craft workshops in 2026 — personalization, mindful crafts, eco-friendly materials — from Kraftykinni\'s Delhi NCR sessions.',
     publishDate: '2026-09-04',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'lippan-art',
     excerpt:
       "Personalized keepsakes, slow meditative crafts like Dot Mandala Art, and eco-friendly materials are what's actually driving workshop bookings in 2026 — here's what that looks like across Kraftykinni's real sessions this year.",
     keywords: [
@@ -1483,6 +1502,7 @@ const allBlogPosts: BlogPost[] = [
     publishDate: '2026-09-12',
     updatedDate: '2026-10-26',
     category: 'Corporate' as const,
+    relatedWorkshop: 'lippan-art',
     excerpt:
       "Diwali falls on Sunday, 8 November 2026. Beyond décor, sweets and games, hands-on creative activities give employees something to actually participate in — and something they take home. Here are 9 corporate Diwali workshop ideas Kraftykinni runs across Delhi, Gurgaon and Noida, from a premium Lippan Ganesha canvas to a budget-friendly diya set.",
     keywords: [
@@ -1682,6 +1702,7 @@ const allBlogPosts: BlogPost[] = [
       'Navratri 2026 workshop ideas: a 9-colours Tie & Dye session for corporate teams and a garba trinket tray for schools. Delhi, Gurgaon, Noida.',
     publishDate: '2026-09-25',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'tie-and-dye',
     excerpt:
       'Navratri Ghatasthapana falls on Sunday, 11 October 2026. Kraftykinni runs two festival-timed workshops this year — a Tie & Dye session built around the "9 colours of Navratri" office tradition, and a garba-ready trinket tray for storing bangles and jewellery — for corporate teams, schools, and private bookings across Delhi NCR.',
     keywords: [
@@ -1750,6 +1771,7 @@ const allBlogPosts: BlogPost[] = [
     publishDate: '2026-09-24',
     updatedDate: '2026-10-26',
     category: 'Private Events' as const,
+    relatedWorkshop: 'boho-canvas',
     excerpt:
       "Daughter's Day falls on the last Sunday of September every year. Kraftykinni puts together a few different ways to mark it — a personalised canvas piece, a hand-sculpted clay keepsake, and made-to-order nameplates and monogram wall hangings — for anyone who'd rather give something made than bought.",
     keywords: [
@@ -1824,6 +1846,7 @@ const allBlogPosts: BlogPost[] = [
       'World Mental Health Day is 10 October. Guided mandala, clay and Lippan art breaks for teams, schools and adults in Delhi, Gurgaon and Noida. Book now.',
     publishDate: "2026-09-29",
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'mandala-art',
     excerpt:
       "World Mental Health Day falls on Saturday, 10 October 2026, and this year's theme is about listening. Kraftykinni looks at how a guided, screen-free art break — dot mandala, clay, Lippan and rope art — can give teams, schools and adults a calm hour, and where a creative session stops and professional support begins.",
     keywords: [
@@ -1934,6 +1957,7 @@ const allBlogPosts: BlogPost[] = [
       'Book a Diwali art workshop in Delhi NCR for schools, colleges, cafés, societies and home groups. Diya painting, Lippan and Madhubani, ₹600–₹800/person.',
     publishDate: '2026-10-03',
     category: 'School & College' as const,
+    relatedWorkshop: 'clay-art',
     excerpt:
       "Diwali falls on Sunday, 8 November 2026. Here is how schools, colleges, cafés, residential societies and home groups of 10 or more can book a Diwali art workshop in Delhi NCR: three formats, group sizes, pricing and booking deadlines.",
     keywords: [
@@ -2049,6 +2073,7 @@ const allBlogPosts: BlogPost[] = [
       'What a corporate art workshop is, how a session runs, formats, group sizes of 20–200+, cost from ₹600/person and how to book in Delhi, Gurgaon and Noida.',
     publishDate: '2026-10-01',
     category: 'Corporate' as const,
+    relatedWorkshop: 'tie-and-dye',
     excerpt:
       "A corporate art workshop is a guided session where every team member makes a finished artwork to keep. This guide explains how a session runs, the formats Kraftykinni offers, group sizes, cost and how to book across Delhi, Gurgaon and Noida.",
     keywords: [
@@ -2173,6 +2198,7 @@ const allBlogPosts: BlogPost[] = [
       'New to mandala art? See how a guided mandala workshop works in Delhi NCR: no experience needed, 1.5–2 hours, ₹600–₹800/person, all materials included.',
     publishDate: '2026-10-06',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'mandala-art',
     excerpt:
       "A beginner's guide to the Kraftykinni Mandala Art workshop: what mandala art is, how a guided session runs, what you take home, and how teams across Delhi, Gurgaon and Noida book one.",
     keywords: [
@@ -2270,6 +2296,7 @@ const allBlogPosts: BlogPost[] = [
       'What is a texture art workshop? 6 steps, 1.5–2 hours, no experience needed. Layered canvas for teams in Delhi NCR from ₹600/person, all materials included.',
     publishDate: '2026-10-09',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'texture-art',
     excerpt:
       "A beginner's guide to the Kraftykinni Texture Art workshop: the materials, the six steps, how long it takes, what you take home and how to book it across Delhi, Gurgaon and Noida.",
     keywords: [
@@ -2365,6 +2392,7 @@ const allBlogPosts: BlogPost[] = [
       'Compare three boho wall décor workshops in Delhi NCR: Wall Rope Art, Canvas Pearl Art and Boho Canvas. Duration, materials, group size, ₹600–₹800/person.',
     publishDate: '2026-10-04',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'canvas-pearl-art',
     excerpt:
       "Three Kraftykinni workshops end with a piece you hang on the wall: Wall Rope Art, Canvas Pearl Art and Boho Canvas Art. This guide compares duration, materials, what you make and group size so you can pick the right one.",
     keywords: [
@@ -2453,6 +2481,7 @@ const allBlogPosts: BlogPost[] = [
       'Planning team building in Noida? See 5 occasions that suit art workshops, which format fits your team, group sizes of 20–150+ and costs from ₹600/person.',
     publishDate: '2026-10-11',
     category: 'Corporate' as const,
+    relatedWorkshop: 'tie-and-dye',
     excerpt:
       "Quarterly team days, desk-side resets, appreciation days, annual days and onboarding: a Noida guide to when an art workshop works as a team building activity, which format to pick, and what it costs.",
     keywords: [
@@ -2556,6 +2585,7 @@ const allBlogPosts: BlogPost[] = [
       'Painting workshop for adults in Delhi NCR: canvas, glass, mirror and tote options for groups of 10+. No experience needed. ₹600–₹800/person, all inclusive.',
     publishDate: '2026-10-07',
     category: 'Private Events' as const,
+    relatedWorkshop: 'texture-art',
     excerpt:
       "Looking for a painting workshop for adults in Delhi NCR? This guide compares the painting formats Kraftykinni runs for groups of 10 or more, with durations, what you make and how booking works.",
     keywords: [
@@ -2653,6 +2683,7 @@ const allBlogPosts: BlogPost[] = [
       'Tote bag painting workshop in Delhi NCR: how a session runs, branding options, 1.5–2 hours, groups of 20–200+, from ₹600/person, all materials included.',
     publishDate: '2026-10-12',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'tote-bag-painting',
     excerpt:
       "A guide to the Kraftykinni Tote Bag Painting workshop: what happens in a session, stencils versus freehand, adding company branding, who books it and how it is priced across Delhi, Gurgaon and Noida.",
     keywords: [
@@ -2745,6 +2776,7 @@ const allBlogPosts: BlogPost[] = [
       'Block printing workshop in Delhi NCR: how a session runs, what you print, 1.5–2 hours, groups of 20–200+, from ₹600 per person, all materials included.',
     publishDate: '2026-10-14',
     category: 'Workshop Guides' as const,
+    relatedWorkshop: 'block-printing',
     excerpt:
       "A guide to the Kraftykinni Block Printing workshop: the materials, the six steps from choosing a block to heat-setting the fabric, what you take home, who books it and how it is priced across Delhi, Gurgaon and Noida.",
     keywords: [
@@ -2837,6 +2869,7 @@ const allBlogPosts: BlogPost[] = [
       'See how 3 kids\' birthday parties in Delhi and Noida used clay mirror art, DIY spinner kits and fridge magnets. ₹600–₹800/person, all materials included.',
     publishDate: '2026-10-25',
     category: 'Private Events' as const,
+    relatedWorkshop: 'clay-mirror-art',
     excerpt:
       "Between 17 and 24 October 2026, Kraftykinni ran three kids' birthday art workshops for 54 children: two in Delhi and one in Noida, for guests aged 4 to 11. Here is what each craft involved and how to choose one for your own party.",
     keywords: [
@@ -2994,6 +3027,7 @@ const allBlogPosts: BlogPost[] = [
       "Children's Day (14 November) art workshop ideas for Delhi NCR schools: clay, fridge magnets, tote bags and more. From ₹600/student, materials included.",
     publishDate: '2026-10-26',
     category: 'School & College' as const,
+    relatedWorkshop: 'tote-bag-painting',
     excerpt:
       "Children's Day on 14 November is usually a day of performances, games and treats. A guided art workshop gives every student something to make and take home, and the school only needs to provide space and a time slot.",
     keywords: [
@@ -3059,6 +3093,7 @@ const allBlogPosts: BlogPost[] = [
       "Christmas art workshop ideas for Delhi NCR offices and schools: bottle lamps, glass painting, clay and tote bags. From ₹600/person, materials included.",
     publishDate: '2026-11-30',
     category: 'Corporate' as const,
+    relatedWorkshop: 'bottle-lamp-art',
     excerpt:
       "Christmas on 25 December is a natural moment for a year-end team session or a school celebration. A guided art workshop gives everyone a festive piece to take home, with all materials and setup handled by Kraftykinni.",
     keywords: [
@@ -3124,6 +3159,7 @@ const allBlogPosts: BlogPost[] = [
       "Lohri celebration ideas for Delhi NCR offices: diya painting, mandala art, block printing and tie & dye. From ₹600/person, materials included.",
     publishDate: '2026-12-18',
     category: 'Corporate' as const,
+    relatedWorkshop: 'clay-art',
     excerpt:
       "Lohri on 13 January is a harvest festival of bonfires, music and shared food. A guided art workshop adds a hands-on activity to an office celebration, with every employee taking home a piece they made.",
     keywords: [
@@ -3188,6 +3224,7 @@ const allBlogPosts: BlogPost[] = [
       "Republic Day art workshop ideas for Delhi NCR schools: tricolour bottle art, tote bags, canvas pouches and rock painting. From ₹600/student.",
     publishDate: '2027-01-02',
     category: 'School & College' as const,
+    relatedWorkshop: 'rock-painting',
     excerpt:
       "Republic Day on 26 January is usually marked with a parade, songs and speeches. A guided art workshop gives students a tricolour piece they make and keep, and Kraftykinni handles all materials and setup.",
     keywords: [

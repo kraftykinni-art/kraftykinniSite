@@ -510,6 +510,27 @@ export default function PrivateWorkshopsPage() {
           </div>
         </section>
 
+        {/* ── Birthday guides ── */}
+        <section className="py-12 bg-brand-offwhite">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-2xl font-bold text-brand-slate mb-5">
+              Planning a <span className="text-brand-pink italic">birthday party?</span>
+            </h2>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/blog/art-workshop-ideas-birthday-party-delhi-ncr" className="text-brand-pink font-medium text-sm hover:underline underline-offset-4">
+                  Art workshop ideas for birthday parties in Delhi NCR →
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog/kids-birthday-party-art-workshop-delhi-noida" className="text-brand-pink font-medium text-sm hover:underline underline-offset-4">
+                  Kids' birthday art workshops in Delhi NCR: 3 real parties →
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         {/* ── Internal location links ── */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
