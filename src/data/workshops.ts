@@ -404,7 +404,7 @@ export const workshopsData: Workshop[] = [
     metaTitle: 'Block Printing Workshop Delhi NCR — Heritage | Kraftykinni',
     metaDescription: 'Block Printing workshop in Delhi NCR. Learn traditional Indian block printing on fabric. Corporate & school sessions. Materials included. ₹600–₹800/person.',
     pageHeadline: 'Block Printing Workshop in Delhi NCR',
-    intro: 'Block Printing is one of India\'s most treasured textile traditions, originating in Rajasthan and Gujarat. Participants learn to apply natural pigments using carved wooden blocks to create repeat patterns on fabric — a rhythmic, meditative process that produces strikingly beautiful results. Our Block Printing workshops are popular both as a cultural heritage activity and as a stress-relief exercise for corporate teams.',
+    intro: 'Block Printing is one of India\'s most treasured textile traditions, originating in Rajasthan and Gujarat. Participants learn to apply fabric colours using carved wooden blocks to create repeat patterns on fabric — a rhythmic, meditative process that produces strikingly beautiful results. Our Block Printing workshops are popular both as a cultural heritage activity and as a stress-relief exercise for corporate teams.',
     citation: { text: 'Block printing is part of the wider craft of woodblock printing, documented as one of the oldest textile and print techniques, used across Asia and Europe.', url: 'https://en.wikipedia.org/wiki/Woodblock_printing' },
     whatYouMake: 'A block-printed fabric item — tote bag, dupatta, or fabric panel — in traditional or contemporary patterns.',
     whoBenefits: 'Excellent for corporate cultural events, school heritage days, college fests, and curated team-building sessions.',
@@ -412,7 +412,7 @@ export const workshopsData: Workshop[] = [
     faq: [
       {
         q: 'What is Block Printing?',
-        a: 'Block Printing is one of India\'s oldest textile traditions, originating in Rajasthan and Gujarat. Artisans carve patterns into wooden blocks, apply natural pigments, and stamp repeat designs onto fabric. In our workshop, participants learn this rhythmic technique hands-on, creating their own patterned fabric piece using carved wooden blocks and fabric colours.',
+        a: 'Block Printing is one of India\'s oldest textile traditions, originating in Rajasthan and Gujarat. Artisans carve patterns into wooden blocks, apply fabric colours, and stamp repeat designs onto fabric. In our workshop, participants learn this rhythmic technique hands-on, creating their own patterned fabric piece using carved wooden blocks and fabric colours.',
       },
       {
         q: 'Is Block Printing good for a corporate cultural event?',
