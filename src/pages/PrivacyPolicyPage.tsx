@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
             <h1 className="font-serif text-4xl font-bold text-brand-slate mb-2">
               Privacy <span className="text-brand-pink italic">Policy</span>
             </h1>
-            <p className="text-sm text-gray-400 mb-10">Last updated: September 2026</p>
+            <p className="text-sm text-gray-400 mb-10">Last updated: November 2026</p>
 
             <div className="prose prose-gray max-w-none space-y-8 text-gray-600 font-light leading-relaxed">
 
@@ -84,6 +84,12 @@ export default function PrivacyPolicyPage() {
                   We also use Google Analytics (GA4) to understand overall traffic to this website, including which pages are viewed and whether visitors click our WhatsApp button, call link, or submit our contact form. Google Analytics may use cookies as part of this. We do not use Meta Pixel or any advertising trackers, and we do not use Google Analytics data for advertising or retargeting purposes. You can read Google's own privacy practices at{' '}
                   <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-pink hover:underline underline-offset-2">
                     policies.google.com/privacy
+                  </a>.
+                </p>
+                <p>
+                  If you buy one of our PDF guides, payment and delivery are handled by Gumroad, not by this website. Gumroad receives your payment details and gives us your name and email address so that we can support your purchase. You can read Gumroad’s own policy at{' '}
+                  <a href="https://gumroad.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-pink hover:underline underline-offset-2">
+                    gumroad.com/privacy
                   </a>.
                 </p>
               </section>

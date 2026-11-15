@@ -40,7 +40,7 @@ export default function TermsOfServicePage() {
             <h1 className="font-serif text-4xl font-bold text-brand-slate mb-2">
               Terms of <span className="text-brand-pink italic">Service</span>
             </h1>
-            <p className="text-sm text-gray-400 mb-10">Last updated: September 2026</p>
+            <p className="text-sm text-gray-400 mb-10">Last updated: November 2026</p>
 
             <div className="prose prose-gray max-w-none space-y-8 text-gray-600 font-light leading-relaxed">
 
@@ -69,6 +69,13 @@ export default function TermsOfServicePage() {
                 </p>
                 <p>
                   If Kraftykinni needs to cancel a confirmed session — for example, due to illness or an urgent, unavoidable circumstance — a rescheduled date will be offered first. If rescheduling isn't possible, a full refund will be provided.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="font-serif text-xl font-bold text-brand-slate mb-3">Digital guides (PDF)</h2>
+                <p>
+                  Our PDF guides are sold through Gumroad, which processes the payment and delivers the file. Refund requests follow the refund policy shown on the guide’s product page. A guide is licensed for your personal use only: please do not share, resell or redistribute the file. The guides give general craft information; always follow the instructions and safety information on the products you use, and supervise children. To the extent permitted by law, Kraftykinni’s liability for a guide is limited to the price you paid for it.
                 </p>
               </section>
 

@@ -20,6 +20,7 @@ const TermsOfServicePage = lazy(() => import('./pages/TermsOfServicePage'));
 const ThankYouPage = lazy(() => import('./pages/ThankYouPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const BlockPrintingGuidePage = lazy(() => import('./pages/BlockPrintingGuidePage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const ReviewRedirectPage = lazy(() => import('./pages/ReviewRedirectPage'));
 const EmployeeEngagementGurgaonPage = lazy(() => import('./pages/EmployeeEngagementGurgaonPage'));
@@ -60,6 +61,7 @@ export default function App() {
           <Route path="/workshops-in-noida" element={<LocationPage />} />
           <Route path="/employee-engagement-activities-gurgaon" element={<EmployeeEngagementGurgaonPage />} />
           <Route path="/employee-engagement-activities-noida" element={<EmployeeEngagementNoidaPage />} />
+        <Route path="/block-printing-guide" element={<BlockPrintingGuidePage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-of-service" element={<TermsOfServicePage />} />
         <Route path="/blog" element={<BlogPage />} />

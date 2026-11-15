@@ -62,6 +62,7 @@ export default function ContactFooter() {
         { label: "Pricing",           to: "/#pricing" },
         { label: "FAQ",               to: "/#faq" },
         { label: "Contact",           to: "/#contact" },
+        { label: "Block Printing Guide (PDF)", to: "/block-printing-guide" },
         { label: "Privacy Policy",    to: "/privacy-policy" },
         { label: "Terms of Service",  to: "/terms-of-service" },
       ],

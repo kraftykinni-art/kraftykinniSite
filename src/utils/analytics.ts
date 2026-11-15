@@ -44,3 +44,17 @@ export function trackReviewClick(
     link_location: linkLocation,
   });
 }
+
+/**
+ * guide_click. Use on the "Get the guide" buttons that send visitors to Gumroad.
+ * `guide` is the product slug, `linkLocation` names the button's place,
+ * e.g. "guide_hero" or "workshop_block_printing".
+ */
+export function trackGuideClick(guide: string, linkLocation: string): void {
+  sendEvent('guide_click', {
+    event_category: 'guide',
+    event_label: linkLocation,
+    guide,
+    link_location: linkLocation,
+  });
+}

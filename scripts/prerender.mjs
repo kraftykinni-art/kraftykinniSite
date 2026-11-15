@@ -83,6 +83,7 @@ function siteFooterLinks(lastMod) {
         <a href="/workshops/wall-rope-art">Wall &amp; Rope Art</a>
       </p>
       <p>
+        <a href="/block-printing-guide">Block Printing Guide (PDF)</a> ·
         <a href="/about">About Kraftykinni</a> ·
         <a href="/#contact">Contact / Book a Workshop</a> ·
         <a href="/privacy-policy">Privacy Policy</a> ·
@@ -713,6 +714,37 @@ City: Delhi / Gurgaon / Noida</code></pre>
 
   // ── Thank You (post-form-submit; noindex, not in sitemap) ──────────────────
   {
+    path: '/block-printing-guide',
+    title: 'Block Printing at Home: Beginner PDF Guide | Kraftykinni',
+    description: 'A 29-page beginner PDF guide to block printing at home: 7 lessons, a tote bag and a cushion cover project. By Kraftykinni, Delhi NCR.',
+    h1: 'Block Printing at Home: A Beginner PDF Guide',
+    bodyContent: `
+      <h1>Block Printing at Home: A Beginner PDF Guide</h1>
+      <p>Block Printing at Home is a 29-page beginner guide from Kraftykinni, an art workshop studio in Delhi NCR. It takes you from a plain piece of fabric to a printed tote bag and a printed cushion cover, one clear step at a time, with no experience needed. The guide is a PDF that you download after paying on Gumroad.</p>
+      <h2>What is inside the guide</h2>
+      <ul>
+        <li>What you need, with a shopping checklist for India and for other countries</li>
+        <li>Preparing fabric and a padded workspace</li>
+        <li>Loading the block and stamping cleanly</li>
+        <li>Straight, brick and half-drop repeat layouts, with a printable practice sheet</li>
+        <li>Two projects: a tote bag and a cushion cover</li>
+        <li>Combining blocks, with a real Kraftykinni example</li>
+        <li>Drying, heat-setting and washing, with a space to write your colour's label instructions</li>
+        <li>A troubleshooting page, a glossary and a bonus page on carving your own stamp safely</li>
+      </ul>
+      <h2>Who wrote it</h2>
+      <p>Kraftykinni runs art workshops for companies, schools and private groups in Delhi, Gurgaon and Noida. The studio is led by Shramita Govil, a Fevicryl Certified Artist. This guide is the home version of the <a href="/workshops/block-printing">Kraftykinni block printing workshop</a>.</p>
+      <h2>Questions</h2>
+      <h3>Do I need any experience?</h3>
+      <p>No. The guide starts from a plain piece of fabric and goes one step at a time.</p>
+      <h3>Are the pictures real?</h3>
+      <p>Some illustrations in the guide are AI-generated. The studio tote, the group workshop photo and the author portrait are real photographs from Kraftykinni.</p>
+      <h3>Who sells and delivers it?</h3>
+      <p>Payment and delivery are handled by Gumroad. Refunds follow the policy shown on the product page. See the <a href="/terms-of-service">Terms of Service</a> and the <a href="/privacy-policy">Privacy Policy</a>.</p>
+    `,
+  },
+
+  {
     path: '/thank-you',
     title: 'Thank You for Your Enquiry | Kraftykinni',
     description: "We've received your enquiry. Kraftykinni will get back to you within 24 hours with a customised art workshop proposal for your group.",
@@ -757,6 +789,7 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <p>The information you submit is used solely to respond to your enquiry and send you a customised workshop proposal. Our contact form is powered by Web3Forms, which forwards your submission to our email address. We do not store your form data on our own servers.</p>
       <h2>Third-party services</h2>
       <p>We use Web3Forms to process contact form submissions. We also use Google Analytics (GA4) to understand overall traffic to this website, including which pages are viewed and whether visitors click our WhatsApp button, call link, or submit our contact form. We do not use Meta Pixel or any advertising trackers, and we do not use Google Analytics data for advertising or retargeting purposes.</p>
+      <p>If you buy one of our PDF guides, payment and delivery are handled by Gumroad, not by this website. Gumroad receives your payment details and gives us your name and email address so that we can support your purchase. You can read Gumroad's own policy at gumroad.com/privacy.</p>
       <h2>Data sharing</h2>
       <p>We do not sell, rent, or share your personal information with any third party for marketing purposes. Your contact details are used only by Kraftykinni to follow up on your workshop enquiry.</p>
       <h2>Your rights</h2>
@@ -777,6 +810,8 @@ City: Delhi / Gurgaon / Noida</code></pre>
       <h2>Cancellation policy</h2>
       <p>Kraftykinni operates a strict no-refund policy on cancellations made by the client once a booking is confirmed. The deposit and any advance payment are non-refundable if you choose to cancel.</p>
       <p>If Kraftykinni needs to cancel a confirmed session — for example, due to illness or an urgent, unavoidable circumstance — a rescheduled date will be offered first. If rescheduling isn't possible, a full refund will be provided.</p>
+      <h2>Digital guides (PDF)</h2>
+      <p>Our PDF guides are sold through Gumroad, which processes the payment and delivers the file. Refund requests follow the refund policy shown on the guide's product page. A guide is licensed for your personal use only: please do not share, resell or redistribute the file. The guides give general craft information; always follow the instructions and safety information on the products you use, and supervise children. To the extent permitted by law, Kraftykinni's liability for a guide is limited to the price you paid for it.</p>
       <h2>Rescheduling</h2>
       <p>Clients may request to reschedule an upcoming session. Rescheduling is subject to slot availability on your requested new date; if that date isn't available, Kraftykinni will offer alternative dates based on current availability. Rescheduling is not automatic and should be requested as early as possible.</p>
       <h2>Materials and venue arrangements</h2>
@@ -3255,6 +3290,7 @@ const BREADCRUMB_LABELS = {
   '/school-art-workshops': 'School Workshops',
   '/private-art-workshops': 'Private Art Workshops',
   '/about': 'About',
+  '/block-printing-guide': 'Block Printing Guide (PDF)',
   '/privacy-policy': 'Privacy Policy',
   '/terms-of-service': 'Terms of Service',
   '/blog': 'Blog',
@@ -3653,6 +3689,7 @@ const sitemapEntries = [
   { loc: '/employee-engagement-activities-gurgaon', priority: '0.8', changefreq: 'monthly' },
   { loc: '/employee-engagement-activities-noida', priority: '0.8', changefreq: 'monthly' },
   { loc: '/about',                         priority: '0.6', changefreq: 'yearly'  },
+  { loc: '/block-printing-guide',          priority: '0.6', changefreq: 'monthly' },
   { loc: '/privacy-policy',               priority: '0.2', changefreq: 'yearly'  },
   { loc: '/terms-of-service',             priority: '0.2', changefreq: 'yearly'  },
   { loc: '/blog',                          priority: '0.7', changefreq: 'weekly'  },

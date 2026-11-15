@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
-import { Clock, CheckCircle2, ArrowLeft, Users, MapPin, Package, Award, ChevronDown } from 'lucide-react';
+import { Clock, CheckCircle2, ArrowLeft, ArrowRight, Users, MapPin, Package, Award, ChevronDown } from 'lucide-react';
 import { workshopsData } from '../data/workshops';
 import { KRAFTYKINNI_SAME_AS } from '../data/siteConstants';
 import ContactFooter from '../components/ContactFooter';
@@ -201,6 +201,21 @@ export default function WorkshopDetailPage() {
             </div>
           </div>
         </section>
+
+        {/* Home guide (Gumroad) — shown only on the block printing workshop */}
+        {workshop.id === 'block-printing' && (
+          <section className="py-10 bg-brand-pink/5">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <p className="font-serif text-xl font-bold text-brand-slate mb-2">Can’t join us in person?</p>
+              <p className="text-gray-600 font-light mb-4">
+                Try block printing at home with our beginner PDF guide: 7 lessons, a tote bag and a cushion cover.
+              </p>
+              <Link to="/block-printing-guide" className="inline-flex items-center gap-2 text-brand-pink font-medium hover:underline underline-offset-4">
+                See the guide <ArrowRight size={16} />
+              </Link>
+            </div>
+          </section>
+        )}
 
         {/* Pricing snapshot */}
         <section className="py-16 bg-white">
