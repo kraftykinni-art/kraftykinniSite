@@ -206,7 +206,7 @@
   </url>
   <url>
     <loc>https://kraftykinni.in/blog</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -405,6 +405,12 @@
   <url>
     <loc>https://kraftykinni.in/blog/childrens-day-art-workshop-schools-delhi-ncr</loc>
     <lastmod>2026-10-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kraftykinni.in/blog/childrens-day-art-workshop-gurgaon-kia-showroom</loc>
+    <lastmod>2026-11-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>

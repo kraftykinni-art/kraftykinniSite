@@ -3281,6 +3281,154 @@ const allBlogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'childrens-day-art-workshop-gurgaon-kia-showroom',
+    title: "Children's Day Art Workshop in Gurgaon: 4 Crafts at a Kia Showroom",
+    metaTitle: "Children's Day Art Workshop in Gurgaon | Kraftykinni",
+    metaDescription:
+      "Kraftykinni ran 4 kids' art workshops for 20 children at the Allied Kia showroom in Gurgaon on Children's Day. See the crafts and plan your own event.",
+    publishDate: '2026-11-17',
+    category: 'Workshop Guides' as const,
+    relatedWorkshop: 'cap-painting',
+    excerpt:
+      "Cap painting, ice-cream canvases, sunflower magnets and canvas pouches: how 20 children aged 8 to 12 spent Children's Day at the Allied Kia showroom in Gurgaon.",
+    keywords: [
+      "Children's Day art workshop Gurgaon",
+      "kids art workshop Gurgaon",
+      "kids art workshop Delhi NCR",
+      "cap painting workshop for kids",
+      "canvas painting workshop for kids",
+      "fridge magnet workshop for kids",
+      "canvas pouch painting kids",
+      "art workshop for showroom event",
+      "Children's Day activities Gurgaon",
+      "brand event art workshop Gurgaon",
+    ],
+    sections: [
+      {
+        body: "On Children's Day, the Allied Kia showroom in Gurgaon had paint tubs on black-covered tables, pastel balloon columns at the entrance and about 20 children bent over caps, canvases and sunflowers. Some were painting. Some were colouring in Sorento cars. A few parents had picked up brushes too.\n\nKraftykinni ran four art workshops at the showroom on 14 November 2026: [cap painting](/workshops/cap-painting), [canvas painting](/workshops/canvas-pearl-art), a [sunflower fridge magnet](/workshops/mdf-fridge-magnet) and a [canvas pouch](/workshops/canvas-pouch). Around 20 children aged 8 to 12 took part over a 2-hour session, as part of Kia's \"Little Makers, Big Drives!\" Children's Day celebration. This post records what each workshop involved and what a showroom or brand can take from it when planning a similar event.",
+      },
+      {
+        heading: "Children's Day Art Workshop at a Kia Showroom: Quick Facts",
+        body: "",
+        listItems: [
+          "**Date:** 14 November 2026 (Children's Day)",
+          "**Venue:** Allied Kia showroom, Gurgaon (Gurugram)",
+          "**Participants:** about 20 children, aged 8 to 12",
+          "**Duration:** 2 hours",
+          "**Four crafts:** cap painting, canvas painting, sunflower fridge magnet, canvas pouch",
+          "**Also on the day:** Kia's own \"My Sorento, My Masterpiece!\" colouring activity, where Kraftykinni helped with colours and colour filling",
+        ],
+        listType: 'ul',
+        image: "https://cdn.kraftykinni.in/childrens-day-art-workshop-kia-showroom-gurgaon-kraftykinni.webp",
+        imageAlt: "Children painting and colouring at tables during the Children's Day art workshop at the Allied Kia showroom in Gurgaon — Kraftykinni",
+        imageCaption: "About 20 children, aged 8 to 12, worked across four crafts during the 2-hour session.",
+      },
+      {
+        heading: "Workshop 1: Cap Painting",
+        body: "Each child got a plain white cap, fabric paints and a palette. The brief was simple: make it yours. Several children worked panel by panel, so the finished caps carry blocks of maroon, blue and light blue instead of one muddy wash. Names went on the peak or on a small tag.\n\nA curved fabric surface is harder than paper, which is part of why children enjoy it. The finished cap is something they can wear again. For teams, colleges and older groups, the same format runs as our [cap painting workshop](/workshops/cap-painting).",
+        image: "https://cdn.kraftykinni.in/cap-painting-workshop-kids-gurgaon-kraftykinni.webp",
+        imageAlt: "Girl painting a white cap with maroon paint at a cap painting workshop for kids in Gurgaon — Kraftykinni",
+        imageCaption: "Painting a cap one panel at a time.",
+      },
+      {
+        heading: "The Finished Caps",
+        body: "A painted cap is a good first fabric project for 8 to 12 year olds because the result is wearable straight away, and the panels give a natural way to divide the colours.",
+        image: "https://cdn.kraftykinni.in/finished-hand-painted-cap-childrens-day-gurgaon-kraftykinni.webp",
+        imageAlt: "Child holding a finished hand-painted cap with her name on the peak after the Children's Day workshop in Gurgaon — Kraftykinni",
+        imageCaption: "A finished cap with colour-blocked panels and a name tag.",
+      },
+      {
+        heading: "Workshop 2: Canvas Painting, Ice-Cream Edition",
+        body: "The canvas workshop used small canvases with an outlined ice-cream design: stacked scoops, cones and a scatter of stars. Children chose their own flavours, so the finished canvases range from classic pink and chocolate to blue-and-orange scoops no ice-cream shop has ever sold.\n\nAn outlined design gives younger participants a clear edge to paint inside, while the older ones in the 8 to 12 range can add shading, patterns and borders. For a longer canvas session, see our [canvas pearl art workshop](/workshops/canvas-pearl-art).",
+        image: "https://cdn.kraftykinni.in/canvas-painting-workshop-for-kids-gurgaon-kraftykinni.webp",
+        imageAlt: "Child painting an ice-cream design on a small canvas at a kids canvas painting workshop in Gurgaon — Kraftykinni",
+        imageCaption: "Painting the ice-cream canvas with a brush and a small palette.",
+      },
+      {
+        heading: "The Finished Ice-Cream Canvases",
+        body: "Five children held up their finished canvases at the end of the session. Each canvas is small enough to stand on a desk or shelf.",
+        image: "https://cdn.kraftykinni.in/kids-with-finished-ice-cream-canvas-paintings-gurgaon-kraftykinni.webp",
+        imageAlt: "Five children holding finished ice-cream canvas paintings at the Kia showroom in Gurgaon — Kraftykinni",
+        imageCaption: "Finished ice-cream canvases, each with different flavours and colours.",
+      },
+      {
+        heading: "Workshop 3: Sunflower Fridge Magnet",
+        body: "The sunflower magnet is a single-sitting craft. Children coloured a scalloped sunflower with markers, giving it a yellow and red centre, and finished it as a fridge magnet. A craft that finishes in one sitting suits a showroom event, where families move between activities and photo corners.\n\nThe same idea works for other occasions. We have run it for [Friendship Day](/blog/friendship-day-photo-magnet-workshop-delhi-ncr) and [Raksha Bandhan](/blog/raksha-bandhan-mdf-fridge-magnet-workshop-delhi-ncr), and you can read the details on the [fridge magnet workshop page](/workshops/mdf-fridge-magnet).",
+        image: "https://cdn.kraftykinni.in/sunflower-fridge-magnet-painting-workshop-kids-gurgaon-kraftykinni.webp",
+        imageAlt: "Two children colouring sunflower fridge magnets with markers at the Children's Day workshop in Gurgaon — Kraftykinni",
+        imageCaption: "Colouring the sunflower magnets with markers.",
+      },
+      {
+        heading: "Workshop 4: Sunflower Canvas Pouch",
+        body: "For the pouch, children decorated a canvas pouch with sunflowers and wrote their own name on it. It is the most personal of the four pieces, and children were happy to pose with it in front of the Children's Day backdrop. See how we run this craft on the [canvas pouch painting workshop](/workshops/canvas-pouch) page.",
+        image: "https://cdn.kraftykinni.in/hand-painted-sunflower-canvas-pouch-kids-workshop-kraftykinni.webp",
+        imageAlt: "Boy holding a hand-painted sunflower canvas pouch with his name after the kids workshop in Gurgaon — Kraftykinni",
+        imageCaption: "A finished sunflower canvas pouch with the child's name.",
+      },
+      {
+        heading: "Alongside Kia's \"My Sorento, My Masterpiece!\" Colouring",
+        body: "Kia ran its own colouring activity on the day. Children received outline sheets of the Sorento and coloured them with markers and crayons. The finished sheets were bold: a rainbow Sorento, a purple one, a green one, a red one with an orange roof.\n\nKraftykinni supported this activity with colours and colour filling, so children who wanted help with a tricky section or a bigger palette had an artist next to them.",
+        image: "https://cdn.kraftykinni.in/sorento-car-colouring-activity-childrens-day-gurgaon.webp",
+        imageAlt: "Children colouring Sorento car outline sheets during Kia's My Sorento My Masterpiece activity at the Gurgaon showroom — Kraftykinni",
+        imageCaption: "Colouring the Sorento outline sheets at a round table.",
+      },
+      {
+        heading: "The Finished Sorento Sheets",
+        body: "Children held up their coloured sheets in front of the \"Little Makers, Big Drives!\" backdrop at the end of the session. Each sheet carried its own colour choices, from a rainbow body to a plain black one.",
+        image: "https://cdn.kraftykinni.in/little-makers-big-drives-sorento-art-childrens-day-gurgaon.webp",
+        imageAlt: "Children holding coloured Sorento sheets in front of the Little Makers Big Drives Children's Day backdrop in Gurgaon — Kraftykinni",
+        imageCaption: "Finished Sorento sheets in front of the Children's Day backdrop.",
+      },
+      {
+        heading: "Parents and Kia Staff Joined In",
+        body: "Parents and Kia staff joined in between activities, and one parent painted a cap alongside the children. That is a good sign for anyone planning a family event: the crafts suit adults as well, and no art experience is needed.",
+        image: "https://cdn.kraftykinni.in/parent-personalising-painted-cap-art-workshop-gurgaon-kraftykinni.webp",
+        imageAlt: "Parent personalising a white cap with a red marker at the art workshop in Gurgaon — Kraftykinni",
+        imageCaption: "A parent writing a name on a cap during the session.",
+      },
+      {
+        heading: "Why Art Workshops Suit Showroom and Brand Events",
+        body: "A showroom event has a different rhythm from a classroom. Families arrive at different times, children are of mixed ages and there is a brand message to carry. Art workshops fit that rhythm for three reasons.",
+        listItems: [
+          "**One sitting, one finished piece.** Every craft above can be finished in the session, so no child waits on another and nobody leaves with half a project.",
+          "**A wide age range works.** At 8 to 12, some children want a clear outline and others want free design. Offering four crafts lets each child pick a pace that suits them.",
+          "**Adults can join.** Parents and staff took part, and no experience is needed for any of these crafts.",
+        ],
+        listType: 'ul',
+      },
+      {
+        heading: "Planning a Children's Day or Brand Event Art Workshop",
+        body: "The same approach works for [corporate art workshops](/corporate-art-workshops) and [school art workshops](/school-art-workshops). If you run a school and want formats for 14 November, read our [Children's Day art workshop ideas for schools](/blog/childrens-day-art-workshop-schools-delhi-ncr).\n\nKraftykinni, led by [Shramita Govil, Fevicryl Certified Artist](/about), runs kids' art workshops across [Gurgaon](/workshops-in-gurgaon), Delhi and Noida for showrooms, schools, housing societies, birthday parties and corporate events. Tell us the date, venue, number of children and age group, and we will suggest the right mix of crafts. WhatsApp **+91 9599622210** with your details and we confirm within 24 hours.",
+      },
+    ],
+    faq: [
+      {
+        q: "What is a Children's Day art workshop?",
+        a: "A Children's Day art workshop is a hands-on creative session held around 14 November in India, where children paint or make small crafts they can take home. At the Allied Kia showroom in Gurgaon, Kraftykinni ran four crafts for about 20 children aged 8 to 12 in 2 hours.",
+      },
+      {
+        q: "Which crafts did Kraftykinni run at the Kia showroom in Gurgaon?",
+        a: "Four crafts: cap painting, canvas painting with an ice-cream design, a sunflower fridge magnet and a sunflower canvas pouch. Kraftykinni also supported Kia's own Sorento colouring activity with colours and colour filling.",
+      },
+      {
+        q: "What age group suits a Children's Day art workshop?",
+        a: "The Gurgaon session was designed for children aged 8 to 12. Outlined designs help younger children, while older children can add shading, patterns and personal details.",
+      },
+      {
+        q: "How long does a Children's Day art workshop take?",
+        a: "The Allied Kia session ran for 2 hours with all four crafts available. Each craft can be finished in a single sitting.",
+      },
+      {
+        q: "Can a showroom, school or society book a kids art workshop in Gurgaon?",
+        a: "Yes. Kraftykinni runs kids' art workshops for showrooms, schools, housing societies, birthday parties and corporate events across Gurgaon, Delhi and Noida. Share the date, venue, group size and age range to plan the crafts.",
+      },
+      {
+        q: "Can parents join a kids art workshop?",
+        a: "Yes. At the Kia showroom, parents and Kia staff joined in between activities, and no art experience was needed.",
+      },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until their publishDate arrives.
