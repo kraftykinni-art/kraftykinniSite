@@ -75,6 +75,7 @@ Booking: 7 days advance notice, 50% deposit confirms a booking, minimum 20 parti
 - [Block Printing Workshop Delhi NCR Guide](https://kraftykinni.in/blog/block-printing-workshop-delhi-ncr-guide.md): Block printing workshop in Delhi NCR: how a session runs, what you print, 1.5–2 hours, groups of 20–200+, from ₹600 per person, all materials included.
 - [Children's Day Art Workshop Delhi NCR Schools](https://kraftykinni.in/blog/childrens-day-art-workshop-schools-delhi-ncr.md): Children's Day (14 November) art workshop ideas for Delhi NCR schools: clay, fridge magnets, tote bags and more. From ₹600/student, materials included.
 - [Children's Day Art Workshop in Gurgaon](https://kraftykinni.in/blog/childrens-day-art-workshop-gurgaon-kia-showroom.md): Kraftykinni ran 4 kids' art workshops for 20 children at the Allied Kia showroom in Gurgaon on Children's Day. See the crafts and plan your own event.
+- [Block Printing Tote Bag Workshop Delhi](https://kraftykinni.in/blog/block-printing-tote-bag-workshop-british-high-commission.md): Kraftykinni ran a block printing tote bag workshop for kids and adults at the British High Commission, New Delhi. See the totes, method and how to book.
 
 ## Agent resources
 - Any page above is also available as clean Markdown at the same URL with a .md extension, or via `Accept: text/markdown`

@@ -3429,6 +3429,164 @@ const allBlogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "block-printing-tote-bag-workshop-british-high-commission",
+    title: "Block Printing Tote Bag Workshop in Delhi: Kids and Adults at the British High Commission",
+    metaTitle: "Block Printing Tote Bag Workshop Delhi | Kraftykinni",
+    metaDescription:
+      "Kraftykinni ran a block printing tote bag workshop for kids and adults at the British High Commission, New Delhi. See the totes, method and how to book.",
+    publishDate: '2026-11-21',
+    category: 'Private Events' as const,
+    relatedWorkshop: 'block-printing',
+    excerpt:
+      "About ten people, half of them children, printed paisleys, mandalas and elephants onto cotton tote bags at the British High Commission in New Delhi. Here is how the session worked, what everyone made and how to care for a tote that is not heat-set.",
+    keywords: [
+      "block printing tote bag workshop Delhi",
+      "block printing workshop for kids and adults Delhi",
+      "block printing workshop New Delhi",
+      "tote bag block printing workshop",
+      "art workshop British High Commission New Delhi",
+      "family art workshop Delhi",
+      "embassy community event art workshop Delhi",
+      "hand block printing on tote bags",
+      "how to wash a block printed tote bag",
+      "block printing workshop Delhi NCR",
+    ],
+    sections: [
+      {
+        body: "On 15 November 2026, a hall at the British High Commission in New Delhi became a block printing studio. Carved wooden blocks sat beside sponge pads, small jars of fabric colour lined the tables, and about ten people, half of them children, pressed paisleys, mandalas and elephants onto plain cotton tote bags.\n\nKraftykinni ran this [block printing workshop](/workshops/block-printing) as a relaxed, just-for-fun event with no theme and no targets: a table of blocks, colours and bags, and time to enjoy them. Four to five children and about the same number of adults took part. This post records what everyone made, how the session worked, and how to look after a block-printed tote when it has not been heat-set.",
+        image: "https://cdn.kraftykinni.in/block-printing-tote-bag-workshop-british-high-commission-delhi-kraftykinni.webp",
+        imageAlt: "Finished block-printed tote bag beside a participant holding up his elephant-and-flower tote at the block printing workshop at the British High Commission, New Delhi — Kraftykinni",
+        imageCaption: "A finished tote, left, and a participant holding up his elephant-and-flower tote, right.",
+      },
+      {
+        heading: "Block Printing Tote Bag Workshop at the British High Commission: Quick Facts",
+        body: "",
+        listItems: [
+          "Date: 15 November 2026",
+          "Venue: British High Commission, New Delhi",
+          "Participants: about 10 people, with 4 to 5 children and about the same number of adults",
+          "Craft: hand block printing on cotton tote bags",
+          "Occasion: a relaxed, just-for-fun event",
+          "Materials: carved wooden blocks, sponge pads, fabric colours and brushes, all supplied by Kraftykinni",
+          "Experience needed: none",
+          "Led by: Shramita Govil, Fevicryl Certified Artist",
+        ],
+        listType: 'ul',
+      },
+      {
+        heading: "What Is Block Printing, and Why Print on a Tote Bag?",
+        body: "Block printing is a textile technique in which a pattern is carved into a wooden block, coated with colour and pressed onto fabric. In India it is closely tied to Rajasthan and Gujarat, where printing towns such as Sanganer and Bagru built whole industries around it. Because the same block is pressed again and again, one small carving becomes a repeating border, a scatter of motifs or a pattern that covers a whole cloth.\n\nA cotton tote is a good first surface. It is flat, it takes fabric colour well, and a finished bag gets used straight away, so the print does not end up in a drawer. The blocks at this session carried the motifs most associated with Indian textiles: paisley, round mandalas, elephants, Ganesha, leaves and lattice borders. For a fuller account of how we teach the craft to teams and schools, read our [block printing workshop guide](/blog/block-printing-workshop-delhi-ncr-guide).",
+      },
+      {
+        heading: "How the Session Worked",
+        body: "Everyone worked at long tables covered in dark cloth, with a tote bag laid flat in front of them. Each person had a cup of water, a brush, small jars of fabric colour and a choice of blocks. The steps were the same for adults and children.",
+        listItems: [
+          "Pick a block and a colour. Choices included paisley, mandala, elephant, Ganesha, leaf and border blocks.",
+          "Load the block. Colour went onto the carved face with a brush, or the block was pressed onto a sponge pad loaded with colour.",
+          "Press and lift. A firm, even press followed by a straight lift gives a clean print. Sliding the block smudges the outline.",
+          "Build the layout. Many adults printed a border first and then set a larger motif in the centre.",
+          "Let the colour dry. Fabric colour needs time to dry before the bag is folded or carried.",
+        ],
+        listType: 'ol',
+        image: "https://cdn.kraftykinni.in/adult-inking-wooden-block-tote-bag-printing-workshop-new-delhi-kraftykinni.webp",
+        imageAlt: "Adult loading a wooden block with fabric colour at the block printing tote bag workshop in New Delhi — Kraftykinni",
+        imageCaption: "Loading a wooden block with colour while a printed tote waits on the table.",
+      },
+      {
+        heading: "What the Adults Printed",
+        body: "The adults printed with a plan, and the bags show it. One tote is built as a grid, with rows of elephants and flowers, bands of orange lattice border and a line of paisleys along the bottom edge. It is the bag held up in the photo at the top of this post.\n\nA third bag, shown below, is full of sunburst and mandala blocks in orange and gold, two Ganesha motifs, an elephant, leaves and paisleys, framed by green paisley borders at the top and bottom. Several of its motifs fade from orange into green or yellow. That fade comes from loading more than one colour onto a block or sponge pad before pressing, and it is one of the easiest ways to make a print look hand-finished.",
+        image: "https://cdn.kraftykinni.in/hand-block-printed-tote-bag-ganesha-elephant-paisley-delhi-kraftykinni.webp",
+        imageAlt: "Hand block-printed tote bag with Ganesha, elephant, mandala and paisley motifs in orange, green and red from a block printing workshop in New Delhi — Kraftykinni",
+        imageCaption: "A tote printed with Ganesha, elephant, mandala, leaf and paisley blocks.",
+      },
+      {
+        heading: "The Teal Border Tote",
+        body: "One bag took a different route. Its maker stamped a dense blue lattice border around all four edges of the front, set a round mandala block in the centre and placed four teal paisleys around it. The handles, just out of frame, carry a repeated red floral motif. Treating the border as a frame is worth copying: it makes a plain tote look finished before the centre is even printed.\n\nLook closely at the paisley in the upper right. It is paler than the other three because less colour reached the block. In hand block printing that kind of variation is expected, and it is why every bag comes out different.",
+        image: "https://cdn.kraftykinni.in/block-printed-tote-bag-teal-paisley-mandala-border-delhi-kraftykinni.webp",
+        imageAlt: "Block-printed tote bag with teal paisleys, a central mandala and a blue lattice border from a block printing workshop in Delhi — Kraftykinni",
+        imageCaption: "Teal paisleys and a central mandala inside a blue lattice border.",
+      },
+      {
+        heading: "A Paisley Ring in Blue and Red",
+        body: "One participant chose a simple layout: four blue paisleys set in a ring, with four small red flowers between them. A ring built from one repeated block is a friendly pattern for a first print, and the plain cloth around it lets the motif stand out. The photo shows the next colour being loaded onto a block while the finished motifs already sit on the bag.",
+        image: "https://cdn.kraftykinni.in/loading-fabric-colour-on-wooden-block-tote-workshop-delhi-kraftykinni.webp",
+        imageAlt: "Participant loading a block with red fabric colour beside a tote bag printed with blue paisleys and red flowers at a block printing workshop in New Delhi — Kraftykinni",
+        imageCaption: "Loading a block with red colour beside a tote printed with blue paisleys and red flowers.",
+      },
+      {
+        heading: "Planning the Layout Before the First Print",
+        body: "Several bags began with a border, and the smaller motifs followed. The bag in progress below has green paisley borders along its top and bottom edges and a column of paisleys, sunbursts and leaves down the left side, with the right half still empty. Another bag used three vertical orange lattice bands, with rows of small motifs between them.\n\nA simple rule helps beginners: print the border or bands first, then fill the spaces. A block is easier to place against a line than into empty cloth, and the bag stays balanced as it fills up.",
+        image: "https://cdn.kraftykinni.in/planning-block-print-border-layout-tote-bag-workshop-delhi-kraftykinni.webp",
+        imageAlt: "Participant loading a brush with colour beside a tote bag printed with green borders and a column of paisley and sunburst motifs at a block printing workshop in New Delhi — Kraftykinni",
+        imageCaption: "A tote in progress: borders first, then the motifs.",
+      },
+      {
+        heading: "How the Children Joined In",
+        body: "The children worked at the same tables, with the same blocks and colours, and printed more freely. Their totes are bright and layered, with stamped shapes, brushed colour and overlapping prints in red, green and blue. Kraftykinni's artist moved between the tables to help the younger children with brushes and blocks.\n\nThat is the main reason block printing suits a mixed group. An adult can plan a border and a layout, while a very young child can press a block as hard as she likes, and both leave with a bag that is clearly their own. The session was led by [Shramita Govil](/about).",
+        image: "https://cdn.kraftykinni.in/shramita-govil-guiding-children-block-printing-tote-workshop-delhi-kraftykinni.webp",
+        imageAlt: "Shramita Govil helping young children with brushes and blocks at the block printing tote bag workshop at the British High Commission, New Delhi — Kraftykinni",
+        imageCaption: "Helping the youngest participants with brushes and blocks.",
+      },
+      {
+        heading: "Washing a Block-Printed Tote That Is Not Heat-Set",
+        body: "Heat-setting, which usually means ironing the dried print, was not part of this session, so participants took their bags home with the colour air-drying. If you have printed a tote this way, a few habits protect it. These are general guidelines for water-based fabric colours, so check the instructions on the colour you used.",
+        listItems: [
+          "Let the print dry flat for at least 24 hours before you fold or pack the bag.",
+          "To heat-set later, wait until the print is fully dry, lay a thin cotton cloth over it and press with a warm iron on the cotton setting, following the instructions on your fabric colour.",
+          "Hold off on the first wash for about a week, then hand wash in cool water, inside out, with mild soap.",
+          "Do not scrub the print, and avoid bleach and tumble drying. Dry the bag in shade.",
+          "For a bag that only carries light loads, spot-cleaning with a damp cloth is often enough.",
+        ],
+        listType: 'ul',
+      },
+      {
+        heading: "Why Block Printing Works for Mixed Groups of Adults and Children",
+        body: "This was a small, relaxed session, and it showed why block printing fits family days, community events and informal get-togethers.",
+        listItems: [
+          "One craft, any age. The same block serves a child pressing once and an adult building a full pattern.",
+          "No drawing skill needed. The design is already carved, so participants choose, colour and place it.",
+          "A bag people use. A finished tote has an everyday job, so the print does not end up on a shelf.",
+          "Easy to run in a hall. The set-up is tables, cloth, water cups, blocks and colours, and this session ran in an ordinary hall.",
+        ],
+        listType: 'ul',
+      },
+      {
+        heading: "Book a Block Printing Workshop in Delhi NCR",
+        body: "Kraftykinni runs block printing for [corporate teams](/corporate-art-workshops), schools and [private groups](/private-art-workshops) across [Delhi](/workshops-in-delhi), Gurgaon and Noida, in offices, halls, homes and community venues. Tote bag printing is part of our [block printing workshop](/workshops/block-printing). If you prefer brushes to blocks, see our [tote bag painting workshop](/workshops/tote-bag-painting) and its [tote bag painting guide](/blog/tote-bag-painting-workshop-delhi-ncr-guide). A one-to-one version is described in our post on a [private block printing session for a family visiting from Israel](/blog/block-printing-workshop-delhi-israeli-family), and you can try the craft at home with the [Block Printing at Home guide](/block-printing-guide).\n\nWorkshops are priced from ₹600 to ₹800 per person with all materials included, and no experience is needed. Tell us the date, venue and the number of adults and children, and WhatsApp **+91 9599622210**. We confirm within 24 hours. Sessions are led by [Shramita Govil, Fevicryl Certified Artist](/about).",
+      },
+    ],
+    faq: [
+      {
+        q: "What is a block printing workshop?",
+        a: "A block printing workshop teaches you to print patterns on fabric with carved wooden blocks and fabric colour. At the Kraftykinni session at the British High Commission in New Delhi on 15 November 2026, about ten participants printed cotton tote bags with paisley, mandala, elephant, Ganesha and border blocks.",
+      },
+      {
+        q: "Can children and adults do block printing together?",
+        a: "Yes. At the British High Commission session, four to five children and about the same number of adults used the same blocks and colours at the same tables. Adults planned borders and layouts, and children printed more freely with help from the artist.",
+      },
+      {
+        q: "Do you need art experience for a block printing workshop?",
+        a: "No. The designs are carved into the blocks, so participants choose, colour and place them. Kraftykinni's artist shows the press-and-lift technique at the start.",
+      },
+      {
+        q: "Can you wash a block-printed tote bag?",
+        a: "Yes, with care. This session did not include heat-setting, so let the print dry flat for at least 24 hours, wait about a week before the first wash, then hand wash in cool water, inside out, and dry in shade. Check the instructions on the fabric colour you used.",
+      },
+      {
+        q: "How do you heat-set a block print?",
+        a: "Once the print is fully dry, lay a thin cotton cloth over it and press with a warm iron on the cotton setting, following the instructions on your fabric colour.",
+      },
+      {
+        q: "Can Kraftykinni run a block printing workshop at an embassy, school or office in Delhi?",
+        a: "Yes. Kraftykinni brings the blocks, colours, brushes and tote bags and runs the session at your venue in Delhi, Gurgaon or Noida, as it did at the British High Commission in New Delhi.",
+      },
+      {
+        q: "How much does a block printing workshop in Delhi cost?",
+        a: "Kraftykinni workshops are priced from ₹600 to ₹800 per person, with all materials included.",
+      },
+    ],
+  },
 ];
 
 // Posts dated in the future stay hidden until their publishDate arrives.
